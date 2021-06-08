@@ -1,0 +1,46 @@
+
+<!-- 物流区 -->
+<view class="con1 flex-row">
+	<view>
+		<image src="/img/order_icon5.png" class="order_icon"></image>
+	</view>
+	<view class="w_text">
+		<view class="item">订单编号：{{expresslist.order_no}}</view>
+		<view class="item">物流公司：{{expresslist.de_company}}</view>
+		<view class="item">物流单号：{{expresslist.wuliu_no}}</view>
+	</view>
+</view>
+<view class="con4" wx:if="{{expresslist.list.length>0}}">
+  <view class="con4_top1">物流信息</view>
+  <!-- 物流列表 -->
+  <view class="con4_top3 flex" wx:for="{{expresslist.list}}">
+    <view class="con4_text"wx:key="key" wx:for-item='item'>
+      <text class="con4_time {{index==0?'':'no'}}">{{item.status}}  {{item.time}}</text>
+      <view class="line_ellipsis text ">{{item.text}}</view>
+
+      <view class="con4_icon"  wx:if="{{index==0}}">
+        <image wx:if="{{item.display==0}}" src="/img/wuliu_icon2.png" class="chek_img"></image>
+        <image wx:if="{{item.display==1}}" src="/img/wuliu_icon3.png" class="chek_img"></image>
+        <image wx:if="{{item.display==2}}" src="/img/wuliu_icon4.png" class="chek_img"></image>
+        <image wx:if="{{item.display==3}}" src="/img/wuliu_icon5.png" class="chek_img"></image>
+      </view>
+      <!-- 当第二个开始有一条物流的横线 -->
+      <view class="con4_icon"  wx:else>
+        <image wx:if="{{item.display==0}}" src="/img/wuliu_icon2.png" class="chek_img"></image>
+        <image wx:if="{{item.display==1}}" src="/img/wuliu_icon3.png" class="chek_img"></image>
+        <image wx:if="{{item.display==2}}" src="/img/wuliu_icon4.png" class="chek_img"></image>
+        <image wx:if="{{item.display==3}}" src="/img/wuliu_icon5.png" class="chek_img"></image>
+        <view class="line"></view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 悬浮按钮 -->
+<view class="suspension">
+  <view class="suspen_title">
+    <image src="/img/suspen_icon01.png"></image>
+  </view>
+  <view class="suspen_title">
+    <image src="/img/suspen_icon02.png"></image>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+/**app.wxss**/
+page {
+  background: #F5F5F5;
+}
+/* 多行文字换行 */
+.line_ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient:vertical
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.j_b{
+  justify-content: space-between;
+}

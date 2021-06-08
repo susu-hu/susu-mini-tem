@@ -1,0 +1,79 @@
+
+.top{
+  margin-bottom: 30rpx;
+}
+/*  */
+.calendar{
+  margin: 20rpx 24rpx 26rpx 24rpx;
+  width: 700rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  padding: 25rpx 24rpx 54rpx;
+}
+.cale_month{
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333333;
+}
+.cale_img{
+  width: 14rpx;
+  height: 23rpx;
+}
+
+.cale_week{
+  margin: 32rpx auto;
+  width: 651rpx;
+  height: 65rpx;
+  background: rgba(103, 32, 116, 0.1);
+  border-radius: 36rpx;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #672074;
+  box-sizing: border-box;
+  padding: 0 38rpx;
+}
+
+.box1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15rpx auto 0;
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #333333;
+}
+
+.isbook {
+  background: #672074;
+}
+.isrela {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.book{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height:48rpx;
+  color: #FFFFFF;
+}
+.waitbook{
+  background: rgba(103, 32, 116, 0.25);
+}
+.stopbook{
+  background: #D3D3D3;
+}
+.dot{
+  position: absolute;
+  width: 15rpx;
+  height: 15rpx;
+  border-radius: 50%;
+  background: #672074;
+  top: 72rpx;
+}

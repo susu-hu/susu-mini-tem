@@ -1,0 +1,30 @@
+
+<!-- 日历 -->
+<view class="calendar">
+    <view class="cale_month flex-row j_b">
+        <view catchtap="toLastMon">
+            <image src="/img/de_icon3.png" class="cale_img"></image>
+        </view>
+        <view>{{year}}.{{months[monthIndex]}}</view>
+        <view catchtap="toNextMon">
+            <image src="/img/de_icon2.png" class="cale_img"></image>
+        </view>
+    </view>
+    <view class="cale_week flex-row j_b ">
+        <block wx:for="{{weekArr}}">
+            <view>{{item}}</view>
+        </block>
+    </view>
+    <view class='box1' style='width: {{ sysW * 7 }}rpx'>
+        <block wx:for='{{ arr }}'>
+            <view class="isrela flex-column" style='{{ index == 0 ? "margin-left:" + sysW * marLet + "rpx;" : "" }}width: {{ sysW }}rpx; height: {{ sysW }}rpx; line-height: {{ sysW }}rpx;' key="{{item}}">
+                <view  wx:if="{{item.isbook==1}}" class='book isbook'>{{ item.day }}</view>
+                <view  wx:if="{{item.isbook==0}}">{{ item.day }}</view>
+                <view  wx:if="{{item.isbook==2}}" class=' book waitbook'>{{ item.day }}</view>
+                <view  wx:if="{{item.isbook==3}}" class='book stopbook'>{{ item.day }}</view>
+                <!-- 当前日期 -->
+                <view  wx:if="{{item.day===getToday}}" class='dot'></view>
+            </view>
+        </block>
+    </view>
+</view>
