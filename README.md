@@ -16,7 +16,7 @@
 
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/015000_3770dc54_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/015207_326fac91_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
