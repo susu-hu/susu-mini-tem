@@ -10,16 +10,13 @@
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  微信开发者工具打开
+2.  cal文件夹为日历页面
+3.  demo文件夹为物流页面
 
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
+#### 效果截图
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/015000_3770dc54_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
