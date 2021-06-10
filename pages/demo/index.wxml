@@ -18,20 +18,14 @@
       <text class="con4_time {{index==0?'':'no'}}">{{item.status}}  {{item.time}}</text>
       <view class="line_ellipsis text ">{{item.text}}</view>
 
-      <view class="con4_icon"  wx:if="{{index==0}}">
-        <image wx:if="{{item.display==0}}" src="/img/wuliu_icon2.png" class="chek_img"></image>
-        <image wx:if="{{item.display==1}}" src="/img/wuliu_icon3.png" class="chek_img"></image>
-        <image wx:if="{{item.display==2}}" src="/img/wuliu_icon4.png" class="chek_img"></image>
-        <image wx:if="{{item.display==3}}" src="/img/wuliu_icon5.png" class="chek_img"></image>
+       <view class="con4_icon">
+        <image wx:if="{{item.display==0}}" src="{{item.status==1?'/img/w_icon4.png':'/img/wuliu_icon2.png'}}" class="chek_img"></image>
+        <image wx:if="{{item.display==1}}" src="{{item.status==1?'/img/wuliu_icon3.png':'/img/w_icon3.png'}}" class="chek_img"></image>
+        <image wx:if="{{item.display==2}}" src="{{item.status==1?'/img/wuliu_icon4.png':'/img/w_icon2.png'}}"class="chek_img"></image>
+        <image wx:if="{{item.display==3}}" src="{{item.status==1?'/img/wuliu_icon5.png':'/img/w_icon1.png'}}" class="chek_img"></image>
+        <view class="line" wx:if="{{index!=0}}"></view>  <!-- 当第二个开始有一条物流的横线 -->
       </view>
-      <!-- 当第二个开始有一条物流的横线 -->
-      <view class="con4_icon"  wx:else>
-        <image wx:if="{{item.display==0}}" src="/img/wuliu_icon2.png" class="chek_img"></image>
-        <image wx:if="{{item.display==1}}" src="/img/wuliu_icon3.png" class="chek_img"></image>
-        <image wx:if="{{item.display==2}}" src="/img/wuliu_icon4.png" class="chek_img"></image>
-        <image wx:if="{{item.display==3}}" src="/img/wuliu_icon5.png" class="chek_img"></image>
-        <view class="line"></view>
-      </view>
+      
     </view>
   </view>
 </view>
