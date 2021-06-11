@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -14,6 +15,12 @@
         {
           "name": "pages/cal/index",
           "pathName": "pages/cal/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cal2/index",
+          "pathName": "pages/cal2/index",
           "scene": null
         }
       ]

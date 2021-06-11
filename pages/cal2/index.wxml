@@ -1,0 +1,55 @@
+<!--pages/cal2/index.wxml-->
+<view class="calendar">
+    <view class="top_bg">
+      <view class="cale_month flex-row j_b">
+          <view catchtap="toLastMon">
+              <image src="/img/de_icon3.png" class="cale_img"></image>
+          </view>
+          <view>{{months[monthIndex]}}</view>
+          <view catchtap="toNextMon">
+              <image src="/img/de_icon2.png" class="cale_img"></image>
+          </view>
+      </view>
+      <view class="cale_week flex-row j_b ">
+          <block wx:for="{{weekArr}}">
+              <view>{{item}}</view>
+          </block>
+      </view>
+    </view>
+
+    <view class='box1' style='width: {{ sysW * 7 }}rpx'>
+        <block wx:for='{{ arr }}'>
+          <!-- height: {{ sysW }}rpx; line-height: {{ sysW }}rpx; -->
+            <view class="isrela flex-column {{item.chosed?'chosed':''}}"  catchtap="choseOneDay" data-day="{{item.day}}" style='{{ index == 0 ? "margin-left:" + sysW * marLet + "rpx;" : "" }}width: {{ sysW }}rpx; ' key="{{item}}">
+              <!-- 图片 -->
+              <view  wx:if="{{item.isbook==1}}" class='book isbook'>
+                <image src="/img/wuliu_gou.png" class="book_img"></image>
+              </view>
+
+              <view  wx:if="{{item.isbook==0}}">{{ item.day }}</view>
+
+              <view  wx:if="{{item.isbook==2}}" class=' book waitbook'>
+                <image src="/img/wuliu_dai.png" class="book_img1"></image>
+              </view>
+
+              <view  wx:if="{{item.isbook==3}}" class='book stopbook'>
+                <image src="/img/wuliu_stop.png" class="book_img2"></image>
+              </view>
+              <!-- 文字 -->
+              <view  wx:if="{{item.isbook==1}}"  class="peis_text1">
+                <view>已配送</view>
+              </view>
+              <view  wx:if="{{item.isbook==0}}" class="peis_text1"></view>
+
+              <view  wx:if="{{item.isbook==2}}" class="peis_text1 color1">
+                <view >待配送</view>
+              </view>
+
+              <view  wx:if="{{item.isbook==3}}" class="peis_text1 color2">
+                <view >已暂停</view>
+              </view>
+              
+            </view>
+        </block>
+    </view>
+  </view>
