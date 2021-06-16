@@ -1,0 +1,17 @@
+<!--pages/dots/index.wxml-->
+
+<view class="top">
+  <swiper current="{{swiperCurrent}}" bindchange="swiperChange"  circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{goodsInfo.imgList}}">
+      <swiper-item>
+        <image src="{{item}}" data-src="{{item}}" class="img_goodcover" bindtap="previewImage"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 指示点 -->
+  <view class="dots flex-row">
+    <block wx:for="{{goodsInfo.imgList.length}}" wx:key>
+      <view class="{{index==swiperCurrent?'active':'dot'}}" data-index="{{index}}"></view>
+    </block>
+  </view>
+</view>

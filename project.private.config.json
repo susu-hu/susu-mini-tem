@@ -19,8 +19,9 @@
           "scene": null
         },
         {
-          "name": "pages/cal2/index",
-          "pathName": "pages/cal2/index",
+          "name": "pages/dots/index",
+          "pathName": "pages/dots/index",
+          "query": "",
           "scene": null
         }
       ]

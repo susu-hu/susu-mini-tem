@@ -2,7 +2,8 @@
   "pages": [
     "pages/cal/index",
     "pages/demo/index",
-    "pages/cal2/index"
+    "pages/cal2/index",
+    "pages/dots/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

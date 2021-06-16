@@ -1,0 +1,36 @@
+/* pages/dots/index.wxss */
+.top{
+  width: 750rpx;
+  height: 750rpx;
+  background: #FFFFFF;
+
+  position: relative;
+}
+.top swiper{
+  width: 750rpx;
+  height: 750rpx;
+}
+.img_goodcover{
+  width: 750rpx;
+  height: 750rpx; 
+}
+/* dot */
+.dots{
+  margin: 54rpx auto 0;
+  justify-content: center;
+  position: absolute;
+  bottom: 30rpx;
+  left: 35%;
+}
+.dot{
+  width: 60rpx;
+  height: 4rpx;
+  background: #ECECEC;
+  border-radius: 2rpx;
+}
+.active{
+  width: 60rpx;
+  height: 4rpx;
+  background: #e047b2;
+  border-radius: 2rpx;
+}
