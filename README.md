@@ -13,11 +13,13 @@
 1.  微信开发者工具打开
 2.  cal文件夹为日历页面
 3.  demo文件夹为物流页面
+4.  dots文件夹为自定义轮播图指示点页面
 
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0611/134711_a94e772a_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/015207_326fac91_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0616/110335_f8b41df2_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
