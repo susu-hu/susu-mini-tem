@@ -1,0 +1,93 @@
+<!--pages/cart/index.wxml-->
+<!-- 有商品 -->
+<view class="has" wx:if="{{isShow}}">
+  <view class="hd" wx:if="{{effective_carts.length!=0}}">
+    共{{effective_carts.length}}件商品
+    <view class="hd_rt" wx:if="{{del==true}}" bindtap="edit">编辑</view>
+    <view class="hd_rt" wx:if="{{del==false}}" bindtap="edit">完成</view>
+  </view>
+  <view class="content" wx:if="{{effective_carts.length != 0}}">
+    <block wx:for="{{effective_carts}}" wx:key="index">
+      <view class="order_wrapper {{item.status ? '':'active'}}">
+        <view class='order_item cart-list' data-index="{{index}}" bindtouchstart="touchS" bindtouchmove="touchM">
+          <image src="/img/cart_select.png" wx:if="{{item.selected}}" data-index="{{index}}" class="cart-pro-select"
+            catchtap="selectList"></image>
+          <image src="/img/cart_uncheck.png" wx:else class="cart-pro-select" data-index="{{index}}"
+            catchtap="selectList"></image>
+          <image class="cart-thumb" catchtap="jumpDetail" data-goodid="{{item.goods_id}}" src="{{item.goods_cover}}">
+          </image>
+          <view class="cart-pro-name">
+            <view class="cart-pro-title">{{item.goods_name}}</view>
+          </view>
+          <view class="cart-pro-price color"><text>￥</text>{{item.sale_price}}<view wx:if="{{item.master_sale_price}}">
+              ￥{{item.master_sale_price}}</view>
+          </view>
+          <view class="cart-count-box">
+            <!-- 减 -->
+            <view class="cart-count-down" catchtap="minusCount"  data-index="{{index}}"
+              data-id="{{item.id}}">
+              <image wx:if="{{item.num==1}}" src="/img/good_cart01.png"></image>
+              <image wx:else src="/img/good_cart02.png"></image>
+            </view>
+            <input type="text" bindinput="inputCode" bindblur="blurCode" data-id="{{item.id}}"
+              class="cart-count-num" value="{{item.num}}"></input>
+            <!-- 加 -->
+            <view class="cart-count-add" catchtap="addCount" data-index="{{index}}" data-id="{{item.id}}">
+              <image src="/img/good_cart03.png"></image>
+            </view>
+          </view>
+        </view>
+        <view class="del_button" data-index="{{index}}" data-id="{{item.id}}" data-type="single"
+          bindtap='deleteList'>删除</view>
+      </view>
+    </block>
+  </view>
+
+  <!--失效商品-->
+  <view class="content" wx:if="{{invalid_carts.length != 0}}">
+    <!-- 共计{{invalid_carts.length}}件失效宝贝 -->
+    <view class="invalid"><text bindtap="clearInvalid">清空失效宝贝</text></view>
+    <view class="cart-box">
+      <view class="order_wrapper"wx:for="{{invalid_carts}}" wx:key="index">
+        <view class="cart-list">
+          <view class="cart_invalid">失效</view>
+          <navigator url="../goodDetails/index?goods_id={{item.goods_id}}">
+            <image class="cart-thumb" src="{{item.goods_cover}}"></image>
+          </navigator>
+          <view class="cart-clen-name">
+            <view class="line_ellipsis">{{item.goods_name}}</view>
+          </view>
+          <view class="cart-pro-text">{{item.err_msg}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 木有商品 -->
+<view class="none" wx:else>
+  <image class="none_bg" src="https://i.postimg.cc/Bn1XpkSn/susu.jpg"></image>
+  <view class="none_text">购物车空空如也～</view>
+  <view class="none_btn btn_sec" bindtap="jumpHome">去逛逛</view>
+</view>
+
+<!-- 底部按钮 -->
+<view class="cart_bottom">
+  <image src="/img/cart_select.png" wx:if="{{selectAllStatus==true}}" class="total-select" bindtap="selectAll"></image>
+  <image src="/img/cart_uncheck.png" wx:if="{{selectAllStatus==false}}" class="total-select" bindtap="selectAll">
+  </image>
+  <text class="cart_all">全选</text>
+  <text class="cart_total">合计：<text class="color">￥{{totalPrice}}</text></text>
+  <view class="cart_btn " wx:if="{{del}}" bindtap="goConfirm">去结算
+    <text wx:if="{{calculation!=0}}">({{calculation}})</text>
+  </view>
+  <view class="cart_btn " wx:else data-type="multiple" bindtap='deleteList'>删除
+    <text wx:if="{{calculation!=0}}">({{calculation}})</text>
+  </view>
+</view>
+
+
+<!-- 结算弹框 -->
+<view>
+</view>
+

@@ -3,7 +3,8 @@
     "pages/cal/index",
     "pages/demo/index",
     "pages/cal2/index",
-    "pages/dots/index"
+    "pages/dots/index",
+    "pages/touchRemove/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
