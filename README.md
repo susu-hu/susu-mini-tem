@@ -3,6 +3,9 @@
 #### 介绍
 微信小程序实现日历，可进行月份切换
 微信小程序实现物流页面
+自定义轮播图指示点页面
+购物车页面+左滑删除
+movable-area组件实现滑动删除
 
 #### 软件架构
 软件架构说明
@@ -14,6 +17,8 @@
 2.  cal文件夹为日历页面
 3.  demo文件夹为物流页面
 4.  dots文件夹为自定义轮播图指示点页面
+5.  touchRemove 购物车页面+左滑删除
+6.  touchMove 滑动删除2  movable-area组件
 
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -21,6 +26,7 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/015207_326fac91_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0616/110335_f8b41df2_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0622/172244_6fb1820e_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0622/202320_1f0fc980_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
