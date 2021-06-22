@@ -10,4 +10,32 @@ page{
   border-radius: 20rpx;
   line-height:200rpx;
   text-align:center;
+  display: flex;
+}
+
+movable-view{
+  width: 710rpx;
+  height: 200rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  line-height:200rpx;
+  text-align:center;
+}
+movable-area{
+  height: 200rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  line-height:200rpx;
+  text-align:center;
+  width: calc(710rpx - 120rpx);
+}
+.movable_delete_btn {
+  justify-content: center;
+  width: 115rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: red;
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
 }
