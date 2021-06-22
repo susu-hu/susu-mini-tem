@@ -2,3 +2,4 @@ demo 为物流
 cal 为日历1
 cal2 为日历2
 dots为自定义轮播指示点
+touchRemove 购物车页面
