@@ -4,7 +4,8 @@
     "pages/demo/index",
     "pages/cal2/index",
     "pages/dots/index",
-    "pages/touchRemove/index"
+    "pages/touchRemove/index",
+    "pages/touchMove2/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,7 @@
+<!--pages/touchMove2/index.wxml-->
+<movable-area>
+  <view wx:for="{{5}}" class="top">
+    <view>左滑试试吧</view>
+  </view>
+</movable-area>
+

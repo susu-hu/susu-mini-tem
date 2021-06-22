@@ -1,0 +1,13 @@
+/* pages/touchMove2/index.wxss */
+page{
+  background: #F5F5F8;
+}
+.top{
+  margin: 20rpx;
+  width: 710rpx;
+  height: 200rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  line-height:200rpx;
+  text-align:center;
+}

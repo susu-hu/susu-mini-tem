@@ -13,7 +13,6 @@ Page({
     selectAllStatus: false, // 全选状态，默认全选
     startX: '',
     startY: '',
-    
   },
   onLoad: function (options) {
   },
