@@ -5,7 +5,9 @@
     "pages/cal2/index",
     "pages/dots/index",
     "pages/touchRemove/index",
-    "pages/touchMove2/index"
+    "pages/touchMove2/index",
+    "pages/pop/index",
+    "pages/cardCricle/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

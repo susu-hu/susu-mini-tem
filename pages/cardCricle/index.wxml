@@ -1,0 +1,90 @@
+<!--pages/cardCricle/index.wxml-->
+<view class="con">
+  <view class="circle1"></view>
+  <view class="circle2"></view>  
+  <view class="top1">第1个</view>
+  <view class="top2 flex-row j_b">
+    <view class="flex-column">
+      <text class="text1 color"> 晴朗</text>
+      <text class="text2">天气</text>
+    </view>
+    <view class="line"></view>
+    <view class="flex-column">
+      <text class="text1 color">2021.6.23</text>
+      <text  class="text2">日期</text>
+    </view>
+  </view>
+  <view class="line2"></view>
+
+  <view class="top3">
+    <view class="title flex-row">
+      <view class="title1"></view>
+      <view class="flex-row j_b tite_box">
+        <view class="title2">你好</view>
+        <view class="title2">哈喽</view>
+      </view>
+    </view>
+    <view class="item" wx:for="{{2}}">
+      <view class="title flex-row">
+        <view class="title1 text3 ft">巴啦啦能量</view>
+        <view class="flex-row j_b ">
+          <view class="text3 color title2">优秀</view>
+          <view class="text3 color title2">良好嘻嘻</view>
+        </view>
+      </view>
+      <view class="title flex-row" wx:for="{{2}}">
+        <view class="title1 text3">嗯嗯嗯</view>
+        <view class="flex-row j_b ">
+          <view class="text3 title2">989999</view>
+          <view class="text3 title2">1000</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="con">
+  <view class="circle3"></view>
+  <view class="circle4"></view>  
+  <view class="circle5 "></view>
+  <view class="circle6 "></view>  
+  <view class="top1">第2个</view>
+  <view class="top2 flex-row j_b">
+    <view class="flex-column">
+      <text class="text1 color"> 晴朗</text>
+      <text class="text2">天气</text>
+    </view>
+    <view class="line"></view>
+    <view class="flex-column">
+      <text class="text1 color">2021.6.23</text>
+      <text  class="text2">日期</text>
+    </view>
+  </view>
+  <view class="line2"></view>
+
+  <view class="top3">
+    <view class="title flex-row">
+      <view class="title1"></view>
+      <view class="flex-row j_b">
+        <view class="title2">你好</view>
+        <view class="title2 title3">哈喽</view>
+      </view>
+    </view>
+    <view class="item" wx:for="{{2}}">
+      <view class="title flex-row">
+        <view class="title1 text3 ft">巴啦啦能量</view>
+        <view class="flex-row j_b ">
+          <view class="text3 color title2">优秀</view>
+          <view class="text3 color title2">良好</view>
+        </view>
+      </view>
+      <view class="title flex-row" wx:for="{{2}}">
+        <view class="title1 text3">嗯嗯嗯</view>
+        <view class="flex-row j_b ">
+          <view class="text3 title2">989999</view>
+          <view class="text3 title2">1000</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

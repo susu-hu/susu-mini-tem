@@ -21,15 +21,13 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": true,
+    "useMultiFrameRuntime": false,
     "useApiHook": true,
-    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
     "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
@@ -67,8 +65,15 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/demo/index",
-          "pathName": "pages/demo/index",
+          "name": "pages/touchMove2/index",
+          "pathName": "pages/touchMove2/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cardCricle/index",
+          "pathName": "pages/cardCricle/index",
+          "query": "",
           "scene": null
         }
       ]

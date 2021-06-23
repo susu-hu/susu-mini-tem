@@ -3,4 +3,6 @@ cal 为日历1
 cal2 为日历2
 dots为自定义轮播指示点
 touchRemove 购物车页面
-touchMove 滑动删除
+touchMove 滑动删除2  movable-area组件
+pop 弹框禁止底层滑动
+卡券半圆 cardCircle
