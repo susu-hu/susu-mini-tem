@@ -7,6 +7,7 @@
 购物车页面+左滑删除
 movable-area组件实现滑动删除
 卡券实现半圆状态
+自定义弹框 禁止底层滑动
 
 #### 软件架构
 软件架构说明
@@ -21,6 +22,7 @@ movable-area组件实现滑动删除
 5.  touchRemove 购物车页面+左滑删除
 6.  touchMove 滑动删除2  movable-area组件
 7.  cardCircle 卡券实现半圆状态
+8.  pop 自定义弹框 禁止底层滑动（catchtouchmove+scroll-view)
 
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -30,6 +32,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0622/172244_6fb1820e_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0622/202320_1f0fc980_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0624/011304_db1c1301_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0624/135040_dd3e47de_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
