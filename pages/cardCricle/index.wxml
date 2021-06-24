@@ -19,7 +19,7 @@
   <view class="top3">
     <view class="title flex-row">
       <view class="title1"></view>
-      <view class="flex-row j_b tite_box">
+      <view class="flex-row j_b">
         <view class="title2">你好</view>
         <view class="title2">哈喽</view>
       </view>
