@@ -1,2 +1,32 @@
 <!--pages/pie/index.wxml-->
-<text>pages/pie/index.wxml</text>
+<view class="con">
+  <view class="circle1"></view>
+  <view class="circle2"></view>
+  <picker bindchange="changeDateSelect" value="{{dateIndex}}" range="{{dateArray}}">
+      <view class="top">
+          {{dateArray[dateIndex]}}
+          <image src="/img/down_icon.png" class="down_img"></image>
+      </view>
+  </picker>
+
+  <view class="pie_box">
+    <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
+  </view>
+
+  <view class="line_box"> 
+    <view class="flex-row navItem" >
+      <block wx:for="{{navlist}}" >
+        <view class="btn {{type==index?'color':''}}" bindtap="btnclick" data-index="{{index}}">{{item}}</view>
+      </block>
+    </view>
+    
+   
+
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas"  style="height:350px" bindtouchstart="touchcanvas"></canvas>
+  </view>
+  
+
+  <view class="none_text">暂无更多</view>
+</view>
+
+

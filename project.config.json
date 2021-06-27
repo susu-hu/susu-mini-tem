@@ -67,8 +67,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/touchMove2/index",
-          "pathName": "pages/touchMove2/index",
+          "name": "pages/pie/index",
+          "pathName": "pages/pie/index",
           "query": "",
           "scene": null
         },
