@@ -39,3 +39,26 @@ movable-area{
   border-top-right-radius: 20rpx;
   border-bottom-right-radius: 20rpx;
 }
+
+
+.f{
+  border: 1px solid red;
+  background:#ccc;
+  padding: 30rpx;
+  margin: 20rpx;
+}
+.f1{
+  float: left;
+  border: 1px solid #000;
+  width: 100rpx;
+  height: 100rpx;
+}
+.f2{
+  float: right;
+  border: 1px solid #000;
+  width: 100rpx;
+  height: 100rpx;
+}
+.clear{
+  clear:both
+}

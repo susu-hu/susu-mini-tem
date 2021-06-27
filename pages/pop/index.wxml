@@ -1,2 +1,136 @@
-<!--pages/pop/index.wxml-->
-<text>pages/pop/index.wxml</text>
+<view class="head" catchtap="toChoseAdd">
+  <image src="/img/bg_line.png" class="bg_hr"></image>
+  <image src="/img/add_icon.png" class="head_icon {{address.consignee!=null?'new_icon':''}}"></image>
+  <view class="head_add" >
+    <view class="add_no" wx:if="{{address.consignee==null}}" >选择收货地址</view>
+    <view class="add_yes" wx:else >
+      <view class="add_text">{{address.province_name}} {{address.city_name }} {{address.district_name }}{{address.address}}</view>
+      <view class="add_name">{{address.consignee}}<text>{{address.phone}}</text></view>
+    </view>
+  </view>
+  <image src="/img/add_left.png" class="head_arrow"></image>
+
+</view>
+<view class="goods">
+    <block wx:for="{{orderInfo.goodsList}}" wx:key="id">
+      <view class="goods_con">
+        <view class="goods_img">
+          <image src="{{item.goods_cover}}" class="img-160"></image>
+        </view>
+        <view class="goods-text">
+          <view class="de_text">
+            <text wx:if="{{item.is_Giveaway=='1'}}" class="color">[赠品]</text>
+            {{item.goods_name}}
+          </view>
+          <view class="goods_unit">
+            <view class="price">￥{{item.goods_price}}</view>
+            <view class="quantity">X {{item.goods_num}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+</view>
+
+<view class="order_info">
+  <view class="info j_b" data-index='1'  catchtap="showDiscount">
+    <view class="info_text">优惠券</view>
+    <view wx:if="{{hasDiscount==1 && !discount_money && address.consignee!=null}}" class="color">{{discount_num}}张可用<image src="/img/add_left.png" class="img-19"></image></view>
+    <view wx:if="{{hasDiscount==1 && discount_money}}" class="color">-￥{{discount_money}}<image src="/img/add_left.png" class="img-19"></image></view>
+    <view wx:if="{{hasDiscount==0 || address.consignee==null}}"  class="no_color">暂无优惠券可用<image src="/img/add_left.png" class="img-19"></image></view>
+  </view>
+
+  <view class="info1 j_b">
+    <view class="info_text">运费</view>
+    <view wx:if="{{has_devfree===1}}">￥{{100.00}} </view>
+    <view wx:else>免物流费</view>
+  </view>
+  <view class="info1 j_b">
+    <view class="info_text">运费</view>
+    <view wx:if="{{has_devfree===1}}">￥{{100.00}} </view>
+    <view wx:else>免物流费</view>
+  </view>
+
+  <view class="memo">
+    <view  class="info_text">备注</view>
+  </view>
+
+  <view class="input1">
+    <input bindinput="memoInput" placeholder="请填写备注" placeholder-class="p_class"/>
+  </view>
+</view>
+
+
+<view class="bottom">
+  <view class="view_btn">
+    <view class="btn_text">
+      实付款： <text class="color">￥{{totalPrice}}</text>
+    </view>
+    <view class="bottom_btn" catchtap="">提交订单</view>
+  </view>
+</view>
+<!-- 遮罩层mask -->
+<view class='mask'  bindtap="closeModal"  hidden='{{isShow}}'  catchtouchmove="return"></view>
+<!-- 弹窗显示优惠券 -->
+<view class='discount_view' hidden='{{isShowDiscount}}' catchtouchmove='true'>
+  <image src='/img/login_close.png' class='discount_close' bindtap='closeDiscount'></image>
+  <view class='discount_title'>优惠券</view>
+
+  <view class=" nav flex-row j_b">
+    <view bindtap="tabNav"  class="nav_item" bindtap="tabNav" data-index='0'>
+      <view class="{{type==0?'highlight color':'nav_item_text'}}">可用优惠券（{{2}}）</view>
+      <view class="{{type==0?'nav_line':''}}"></view>
+    </view>
+
+    <view bindtap="tabNav"  class="nav_item" bindtap="tabNav" data-index='1'>
+      <view class="{{type==1?'highlight color':'nav_item_text'}}">不可用优惠券（{{0}}）</view>
+      <view class="{{type==1?'nav_line':''}}"></view>
+    </view>
+  </view>
+  <scroll-view scroll-y style="height:682rpx">
+    <view wx:if="{{cardList.length!=0}}" class="card" >
+      <block wx:for="{{cardList}}" wx:key="index" >
+        <view class="item_list flex-row " catchtap="{{item.hasOver==0?'choseChecked':''}}" data-id="{{item.id}}">
+
+          <view class="item_money">
+            <view class="money">
+              <text class="text1">￥</text>
+              <text class="money_text">{{item.money}}</text>
+            </view>
+            <view class="case">
+              <text>{{item.case}}</text>
+            </view>
+          </view>
+          <view class="item_desc flex-row">
+            <view class="name_date">
+              <view class="name_text">{{item.name}}</view>
+              <view class="date_text" catchtap="showMore" data-id="{{item.id}}">
+                用券时间{{item.date}}
+                <image wx:if="{{item.more}}" src="/img/good_cou02.png" class="img_15"></image>
+                <image wx:else src="/img/good_cou01.png" class="img_15"></image>
+              </view>
+            </view>
+            <view class="chose" wx:if="{{item.hasOver==0}}">
+              <icon wx:if="{{!item.checkd}}"  class="icon-small" type="circle" size="18"></icon>
+              <icon wx:else class="icon-box-img" color="#000" type="success" size="18"></icon>
+            </view>
+
+          </view>
+        </view>
+        <view wx:if="{{!item.more}}" class="rule">
+          {{item.rule}}
+        </view>
+      </block>  
+    </view>
+
+    <view wx:if="{{cardList.length==0}}" class="none1" >
+      <image src="/img/no_img.png" class="none1_img"></image>
+    </view>
+  </scroll-view>
+
+
+  <button class='go_confirm' catchtap="submitDis">确定</button>
+</view>
+
+
+
+

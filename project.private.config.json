@@ -13,14 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/touchRemove/index",
-          "pathName": "pages/touchRemove/index",
+          "name": "pages/pop/index",
+          "pathName": "pages/pop/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/touchMove2/index",
-          "pathName": "pages/touchMove2/index",
+          "name": "pages/cardCricle/index",
+          "pathName": "pages/cardCricle/index",
           "query": "",
           "scene": null
         }

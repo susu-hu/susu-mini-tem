@@ -35,3 +35,19 @@ page {
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
 }
+
+/* 单行文字换行  */
+.text_ellipsis {/*宽度自定义*/
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* 多行文字换行 */
+.line_ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient:vertical
+}
