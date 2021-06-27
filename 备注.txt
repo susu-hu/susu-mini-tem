@@ -6,3 +6,4 @@ touchRemove 购物车页面
 touchMove 滑动删除2  movable-area组件
 pop 弹框禁止底层滑动
 卡券半圆 cardCircle
+pie echarts饼图
