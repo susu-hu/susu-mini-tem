@@ -8,7 +8,8 @@
     "pages/touchMove2/index",
     "pages/pop/index",
     "pages/cardCricle/index",
-    "pages/pie/index"
+    "pages/pie/index",
+    "pages/charts/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

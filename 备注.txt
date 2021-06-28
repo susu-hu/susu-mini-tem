@@ -7,3 +7,4 @@ touchMove 滑动删除2  movable-area组件
 pop 弹框禁止底层滑动
 卡券半圆 cardCircle
 pie echarts饼图
+echarts 饼图 ec-canvas组件 ，上一级div的定位必须为absolute！！！！
