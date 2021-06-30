@@ -1,0 +1,7 @@
+<cover-view class="tab-bar">
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" catchtap="switchTab">
+    <cover-image src="{{selected === index ? item.selectedIconPath : item.iconPath}}" class="cover_image"></cover-image>
+    <cover-view style="color: {{selected === index ? selectedColor : color}}" class="cover_view">{{item.text}}</cover-view>
+  </cover-view>
+  <cover-image class="logo" src="https://i.postimg.cc/Bn1XpkSn/susu.jpg"></cover-image>
+</cover-view>

@@ -11,12 +11,12 @@
         </view>
     </view>
     <view class="cale_week flex-row j_b ">
-        <block wx:for="{{weekArr}}">
+        <block wx:for="{{weekArr}}" wx:key="index">
             <view>{{item}}</view>
         </block>
     </view>
     <view class='box1' style='width: {{ sysW * 7 }}rpx'>
-        <block wx:for='{{ arr }}'>
+        <block wx:for='{{ arr }}' wx:key="index">
             <view class="isrela flex-column" style='{{ index == 0 ? "margin-left:" + sysW * marLet + "rpx;" : "" }}width: {{ sysW }}rpx; height: {{ sysW }}rpx; line-height: {{ sysW }}rpx;' key="{{item}}">
                 <view  wx:if="{{item.isbook==1}}" class='book isbook'>{{ item.day }}</view>
                 <view  wx:if="{{item.isbook==0}}">{{ item.day }}</view>

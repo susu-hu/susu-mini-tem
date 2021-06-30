@@ -74,6 +74,14 @@ Page({
       this.setData({
         chosedMonth:date
       })
+
+      //自定义的tabbar
+      if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: 0
+        })
+      }
   },
   getTime(date){
     this.dataTime(date);

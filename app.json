@@ -11,6 +11,45 @@
     "pages/pie/index",
     "pages/charts/index"
   ],
+  "tabBar": {
+    "custom": true,
+    "color": "#333333",
+    "selectedColor": "#6B1F72",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/cal/index",
+        "iconPath": "img/tabbar/icon_index.png",
+        "selectedIconPath": "img/tabbar/icon_index_sel.png",
+        "text": "日历"
+      },
+      {
+        "pagePath": "pages/charts/index",
+        "iconPath": "img/tabbar/icon_order.png",
+        "selectedIconPath": "img/tabbar/icon_order_sel.png",
+        "text": "饼图"
+      },
+      {
+        "pagePath": "pages/cardCricle/index",
+        "iconPath": "img/tabbar/icon_safe.png",
+        "selectedIconPath": "img/tabbar/icon_safe_sel.png",
+        "text": "卡券"
+      },
+      {
+        "pagePath": "pages/pop/index",
+        "iconPath": "img/tabbar/icon_my.png",
+        "selectedIconPath": "img/tabbar/icon_my_sel.png",
+        "text": "弹框"
+      }
+    ]
+  },
+
+  "usingComponents": {
+    
+  },
+
+  
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

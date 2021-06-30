@@ -2,6 +2,7 @@
 page{
   background: #F5F5F7!important;
   padding-bottom: calc(env(safe-area-inset-bottom) + 120rpx);
+  color: red;
 }
 .head{
   margin: 20rpx 24rpx;

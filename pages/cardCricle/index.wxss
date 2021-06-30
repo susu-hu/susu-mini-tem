@@ -1,9 +1,8 @@
 /* pages/cardCricle/index.wxss */
-/* pages/purchaseData/index.wxss */
 page{
   background: #e0bbc3;
-  padding-bottom: calc(env(safe-area-inset-bottom) + 10rpx);
-  padding-bottom: calc(constant(safe-area-inset-bottom)+ 10rpx);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 120rpx);
+  padding-bottom: calc(constant(safe-area-inset-bottom)+ 120rpx);
 }
 .con{
   width: 710rpx;
