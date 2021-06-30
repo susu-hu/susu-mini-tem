@@ -9,7 +9,7 @@
   <view class="movable_delete_btn" data-id="{{item.id}}" bindtap="handleDelete">删除</view>
 </view>
 
-<view class="f">
+<!-- <view class="f">
   <view class="f1">1</view>
   <view class="f1">1</view>
   <view class="f1">1</view>
@@ -19,4 +19,4 @@
   <view class="f1">1</view>
   <view class="f1">1</view>
    <view class="clear"></view>
-</view>
+</view> -->

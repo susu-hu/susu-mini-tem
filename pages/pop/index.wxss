@@ -222,7 +222,7 @@ page{
 .bottom{
   position: fixed;
   z-index: 1111;
-  bottom: 0px;
+  bottom: 0rpx;
   width: 100%;
   height: 120rpx;
   line-height: 120rpx;

@@ -19,10 +19,10 @@ Component({
       selectedIconPath: "/img/tabbar/icon_safe_sel.png",
       text: "卡券"
     }, {
-      pagePath: "/pages/pop/index",
+      pagePath: "/pages/touchMove2/index",
       iconPath: "/img/tabbar/icon_my.png",
       selectedIconPath: "/img/tabbar/icon_my_sel.png",
-      text: "弹框"
+      text: "滑动删除"
     }]
   },
   attached() {
