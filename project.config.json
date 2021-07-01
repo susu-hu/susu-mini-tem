@@ -65,8 +65,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/addImg/index",
-          "pathName": "pages/addImg/index",
+          "name": "pages/sendCode/index",
+          "pathName": "pages/sendCode/index",
           "query": "",
           "scene": null
         },

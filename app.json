@@ -11,7 +11,8 @@
     "pages/pie/index",
     "pages/charts/index",
     "pages/addImg/index",
-    "pages/getStar/index"
+    "pages/getStar/index",
+    "pages/sendCode/index"
   ],
   "tabBar": {
     "custom": true,

@@ -1,0 +1,24 @@
+<!--pages/sendCode/index.wxml-->
+<view class="con">
+  <view class="title">请输入<text>{{phone}}</text>收到的短信验证码</view>
+  <view class="code">
+    <input type="number" placeholder="请输入6位验证码"  value="{{code}}" bindinput="int" maxlength='6'
+      bindfocus='getFocus' bindblur="getBlur" focus="true"></input>
+    <view class="code_show">
+      {{code}}
+      <view class="code_line01"></view>
+      <view class="code_line02"></view>
+    </view>
+    <view class="placeHolder" hidden="{{!isShow}}">请输入6位验证码</view>
+  </view>
+  <view class="get_text {{isClick?'countdown':''}}" bindtap="sendCode">{{CodeText}}</view>
+</view>
+
+<view class="btn {{isCan?'':'no-btn'}}" bindtap="submit">确定</view>
+
+
+
+
+<view class="input_2">
+  <input type="number" placeholder="请输入6位验证码"  class="input" value="{{code}}" maxlength='6'></input>
+</view>

@@ -1,8 +1,8 @@
 /* pages/cardCricle/index.wxss */
 page{
   background: #e0bbc3;
-  padding-bottom: calc(env(safe-area-inset-bottom) + 120rpx);
-  padding-bottom: calc(constant(safe-area-inset-bottom)+ 120rpx);
+  /* padding-bottom: calc(env(safe-area-inset-bottom) + 120rpx);
+  padding-bottom: calc(constant(safe-area-inset-bottom)+ 120rpx); */
 }
 .con{
   width: 710rpx;
@@ -171,4 +171,8 @@ page{
   background: #e0bbc3;
   right: 0;
   bottom: -20rpx;
+}
+
+.up_kong{
+  height: 120rpx;
 }

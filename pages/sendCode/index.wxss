@@ -1,0 +1,165 @@
+/* pages/sendCode/index.wxss */
+page{
+  background: #fff;
+}
+.con {
+  padding: 80rpx 0 20rpx;
+  font-size: 28rpx;
+  color: #333333;
+  background: #fff;
+}
+
+/* 标题 */
+.title {
+  margin-bottom: 88rpx;
+  text-align: center;
+}
+.title text{
+  color:#e4899c;
+}
+
+/* 输入框 */
+.code {
+  position: relative;
+}
+
+.code input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  line-height: 45rpx;
+  height: 100rpx;
+  text-align: left;
+  font-size: 48rpx;
+  z-index: 100;
+  opacity: 0;
+}
+
+.code_show {
+  position: relative;
+  width: 72%;
+  line-height: 50rpx;
+  height: 50rpx;
+  margin: 0 auto;
+  padding-bottom: 25rpx;
+  text-align: left;
+  font-size: 36rpx;
+  color: #333;
+  letter-spacing: 80rpx;
+}
+
+.code_line01 {
+  position: absolute;
+  left: -8rpx;
+  bottom: 0;
+  width: 40rpx;
+  height: 4rpx;
+  background: #D8D8D8;
+  z-index: 10;
+}
+
+.code_line01::after {
+  content: "";
+  position: absolute;
+  left: 100rpx;
+  bottom: 0;
+  width: 40rpx;
+  height: 4rpx;
+  background: #D8D8D8;
+  z-index: 10;
+}
+
+.code_line01::before {
+  content: "";
+  position: absolute;
+  left: 200rpx;
+  bottom: 0;
+  width: 40rpx;
+  height: 4rpx;
+  background: #D8D8D8;
+  z-index: 10;
+}
+
+.code_line02 {
+  position: absolute;
+  left: 295rpx;
+  bottom: 0;
+  width: 40rpx;
+  height: 4rpx;
+  background: #D8D8D8;
+  z-index: 10;
+}
+
+.code_line02::after {
+  content: "";
+  position: absolute;
+  left: 100rpx;
+  bottom: 0;
+  width: 40rpx;
+  height: 4rpx;
+  background: #D8D8D8;
+  z-index: 10;
+}
+
+.code_line02::before {
+  content: "";
+  position: absolute;
+  left: 200rpx;
+  bottom: 0;
+  width: 40rpx;
+  height: 4rpx;
+  background: #D8D8D8;
+  z-index: 10;
+}
+
+.get_text {
+  height: 85rpx;
+  margin-top: 20rpx;
+  line-height: 85rpx;
+  font-size: 24rpx;
+  color: #e4899c;
+  text-align: center;
+}
+
+.countdown {
+  color: #999999;
+}
+
+.placeHolder {
+  position: absolute;
+  bottom: 32rpx;
+  left: 0;
+  width: 100%;
+  font-size: 48rpx;
+  color: #CCCCCC;
+  text-align: center;
+}
+
+
+/* 提交按钮 */
+.btn {
+  margin: 40rpx 30rpx 0 30rpx;
+  height: 84rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 84rpx;
+  background: #e4899c;
+  border-radius: 42rpx;
+}
+
+.no-btn {
+  background: #e0bbc3;
+}
+
+/* input2 */
+.input_2{
+  margin: 30rpx auto;
+  text-align: center;
+}
+.input{
+  padding-bottom: 30rpx;
+  letter-spacing: 30rpx;
+  color:red;
+}
