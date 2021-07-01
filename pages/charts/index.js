@@ -22,16 +22,19 @@ Page({
     this.getData(); //获取数据
   },
   getData(){
-    this.echartsComponnet.init((canvas, width, height) => {
+    this.echartsComponnet.init((canvas, width, height,dpr) => {
       // 初始化图表
       const Chart = echarts.init(canvas, null, {
         width: width,
-        height: height
+        height: height,
+        devicePixelRatio: dpr
       });
       Chart.setOption(this.getOption());
       // 注意这里一定要返回 chart 实例，否则会影响事件处理等
+      console.log(!null)
       return Chart;
-    },{devicePixelRatio: 2.5});
+      
+    });
   },
   getOption(){
     var option = {

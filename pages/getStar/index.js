@@ -8,35 +8,25 @@ Page({
     stars:[
       {
         flag:1,
-        bgImg: "/img/star.png",
-        bgfImg: "/img/star-o.png"
       },
       {
         flag: 1,
-        bgImg: "/img/star.png",
-        bgfImg: "/img/star-o.png"
       },
       {
         flag: 1,
-        bgImg: "/img/star.png",
-        bgfImg: "/img/star-o.png"
       },
       {
         flag: 1,
-        bgImg: "/img/star.png",
-        bgfImg: "/img/star-o.png"
       },
       {
         flag: 1,
-        bgImg: "/img/star.png",
-        bgfImg: "/img/star-o.png"
       }
     ],
     re_list:['极好','较好','一般','较差','很差'],
     chosedStar:0,//星星的等级
 
   },
-  score:function(e){
+  checkScore(e){
     this.data.stars.forEach(item=>{
       item.flag=1
       this.setData({

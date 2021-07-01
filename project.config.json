@@ -65,14 +65,20 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/pop/index",
-          "pathName": "pages/pop/index",
+          "name": "pages/addImg/index",
+          "pathName": "pages/addImg/index",
           "query": "",
           "scene": null
         },
         {
           "name": "pages/cardCricle/index",
           "pathName": "pages/cardCricle/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/getStar/index",
+          "pathName": "pages/getStar/index",
           "query": "",
           "scene": null
         }
