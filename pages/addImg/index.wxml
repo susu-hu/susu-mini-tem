@@ -1,0 +1,40 @@
+<!--pages/addImg/index.wxml-->
+<view class="top">
+  <image src="/img/v_bg.png" class="bg_img"></image>
+  <view class="top_con flex col j_b">
+    <view class="top1 flex-row">
+      <image src="/img/v1.png" class="v1_img"></image>
+      <text>上海80后奶爸（九亭店）</text>
+    </view>
+    <view>
+      <view class="flex-row itm1">
+        <image src="/img/v2.png" class="v1_img"></image>
+        <text>张三 （13390913412）</text>
+      </view>
+      <view class="flex-row">
+        <image src="/img/v3.png" class="v1_img"></image>
+        <text>江苏省南京市雨花台区楚翘城2号楼</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="con">
+  <text class="title">点击拍照</text>
+  <view class="photo_on" wx:if="{{!imgUrl}}">
+    <image src="/img/add.png" class="p_img" mode="aspectFill"catchtap="chooseImg" ></image>
+  </view>
+  <view class="photo_on" wx:else  catchtap="previewImg"  data-src="{{imgUrl}}">
+    <image src="{{imgUrl}}" class="imgurl"></image>
+  </view>
+</view>
+
+
+<view class="bottom" wx:if="{{!imgUrl}}">
+  <view class="btn">确认保存</view>
+</view>
+
+<view class="bottom1 flex-row j_b" wx:else>
+  <view class="btn1">删除重拍</view>
+  <view class="btn1">确认保存</view>
+</view>

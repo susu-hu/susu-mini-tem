@@ -31,7 +31,7 @@ Page({
       Chart.setOption(this.getOption());
       // 注意这里一定要返回 chart 实例，否则会影响事件处理等
       return Chart;
-    });
+    },{devicePixelRatio: 2.5});
   },
   getOption(){
     var option = {

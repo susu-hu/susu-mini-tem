@@ -9,7 +9,9 @@
     "pages/pop/index",
     "pages/cardCricle/index",
     "pages/pie/index",
-    "pages/charts/index"
+    "pages/charts/index",
+    "pages/addImg/index",
+    "pages/getStar/index"
   ],
   "tabBar": {
     "custom": true,
@@ -44,12 +46,7 @@
       }
     ]
   },
-
-  "usingComponents": {
-    
-  },
-
-  
+  "usingComponents": {},
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

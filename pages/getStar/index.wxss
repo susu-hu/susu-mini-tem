@@ -1,0 +1,59 @@
+/* pages/getStar/index.wxss */
+
+.stars{
+  padding:85rpx 0 60rpx 273rpx;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1rpx solid #ececec;
+  background-color: #fff;
+}
+.stars image{
+  width: 190rpx;
+  height: 190rpx;
+  border: 1rpx solid #000;
+  position: absolute;
+  top: 41rpx;
+  left: 36rpx;
+}
+.stars .content view{
+  font-size: 32rpx;
+  color: #4a4a4a;
+}
+.stars .content>view:last-of-type{
+  height: 40rpx;
+  margin-top: 48rpx;
+}
+.stars .content>view:last-of-type view{
+  float: left;
+  width: 42rpx;
+  height: 42rpx;
+  margin-right: 25rpx;
+  background-size: 100% 100%;
+}
+
+
+.review_list{
+  flex-wrap: wrap;
+  margin-top: 57rpx;
+}
+.item{
+  width: 160rpx;
+  height: 50rpx;
+  background: #FFEAD4;
+  border: 1rpx solid #FF911A;
+  border-radius: 25rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #FF911A;
+  line-height:50rpx;
+  text-align: center;
+  margin-right: 79rpx;
+  margin-bottom: 48rpx;
+}
+.item:nth-child(3n){
+  margin-right:0;
+}
+.chosed{
+  background: #FF911A;
+  color: #fff;
+}

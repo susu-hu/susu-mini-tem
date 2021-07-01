@@ -1,0 +1,20 @@
+<!--pages/getStar/index.wxml-->
+<view class="container">
+  <view class='stars'>
+    <image src=''></image>
+    <view class='content'>
+      <view>评分</view>
+      <view>
+        <view wx:for="{{stars}}" wx:key="as" style='background:url("{{item.flag==1?item.bgImg:item.bgfImg}}") no-repeat top; background-size:100%;' data-index="{{index}}" bindtap='score'></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="flex-row review_list">
+   <block wx:for="{{re_list}}" wx:key="index">
+    <view class="item {{chosedStar==index+1?'chosed': ''}}" data-index="{{index}}" bindtap='scoreReview'>{{item}}</view>
+   </block>
+  </view>
+
+</view>
+

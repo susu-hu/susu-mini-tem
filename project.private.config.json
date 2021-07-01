@@ -13,14 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/charts/index",
-          "pathName": "pages/charts/index",
+          "name": "pages/addImg/index",
+          "pathName": "pages/addImg/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/cardCricle/index",
-          "pathName": "pages/cardCricle/index",
+          "name": "pages/getStar/index",
+          "pathName": "pages/getStar/index",
           "query": "",
           "scene": null
         }
