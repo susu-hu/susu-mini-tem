@@ -12,7 +12,7 @@
 
   <view class="flex-row review_list">
    <block wx:for="{{re_list}}" wx:key="index">
-    <view class="item {{chosedStar==index+1?'chosed': ''}}" data-index="{{index}}" bindtap='scoreReview'>{{item}}</view>
+    <view class="item {{chosedStar==index+1?'chosed': ''}}" data-index="{{4-index}}" bindtap='score'>{{item}}</view>
    </block>
   </view>
 
