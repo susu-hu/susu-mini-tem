@@ -174,5 +174,5 @@ page{
 }
 
 .up_kong{
-  height: 120rpx;
+  height: 190rpx;
 }

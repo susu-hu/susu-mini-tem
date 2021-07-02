@@ -2,8 +2,8 @@
 <view class="con">
   <view class="title">请输入<text>{{phone}}</text>收到的短信验证码</view>
   <view class="code">
-    <input type="number" placeholder="请输入6位验证码"  value="{{code}}" bindinput="int" maxlength='6'
-      bindfocus='getFocus' bindblur="getBlur" focus="true"></input>
+    <input type="number" placeholder=""  value="{{code}}" bindinput="int" maxlength='6'
+      bindfocus='getFocus' bindblur="getBlur" focus="true" confirm-type="done"></input>
     <view class="code_show">
       {{code}}
       <view class="code_line01"></view>
@@ -20,5 +20,8 @@
 
 
 <view class="input_2">
-  <input type="number" placeholder="请输入6位验证码"  class="input" value="{{code}}" maxlength='6'></input>
+  <view class="input">{{code}}</view>
+  <view class="flex-row i1" >
+    <view class="line" wx:for="{{6}}"></view>
+  </view>
 </view>

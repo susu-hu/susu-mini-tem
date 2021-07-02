@@ -26,7 +26,8 @@ page{
 .code input {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 200%;
+  left:-300rpx;
   line-height: 45rpx;
   height: 100rpx;
   text-align: left;
@@ -34,7 +35,6 @@ page{
   z-index: 100;
   opacity: 0;
 }
-
 .code_show {
   position: relative;
   width: 72%;
@@ -155,11 +155,26 @@ page{
 
 /* input2 */
 .input_2{
-  margin: 30rpx auto;
-  text-align: center;
+  margin: 80rpx auto;
+  text-align: left;
 }
 .input{
   padding-bottom: 30rpx;
-  letter-spacing: 30rpx;
-  color:red;
+  letter-spacing: 93rpx;
+  color: pink;
+  width: 76%;
+  margin: 0 auto;
+}
+.input_2 :last-of-type .input{
+  letter-spacing: 0
+}
+.i1{
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.line{
+  width: 40rpx;
+  height: 2rpx;
+  background: #D8D8D8;
 }
