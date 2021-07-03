@@ -25,3 +25,6 @@
     <view class="line" wx:for="{{6}}"></view>
   </view>
 </view>
+
+
+<view class="last_tip" catchtap="tocode2">下一个样式</view>

@@ -1,0 +1,27 @@
+<!--pages/sendCode2/index.wxml-->
+<view class="con">
+  <view class="title">请输入<text>{{phone}}</text>收到的短信验证码</view>
+
+
+  <form bindsubmit="formSubmit">
+
+    <view class='content'>
+      <block wx:for="{{Length}}" wx:key="item">
+        <input class='iptbox' value="{{Value.length>=index+1?Value[index]:''}}" disabled password='{{ispassword}}' catchtap='Tap'></input>
+      </block>
+    </view>
+
+    <input name="password" password="{{ispassword}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" value="{{Value}}" bindinput="getVaule"></input>
+    <view class="btn {{isCan?'':'no-btn'}}" bindtap="submit">确定</view>
+  </form>
+
+</view>
+
+
+<view class="copy">
+  <view>复制粘贴</view>
+  <view class="code" bindtap='copy'>{{copyCode}}</view>
+  <!-- <text user-select='true' bindlongtap='copy'>这是一段可以复制的文本</text> -->
+</view>
+
+<!-- <input placeholder="请输入" adjust-position="true"/> -->

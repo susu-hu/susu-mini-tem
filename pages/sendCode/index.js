@@ -101,5 +101,9 @@ Page({
       this.countDown();//倒计时
     }
   },
-
+  tocode2(){
+    wx.navigateTo({
+      url: '/pages/sendCode2/index',
+    })
+  }
 })

@@ -178,3 +178,17 @@ page{
   height: 2rpx;
   background: #D8D8D8;
 }
+.last_tip{
+  display: inline-block;
+  width: 200rpx;
+  height:60rpx;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 60rpx;
+  background: #e4899c;
+  border-radius:30rpx;
+  position: relative;
+  left: 50%;
+  margin-left: -100rpx;
+}

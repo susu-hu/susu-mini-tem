@@ -77,8 +77,8 @@
           "scene": null
         },
         {
-          "name": "pages/getStar/index",
-          "pathName": "pages/getStar/index",
+          "name": "pages/sendCode2/index",
+          "pathName": "pages/sendCode2/index",
           "query": "",
           "scene": null
         }

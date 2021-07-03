@@ -1,0 +1,77 @@
+/* pages/sendCode2/index.wxss */
+page{
+  background: #fff;
+}
+.con {
+  padding: 80rpx 0 20rpx;
+  font-size: 28rpx;
+  color: #333333;
+  background: #fff;
+}
+/* 标题 */
+.title {
+  margin-bottom: 88rpx;
+  text-align: center;
+}
+.title text{
+  color:#e4899c;
+}
+
+
+
+/*  */
+
+.content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 150rpx auto 0;
+  width: 700rpx;
+}
+.iptbox{
+  width: 80rpx;
+  height: 80rpx;
+  border:1rpx solid #ddd;
+  border-radius: 20rpx;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+}
+.ipt{
+  width: 200%;
+  height: 80rpx;
+  position: absolute;
+  top: 270rpx;
+  /* left:-300rpx; */
+  opacity: 0;
+}
+
+/* btn */
+/* 提交按钮 */
+.btn {
+  margin: 80rpx 30rpx 0 30rpx;
+  height: 84rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 84rpx;
+  background: #e4899c;
+  border-radius: 42rpx;
+}
+
+.no-btn {
+  background: #e0bbc3;
+}
+.copy{
+  margin: 150rpx auto;
+  text-align:center;
+  font-size: 28rpx;
+  color: #333333;
+}
+.code{
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+  font-size: 40rpx;
+}
