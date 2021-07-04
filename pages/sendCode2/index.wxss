@@ -48,9 +48,12 @@ page{
   height: 80rpx;
   position: absolute;
   top:0rpx;
-  /* color:#fff;
-  z-index:-1; */
-  left:-300rpx;
+  /* left:41rpx; */
+  left:-300rpx;/* 通过定位隐藏*/
+  color: transparent;/* input文字为透明 */
+  /* text-shadow:0 0 0 #fff; */
+  caret-color: transparent;
+  /* 微信小程序不支持改变光标颜色 真机无用 */
   /* opacity: 0; 真机无用*/
 }
 

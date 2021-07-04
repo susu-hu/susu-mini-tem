@@ -11,7 +11,8 @@ Page({
     Value:"",        //输入的内容
     ispassword:false, //是否密文显示 true为密文， false为明文。
     isCan: false, //是否可以提交
-    copyCode:'234238'
+    copyCode:'234238',
+    currentIndex:0,
   },
   getVaule(e){
     var value = e.detail.value;

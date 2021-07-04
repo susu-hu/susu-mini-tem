@@ -2,19 +2,17 @@
 <view class="con">
   <view class="title">请输入<text>{{phone}}</text>收到的短信验证码</view>
 
-
   <view class="code_box">
 
-    <view class='content'>
+    <view class='content' >
       <block wx:for="{{Length}}" wx:key="item">
         <input class='iptbox' value="{{Value.length>=index+1?Value[index]:''}}" disabled password='{{ispassword}}' catchtap='Tap'></input>
       </block>
     </view>
 
-    <input name="password" password="{{ispassword}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" value="{{Value}}" bindinput="getVaule" ></input>
+    <input name="password" password="{{ispassword}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" value="{{Value}}" bindinput="getVaule"></input>
     <view class="btn {{isCan?'':'no-btn'}}" bindtap="submit">确定</view>
   </view>
-
 </view>
 
 
