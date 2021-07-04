@@ -27,7 +27,7 @@ movable-area组件实现滑动删除
 10. echarts官方推荐小程序使用的ec-canvas组件和echarts.js
 11. 自定义tabbar组件，cover-view进行覆盖
 12. 星星评分 1-5颗星 分别对应'极好','较好','一般','较差','很差'，点星星字段产生变化  点字段星星变化
-13. 自定义input输入框的样式 
+13. 自定义input输入框的样式 （粘贴的时候无法实现长按粘贴 待完善的bug）
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0611/134711_a94e772a_8576727.png "屏幕截图.png")
