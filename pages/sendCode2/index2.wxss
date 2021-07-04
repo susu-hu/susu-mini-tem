@@ -1,72 +1,91 @@
 /* pages/sendCode2/index2.wxss */
+page{
+  background: #fff;
+}
+.con {
+  padding: 80rpx 0 20rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+.title {
+  margin-bottom: 28rpx;
+  text-align: center;
+}
+.title text{
+  color:#e4899c;
+}
 
-
-.ys-verification {
-  width: 100%;
-  height: 80px;
+.v_code {
+  width: 75%;
+  height: 100rpx;
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
 }
 
-.ys-verification .input-wrapper {
+.v_code .input-wrapper {
   border-bottom: 1px solid #d6d6d6;
-  width: 15%;
-  height: 0;
-  padding-bottom: 20%;
+  width: 10%;
+  padding-bottom: 20rpx;
   position: relative;
+  height: 80rpx;
 }
 
-.ys-verification input {
+.v_code input {
   position: absolute;
   width: 100%;
   height: 100%;
   text-align: center;
   transition: all 0.3s;
-  font-size: 7vw;
+  font-size: 30rpx;
   color: #333;
 }
 
-.ys-verification input:focus {
-  border-bottom: 1px solid #666;
+.v_code .has{
+  border-bottom: 1px solid #e4899c;
 }
 
 
 
-/* 另一个 */
-.yanzhengma {
-
+/* yzm */
+.c_code {
+  margin-top: 50rpx;
   height: 100rpx;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
+}
+.c_code .left {
+  font-family: Arial;
+  font-style: italic;
+  font-weight: bold;
+  border: 0;
+  letter-spacing: 3px;
+  font-size: 18px;
+  background-color: #ccc;
+  padding: 10rpx;
+  margin-right: 20rpx;
+  color: #e4899c;
+}
+.right{
+  font-size: 30rpx;
+  color: #333;
 }
 
+/* 提交按钮 */
+.btn {
+  margin: 80rpx auto;
+  height: 84rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 84rpx;
+  background: #e4899c;
+  border-radius: 42rpx;
+  width: 600rpx;
+}
 
-
-.yanzhengma .left {
-
-  font-family: Arial;
-
-  font-style: italic;
-
-  font-weight: bold;
-
-  border: 0;
-
-  letter-spacing: 3px;
-
-  font-size: 18px;
-
-  background-color: #ccc;
-
-  padding: 10rpx;
-
-  margin-right: 20rpx;
-
-  color: blue;
-
+.no-btn {
+  background: #e0bbc3;
 }

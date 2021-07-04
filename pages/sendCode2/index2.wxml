@@ -1,13 +1,21 @@
 <!--pages/sendCode2/index2.wxml-->
-<view class="ys-verification">
+<view class="con">
+  <view class="title">请输入<text>{{phone}}</text>收到的短信验证码</view>
+
+</view>
+
+
+<view class="v_code">
   <view class="input-wrapper" wx:for="{{amount}}" wx:key="index">
-    <input type="text" value="{{code[index]}}" data-index="{{item}}" title="code" focus="{{item === currentIndex}}" maxlength="1" bindinput='handleInput'/>
+    <input type="text" value="{{code[index]}}" class="{{code[index]?'has':''}}" data-index="{{item}}" title="code" focus="{{item === currentIndex}}" maxlength="1" bindinput='handleInput'/>
   </view>
 </view>
 
 
 
-<view class='yanzhengma'>
+<view class='c_code'>
   <text class='left'>{{code2}}</text>
-  <text class='right' bindtap='huanyizhang'>换一张</text>
+  <text class='right' bindtap='checkAnother'>换一张</text>
 </view>
+
+<view class="btn {{isCan?'':'no-btn'}}" bindtap="submit">确定</view>

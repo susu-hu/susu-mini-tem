@@ -5,18 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
+    phone:'132****6678',
     amount:6,
     code:[],
     currentIndex:0,
-
-    code2:''
+    code2:'',
+    isCan: false, //是否可以提交
   },
 
   
   onLoad: function (options) {
     this.createCode()
   },
-  huanyizhang(){
+  checkAnother(){
       this.createCode()
   },
   createCode() {
@@ -41,10 +42,14 @@ Page({
   },
   
   onShow: function () {
-
+    var a=['1','2','a']
+    console.log(a.toString(''))
+    console.log(a.toLocaleString(''))
+    console.log(a.join(''))
   },
 
   handleInput(e){
+    console.log(e)
     // let value = this.validateNumber(e.detail.value);
     let value=e.detail.value;
     let index = e.currentTarget.dataset.index;
@@ -54,7 +59,8 @@ Page({
       code[index] = value;
       this.setData({
         code,
-        currentIndex: ++index
+        currentIndex: ++index,
+        isCan:code.length==6?true:false
       });
       if(!code.includes('')){
         this.triggerEvent('onCompleted',{code: code.join('')},{
@@ -68,7 +74,8 @@ Page({
       code[index] = '';
       this.setData({
         code,
-        currentIndex: isDeleted?--index:index
+        currentIndex: isDeleted?--index:index,
+        isCan:code.length==6?true:false
       })
     }
   },
