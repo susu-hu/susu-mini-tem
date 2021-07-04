@@ -25,29 +25,26 @@ Page({
       isFocus:true,
     })
   },
-  formSubmit(e){
-    console.log(e.detail.value.password);
-  },
 
   /**
    * 长按复制
    */
   copy: function (e) {
-    console.log(e);
     wx.setClipboardData({
       data: this.data.copyCode,
       success: function (res) {
         wx.getClipboardData({
           success: function (res) {
-            console.log(res.data)
-            wx.showToast({
-              title: '复制成功'
-            })
+            // wx.showToast({
+            //   title: '复制成功'
+            // })
           }
         });
       }
     });
   },
+ 
+  
   /**
    * 生命周期函数--监听页面加载
    */

@@ -20,7 +20,9 @@ page{
 
 
 /*  */
-
+.code_box{
+  position: relative;
+}
 .content{
   display: flex;
   justify-content: space-around;
@@ -39,12 +41,17 @@ page{
   text-align: center;
 }
 .ipt{
+  /* width:0;
+  height: 0; */
+  /* 长宽为0 可以实现不显示input框 但是无法实现按粘贴 */
   width: 200%;
   height: 80rpx;
   position: absolute;
-  top: 270rpx;
-  /* left:-300rpx; */
-  opacity: 0;
+  top:0rpx;
+  /* color:#fff;
+  z-index:-1; */
+  left:-300rpx;
+  /* opacity: 0; 真机无用*/
 }
 
 /* btn */

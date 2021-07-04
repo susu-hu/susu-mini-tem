@@ -1,0 +1,13 @@
+<!--pages/sendCode2/index2.wxml-->
+<view class="ys-verification">
+  <view class="input-wrapper" wx:for="{{amount}}" wx:key="index">
+    <input type="text" value="{{code[index]}}" data-index="{{item}}" title="code" focus="{{item === currentIndex}}" maxlength="1" bindinput='handleInput'/>
+  </view>
+</view>
+
+
+
+<view class='yanzhengma'>
+  <text class='left'>{{code2}}</text>
+  <text class='right' bindtap='huanyizhang'>换一张</text>
+</view>

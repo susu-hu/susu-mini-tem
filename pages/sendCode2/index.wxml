@@ -3,7 +3,7 @@
   <view class="title">请输入<text>{{phone}}</text>收到的短信验证码</view>
 
 
-  <form bindsubmit="formSubmit">
+  <view class="code_box">
 
     <view class='content'>
       <block wx:for="{{Length}}" wx:key="item">
@@ -11,9 +11,9 @@
       </block>
     </view>
 
-    <input name="password" password="{{ispassword}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" value="{{Value}}" bindinput="getVaule"></input>
+    <input name="password" password="{{ispassword}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" value="{{Value}}" bindinput="getVaule" ></input>
     <view class="btn {{isCan?'':'no-btn'}}" bindtap="submit">确定</view>
-  </form>
+  </view>
 
 </view>
 

@@ -13,7 +13,8 @@
     "pages/addImg/index",
     "pages/getStar/index",
     "pages/sendCode/index",
-    "pages/sendCode2/index"
+    "pages/sendCode2/index",
+    "pages/sendCode2/index2"
   ],
   "tabBar": {
     "custom": true,

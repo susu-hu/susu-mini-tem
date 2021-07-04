@@ -81,6 +81,12 @@
           "pathName": "pages/sendCode2/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/sendCode2/index2",
+          "pathName": "pages/sendCode2/index2",
+          "query": "",
+          "scene": null
         }
       ]
     }
