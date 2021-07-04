@@ -43,13 +43,12 @@ Page({
   
   onShow: function () {
     var a=['1','2','a']
-    console.log(a.toString(''))
-    console.log(a.toLocaleString(''))
+    console.log(a.toString())
+    console.log(a.toLocaleString())
     console.log(a.join(''))
   },
 
   handleInput(e){
-    console.log(e)
     // let value = this.validateNumber(e.detail.value);
     let value=e.detail.value;
     let index = e.currentTarget.dataset.index;
@@ -71,7 +70,8 @@ Page({
     }else{
       const isDeleted = oldValue !== ''; // 但是无法监听当value为''的情况，因为不会触发input事件-->
       let code = this.data.code;
-      code[index] = '';
+      code.splice(index,1)
+      // code[index] = '';
       this.setData({
         code,
         currentIndex: isDeleted?--index:index,
