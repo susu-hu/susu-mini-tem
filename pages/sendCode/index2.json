@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "弹框验证码",
+  "usingComponents": {
+    "verifycode": "/components/v-code/verifycode"
+  }
+}

@@ -13,8 +13,17 @@
     "pages/addImg/index",
     "pages/getStar/index",
     "pages/sendCode/index",
+    "pages/sendCode/index2",
     "pages/sendCode2/index",
     "pages/sendCode2/index2"
+  ],
+  "subPackages":[
+    {
+      "root": "pages/another/",
+      "pages": [
+        "subIndex/index"
+      ]
+    }
   ],
   "tabBar": {
     "custom": true,
@@ -42,10 +51,10 @@
         "text": "卡券"
       },
       {
-        "pagePath": "pages/touchMove2/index",
+        "pagePath": "pages/sendCode/index2",
         "iconPath": "img/tabbar/icon_my.png",
         "selectedIconPath": "img/tabbar/icon_my_sel.png",
-        "text": "滑动删除"
+        "text": "验证码"
       }
     ]
   },

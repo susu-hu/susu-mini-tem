@@ -1,0 +1,11 @@
+<!--pages/sendCode/index2.wxml-->
+<view class="top flex-column">
+  <image src="https://i.postimg.cc/Gm7KjGmN/111.jpg"></image>
+  <text>~欢迎来到苏苏的码云~</text>
+  <text>邀请码：HUSUSU</text>
+
+  <view catchtap="showDialog" class="btn">填写邀请码</view>
+</view>
+
+<!-- 验证码组件 -->
+<verifycode id='verifycode' title="请输入邀请码哈" content="邀请码：HUSUSU" />

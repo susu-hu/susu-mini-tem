@@ -19,10 +19,10 @@ Component({
       selectedIconPath: "/img/tabbar/icon_safe_sel.png",
       text: "卡券"
     }, {
-      pagePath: "/pages/touchMove2/index",
+      pagePath: "/pages/sendCode/index2",
       iconPath: "/img/tabbar/icon_my.png",
       selectedIconPath: "/img/tabbar/icon_my_sel.png",
-      text: "滑动删除"
+      text: "验证码"
     }]
   },
   attached() {

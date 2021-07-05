@@ -9,7 +9,7 @@ Page({
     Length:6,        //输入框个数
     isFocus:true,    //聚焦
     Value:"",        //输入的内容
-    ispassword:false, //是否密文显示 true为密文， false为明文。
+    ispassword:true, //是否密文显示 true为密文， false为明文。
     isCan: false, //是否可以提交
     copyCode:'234238',
     currentIndex:0,

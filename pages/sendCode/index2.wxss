@@ -1,0 +1,28 @@
+/* pages/sendCode/index2.wxss */
+page{
+  background: #fff;
+}
+.top{
+  margin: 300rpx auto 20rpx;
+}
+.top image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.top text{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: rgb(202, 187, 187);
+  margin-bottom: 40rpx;
+}
+.btn{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: rgb(202, 187, 187);
+  width: 200rpx;
+  height: 60rpx;
+  border: 1px solid rgb(202, 187, 187);
+  text-align:center;
+  line-height:60rpx;
+}

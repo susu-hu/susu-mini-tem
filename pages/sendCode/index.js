@@ -75,6 +75,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var mPhone = this.data.phone.substr(0, 3) + '****' + this.data.phone.substr(7); 
+    this.setData({
+      phone:mPhone
+    })
 
   },
   submit: function () {

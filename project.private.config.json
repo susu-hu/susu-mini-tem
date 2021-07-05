@@ -13,14 +13,20 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/addImg/index",
-          "pathName": "pages/addImg/index",
+          "name": "pages/sendCode2/index2",
+          "pathName": "pages/sendCode2/index2",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/sendCode/index",
-          "pathName": "pages/sendCode/index",
+          "name": "pages/sendCode/index2",
+          "pathName": "pages/sendCode/index2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/another/subIndex/index",
+          "pathName": "pages/another/subIndex/index",
           "query": "",
           "scene": null
         }
