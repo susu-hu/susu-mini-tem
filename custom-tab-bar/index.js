@@ -14,10 +14,10 @@ Component({
       selectedIconPath: "/img/tabbar/icon_order_sel.png",
       text: "饼图"
     }, {
-      pagePath: "/pages/cardCricle/index",
+      pagePath: "/pages/addImg/index",
       iconPath: "/img/tabbar/icon_safe.png",
       selectedIconPath: "/img/tabbar/icon_safe_sel.png",
-      text: "卡券"
+      text: "上传图片"
     }, {
       pagePath: "/pages/sendCode/index2",
       iconPath: "/img/tabbar/icon_my.png",

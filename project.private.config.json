@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "pages/another/subIndex/index",
-          "pathName": "pages/another/subIndex/index",
+          "name": "pages/addImg/index",
+          "pathName": "pages/addImg/index",
           "query": "",
           "scene": null
         }

@@ -1,0 +1,15 @@
+<view class="con">
+  <text class="title">上传照片</text>
+  <view class="flex-row img_list">
+    <block wx:for="{{imgList}}" wx:key="index">
+      <view class="item_img"> 
+        <image src="{{item}}" class="img_item" mode="aspectFill" catchtap="previewImg"  data-src="{{item}}" ></image>
+        <image src="/img/close1.png" class="close" catchtap="deleteUpload" data-index="{{index}} "></image>
+      </view>
+    </block>
+    <view class="item_img1 flex-column" catchtap="chooseImg"  wx:if="{{show}}">
+      <image src="/img/add.png" class="add_img" mode="aspectFill"></image>
+      <text>{{imgList.length}}/{{maxPhoto}}</text>
+    </view>
+  </view>
+</view>
