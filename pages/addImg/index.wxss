@@ -50,9 +50,9 @@ page{
 }
 
 .close{
-  width: 20rpx;
-  height: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
   position: absolute;
-  top: -10rpx;
-  right: -10rpx;
+  top: -15rpx;
+  right: -15rpx;
 }

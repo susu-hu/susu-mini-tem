@@ -1,6 +1,6 @@
 <!--components/verifycode/verifycode.wxml-->
 <view class='wx-verify-bg' hidden="{{!isShow}}">
-  <input class="key-input" value='{{inputValue}}' type='number' adjust-position="true" confirm-type="done" focus="{{isFocus}}" bindinput="listenKeyInput"/>  
+  <input class="key-input" value='{{inputValue}}' type='text' adjust-position="true" confirm-type="done" focus="{{isFocus}}" bindinput="listenKeyInput"/>  
   <view class='wx-mask'></view>
   <view class='verify-view'>
     <image src='{{src}}' mode='aspectFill' class='icon' catchtap='closeView'></image>
