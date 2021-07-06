@@ -1,0 +1,40 @@
+/* pages/dots/index2.wxss */
+/*轮播图*/
+swiper {
+  height: 783rpx;
+}
+.swiper-item {
+  border-radius: 0;
+}
+.slide-image {
+  display: block;
+  width: 100%;
+  height: 783rpx;
+}
+/* 指示点距离底部的距离 */
+.swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: 110rpx;
+  /* display: flex; */
+}
+
+.swiper-box .wx-swiper-dot {
+  display: inline-flex;
+  /*inline-flex表示 将对象作为内联弹性伸缩盒显示 等同于给父级元素添加display：flex*/
+  margin-left: -8rpx;
+  justify-content: space-between;
+}
+
+.swiper-box .wx-swiper-dot::before {
+  content: '';
+  flex-grow: 1;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 8rpx;
+  width: 16rpx;
+}
+
+.swiper-box .wx-swiper-dot-active {
+  width: 60rpx;
+  border-radius: 8rpx;
+  background: #fff;
+  opacity: 0.57;
+}

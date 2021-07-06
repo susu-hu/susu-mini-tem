@@ -12,9 +12,9 @@ Page({
     goodsInfo:{
       imgList:[
         'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-        'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-        'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-        'https://i.postimg.cc/Bn1XpkSn/susu.jpg'
+        'https://i.postimg.cc/Gm7KjGmN/111.jpg',
+        'https://i.postimg.cc/Bv28vfkg/222.webp',
+        'https://i.postimg.cc/65STLQNc/333.webp'
       ]
     }
 

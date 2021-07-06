@@ -1,0 +1,7 @@
+<!--pages/dots/index2.wxml-->
+<swiper class="swiper-box" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}"
+  circular="true">
+  <swiper-item wx:for="{{imgList}}" wx:key="index">
+    <image src="{{item}}" class="slide-image"></image>
+  </swiper-item>
+</swiper>

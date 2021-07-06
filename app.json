@@ -15,9 +15,11 @@
     "pages/sendCode/index",
     "pages/sendCode/index2",
     "pages/sendCode2/index",
-    "pages/sendCode2/index2"
+    "pages/sendCode2/index2",
+    "pages/choseAddress/index",
+    "pages/dots/index2"
   ],
-  "subPackages":[
+  "subPackages": [
     {
       "root": "pages/another/",
       "pages": [

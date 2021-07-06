@@ -19,14 +19,14 @@
           "scene": null
         },
         {
-          "name": "pages/sendCode/index2",
-          "pathName": "pages/sendCode/index2",
+          "name": "pages/another/subIndex/index",
+          "pathName": "pages/another/subIndex/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/addImg/index",
-          "pathName": "pages/addImg/index",
+          "name": "pages/dots/index2",
+          "pathName": "pages/dots/index2",
           "query": "",
           "scene": null
         }

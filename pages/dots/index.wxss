@@ -24,13 +24,21 @@
 }
 .dot{
   width: 60rpx;
-  height: 4rpx;
+  height: 8rpx;
   background: #ECECEC;
   border-radius: 2rpx;
+  margin-right: 8rpx;
+}
+.dot:last-child{
+  margin-right: 0rpx;
 }
 .active{
   width: 60rpx;
-  height: 4rpx;
+  height: 8rpx;
   background: #e047b2;
   border-radius: 2rpx;
+  margin-right: 8rpx;
+}
+.active:last-child{
+  margin-right: 0rpx;
 }
