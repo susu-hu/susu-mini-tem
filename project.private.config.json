@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/sendCode2/index2",
-          "pathName": "pages/sendCode2/index2",
+          "name": "pages/choseList/index",
+          "pathName": "pages/choseList/index",
           "query": "",
           "scene": null
         },

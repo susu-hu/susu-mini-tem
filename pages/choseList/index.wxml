@@ -1,0 +1,83 @@
+<!--pages/choseList/index.wxml-->
+<view class="head">
+  <view class="top">
+    <view class="head_month">
+      <picker mode="date" value="{{date}}" start="2017-01" end="{{endDate}}" bindchange="bindDateChange" fields="month">
+        <view class="picker">
+          {{date}}
+          <image src="/img/cusOrder01.png"></image>
+        </view>
+      </picker>
+    </view>
+    <view class="head_input">
+      <image src="/img/search_icon.png" class="search_icon"></image>
+      <input type="text" placeholder="快速搜索活动名称" placeholder-class="place_holder" bindconfirm="getSearch" value="{{search}}"></input>
+    </view>
+    <view class="sha_icon" catchtap="showDialog">筛选</view>
+  </view>
+  <view class="top_tab">
+    <scroll-view class="tabbar" scroll-x>
+      <view class="tabbar_li {{type == index ? 'tabbar_li_on' : ''}}" wx:for="{{navList}}" wx:key="key"
+        data-index="{{index}}" bindtap="tabNav">{{item}}</view>
+    </scroll-view>
+  </view>
+</view>
+<view wx:if="{{hasData}}" class="con">
+  <block wx:for="{{5}}" wx:key="index">
+    <view class="item">
+      <view class="flex-row j_b item_con">
+        <text class="item1">名称: <text class="m_value">爱婴岛（楚翘城店）端午奶粉大促0603</text></text>
+        <text class="m_status">已完成</text>
+      </view>
+      <view class="item_con">
+        <text class="item1">类型: <text class="m_value">线下妈妈班</text></text>
+      </view>
+      <view class="item_con">
+        <text class="item1">时间: <text class="m_value">2021-6-23</text></text>
+      </view>
+      <view class="item_con">
+        <text class="item1">申请人: <text class="m_value">VEN</text></text>
+      </view>
+    </view>
+  </block>
+
+</view>
+<view wx:else class="no_data">
+    <image src="/img/no-manage.png" class="n_img"></image>
+    <view class="text_tip">暂无管理记录</view>
+</view>
+<!-- 筛选弹框 -->
+<view  hidden="{{showDialog}}">
+  <view class='mask' bindtap="closePop"></view>
+  <view class="dialog"> 
+    <scroll-view scroll-y style="height:80%">
+      <view class="main_con">
+        <block wx:for="{{choseList}}" wx:key="index" wx:for-item="item" wx:for-index="index" >
+          <view class="dialog_item">
+            <view class="flex-row j_b d_title">
+              <text class="d_name">{{item.name}}:</text>
+              <view class="d_status" wx:if="{{item.isMore}}" catchtap="showMore" data-index="{{index}}">
+                展开<image src="/img/open_up.png" class="zhank_icon"></image>
+              </view>
+              <view class="d_status" wx:if="{{item.isMore!=undefined && !item.isMore}}" catchtap="showMore"data-index="{{index}}">
+                收起<image src="/img/clolse_down.png" class="zhank_icon"></image>
+              </view>
+            </view>
+            <view class="flex d_chose">
+              <block wx:for="{{item.list}}" wx:key="index"  wx:for-index="index1" wx:for-item="item1">
+                <view class="d_item {{item.isMore?'d_item_none':''}} {{index1==chosedType?'chosed':''}}" catchtap="choseOne" data-index="{{index1}}">{{item1.value}}</view>
+              </block>
+            </view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+    <view class="d_bottom">
+      <view class="d_view">
+        <view class="line"></view>
+        <view class="btn_text">重置</view>
+        <view class="btn_text">确认</view>
+      </view>
+    </view>
+  </view>
+</view>

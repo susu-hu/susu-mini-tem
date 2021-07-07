@@ -17,7 +17,8 @@
     "pages/sendCode2/index",
     "pages/sendCode2/index2",
     "pages/choseAddress/index",
-    "pages/dots/index2"
+    "pages/dots/index2",
+    "pages/choseList/index"
   ],
   "subPackages": [
     {

@@ -54,3 +54,6 @@ page {
 .col{
   flex-direction: column;
 }
+.flex{
+  display: flex;
+}
