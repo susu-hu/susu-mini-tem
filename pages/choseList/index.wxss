@@ -82,14 +82,15 @@
   text-align: center;
   font-size: 26rpx;
   color: #666;
-  margin-right: 53rpx;
+  margin-right: 49rpx;
+  min-width: 75rpx;
 }
 .tabbar_li:last-child{
   margin-right: 0;
 }
 
 .tabbar_li_on {
-  color: #3696FA;
+  color: #e0bbc3;
   position: relative;
 }
 
@@ -101,42 +102,13 @@
   margin-left: -30rpx;
   width: 60rpx;
   height: 6rpx;
-  background: #3696FA;
+  background: #e0bbc3;
   border-radius: 3rpx;
 }
 /* con */
 .con{
   margin: 204rpx auto;
 }
-.item{
-  width: 750rpx;
-  background: #FFFFFF;
-  margin-bottom: 12rpx;
-  box-sizing: border-box;
-  padding: 28rpx 25rpx 27rpx 22rpx;
-  font-size: 24rpx;
-  font-weight: 400;
-  color: #999;
-}
-.item1{
-  width: 500rpx;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.m_value{
-  color: #333;
-}
-.m_status{
-  color: #3696FA;
-}
-.item_con{
-  margin-bottom:18rpx ;
-}
-.item_con:last-child{
-  margin-bottom:0 ;
-}
-
 /* nodata */
 .no_data{
   display:flex;
@@ -146,9 +118,10 @@
   margin-top: 464rpx;
 }
 .n_img{
-  width:182rpx ;
+  width: 204rpx;
   height: 204rpx;
   margin-bottom: 49rpx;
+  border-radius: 50%;
 }
 .text_tip{
   font-size: 28rpx;
@@ -225,7 +198,7 @@
   color: #999;
 }
 .chosed{
-  color: #3696FA;
+  color: #e0bbc3;
 }
 /* d_bottom */
 .d_bottom{
@@ -259,5 +232,5 @@
   color: #999999;
 }
 .btn_text:last-child{
-  color:#3696FA;
+  color:#e0bbc3;
 }

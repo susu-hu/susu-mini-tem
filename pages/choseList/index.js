@@ -4,20 +4,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date: '月份',//用户选中的日期
+    date: '时间',//用户选中的日期
     endDate:'',//当前日期
 
-    navList:['全部','待审批','待执行','待反馈','已完成','已取消'],
+    navList:['全部','选项一','选项二','选项三','选项四','选项五'],
     type:0,
 
-    hasData:true,
+    hasData:false,
 
     showDialog:true,//筛选弹框默认隐藏
 
     choseList:[],//筛选列表
-    chosedType:0,
-
-    
+    tap:false
 
   },
   tabNav(e) {
@@ -32,69 +30,68 @@ Page({
   },
   //显示弹框
   showDialog(){
-    //获取筛选列表
-    this.getChoseData()
     this.setData({
-      showDialog:!this.data.showDialog
+      showDialog:!this.data.showDialog,
+      tap:false
     })
   },
   getChoseData(){
     let choseList= [{
-      name:'活动类型',
+      name:'选项一',
       list:[
         {
           id:1,
-          value:'线下妈妈帮'
+          value:'选项1-1'
         },
         {
           id:2,
-          value:'主题风格'
+          value:'选项1-2'
         },
         {
           id:3,
-          value:'季节活动'
+          value:'选项1-3'
         },
         {
           id:4,
-          value:'节假活动'
+          value:'选项1-4'
         },
         {
           id:5,
-          value:'开春季'
+          value:'选项1-5'
         },
       ],
     },
     {
-      name:'业务员',
+      name:'选项二',
       list:[
         {
           id:1,
-          value:'我的'
+          value:'选项2-1'
         },
         {
           id:2,
-          value:'下属人员'
+          value:'选项2-2'
         },
       ]
     },
     {
-      name:'下属人员',
+      name:'选项三',
       list:[
         {
           id:1,
-          value:'VENV'
+          value:'选项3-1'
         },
         {
           id:2,
-          value:'NANA'
+          value:'选项3-2'
         },
         {
           id:3,
-          value:'JJUB'
+          value:'选项3-3'
         },
         {
           id:4,
-          value:'RFFD'
+          value:'选项3-4'
         },
       ]
     }];
@@ -113,16 +110,26 @@ Page({
         {index}=e.currentTarget.dataset,
         choseInfo=choseList[index];
     choseInfo.isMore=!choseInfo.isMore;
-    console.log(choseInfo)
     this.setData({
       choseList:choseList
     })
   },
   //选择 筛选项目
   choseOne(e){
-    let  {index}=e.currentTarget.dataset;
-    console.log(index)
-
+    let tap=true;
+    let  {index,index1}=e.currentTarget.dataset, {choseList}=this.data,
+    choseInfo=choseList[index];
+    choseInfo.list.forEach((item,index)=>{
+      if(index==index1){
+        item.chosed=true
+      }else{
+        item.chosed=false
+      }
+    })
+    this.setData({
+      choseList,
+      tap:tap
+    })
   },
   //关闭弹框
   closePop(){
@@ -138,12 +145,10 @@ Page({
 
   
   onShow: function () {
-
+    //获取筛选列表
+    this.getChoseData()
   },
 
-  
-
-  
   onPullDownRefresh: function () {
 
   },
@@ -169,6 +174,22 @@ Page({
       date: e.detail.value,
     })
   },
+  reset(){
+    this.data.choseList.forEach(item=>{
+      item.list.forEach(item1=>{
+        item1.chosed=false
+      })
+    })
+    this.setData({
+      choseList: this.data.choseList,
+      tap:false
+    })
+  },
+  obsubmit(){
+    this.setData({
+      showDialog:true
+    })
+  }
 
   
 })

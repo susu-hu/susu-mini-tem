@@ -5,13 +5,13 @@
       <picker mode="date" value="{{date}}" start="2017-01" end="{{endDate}}" bindchange="bindDateChange" fields="month">
         <view class="picker">
           {{date}}
-          <image src="/img/cusOrder01.png"></image>
+          <image src="/img/down_icon.png"></image>
         </view>
       </picker>
     </view>
     <view class="head_input">
       <image src="/img/search_icon.png" class="search_icon"></image>
-      <input type="text" placeholder="快速搜索活动名称" placeholder-class="place_holder" bindconfirm="getSearch" value="{{search}}"></input>
+      <input type="text" placeholder="搜索" placeholder-class="place_holder" bindconfirm="getSearch" value="{{search}}"></input>
     </view>
     <view class="sha_icon" catchtap="showDialog">筛选</view>
   </view>
@@ -24,27 +24,11 @@
 </view>
 <view wx:if="{{hasData}}" class="con">
   <block wx:for="{{5}}" wx:key="index">
-    <view class="item">
-      <view class="flex-row j_b item_con">
-        <text class="item1">名称: <text class="m_value">爱婴岛（楚翘城店）端午奶粉大促0603</text></text>
-        <text class="m_status">已完成</text>
-      </view>
-      <view class="item_con">
-        <text class="item1">类型: <text class="m_value">线下妈妈班</text></text>
-      </view>
-      <view class="item_con">
-        <text class="item1">时间: <text class="m_value">2021-6-23</text></text>
-      </view>
-      <view class="item_con">
-        <text class="item1">申请人: <text class="m_value">VEN</text></text>
-      </view>
-    </view>
   </block>
-
 </view>
 <view wx:else class="no_data">
-    <image src="/img/no-manage.png" class="n_img"></image>
-    <view class="text_tip">暂无管理记录</view>
+    <image src="https://i.postimg.cc/Bv28vfkg/222.webp" class="n_img"></image>
+    <view class="text_tip">~暂无数据~</view>
 </view>
 <!-- 筛选弹框 -->
 <view  hidden="{{showDialog}}">
@@ -65,18 +49,18 @@
             </view>
             <view class="flex d_chose">
               <block wx:for="{{item.list}}" wx:key="index"  wx:for-index="index1" wx:for-item="item1">
-                <view class="d_item {{item.isMore?'d_item_none':''}} {{index1==chosedType?'chosed':''}}" catchtap="choseOne" data-index="{{index1}}">{{item1.value}}</view>
+                <view class="d_item {{item.isMore?'d_item_none':''}} {{item1.chosed?'chosed':''}}" catchtap="choseOne" data-index="{{index}}"   data-index1="{{index1}}">{{item1.value}}</view>
               </block>
             </view>
           </view>
         </block>
       </view>
     </scroll-view>
-    <view class="d_bottom">
+    <view class="d_bottom" wx:if="{{tap}}">
       <view class="d_view">
         <view class="line"></view>
-        <view class="btn_text">重置</view>
-        <view class="btn_text">确认</view>
+        <view class="btn_text" catchtap="reset">重置</view>
+        <view class="btn_text" catchtap="obsubmit">确认</view>
       </view>
     </view>
   </view>
