@@ -1,2 +1,9 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class='main-wraper'>
+  <view class='nav'>
+      <navBar title='自定义样式' background='rgba(0,0,0,0)' color='#000' back="{{true}}" home="{{true}}" bindback="handlerGobackClick" extClass="lxy-navbar-extclass"></navBar>
+  </view>
+  <view class='main22'>
+      <image src="https://i.postimg.cc/Bv28vfkg/222.webp" class='img'>此处为图片背景</image>
+  </view>
+</view>
