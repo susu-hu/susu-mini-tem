@@ -1,3 +1,4 @@
+@import './index.skeleton.wxss';
 /* wuliu */
 .con1{
   width: 700rpx;

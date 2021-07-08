@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    loading:true,
     //物流情况
     expresslist:{
       order_no:'1q213232132',
@@ -48,7 +49,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    setTimeout(()=>{
+      this.setData({
+        loading:false
+      })
+    },1500)
   },
 
   /**

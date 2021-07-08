@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/choseList/index",
-          "pathName": "pages/choseList/index",
+          "name": "pages/demo/index",
+          "pathName": "pages/demo/index",
           "query": "",
           "scene": null
         },
@@ -27,6 +27,18 @@
         {
           "name": "pages/dots/index2",
           "pathName": "pages/dots/index2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cardCricle/index",
+          "pathName": "pages/cardCricle/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/choseList/index",
+          "pathName": "pages/choseList/index",
           "query": "",
           "scene": null
         }

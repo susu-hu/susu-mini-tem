@@ -1,4 +1,5 @@
 /* pages/cardCricle/index.wxss */
+
 page{
   background: #e0bbc3;
   /* padding-bottom: calc(env(safe-area-inset-bottom) + 120rpx);

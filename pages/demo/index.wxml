@@ -1,31 +1,34 @@
-
+<import src="./index.skeleton.wxml"></import>
+<template  is="skeleton" wx:if="{{loading}}" ></template>
+<view wx:else>
 <!-- 物流区 -->
-<view class="con1 flex-row">
-	<view>
-		<image src="/img/order_icon5.png" class="order_icon"></image>
-	</view>
-	<view class="w_text">
-		<view class="item">订单编号：{{expresslist.order_no}}</view>
-		<view class="item">物流公司：{{expresslist.de_company}}</view>
-		<view class="item">物流单号：{{expresslist.wuliu_no}}</view>
-	</view>
-</view>
-<view class="con4" wx:if="{{expresslist.list.length>0}}">
-  <view class="con4_top1">物流信息</view>
-  <!-- 物流列表 -->
-  <view class="con4_top3 flex" wx:for="{{expresslist.list}}">
-    <view class="con4_text"wx:key="key" wx:for-item='item'>
-      <text class="con4_time {{index==0?'':'no'}}">{{item.status}}  {{item.time}}</text>
-      <view class="line_ellipsis text ">{{item.text}}</view>
+  <view class="con1 flex-row">
+    <view>
+      <image src="/img/order_icon5.png" class="order_icon"></image>
+    </view>
+    <view class="w_text">
+      <view class="item">订单编号：{{expresslist.order_no}}</view>
+      <view class="item">物流公司：{{expresslist.de_company}}</view>
+      <view class="item">物流单号：{{expresslist.wuliu_no}}</view>
+    </view>
+  </view>
+  <view class="con4" wx:if="{{expresslist.list.length>0}}">
+    <view class="con4_top1">物流信息</view>
+    <!-- 物流列表 -->
+    <view class="con4_top3 flex" wx:for="{{expresslist.list}}">
+      <view class="con4_text"wx:key="key" wx:for-item='item'>
+        <text class="con4_time {{index==0?'':'no'}}">{{item.status}}  {{item.time}}</text>
+        <view class="line_ellipsis text ">{{item.text}}</view>
 
-       <view class="con4_icon">
-        <image wx:if="{{item.display==0}}" src="{{item.status==1?'/img/w_icon4.png':'/img/wuliu_icon2.png'}}" class="chek_img"></image>
-        <image wx:if="{{item.display==1}}" src="{{item.status==1?'/img/wuliu_icon3.png':'/img/w_icon3.png'}}" class="chek_img"></image>
-        <image wx:if="{{item.display==2}}" src="{{item.status==1?'/img/wuliu_icon4.png':'/img/w_icon2.png'}}"class="chek_img"></image>
-        <image wx:if="{{item.display==3}}" src="{{item.status==1?'/img/wuliu_icon5.png':'/img/w_icon1.png'}}" class="chek_img"></image>
-        <view class="line" wx:if="{{index!=0}}"></view>  <!-- 当第二个开始有一条物流的横线 -->
+        <view class="con4_icon">
+          <image wx:if="{{item.display==0}}" src="{{item.status==1?'/img/w_icon4.png':'/img/wuliu_icon2.png'}}" class="chek_img"></image>
+          <image wx:if="{{item.display==1}}" src="{{item.status==1?'/img/wuliu_icon3.png':'/img/w_icon3.png'}}" class="chek_img"></image>
+          <image wx:if="{{item.display==2}}" src="{{item.status==1?'/img/wuliu_icon4.png':'/img/w_icon2.png'}}"class="chek_img"></image>
+          <image wx:if="{{item.display==3}}" src="{{item.status==1?'/img/wuliu_icon5.png':'/img/w_icon1.png'}}" class="chek_img"></image>
+          <view class="line" wx:if="{{index!=0}}"></view>  <!-- 当第二个开始有一条物流的横线 -->
+        </view>
+        
       </view>
-      
     </view>
   </view>
 </view>

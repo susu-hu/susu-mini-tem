@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/cal/index",
     "pages/demo/index",
     "pages/cal2/index",
@@ -19,6 +20,7 @@
     "pages/choseAddress/index",
     "pages/dots/index2",
     "pages/choseList/index"
+
   ],
   "subPackages": [
     {
@@ -36,10 +38,10 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/cal/index",
+        "pagePath": "pages/index/index",
         "iconPath": "img/tabbar/icon_index.png",
         "selectedIconPath": "img/tabbar/icon_index_sel.png",
-        "text": "日历"
+        "text": "首页"
       },
       {
         "pagePath": "pages/charts/index",
@@ -63,10 +65,11 @@
   },
   "usingComponents": {},
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "sitemapLocation": "sitemap.json"
 }
