@@ -2,5 +2,6 @@
   "navigationBarTitleText": "echarts官方提供的小程序版本",
   "usingComponents": {
     "ec-canvas": "../../components/ec-canvas/ec-canvas"
-  }
+  },
+  "navigationStyle": "custom"
 }

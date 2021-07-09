@@ -6,6 +6,23 @@ Page({
       lazyLoad: true // 延迟加载
     }
   },
+  handlerGobackClick(delta) {
+    const pages = getCurrentPages();
+    if (pages.length >= 2) {
+      wx.navigateBack({
+        delta: delta
+      });
+    } else {
+      wx.switchTab({
+        url: '/pages/index/index'
+      })
+    }
+  },
+  handlerGohomeClick() {
+    wx.switchTab({
+      url: '/pages/index/index'
+    })
+  },
   
   onShow() {
      //自定义的tabbar

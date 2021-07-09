@@ -63,7 +63,9 @@
       }
     ]
   },
-  "usingComponents": {},
+  "usingComponents": {
+    "navBar": "/components/navBar/navBar"
+  },
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",

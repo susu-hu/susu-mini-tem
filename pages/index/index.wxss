@@ -1,21 +1,15 @@
 /* pages/index/index.wxss */
-.main22 {
-  /* prettier-ignore */
-  height: 400PX;
-  height: 100vh;
-  background: #eeeeee;
-  font-size: 30rpx;
-  line-height: 60rpx;
-  text-align: center;
-}
+
 .nav {
   height: 0;
 }
-
 .img {
   width: 750rpx;
   height: 750rpx;
   line-height:750rpx;
   color: #000;
   /* background: linear-gradient(280deg, #fff 0%, red 50%, blue 80%); */
+}
+.con{
+  height: 800px;
 }

@@ -1,6 +1,18 @@
 <!--pages/charts/index.wxml-->
-<view class="con">
-    <!-- <view class="container"> -->
-    <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
-    <!-- </view> -->
+<view>
+    <navBar title='' background='#fff' back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick">
+        <view class='lxy-nav-bar-search' slot="center">
+            <view class='lxy-nav-bar-search__icon' />
+            <view class='lxy-nav-bar-search__input'>
+                <input autoFocus="true" bindconfirm="confirmSearch" bindinput="search" class="srch-ipt" confirmType="search" placeholder="echarts小程序版本" placeholderClass="ipt-placeholder" type="text" value=""></input>
+            </view>
+        </view>
+    </navBar>
 </view>
+
+
+<view class="con">
+ <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+</view>
+
+<!-- <view style="height:1000px"></view> -->
