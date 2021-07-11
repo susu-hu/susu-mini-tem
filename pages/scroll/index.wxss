@@ -1,0 +1,24 @@
+/* pages/scroll/index.wxss */
+page {
+  background-color: #fff;
+}
+
+.top {
+  margin: 24rpx 20rpx 37rpx;
+  width: 710rpx;
+  height: 300rpx;
+  background: #e0bbc3;
+  border-radius: 20rpx;
+}
+.top_con {
+  width: 710rpx;
+  height: 300rpx;
+  box-sizing: border-box;
+  padding: 49rpx 28rpx 48rpx;
+  font-size: 27rpx;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
