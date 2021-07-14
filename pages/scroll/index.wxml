@@ -7,7 +7,7 @@
 </view>
 <view class="con flex">
   <view class="left" style="height:{{scrollheight}}rpx">
-      <scroll-view scroll-y style="height:{{scrollheight}}rpx" scroll-with-animation="true" id="first-level"scroll-top="{{scrollTop}}" class="s_left">
+      <scroll-view scroll-y style="height:{{scrollheight}}rpx" scroll-with-animation="true" scroll-top="{{scrollTop}}" class="s_left">
         <view  style="background: #fff;">
           <block wx:for="{{cateList}}" wx:key="cateList">
               <view class="caname {{chosed_cate_id==item.id ?'chosed':''}}  {{index+1==chosed_index && 'pre_c'}} {{index-1==chosed_index && 'next_c'}}" id="sidebar-item-{{item.id}}"data-id="{{item.id}}" data-index="{{index}}" catchtap="choseCate">{{item.name}}
@@ -17,27 +17,21 @@
       </scroll-view>
   </view>
   <view class="right" style="height:{{scrollheight}}rpx">
-      <scroll-view scroll-y style="height:{{scrollheight}}rpx;" scroll-with-animation="true" scroll-into-view="{{contentActive}}"class="s_right" bindscroll="onScroll">
-          <view class="item" id="content{{item.goods_brand_id}}" wx:for="{{goods_data}}"wx:key="goods_data">
-              <view class="goods-item" id="goods{{item1.sku_id}}" wx:for="{{item.goods_list}}"
-                    wx:key="goods_list" wx:for-item="item1"
-                    wx:for-index="index1">
-                  <view class="flex j_b">
-                      <image src="{{item1.goods_cover}}" class="item_img"></image>
-                      <view class="item_name">
-                          <text class="name">{{item1.goods_name}}</text>
-                          <view class="flex-row">
-                              <text class="stock_text">本次库存:</text>
-                              <view class="item_input flex-row {{error == item1.sku_id && 'error'}}">
-                                  <input placeholder="请输入库存数量" placeholder-class="p_class" type="number"
-                                          value="{{item1.stock}}" data-index="{{index}}"
-                                          data-index1="{{index1}}" bindblur="numberChange"/>
-                              </view>
-                          </view>
+      <scroll-view scroll-y style="height:{{scrollheight}}rpx;" scroll-with-animation="true" scroll-into-view="{{toTitle}}" class="s_right" bindscroll="onScroll">
+          <view class="item" id="title-{{item.type_id}}" wx:for="{{goods_list}}" wx:key="goods_list">
+            <view class="t_name">{{item.type_name}}</view>
+            <view class="goods-item" id="goods{{item1.sku_id}}" wx:for="{{item.list}}"wx:key="goods_list" wx:for-item="item1"wx:for-index="index1">
+              <view class="flex j_b">
+                  <image src="{{item1.img}}" class="item_img"></image>
+                  <view class="item_name">
+                      <text class="name">{{item1.goods_name}}</text>
+                      <view class="flex-row">
+                          <text class="stock_text">价格:</text>
+                          <text class="s_price">￥{{item1.price}}</text>
                       </view>
                   </view>
-                  <view class="tip">上次库存：{{item1.last_stock}}</view>
               </view>
+            </view>
           </view>
       </scroll-view>
   </view>

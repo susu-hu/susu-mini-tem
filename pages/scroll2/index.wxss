@@ -1,0 +1,48 @@
+/* pages/scroll2/index.wxss */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.spread-cateBox {
+  display: flex;
+  width: 100%;
+}
+
+.spread-cateLeft {
+  width: 200rpx;
+}
+
+.spread-cateLItem {
+  width: 200rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+
+.title {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+
+.good-item{
+  margin-bottom: 10rpx;
+}
+
+.good-img{
+  width: 210rpx;
+  height: 210rpx;
+}
+
+.good-name{
+  flex-direction: column;
+  align-items: flex-start;
+  height: 210rpx;
+}
+.bg-fff{
+  background: #fff;
+}

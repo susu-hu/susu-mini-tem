@@ -31,11 +31,15 @@ page {
   width: 183rpx;
   margin-right: 25rpx;
   background: #F5F5F5;
+  padding-bottom: env(safe-area-inset-bottom) ;
+  padding-bottom: constant(safe-area-inset-bottom)
 }
 
 .right {
   width: 542rpx;
   margin-right: 20rpx;
+  padding-bottom: env(safe-area-inset-bottom) ;
+  padding-bottom: constant(safe-area-inset-bottom)
 }
 
 .caname {
@@ -57,9 +61,13 @@ page {
 }
 .chosed {
   background-color: #fff;
-  color: #3696FA;
+  color: #e0bbc3;
 }
-
+.t_name{
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
 /* goodslist */
 .item {
   /*padding-bottom: 30rpx;*/
@@ -68,18 +76,17 @@ page {
 }
 
 .goods-item{
-padding-bottom: 30rpx;
+  padding-bottom: 30rpx;
 }
 
 .item:last-child {
+  border-bottom: none;
   margin-bottom: 0;
 }
-
 .item_img {
-  width: 122rpx;
-  height: 122rpx;
+  width: 132rpx;
+  height: 132rpx;
   background: #FFFFFF;
-  border: 1rpx solid #CCCCCC;
   border-radius: 10rpx;
   margin-right: 30rpx;
 }
@@ -93,7 +100,6 @@ padding-bottom: 30rpx;
 
 .name {
   font-size: 22rpx;
-  font-weight: bold;
   color: #333333;
 }
 
@@ -102,7 +108,10 @@ padding-bottom: 30rpx;
   font-weight: bold;
   color: #333333;
 }
-
+.s_price{
+  font-size: 20rpx;
+  color: #c02e2e;
+}
 .item_input {
   margin-left: 23rpx;
   width: 180rpx;
