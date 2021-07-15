@@ -110,18 +110,18 @@ Page({
           index: 0,
           num: 0
         }, 
-        {
-          price: 11.4,
-          anchor: "e",
-          index: 1,
-          num: 0
-        },
-        {
-          price: 11.5,
-          anchor: "e",
-          index: 2,
-          num: 0
-        },
+        // {
+        //   price: 11.4,
+        //   anchor: "e",
+        //   index: 1,
+        //   num: 0
+        // },
+        // {
+        //   price: 11.5,
+        //   anchor: "e",
+        //   index: 2,
+        //   num: 0
+        // },
       ],
       f: [{
           price: 11.6,
@@ -141,6 +141,30 @@ Page({
           index: 2,
           num: 0
         },
+        // {
+        //   price: 11.8,
+        //   anchor: "f",
+        //   index: 2,
+        //   num: 0
+        // },
+        // {
+        //   price: 11.8,
+        //   anchor: "f",
+        //   index: 2,
+        //   num: 0
+        // },
+        // {
+        //   price: 11.8,
+        //   anchor: "f",
+        //   index: 2,
+        //   num: 0
+        // },
+        // {
+        //   price: 11.8,
+        //   anchor: "f",
+        //   index: 2,
+        //   num: 0
+        // },
       ]
     },
     currentIndex: 0, // 当前选中的下标
@@ -165,13 +189,20 @@ Page({
     })
     var length = this.data.top.length;
     for (var i = 0; i < this.data.top.length; i++) {
-      if (this.data.top[i] - this.data.top[0] <= this.data.scrollTop && (i < length - 1 && this.data.top[i + 1] - this.data.top[0] > this.data.scrollTop)) {
+      // this.data.top[i] - this.data.top[0] <= this.data.scrollTop && (i < length - 1 && this.data.top[i + 1] - this.data.top[0] > this.data.scrollTop)
+      if (this.data.top[i] - this.data.top[0] <= this.data.scrollTop &&  (i < length - 1 && this.data.top[i + 1] - this.data.top[0] > this.data.scrollTop)) {
         if (this.data.currentIndex != i) {
           this.setData({
             currentIndex: i,
           });
         }
       }
+    }
+    if(this.data.scrollTop>=this.data.top[length-1]){
+      console.log(111)
+      this.setData({
+        currentIndex: length-1,
+      });
     }
   },
 
@@ -189,9 +220,11 @@ Page({
             top2.push(isTop);
           }).exec();
         }
+        console.log(top2)
         that.setData({
           top: top2
         });
+        console.log(that.data.top)
       }
     });
   },

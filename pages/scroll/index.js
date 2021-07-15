@@ -155,6 +155,40 @@ Page({
             price:356.00,
           },
           {
+            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+            price:356.00,
+          },
+          {
+            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+            price:356.00,
+          },
+          {
+            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+            price:356.00,
+          }, {
+            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+            price:356.00,
+          },
+          {
+            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+            price:356.00,
+          },
+          {
+            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的20',
+            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+            price:356.00,
+          },
+          {
+            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的20',
+            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+            price:356.00,
+          },
+          {
             goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的20',
             img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
             price:356.00,
@@ -179,28 +213,58 @@ Page({
     this.setData({
       chosed_cate_id:this.data.cateList[0].id
     })
-
+    // 设置每个分类的开始高度
+    let top=[];
+    for (var i = 0; i < this.data.goods_list.length; i++) {
+      wx.createSelectorQuery().select('#title-' + this.data.goods_list[i].type_id).boundingClientRect(function (rect) {
+        console.log(rect)
+        var isTop = Number(rect.top);
+        top.push(isTop);
+      }).exec();
+    }
+    this.setData({
+      top: top
+    });
   },
 
   
   onReady: function () {
-
+    
+    //设置铺满高度的另一种方法
+    // wx.createSelectorQuery().selectAll("#top").boundingClientRect((rect)=>{
+    //   console.log(rect)
+    // }).exec();
+    let query = wx.createSelectorQuery().in(this);//this传入的是自定义组件的实例，否则获取到的rect值为null。
+    wx.getSystemInfo({
+      success: res => {
+        console.log(res)
+        let windowHeight =res.windowHeight
+        query.select('#top').boundingClientRect();
+        query.exec((res) => {
+          console.log(res)
+          let topHeight = res[0].height;
+          console.log(topHeight)
+          let scrollViewHeight = windowHeight  - topHeight;
+          console.log(scrollViewHeight)
+        });
+      }
+    }) 
   },
 
  
   onShow: function () {
-
+  
   },
-    /**
-     * 选中分类
-     */
-    choseCate(e) {
-      let {id,index} = e.currentTarget.dataset
-      this.setData({
-          chosed_cate_id: id,
-          chosed_index:index,
-          toTitle: "title-" + id,
-      })
+  /**
+   * 选中分类
+   */
+  choseCate(e) {
+    let {id,index} = e.currentTarget.dataset
+    this.setData({
+        chosed_cate_id: id,
+        chosed_index:index,
+        toTitle: "title-" + id,
+    })
   },
   //滚动
   onScroll(e) {
@@ -210,9 +274,9 @@ Page({
     var length = this.data.top.length;
     for (var i = 0; i < this.data.top.length; i++) {
       if (this.data.top[i] - this.data.top[0] <= this.data.scrollTop && (i < length - 1 && this.data.top[i + 1] - this.data.top[0] > this.data.scrollTop)) {
-        if (this.data.currentIndex != i) {
+        if (this.data.chosed_index != i) {
           this.setData({
-            currentIndex: i,
+            chosed_index: i,
           });
         }
       }

@@ -5,12 +5,12 @@
      <text>2.滑动列表选中不同分类</text>
   </view>
 </view>
-<view class="con flex">
+<view class="con flex" >
   <view class="left" style="height:{{scrollheight}}rpx">
       <scroll-view scroll-y style="height:{{scrollheight}}rpx" scroll-with-animation="true" scroll-top="{{scrollTop}}" class="s_left">
         <view  style="background: #fff;">
           <block wx:for="{{cateList}}" wx:key="cateList">
-              <view class="caname {{chosed_cate_id==item.id ?'chosed':''}}  {{index+1==chosed_index && 'pre_c'}} {{index-1==chosed_index && 'next_c'}}" id="sidebar-item-{{item.id}}"data-id="{{item.id}}" data-index="{{index}}" catchtap="choseCate">{{item.name}}
+              <view class="caname {{chosed_index==index ?'chosed':''}}  {{index+1==chosed_index && 'pre_c'}} {{index-1==chosed_index && 'next_c'}}" id="sidebar-item-{{item.id}}"data-id="{{item.id}}" data-index="{{index}}" catchtap="choseCate">{{item.name}}
               </view>
           </block>   
         </view>
@@ -20,7 +20,7 @@
       <scroll-view scroll-y style="height:{{scrollheight}}rpx;" scroll-with-animation="true" scroll-into-view="{{toTitle}}" class="s_right" bindscroll="onScroll">
           <view class="item" id="title-{{item.type_id}}" wx:for="{{goods_list}}" wx:key="goods_list">
             <view class="t_name">{{item.type_name}}</view>
-            <view class="goods-item" id="goods{{item1.sku_id}}" wx:for="{{item.list}}"wx:key="goods_list" wx:for-item="item1"wx:for-index="index1">
+            <view class="goods-item"  wx:for="{{item.list}}"wx:key="goods_list" wx:for-item="item1"wx:for-index="index1">
               <view class="flex j_b">
                   <image src="{{item1.img}}" class="item_img"></image>
                   <view class="item_name">
