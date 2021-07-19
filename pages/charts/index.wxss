@@ -5,7 +5,7 @@ page{
 .con{
   height: 800rpx;
   margin: 80px auto;
-  position: relative;
+  /* position: relative; */
 }
 /* .container{
   position: absolute;

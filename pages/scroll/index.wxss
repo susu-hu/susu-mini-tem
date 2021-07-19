@@ -1,0 +1,137 @@
+/* pages/scroll/index.wxss */
+page {
+  background-color: #fff;
+}
+
+.top {
+  margin: 24rpx 20rpx 37rpx;
+  width: 710rpx;
+  height: 300rpx;
+  background: #e0bbc3;
+  border-radius: 20rpx;
+}
+.top_con {
+  width: 710rpx;
+  height: 300rpx;
+  box-sizing: border-box;
+  padding: 49rpx 28rpx 48rpx;
+  font-size: 27rpx;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* con */
+.con {
+  margin: 40rpx auto 0;
+}
+
+.left {
+  width: 183rpx;
+  margin-right: 25rpx;
+  background: #F5F5F5;
+  padding-bottom: env(safe-area-inset-bottom) ;
+  padding-bottom: constant(safe-area-inset-bottom)
+}
+
+.right {
+  width: 542rpx;
+  margin-right: 20rpx;
+  padding-bottom: env(safe-area-inset-bottom) ;
+  padding-bottom: constant(safe-area-inset-bottom)
+}
+
+.caname {
+  text-align: center;
+  min-height: 100rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+}
+.pre_c{
+  border-radius: 0 0 20rpx;
+}
+.next_c{
+  border-radius: 0 20rpx 0 0;
+}
+.chosed {
+  background-color: #fff;
+  color: #e0bbc3;
+}
+.t_name{
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+/* goodslist */
+.item {
+  /*padding-bottom: 30rpx;*/
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30rpx;
+}
+
+.goods-item{
+  padding-bottom: 30rpx;
+}
+
+.item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.item_img {
+  width: 132rpx;
+  height: 132rpx;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  margin-right: 30rpx;
+}
+
+.item_name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 370rpx;
+}
+
+.name {
+  font-size: 22rpx;
+  color: #333333;
+}
+
+.stock_text {
+  font-size: 20rpx;
+  font-weight: bold;
+  color: #333333;
+}
+.s_price{
+  font-size: 20rpx;
+  color: #c02e2e;
+}
+.item_input {
+  margin-left: 23rpx;
+  width: 180rpx;
+  height: 40rpx;
+  border: 1rpx solid #CCCCCC;
+  border-radius: 20rpx;
+  /* line-height:40rpx; */
+  text-align: center;
+  font-size: 20rpx;
+  color: #333333;
+}
+
+.p_class {
+  font-size: 20rpx;
+  color: #999999;
+}
+
+.tip {
+  margin-top: 14rpx;
+  font-size: 20rpx;
+  font-weight: bold;
+  color: #666666;
+}

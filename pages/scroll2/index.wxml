@@ -1,0 +1,35 @@
+<!--pages/scroll2/index.wxml-->
+<view class="spread-cateBox">
+  <!-- <view> -->
+    <scroll-view scroll-y scroll-with-animation scroll-left="{{scrollLength}}" class='spread-cateLeft' style='height: {{winHeight}}px'>
+      <block wx:for="{{tabs}}" wx:key="index">
+        <view bindtap='jumpIndex' data-menuindex='{{index}}' data-anchor='{{item.anchor}}'>
+          <view class="spread-cateLItem {{currentIndex==index?' bg-fff':''}}">
+            <text class="{{currentIndex==index?'c-theme':''}}">{{item.title}}</text>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  <!-- </view> -->
+  <!-- <view style='height: {{winHeight}}px'> -->
+    <scroll-view scroll-y scroll-with-animation scroll-left="{{scrollLength}}" bindscroll="scrollToLeft" scroll-into-view="{{toTitle}}" style='height: {{winHeight}}px'>
+      <block wx:key="tabs" wx:for="{{tabs}}">
+        <view id="view-{{item.anchor}}">
+          <view class="title" id="title-{{item.anchor}}">{{item.title}}</view>
+          <block wx:for="{{tabsList[item.anchor]}}" wx:key="index">
+            <view class="flex-start good-item">
+              <image class="good-img" src="{{imgUrls + 'default.png'}}"></image>
+              <view class="flex-between good-name">
+                <view>这是商品名称</view>
+                <view>月售122</view>
+                <view>￥19.9</view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </block>
+    </scroll-view>
+  <!-- </view> -->
+</view>
+
+
