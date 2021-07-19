@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/charts/index",
-          "pathName": "pages/charts/index",
+          "name": "pages/touchRemove/index",
+          "pathName": "pages/touchRemove/index",
           "query": "",
           "scene": null
         },
@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "pages/scroll/index",
-          "pathName": "pages/scroll/index",
+          "name": "pages/scroll/index2",
+          "pathName": "pages/scroll/index2",
           "query": "",
           "scene": null
         },
@@ -39,6 +39,12 @@
         {
           "name": "pages/scroll2/index",
           "pathName": "pages/scroll2/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pop/index",
+          "pathName": "pages/pop/index",
           "query": "",
           "scene": null
         }

@@ -1,0 +1,3 @@
+<!--pages/scroll/index2.wxml-->
+<view catchtap="aa">点我去下面</view>
+<view class="h1" id="h1">sdfjhsdfkjds</view>

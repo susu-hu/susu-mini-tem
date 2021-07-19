@@ -21,7 +21,8 @@
     "pages/dots/index2",
     "pages/choseList/index",
     "pages/scroll/index",
-    "pages/scroll2/index"
+    "pages/scroll2/index",
+    "pages/scroll/index2"
   ],
   "subPackages": [
     {

@@ -1,12 +1,3 @@
-view,
-text,
-scroll-view,
-input,
-button,
-image
- {
-  box-sizing: border-box;
-}
 page {
   --height: 44px; /* 4*2+32 */
   --right: 97px; /* 10+87 */

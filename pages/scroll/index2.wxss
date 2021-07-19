@@ -1,0 +1,7 @@
+/* pages/scroll/index2.wxss */
+.h1{
+  width: 100%;
+  height: 700rpx;
+  margin-top: 1600px;
+  background: #000;
+}
