@@ -68,3 +68,14 @@ page{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.btn{
+  margin: 0 auto;
+  width: 200rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #e0bbc3;
+  color: #fff;
+  border-radius: 40rpx;
+}

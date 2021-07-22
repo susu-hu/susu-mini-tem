@@ -1,0 +1,11 @@
+<!--pages/charts/index2.wxml-->
+<view class="con">
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+
+  <cover-view class="covew">
+    <cover-view class="text1">苏苏</cover-view>
+    <cover-view class="text2">100%</cover-view>
+  </cover-view>
+</view>
+
+

@@ -1,0 +1,38 @@
+/* pages/charts/index2.wxss */
+page{
+  background-color: #fff;
+}
+.con{
+  height: 800rpx;
+  margin: 80px auto;
+  position: relative;
+}
+.ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.covew{
+  width: 220rpx;
+  border-radius: 50%;
+  height: 220rpx;
+  position: absolute;
+  /* top: 123px; */
+  top: 36%;
+  left: 50%;
+  margin-left: -111rpx;
+  /* border: 1rpx solid red; */
+}
+.text1{
+  text-align: center;
+  font-size: 35rpx;
+  font-weight: bold;
+  padding-top: 50rpx;
+  padding-bottom: 30rpx;
+}
+.text2{
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: red;
+}

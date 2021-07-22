@@ -23,8 +23,8 @@
     "pages/choseList/index",
     "pages/scroll/index",
     "pages/scroll2/index",
-    "pages/scroll/index2"
-   
+    "pages/scroll/index2",
+    "pages/charts/index2"
   ],
   "subPackages": [
     {

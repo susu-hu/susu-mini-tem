@@ -10,9 +10,7 @@
     </navBar>
 </view>
 
-
 <view class="con">
  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
 </view>
-
-<!-- <view style="height:1000px"></view> -->
+<view class="btn" catchtap="toNextOne">下一个样式</view>

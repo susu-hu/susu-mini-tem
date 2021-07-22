@@ -48,7 +48,6 @@ Page({
       });
       Chart.setOption(this.getOption());
       // 注意这里一定要返回 chart 实例，否则会影响事件处理等
-      console.log(!null)
       return Chart;
       
     });
@@ -147,4 +146,11 @@ Page({
     };
     return option;
   },
+
+  toNextOne(){
+    wx.navigateTo({
+      url: '/pages/charts/index2',
+    })
+  }
+
 });

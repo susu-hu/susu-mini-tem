@@ -1,6 +1,6 @@
 <view class="top">
-  <swiper class="swiper-box" current="{{swiperCurrent}}" indicator-dots="true" indicator-active-color="#2895FC" indicator-color="#999999" bindchange="swiperChange"  circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{banner_list}}">
+  <swiper class="swiper-box" current="{{swiperCurrent}}" indicator-dots="true" indicator-active-color="#e0bbc3" indicator-color="#999999" bindchange="swiperChange"  circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banner_list}}" wx:key="b_list">
       <swiper-item>
         <image src="{{item}}" data-src="{{item}}" class="banner_img" ></image>
       </swiper-item>

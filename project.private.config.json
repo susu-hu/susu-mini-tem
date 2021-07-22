@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/touchRemove/index",
-          "pathName": "pages/touchRemove/index",
+          "name": "pages/charts/index2",
+          "pathName": "pages/charts/index2",
           "query": "",
           "scene": null
         },
