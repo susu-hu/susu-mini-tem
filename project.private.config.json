@@ -47,6 +47,18 @@
           "pathName": "pages/pop/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/dots/index",
+          "pathName": "pages/dots/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/dots/index2",
+          "pathName": "pages/dots/index2",
+          "query": "",
+          "scene": null
         }
       ]
     }

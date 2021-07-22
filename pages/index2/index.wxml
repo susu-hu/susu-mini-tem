@@ -1,0 +1,47 @@
+<view class="top">
+  <swiper class="swiper-box" current="{{swiperCurrent}}" indicator-dots="true" indicator-active-color="#2895FC" indicator-color="#999999" bindchange="swiperChange"  circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banner_list}}">
+      <swiper-item>
+        <image src="{{item}}" data-src="{{item}}" class="banner_img" ></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="search_btn">
+  <input placeholder="请输入...."  placeholder-class="p_class" class="i_box"/>
+  <image src="/img/index/search_b.png" class="s_icon"></image>
+</view>
+
+<view class="top_ban">
+  <image src="https://i.postimg.cc/Gm7KjGmN/111.jpg"></image>
+</view>
+<view class="brand_img">
+  <image src="https://i.postimg.cc/Bv28vfkg/222.webp"></image>
+</view>
+
+<view class="tab_list">
+  <view class="flex-row j_b">
+    <block wx:for="{{navList}}"wx:key="nav_list">
+      <view catchtap="tabNav" data-index="{{index}}">
+        <view class="tabbar_li {{type==index?'on':''}}">{{item}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class="good_list flex-row">
+  <block wx:for="{{3}}" wx:key="good_list">
+    <view class="g_item">
+      <view class="g_img">
+        <image src="https://i.postimg.cc/Bn1XpkSn/susu.jpg"></image>
+      </view>
+      <view class="goods_name">巴啦啦嫩你说的怀旧服草莓味的味450g</view>
+      <view class="flex j_b price_a_c">
+        <view>
+          <text class="cn_icon">￥</text><text class="digi_price">30.</text><text class="cn_icon">00</text>
+        </view>
+        <view class="pre_price">￥69.00</view>
+      </view>
+    </view>
+  </block>
+</view>

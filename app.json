@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index2/index",
     "pages/index/index",
     "pages/cal/index",
     "pages/demo/index",
@@ -23,6 +24,7 @@
     "pages/scroll/index",
     "pages/scroll2/index",
     "pages/scroll/index2"
+   
   ],
   "subPackages": [
     {
@@ -40,7 +42,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/index2/index",
         "iconPath": "img/tabbar/icon_index.png",
         "selectedIconPath": "img/tabbar/icon_index_sel.png",
         "text": "首页"
