@@ -15,7 +15,7 @@ Page({
       'https://i.postimg.cc/Bv28vfkg/222.webp'
     ],
 
-    navList:['全部','系列1','系列2'],
+    navList:['全部','系列1','系列2','系列1','系列2','系列1','系列2'],
     type:0,
   },
 

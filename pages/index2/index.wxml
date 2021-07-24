@@ -15,18 +15,31 @@
 <view class="top_ban">
   <image src="https://i.postimg.cc/Gm7KjGmN/111.jpg"></image>
 </view>
-<view class="brand_img">
-  <image src="https://i.postimg.cc/Bv28vfkg/222.webp"></image>
+
+<!-- 新增滚动条 -->
+<view class="scroll flex-row">
+  <image src="/img/star-o.png" class="new_cion"></image>
+  <swiper class="new_swiper" vertical="true" autoplay="true" circular="true" interval="2000"
+    display-multiple-items='1'>
+    <block wx:for-index="idx" wx:for='{{5}}' wx:key="index">
+      <swiper-item>
+        <view class='content-item'>
+          <text>购物享折扣购物购物享折扣，购物享折扣购物享折扣购物享折扣享折扣</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <image src="/img/add_left.png" class="left-arr"></image>
 </view>
 
 <view class="tab_list">
-  <view class="flex-row j_b">
+  <scroll-view scroll-x class="tb_l">
     <block wx:for="{{navList}}"wx:key="nav_list">
-      <view catchtap="tabNav" data-index="{{index}}">
+      <view catchtap="tabNav" data-index="{{index}}" class="tabNav">
         <view class="tabbar_li {{type==index?'on':''}}">{{item}}</view>
       </view>
     </block>
-  </view>
+  </scroll-view>
 </view>
 
 <view class="good_list flex-row">
@@ -35,7 +48,7 @@
       <view class="g_img">
         <image src="https://i.postimg.cc/Bn1XpkSn/susu.jpg"></image>
       </view>
-      <view class="goods_name">巴啦啦嫩你说的怀旧服草莓味的味450g</view>
+      <view class="goods_name">巴啦啦嫩你说的怀旧服草莓味的味450g巴啦啦嫩你说的怀旧服草莓味的味450g</view>
       <view class="flex j_b price_a_c">
         <view>
           <text class="cn_icon">￥</text><text class="digi_price">30.</text><text class="cn_icon">00</text>

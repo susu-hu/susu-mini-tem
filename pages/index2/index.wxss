@@ -89,29 +89,73 @@ page{
   height: 380rpx;
   border-radius: 20rpx;
 }
-.brand_img{
-  
-  width: 710rpx;
-  height: 286rpx;
-  border-radius: 20rpx;
-  margin: 0 auto 49rpx;
-  border: 1rpx solid  #E8CD8A;
-}
-.brand_img image{
-  width: 710rpx;
-  height: 286rpx;
-  border-radius: 20rpx;
-}
+
 
 /* tab */
+/* tab */
 .tab_list{
-  margin: 0 auto 45rpx;
-  padding: 0 145rpx ;
+  margin: 0 auto 30rpx;
+  padding: 0 20rpx;
+}
+.tb_l{
+  white-space: nowrap;
+  width: auto;
+  overflow: hidden;
+  height: 60rpx;
+  text-align: center;
+}
+.tabNav{
+  margin-right: 85rpx;
+  display: inline-block;
 }
 .tabbar_li{
   font-size: 28rpx;
   font-weight: 400;
   color: #333333;
+  white-space: nowrap;
+}
+.tabNav:last-child{
+  margin-right: 0;
+}
+.on{
+  font-size: 30rpx;
+  color:#2895FC ;
+  position: relative;
+}
+.on::after{
+  content: "";
+  position: absolute;
+  bottom: -9rpx;
+  left: 50%;
+  margin-left: -24rpx;
+  width: 48rpx;
+  height: 6rpx;
+  background: #2895FC;
+  border-radius: 3rpx;
+}/* tab */
+.tab_list{
+  margin: 0 auto 30rpx;
+  padding: 0 36rpx;
+}
+.tb_l{
+  white-space: nowrap;
+  width: auto;
+  overflow: hidden;
+  /* height: 60rpx; */
+  text-align: center;
+}
+.tabNav{
+  margin-right: 85rpx;
+  display: inline-block;
+}
+.tabbar_li{
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+  white-space: nowrap;
+}
+.tabNav:last-child{
+  margin-right: 0;
 }
 .on{
   font-size: 30rpx;
@@ -129,7 +173,6 @@ page{
   background: #fff;
   border-radius: 3rpx;
 }
-
 
 /* good_list */
 .good_list{
@@ -172,6 +215,11 @@ page{
   font-weight: 400;
   color: #333;
   flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient:vertical
 }
 .g_name1{
   font-size: 20rpx;
@@ -197,4 +245,36 @@ page{
 .price_a_c{
   display: flex;
   align-items: baseline;
+}
+/* 新增消息滚动 */
+.scroll{
+  margin: 20rpx auto ;
+  width: 701rpx;
+  height: 54rpx;
+  background: #E7DFE8;
+  border-radius: 27rpx;
+  box-sizing: border-box;
+  padding:0  20rpx;
+  line-height: 54rpx;
+}
+.new_cion{
+  width: 31rpx;
+  height: 26rpx;
+  margin-right: 16rpx;
+}
+.new_swiper{
+  font-size: 24rpx;
+  color:#e0bbc3;
+  height:100%;
+  flex: 1;
+}
+.content-item{
+  width: 600rpx;
+  overflow: hidden;    
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.left-arr{
+  width: 18rpx;
+  height:19rpx;
 }
