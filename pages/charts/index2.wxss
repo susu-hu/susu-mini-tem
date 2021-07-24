@@ -17,11 +17,11 @@ page{
   border-radius: 50%;
   height: 220rpx;
   position: absolute;
-  /* top: 123px; */
-  top: 36%;
+  top: 50%;
   left: 50%;
-  margin-left: -111rpx;
-  /* border: 1rpx solid red; */
+  transform: translate(-50%,-50%);
+  /* margin-left: -111rpx; */
+  border: 1rpx solid red;
 }
 .text1{
   text-align: center;
