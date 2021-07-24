@@ -33,7 +33,7 @@ movable-area组件实现滑动删除
 16. 筛选页（1.小程序自带日期选择2.tab切换 3.右边弹框筛选，超出4条数据默认隐藏，可点击展开）
 17. 自定义导航 "navigationStyle": "custom" 获取胶囊和导航栏等高度，自定义图标等
 18. scroll-view填充剩余高度 ，滚动条滑动选中相应分类
-19. 自定义导航栏+swiper+首页
+19. 自定义导航栏+swiper+ 新增消息滚动弹框+左滑的tablist
 20. echarts实现饼图，canvas为原生组件，层级很高，用cover-view实现覆盖，可覆盖的原生组件包括 map、video、canvas、camera、live-player、live-pusher
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
