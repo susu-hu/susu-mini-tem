@@ -9,12 +9,28 @@ Page({
   data: {
     ec: {
       lazyLoad: true // 延迟加载
-    }
+    },
+    ec1:{
+      lazyLoad: true // 延迟加载
+    },
+    navList:['未完成','全部任务'],
+    type:0,
   },
 
  
+  tabNav(e) {
+    let {index} = e.currentTarget.dataset;
+    if (this.data.type === index || index === undefined) {
+        return false;
+    } else {
+        this.setData({
+            type: index,
+        })
+    }
+  },
   onLoad: function (options) {
     this.echartsComponnet = this.selectComponent('#mychart-dom-pie');
+    this.echartsComponnet1 = this.selectComponent('#mychart-dom-pie1');
     this.getData(); //获取数据
   },
 
@@ -35,9 +51,23 @@ Page({
       return Chart;
       
     });
+
+    this.echartsComponnet1.init((canvas, width, height,dpr) => {
+      // 初始化图表
+      const Chart = echarts.init(canvas, null, {
+        width: width,
+        height: height,
+        devicePixelRatio: dpr
+      });
+      Chart.setOption(this.getOption());
+      // 注意这里一定要返回 chart 实例，否则会影响事件处理等
+      return Chart;
+      
+    });
   },
   getOption(){
     var option = {
+      // backgroundColor: "#fff",
       title: {
         show: true,
         text :'单位：%',
@@ -46,6 +76,7 @@ Page({
       },
       tooltip: {
           trigger: 'item',
+          backgroundColor: "#fff",
           position: function (point, params, dom, rect, size) {
             // 鼠标坐标和提示框位置的参考坐标系是：以外层div的左上角那一点为原点，x轴向右，y轴向下
             // 提示框位置

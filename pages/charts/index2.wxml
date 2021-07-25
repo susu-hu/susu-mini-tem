@@ -1,11 +1,30 @@
 <!--pages/charts/index2.wxml-->
+<view class="mt"></view>
 <view class="con">
   <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
-
+  <!-- 苹果手机不会发生穿透 但是安卓会出现穿透现象  解决方法 1、把顶部的固定tab栏放到下面 cover-view的优先级根据页面顺序来 也在上面的层级就越低 2、不用cover-view 直接些样式进行定位-->
   <cover-view class="covew">
     <cover-view class="text1">苏苏</cover-view>
     <cover-view class="text2">100%</cover-view>
   </cover-view>
 </view>
 
+<cover-view class="head flex j_b">
+  <block wx:for="{{navList}}" wx:key="navList">
+    <!-- cover-vierw 真机伪类不生效-->
+    <cover-view class="c_tab" data-index="{{index}}" catchtap="tabNav">
+      <cover-view   class="tabbar_li {{type==index?'on':''}}" >{{item}}</cover-view >
+      <cover-view class="line" wx:if="{{type==index}}"></cover-view>
+    </cover-view>
+   
+  </block>
+</cover-view>
+
+<view class="con1">
+  <ec-canvas id="mychart-dom-pie1" canvas-id="mychart-pie1" ec="{{ ec1 }}"></ec-canvas>
+  <view class="c_view">
+    <view class="text1">苏苏</view>
+    <view class="text2">99%</view>
+  </view>
+</view>
 

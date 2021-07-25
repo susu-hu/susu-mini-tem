@@ -1,6 +1,56 @@
 /* pages/charts/index2.wxss */
 page{
   background-color: #fff;
+  padding-bottom: 200rpx;
+}
+.head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 160rpx ;
+  line-height: 100rpx;
+  width: 750rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+  background: #fff;
+}
+.tabbar_li{
+  font-size: 26rpx;
+  color: #666666;
+  line-height: 100rpx;
+}
+.on{
+  color: rgb(92, 8, 8);
+  /* position: relative; */
+}
+/* cover-view的伪类不生效 */
+/* .on::after{
+  position: absolute;
+  content: "";
+  height: 6rpx;
+  width: 80rpx;
+  left: 50%;
+  margin-left: -40rpx;
+  bottom: 30rpx;
+  background-color: rgb(92, 8, 8);
+} */
+.c_tab{
+  position: relative;
+}
+.line{
+  position: absolute;
+  height: 6rpx;
+  width: 80rpx;
+  left: 50%;
+  margin-left: -40rpx;
+  bottom: 10rpx;
+  background-color: rgb(92, 8, 8);
+}
+.mt{
+  margin-top: 100rpx;
+  height: 20rpx;
+  width: 100%;
+  background-color: #f4f4f4;
 }
 .con{
   height: 800rpx;
@@ -21,7 +71,7 @@ page{
   left: 50%;
   transform: translate(-50%,-50%);
   /* margin-left: -111rpx; */
-  border: 1rpx solid red;
+  /* border: 1rpx solid red; */
 }
 .text1{
   text-align: center;
@@ -35,4 +85,18 @@ page{
   font-size: 40rpx;
   font-weight: bold;
   color: red;
+}
+.con1{
+  height: 800rpx;
+  position: relative;
+}
+.c_view{
+  width: 220rpx;
+  border-radius: 50%;
+  height: 220rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1rpx solid red;
 }
