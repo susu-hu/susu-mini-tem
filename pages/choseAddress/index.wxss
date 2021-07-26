@@ -1,0 +1,104 @@
+.con {
+  margin: 26rpx 25rpx 49rpx;
+  width: 700rpx;
+  height: 513rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  padding: 26rpx;
+  box-sizing: border-box;
+}
+
+.btn {
+  margin: 0 25rpx;
+  width: 700rpx;
+  height: 82rpx;
+  background: rgba(102, 31, 115, 0.1);
+  border-radius: 41px;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 82rpx;
+  text-align: center;
+}
+
+.bg {
+  background: #ac2b0b;
+  opacity: 0.5;
+}
+.ok{
+  opacity: 1;
+}
+
+.top1 {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 41rpx;
+}
+
+.con2 {
+  padding-bottom: 11rpx;
+  border-bottom: 1px solid #F8F8F8;
+  margin-bottom: 39rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333333;
+}
+
+.con2_input {
+  width: 60%;
+  text-align: right;
+  position: relative;
+  padding-right: 20rpx;
+}
+
+.p_class {
+  color: #999999;
+}
+
+.con2:last-child {
+  margin-bottom: 0rpx;
+}
+
+.con2_add {
+  width: 78%;
+  text-align: left;
+  position: relative;
+}
+
+.add_name {
+  width: 90%;
+  line-height: 40rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.add_deta {
+  line-height: 34rpx;
+  height: 34rpx;
+  color: #999999;
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.add_arrow{
+  position: absolute;
+  width: 20rpx;
+  height: 22rpx;
+  right: 0;
+  top: 50%;
+  margin-top: -10rpx;
+}
+
+.la_tip{
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #ac2b0b;
+}

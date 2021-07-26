@@ -78,5 +78,10 @@
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置将用来选择收货地址"
+    }
+  }
 }

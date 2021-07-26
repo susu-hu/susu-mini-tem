@@ -132,7 +132,7 @@ page{
   height: 80rpx;
   line-height: 80rpx;
   color: #FFFFFF;
-  background: #3DB969;
+  background: #c95cba;
   font-size: 30rpx;
   border-radius: 50rpx;
   text-align: center;

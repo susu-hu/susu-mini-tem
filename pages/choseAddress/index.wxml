@@ -1,1 +1,44 @@
-<!--pages/choseAddress/index.wxml-->
+<view class="con">
+  <view class="top1">新建收货地址</view>
+  <view class="con2 flex-row j_b" bindtap="getLocation">
+    <view class="con2_text1">收货地址</view>
+    <block wx:if="{{add}}">
+      <view class="con2_input">
+        <input type="text" placeholder="点击选择收货地址" placeholder-class="p_class" disabled></input>
+        <image class="add_arrow" src="/img/add_left.png"></image>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="con2_add">
+        <view class="add_name">{{addressName}}</view>
+        <view class="add_deta">{{addressDetail}}</view>
+        <image class="add_arrow" src="/img/add_left.png"></image>
+      </view>
+    </block>
+  </view>
+
+  <view class="con2 flex-row j_b">
+    <view class="con2_text1">详细地址</view>
+    <view class="con2_input">
+      <input type="text" placeholder="详细地址，例1层101室" placeholder-class="p_class" bindinput="setInput" data-type="detail"
+        value="{{params.detail}}"></input>
+    </view>
+  </view>
+  <view class="con2 flex-row j_b">
+    <view class="con2_text1">联系人</view>
+    <view class="con2_input">
+      <input type="text" placeholder="请填写" placeholder-class="p_class" bindinput="setInput" data-type="contact"
+        value="{{params.contact}}"></input>
+    </view>
+  </view>
+  <view class="con2 flex-row j_b">
+    <view class="con2_text1">手机号</view>
+    <view class="con2_input">
+      <input type="number" placeholder="请填写" placeholder-class="p_class" bindinput="setInput" data-type="phone"
+        value="{{params.phone}}" maxlength="11"></input>
+    </view>
+  </view>
+
+</view>
+<view class="btn bg {{can_click?'ok':''}}" bindtap="subAddress">保存</view>
+<view class="la_tip" hidden="{{address_id}}" bindtap="chooseAddress">获取微信收货地址</view>

@@ -55,8 +55,8 @@
           "scene": null
         },
         {
-          "name": "pages/dots/index2",
-          "pathName": "pages/dots/index2",
+          "name": "pages/choseAddress/index",
+          "pathName": "pages/choseAddress/index",
           "query": "",
           "scene": null
         }
