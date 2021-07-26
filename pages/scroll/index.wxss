@@ -4,7 +4,7 @@ page {
 }
 
 .top {
-  margin: 24rpx 20rpx 37rpx;
+  margin: 24rpx 20rpx 30rpx;
   width: 710rpx;
   height: 300rpx;
   background: #e0bbc3;
@@ -24,7 +24,7 @@ page {
 }
 /* con */
 .con {
-  margin: 40rpx auto 0;
+  margin: 0 auto ;
 }
 
 .left {
