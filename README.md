@@ -16,27 +16,27 @@ movable-area组件实现滑动删除
 #### 安装教程
 
 1.  微信开发者工具打开
-2.  cal文件夹为日历页面
-3.  demo文件夹为物流页面,在页面完全渲染之前，通过一些灰色的区块大致勾勒出轮廓，待数据加载完成后，再替换成真实的内容。通常在小程序中，我们需要手工维护骨架屏的代码。
-4.  dots文件夹为自定义轮播图指示点页面
-5.  touchRemove 购物车页面+左滑删除
-6.  touchMove 滑动删除2  movable-area组件
-7.  cardCircle 卡券实现半圆状态
-8.  pop 自定义弹框 禁止底层滑动（catchtouchmove+scroll-view)
-9.  echarts的饼图和折线图(wxcharts.js)
-10. echarts官方推荐小程序使用的ec-canvas组件和echarts.js
-11. 自定义tabbar组件，cover-view进行覆盖
-12. 星星评分 1-5颗星 分别对应'极好','较好','一般','较差','很差'，点星星字段产生变化  点字段星星变化
-13. 自定义input输入框的样式 （粘贴的时候无法实现长按粘贴 待完善的bug）
-14. 自定义弹框验证码组件（v-code)
-15. 上传多张图片 wx.chooseImage()+预览图片wx.previewImage()+上传文件到服务器 wx.uploadFile()
-16. 筛选页（1.小程序自带日期选择2.tab切换 3.右边弹框筛选，超出4条数据默认隐藏，可点击展开）
-17. 自定义导航 "navigationStyle": "custom" 获取胶囊和导航栏等高度，自定义图标等
-18. scroll-view填充剩余高度 ，滚动条滑动选中相应分类
-19. 自定义导航栏+swiper+ 新增消息滚动弹框+左滑的tablist
-20. echarts实现饼图，canvas为原生组件，层级很高，用cover-view实现覆盖，可覆盖的原生组件包括 map、video、canvas、camera、live-player、live-pusher。新增修改，头部用cover-view实现fixed的tab栏 。多个cover-view的层级关系，写在页面越后面层级越高！（存在tooltip被底部字体遮挡的bug 待解决）
-21. 数值计算，引入math.js处理精度问题。
-22. 地址选择，wx.chooseLocation(需要用户授权）+wx.chooseAddress（无须用户授权，直接调用该接口）
+2.  cal：为日历页面
+3.  demo：为物流页面,在页面完全渲染之前，通过一些灰色的区块大致勾勒出轮廓，待数据加载完成后，再替换成真实的内容。通常在小程序中，我们需要手工维护骨架屏的代码。
+4.  dots：为自定义轮播图指示点页面
+5.  touchRemove： 购物车页面+左滑删除
+6.  touchMove2： 滑动删除2  movable-area组件
+7.  cardCircle： 卡券实现半圆状态
+8.  pop： 自定义弹框 禁止底层滑动（catchtouchmove+scroll-view)
+9.  pie: echarts的饼图和折线图(wxcharts.js)
+10. charts/index: echarts官方推荐小程序使用的ec-canvas组件和echarts.js
+11. index: 自定义tabbar组件，cover-view进行覆盖
+12. getStar:星星评分 1-5颗星 分别对应'极好','较好','一般','较差','很差'，点星星字段产生变化  点字段星星变化
+13. sendCode/index: 自定义input输入框的样式 （粘贴的时候无法实现长按粘贴 待完善的bug）
+14. sendCode/index2:自定义弹框验证码组件（v-code)
+15. addImg: 上传多张图片 wx.chooseImage()+预览图片wx.previewImage()+上传文件到服务器 wx.uploadFile()
+16. choseList: 筛选页（1.小程序自带日期选择2.tab切换 3.右边弹框筛选，超出4条数据默认隐藏，可点击展开）
+17. charts/index: 自定义导航 "navigationStyle": "custom" 获取胶囊和导航栏等高度，自定义图标等
+18. scroll: scroll-view填充剩余高度 ，滚动条滑动选中相应分类
+19. index2: 自定义导航栏+swiper+ 新增消息滚动弹框+左滑的tablist
+20. charts/indx2: echarts实现饼图，canvas为原生组件，层级很高，用cover-view实现覆盖，可覆盖的原生组件包括 map、video、canvas、camera、live-player、live-pusher。新增修改，头部用cover-view实现fixed的tab栏 。多个cover-view的层级关系，写在页面越后面层级越高！（存在tooltip被底部字体遮挡的bug 待解决）
+21. choseGoods:数值计算，引入math.js处理精度问题。
+22. choseAddress:地址选择，wx.chooseLocation(需要用户授权）+wx.chooseAddress（无须用户授权，直接调用该接口）
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0611/134711_a94e772a_8576727.png "屏幕截图.png")
