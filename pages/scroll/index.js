@@ -154,45 +154,45 @@ Page({
             img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
             price:356.00,
           },
-          {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
-            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-            price:356.00,
-          },
-          {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
-            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-            price:356.00,
-          },
-          {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
-            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-            price:356.00,
-          }, {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
-            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-            price:356.00,
-          },
-          {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
-            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-            price:356.00,
-          },
-          {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的20',
-            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-            price:356.00,
-          },
-          {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的20',
-            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-            price:356.00,
-          },
-          {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的20',
-            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-            price:356.00,
-          },
+          // {
+          //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+          //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+          //   price:356.00,
+          // },
+          // {
+          //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+          //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+          //   price:356.00,
+          // },
+          // {
+          //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+          //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+          //   price:356.00,
+          // }, {
+          //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+          //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+          //   price:356.00,
+          // },
+          // {
+          //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+          //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+          //   price:356.00,
+          // },
+          // {
+          //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的20',
+          //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+          //   price:356.00,
+          // },
+          // {
+          //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的20',
+          //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+          //   price:356.00,
+          // },
+          // {
+          //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的20',
+          //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+          //   price:356.00,
+          // },
         ]
       }
     ],
@@ -230,11 +230,12 @@ Page({
   
   onReady: function () {
     
-    //设置铺满高度的另一种方法
+    //设置铺满高度的另一种方法1
     // wx.createSelectorQuery().selectAll("#top").boundingClientRect((rect)=>{
     //   console.log(rect)
     // }).exec();
-    let query = wx.createSelectorQuery().in(this);//this传入的是自定义组件的实例，否则获取到的rect值为null。
+    //方法2
+    /*let query = wx.createSelectorQuery().in(this);//this传入的是自定义组件的实例，否则获取到的rect值为null。
     wx.getSystemInfo({
       success: res => {
         console.log(res)
@@ -248,7 +249,7 @@ Page({
           console.log(scrollViewHeight)
         });
       }
-    }) 
+    }) */
   },
 
  
@@ -281,6 +282,12 @@ Page({
         }
       }
     }
-  },
+    if( this.data.scrollTop >=this.data.top[length-1] ){
+      this.setData({
+        chosed_index: length-1,
+      });
+    }
+
+  }
   
 })

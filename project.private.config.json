@@ -13,14 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/choseGoods/index",
-          "pathName": "pages/choseGoods/index",
+          "name": "pages/sendCode/index",
+          "pathName": "pages/sendCode/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/charts/index2",
-          "pathName": "pages/charts/index2",
+          "name": "pages/scroll/index",
+          "pathName": "pages/scroll/index",
           "query": "",
           "scene": null
         },
@@ -49,8 +49,8 @@
           "scene": null
         },
         {
-          "name": "pages/dots/index",
-          "pathName": "pages/dots/index",
+          "name": "pages/pop/index",
+          "pathName": "pages/pop/index",
           "query": "",
           "scene": null
         },

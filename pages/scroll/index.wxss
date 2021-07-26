@@ -135,3 +135,9 @@ page {
   font-weight: bold;
   color: #666666;
 }
+/* 隐藏scroll-view的滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+ }
