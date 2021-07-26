@@ -77,7 +77,9 @@ Page({
       tooltip: {
           trigger: 'item',
           backgroundColor: "#fff",
+          extraCssText:'z-index:9999999999',
           position: function (point, params, dom, rect, size) {
+            dom.style.transform = "translateZ(0)";
             // 鼠标坐标和提示框位置的参考坐标系是：以外层div的左上角那一点为原点，x轴向右，y轴向下
             // 提示框位置
             let x = 0; // x坐标位置

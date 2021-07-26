@@ -1,0 +1,41 @@
+<!--pages/choseGoods/index.wxml-->
+<view class="head flex j_b">
+  <block wx:for="{{navList}}" wx:key="navList">
+    <view class="c_tab" data-index="{{index}}" catchtap="tabNav">
+      <view   class="tabbar_li {{type==index?'on':''}}" >{{item}}</view >
+      <view class="c_line" wx:if="{{type==index}}"></view>
+    </view>
+  </block>
+</view>
+<view class="con">
+  <block wx:for="{{goods_list}}" wx:key="index">
+    <view class="c_item flex" catchtap="choseGoods" data-index="{{index}}">
+      <image src="{{item.goods_cover}}" class="c_item_img"></image>
+      <view>
+        <text class="line_ellipsis item_text">{{item.goods_name}}</text>
+        <text class="item_price">￥{{item.sale_price}}</text>
+      </view>
+      <view class="item_icon">
+        <image src="/img/cart_select.png" wx:if="{{item.chosed}}" ></image>
+        <image src="/img/cart_uncheck.png" wx:else ></image>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view wx:if="{{type==0}}" class="c_case flex  j_b">
+  <text>剩余可选商品数量</text>
+  <text class="quantity_text">{{remain_num}}</text>
+</view>
+<view wx:else class="c_case1 "> 
+  <view class="flex  j_b">
+    <text>剩余可选商品价值</text>
+    <text class="quantity_text">{{remain_money}}元</text>
+  </view>
+  <view class="line" wx:if="{{if_needPay}}"></view>
+  <view class="flex  j_b need_text" wx:if="{{needPay}}">
+    <text>订单仍需支付金额</text>
+    <text class="quantity_text1">{{needPay}}元</text>
+  </view>
+</view>
+<view class="button" bindtap="changeSubmit">确定</view>

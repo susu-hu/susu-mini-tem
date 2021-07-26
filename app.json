@@ -24,7 +24,8 @@
     "pages/scroll/index",
     "pages/scroll2/index",
     "pages/scroll/index2",
-    "pages/charts/index2"
+    "pages/charts/index2",
+    "pages/choseGoods/index"
   ],
   "subPackages": [
     {

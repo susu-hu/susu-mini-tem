@@ -1,0 +1,140 @@
+/* pages/choseGoods/index.wxss */
+page{
+  padding-bottom: 160rpx;
+}
+.head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 160rpx ;
+  line-height: 100rpx;
+  width: 750rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #ccc;
+  z-index: 99;
+}
+.tabbar_li{
+  font-size: 26rpx;
+  color: #666666;
+  line-height: 100rpx;
+}
+.on{
+  color: rgb(92, 8, 8);
+}
+
+.c_tab{
+  position: relative;
+}
+.c_line{
+  position: absolute;
+  height: 6rpx;
+  width: 80rpx;
+  left: 50%;
+  margin-left: -40rpx;
+  bottom: 10rpx;
+  background-color: rgb(92, 8, 8);
+}
+.con{
+  margin: 120rpx 10rpx 20rpx;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 10rpx;
+  border-radius: 20rpx;
+}
+.c_item{
+  width: 710rpx;
+  /* min-height: 200rpx; */
+  background: #FFFFFF;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  padding: 20rpx 40rpx 36rpx 8rpx;
+  position: relative;
+}
+.c_item_img{
+  width: 142rpx;
+  height: 142rpx;
+  background: #E1E1E1;
+  border-radius: 16rpx;
+  margin-right: 24rpx;
+}
+.item_text{
+  font-size: 24rpx;
+  color: #333333;
+  margin-bottom: 24rpx;
+  width: 386rpx;
+  line-height: 40rpx;
+  font-weight: 500;
+}
+.item_price{
+  font-size: 28rpx;
+  color: #F93822;
+  font-weight: 600;
+}
+.item_icon{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 50%;
+  margin-top: -15rpx;
+}
+.item_icon image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.c_case{
+  width: 710rpx;
+  background: #FFFFFF;
+  opacity: 1;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  padding: 22rpx 40rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+.quantity_text{
+  color: #393939;
+  white-space: nowrap;
+  margin-left: 40rpx;
+  font-weight: 600;
+}
+.c_case1{
+  width: 710rpx;
+  background: #FFFFFF;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  padding: 24rpx 40rpx 32rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+.line{
+  margin: 30rpx 0 28rpx;
+  width: 630rpx;
+  height: 0rpx;
+  border: 1rpx solid #F2F2F2;
+}
+.need_text{
+  color: #F93822;
+}
+.quantity_text1{
+  white-space: nowrap;
+  margin-left: 40rpx;
+  font-weight: 600;
+}
+.button {
+  position: fixed;
+  bottom: 40rpx;
+  left: 40rpx;
+  width: 670rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #FFFFFF;
+  background: #3DB969;
+  font-size: 30rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  z-index: 999;
+}

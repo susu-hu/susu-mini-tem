@@ -13,14 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/charts/index2",
-          "pathName": "pages/charts/index2",
+          "name": "pages/choseGoods/index",
+          "pathName": "pages/choseGoods/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/another/subIndex/index",
-          "pathName": "pages/another/subIndex/index",
+          "name": "pages/charts/index2",
+          "pathName": "pages/charts/index2",
           "query": "",
           "scene": null
         },
