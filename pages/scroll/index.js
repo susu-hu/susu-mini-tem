@@ -28,6 +28,10 @@ Page({
         id:5,
         name:'类别5'
       },
+      {
+        id:6,
+        name:'类别6'
+      },
     ],
     chosed_cate_id:'',
     goods_list:[
@@ -116,12 +120,12 @@ Page({
             price:356.00,
           },
           {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的15',
+            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的13',
             img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
             price:356.00,
           },
           {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的16',
+            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的14',
             img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
             price:356.00,
           },
@@ -141,16 +145,16 @@ Page({
             img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
             price:356.00,
           },
-          {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
-            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-            price:356.00,
-          },
-          {
-            goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
-            img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-            price:356.00,
-          },
+          // {
+          //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+          //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+          //   price:356.00,
+          // },
+          // {
+          //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
+          //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+          //   price:356.00,
+          // },
           // {
           //   goods_name:'巴啦啦门路沙地柏阿实践活动氨基酸的19',
           //   img:'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
@@ -186,12 +190,16 @@ Page({
           //   price:356.00,
           // },
         ]
-      }
+      },
+      {
+        type_id:6,
+        type_name:'类别6',
+        list:[]
+      },
     ],
     toTitle: "",
     scrollTop: 0,
     top: [],
-    noscroll:false,
   },
 
   /**
@@ -253,20 +261,19 @@ Page({
    * 选中分类
    */
   choseCate(e) {
-    let {id,index,noscroll} = e.currentTarget.dataset;
+    let {id,index} = e.currentTarget.dataset;
     this.setData({
         chosed_cate_id: id,
         chosed_index:index,
         toTitle: "title-" + id,
-        noscroll:true,
     })
     let  {top,scrollTop }= this.data;
     let length=top.length;
-    if(scrollTop>top[index-1]){
-      console.log(top[index-1])
-      // this.setData({
-      //   chosed_index:length-1,
-      // })
+    console.log(scrollTop)
+    if(scrollTop>top[length-2]-top[0] ){
+
+    }else{
+      console.log(111111)
     }
   },
   //滚动
@@ -275,9 +282,6 @@ Page({
       scrollTop: e.detail.scrollTop
     })
     var length = this.data.top.length;
-    if(this.data.noscroll){
-      
-    }
     for (var i = 0; i < this.data.top.length; i++) {
       if (this.data.top[i] - this.data.top[0] <= this.data.scrollTop && (i < length - 1 && this.data.top[i + 1] - this.data.top[0] > this.data.scrollTop)) {
         if (this.data.chosed_index != i) {
@@ -288,11 +292,13 @@ Page({
       }
     }
     if( this.data.scrollTop >=this.data.top[length-1]-this.data.top[0] ){
-      console.log(this.data.top[length-2]-this.data.top[0])
+      console.log(this.data.top[length-1]-this.data.top[0])
       this.setData({
         chosed_index: length-1,
       });
     }
+    
+   
 
   }
   

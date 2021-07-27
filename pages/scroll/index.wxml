@@ -17,20 +17,26 @@
       </scroll-view>
   </view>
   <view class="right" style="height:{{scrollheight}}rpx">
-      <scroll-view scroll-y style="height:{{scrollheight}}rpx;" scroll-with-animation="true" scroll-into-view="{{toTitle}}" class="s_right" bindscroll="onScroll">
+      <scroll-view scroll-y style="height:{{scrollheight}}rpx;" scroll-with-animation="true"  scroll-into-view="{{toTitle}}" class="s_right" bindscroll="onScroll">
           <view class="item" id="title-{{item.type_id}}" wx:for="{{goods_list}}" wx:key="goods_list">
             <view class="t_name">{{item.type_name}}</view>
-            <view class="goods-item"  wx:for="{{item.list}}"wx:key="goods_list" wx:for-item="item1"wx:for-index="index1">
-              <view class="flex j_b">
-                  <image src="{{item1.img}}" class="item_img"></image>
-                  <view class="item_name">
-                      <text class="name">{{item1.goods_name}}</text>
-                      <view class="flex-row">
-                          <text class="stock_text">价格:</text>
-                          <text class="s_price">￥{{item1.price}}</text>
-                      </view>
-                  </view>
+            <view wx:if="{{item.list.length>0}}">
+              <view class="goods-item"  wx:for="{{item.list}}"wx:key="goods_list" wx:for-item="item1"wx:for-index="index1">
+                <view class="flex j_b">
+                    <image src="{{item1.img}}" class="item_img"></image>
+                    <view class="item_name">
+                        <text class="name">{{item1.goods_name}}</text>
+                        <view class="flex-row">
+                            <text class="stock_text">价格:</text>
+                            <text class="s_price">￥{{item1.price}}</text>
+                        </view>
+                    </view>
+                </view>
               </view>
+            </view>
+            <view wx:else class="flex-column">
+              <image src="/img/goods_none.png" class="goods_none"></image>
+              <text class="no_tip">暂无商品哦~</text>
             </view>
           </view>
       </scroll-view>

@@ -141,3 +141,13 @@ page {
   height: 0;
   color: transparent;
  }
+ .no_tip{
+   display: block;
+   padding-top: 40rpx;
+   font-size: 28rpx;
+   color: #666666;
+ }
+ .goods_none{
+  width: 150rpx;
+  height: 150rpx;
+ }

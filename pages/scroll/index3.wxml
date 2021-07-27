@@ -1,0 +1,41 @@
+<!--pages/scroll/index3.wxml-->
+<view class="head">
+  <view class="menu" style="height:{{navHeight}}px;padding-top:{{navTop}}px;padding-right:{{navRight+5}}px;padding-bottom:{{navBottom}}px">
+    <block wx:for="{{navList}}" wx:key="navList">
+      <view class='item {{type == index? "on" : ""}}' data-index="{{index}}" catchtap="tabNav" data-type="type{{index}}">{{item}}</view>
+    </block>
+  </view>
+</view>
+
+<scroll-view class="box" style="height:{{winHeight}}; padding-top:{{navHeight}}px;" scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true" bindscroll="onPageScroll">
+  <view id="type0" class="goods_de">
+    <text class="title">商品图</text>
+
+    <image src="https://i.postimg.cc/65STLQNc/333.webp" class="g_img"></image>
+   
+    <!--商品价格-->
+    <view class='discount flex-row j_b'>
+      <text class="bg_color">￥{{9.90}}</text>
+      <view class='get_coupon flex-row j_b' >领券<image src='/img/add_left.png'></image></view>
+    </view>
+
+    <view class='detail'>
+      <view class='goods_name line_ellipsis'>丸子妹可爱表情包，只要9.9包邮哦下单请看详情哈哈哈哈哈哈哈啊哈啊哈啊嗷嗷喊啊</view>
+      <view class='store flex j_b'>
+        <text>库存：{{99}}</text>
+        <text>{{19}}人付款</text>
+      </view>
+      <button class='share flex f_c' open-type='share'>
+        <image src='/img/share_icon.png'></image>
+        <text>分享</text>
+      </button>
+    </view>
+  </view>
+  <view id="type1">
+    <text class="title">评论部分</text>
+  </view>
+  <view id="type2" class="g_de">
+    <text class="title">详情部分</text>
+    <rich-text nodes="{{desc}}" class="rich_text"></rich-text>
+  </view>
+</scroll-view>
