@@ -7,9 +7,9 @@ page{
   display: flex;
   background:#fff;
   box-sizing: border-box;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 40rpx;
+  padding-left: 15rpx;
 }
 .head{
   position: fixed;
@@ -33,15 +33,12 @@ page{
   color: transparent;
  }
  .goods_de{
-   margin: 20rpx auto;
+   margin: 0 auto;
    box-sizing: border-box;
-   padding: 20rpx 0;
-   background-color: #fff;
  }
  .title{
   font-size: 30rpx;
   color: #333;
-  margin-bottom: 20rpx;
   width: 100%;
   display: block;
   text-align: center;
@@ -51,6 +48,9 @@ page{
   padding: 25rpx 30rpx;
   border-top: 2rpx solid #F3F3F3;
   box-sizing: border-box;
+ }
+ .g_re{
+  margin: 20rpx auto;
  }
 .rich_text {
   margin-top: 20rpx;
@@ -67,10 +67,18 @@ page{
   display: flex;
   justify-content: center
 }
-.g_img{
+.swiper {
   width: 100%;
-  height: 750rpx;
+  height: 100%;
 }
+
+.swiper image,
+.swiper video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .g_name{
   color: #333;
   font-size: 30rpx;
@@ -80,6 +88,8 @@ page{
 .discount ,.detail{
   padding-top: 20rpx;
   padding-left: 20rpx;
+  position: relative;
+  background-color: #fff;
 }
 .bg_color {
   color: #EC211C;
@@ -96,8 +106,9 @@ page{
 }
 
 .get_coupon image {
-  width: 20rpx;
+  width: 16rpx;
   height: 20rpx;
+  margin-left: 10rpx;
 }
 .goods_name {
   width: 88%;
@@ -110,12 +121,12 @@ page{
 .store {
   color: #999;
   font-size: 24rpx;
-  margin-top: 15rpx;
+  margin-top: 30rpx;
 }
 
 .share {
   position: absolute;
-  top: 2rpx;
+  top: 20rpx;
   right: 25rpx;
   color: #666;
   font-size: 20rpx;
@@ -124,4 +135,146 @@ page{
 .share image {
   width: 40rpx;
   height: 40rpx;
+}
+.choose_unit{
+  padding: 20rpx 25rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+.unit_title {
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #333333;
+}
+.unit_name {
+  font-size: 28rpx;
+  color: #333333;
+  margin-left: 20rpx;
+  display: inline-block;
+  width: 580rpx;
+}
+.choose_unit image{
+  width: 9rpx;
+  height: 20rpx;
+}
+
+
+.label {
+  width: 100%;
+  height: 98rpx;
+  padding: 24rpx 0 20rpx 24rpx;
+  background-color: #fff;
+  display: flex;
+  white-space: nowrap;
+  overflow-x: scroll;
+  box-sizing: border-box;
+  z-index: 100;
+  margin-bottom: 20rpx;
+}
+.li {
+  margin-right: 20rpx;
+  height: 50rpx;
+  padding: 0 20rpx;
+  line-height: 50rpx;
+  background: #F4F4F4;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #333;
+  border: 1rpx solid #F4F4F4;
+  box-sizing: border-box;
+}
+.li_on {
+  color: #3DB969;
+  background: #EBF8F0;
+  border: 1rpx solid #3DB969;
+}
+.re_item {
+  padding: 24rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+}
+.user_info{
+  height: 60rpx;
+  margin-bottom: 20rpx;
+}
+.img_user{
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+}
+.user_info .title_u {
+  float: left;
+}
+.user_info .title_u  .name{
+  font-size: 24rpx;
+  color: #333333;
+  height: 30rpx;
+}
+.time{
+  float: right;
+  font-size: 20rpx;
+  color: #666666;
+  line-height: 60rpx;
+}
+.user_star{
+  height: 30rpx;
+  padding-top: 6rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.user_star image{
+  width: 24rpx;
+  height: 24rpx;
+  float: left;
+}
+.comment {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #333333;
+  margin-bottom: 20rpx;
+}
+.re_img{
+  width: 220rpx;
+  height: 220rpx;
+  margin-right: 21rpx;
+  margin-bottom: 21rpx;
+}
+.re_img:nth-child(3n+3){
+  width: 220rpx;
+  height: 220rpx;
+  margin-right: 0;
+  margin-bottom: 21rpx;
+}
+/* 头部标题 */
+.men_box{
+  border: 1px solid #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0px 10rpx;
+  height: 100%;
+}
+.t_icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+.na_box{
+  width: 70rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.n1::after{
+  content: '';
+  width: 2rpx;
+  height: 44rpx;
+  background: #eee;
+  position: absolute;
+  top: -4rpx;
+  left: -7rpx;
 }
