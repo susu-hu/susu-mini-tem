@@ -126,12 +126,12 @@ Page({
   },
   onPageScroll: function (e) {
     console.log(e.detail.scrollTop)
-    if (e.detail.scrollTop <= this.data.commentBoxTop - this.data.navHeight){
+    if(e.detail.scrollTop < this.data.commentBoxTop -this.data.navHeight){
       this.setData({
-        type: '0'
+        type:'0'
       })
     }
-    if (e.detail.scrollTop > this.data.commentBoxTop -this.data.navHeight){
+    if (e.detail.scrollTop >= this.data.commentBoxTop -this.data.navHeight){
       this.setData({
         type:'1'
       })
@@ -141,5 +141,22 @@ Page({
         type: '2'
       })
     }
-  }
+  },
+  //回退
+  _navBack: function () {
+    wx.navigateBack({
+      delta: 1,
+      fail: function() {
+        wx.switchTab({
+          url: '/pages/index2/index'
+        })
+      }
+    })      
+  },
+  //回主页
+  _toIndex: function () {
+    wx.switchTab({
+      url: '/pages/index2/index'
+    })
+  },
 })
