@@ -131,12 +131,12 @@ Page({
         type:'0'
       })
     }
-    if (e.detail.scrollTop >= this.data.commentBoxTop -this.data.navHeight){
+    if (e.detail.scrollTop >= this.data.commentBoxTop -this.data.navHeight &&  e.detail.scrollTop < this.data.infoBoxTop - this.data.navHeight){
       this.setData({
         type:'1'
       })
     }
-    if (e.detail.scrollTop > this.data.infoBoxTop - this.data.navHeight){
+    if (e.detail.scrollTop >= this.data.infoBoxTop - this.data.navHeight){
       this.setData({
         type: '2'
       })

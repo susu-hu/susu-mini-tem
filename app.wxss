@@ -68,3 +68,7 @@ button::after{
   outline: none;
   border: none;
 }
+/*  点击后样式 */
+.button-hover{
+  background: transparent;
+}
