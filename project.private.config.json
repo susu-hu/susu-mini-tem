@@ -55,8 +55,8 @@
           "scene": null
         },
         {
-          "name": "pages/choseAddress/index",
-          "pathName": "pages/choseAddress/index",
+          "name": "pages/sendCode/index2",
+          "pathName": "pages/sendCode/index2",
           "query": "",
           "scene": null
         }
