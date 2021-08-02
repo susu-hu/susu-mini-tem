@@ -278,6 +278,7 @@ Page({
   },
   //滚动
   onScroll(e) {
+    console.log(e.detail.scrollTop)
     this.setData({
       scrollTop: e.detail.scrollTop
     })

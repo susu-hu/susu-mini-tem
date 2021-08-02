@@ -1,0 +1,31 @@
+
+<view wx:if="{{hasData}}">
+  <view class="head">
+    <text>顺丰快递  {{wuliu_no}}</text>
+    <text class="h_copy" catchtap="copyId">复制</text>
+  </view>
+  <view class="con">
+    <block wx:for="{{expresslist.list}}" wx:key="list">
+      <view class="l_item flex">
+        <view class="l_left">
+          <view class="l_2_img" wx:if="{{item.status==0}}" >
+            <image src="/img/wuliu_icon2.png" class="l_2_img"></image>
+          </view>
+          <view wx:else  class="l_2_img flex-column">
+            <view class="l_circle"></view>
+          </view>
+        </view>
+        <view>
+          <text class="l_name">{{item.status_name}} {{item.time}}</text>
+          <view class="l_text line_ellipsis">{{item.text}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view wx:else>
+  <image src="/img/no_logistic.png" class="no_data"></image>
+  <text class="no_tip">暂无数据</text>
+</view>
+
+<suspension></suspension>

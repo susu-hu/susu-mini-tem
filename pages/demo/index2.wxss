@@ -1,0 +1,85 @@
+/* pages/demo/index2.wxss */
+/* pages/logistic/index.wxss */
+.head{
+  width: 100%;
+  height: 124rpx;
+  line-height: 124rpx;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  font-size: 26rpx;
+  color: #333333;
+}
+.h_copy{
+  color: #682074;
+  margin-left: 32rpx;
+}
+.con{
+  width: 750rpx;
+  height: calc(100vh - 63px);
+  background: #FFFFFF;
+  box-sizing: border-box;
+  padding: 26rpx 40rpx 0 14rpx;
+}
+.no_data{
+  width: 280rpx;
+  height: 280rpx;
+  margin: 216rpx auto 78rpx;
+  display: block;
+}
+.no_tip{
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #999999;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.l_item{
+  margin-bottom: 70rpx;
+}
+.l_item :last-child{
+  margin-bottom: 0;
+}
+.l_text{
+  font-size: 26rpx;
+  color: #666666;
+  line-height: 36rpx;
+  margin-top: 12rpx;
+}
+.l_name{
+  font-size: 34rpx;
+  color: #333333;
+}
+.l_2_img{
+  width: 56rpx;
+  height: 56rpx;
+  margin-right: 10rpx;
+  justify-content: center;
+}
+.l_2_img image{
+  width: 56rpx;
+  height: 56rpx;
+  margin-right: 10rpx;
+}
+.l_circle{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background-color:#D2D8E2 ;
+}
+.l_2_img ::after{
+  content: "";
+  position: absolute;
+  width: 2rpx;
+  height: 152rpx;
+  background: #D2D8E2;
+  top: 58rpx;
+  left: 50%;
+  margin-left: -6rpx;
+}
+.l_left{
+  position: relative;
+}
+.l_item:last-child >.l_left >.l_2_img>.l_circle::after{
+  display: none;
+}

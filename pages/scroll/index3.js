@@ -30,6 +30,7 @@ Page({
 
     toView:'productBox',
     nowstatus:'productBox',
+    scrollTop:'',
 
     //导航栏自定义
     navHeight:'',
@@ -125,22 +126,28 @@ Page({
     }).exec()
   },
   onPageScroll: function (e) {
+
+    this.setData({
+      scrollTop: e.detail.scrollTop
+    })
     console.log(e.detail.scrollTop)
     if(e.detail.scrollTop < this.data.commentBoxTop -this.data.navHeight){
       this.setData({
         type:'0'
       })
     }
-    if (e.detail.scrollTop >= this.data.commentBoxTop -this.data.navHeight){
+    if (e.detail.scrollTop >= this.data.commentBoxTop -this.data.navHeight && e.detail.scrollTop<this.data.infoBoxTop - this.data.navHeight){
       this.setData({
         type:'1'
       })
     }
-    if (e.detail.scrollTop > this.data.infoBoxTop - this.data.navHeight){
+    if (e.detail.scrollTop >= this.data.infoBoxTop - this.data.navHeight){
       this.setData({
         type: '2'
       })
     }
+    
+    
   },
   //回退
   _navBack: function () {

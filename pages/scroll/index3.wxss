@@ -52,6 +52,9 @@ page{
  .g_re{
   margin: 20rpx auto;
  }
+ scroll-view{
+   height: 100%;
+ }
 .rich_text {
   margin-top: 20rpx;
   max-width: 100%;

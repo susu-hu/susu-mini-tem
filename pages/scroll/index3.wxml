@@ -15,7 +15,7 @@
   </view>
 </view>
 
-<scroll-view class="box" style="height:{{winHeight}}; padding-top:{{navHeight}}px;" scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true" bindscroll="onPageScroll">
+<scroll-view class="box" style="height:{{winHeight}}; padding-top:{{navHeight}}px;" throttle="{{false}}" scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true" bindscroll="onPageScroll">
   <!-- 商品 -->
   <view id="type0" class="goods_de">
     <!--轮播-->
@@ -85,6 +85,8 @@
   <!-- 详情 -->
   <view id="type2" class="g_de">
     <text class="title">详情</text>
-    <rich-text nodes="{{desc}}" class="rich_text"></rich-text>
+    <!-- <rich-text nodes="{{desc}}" class="rich_text"></rich-text> -->
   </view>
 </scroll-view>
+
+

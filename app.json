@@ -27,7 +27,8 @@
     "pages/charts/index2",
     "pages/choseGoods/index",
     "pages/scroll/index3",
-    "pages/asyncPromise/index"
+    "pages/asyncPromise/index",
+    "pages/demo/index2"
   ],
   "subPackages": [
     {
