@@ -69,12 +69,7 @@ button::after{
   outline: none;
   border: none;
 }
-<<<<<<< HEAD
 
 .button-hover{ /*点击后样式*/
-=======
-/*  点击后样式 */
-.button-hover{
->>>>>>> f38a45f3db8e6e13419fad155cb2d33251757e26
   background: transparent;
 }
