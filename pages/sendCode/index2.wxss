@@ -2,8 +2,15 @@
 page{
   background: #fff;
 }
+.bg_img{
+  position: absolute;
+  z-index:-1;
+  width: 100%;
+  height: 750rpx;
+  filter: blur(10rpx);
+}
 .top{
-  margin: 300rpx auto 20rpx;
+  padding: 250rpx 0 20rpx;
 }
 .top image{
   width: 200rpx;
@@ -13,16 +20,17 @@ page{
 .top text{
   margin-top: 20rpx;
   font-size: 28rpx;
-  color: rgb(202, 187, 187);
+  color: #fff;
   margin-bottom: 40rpx;
 }
 .btn{
   margin-top: 20rpx;
   font-size: 28rpx;
-  color: rgb(202, 187, 187);
+  color: #fff;
   width: 200rpx;
   height: 60rpx;
-  border: 1px solid rgb(202, 187, 187);
+  border: 1px solid rgb(218, 205, 205);
+  background: rgb(218, 205, 205);
   text-align:center;
   line-height:60rpx;
 }

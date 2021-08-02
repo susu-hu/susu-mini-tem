@@ -1,4 +1,5 @@
 <!--pages/sendCode/index2.wxml-->
+<image src="https://i.postimg.cc/WzKK73vQ/20210729155755.jpg" class="bg_img"></image>
 <view class="top flex-column">
   <image src="https://i.postimg.cc/Gm7KjGmN/111.jpg"></image>
   <text>~欢迎来到苏苏的码云~</text>
