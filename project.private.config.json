@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "pages/scroll/index2",
-          "pathName": "pages/scroll/index2",
+          "name": "pages/another/subIndex/index",
+          "pathName": "pages/another/subIndex/index",
           "query": "",
           "scene": null
         },
@@ -43,8 +43,8 @@
           "scene": null
         },
         {
-          "name": "pages/demo/index2",
-          "pathName": "pages/demo/index2",
+          "name": "pages/addImg/index",
+          "pathName": "pages/addImg/index",
           "query": "",
           "scene": null
         },

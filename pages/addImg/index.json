@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "上传图片",
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor":"#e0bbc3",
+  "navigationBarTextStyle":"white"
 }
