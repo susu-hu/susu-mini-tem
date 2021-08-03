@@ -1,17 +1,18 @@
 page{
   background: #fff;
 }
-.pure_top{
+.head_top{
   width: 100%;
-  height: 100rpx;
+  height: 300rpx;
   position: relative;
   z-index: -1;
   overflow: hidden;
+  /* border: 1rpx  solid #333; */
 }
-.pure_top::after{
+.head_top::after{
   content: '';  
   width: 140%;
-  height: 100rpx;
+  height: 300rpx;
   position: absolute;
   z-index: -1;
   left: -20%;
@@ -19,6 +20,7 @@ page{
   border-radius: 0 0 50% 50%;
   background: #e0bbc3;
 }
+
   
 /* con */
 .con{

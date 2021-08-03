@@ -2,5 +2,7 @@
   "navigationBarTitleText": "弹框验证码",
   "usingComponents": {
     "verifycode": "/components/v-code/verifycode"
-  }
+  },
+  "navigationBarBackgroundColor":"#a4d1eb",
+  "navigationBarTextStyle":"white"
 }

@@ -2,6 +2,25 @@
 page{
   background: #fff;
 }
+.head_top{
+  width: 100%;
+  height: 100rpx;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+.head_top::after{
+  content: '';  
+  width: 140%;
+  height: 100rpx;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  background: #a4d1eb;
+}
+
 .bg_img{
   position: absolute;
   z-index:-1;
@@ -33,4 +52,26 @@ page{
   background: rgb(218, 205, 205);
   text-align:center;
   line-height:60rpx;
+}
+
+.st_icon{
+  width: 122rpx;
+  height: 42rpx;
+  z-index: 111;
+  font-size: 20rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border-radius: 21rpx  0 8rpx 0;
+}
+.s_bg2{
+  color: #1F2879;
+  background: linear-gradient(262deg, #B6AEF7 0%, #F0EFFF 48%, #CAC4FA 100%);
+}
+.s_bg1{
+  color: #4E3D04;
+  background: linear-gradient(262deg, #F2D678 0%, #FFF4D1 48%, #F2D576 100%);
+}
+.s_bg0{
+  color: #1F3E79;
+  background: linear-gradient(262deg, #AED0F7 0%, #EFF8FF 48%, #AAD8FF 100%);
 }

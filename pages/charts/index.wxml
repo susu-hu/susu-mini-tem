@@ -9,7 +9,6 @@
         </view>
     </navBar>
 </view>
-
 <view class="con">
  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
 </view>
