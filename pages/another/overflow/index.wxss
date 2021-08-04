@@ -1,0 +1,332 @@
+/* pages/another/overflow/index.wxss */
+.margin-layout {
+  background: #FFFFFF;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+ 
+.margin-layouts {
+  border-radius: 20rpx;
+  background: #FFFFFF;
+  padding-bottom: 44rpx;
+}
+.comment-user {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+  height: 100rpx;
+}
+.user {
+  height: 100rpx;
+  display: flex;
+  align-self: center;
+}
+.user-head-portrait {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 10rpx;
+}
+.user-name {
+  align-self: center;
+}
+.appraise-date {
+  align-self: center;
+  color: #8a8a8a;
+}
+.commodity {
+  width: 100%;
+  height: 163rpx;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  border-top: 1rpx solid #EEEEEE;
+  margin-bottom: 20rpx;
+}
+.commdoity-image {
+  width: 16.53%;
+  display: flex;
+}
+.commodity-img {
+  width: 124rpx;
+  height: 124rpx;
+  align-self: center;
+}
+.commodity-title .title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  align-self: center;
+  margin-right: 20rpx; 
+}
+commdoity-image-right {
+  width: 5.6%;
+}
+.commdoity-image-right image {
+  width: 42rpx;
+  height: 42rpx;
+}
+.commodity-line {
+  -webkit-line-clamp: 2;
+  opacity: 0.75;
+}
+.goods-price {
+  margin-top: 34rpx;
+  color: #F73A3F;
+}
+.goods-price text:nth-child(2), .goods-price text:nth-child(3) {
+  font-size: 32rpx;
+}
+.goods-price text:nth-child(1), .goods-price text:nth-child(4) {
+  font-size: 18rpx;
+}
+/* 用户评价内容 */
+.appraise-user {
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  overflow: hidden;
+}
+.user-comment {
+  border-bottom: 1px solid #efefef;
+}
+.comment-user {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+  height: 104rpx;
+}
+ 
+.user {
+  height: 100rpx;
+  display: flex;
+  align-self: center;
+}
+ 
+.user-head-portrait {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 10rpx;
+}
+ 
+.user-name {
+  align-self: center;
+  font-size: 20rpx;
+}
+ 
+.user-name view:nth-child(2) image {
+  width: 14rpx;
+  height: 14rpx;
+}
+ 
+.appraise-date {
+  align-self: center;
+  color: #666666;
+  padding-top: 20rpx;
+}
+ 
+.appraise-content {
+  font-size: 24rpx;
+  margin: 0rpx 0 19rpx;
+}
+.appraise-content view {
+  line-height: 36rpx;
+}
+.appraise-content view text:nth-child(1) {
+  color: #999999;
+}
+appraise-content view text:nth-child(2) {
+  color: #000000;
+}
+ 
+.evaluate-content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #000000;
+}
+ 
+.ellipsis {
+  /* -webkit-line-clamp: 5; */
+  opacity: 0.75;
+}
+ 
+.unellipsis {
+  -webkit-line-clamp: 0;
+  opacity: 1;
+}
+ 
+.content-jian {
+  float: right;
+}
+ 
+.appraise-base {
+  margin: 0 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20rpx;
+  height: 40rpx;
+}
+ 
+.scroll-view-true {
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+}
+.scroll-view-true image {
+  width: 230rpx;
+  height: 240rpx;
+  margin-right: 10rpx;
+  padding-bottom: 11rpx;
+}
+ 
+.choice {
+  color: #8a8a8a;
+  align-self: center;
+}
+ 
+.write-back {
+  display: flex;
+  color: #666666;
+  align-self: center;
+}
+.write-back view {
+  display: flex;
+  align-items: center;
+}
+ 
+.write-back view:nth-child(1){
+  margin-right: 72rpx;
+}
+ 
+.write-back view:nth-child(1) image {
+  width: 28rpx;
+  height: 25rpx;
+}
+ 
+.write-back view:nth-child(2) image {
+  width: 27rpx;
+  height: 26rpx;
+}
+.hover-active {
+  color: #F73C41;
+}
+.wrte-back-img {
+  width: 28rpx;
+  height: 28rpx;
+  align-self: center;
+  margin-right: 10rpx;
+}
+ 
+/* 评价 */
+.appraise-detail-top {
+  font-size: 24rpx;
+  color: #333333;
+  padding: 40rpx 0 0;
+}
+.username-appraise-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32rpx;
+}
+.username-appraise-tops {
+  display: flex;
+  justify-content: space-between;
+}
+.username-appraise-top view:nth-child(2), .username-appraise-tops view:nth-child(2) {
+  text-align: center;
+}
+.username-appraise-top .username, .username-appraise-tops .username {
+  display: flex;
+  font-size: 20rpx;
+  color: #666666;
+}
+.username-appraise-top .username image, .username-appraise-tops .username image {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.username-appraise-top .praise, .username-appraise-tops .praise {
+  width: 26rpx;
+  height: 26rpx;
+}
+.amount {
+  font-size: 20rpx;
+  color: #999999;
+}
+.appraise-content {
+  margin: -40rpx 68rpx 30rpx;
+}
+.appraise-content text:nth-child(1) {
+  font-size: 20rpx;
+  line-height: 30rpx;
+  color: #000000;
+  margin-right: 17rpx;
+}
+.appraise-content text:nth-child(2) {
+  font-size: 20rpx;
+  color: #999999;
+}
+.reply-username {
+  margin: 0 0 0 68rpx;
+}
+.reply-usernames {
+  height: 80rpx;
+  overflow: hidden;
+  margin: 0 0 0 68rpx;
+}
+.reply-usernames-active {
+  height: 100% !important;
+}
+/* 展开btn */
+.unfold-btn {
+  margin: 0 0 0 68rpx;
+  font-size: 24rpx;
+  color: #FF888C;
+  font-weight: Medium;
+  font-family: "PingFang-SC-Medium";
+}
+/* 底部 */
+.end {
+  font-size: 20rpx;
+  color: #999999;
+  text-align: center;
+  margin: 30rpx 0 151.3rpx;
+}
+ 
+.appraise-btn {
+  height: 97.3rpx;
+  background: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 21rpx;
+}
+.appraise-btn .appraise-btn-left {
+  height: 64rpx;
+  width: 620rpx;
+  background: #EEEEEE;
+  border-radius: 32rpx;
+  margin-right: 26rpx;
+  font-size: 24rpx;
+  color: #999999;
+  display: flex;
+  align-items: center;
+}
+.appraise-btn .appraise-btn-left image {
+  width: 29rpx;
+  height: 22rpx;
+  margin-left: 28rpx;
+  margin-right: 9rpx;
+}
+.appraise-btn-right {
+  font-size: 32rpx;
+  color: #F73A3F;
+}

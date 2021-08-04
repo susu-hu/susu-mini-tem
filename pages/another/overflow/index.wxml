@@ -1,0 +1,152 @@
+<!--pages/another/overflow/index.wxml-->
+<view class="possess-layout margin-layout">
+  <view class="main">
+    <view class="commodity">
+      <view class="commdoity-image">
+        <image class="commodity-img" src="../../../img/shangpin.jpg"></image>
+      </view>
+      <view class="commodity-title">
+        <view class="title commodity-line">华为旗舰5G手机拍照手机4GB+64GB魅蓝全网通华为旗舰5G手机拍照手机4GB+64GB魅蓝全网通华为旗舰5G手机拍照手机4GB+64GB魅蓝全网通</view>
+        <view class="goods-price">
+          <text>¥</text>
+          <text>1888</text>
+          <text>.</text>
+          <text>66</text>
+        </view>
+      </view>
+      <view class="commdoity-image-right">
+        <image src="../../../img/icon/icon-evaluate-detail-gou.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+ 
+<view class="appraise-user">
+  <view class="possess-layout margin-layouts">
+    <view class="main">
+      <block wx:for="{{repotList}}" wx:key="key">
+        <view class="user-comment">
+          <view class="comment-user">
+            <view class="user">
+              <image class="user-head-portrait" src="{{item.img}}"></image>
+              <view class="user-name">
+                <view>{{item.users}}</view>
+                <view>
+                  <block wx:for="{{userpingfen}}" wx:key="index">
+                    <block wx:for="{{item.pingfenpic}}" wx:key="index">
+                      <image src="{{item}}"></image>
+                    </block>
+                  </block>
+                </view>
+              </view>
+            </view>
+            <view class="appraise-date">{{item.time}}</view>
+          </view>
+          <view class="appraise-contents">
+            
+          </view>
+          <view class="appraise-content">
+            <block wx:for="{{item.select}}" wx:key="index" wx:if="{{item.select.length != 0}}">
+              <block wx:if="{{item.whether != ''}}"><view><text>是否正品：</text><text>{{item.whether}}</text></view></block>
+              <block wx:if="{{item.colour != ''}}"><view><text>产品颜色：</text><text>{{item.colour}}</text></view></block>
+              <block wx:if="{{item.effect != ''}}"><view><text>显色效果：</text><text>{{item.effect}}</text></view></block>
+              <block wx:if="{{item.rests != ''}}"><view><text>其他特色：</text><text>{{item.rests}}</text></view></block>
+            </block>
+            <block wx:if="{{item.comment != ''}}"><text class="evaluate-content">{{item.comment}}</text></block>
+          </view>
+          <scroll-view scroll-x="true" class="scroll-view-true">
+            <block wx:for="{{item.picture}}" wx:key="index">
+              <image src="{{item}}"></image>
+            </block>
+          </scroll-view>
+          <view class="appraise-base">
+            <view class="have-bought">{{item.selected}}</view>
+            <view class="write-back">
+              <view catchtap="writeBack">
+                <image class="wrte-back-img" src="../../../img/icon/icon-write-back.png"></image>
+                <view>2</view>
+              </view>
+              <view>
+                <image class="wrte-back-img" src="{{item.change? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index}}" bindtap="praiseThis"></image>
+                <view class="{{item.change? 'hover-active': ''}}">{{item.praise}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<!-- 商品评价详情 E -->
+<view class="appraise-user">
+  <view class="possess-layout margin-layouts">
+    <view class="main">
+      <view class="appraise-detail-top">共{{appraiseList.length}}条评论</view>
+      <block wx:for="{{appraiseList}}" wx:key="index1" wx:for-index="index1">
+        <view>
+          <view class="username-appraise-top">
+            <view class="username">
+              <image src="{{item.img}}"></image>
+              <view>{{item.username}}</view>
+            </view>
+            <view>
+              <image class="praise" src="{{item.change? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" bindtap="praiseThiss"></image>
+              <view class="amount {{item.change? 'hover-active': ''}}">{{item.praise}}</view>
+            </view>
+          </view>
+        </view> 
+        <view class="appraise-content"><text>{{item.appraise_content}}</text><text>{{item.time}}</text></view>
+        <view class="reply-username">
+          <block wx:if="{{item.reply_list.length > 2}}">
+            <view class="reply-usernames {{item.isOpen? 'reply-usernames-active': ''}}">
+              <block wx:for="{{item.reply_list}}" wx:key="index2" wx:for-index="index2">
+                <view class="username-appraise-tops">
+                  <view class="username">
+                    <image src="{{item.img}}"></image>
+                    <view>{{item.nickname}}</view>
+                  </view>
+                  <view>
+                    <image class="praise" src="{{item.changes? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" data-curindexs="{{index2}}" bindtap="praiseThisss"></image>
+                    <view class="amount {{item.changes? 'hover-active': ''}}">{{item.praise}}</view>
+                  </view>
+                </view>
+                <view class="appraise-content"><text>{{item.reply_content}}</text><text>{{item.time}}</text></view>
+              </block>
+            </view>
+            <view class="unfold-btn" bindtap="chooseUnfold" hidden="{{item.isOpen}}" data-value="{{item.isOpen}}" data-key="appraiseList.[{{index1}}]">展开{{item.reply_list.length - 1}}条回复</view>
+            <view class="unfold-btn" bindtap="chooseUnfold" hidden="{{!item.isOpen}}" data-value="{{item.isOpen}}" data-key="appraiseList.[{{index1}}]">收起{{item.reply_list.length - 1}}条回复</view>
+          </block>
+          <block wx:else>
+            <block wx:for="{{item.reply_list}}" wx:key="index2" wx:for-index="index2">
+              <view class="username-appraise-top">
+                <view class="username">
+                  <image src="{{item.img}}"></image>
+                  <view>{{item.nickname}}</view>
+                </view>
+                <view>
+                  <image class="praise" src="{{item.changes? '../../../img/icon/icon-give-a-like-red.png': '../../../img/icon/icon-give-a-like.png'}}" data-curindex="{{index1}}" data-curindexs="{{index2}}" bindtap="praiseThisss"></image>
+                  <view class="amount {{item.changes? 'hover-active': ''}}">{{item.praise}}</view>
+                </view>
+              </view>
+              <view class="appraise-content"><text>{{item.reply_content}}</text><text>{{item.time}}</text></view>
+            </block>
+          </block>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+ 
+<view class="end">
+  - 这里就到底了哦 -
+</view>
+ 
+<!-- 底部评论 S -->
+<view class="appraise-btn">
+  <view class="appraise-btn-left">
+    <image src="../../../img/icon/icon-import.png"></image>
+    <view>说点什么吧</view>
+  </view>
+  <view class="appraise-btn-right">评价</view>
+</view>
+<!-- 底部评论 E -->

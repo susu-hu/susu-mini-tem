@@ -1,1 +1,29 @@
 /* pages/asyncPromise/index.wxss */
+.a{
+  border: 1px solid red ;
+  position: relative;
+  z-index: 9999;
+}
+.a0{
+  width: 100rpx;
+  height: 100rpx;
+  border: 1px solid yellow;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90rpx;
+  border-radius: 50%;
+}
+.a0 image{
+  width: 80rpx!important;
+  height: 80rpx!important;
+  border-radius: 50%;
+}
+.a1{
+  position: absolute;
+  width: 100%;
+  height: 750rpx;
+  z-index: -1;
+  top: 0;
+}

@@ -85,7 +85,7 @@
   <!-- 详情 -->
   <view id="type2" class="g_de">
     <text class="title">详情</text>
-    <!-- <rich-text nodes="{{desc}}" class="rich_text"></rich-text> -->
+    <rich-text nodes="{{desc}}" class="rich_text"></rich-text>
   </view>
 </scroll-view>
 

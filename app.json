@@ -34,7 +34,8 @@
     {
       "root": "pages/another/",
       "pages": [
-        "subIndex/index"
+        "subIndex/index",
+        "overflow/index"
       ]
     }
   ],

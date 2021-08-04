@@ -17,3 +17,5 @@
   <view  class="st_icon s_bg0">苏苏2</view>
   <view  class="st_icon s_bg0" >苏苏3</view>
 </view>
+<view class="i"></view>
+<view class="box"></view>

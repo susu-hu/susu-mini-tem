@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "pages/another/subIndex/index",
-          "pathName": "pages/another/subIndex/index",
+          "name": "pages/sendCode/index2",
+          "pathName": "pages/sendCode/index2",
           "query": "",
           "scene": null
         },
@@ -37,14 +37,14 @@
           "scene": null
         },
         {
-          "name": "pages/scroll2/index",
-          "pathName": "pages/scroll2/index",
+          "name": "pages/scroll/index3",
+          "pathName": "pages/scroll/index3",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/addImg/index",
-          "pathName": "pages/addImg/index",
+          "name": "pages/another/overflow/index",
+          "pathName": "pages/another/overflow/index",
           "query": "",
           "scene": null
         },
@@ -57,6 +57,12 @@
         {
           "name": "pages/sendCode/index2",
           "pathName": "pages/sendCode/index2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/getStar/index",
+          "pathName": "pages/getStar/index",
           "query": "",
           "scene": null
         }
