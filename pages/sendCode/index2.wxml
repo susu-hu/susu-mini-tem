@@ -17,5 +17,36 @@
   <view  class="st_icon s_bg0">苏苏2</view>
   <view  class="st_icon s_bg0" >苏苏3</view>
 </view>
-<view class="i"></view>
-<view class="box"></view>
+
+
+<view class="flex-row j_b" style="margin-top:60rpx;padding:0 40rpx;">
+  <view class="i right"></view>
+  <view class="i left"></view>
+  <view class="i up"></view>
+  <view class="i down"></view>
+</view>
+<view class="flex-row j_b" style="margin-top:60rpx;padding:0 40rpx;">
+  <view class="box"></view>
+  <view class="triangle-up"></view>
+  <view class="triangle-down"></view>
+  <view class="triangle-left"></view>
+  <view class="triangle-right"></view>
+  <view class="triangle-topleft"></view>
+</view>
+<view class="flex-row j_b" style="margin-top:60rpx;padding:0 40rpx;">
+  <view class="jux"></view>
+  <view class="jux1"></view>
+  <view class="jux2"></view>
+  <view class="jux3"></view>
+  <view class="jux4"></view>
+</view>
+<view class="flex-row j_b" style="margin-top:60rpx;padding:0 40rpx;">
+  <view class="jux5"></view>
+  <view class="jux6"></view>
+  <view class="jux7"></view>
+  <view class="jux8"></view>
+  <view class="jux9"></view>
+</view>
+<view class="flex-row j_b" style="margin-top:60rpx;padding:0 40rpx;">
+  <view class="c1"></view>
+</view>
