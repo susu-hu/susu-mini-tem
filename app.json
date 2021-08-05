@@ -35,7 +35,8 @@
       "root": "pages/another/",
       "pages": [
         "subIndex/index",
-        "overflow/index"
+        "overflow/index",
+        "mroevideos/index"
       ]
     }
   ],

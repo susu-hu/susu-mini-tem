@@ -1,0 +1,33 @@
+<!--pages/another/mroevideos/index.wxml-->
+<view class="c1_box">
+  <view class="v1_box" catchtap="showPlaybtn" data-type="v1">
+    <video id='myVideo0'  show-play-btn="{{false}}" show-center-play-btn="{{false}}"  picture-in-picture-show-progress="{{true}}" poster="https://i.postimg.cc/j57Lwdy3/123.png" src="https://static.51dh.com.cn/dbp/12/98/4494bd8a6e0fcd4a992f25a42bea28f8d1fb.mp4"  show-mute-btn="{{true}}" muted="{{true}}" bindended="showEndBtn" data-type="v1"></video>
+    <!-- 暂停按钮 -->
+    <image src="/img/pause.png" class="pause_icon " catchtap="tobePlay" data-type="v1" hidden="{{!v1_play}}"></image>
+    <!-- 播放按钮 -->
+    <image src="/img/play.png" class="pause_icon" catchtap="tobePause"  data-type="v1"   hidden="{{v1_pause}}"></image>
+  </view>
+</view>
+
+<view class="c1_box">
+  <view class="v1_box" catchtap="showPlaybtn" data-type="v2">
+    <video id='myVideo1'  show-play-btn="{{false}}" show-center-play-btn="{{false}}"  picture-in-picture-show-progress="{{true}}" poster="https://i.postimg.cc/j57Lwdy3/123.png" src="https://static.51dh.com.cn/dbp/12/98/4494bd8a6e0fcd4a992f25a42bea28f8d1fb.mp4"  show-mute-btn="{{true}}" muted="{{true}}" bindended="showEndBtn" data-type="v2"></video>
+    <!-- 暂停按钮 -->
+    <image src="/img/pause.png" class="pause_icon " catchtap="tobePlay" data-type="v2" hidden="{{!v2_play}}"></image>
+    <!-- 播放按钮 -->
+    <image src="/img/play.png" class="pause_icon" catchtap="tobePause"  data-type="v2"   hidden="{{v2_pause}}"></image>
+  </view>
+</view>
+<!-- 
+  video的属性：
+  controls：是否显示默认播放控件（播放/暂停按钮、播放进度、时间）
+  autoplay:自动播放
+  loop：是否循环
+  muted：是否静音
+  show-play-btn：是否显示视频底部控制栏的播放按钮
+  show-center-play-btn：是否显示视频中间的播放按钮
+  show-mute-btn：是否显示静音按钮
+  enable-play-gesture:是否开启播放手势，即双击切换播放/暂停
+
+  bindended:当播放到末尾时触发 ended 事件
+-->
