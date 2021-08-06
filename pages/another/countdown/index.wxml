@@ -1,0 +1,43 @@
+<!--pages/another/countdown/index.wxml-->
+<view class="bottomViewItem"> 
+  <view class="bottomMiddleHeaderView" bindtap="voteClick" data-id="value"> 
+   <view class="bottomMiddleHeaderItem" animation="{{animationMiddleHeaderItem}}"> 
+   <!-- 心跳 --> 
+   <view class="bottomMiddleHeaderItemSubView"> 
+    <image src="/images/detail_vote_heart.png" style="width:32rpx; height:32rpx;" animation="{{animationMiddleHeaderItem}}"></image> 
+   </view> 
+   <!-- 投票文字 --> 
+   <view class="bottomMiddleHeaderItemSubView">苏苏</view> 
+   </view> 
+  </view> 
+ </view> 
+
+
+<!--倒计时 --> 
+<view class="countDownTimeView countDownAllView" > 
+ <view class="voteText countDownTimeText">{{countDownDay}}天</view> 
+ <view class="voteText countDownTimeText">{{countDownHour}}时</view> 
+ <view class="voteText countDownTimeText">{{countDownMinute}}分</view> 
+ <view class="voteText countDownTimeText">{{countDownSecond}}秒</view> 
+ </view> 
+
+
+
+<!-- 公告 -->
+<view class="inform">
+  <view class="inform-img">
+    <image src="https://i.postimg.cc/76br1jzJ/susu1.jpg" class="inform-image"></image>
+  </view>
+  <view class='marquee' style='width:{{marqueeWidth}}rpx;'>
+    <view class='marqueeTitle' style="width:{{length}}rpx;transform:translateX( {{marqueeDistance}}rpx);font-size: {{size}}rpx;">{{text}}</view>
+  </view>
+</view>
+<!-- -->
+  <view class="scroll_box" style="width:{{length}}rpx;transform:translateX( {{marqueeDistance}}rpx);" >
+    <view class="box_item">
+      <view class="flex-row">
+        <image src="https://i.postimg.cc/76br1jzJ/susu1.jpg" class="b_user_ava"></image>
+        <text>恭喜苏苏集赞成功</text>
+      </view>
+    </view>
+  </view>

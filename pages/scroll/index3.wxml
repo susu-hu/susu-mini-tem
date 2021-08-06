@@ -21,7 +21,7 @@
     <!--轮播-->
     <swiper class='swiper'  style="height:600rpx; " indicator-dots='true' indicator-active-color='rgb(85, 19, 19)' indicator-color='#ccc'>
       <swiper-item>
-        <video id='myVideo' poster="https://i.postimg.cc/65STLQNc/333.webp" src="https://static.51dh.com.cn/dbp/12/98/4494bd8a6e0fcd4a992f25a42bea28f8d1fb.mp4"></video>
+        <video id='myVideo' controls="{{false}}" enable-play-gesture="{{true}}"  poster="https://i.postimg.cc/65STLQNc/333.webp" src="https://static.51dh.com.cn/dbp/12/98/4494bd8a6e0fcd4a992f25a42bea28f8d1fb.mp4"></video>
       </swiper-item>
       <swiper-item wx:for="{{3}}" wx:key='item'>
         <image src="https://i.postimg.cc/65STLQNc/333.webp" class="g_img"></image>

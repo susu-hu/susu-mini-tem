@@ -166,4 +166,14 @@ Page({
       url: '/pages/index2/index'
     })
   },
+    //分享
+    onShareAppMessage(e) {
+      if (e.from == 'button') {
+        return {
+          title: "丸子妹可爱表情包，只要9.9包邮哦下单", // 分享后的信息显示标题 | 默认是当前小程序名称
+          //imageUrl:'',//// 分享的信息中显示的图片，可以是程序内的图片，也可以是网络图片 | 默认是当前页面的前半部分
+          path: '/pages/scroll/index3'//// 用户点击分享后的信息时，进入的小程序页面路径：绝对路径 | 默认是当前页面
+        }
+      }
+    },
 })
