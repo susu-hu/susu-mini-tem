@@ -34,6 +34,7 @@ Page({
 
     if(type=="v1"){
       wx.createVideoContext('myVideo0').play();
+      wx.createVideoContext('myVideo0').requestFullScreen()
       data_va1='v1_play';
       data_va2="v1_pause";
     }
@@ -122,20 +123,28 @@ Page({
 
   //视频播放到末尾触发的事件 视频播放结束 显示暂停的按钮
   showEndBtn(e){
+    //显示暂停按钮 隐藏播放按钮
     let {type}=e.currentTarget.dataset;
-    let data_va='';
+    let data_va='',data_va1="";
     if(type=="v1"){
-      data_va="v1_play"
+      data_va="v1_play",
+      data_va1="v1_pause"
     }
     if(type=="v2"){
-      data_va="v2_play"
+      data_va="v2_play",
+      data_va1="v2_pause"
     }
     if(type=="v3"){
-      data_va="v3_play"
+      data_va="v3_play",
+      data_va1="v3_pause"
     }
     this.setData({
       [data_va]:true,
+      [data_va1]:true,
     })
-  }
+  },
+
+  
+
   
 })

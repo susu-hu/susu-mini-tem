@@ -1,7 +1,8 @@
 <!--pages/another/mroevideos/index.wxml-->
 <view class="c1_box">
   <view class="v1_box" catchtap="showPlaybtn" data-type="v1">
-    <video id='myVideo0'  show-play-btn="{{false}}" show-center-play-btn="{{false}}"  picture-in-picture-show-progress="{{true}}" poster="https://i.postimg.cc/j57Lwdy3/123.png" src="https://static.51dh.com.cn/dbp/12/98/4494bd8a6e0fcd4a992f25a42bea28f8d1fb.mp4"  show-mute-btn="{{true}}" muted="{{true}}" bindended="showEndBtn" data-type="v1"></video>
+    <video id='myVideo0'  show-play-btn="{{false}}" show-center-play-btn="{{false}}"  picture-in-picture-show-progress="{{true}}"
+     poster="https://i.postimg.cc/j57Lwdy3/123.png" src="https://static.51dh.com.cn/dbp/12/98/4494bd8a6e0fcd4a992f25a42bea28f8d1fb.mp4"  show-mute-btn="{{true}}" muted="{{true}}" bindended="showEndBtn" data-type="v1"></video>
     <!-- 暂停按钮 -->
     <image src="/img/pause.png" class="pause_icon " catchtap="tobePlay" data-type="v1" hidden="{{!v1_play}}"></image>
     <!-- 播放按钮 -->
@@ -11,7 +12,7 @@
 
 <view class="c1_box">
   <view class="v1_box" catchtap="showPlaybtn" data-type="v2">
-    <video id='myVideo1'  show-play-btn="{{false}}" show-center-play-btn="{{false}}"  picture-in-picture-show-progress="{{true}}" poster="https://i.postimg.cc/j57Lwdy3/123.png" src="https://static.51dh.com.cn/dbp/12/98/4494bd8a6e0fcd4a992f25a42bea28f8d1fb.mp4"  show-mute-btn="{{true}}" muted="{{true}}" bindended="showEndBtn" data-type="v2"></video>
+    <video id='myVideo1'  show-play-btn="{{false}}" show-center-play-btn="{{false}}"  picture-in-picture-show-progress="{{true}}" poster="https://i.postimg.cc/FsKgQ95T/yy.png" src="https://static.51dh.com.cn/dbp/12/98/4494bd8a6e0fcd4a992f25a42bea28f8d1fb.mp4"  show-mute-btn="{{true}}" muted="{{true}}" bindended="showEndBtn" data-type="v2"></video>
     <!-- 暂停按钮 -->
     <image src="/img/pause.png" class="pause_icon " catchtap="tobePlay" data-type="v2" hidden="{{!v2_play}}"></image>
     <!-- 播放按钮 -->
@@ -31,3 +32,5 @@
 
   bindended:当播放到末尾时触发 ended 事件
 -->
+
+
