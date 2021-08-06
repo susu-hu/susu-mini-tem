@@ -39,6 +39,7 @@ movable-area组件实现滑动删除
 21. choseGoods:数值计算，引入math.js处理精度问题。
 22. choseAddress:地址选择，wx.chooseLocation(需要用户授权）+wx.chooseAddress（无须用户授权，直接调用该接口）
 23. scroll/index3:商品详情页，头部导航栏为自定义的tab(fixed)+双向锚点（scroll-view实现点击tab选中对应的区域，页面滚动头部tab被选中)
+24. another/mrovevideos:视频页面，自定义播放与暂停的按钮与事件
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0611/134711_a94e772a_8576727.png "屏幕截图.png")
@@ -67,6 +68,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0726/170500_2159196e_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0728/175846_e5cb5840_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0805/120304_81f75c5f_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0806/104710_d0050fd8_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
