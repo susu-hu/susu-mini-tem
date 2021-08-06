@@ -29,7 +29,7 @@ movable-area组件实现滑动删除
 11. index: 自定义tabbar组件，cover-view进行覆盖
 12. getStar:星星评分 1-5颗星 分别对应'极好','较好','一般','较差','很差'，点星星字段产生变化  点字段星星变化
 13. sendCode/index: 自定义input输入框的样式 （粘贴的时候无法实现长按粘贴 待完善的bug）
-14. sendCode/index2:自定义弹框验证码组件（v-code)+新增背景图虚化(filter: blur(10rpx);)
+14. sendCode/index2:自定义弹框验证码组件（v-code)+新增背景图虚化(filter: blur(10rpx);)+新增三角形 箭头 矩形 梯形 圆弧等样式
 15. addImg: 上传多张图片 wx.chooseImage()+预览图片wx.previewImage()+上传文件到服务器 wx.uploadFile()
 16. choseList: 筛选页（1.小程序自带日期选择2.tab切换 3.右边弹框筛选，超出4条数据默认隐藏，可点击展开）
 17. charts/index: 自定义导航 "navigationStyle": "custom" 获取胶囊和导航栏等高度，自定义图标等
@@ -66,7 +66,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0726/144805_f583bdb8_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0726/170500_2159196e_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0728/175846_e5cb5840_8576727.png "屏幕截图.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0803/173847_018d5572_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0805/120304_81f75c5f_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
