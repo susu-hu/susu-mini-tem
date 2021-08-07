@@ -278,13 +278,55 @@ page{
 .span_class{
   color: rgb(168, 25, 25)!important;
 }
-.rich_text {
+
+.desc2_class{
+  color: #3DB969!important;
+}
+.rich_text1{
   margin-top: 20rpx;
   max-width: 100%;
   width: 100%;
   display: block;
-  
+  color: rgb(21, 18, 201);
 }
-.desc2_class{
+.rich_text2{
+  margin-top: 20rpx;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  color: rgb(224, 108, 13);
+}
+.rich_text3{
+  margin-top: 20rpx;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  color: rgb(134, 63, 16);
+}
+.rich_text4{
+  margin-top: 20rpx;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  color: rgb(117, 11, 52);
+}
+.rich_text5{
+  margin-top: 20rpx;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  color: rgb(43, 40, 38);
+}
+.des_3{
+  color: rgb(16, 73, 54);
+}
+.s2{
+  color:pink!important;
+  font-size:30rpx!important;
+}
+.sp_class{
   color: #3DB969!important;
+}
+.p2_class{
+  color: #0c0a8d!important;
 }

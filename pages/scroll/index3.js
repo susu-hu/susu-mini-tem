@@ -41,11 +41,16 @@ Page({
     //富文本
     desc:"<p><img style=\"max-width:100%;height:auto\"  src=\"https://i.postimg.cc/Gm7KjGmN/111.jpg\" title=\"1619506647918932.jpg\" alt=\"详情1_790_1148.jpg\"/>"+
     "<img style=\"max-width:100%;height:auto\"  src=\"https://i.postimg.cc/Bv28vfkg/222.webp\" title=\"1619506679526659.jpg\" alt=\"详情2_790_698.jpg\"/><img style=\"max-width:100%;height:auto\"  src=\"https://i.postimg.cc/65STLQNc/333.webp\" title=\"1619506852450556.jpg\" alt=\"详情8_790_982.jpg\"/>"
-    +"</p><p style=\"margin-top: 10px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: center; list-style: decimal; color: rgb(153, 153, 153); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, 微软雅黑, tahoma, simsun, 宋体; font-size: 14px; white-space: normal;\"><strong><span style=\"color: rgb(0, 0, 0);\">包装与生产日期</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">1. 商品若出现新、老版本更替，可能与商详页展示内容细节有所不同（如包装颜色、式样等变化；批次产地不同等），但不影响商品品质</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">2. 基于环保、便捷等理念，大部分国际一线品牌、奢侈品包装较为简易，无礼品袋、小样等赠送；部分商品包装可能无外盒或盒口无封口贴、未塑封（多见于欧美、日韩化妆品）</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">3. 经跨国长途运输，商品外包装可能出现压痕、微损、封签（若有）脱开、喷印日期因刮蹭碰撞导致磨损等现象，但通常不影响商品品质</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">4. 跨境商品包装上一般不标注保质期限，通常只在产品包装上标注生产日期或到期日，也存在仅标注出厂批号的情况，比如日本、欧洲洗护以及化妆品，但一般可通过批号识别生产或者失效日期。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">5. 各国家或地区商品有效期的书写方式，可在考拉pc页面底部-新手指南-常见问题中查看详情。跨境食品一般表示&quot;Best before date&quot;，即最佳赏味日期。该日期不是&quot;最终保质期&quot;，意为在此日期前食用能保证食物新鲜，故在&quot;最佳赏味日期&quot;前食用风味更佳。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; list-style: decimal; color: rgb(153, 153, 153);\"></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; list-style: decimal; color: rgb(153, 153, 153);\"></p></li></ul><p><br/></p>",
+    +"</p><p style=\"margin-top: 10px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: center; list-style: decimal; color: rgb(153, 153, 153); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Hiragino Sans GB&quot;, 微软雅黑, tahoma, simsun, 宋体; font-size: 14px; white-space: normal;\"><strong><span style=\"color: rgb(0, 0, 0);\">包装与生产日期</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">1. 商品若出现新、老版本更替，可能与商详页展示内容细节有所不同（如包装颜色、式样等变化；批次产地不同等），但不影响商品品质</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">2. 基于环保、便捷等理念，大部分国际一线品牌、奢侈品包装较为简易，无礼品袋、小样等赠送；部分商品包装可能无外盒或盒口无封口贴、未塑封（多见于欧美、日韩化妆品）</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">3. 经跨国长途运输，商品外包装可能出现压痕、微损、封签（若有）脱开、喷印日期因刮蹭碰撞导致磨损等现象，但通常不影响商品品质</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">",
 
 
-    desc1:"<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">1. 商品若出现新、老版本更替，可能与商详页展示内容细节有所不同（如包装颜色、式样等变化；批次产地不同等），但不影响商品品质</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">2. 基于环保、便捷等理念，大部分国际一线品牌、奢侈品包装较为简易，无礼品袋、小样等赠送；部分商品包装可能无外盒或盒口无封口贴、未塑封（多见于欧美、日韩化妆品）</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">3. 经跨国长途运输，商品外包装可能出现压痕、微损、封签（若有）脱开、喷印日期因刮蹭碰撞导致磨损等现象，但通常不影响商品品质</span></p>",
+    desc1:"<p style=\\\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\\\"><span  style=\\\"color: rgb(102, 102, 102); font-size: 12px;\">1. 商品若出现新、老版本更替，可能与商详页展示内容细节有所不同（如包装颜色、式样等变化；批次产地不同等），但不影响商品品质</span></p><p style=\\\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\\\"><br/></p><p style=\\\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\\\"><span style=\\\"color: rgb(102, 102, 102); font-size: 12px;\\\">2. 基于环保、便捷等理念，大部分国际一线品牌、奢侈品包装较为简易，无礼品袋、小样等赠送；部分商品包装可能无外盒或盒口无封口贴、未塑封（多见于欧美、日韩化妆品）</span></p><p style=\\\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\\\"><br/></p><p style=\\\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\\\">",
 
+    desc2:"<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">2. 基于环保、便捷等理念，大部分国际一线品牌、奢侈品包装较为简易，无礼品袋、小样等赠送；部分商品包装可能无外盒或盒口无封口贴、未塑封（多见于欧美、日韩化妆品）</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span style=\"color: rgb(102, 102, 102); font-size: 12px;\">3. 经跨国长途运输，商品外包装可能出现压痕、微损、封签（若有）脱开、喷印日期因刮蹭碰撞导致磨损等现象，但通常不影响商品品质</span></p>",
+
+    desc3:"<p><span>2. 基于环保、便捷等理念，大部分国际一线品牌、奢侈品包装较为简易，无礼品袋、小样等赠送；部分商品包装可能无外盒或盒口无封口贴、未塑封（多见于欧美、日韩化妆品）</span></p><br/><p><span>3. 经跨国长途运输，商品外包装可能出现压痕、微损、封签（若有）脱开、喷印日期因刮蹭碰撞导致磨损等现象，但通常不影响商品品质</span></p>",
+
+    desc4:"<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span class=\"p2_class\" style=\"color: rgb(102, 102, 102); font-size: 12px;\">2. 基于环保、便捷等理念，大部分国际一线品牌、奢侈品包装较为简易，无礼品袋、小样等赠送；部分商品包装可能无外盒或盒口无封口贴、未塑封（多见于欧美、日韩化妆品）</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 23px; text-align: left; list-style: decimal; color: rgb(153, 153, 153);\"><span class=\"p2_class\" style=\"color: rgb(102, 102, 102); font-size: 12px;\">3. 经跨国长途运输，商品外包装可能出现压痕、微损、封签（若有）脱开、喷印日期因刮蹭碰撞导致磨损等现象，但通常不影响商品品质</span></p>",
   },
  
 
@@ -97,7 +102,7 @@ Page({
       }
     })
 
-    //处理富文本
+    //处理富文本1
     const regex =new RegExp('<img','gi'),
      re1=RegExp('<p','gi'),
      re2=RegExp('<span','gi');
@@ -106,7 +111,7 @@ Page({
       //方法1
       .replace(/<p([\s\w"=\/\.:;]+)((?:(style="[^"]+")))/ig, '<p')
       .replace(/<p([\s\w"=\/\.:;]+)((?:(class="[^"]+")))/ig, '<p')
-      .replace(/<p>/ig, '<p class="p1_class">')
+      .replace(/<p>/ig, '<p class="ppp_class">')
       //方法2
       // .replace(re1, '<p class="p2_class"')
       .replace(re2, '<span class="span_class"')
@@ -115,13 +120,28 @@ Page({
     this.setData({
       desc:content1
     })
+    console.log(typeof(this.data.desc))
 
+    //富文本2
     const  re3=RegExp('<span','gi');
-    let desc1=this.data.desc1.replace(re3, '<span class="desc2_class"')
+    // let desc1=this.data.desc1.replace(re3, '<span class="desc2_class"')
+    // this.setData({
+    //   desc1:desc1
+    // })
+
+
+    //f富文本3
+    let desc2=this.data.desc2.replace(/\<span/gi,'<span class="s2"')
     this.setData({
-      desc1:desc1
+      desc2:desc2
     })
 
+    //富文本4
+    const  re4=RegExp('<span','gi');
+    let desc4=this.data.desc4.replace(re4, '<span\ class="sp_class')
+    this.setData({
+      desc4:desc4
+    })
     
 
 

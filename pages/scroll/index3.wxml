@@ -85,9 +85,24 @@
   <!-- 详情 -->
   <view id="type2" class="g_de">
     <text class="title">详情</text>
-    <view class="rich_text">
+    <view class="rich_text1">
       <rich-text nodes="{{desc}}" ></rich-text>
+    </view>
+
+    <view  class="rich_text2">
       <rich-text nodes="{{desc1}}" ></rich-text>
+    </view>
+
+    <view  class="rich_text3">
+      <rich-text nodes="{{desc2}}" ></rich-text>
+    </view>
+
+    <view class="rich_text4">
+      <rich-text nodes="{{desc3}}" class="des_3"></rich-text>
+    </view>
+
+    <view class="rich_text5">
+      <rich-text nodes="{{desc4}}" ></rich-text>
     </view>
    
     
