@@ -55,12 +55,6 @@ page{
  scroll-view{
    height: 100%;
  }
-.rich_text {
-  margin-top: 20rpx;
-  max-width: 100%;
-  width: 100%;
-  display: block;
-}
 
 .img_class{
   width: 100%;
@@ -280,4 +274,17 @@ page{
   position: absolute;
   top: -4rpx;
   left: -7rpx;
+}
+.span_class{
+  color: rgb(168, 25, 25)!important;
+}
+.rich_text {
+  margin-top: 20rpx;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  
+}
+.desc2_class{
+  color: #3DB969!important;
 }

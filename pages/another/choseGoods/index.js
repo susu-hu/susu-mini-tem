@@ -1,7 +1,6 @@
 // pages/choseGoods/index.js
-const math = require('../../utils/math.min')
+const math = require('../utils/math.min')
 math.config({number: 'BigNumber'})
-const math1 = require('../../utils/math')
 Page({
 
   /**

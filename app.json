@@ -25,7 +25,6 @@
     "pages/scroll2/index",
     "pages/scroll/index2",
     "pages/charts/index2",
-    "pages/choseGoods/index",
     "pages/scroll/index3",
     "pages/asyncPromise/index",
     "pages/demo/index2"
@@ -37,7 +36,8 @@
         "subIndex/index",
         "overflow/index",
         "countdown/index",
-        "mroevideos/index"
+        "mroevideos/index",
+        "choseGoods/index"
       ]
     }
   ],
