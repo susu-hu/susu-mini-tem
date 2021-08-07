@@ -38,7 +38,7 @@ movable-area组件实现滑动删除
 20. charts/index2: echarts实现饼图，canvas为原生组件，层级很高，用cover-view实现覆盖，可覆盖的原生组件包括 map、video、canvas、camera、live-player、live-pusher。新增修改，头部用cover-view实现fixed的tab栏 。多个cover-view的层级关系，写在页面越后面层级越高！（存在tooltip被底部字体遮挡的bug 待解决）
 21. another/choseGoods:数值计算，引入math.min.js处理精度问题。
 22. choseAddress:地址选择，wx.chooseLocation(需要用户授权）+wx.chooseAddress（无须用户授权，直接调用该接口）
-23. scroll/index3:商品详情页，头部导航栏为自定义的tab(fixed)+双向锚点（scroll-view实现点击tab选中对应的区域，页面滚动头部tab被选中)，新增富文本样式修改，正则表达式进行匹配。（情况一：富文本带style，此时可以正则添加class，来自定义新的样式！情况二：富文本带style+class，此时无法根据正则来添加样式，通过在富文本外层定义一个样式来改变）
+23. scroll/index3:商品详情页，头部导航栏为自定义的tab(fixed)+双向锚点（scroll-view实现点击tab选中对应的区域，页面滚动头部tab被选中)，新增富文本样式修改，正则表达式进行匹配。（情况一：富文本不带style，此时可以正则添加style，class。或者在rich-text或父元素标签来定义样式！情况二：富文本带style，正则添加class才行）
 24. another/mrovevideos:视频页面，自定义播放与暂停的按钮与事件
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
