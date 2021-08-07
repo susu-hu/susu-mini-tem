@@ -66,7 +66,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0726/011703_a6b02f93_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0726/144805_f583bdb8_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0726/170500_2159196e_8576727.png "屏幕截图.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0728/175846_e5cb5840_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0808/002806_73c8f2be_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0805/120304_81f75c5f_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0806/104710_d0050fd8_8576727.png "屏幕截图.png")
 #### 参与贡献
