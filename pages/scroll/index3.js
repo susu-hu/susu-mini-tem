@@ -124,10 +124,11 @@ Page({
 
     //富文本2
     const  re3=RegExp('<span','gi');
-    // let desc1=this.data.desc1.replace(re3, '<span class="desc2_class"')
-    // this.setData({
-    //   desc1:desc1
-    // })
+    let desc1=this.data.desc1.replace(/[\'\"\\\/\b\f\n\r\t]/g, '')
+    .replace(re3, '<span class="desc2_class"')
+    this.setData({
+      desc1:desc1
+    })
 
 
     //f富文本3
@@ -208,4 +209,13 @@ Page({
         }
       }
     },
+    //去掉特殊字符
+    excludeSpecial (s) { 
+      // 去掉转义字符    
+      s = s.replace(/[\'\"\\\/\b\f\n\r\t]/g, '');    
+      // 去掉特殊字符   
+      s = s.replace(/[\@\#\$\%\^\&\*\(\)\{\}\:\"\L\<\>\?\[\]]/);    
+      return s; 
+    }
+
 })
