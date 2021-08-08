@@ -38,7 +38,8 @@
         "countdown/index",
         "mroevideos/index",
         "choseGoods/index",
-        "swiper-threeD/index"
+        "swiper-threeD/index",
+        "draw/index"
       ]
     }
   ],

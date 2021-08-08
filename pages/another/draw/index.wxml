@@ -1,0 +1,28 @@
+<!--pages/another/draw/index.wxml-->
+<view class="content" style="background-image: url({{cdn}}/lucky9/bg.jpg);">
+<!-- 抽奖 -->
+<view class="lucky-box">
+  <image src="{{cdn}}/lucky9/bg-lucky.png" mode="widthFix"></image>
+  <view class="prize-box">
+    <block wx:for="{{prize}}" wx:key="prize">
+      <block wx:if="{{index == 4}}">
+        <view class="item">
+          <!-- 抽奖 -->
+          <image src="{{cdn}}/lucky9/lottery.png" mode="widthFix" bindtap="tapLottery"></image>
+        </view>
+      </block>
+
+      <view class="item">
+        <!-- 奖品项 -->
+        <image src="{{cdn}}/lucky9/{{item.active ? 'bg-prize-select' : 'bg-prize'}}.png" mode="widthFix"></image>
+        <view class="prize">
+          <!-- 谢谢参与或券或实物奖 -->
+          <image src="{{item.src}}" mode="scaleToFill"></image>
+        </view>
+      </view>
+
+    </block>
+  </view>
+</view>
+
+</view>
