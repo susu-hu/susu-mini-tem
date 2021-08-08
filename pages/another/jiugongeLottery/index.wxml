@@ -1,0 +1,8 @@
+<!--pages/another/jiugongeLottery/index.wxml-->
+<view class="content">
+  <view class="lucky">
+    <image class="dish {{dishClass}}" src="https://chaozhenrihuajianhang.oss-cn-hangzhou.aliyuncs.com/test/xiaochengxu/lucky/dish.png"></image>
+    <image class="go" src="https://chaozhenrihuajianhang.oss-cn-hangzhou.aliyuncs.com/test/xiaochengxu/lucky/go.png"></image>
+    <button class="go-lucky" bindtap="tapLucky">立即抽奖</button>
+  </view>
+</view>
