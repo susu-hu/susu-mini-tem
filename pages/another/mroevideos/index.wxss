@@ -28,3 +28,23 @@ video{
   height: 100%;
   display: block;
 }
+.i_ipt{
+  width: 600rpx;
+  margin: 0 auto;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #333;
+  border-bottom:1rpx solid #fff;
+  margin-bottom: 40rpx;
+}
+.b_btn{
+  width: 600rpx;
+  margin: 0 auto;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align:center;
+  background: rgb(71, 136, 75);
+  border-radius: 10rpx;
+  color: #fff;
+  font-size:30rpx;
+}

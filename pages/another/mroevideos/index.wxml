@@ -12,13 +12,15 @@
 
 <view class="c1_box">
   <view class="v1_box" catchtap="showPlaybtn" data-type="v2">
-    <video id='myVideo1'  show-play-btn="{{false}}" show-center-play-btn="{{false}}"  picture-in-picture-show-progress="{{true}}" poster="https://i.postimg.cc/FsKgQ95T/yy.png" src="https://static.51dh.com.cn/dbp/12/98/4494bd8a6e0fcd4a992f25a42bea28f8d1fb.mp4"  show-mute-btn="{{true}}" muted="{{true}}" bindended="showEndBtn" data-type="v2"></video>
+    <video id='myVideo1'  show-play-btn="{{false}}" show-center-play-btn="{{false}}" danmu-btn enable-danmu="{{true}}" danmu-list="{{danmuList}}" picture-in-picture-show-progress="{{true}}" poster="https://i.postimg.cc/FsKgQ95T/yy.png" src="https://static.51dh.com.cn/dbp/12/98/4494bd8a6e0fcd4a992f25a42bea28f8d1fb.mp4"  picture-in-picture-mode="{{['push', 'pop']}}"  show-mute-btn="{{true}}" muted="{{true}}" bindended="showEndBtn" data-type="v2"></video>
     <!-- 暂停按钮 -->
     <image src="/img/pause.png" class="pause_icon " catchtap="tobePlay" data-type="v2" hidden="{{!v2_play}}"></image>
     <!-- 播放按钮 -->
     <image src="/img/play.png" class="pause_icon" catchtap="tobePause"  data-type="v2"   hidden="{{v2_pause}}"></image>
   </view>
 </view>
+<input placeholder="请输入弹幕的内容" bindinput="getValue" class="i_ipt" value="{{danmu}}"/>
+<view class="b_btn" catchtap="bindSendDanmu">发送弹幕</view>
 <!-- 
   video的属性：
   controls：是否显示默认播放控件（播放/暂停按钮、播放进度、时间）

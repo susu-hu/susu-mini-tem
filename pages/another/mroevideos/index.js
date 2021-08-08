@@ -11,6 +11,47 @@ Page({
 
     v2_play:true,//默认的显示播放的按钮
     v2_pause:true,//默认不显示暂停的按钮
+    danmuList:[
+      {
+        text: '苏苏的弹幕 打卡哈哈',
+        color: '#fff',
+        time: 1
+      }, {
+        text: '嘻嘻不错还可以的啦',
+        time: 1
+      },
+      {
+        text: '啊啊啊啊啊',
+        time: 1
+      },
+      {
+        text: '啊啊啊啊啊',
+        time: 1
+      },
+      {
+        text: '啊啊啊啊啊',
+        time: 1
+      },
+      {
+        text: '啊啊啊啊啊',
+        time: 2
+      },
+      {
+        text: '啊啊啊啊啊',
+        time: 12
+      },
+      {
+        text: '啊啊啊啊啊',
+        time: 2
+      },
+      {
+        text: '啊啊啊啊啊',
+        time:2
+      }
+
+    ],
+    danmu:"",
+  
   },
 
   
@@ -22,10 +63,47 @@ Page({
   onReady: function () {
 
   },
-
-  
+  //随机生成弹幕的颜色
+  getRandomColor() {
+    const rgb = []
+    for (let i = 0; i < 3; ++i) {
+      let color = Math.floor(Math.random() * 256).toString(16)
+      color = color.length === 1 ? '0' + color : color
+      rgb.push(color)
+    }
+    return '#' + rgb.join('')
+  },
   onShow: function () {
 
+  },
+  getValue(e){
+    let val=e.detail.value;
+    this.setData({
+      danmu:val
+    })
+  },
+  //发送弹幕
+  bindSendDanmu() {
+     // 利用循环和随机数调整位置
+      var ranNum = Math.floor(Math.random()*10);
+      var danmuList = [];
+      for (let index = 0; index < 10; index++) {
+        danmuList.push('');
+      }
+      danmuList[ranNum] = this.data.danmu;
+      for (let index = 0; index < danmuList.length; index++) {
+          wx.createVideoContext('myVideo1').sendDanmu({
+          text: danmuList[index],
+          color: this.getRandomColor()
+        });
+      }
+
+
+    //位置固定
+    // wx.createVideoContext('myVideo1').sendDanmu({
+    //   text: this.data.danmu,
+    //   color: this.getRandomColor()
+    // })
   },
   //控制视频播放
   tobePlay(e){
