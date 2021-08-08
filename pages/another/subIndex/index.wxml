@@ -11,10 +11,10 @@
   </picker-view-column>
   <picker-view-column>
     <view class="icon-container">
-      <image class="picker-icon" src="../lib/daytime.png" />
+      <image class="picker-icon" src="/img/star-o.png" />
     </view>
     <view class="icon-container">
-      <image class="picker-icon" src="../lib/night.png" />
+      <image class="picker-icon" src="../../../img/star-o.png" />
     </view>
   </picker-view-column>
 </picker-view>
