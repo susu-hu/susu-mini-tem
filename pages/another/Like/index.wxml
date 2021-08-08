@@ -1,0 +1,5 @@
+<!--pages/another/Like/index.wxml-->
+<view class="content">
+  <likeFx count="{{num}}" />
+  <button bindtap="tapLike">点赞</button>
+</view>

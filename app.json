@@ -42,7 +42,8 @@
         "draw/index",
         "jiugongeLottery/index",
         "customizeScroll/index",
-        "videosSwitch/index"
+        "videosSwitch/index",
+        "Like/index"
       ]
     }
   ],

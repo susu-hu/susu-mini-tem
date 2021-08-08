@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "likeFx": "../components/like/like"
+  },
+  "navigationBarTitleText": "点赞心心动画"
+}

@@ -1,0 +1,2 @@
+<!--pages/another/components/like/like.wxml-->
+<canvas canvas-id="bubble" style="width:{{width}}px;height:{{height}}px" class="like-fx" ></canvas>

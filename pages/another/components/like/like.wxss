@@ -1,0 +1,4 @@
+/* pages/another/components/like/like.wxss */
+.like-fx { 
+  z-index: 10;
+}
