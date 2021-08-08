@@ -1,0 +1,44 @@
+<!--pages/another/customizeScroll/index.wxml-->
+<view class="content">
+  <view class="but">
+    <button bindtap="tapMethod" data-type="1">方式1</button>
+    <button bindtap="tapMethod" data-type="2">方式2</button>
+  </view>
+  
+  <!-- 直接修改微信样式方式，但ios的滚动条貌似无法自定义 -->
+  <block wx:if="{{type == 1}}">
+    <view class="rule">
+      <view class="title">活动规则</view>
+      <view class="scroll-view">
+        <scroll-view scroll-y>
+          <view class="rule-image">
+            <image src="https://chaozhenrihuajianhang.oss-cn-hangzhou.aliyuncs.com/test/xiaochengxu/activityRule/rule.png" mode="widthFix"></image>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="close" bindtap="close">关闭</view>
+    </view>
+  </block>
+
+  <!-- 自定义滚动条 -->
+  <block wx:if="{{type == 2}}">
+      <view class="rule">
+      <view class="title">活动规则</view>
+
+      <view class="scroll-view hide" id="scroll-view">
+        <scroll-view scroll-y bindscroll="bindscroll" scroll-top="{{topPlace}}">
+          <view class="rule-image">
+            <image src="https://chaozhenrihuajianhang.oss-cn-hangzhou.aliyuncs.com/test/xiaochengxu/activityRule/rule.png" mode="widthFix" bindload="bindload"></image>
+          </view>
+        </scroll-view>
+        <view class="scroll-bar">
+          <view class="progress" style="height:{{barH}}; top: {{percent}};"></view>
+        </view>
+      </view>
+
+      <view class="close" bindtap="close">关闭</view>
+    </view>
+      
+  </block>
+
+</view>

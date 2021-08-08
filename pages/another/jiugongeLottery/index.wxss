@@ -2,9 +2,8 @@
 page { 
   width: 100%; 
   height: 100%;
-  background: #fff;
+  background: #fff!important;
  }
-page > view { position: initial !important; }
 view, picker, textarea, button, navigator { word-break: break-word; background-position: 50% 50%; background-repeat: no-repeat; background-size: 100% 100%; background-origin: padding-box; background-clip: padding-box; line-height: 1; box-sizing: border-box; background-color: transparent; border: none; padding: 0; margin: 0; border-radius: 0; display: block; position: relative; }
 /* 禁止触摸互动事件 */
 .noPointer { pointer-events: none; }
@@ -15,7 +14,7 @@ view, picker, textarea, button, navigator { word-break: break-word; background-p
 button::after { display: none; }
 .button-hover { background: rgba(0,0,0,0); }
 
-.content { width: 100%; height: 100%; position: absolute !important; left: 0; top: 0; background-color: #eee; display: flex; justify-content: center; align-items: center; }
+.content { width: 100%; height: 100%; position: absolute !important; left: 0; top: 0; background-color: #fff; display: flex; justify-content: center; align-items: center; }
 .content .lucky { width: 623rpx; height: 800rpx; }
 .content .lucky .dish { width: 623rpx; height: 623rpx; position: absolute; left: 0; top: 0; }
 .content .lucky image.lucky0 { transform: rotate(0deg); transition-duration: 0s; }

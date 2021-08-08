@@ -40,7 +40,8 @@
         "choseGoods/index",
         "swiper-threeD/index",
         "draw/index",
-        "jiugongeLottery/index"
+        "jiugongeLottery/index",
+        "customizeScroll/index"
       ]
     }
   ],
