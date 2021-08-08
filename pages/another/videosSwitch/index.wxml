@@ -1,0 +1,17 @@
+<!--pages/another/videosSwitch/index.wxml-->
+<view class="content">
+  <view class="video" wx:for="{{videos}}" wx:key="index" wx:if="{{videos.length>0}}">
+    <block wx:if="{{item.videoHidden}}">
+      <!-- 背景 -->
+      <image class="poster" src="{{item.poster}}" />
+      <!-- 开始按钮 -->
+      <view class="play" catchtap='play' data-index="{{index}}">
+        <image src="https://js.51dongshi.com/index/images/icon_play_smaller.png"></image>
+      </view>
+      <!-- 标题 -->
+      <view class="title">{{item.title}}</view>
+    </block>
+    <!-- 视频 -->
+    <video id="myVideo{{item.id}}" src="{{item.src}}" style="left: {{ item.videoHidden ? '-2000rpx': '0rpx' }};" poster="" controls object-fit="cover" catchloadedmetadata="bindloadedmetadata" catchpause="bindpause" catchended="bindended" catchplay="bindplay" data-index="{{index}}" data-id="{{item.id}}"></video>
+  </view>
+</view>

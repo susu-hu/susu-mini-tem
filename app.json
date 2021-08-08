@@ -41,7 +41,8 @@
         "swiper-threeD/index",
         "draw/index",
         "jiugongeLottery/index",
-        "customizeScroll/index"
+        "customizeScroll/index",
+        "videosSwitch/index"
       ]
     }
   ],
