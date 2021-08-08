@@ -1,5 +1,23 @@
 <!--pages/another/Like/index.wxml-->
 <view class="content">
-  <likeFx count="{{num}}" />
-  <button bindtap="tapLike">点赞</button>
+  <view class="but">
+    <view class="input">
+      <input type="text" placeholder-class="placeholder-class" placeholder="说点什么吧…" model:value="{{barrage}}" />
+    </view>
+    <button bindtap="tapSend">发送</button>
+  </view>
+
+  <!-- 弹幕 -->
+  <view class="barrage">
+    <scroll-view scroll-y class="scroll-y" id="message-item" scroll-top="{{scrollTop}}">
+      <view class="item" wx:for="{{barrageData}}">
+        <view class="user {{item.active ? 'active' : ''}}">{{item.name}}</view>{{item.val}}
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 点赞 -->
+  <view class="like">
+    <likeFx count="{{num}}" />
+    <button bindtap="tapLike">点赞</button>
+  </view>
 </view>
