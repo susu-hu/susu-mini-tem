@@ -45,6 +45,13 @@
         "videosSwitch/index",
         "Like/index"
       ]
+    },
+    {
+      "root": "pages/subPack/",
+      "pages": [
+        "calen/index",
+        "calen/index2"
+      ]
     }
   ],
   "tabBar": {

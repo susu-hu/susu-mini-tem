@@ -9,7 +9,9 @@ Page({
   },
 
   bindchange(e) {
-    this.setData({ swiperIndex: e.detail.current })
+    this.setData({ 
+      swiperIndex: e.detail.current 
+    })
   },
 
   

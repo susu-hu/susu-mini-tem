@@ -1,0 +1,97 @@
+/* pages/subPack/calen/index.wxss */
+scroll-view{
+  height: 128rpx;
+ 
+  width: 100%;
+}
+scroll-view .list{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+    width: 1302rpx; 
+}
+scroll-view .listItem{
+  text-align: center;
+  width: 186rpx;
+  height: 128rpx;
+  background-color: #f1f2f6;
+  padding-top: 30rpx;
+  box-sizing: border-box;
+  /* float: left; */
+  display: inline-block;
+}
+scroll-view .listItem text{
+  display: block;
+}
+scroll-view .listItem .name{
+  font-size: 21rpx;
+}
+scroll-view .listItem .date{
+  font-size: 21rpx;
+}
+scroll-view .current{
+  background-color: #76aef8;
+
+}
+scroll-view .current text{
+  color: #fff;
+}
+.time{
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.time .listItem{
+  width: 25%;
+  height: 135rpx;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding-top: 35rpx;
+  border: 1px solid #b9c1c8;
+}
+.time .listItem text{
+  display: block;
+  font-size: 21rpx;
+}
+.time .current{
+  border: 1px solid #76aef8;
+}
+.time .current text{
+  color: #76aef8;
+}
+.operate button{
+  width:300rpx;
+  height: 88rpx;
+  background-color: #fff;
+}
+.operate .del{
+  
+   color: #e54449; 
+}
+.operate button::after{
+  border: 2px solid #e54449;
+}
+.operate{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.operate button:nth-child(2):after{
+  border: 2px solid #e54449;
+}
+.operate .save{
+  color: #fff;
+  background-color: #e54449; 
+  
+}
+.operate{
+  width: 100%;
+  padding: 30rpx 0;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+}
