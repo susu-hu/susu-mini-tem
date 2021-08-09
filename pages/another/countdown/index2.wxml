@@ -21,3 +21,5 @@
     </swiper-item>
   </block>
 </swiper>
+<!-- 创建一个Canvas组件 -->
+<canvas canvas-id='MyCanvas' class='MyCanvas' style="width:{{screenWidth}}px;height:{{screenHeight}}px;"></canvas>

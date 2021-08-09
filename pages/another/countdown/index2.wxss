@@ -34,3 +34,8 @@
   border-radius: 50%;
   margin-right: 8rpx;
 }
+
+.MyCanvas{
+  border: 1px solid #333;
+  margin:0 auto;
+}
