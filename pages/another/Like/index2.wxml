@@ -1,0 +1,14 @@
+<!--pages/another/Like/index2.wxml-->
+<view class="doommview">
+    <block wx:for="{{doommData}}" wx:key="id">
+        <text wx:if="{{item.display}}" class="aon" style="animation:first {{item.time}}s linear forwards;top: {{item.top}}px; color:{{item.color}};">
+            {{item.text}}
+        </text>
+    </block>
+</view>
+
+
+<view class="button">
+    <button bindtap="bindbt">弹一个小苹果</button>
+</view>
+

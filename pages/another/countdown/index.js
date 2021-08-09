@@ -30,11 +30,11 @@ Page({
 
   },
 //事件处理函数 
-bindViewTap: function() { 
-  wx.navigateTo( { 
-   url: '../logs/logs'
-  }) 
-  }, 
+  bindViewTap: function() { 
+    wx.navigateTo( { 
+    url: '../logs/logs'
+    }) 
+    }, 
   /**
    * 生命周期函数--监听页面加载
    */
@@ -194,22 +194,22 @@ bindViewTap: function() {
 
   },
    // 标题超过限制宽度时做滚动播放
-   run1: function () {
-    var that = this;
-    var mytime = setInterval(function () {
-      if (-that.data.marqueeDistance < that.data.length) {
-        that.setData({
-          marqueeDistance: that.data.marqueeDistance - that.data.marqueePace,
-        })
-      } else {
-        clearInterval(mytime);
-        that.setData({
-          marqueeDistance: that.data.marqueeWidth
-        });
-        that.run1();
-      }
-    }, 5)
-  },
+  //  run1: function () {
+  //   var that = this;
+  //   var mytime = setInterval(function () {
+  //     if (-that.data.marqueeDistance < that.data.length) {
+  //       that.setData({
+  //         marqueeDistance: that.data.marqueeDistance - that.data.marqueePace,
+  //       })
+  //     } else {
+  //       clearInterval(mytime);
+  //       that.setData({
+  //         marqueeDistance: that.data.marqueeWidth
+  //       });
+  //       that.run1();
+  //     }
+  //   }, 5)
+  // },
 
 
 /**

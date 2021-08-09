@@ -1,0 +1,32 @@
+<!--pages/another/Like/index3.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!--弹幕开关-->
+<view class="barrage-Switch" style="color:{{barrageTextColor}};">
+    <switch id="switch_" bindchange="barrageSwitch"/>
+    <text>弹幕</text>
+</view>
+
+<!--弹幕输入框-->
+  <view class="barrage-inputText" style="display:{{barrage_inputText}}">
+      <view class="barrage-input">
+        <input bindblur="bind_shoot" value="{{bind_shootValue}}"/>
+      </view>
+      <view class="barrage-shoot">
+          <button class="shoot" size="mini" bindtap="shoot">发射</button>
+      </view>
+  </view>
+
+<!--弹幕上单文字-->
+<view class="barrage-fly" style="display:{{barragefly_display}}">
+  <block wx:for="{{barrage_style}}" wx:key="unique">
+   <text class="barrage-textFly" style="color:{{item.barrage_shoottextColor}};left:{{item.barrage_phoneWidth}}px;top:{{item.barrageText_height}}px;">{{item.barrage_shootText}}</text>
+  </block>
+</view>

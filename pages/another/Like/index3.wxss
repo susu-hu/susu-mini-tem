@@ -1,0 +1,54 @@
+/* pages/another/Like/index3.wxss */
+.slide-image{
+  width: 100%;
+}
+
+/* 弹幕选择按钮的操作*/
+.barrage-Switch{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+/* 弹幕输入框的操作*/
+.barrage-inputText{
+  position: absolute;
+  display: flex;
+  background-color: #BFBFBF;
+  width: 100%;
+  height: 40px;
+  flex-direction: row;
+  nav-index: 2;
+  justify-content: center;
+  align-items: center;
+  bottom: 10%;
+}
+.barrage-input{
+  background-color: greenyellow;
+  width: 60%;
+  height: 30px;
+}
+.barrage-shoot{
+
+  margin-left: 10px;
+  width: 25%;
+  height: 30px;
+}
+.shoot{
+  width: 100%;
+  color: black;
+}
+
+/*弹幕飞飞飞*/
+.barrage-fly{
+  z-index: 3;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.barrage-textFly{
+  position: absolute;
+
+}
