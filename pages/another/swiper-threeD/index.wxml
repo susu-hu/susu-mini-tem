@@ -1,6 +1,7 @@
 <!--pages/another/swiper-threeD/index.wxml-->
-<swiper class="swiper" circular previous-margin="100" next-margin="100" bindchange="bindchange">
-  <swiper-item class="item" wx:for="{{4}}" wx:index="{{index}}" wx:key="list">
-    <image src="https://i.postimg.cc/76br1jzJ/susu1.jpg" class="{{swiperIndex == index ? 'active' : 'no-active'}}" modex="heightFix" />
+<swiper class="swiper" current="{{swiperCurrent}}"  circular previous-margin="100" next-margin="100" bindanimationfinish="swiperChange" circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper-item class="item" wx:for="{{banner_list}}" wx:index="{{index}}" wx:key="list">
+    <image src="{{item}}" class="{{swiperCurrent == index ? 'active' : 'no-active'}}" modex="heightFix" />
   </swiper-item>
 </swiper>
+
