@@ -1,7 +1,42 @@
 <!--pages/dots/index2.wxml-->
-<swiper class="swiper-box" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}"
+<!-- indicator-active-color="#81C5F3" indicator-color="#999999" 默认情况 -->
+<swiper class="swiper-box" current="{{swiperCurrent}}" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}"
   circular="true">
-  <swiper-item wx:for="{{imgList}}" wx:key="index">
-    <image src="{{item}}" class="slide-image"></image>
+  <swiper-item wx:for="{{imgList}}" wx:key="*this">
+    <image src="{{item}}" class="slide-image" mode="aspectFill"></image>
   </swiper-item>
 </swiper>
+
+<!-- 页码 -->
+<view class="swiper-box1">
+  <swiper  bindchange="monitorCurrent" indicator-dots="{{false}}" circular="true" current="{{current}}" autoplay="{{false}}">
+    <block wx:for="{{banner_list}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"  mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 自定义轮播图进度点 -->
+  <view class="dots_page">{{current+1}}/{{banner_list.length}}</view>
+</view>
+
+
+<!-- 进度 -->
+<view class="swiper-box1">
+  <swiper  bindchange="monitorCurrent1" indicator-dots="{{false}}" circular="true" current="{{current1}}" autoplay="{{autoplay1}}" interval="{{interval1}}" >
+    <block wx:for="{{banner_list}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"  mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="dots-parent">
+    <block wx:for="{{banner_list.length}}" wx:for-index="index" wx:key="*this">
+      <view class="progress-line-bg">
+        <view class="{{current1==index?'progress-line':''}}" style="width:{{progressNum}}%;"></view>
+      </view>
+    </block>
+  </view>
+  
+</view>

@@ -2,8 +2,14 @@
 page{
   background: #F5F5F8;
 }
+.con{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  background-color: #d1b3b3;
+}
 .top{
-  margin: 20rpx;
+  margin: 20rpx auto;
   width: 710rpx;
   height: 200rpx;
   background: #FFFFFF;
@@ -11,6 +17,8 @@ page{
   line-height:200rpx;
   text-align:center;
   display: flex;
+  /* 添加此属性 不会划出界面 */
+  overflow-x: hidden
 }
 
 movable-view{
@@ -28,6 +36,7 @@ movable-area{
   line-height:200rpx;
   text-align:center;
   width: calc(710rpx - 120rpx);
+
 }
 .movable_delete_btn {
   justify-content: center;

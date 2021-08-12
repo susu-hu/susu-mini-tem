@@ -1,7 +1,9 @@
 /* pages/dots/index2.wxss */
 /*轮播图*/
 swiper {
-  height: 783rpx;
+  height: 500rpx
+  ;
+  position: relative;
 }
 .swiper-item {
   border-radius: 0;
@@ -9,32 +11,82 @@ swiper {
 .slide-image {
   display: block;
   width: 100%;
-  height: 783rpx;
+  height:500rpx;
 }
 /* 指示点距离底部的距离 */
 .swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal {
   margin-bottom: 110rpx;
-  /* display: flex; */
 }
-
+/* 未激活状态 */
 .swiper-box .wx-swiper-dot {
-  display: inline-flex;
   /*inline-flex表示 将对象作为内联弹性伸缩盒显示 等同于给父级元素添加display：flex*/
+  /* display: inline-flex; justify-content: space-between; */
   margin-left: -8rpx;
-  justify-content: space-between;
-}
-
-.swiper-box .wx-swiper-dot::before {
-  content: '';
-  flex-grow: 1;
   background: rgba(255, 255, 255, 1);
   border-radius: 8rpx;
   width: 16rpx;
+  /* position: relative; */
+  /* unset复原重置属性值 */
+  /* left: unset !important;
+  right: 0rpx;
+  background: red; */
 }
-
+/* .swiper-box .wx-swiper-dot::before {
+  content: '';
+  flex-grow: 1;
+} */
+/* 当前所在状态*/
 .swiper-box .wx-swiper-dot-active {
   width: 60rpx;
   border-radius: 8rpx;
   background: #fff;
   opacity: 0.57;
+}
+
+
+
+/* 页码 */
+.swiper-box1{
+  height:500rpx;
+  position: relative;
+}
+.swiper-box1 swiper{
+  height:500rpx;
+}
+
+.dots_page{
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 70rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  font-size: 24rpx;
+  border-radius: 20rpx;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+/* 进度条 */
+.dots-parent {
+  position: absolute;
+  bottom: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dots-parent .progress-line-bg {
+  margin-left: 10rpx;
+  width: 45rpx;
+  height: 8rpx;
+  border-radius: 8rpx;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.progress-line {
+  height: 8rpx;
+  border-radius: 8rpx;
+  background-color: #E42C2C;
 }

@@ -34,6 +34,24 @@ Page({
   onShow: function () {
 
   },
-
+  // swiperChange: function (e) { 
+  //   if (e.detail.source == "touch" || e.detail.source == "autoplay") {       
+  //     console.log(e.detail.current) 
+  //     if(e.detail.current==0){ 
+  //       let swiperError = this.data.swiperError 
+  //       swiperError += 1 
+  //       this.setData({swiperError: swiperError }) 
+  //       if (swiperError >= 3) { //在开关被触发3次以上 
+  //           console.error(this.data.swiperError) 
+  //           this.setData({ swiperCurrent: this.data.preIndex });//，重置current为正确索引 
+  //           this.setData({swiperError: 0}) 
+  //       } 
+  //     }else{ 
+  //       this.setData({preIndex: e.detail.current }); 
+  //       this.setData({swiperError: 0}) 
+  //     } 
+  //   } 
+  // }, 
+ 
   
 })

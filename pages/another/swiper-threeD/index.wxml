@@ -26,4 +26,107 @@
   <view class="rect4"></view>
   <view class="rect5"></view>
 </view>
-
+<!-- 进度条 -->
+<view class="tui-loading-row">
+  <view class="tui-loading-cell">
+    <view class="circle-line">
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+    </view>
+  </view>
+  <view class="tui-loading-cell">
+    <view class="circle-line-spin">
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+    </view>
+  </view>
+  <view class="tui-loading-cell">
+    <view class="circle-round">
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+    </view>
+  </view>
+</view>
+<view class="tui-loading-row">
+  <view class="tui-loading-cell">
+    <view class="circle-round-fade">
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+    </view>
+  </view>
+  <view class="tui-loading-cell">
+    <view class="line-square">
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+    </view>
+  </view>
+  <view class="tui-loading-cell">
+    <view class="line-round">
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+    </view>
+  </view>
+</view>
+<view class="tui-loading-row">
+  <view class="tui-loading-cell">
+    <view class="line-bounce">
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+      <text></text>
+    </view>
+  </view>
+  <view class="tui-loading-cell">
+    <view class="loader-circle">
+    </view>
+  </view>
+  <view class="tui-loading-cell">
+    <view class="loading-circle">
+    </view>
+  </view>
+</view>
+<view class="tui-loading-row">
+  <view class="tui-loading-cell">
+    <view class="loading-sun">
+    </view>
+  </view>
+  <view class="tui-loading-cell">
+    <view class="loading-heart">
+    </view>
+  </view>
+  <view class="tui-loading-cell">
+    <view class="loading-spinner" style="background: url('../../src/images/load.png') no-repeat center top;">
+    </view>
+  </view>
+</view>
