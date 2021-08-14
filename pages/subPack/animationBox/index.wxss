@@ -1,5 +1,5 @@
 /* pages/subPack/animationBox/index.wxss */
-.compound {
+.con {
   position: absolute;
   top: 0;
   left: 0;
@@ -11,11 +11,11 @@
   margin: 0 auto;
   text-align: center;
   height:90rpx;
-  font-size:64rpx;
+  font-size:40rpx;
   font-weight:600;
-  color:rgba(255,255,255,1);
+  color:#fff;
   line-height:90rpx;
-  padding-top: 110rpx;
+  padding-top: 200rpx;
   padding-bottom: 60rpx;
 }
 .box {
@@ -23,7 +23,6 @@
   height: 750rpx;
   position: relative;
   overflow: hidden;
- 
 }
 .circle {
   position: absolute;
@@ -54,7 +53,7 @@
   height: 172rpx;
   margin-left: -86rpx;
   margin-top: -86rpx;
-  background: #FF6347;
+  background: #5f1b0f;
   border-radius: 50%;
   line-height: 172rpx;
   text-align: center;
@@ -99,7 +98,7 @@
   line-height: 102rpx;
 }
 .arrows>.arrow-1 {
-  transform: translate(0, -200rpx); 
+  transform: translate(0, -150rpx); 
   
 }
 .arrows>.arrow-1 >image {
@@ -109,53 +108,49 @@
   height: 82rpx;          
 }
 .arrows>.arrow-2 {
-  transform: translate(190rpx, -62rpx); 
- 
+  transform: translate(144rpx, -54rpx) rotate(74deg);
 }
 .arrows>.arrow-2>image {
   display: inline-block;
   vertical-align: middle;
-  width: 98rpx;
-  height: 84rpx;          
+  width: 60rpx;
+  height: 82rpx;             
 }
 .arrows>.arrow-3 {
-  transform: translate(118rpx, 162rpx);  
- 
+  transform: translate(80rpx, 130rpx) rotate(136deg);
 }
 .arrows>.arrow-3> image {
   display: inline-block;
   vertical-align: middle;
-  width: 98rpx;
-  height: 102rpx;          
+  width: 60rpx;
+  height: 82rpx;            
 }
 .arrows>.arrow-4 {
-  transform: translate(-118rpx, 162rpx); 
- 
+  transform: translate(-98rpx, 118rpx) rotate(220deg);
 }
 .arrows>.arrow-4 >image {
   display: inline-block;
   vertical-align: middle;
-  width: 98rpx;
-  height: 102rpx;          
+  width: 60rpx;
+  height: 82rpx;            
 }
 .arrows>.arrow-5 {
-  transform: translate(-190rpx, -62rpx);  
-  
+  transform: translate(-156rpx, -36rpx) rotate(293deg);
 }
 .arrows>.arrow-5 >image {
   display: inline-block;
   vertical-align: middle;
-  width: 98rpx;
-  height: 84rpx;          
+  width: 60rpx;
+  height: 82rpx;            
 }
 .center {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 250rpx;
-  height: 250rpx;
-  margin-left: -125rpx;
-  margin-top: -125rpx;
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: -100rpx;
+  margin-top: -100rpx;
 }
 .center  image{
   display: block;
@@ -163,19 +158,39 @@
   height: 100%;
   border-radius: 50%;
 }
-.open {
-  position: absolute;
+.card_box {
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 490rpx;
   height: 700rpx;
   margin-top: -350rpx;
   margin-left: -245rpx;
-  overflow: hidden;
-
+  /* overflow: hidden; */
+  border-radius: 20rpx;
 }
-.open image{
+.card_box_image{
   display: block;
   width: 100%;
-  height: 100%;
+  height: 500rpx;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.card_va{
+  width: 100%;
+  height: 200rpx;
+  background-color: #fff;
+  font-size: 45rpx;
+  font-weight: bold;
+  color: #333;
+  justify-content: center;
+  position: relative;
+  border-radius: 0 0 20rpx 20rpx;
+}
+.close_icon{
+  width: 68rpx;
+  height: 68rpx;
+  position: absolute;
+  bottom: -80rpx;
+  left: 50%;
+  margin-left: -34rpx;
 }

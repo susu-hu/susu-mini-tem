@@ -1,7 +1,7 @@
 <!--pages/subPack/animationBox/index.wxml-->
-<view class="compound">
+<view class="con">
   <!-- 标题 -->
-  <view class="title">开奖啦，瓜分100万</view>
+  <view class="title">开奖啦，大家一起瓜分money吧</view>
 
   <!-- 动画盒子 -->
   <view class="box">    
@@ -33,13 +33,17 @@
       <view class="num5">5</view>
     </view>
 
-    <view class="center" catchtap="compound">
+    <view class="center" catchtap="toPart">
       <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" ></image>
     </view>
   </view>
 
   <!-- 卡片 -->
-  <!-- <view class="open" animation="{{animationData3}}">
-    <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg"></image>
-  </view> -->
+  <view class="card_box " animation="{{animationData3}}">
+    <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="card_box_image"></image>
+    <view class="card_va flex-column">
+      恭喜中奖
+      <image src="/img/close_icon.png"  class="close_icon" catchtap="init"></image>
+    </view>
+  </view>
 </view>
