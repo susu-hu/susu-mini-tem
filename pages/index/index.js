@@ -11,7 +11,12 @@ Page({
         name:'主包',
         list:[
           {
-
+            name:'物流页面+skeleton条',
+            url:'/pages/demo/index'
+          },
+          {
+            name:'物流的第二种写法(伪元素after)',
+            url:'/pages/demo/index2'
           }
         ]
       }, 
@@ -20,7 +25,8 @@ Page({
         name:'分包another',
         list:[
           {
-
+            name:'swiper3D轮播图',
+            url:'/pages/another/swiper-threeD/index'
           }
         ]
       },
@@ -29,7 +35,8 @@ Page({
         name:'分包subPack',
         list:[
           {
-
+            name:'animation动画，五福合成效果',
+            url:'/pages/subPack/animationBox/index'
           }
         ]
       }
@@ -37,7 +44,13 @@ Page({
 
   },
   
-
+  toDetail(e){
+    let {url}=e.currentTarget.dataset;
+    console.log(url)
+    wx.navigateTo({
+      url: url,
+    })
+  },
  
   onLoad: function (options) {
     wx.stopPullDownRefresh() //刷新完成后停止下拉刷新动效
@@ -59,7 +72,11 @@ Page({
   
   },
   showMore(e){
-    let {index}=e.currentTarget.dataser;
+    let {index}=e.currentTarget.dataset,{page_list}=this.data;
+    page_list[index].showmore=!page_list[index].showmore
+    this.setData({
+      page_list:page_list
+    })
   }
 
 

@@ -1,0 +1,19 @@
+/* pages/subPack/transitionBox/index.wxss */
+.common{
+  height: 100rpx;
+  opacity: 0;
+  margin-left: -50rpx;
+  background: #fff;
+  margin-top: 20rpx;
+  line-height: 100rpx;
+  padding: 25rpx;
+}
+.ts{
+  width: 710rpx;
+  margin:  50rpx -50rpx 0 0 ;
+  background-color: #fff;
+  border-radius: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  opacity: 0;
+}

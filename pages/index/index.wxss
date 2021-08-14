@@ -43,3 +43,10 @@
   font-size: 26rpx;
   color: #666;
 }
+.showMore{
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+}
+.i_item{
+  margin-bottom: 20rpx;
+}

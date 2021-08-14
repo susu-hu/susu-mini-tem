@@ -1,5 +1,5 @@
 {
   "navigationBarTitleText": "抽奖合成动画",
-  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#333",
   "usingComponents": {}
 }

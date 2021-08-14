@@ -1,0 +1,8 @@
+<!--pages/subPack/transitionBox/index.wxml-->
+<view wx:for="{{lists}}" wx:key="*this" class="common" style='opacity:{{index >= (page-1)*2?op:"1"}};margin-left:{{index >= (page-1)*2?mr:"0"}}rpx;transition:all {{index >= (page-1)*2?(index-(page-1)*2)*0.5+0.5:"0"}}s;' >
+  第{{index}}条
+</view>
+  
+<!-- <view bindtap='loadData' style='position:relative;right:-150px;top:50rpx;'>下一条</view> -->
+
+<view class="ts" style="opacity: 1;transition:all 5s; margin-left: 0;">嘻嘻哈哈哈哈哈哈哈哈</view>

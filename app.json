@@ -54,7 +54,8 @@
       "pages": [
         "calen/index",
         "calen/index2",
-        "animationBox/index"
+        "animationBox/index",
+        "transitionBox/index"
       ]
     }
   ],
