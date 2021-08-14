@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/sendCode/index",
-          "pathName": "pages/sendCode/index",
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
           "query": "",
           "scene": null
         },
@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "pages/sendCode/index2",
-          "pathName": "pages/sendCode/index2",
+          "name": "pages/another/swiper-threeD/index",
+          "pathName": "pages/another/swiper-threeD/index",
           "query": "",
           "scene": null
         },
@@ -61,8 +61,8 @@
           "scene": null
         },
         {
-          "name": "pages/getStar/index",
-          "pathName": "pages/getStar/index",
+          "name": "pages/subPack/animationBox/index",
+          "pathName": "pages/subPack/animationBox/index",
           "query": "",
           "scene": null
         },

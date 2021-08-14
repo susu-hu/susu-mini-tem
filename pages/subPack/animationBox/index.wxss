@@ -1,0 +1,181 @@
+/* pages/subPack/animationBox/index.wxss */
+.compound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background:rgba(0,0,0,0.9);
+}
+.title {
+  margin: 0 auto;
+  text-align: center;
+  height:90rpx;
+  font-size:64rpx;
+  font-weight:600;
+  color:rgba(255,255,255,1);
+  line-height:90rpx;
+  padding-top: 110rpx;
+  padding-bottom: 60rpx;
+}
+.box {
+  width: 100%;
+  height: 750rpx;
+  position: relative;
+  overflow: hidden;
+ 
+}
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 540rpx;
+  height: 540rpx;
+  margin-left: -270rpx;
+  margin-top: -270rpx;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border:4px solid rgba(220,220,220,1);
+}
+.nums {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+}
+.nums >view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 172rpx;
+  height: 172rpx;
+  margin-left: -86rpx;
+  margin-top: -86rpx;
+  background: #FF6347;
+  border-radius: 50%;
+  line-height: 172rpx;
+  text-align: center;
+  color: #ffffff;
+  font-size: 60rpx;
+  font-weight: bold;
+}
+.nums > .num1 {
+  transform: translate(0, -280rpx);  
+}
+.nums > .num2 {
+  transform: translate(266rpx, -87rpx);  
+}
+.nums >.num3 {
+  transform: translate(165rpx, 226rpx); 
+}
+.nums >.num4 {
+  transform: translate(-165rpx, 226rpx);  
+}
+.nums >.num5 {
+  transform: translate(-266rpx, -87rpx); 
+}
+
+
+.arrows {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+}
+.arrows>view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 102rpx;
+  height: 102rpx;
+  margin-top: -51rpx;
+  margin-left: -51rpx;
+  text-align: center;
+  line-height: 102rpx;
+}
+.arrows>.arrow-1 {
+  transform: translate(0, -200rpx); 
+  
+}
+.arrows>.arrow-1 >image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60rpx;
+  height: 82rpx;          
+}
+.arrows>.arrow-2 {
+  transform: translate(190rpx, -62rpx); 
+ 
+}
+.arrows>.arrow-2>image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 98rpx;
+  height: 84rpx;          
+}
+.arrows>.arrow-3 {
+  transform: translate(118rpx, 162rpx);  
+ 
+}
+.arrows>.arrow-3> image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 98rpx;
+  height: 102rpx;          
+}
+.arrows>.arrow-4 {
+  transform: translate(-118rpx, 162rpx); 
+ 
+}
+.arrows>.arrow-4 >image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 98rpx;
+  height: 102rpx;          
+}
+.arrows>.arrow-5 {
+  transform: translate(-190rpx, -62rpx);  
+  
+}
+.arrows>.arrow-5 >image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 98rpx;
+  height: 84rpx;          
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250rpx;
+  height: 250rpx;
+  margin-left: -125rpx;
+  margin-top: -125rpx;
+}
+.center  image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 490rpx;
+  height: 700rpx;
+  margin-top: -350rpx;
+  margin-left: -245rpx;
+  overflow: hidden;
+
+}
+.open image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}

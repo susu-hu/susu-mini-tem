@@ -141,6 +141,8 @@
     -webkit-transform: scaleY(1.0);
   }
 }
+
+
 /* 进度条 */
 .tui-loading-row{
   width: 100%;
@@ -288,3 +290,4 @@ text-align: center;
   transform: rotate(315deg);
   animation-delay: 1.6s;
 }
+

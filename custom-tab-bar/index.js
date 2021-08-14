@@ -4,7 +4,7 @@ Component({
     color: "#333333",
     selectedColor: "#6B1F72",
     list: [{
-      pagePath: "/pages/index2/index",
+      pagePath: "/pages/index/index",
       iconPath: "/img/tabbar/icon_index.png",
       selectedIconPath: "/img/tabbar/icon_index_sel.png",
       text: "首页"

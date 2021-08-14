@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index2/index",
     "pages/index/index",
+    "pages/index2/index",
     "pages/cal/index",
     "pages/demo/index",
     "pages/cal2/index",
@@ -53,7 +53,8 @@
       "root": "pages/subPack/",
       "pages": [
         "calen/index",
-        "calen/index2"
+        "calen/index2",
+        "animationBox/index"
       ]
     }
   ],
@@ -65,7 +66,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index2/index",
+        "pagePath": "pages/index/index",
         "iconPath": "img/tabbar/icon_index.png",
         "selectedIconPath": "img/tabbar/icon_index_sel.png",
         "text": "首页"

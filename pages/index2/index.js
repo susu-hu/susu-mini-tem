@@ -35,13 +35,7 @@ Page({
   },
 
   onShow: function () {
-    //自定义的tabbar
-    if (typeof this.getTabBar === 'function' &&
-      this.getTabBar()) {
-      this.getTabBar().setData({
-        selected: 0
-      })
-    }
+   
   },
   //轮播图切换
   swiperChange:function(e){

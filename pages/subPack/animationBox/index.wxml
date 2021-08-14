@@ -1,0 +1,45 @@
+<!--pages/subPack/animationBox/index.wxml-->
+<view class="compound">
+  <!-- 标题 -->
+  <view class="title">开奖啦，瓜分100万</view>
+
+  <!-- 动画盒子 -->
+  <view class="box">    
+    <view class="circle" animation="{{animationData1}}"></view>    
+    <view class="arrows" animation="{{animationData1}}">
+      <view class="arrow-1">
+        <image src="/img/arrow.png"></image>
+      </view>
+      <view class="arrow-2">
+        <image src="/img/arrow.png"></image>
+      </view>
+      <view class="arrow-3">
+        <image src="/img/arrow.png"></image>
+      </view>
+      <view class="arrow-4">
+        <image src="/img/arrow.png"></image>
+      </view>
+      <view class="arrow-5">
+        <image src="/img/arrow.png"></image>
+      </view> 
+    </view>
+
+
+    <view class="nums" animation="{{animationData2}}">
+      <view class="num1">1</view>
+      <view class="num2">2</view>
+      <view class="num3">3</view>
+      <view class="num4">4</view>
+      <view class="num5">5</view>
+    </view>
+
+    <view class="center" catchtap="compound">
+      <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" ></image>
+    </view>
+  </view>
+
+  <!-- 卡片 -->
+  <!-- <view class="open" animation="{{animationData3}}">
+    <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg"></image>
+  </view> -->
+</view>

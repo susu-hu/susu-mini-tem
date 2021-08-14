@@ -5,6 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
+    page_list:[
+      {
+        showmore:false,
+        name:'主包',
+        list:[
+          {
+
+          }
+        ]
+      }, 
+      {
+        showmore:false,
+        name:'分包another',
+        list:[
+          {
+
+          }
+        ]
+      },
+      {
+        showmore:false,
+        name:'分包subPack',
+        list:[
+          {
+
+          }
+        ]
+      }
+    ]
 
   },
   
@@ -20,16 +49,21 @@ Page({
 
 
   onShow: function () {
+     //自定义的tabbar
+     if (typeof this.getTabBar === 'function' &&
+     this.getTabBar()) {
+     this.getTabBar().setData({
+       selected: 0
+     })
+   }
   
   },
+  showMore(e){
+    let {index}=e.currentTarget.dataser;
+  }
 
 
-  onHide: function () {
-
-  },
-  onUnload: function () {
-
-  },
+ 
 
 
 })

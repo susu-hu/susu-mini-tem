@@ -1,9 +1,17 @@
 <!--pages/index/index.wxml-->
-<view>
-  <view class='nav'>
-      <navBar title='' background='rgba(0,0,0,0)' color='#fff'></navBar>
-  </view>
-  <view>
-      <image src="https://i.postimg.cc/Gm7KjGmN/111.jpg" class='img'>此处为图片背景</image>
-  </view>
+<view class="head">
+  <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class='img'></image>
+  <view class="head_name">创作不易</view>
+  <view class="head_subname">喜欢的点个关注+star一下~</view>
+</view>
+
+<view class="con">
+  <block wx:for="{{page_list}}" wx:key="*this">
+    <view class="c_item flex-row j_b">
+      <view>{{item.name}} </view>
+      <image src="/img/good_cou02.png" class="down_arr" wx:if="{{!item.showmore}}" catchtap="showMore" data-index="{{index}}"></image>
+      <image src="/img/clolse_down.png" class="down_arr" wx:else  catchtap="showMore"  data-index="{{index}}"></image>
+    </view>
+
+  </block>
 </view>

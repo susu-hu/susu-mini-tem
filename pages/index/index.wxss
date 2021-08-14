@@ -1,15 +1,45 @@
 /* pages/index/index.wxss */
-
-.nav {
-  height: 0;
-}
-.img {
+.head{
+  position: relative;
   width: 750rpx;
   height: 750rpx;
-  line-height:750rpx;
-  color: #000;
-  /* background: linear-gradient(280deg, #fff 0%, red 50%, blue 80%); */
+}
+.img {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+}
+.head_name{
+  position: absolute;
+  bottom: 300rpx;
+  left: 50rpx;
+  font-size:50rpx;
+  color: #fff;
+  font-weight: bold;
+}
+.head_subname{
+  position: absolute;
+  bottom: 230rpx;
+  left: 50rpx;
+  font-size:40rpx;
+  color: #fff;
+  font-weight: bold;
+}
+.down_arr{
+  width: 20rpx;
+  height: 20rpx;
 }
 .con{
-  height: 800px;
+  margin: 20rpx auto;
+}
+.c_item{
+  width: 710rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  margin: 0 auto 24rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+  font-size: 26rpx;
+  color: #666;
 }

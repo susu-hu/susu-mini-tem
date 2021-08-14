@@ -4,6 +4,14 @@
     <image src="{{item}}" class="{{swiperCurrent == index ? 'active' : 'no-active'}}" modex="heightFix" />
   </swiper-item>
 </swiper>
+<!-- 进度条跳动 -->
+<view class="load1">
+  <view class="rect1"></view>
+  <view class="rect2"></view>
+  <view class="rect3"></view>
+  <view class="rect4"></view>
+  <view class="rect5"></view>
+</view>
 <!-- 来回滑动 -->
 <view class="scroll">
   <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg"></image>
@@ -18,14 +26,9 @@
 </view>
 <!-- 无限反转 -->
 <view class="f_reverse"></view>
-<!-- 进度条跳动 -->
-<view class="load1">
-  <view class="rect1"></view>
-  <view class="rect2"></view>
-  <view class="rect3"></view>
-  <view class="rect4"></view>
-  <view class="rect5"></view>
-</view>
+
+
+
 <!-- 进度条 -->
 <view class="tui-loading-row">
   <view class="tui-loading-cell">
@@ -126,7 +129,7 @@
     </view>
   </view>
   <view class="tui-loading-cell">
-    <view class="loading-spinner" style="background: url('../../src/images/load.png') no-repeat center top;">
+    <view class="loading-spinner" style="background: url('https://i.postimg.cc/mgsKJGLw/susu1.jpg') no-repeat center top;">
     </view>
   </view>
 </view>
