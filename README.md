@@ -15,7 +15,7 @@ movable-area组件实现滑动删除
 
 #### 安装教程
 
-1.  微信开发者工具打开
+1.  微信开发者工具打开(2021.8.15 新增页面导航，首页为所有页面导航）
 2.  cal：为日历页面
 3.  demo/index：为物流页面,在页面完全渲染之前，通过一些灰色的区块大致勾勒出轮廓，待数据加载完成后，再替换成真实的内容。通常在小程序中，我们需要手工维护骨架屏的代码。
     demo/index2:新增伪元素写法。
@@ -43,6 +43,7 @@ movable-area组件实现滑动删除
 25. another/swiper-threeD新增swiper+transform: scale(1)实现3D轮播效果，animation实现动画效果，360度翻转，来回滚动等效果
 26. subPack/animationBox 新增wx.createAnimation+css3：transform的rotate+translate形成一个五福合成的效果。
 #### 效果截图
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0611/134711_a94e772a_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0708/160232_d0a6c802_8576727.png "屏幕截图.png")
