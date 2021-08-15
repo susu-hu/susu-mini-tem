@@ -17,7 +17,7 @@
     </view>
     <view class='box1' style='width: {{ sysW * 7 }}rpx'>
         <block wx:for='{{ arr }}' wx:key="index">
-            <view class="isrela flex-column" style='{{ index == 0 ? "margin-left:" + sysW * marLet + "rpx;" : "" }}width: {{ sysW }}rpx; height: {{ sysW }}rpx; line-height: {{ sysW }}rpx;' key="{{item}}">
+            <view class="isrela flex-column"  style='width: {{ sysW }}rpx; height: {{ sysW }}rpx; line-height:{{ sysW }}rpx; margin-left:{{ index==0?sysW * marLet:"" }}rpx;'>
                 <view  wx:if="{{item.isbook==1}}" class='book isbook'>{{ item.day }}</view>
                 <view  wx:if="{{item.isbook==0}}">{{ item.day }}</view>
                 <view  wx:if="{{item.isbook==2}}" class=' book waitbook'>{{ item.day }}</view>

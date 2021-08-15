@@ -1,0 +1,3 @@
+<!--pages/cal2/index2.wxml-->
+<calendar bind:change="dateChange" spot="{{spot}}" defaultTime=""></calendar>
+<view class="date-string">当前选中的日期是：{{dateString}}</view>

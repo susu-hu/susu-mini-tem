@@ -7,7 +7,7 @@ Page({
   data: {
     page_list:[
       {
-        showmore:false,
+        showmore:true,
         name:'主包',
         list:[
           {
@@ -17,6 +17,22 @@ Page({
           {
             name:'物流的第二种写法(伪元素after)',
             url:'/pages/demo/index2'
+          },
+          {
+            name:'日历样式一',
+            url:'/pages/cal/index'
+          },
+          {
+            name:'日历样式二',
+            url:'/pages/cal2/index'
+          },
+          {
+            name:'日历样式三',
+            url:'/pages/cal/index2'
+          },
+          {
+            name:'日历样式四',
+            url:'/pages/cal2/index2'
           }
         ]
       }, 
@@ -37,7 +53,15 @@ Page({
           {
             name:'animation动画，五福合成效果',
             url:'/pages/subPack/animationBox/index'
-          }
+          },
+          {
+            name:'日历样式五',
+            url:'/pages/subPack/calen/index2'
+          },
+          {
+            name:'日历样式六',
+            url:'/pages/subPack/calen/index3'
+          },
         ]
       }
     ]

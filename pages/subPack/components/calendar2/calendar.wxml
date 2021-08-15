@@ -1,0 +1,39 @@
+<view class='calendar'>
+    <!--显示当前年月日-->
+    <view class='calendar-title'>
+        <view class='item ctrl' bindtap='lastMonth'>{{lastMonth}}</view>
+        <view class='item title'>{{title}}</view>
+        <view class='item ctrl' bindtap='nextMonth'>{{nextMonth}}</view>
+        <view class='item ctrl today' bindtap='today'>今天</view>
+    </view>
+
+    <!-- ============滚动展示============  -->
+    <view hidden="{{ toggleType == 'large' }}">
+        <scroll-view scroll-left="{{scrollLeft}}" scroll-x scroll-with-animation class="calendar-x">
+            <view class='grid' wx:for='{{thisMonthDays}}' wx:key='{{indx}}'>
+                <view class='self' wx:if="{{ format === year+'-'+item.monthFormat+'-'+item.dateFormat }}"></view>
+                <view class="wrap {{ select === year+'-'+item.monthFormat+'-'+item.dateFormat ? 'select' :''}}" bindtap='select' data-date='{{item.date}}'>{{item.date}}</view>
+            </view>
+        </scroll-view>
+    </view>
+
+    <!-- ============平铺展示============  -->
+    <!--遍历星期-->
+    <view class='calendar-week' hidden="{{ toggleType == 'mini' }}">
+        <view wx:for='{{weekText}}' class='item' wx:key='{{item}}'>{{item}}</view>
+    </view>
+
+    <view class='calendar-container' hidden="{{ toggleType == 'mini' }}">
+        <!--上个月占位格子-->
+        <view class='grid gray' wx:for='{{empytGridsBefore}}' wx:key='{{item}}'>{{item}}</view>
+
+        <!--当月格子-->
+        <view class='grid' wx:for='{{thisMonthDays}}' wx:key='{{indx}}'>
+            <view class='self' wx:if="{{ format === year+'-'+item.monthFormat+'-'+item.dateFormat }}"></view>
+            <view class="wrap {{ select === year+'-'+item.monthFormat+'-'+item.dateFormat ? 'select' :''}}" bindtap='select' data-date='{{item.date}}'>{{item.date}}</view>
+        </view>
+
+        <!--下个月占位格子-->
+        <view class='grid gray' wx:for='{{empytGridsAfter}}' wx:key='{{item}}'>{{item}}</view>
+    </view>
+</view>

@@ -25,14 +25,14 @@
           "scene": null
         },
         {
-          "name": "pages/another/swiper-threeD/index",
-          "pathName": "pages/another/swiper-threeD/index",
+          "name": "pages/subPack/calen/index2",
+          "pathName": "pages/subPack/calen/index2",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/demo/index2",
-          "pathName": "pages/demo/index2",
+          "name": "pages/cal/index2",
+          "pathName": "pages/cal/index2",
           "query": "",
           "scene": null
         },

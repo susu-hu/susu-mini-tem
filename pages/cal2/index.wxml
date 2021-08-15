@@ -11,16 +11,16 @@
           </view>
       </view>
       <view class="cale_week flex-row j_b ">
-          <block wx:for="{{weekArr}}">
+          <block wx:for="{{weekArr}}"  wx:key="*this">
               <view>{{item}}</view>
           </block>
       </view>
     </view>
 
     <view class='box1' style='width: {{ sysW * 7 }}rpx'>
-        <block wx:for='{{ arr }}'>
-          <!-- height: {{ sysW }}rpx; line-height: {{ sysW }}rpx; -->
-            <view class="isrela flex-column {{item.chosed?'chosed':''}}"  catchtap="choseOneDay" data-day="{{item.day}}" style='{{ index == 0 ? "margin-left:" + sysW * marLet + "rpx;" : "" }}width: {{ sysW }}rpx; ' key="{{item}}">
+        <block wx:for='{{ arr }}' wx:key="*this">
+          <!-- height: {{ sysW }}rpx; line-height: {{ sysW }}rpx;  {{ index == 0 ? "margin-left:" + sysW * marLet + "rpx;" : "" }}-->
+            <view class="isrela flex-column {{item.chosed?'chosed':''}}"  catchtap="choseOneDay" data-day="{{item.day}}" style='width: {{ sysW }}rpx;margin-left:{{ index==0?sysW * marLet:"" }}rpx;' key="{{item}}">
               <!-- 图片 -->
               <view  wx:if="{{item.isbook==1}}" class='book isbook'>
                 <image src="/img/wuliu_gou.png" class="book_img"></image>

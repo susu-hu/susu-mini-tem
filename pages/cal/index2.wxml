@@ -1,0 +1,31 @@
+<!--pages/cal/index2.wxml-->
+<view class='wrap'> 
+  <view class="year_box">
+    <view class='date-show'> 
+      <view class='lt-arrow' bindtap='lastMonth'> 
+        <image src='/img/de_icon3.png' mode='aspectFit'></image> 
+      </view> 
+      {{year}}年{{month}}月 
+      <view class='rt-arrow' bindtap='nextMonth'> 
+        <image src='/img/de_icon2.png' mode='aspectFit'></image> 
+      </view> 
+    </view> 
+  </view>
+ 
+
+  <view class='header'> 
+    <view wx:for='{{date}}' wx:key="*this" class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}<view></view></view> 
+  </view> 
+  <view class='date-box'> 
+    <view wx:for='{{dateArr}}'  wx:key="*this" class='{{isToday == item.isToday ? "nowDay" : ""}}' data-date='{{item.isToday}}'>      
+      <view class='date-head'> 
+        <view>{{item.dateNum}}</view> 
+      </view> 
+      <view class='date-weight'>{{item.weight}}</view> 
+    </view> 
+  </view> 
+</view> 
+
+<!-- 获取农历日期 -->
+
+

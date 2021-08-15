@@ -10,8 +10,10 @@
     <view class="c_item ">
       <view class="flex-row j_b">
         <view>{{item.name}} </view>
-        <image src="/img/good_cou02.png" class="down_arr" wx:if="{{!item.showmore}}" catchtap="showMore" data-index="{{index}}"></image>
-        <image src="/img/clolse_down.png" class="down_arr" wx:else  catchtap="showMore"  data-index="{{index}}"></image>
+        <view class="show_img" catchtap="showMore" data-index="{{index}}">
+          <image src="/img/good_cou02.png" class="down_arr" wx:if="{{!item.showmore}}" ></image>
+          <image src="/img/clolse_down.png" class="down_arr" wx:else  ></image>
+        </view>
       </view>
       <view wx:if="{{item.showmore}}" class="showMore">
         <block wx:for="{{item.list}}" wx:key="*this">

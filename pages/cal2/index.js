@@ -1,4 +1,5 @@
 // pages/cal2/index.js
+import cal from "./cal.js";
 Page({
 
   /**
@@ -21,6 +22,7 @@ Page({
 
   
   onShow: function () {
+     
     var date = new Date();
     this.getTime(date);//获取时间
     this.setData({

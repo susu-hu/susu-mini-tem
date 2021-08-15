@@ -27,7 +27,9 @@
     "pages/charts/index2",
     "pages/scroll/index3",
     "pages/asyncPromise/index",
-    "pages/demo/index2"
+    "pages/demo/index2",
+    "pages/cal/index2",
+    "pages/cal2/index2"
   ],
   "subPackages": [
     {
@@ -55,7 +57,8 @@
         "calen/index",
         "calen/index2",
         "animationBox/index",
-        "transitionBox/index"
+        "transitionBox/index",
+        "calen/index3"
       ]
     }
   ],

@@ -1,4 +1,7 @@
 /* pages/index/index.wxss */
+page{
+  padding-bottom: 200rpx;
+}
 .head{
   position: relative;
   width: 750rpx;
@@ -49,4 +52,8 @@
 }
 .i_item{
   margin-bottom: 20rpx;
+}
+.show_img{
+  width: 300rpx;
+  text-align: right;
 }
