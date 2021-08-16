@@ -217,3 +217,91 @@ page{
   height: 0;
   color: transparent;
 }
+.rows{
+  margin: 30rpx 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  padding: 30rpx 10rpx;
+}
+/* 时间进度条 */
+.out {
+  margin: 0 auto;
+  width: 250px;
+  height: 20px;
+  border: 1px solid rgb(23, 163, 42);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.in {
+  height:100%;
+  background-color:rgb(23, 163, 42);
+}
+.action{
+  font-size:14px;
+  color:#333;
+  margin:10rpx auto;
+  width:250px;
+}
+/* 圆环3 */
+.progress_box{
+  position: relative;
+  width:220px;
+  height: 220px; 
+  margin: 0 auto;
+ /* // 这里的宽高是必须大于等于canvas圆环的直径 否则绘制到盒子外面就看不见了
+ // 一开始设置 width:440rpx; height:440rpx; 发现 在360X640分辨率的设备，下绘制的圆环跑盒子外去了
+ // 小程序使用rpx单位适配 ，但是canvas绘制的是px单位的。所以只能用px单位绘制的圆环在盒子内显示 */
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+ }
+ .progress_bg{
+  position: absolute;
+  width:220px;
+  height: 220px; 
+ }
+ .progress_canvas{ 
+  width:220px;
+  height: 220px; 
+ } 
+ .progress_text{ 
+  position: absolute; 
+  display: flex; 
+  align-items: center;
+  justify-content: center
+ }
+ .progress_info{ 
+  font-size: 36rpx;
+  padding-left: 16rpx;
+  letter-spacing: 2rpx
+ } 
+ .progress_dot{
+  width:16rpx;
+  height: 16rpx; 
+  border-radius: 50%;
+  background-color: #fb9126;
+ }
+ /* 圆环4 */
+ .circle-box{
+ text-align: center;
+ margin-top: 10vw;
+}
+ 
+.circle {
+ position: absolute;
+ left: 0;
+ right: 0;
+ margin: auto;
+}
+ 
+.draw_btn {
+ width: 35vw;
+ position: absolute;
+ top: 33vw;
+ right: 0;
+ left: 0;
+ margin: auto;
+ border: 1px #000 solid;
+ border-radius: 5vw;
+}

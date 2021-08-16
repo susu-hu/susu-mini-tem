@@ -6,6 +6,17 @@
   align-items: center;
   text-align: center;
 }
+
+.circle-bar-wrap .font{
+  max-height: 62rpx;
+  font-size: 26rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  white-space: normal;
+}
 .circle-bar-wrap .val{
   font-size: 28rpx;
   color: #333333;

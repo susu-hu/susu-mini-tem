@@ -1,5 +1,4 @@
 <!--pages/another/circleRing/index.wxml-->
-<!--pages/targetPlan/index.wxml-->
 <view class="head_fix flex-row">
   <view class="head_box flex-row" >
     <image src="/img/search_icon.png" class="s_icon"></image>
@@ -13,34 +12,29 @@
       <view>
         <view class="flex c_one">
           <view class="c_name">名称：</view>
-          <view class="c_va line_ellipsis">2021-05出货数量好好务出货数量目标任务</view>
+          <view class="c_va line_ellipsis">苏苏就是小苏苏</view>
         </view>
-        <view class="flex  c_one">
-          <view class="c_name">分类：</view>
-          <view class="c_va line_ellipsis">拓展新客</view>
+        <view class="flex c_one">
+          <view class="c_name">名称：</view>
+          <view class="c_va line_ellipsis">苏苏就是小苏苏</view>
         </view>
-        <view class="flex  c_one">
-          <view class="c_name">状态：</view>
-          <view class="c_va line_ellipsis c_status" >进行中</view>
+        <view class="flex c_one">
+          <view class="c_name">名称：</view>
+          <view class="c_va line_ellipsis">苏苏就是小苏苏</view>
         </view>
-        <view class="flex  c_one">
-          <view class="c_name">由谁完成：</view>
-          <view class="c_va1 line_ellipsis">张三</view>
+        <view class="flex c_one">
+          <view class="c_name">名称：</view>
+          <view class="c_va line_ellipsis">苏苏就是小苏苏</view>
         </view>
       </view>
       <view class="c_charts flex-column">
         <view class="c_cha">
-          <canvas-ring id="canvasRing{{index}}" canvasWidth="{{80}}" value="{{item}}" lineWidth="{{3}}" ></canvas-ring>
+          <canvas-ring id="canvasRing{{index}}" canvasWidth="{{80}}" value="{{item}}" lineWidth="{{3}}" title="" ></canvas-ring>
         </view>
         <view><text class="c_num_has">6800</text><text>/120000</text></view>
       </view>
     </view>
   </block>
-
-</view>
-<view wx:else class="no_data">
-    <image src="/img/no-data2.png" class="n_img"></image>
-    <view class="text_tip">暂无数据~</view>
 </view>
 
 
@@ -50,7 +44,7 @@
   <view class="dialog">
     <scroll-view scroll-y style="height:80%">
       <view class="main_con">
-        <!-- 时间类型： -->
+ 
         <view class="dialog_item" wx:if="{{typeList.length>0}}">
           <view class="flex-row j_b d_title">
             <text class="d_name">时间类型:</text>
@@ -61,7 +55,7 @@
             </block>
           </view>
         </view>
-        <!-- 月度选择： -->
+       
         <view class="dialog_item" wx:if="{{monthList.length>0}}">
         <view class="flex-row j_b d_title">
           <text class="d_name">月度选择:</text>
@@ -79,7 +73,7 @@
           </block>
         </view>
         </view>
-        <!-- 目标分类 -->
+      
         <view class="dialog_item" wx:if="{{targetList.length>0}}">
             <view class="flex-row j_b d_title">
               <text class="d_name">目标分类:</text>
@@ -90,54 +84,6 @@
               </block>
             </view>
         </view>
-
-        <!-- 完成情况： -->
-        <view class="dialog_item" >
-          <view class="flex-row j_b d_title">
-            <text class="d_name">完成情况:</text>
-          </view>
-          <view class="flex d_chose">
-            <block wx:for="{{completeList}}" wx:key="*this"  wx:for-index="index" wx:for-item="item">
-              <view class="d_item {{item.chosed==true?'chosed':''}}" catchtap="choseKey"  data-list="completeList" data-index="{{index}}">{{item.name}}</view>
-            </block>
-          </view>
-        </view>
-
-        <!-- 状态： -->
-        <view class="dialog_item">
-          <view class="flex-row j_b d_title">
-            <text class="d_name">状态:</text>
-          </view>
-          <view class="flex d_chose">
-            <block wx:for="{{statusList}}" wx:key="*this"  wx:for-index="index" wx:for-item="item">
-              <view class="d_item {{item.chosed==true?'chosed':''}}" catchtap="choseKey"  data-list="statusList"  data-index="{{index}}">{{item.name}}</view>
-            </block>
-          </view>
-        </view>
-
-         <!-- 业务员： -->
-        <view class="dialog_item">
-          <view class="flex-row j_b d_title">
-            <text class="d_name">业务员:</text>
-          </view>
-          <view class="flex d_chose">
-            <block wx:for="{{peList}}" wx:key="*this"  wx:for-index="index" wx:for-item="item">
-              <view class="d_item  {{item.chosed==true?'chosed':''}}" catchtap="choseAlone"   data-index="{{index}}">{{item.name}}</view>
-            </block>
-          </view>
-        </view>
-        
-        <!-- 下属人员 -->
-        <view class="dialog_item" wx:if="{{peList[1].chosed}}">
-          <view class="flex-row j_b d_title">
-            <text class="d_name">下属人员:</text>
-          </view>
-          <view class="flex d_chose">
-            <block wx:for="{{salesList}}" wx:key="index"  wx:for-index="index" wx:for-item="item">
-              <view class="d_item {{item.chosed==true?'chosed':''}}" catchtap="choseKey"  data-list="salesList"  data-index="{{index}}">{{item.name}}</view>
-            </block>
-          </view>
-        </view>
       </view>
     </scroll-view>
     <view class="d_bottom">
@@ -147,5 +93,36 @@
         <view class="btn_text" bindtap="search">确认</view>
       </view>
     </view>
+  </view>
+</view>
+
+
+<view class="flex-row j_b rows">
+  <!-- 其他样式的 圆环1 -->
+  <canvas-ring id="ring1" value="{{num_per}}"></canvas-ring>
+  <!-- 其他样式的 2 -->
+  <canvas-ring id="varyRing" value="{{vary_val}}" title="苏苏小苏苏" maxValue="99" minValue="0" suffix="**" startDegree="{{vary_start}}" lineWidth="{{vary_lineW}}" lineColor="{{vary_color}}"  valueColor="{{val_color}}"></canvas-ring>
+</view>
+
+<!-- 其他样式的 圆环3 -->
+<view  class="flex-row j_b rows">
+  <view class='progress_box'>
+    <canvas class="progress_bg" canvas-id="canvasProgressbg"> </canvas> 
+    <canvas class="progress_canvas" canvas-id="canvasProgress"> </canvas> 
+    <view class="progress_text">
+      <view class="progress_dot"></view> 
+      <text class='progress_info'> {{progress_txt}}</text>
+    </view> 
+  </view>
+</view>
+
+<!-- 时间进度条 -->
+<view class="rows">
+  <view class='out'>
+    <view class='in' style="width: {{progressWidth}}% "></view>
+  </view>
+  <view class='flex-row j_b action'>
+    <text>{{progressTime}}秒</text>
+    <text bindtap='playbtn' data-change='1'>{{playPausetips}}</text>
   </view>
 </view>

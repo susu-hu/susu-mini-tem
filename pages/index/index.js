@@ -43,6 +43,14 @@ Page({
           {
             name:'swiper3D轮播图',
             url:'/pages/another/swiper-threeD/index'
+          },
+          {
+            name:'圆环进度条一',
+            url:'/pages/another/circleRing/index'
+          },
+          {
+            name:'圆环进度条2',
+            url:'/pages/another/circleRing/index2'
           }
         ]
       },

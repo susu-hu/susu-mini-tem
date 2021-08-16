@@ -18,7 +18,7 @@ Component({
       type: Number,
       value: 10
     },
-    //线条颜色 默认"#393"
+    //线条颜色
     lineColor: {
       type: String,
       value: "#3696FA"
@@ -33,7 +33,7 @@ Component({
       type: Number,
       value: 45
     },
-    //值的颜色 默认"#ff9c07"
+    //值的颜色 默认""
     valueColor:{
       type: String,
       value: "#333"
@@ -107,12 +107,7 @@ Component({
       ctx.arc(0, 0, circle_r - 10, startDegree * Math.PI / 180 - 0.5 * Math.PI, percent * Math.PI / 180 + startDegree * Math.PI / 180 - 0.5 * Math.PI, false);
       ctx.stroke();
       ctx.closePath();
-
       ctx.draw();
-
-
-
-
     }
   }
 })

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "canvas-ring": "../components/canvas-ring/canvas-ring"
-  }
+  },
+  "navigationBarTitleText": "圆环进度circle"
 }
