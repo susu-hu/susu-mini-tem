@@ -1,0 +1,151 @@
+<!--pages/another/circleRing/index.wxml-->
+<!--pages/targetPlan/index.wxml-->
+<view class="head_fix flex-row">
+  <view class="head_box flex-row" >
+    <image src="/img/search_icon.png" class="s_icon"></image>
+    <input class="i_ipt" placeholder="搜索目标名称" placeholder-class="p_class"/>
+  </view>
+  <view catchtap="showDialog">筛选</view>
+</view>
+<view class="con" wx:if="{{hasData}}">
+  <block wx:for="{{data_list}}" wx:key="*this">
+    <view class="c_item flex j_b" catchtap="toDetail">
+      <view>
+        <view class="flex c_one">
+          <view class="c_name">名称：</view>
+          <view class="c_va line_ellipsis">2021-05出货数量好好务出货数量目标任务</view>
+        </view>
+        <view class="flex  c_one">
+          <view class="c_name">分类：</view>
+          <view class="c_va line_ellipsis">拓展新客</view>
+        </view>
+        <view class="flex  c_one">
+          <view class="c_name">状态：</view>
+          <view class="c_va line_ellipsis c_status" >进行中</view>
+        </view>
+        <view class="flex  c_one">
+          <view class="c_name">由谁完成：</view>
+          <view class="c_va1 line_ellipsis">张三</view>
+        </view>
+      </view>
+      <view class="c_charts flex-column">
+        <view class="c_cha">
+          <canvas-ring id="canvasRing{{index}}" canvasWidth="{{80}}" value="{{item}}" lineWidth="{{3}}" ></canvas-ring>
+        </view>
+        <view><text class="c_num_has">6800</text><text>/120000</text></view>
+      </view>
+    </view>
+  </block>
+
+</view>
+<view wx:else class="no_data">
+    <image src="/img/no-data2.png" class="n_img"></image>
+    <view class="text_tip">暂无数据~</view>
+</view>
+
+
+<!-- 筛选弹框 -->
+<view  hidden="{{showDialog}}">
+  <view class='mask' bindtap="closePop"></view>
+  <view class="dialog">
+    <scroll-view scroll-y style="height:80%">
+      <view class="main_con">
+        <!-- 时间类型： -->
+        <view class="dialog_item" wx:if="{{typeList.length>0}}">
+          <view class="flex-row j_b d_title">
+            <text class="d_name">时间类型:</text>
+          </view>
+          <view class="flex d_chose">
+            <block wx:for="{{typeList}}" wx:key="*this"  wx:for-index="index" wx:for-item="item">
+              <view class="d_item {{item.chosed==true?'chosed':''}}" catchtap="choseKey"  data-list="typeList"   data-index="{{index}}">{{item.type_name}}</view>
+            </block>
+          </view>
+        </view>
+        <!-- 月度选择： -->
+        <view class="dialog_item" wx:if="{{monthList.length>0}}">
+        <view class="flex-row j_b d_title">
+          <text class="d_name">月度选择:</text>
+
+          <view class="d_status" wx:if="{{show_more}}" catchtap="showMore">
+            展开<image src="/img/open_up.png" class="zhank_icon"></image>
+          </view>
+          <view class="d_status" wx:if="{{show_more!=undefined && !show_more}}" catchtap="showMore">
+            收起<image src="/img/clolse_down.png" class="zhank_icon"></image>
+          </view>
+        </view>
+        <view class="flex d_chose">
+          <block wx:for="{{monthList}}" wx:key="*this"  wx:for-index="index" wx:for-item="item">
+            <view class="d_item {{show_more?'d_item_none':''}} {{item.chosed==true?'chosed':''}}" catchtap="choseKey"  data-list="monthList"    data-index="{{index}}">{{item.value}}</view>
+          </block>
+        </view>
+        </view>
+        <!-- 目标分类 -->
+        <view class="dialog_item" wx:if="{{targetList.length>0}}">
+            <view class="flex-row j_b d_title">
+              <text class="d_name">目标分类:</text>
+            </view>
+            <view class="flex d_chose">
+              <block wx:for="{{targetList}}" wx:key="*this"  wx:for-index="index" wx:for-item="item">
+                <view class="d_item {{item.chosed==true?'chosed':''}}"  catchtap="choseKey"  data-list="targetList"  data-index="{{index}}">{{item.type_name}}</view>
+              </block>
+            </view>
+        </view>
+
+        <!-- 完成情况： -->
+        <view class="dialog_item" >
+          <view class="flex-row j_b d_title">
+            <text class="d_name">完成情况:</text>
+          </view>
+          <view class="flex d_chose">
+            <block wx:for="{{completeList}}" wx:key="*this"  wx:for-index="index" wx:for-item="item">
+              <view class="d_item {{item.chosed==true?'chosed':''}}" catchtap="choseKey"  data-list="completeList" data-index="{{index}}">{{item.name}}</view>
+            </block>
+          </view>
+        </view>
+
+        <!-- 状态： -->
+        <view class="dialog_item">
+          <view class="flex-row j_b d_title">
+            <text class="d_name">状态:</text>
+          </view>
+          <view class="flex d_chose">
+            <block wx:for="{{statusList}}" wx:key="*this"  wx:for-index="index" wx:for-item="item">
+              <view class="d_item {{item.chosed==true?'chosed':''}}" catchtap="choseKey"  data-list="statusList"  data-index="{{index}}">{{item.name}}</view>
+            </block>
+          </view>
+        </view>
+
+         <!-- 业务员： -->
+        <view class="dialog_item">
+          <view class="flex-row j_b d_title">
+            <text class="d_name">业务员:</text>
+          </view>
+          <view class="flex d_chose">
+            <block wx:for="{{peList}}" wx:key="*this"  wx:for-index="index" wx:for-item="item">
+              <view class="d_item  {{item.chosed==true?'chosed':''}}" catchtap="choseAlone"   data-index="{{index}}">{{item.name}}</view>
+            </block>
+          </view>
+        </view>
+        
+        <!-- 下属人员 -->
+        <view class="dialog_item" wx:if="{{peList[1].chosed}}">
+          <view class="flex-row j_b d_title">
+            <text class="d_name">下属人员:</text>
+          </view>
+          <view class="flex d_chose">
+            <block wx:for="{{salesList}}" wx:key="index"  wx:for-index="index" wx:for-item="item">
+              <view class="d_item {{item.chosed==true?'chosed':''}}" catchtap="choseKey"  data-list="salesList"  data-index="{{index}}">{{item.name}}</view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="d_bottom">
+      <view class="d_view">
+        <view class="line"></view>
+        <view class="btn_text" bindtap="reset">重置</view>
+        <view class="btn_text" bindtap="search">确认</view>
+      </view>
+    </view>
+  </view>
+</view>

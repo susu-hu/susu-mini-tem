@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "canvas-ring": "../components/canvas-ring/canvas-ring"
+  }
+}

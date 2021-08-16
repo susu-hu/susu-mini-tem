@@ -14,7 +14,7 @@ Page({
       });
     } else {
       wx.switchTab({
-        url: '/pages/index2/index'
+        url: '/pages/index/index'
       })
     }
   },
