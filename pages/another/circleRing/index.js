@@ -13,15 +13,13 @@ Page({
 
     hasData:true,//是否有数据
 
-    data_list:['30','80','100',],//数据列表
+    data_list:['68','80','100',],//数据列表
 
-    // 时间类型
-    typeList:[],
-    //月度选择
-    monthList:[],
+    
+    typeList:[],// 时间类型
+    monthList:[],  //月度选择
     show_more:undefined,
-    //目标分类
-    targetList:[],
+    targetList:[],//目标分类
 
     num_per:0,//
 
@@ -29,7 +27,9 @@ Page({
     progressWidth:0,
     progressTime:60,
     mark:true,  
-    playPausetips:"开始"
+    playPausetips:"开始",
+
+    imagePath:''
     
   },
 
@@ -233,16 +233,34 @@ Page({
     })
   },
   drawProgressbg: function(){
-    // 使用 wx.createContext 获取绘图上下文 context
-    var ctx = wx.createCanvasContext('canvasProgressbg')
+    // 使用 wx.createContext 获取绘图上下文 context(该接口已经不再维护了)
+    var ctx = wx.createCanvasContext('gg')
     ctx.setLineWidth(4);// 设置圆环的宽度
     ctx.setStrokeStyle('#20183b'); // 设置圆环的颜色
     ctx.setLineCap('round') // 设置圆环端点的形状
     ctx.beginPath();//开始一个新的路径
     ctx.arc(110, 110, 100, 0, 2 * Math.PI, false);
-    //设置一个原点(100,100)，半径为90的圆的路径到当前路径
+    //设置一个原点(100,100)，半径为100的圆的路径到当前路径
     ctx.stroke();//对当前路径进行描边
-    ctx.draw();
+    ctx.draw(false, ()=> {
+      // 延迟保存图片，解决生成图片错位bug。
+      setTimeout(() => {
+        this.canvasToTempImage();
+        }, 400);
+      });
+  },
+  canvasToTempImage() {
+    wx.canvasToTempFilePath({
+      canvasId: "gg",
+      success: (res) => {
+        console.log(res)
+        let tempFilePath = res.tempFilePath;
+        this.setData({
+          imagePath: tempFilePath,
+        });
+      }
+    }, this);
+    console.log(this.data.imagePath)
   },
   drawCircle: function (step){ 
     var context = wx.createCanvasContext('canvasProgress');
@@ -270,12 +288,12 @@ Page({
     所以 计数器 最大值 60 对应 2 做处理，计数器count=60的时候step=2
     */
      this.drawCircle(this.data.count / (60/2))
-    this.data.count++;
+      this.data.count++;
     } else {
-    this.setData({
-     progress_txt: "匹配成功"
-    }); 
-    clearInterval(this.countTimer);
+      this.setData({
+        progress_txt: "匹配成功"
+      }); 
+      clearInterval(this.countTimer);
     }
     }, 100)
   },
@@ -285,5 +303,29 @@ Page({
     // this.drawCircle(2);
     // this.drawCircle(1);
     // this.drawCircle(0.5);
+    this.drawNew(2);
   }, 
+  drawNew(step){
+    const query = wx.createSelectorQuery()
+    query.select('#myCanvas')
+      .fields({ node: true , size: true})
+      .exec((res) => {
+        const canvas = res[0].node
+        const ctx = canvas.getContext('2d');
+        var gradient = ctx.createLinearGradient(200, 100, 100, 200);
+        gradient.addColorStop("0", "#a57b5f");
+        gradient.addColorStop("0.5", "#cc9ad1");
+        gradient.addColorStop("1.0", "#b84e88");
+        ctx.strokeStyle=gradient;
+        ctx.lineWidth=10;
+        ctx.lineCap='round';
+        ctx.beginPath(); 
+        ctx.arc(110, 110, 100, 0, 2 * Math.PI, false);
+        ctx.stroke(); 
+      })
+  },
+  
+
+
+  
 })

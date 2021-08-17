@@ -1,4 +1,4 @@
-<canvas style="width:{{canvasWidth}}px;height:{{canvasWidth}}px;" canvas-id="circleBar">
+<canvas style="width:{{canvasWidth}}px;height:{{canvasWidth}}px;" canvas-id="circleBar" >
   <view class="circle-bar-wrap" style="height:{{canvasWidth}}px;">
     <view class="font">
       {{title}}

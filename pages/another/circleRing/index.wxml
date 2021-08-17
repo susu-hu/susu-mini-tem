@@ -29,7 +29,7 @@
       </view>
       <view class="c_charts flex-column">
         <view class="c_cha">
-          <canvas-ring id="canvasRing{{index}}" canvasWidth="{{80}}" value="{{item}}" lineWidth="{{3}}" title="" ></canvas-ring>
+          <canvas-ring id="canvasRing{{index}}" canvasWidth="{{80}}"  value="{{item}}" lineWidth="{{3}}" title="{{''}}" ></canvas-ring>
         </view>
         <view><text class="c_num_has">6800</text><text>/120000</text></view>
       </view>
@@ -96,12 +96,13 @@
   </view>
 </view>
 
+<image src="{{imagePath}}" style="width:220px;height:220px"></image>
 
 <view class="flex-row j_b rows">
   <!-- 其他样式的 圆环1 -->
   <canvas-ring id="ring1" value="{{num_per}}"></canvas-ring>
   <!-- 其他样式的 2 -->
-  <canvas-ring id="varyRing" value="{{vary_val}}" title="苏苏小苏苏" maxValue="99" minValue="0" suffix="**" startDegree="{{vary_start}}" lineWidth="{{vary_lineW}}" lineColor="{{vary_color}}"  valueColor="{{val_color}}"></canvas-ring>
+  <canvas-ring id="varyRing" value="{{vary_val}}" title="{{'苏苏小苏苏'}}" maxValue="{{99}}" minValue="{{0}}" suffix="{{'**'}}" startDegree="{{vary_start}}" lineWidth="{{vary_lineW}}" lineColor="{{vary_color}}"  valueColor="{{val_color}}"></canvas-ring>
 </view>
 
 <!-- 其他样式的 圆环3 -->
@@ -124,5 +125,17 @@
   <view class='flex-row j_b action'>
     <text>{{progressTime}}秒</text>
     <text bindtap='playbtn' data-change='1'>{{playPausetips}}</text>
+  </view>
+</view>
+<!-- 替换原先的接口  -->
+<view  class="flex-row j_b rows">
+  <view class="new_ca">
+    <canvas type="2d"  id="myCanvas" height="300" ></canvas>
+  </view>
+</view>
+
+<view  class="flex-row j_b rows">
+  <view class='progress_box'>
+    <canvas canvas-id="gg" class="progress_bg" ></canvas>
   </view>
 </view>

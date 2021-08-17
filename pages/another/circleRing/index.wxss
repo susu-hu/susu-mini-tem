@@ -305,3 +305,9 @@ page{
  border: 1px #000 solid;
  border-radius: 5vw;
 }
+.new_ca{
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+

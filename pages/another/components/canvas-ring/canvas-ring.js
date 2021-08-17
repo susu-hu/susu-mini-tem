@@ -56,7 +56,7 @@ Component({
     //从什么角度开始 0~360之间 （12点方向为0,18点方向为180,0点方向为360）
     startDegree: {
       type: Number,
-      value: 0
+      value: 180
     }
 
   },
@@ -65,7 +65,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    canvasWidth: windWidth * 0.4,
+    canvasWidth:' windWidth * 0.4',
     isMarginTop: true
   },
 
@@ -108,6 +108,8 @@ Component({
       ctx.stroke();
       ctx.closePath();
       ctx.draw();
+
+
     }
   }
 })
