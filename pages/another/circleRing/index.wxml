@@ -101,7 +101,8 @@
 <!-- 替换原先的接口  canvas 2d -->
 <view  class="flex-row j_b rows">
   <view class="new_ca">
-    <canvas type="2d"  id="myCanvas" height='300' width='220' ></canvas>
+    <!-- style="width:{{canvasW}}px;height: {{canvasH}}px;"  -->
+    <canvas type="2d"  id="myCanvas" ></canvas>
   </view>
 </view>
 

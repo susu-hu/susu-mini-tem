@@ -5,6 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+
+    canvasW:220,
+    canvasH:220,
+    
     progress_txt: '正在匹配中...', 
     count:0, // 设置 计数器 初始为0
     countTimer: null ,// 设置 定时器 初始为null
@@ -325,7 +329,7 @@ Page({
         const ctx = canvas.getContext('2d');
         const dpr = wx.getSystemInfoSync().pixelRatio
         canvas.width = res[0].width * dpr
-        canvas.height = 220 * dpr
+        canvas.height = res[0].height * dpr
         ctx.scale(dpr, dpr)
         var gradient = ctx.createLinearGradient(200, 100, 100, 200);
         gradient.addColorStop("0", "#a57b5f");

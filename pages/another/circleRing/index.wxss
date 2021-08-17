@@ -331,8 +331,11 @@ page{
  border-radius: 5vw;
 }
 .new_ca{
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   margin: 0 auto;
 }
-
+.new_ca canvas{
+  width: 220px;
+  height: 220px;
+}
