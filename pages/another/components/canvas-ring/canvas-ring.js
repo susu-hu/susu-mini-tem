@@ -107,9 +107,25 @@ Component({
       ctx.arc(0, 0, circle_r - 10, startDegree * Math.PI / 180 - 0.5 * Math.PI, percent * Math.PI / 180 + startDegree * Math.PI / 180 - 0.5 * Math.PI, false);
       ctx.stroke();
       ctx.closePath();
-      ctx.draw();
+      ctx.draw(false, ()=> {
+        // 延迟保存图片，解决生成图片错位bug。
+        setTimeout(() => {
+          this.canvasToTempImage()
+          }, 400);
+      });
 
-
+    },
+    canvasToTempImage() {
+      let tempFilePath='';
+      wx.canvasToTempFilePath({
+        canvasId: "circleBar",
+        success: (res) => {
+          tempFilePath = res.tempFilePath;
+          this.setData({
+            imagePath: tempFilePath,
+          });
+        }
+      }, this);
     }
   }
 })

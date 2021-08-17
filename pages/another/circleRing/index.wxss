@@ -47,6 +47,25 @@ page{
   padding: 26rpx 38rpx 27rpx 24rpx;
   font-size: 26rpx;
 }
+.c_value{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.c_a{
+  position: fixed;
+  top: 99999px;
+}
+.vaa{
+  position: relative;
+  width: 80px;
+}
+
+.canvas_img{
+  width: 80px;
+  height: 80px;
+}
 .c_one{
   margin-bottom: 12rpx;
 }
@@ -244,6 +263,12 @@ page{
   width:250px;
 }
 /* 圆环3 */
+.ca_img{
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  display: block;
+}
 .progress_box{
   position: relative;
   width:220px;

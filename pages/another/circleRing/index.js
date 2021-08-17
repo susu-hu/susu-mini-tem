@@ -13,9 +13,17 @@ Page({
 
     hasData:true,//是否有数据
 
-    data_list:['68','80','100',],//数据列表
-
-    
+    data_list:[
+      {
+        value:30
+      },
+      {
+        value:68
+      },
+      {
+        value:99
+      },
+    ],//数据列表
     typeList:[],// 时间类型
     monthList:[],  //月度选择
     show_more:undefined,
@@ -82,6 +90,13 @@ Page({
     this.data.data_list.forEach((item,index)=>{
       this.canvasRing = this.selectComponent("#canvasRing"+index);
       this.canvasRing.showCanvasRing()
+      setTimeout(()=>{
+        let src=this.selectComponent("#canvasRing"+index).data.imagePath;
+        item.imgSrc=src;
+        this.setData({
+          data_list:this.data.data_list
+        })
+      },1000)
     })
   },
   onShow: function () {
@@ -232,9 +247,9 @@ Page({
       progressTime: progressTime
     })
   },
-  drawProgressbg: function(){
+  drawProgressbg: function(id){
     // 使用 wx.createContext 获取绘图上下文 context(该接口已经不再维护了)
-    var ctx = wx.createCanvasContext('gg')
+    var ctx = wx.createCanvasContext(id)
     ctx.setLineWidth(4);// 设置圆环的宽度
     ctx.setStrokeStyle('#20183b'); // 设置圆环的颜色
     ctx.setLineCap('round') // 设置圆环端点的形状
@@ -253,14 +268,12 @@ Page({
     wx.canvasToTempFilePath({
       canvasId: "gg",
       success: (res) => {
-        console.log(res)
         let tempFilePath = res.tempFilePath;
         this.setData({
           imagePath: tempFilePath,
         });
       }
     }, this);
-    console.log(this.data.imagePath)
   },
   drawCircle: function (step){ 
     var context = wx.createCanvasContext('canvasProgress');
@@ -298,11 +311,9 @@ Page({
     }, 100)
   },
   onReady: function () {
-    this.drawProgressbg(); 
+    this.drawProgressbg('gg'); 
+    this.drawProgressbg('canvasProgressbg'); 
     this.countInterval()
-    // this.drawCircle(2);
-    // this.drawCircle(1);
-    // this.drawCircle(0.5);
     this.drawNew(2);
   }, 
   drawNew(step){
@@ -312,6 +323,10 @@ Page({
       .exec((res) => {
         const canvas = res[0].node
         const ctx = canvas.getContext('2d');
+        const dpr = wx.getSystemInfoSync().pixelRatio
+        canvas.width = res[0].width * dpr
+        canvas.height = 220 * dpr
+        ctx.scale(dpr, dpr)
         var gradient = ctx.createLinearGradient(200, 100, 100, 200);
         gradient.addColorStop("0", "#a57b5f");
         gradient.addColorStop("0.5", "#cc9ad1");

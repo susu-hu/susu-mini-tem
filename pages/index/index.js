@@ -45,7 +45,7 @@ Page({
             url:'/pages/another/swiper-threeD/index'
           },
           {
-            name:'圆环进度条一',
+            name:'圆环进度条一(wx.canvasToTempFilePath)',
             url:'/pages/another/circleRing/index'
           },
           {
@@ -78,7 +78,6 @@ Page({
   
   toDetail(e){
     let {url}=e.currentTarget.dataset;
-    console.log(url)
     wx.navigateTo({
       url: url,
     })

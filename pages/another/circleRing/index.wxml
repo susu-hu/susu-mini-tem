@@ -7,7 +7,7 @@
   <view catchtap="showDialog">筛选</view>
 </view>
 <view class="con" wx:if="{{hasData}}">
-  <block wx:for="{{data_list}}" wx:key="*this">
+  <block wx:for="{{data_list}}" wx:key="index">
     <view class="c_item flex j_b" catchtap="toDetail">
       <view>
         <view class="flex c_one">
@@ -29,14 +29,17 @@
       </view>
       <view class="c_charts flex-column">
         <view class="c_cha">
-          <canvas-ring id="canvasRing{{index}}" canvasWidth="{{80}}"  value="{{item}}" lineWidth="{{3}}" title="{{''}}" ></canvas-ring>
+          <canvas-ring id="canvasRing{{index}}" class="c_a" canvasWidth="{{80}}" value="{{item.value}}" lineWidth="{{3}}"></canvas-ring>
+          <view class="vaa" wx:if="{{item.imgSrc}}">
+            <image  src="{{item.imgSrc}}" class="canvas_img"></image>
+            <view class="c_value">{{item.value}}%</view>
+          </view>
         </view>
         <view><text class="c_num_has">6800</text><text>/120000</text></view>
       </view>
     </view>
   </block>
 </view>
-
 
 <!-- 筛选弹框 -->
 <view  hidden="{{showDialog}}">
@@ -95,9 +98,14 @@
     </view>
   </view>
 </view>
+<!-- 替换原先的接口  canvas 2d -->
+<view  class="flex-row j_b rows">
+  <view class="new_ca">
+    <canvas type="2d"  id="myCanvas" height='300' width='220' ></canvas>
+  </view>
+</view>
 
-<image src="{{imagePath}}" style="width:220px;height:220px"></image>
-
+<image src="{{imagePath}}" class="ca_img"></image>
 <view class="flex-row j_b rows">
   <!-- 其他样式的 圆环1 -->
   <canvas-ring id="ring1" value="{{num_per}}"></canvas-ring>
@@ -120,22 +128,17 @@
 <!-- 时间进度条 -->
 <view class="rows">
   <view class='out'>
-    <view class='in' style="width: {{progressWidth}}% "></view>
+  <!-- 有报错 先注释一下 -->
+    <!-- <view class='in' style="width: {{progressWidth}}% "></view> -->
   </view>
   <view class='flex-row j_b action'>
     <text>{{progressTime}}秒</text>
     <text bindtap='playbtn' data-change='1'>{{playPausetips}}</text>
   </view>
 </view>
-<!-- 替换原先的接口  -->
-<view  class="flex-row j_b rows">
-  <view class="new_ca">
-    <canvas type="2d"  id="myCanvas" height="300" ></canvas>
-  </view>
-</view>
-
 <view  class="flex-row j_b rows">
   <view class='progress_box'>
     <canvas canvas-id="gg" class="progress_bg" ></canvas>
   </view>
 </view>
+
