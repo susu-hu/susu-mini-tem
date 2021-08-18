@@ -49,7 +49,7 @@ Page({
             url:'/pages/another/circleRing/index'
           },
           {
-            name:'圆环进度条2',
+            name:'圆环进度条2(接口已废弃)',
             url:'/pages/another/circleRing/index2'
           }
         ]
@@ -69,6 +69,10 @@ Page({
           {
             name:'日历样式六',
             url:'/pages/subPack/calen/index3'
+          },
+          {
+            name:'canvas2d圆环进度条(同层渲染)',
+            url:'/pages/subPack/canvas2d/index'
           },
         ]
       }
@@ -93,6 +97,10 @@ Page({
 
 
   onShow: function () {
+    wx.showNavigationBarLoading() 
+    setTimeout(()=>{ 
+      wx.hideNavigationBarLoading() 
+    },1000) 
      //自定义的tabbar
      if (typeof this.getTabBar === 'function' &&
      this.getTabBar()) {

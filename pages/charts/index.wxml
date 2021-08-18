@@ -1,5 +1,5 @@
 <!--pages/charts/index.wxml-->
-<view>
+<view class="head_fix">
     <navBar title='' background='#fff' back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick">
         <view class='lxy-nav-bar-search' slot="center">
             <view class='lxy-nav-bar-search__icon' />
@@ -13,3 +13,4 @@
  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
 </view>
 <view class="btn" catchtap="toNextOne">下一个样式</view>
+<view style="height:700px"></view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "canvas2d圆环进度条",
+  "usingComponents": {
+    "canvas2d-ring":"../components/canvas2d-ring/index"
+  }
+}

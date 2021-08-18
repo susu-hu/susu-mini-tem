@@ -62,6 +62,22 @@ Page({
       this.ring1.showCanvasRing();
     }, 50);
   },
+  
+  getRings(){
+    //循环生成进度条
+    this.data.data_list.forEach((item,index)=>{
+      this.canvasRing = this.selectComponent("#canvasRing"+index);
+      this.canvasRing.showCanvasRing()
+      setTimeout(()=>{
+        let src=this.selectComponent("#canvasRing"+index).data.imagePath;
+        console.log(src)
+        item.imgSrc=src;
+        this.setData({
+          data_list:this.data.data_list
+        })
+      },2000)
+    })
+  },
   getRing2(){
     this.varyRing = this.selectComponent("#varyRing");
     //定义函数产生随机数
@@ -88,20 +104,6 @@ Page({
     setTimeout(()=>{
       clearInterval(vary_timer)
     },1200)
-  },
-  getRings(){
-    //循环生成进度条
-    this.data.data_list.forEach((item,index)=>{
-      this.canvasRing = this.selectComponent("#canvasRing"+index);
-      this.canvasRing.showCanvasRing()
-      setTimeout(()=>{
-        let src=this.selectComponent("#canvasRing"+index).data.imagePath;
-        item.imgSrc=src;
-        this.setData({
-          data_list:this.data.data_list
-        })
-      },1000)
-    })
   },
   onShow: function () {
     //列表数据
