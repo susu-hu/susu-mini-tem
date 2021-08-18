@@ -6,7 +6,7 @@
 </view>
 
 <view class="con">
-  <block wx:for="{{page_list}}" wx:key="*this">
+  <block wx:for="{{page_list}}" wx:key="page_list">
     <view class="c_item " catchtap="showMore" data-index="{{index}}">
       <view class="flex-row j_b">
         <view>{{item.name}} </view>

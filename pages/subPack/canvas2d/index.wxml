@@ -2,7 +2,7 @@
 <view class="head_box flex-row">
   <block wx:for="{{data_list}}" wx:key="data_list">
     <view class="h_item">
-      <canvas2d-ring type="2d" id="can{{index}}" canvasWidth="{{80}}" f_weight="bold"  value="{{item.value}}" valueColor="blue" f_size="15"  lineWidth="{{3}}"  title="{{}}"></canvas2d-ring>
+      <canvas2d-ring type="2d" id="can{{index}}" canvasWidth="{{80}}" f_weight="bold" lineColor="{{'green'}}"  value="{{item.value}}" valueColor="#333" f_size="15"  lineWidth="{{3}}"  title="{{'susu'}}"></canvas2d-ring>
     </view>
   </block>
 </view>
