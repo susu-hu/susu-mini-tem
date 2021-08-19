@@ -67,15 +67,12 @@ Page({
     //循环生成进度条
     this.data.data_list.forEach((item,index)=>{
       this.canvasRing = this.selectComponent("#canvasRing"+index);
-      this.canvasRing.showCanvasRing()
-      setTimeout(()=>{
-        let src=this.selectComponent("#canvasRing"+index).data.imagePath;
-        console.log(src)
-        item.imgSrc=src;
+      this.canvasRing.showCanvasRing().then(res=>{
+        item.imgSrc=res;
         this.setData({
           data_list:this.data.data_list
         })
-      },2000)
+      })
     })
   },
   getRing2(){
@@ -106,8 +103,9 @@ Page({
     },1200)
   },
   onShow: function () {
-    //列表数据
-    this.getRings()
+    
+    //黑色圆环
+    this.drawProgressbg('gg'); 
     //圆环1
     this.getRing1()
     //圆环2
@@ -317,7 +315,8 @@ Page({
     }, 100)
   },
   onReady: function () {
-    this.drawProgressbg('gg'); 
+    //列表数据
+    this.getRings()
     this.drawProgressbg('canvasProgressbg'); 
     this.countInterval()
     this.drawNew(2);

@@ -74,58 +74,59 @@ Component({
    */
   methods: {
     showCanvasRing() {
-      //去掉首位空格后如果标题为空，那么当前值的区域就没有margin-top值
-      if (this.data.title.replace(/(^\s*)|(\s*$)/g, "").length == 0) {
-        this.setData({
-          isMarginTop: false
-        })
-      }
-      //作画
+      return new Promise((reslove,reject)=>{
+        //去掉首位空格后如果标题为空，那么当前值的区域就没有margin-top值
+        if (this.data.title.replace(/(^\s*)|(\s*$)/g, "").length == 0) {
+          this.setData({
+            isMarginTop: false
+          })
+        }
+        //作画
 
-      var ctx = wx.createCanvasContext("circleBar", this); //canvas组建封装，需要后加个this
-      var circle_r = this.data.canvasWidth / 2; //画布的一半，用来找中心点和半径
-      var startDegree = this.data.startDegree; //从什么角度开始
-      var maxValue = this.data.maxValue; //最大值
-      var minValue = this.data.minValue; //最小值
-      var value = this.data.value; //当前的值
-      var lineColor = this.data.lineColor; //线条颜色
-      var lineWidth = this.data.lineWidth; //线条宽度
-      var percent = 360 * ((value - minValue) / (maxValue - minValue)); //计算结果
-      //定义起始点
-      ctx.translate(circle_r, circle_r);
-      //灰色圆弧
-      ctx.beginPath();
-      ctx.setStrokeStyle("#ebebeb");
-      ctx.setLineWidth(lineWidth);
-      ctx.arc(0, 0, circle_r - 10, 0, 2 * Math.PI, true);
-      ctx.stroke();
-      ctx.closePath();
-      //有色彩的圆弧
-      ctx.beginPath();
-      ctx.setStrokeStyle(lineColor);
-      ctx.setLineWidth(lineWidth);
-      ctx.arc(0, 0, circle_r - 10, startDegree * Math.PI / 180 - 0.5 * Math.PI, percent * Math.PI / 180 + startDegree * Math.PI / 180 - 0.5 * Math.PI, false);
-      ctx.stroke();
-      ctx.closePath();
-      ctx.draw(false, ()=> {
-        // 延迟保存图片，解决生成图片错位bug。
-        setTimeout(() => {
-          this.canvasToTempImage()
-          }, 400);
-      });
+        var ctx = wx.createCanvasContext("circleBar", this); //canvas组建封装，需要后加个this
+        var circle_r = this.data.canvasWidth / 2; //画布的一半，用来找中心点和半径
+        var startDegree = this.data.startDegree; //从什么角度开始
+        var maxValue = this.data.maxValue; //最大值
+        var minValue = this.data.minValue; //最小值
+        var value = this.data.value; //当前的值
+        var lineColor = this.data.lineColor; //线条颜色
+        var lineWidth = this.data.lineWidth; //线条宽度
+        var percent = 360 * ((value - minValue) / (maxValue - minValue)); //计算结果
+        //定义起始点
+        ctx.translate(circle_r, circle_r);
+        //灰色圆弧
+        ctx.beginPath();
+        ctx.setStrokeStyle("#ebebeb");
+        ctx.setLineWidth(lineWidth);
+        ctx.arc(0, 0, circle_r - 10, 0, 2 * Math.PI, true);
+        ctx.stroke();
+        ctx.closePath();
+        //有色彩的圆弧
+        ctx.beginPath();
+        ctx.setStrokeStyle(lineColor);
+        ctx.setLineWidth(lineWidth);
+        ctx.arc(0, 0, circle_r - 10, startDegree * Math.PI / 180 - 0.5 * Math.PI, percent * Math.PI / 180 + startDegree * Math.PI / 180 - 0.5 * Math.PI, false);
+        ctx.stroke();
+        ctx.closePath();
+        ctx.draw(false, ()=> {
+          reslove(this.canvasToTempImage())
+          // 延迟保存图片，解决生成图片错位bug。
+          // setTimeout(() => {
+          // }, 400);
+        });
+      })
+      
 
     },
     canvasToTempImage() {
-      let tempFilePath='';
-      wx.canvasToTempFilePath({
-        canvasId: "circleBar",
-        success: (res) => {
-          tempFilePath = res.tempFilePath;
-          this.setData({
-            imagePath: tempFilePath,
-          });
-        }
-      }, this);
+      return new Promise((reslove,reject)=>{
+        wx.canvasToTempFilePath({
+          canvasId: "circleBar",
+          success: (res) => {
+            reslove(res.tempFilePath)
+          }
+        }, this);
+      })
     }
   }
 })
