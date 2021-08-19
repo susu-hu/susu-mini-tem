@@ -15,8 +15,28 @@ const formatNumber = n => {
 }
 
 
- 
+var toolsFn = {
+  // 提示信息, 并且支持显示完成后,做一些操作
+  toastMsg: function (msg, icon = 'none', duration = 2000, mask='true', callback = '') {
+    wx.showToast({
+      title: msg,
+      icon: icon,
+      mask : mask,
+      duration: duration,
+    });
 
+    // 如果回调方法存在, 则调用回调
+    callback && callback();
+  },
+  // 验证手机号码, 验证通过返回 true, 验证不通过 返回 false;
+  validatePhone(mobile){
+    if((/^1(3|4|5|6|7|8|9)\d{9}$/.test(mobile))){ 
+      return true;
+    }
+    return false;
+  },
+};
 module.exports = {
   formatTime,
+  toolsFn: toolsFn,
 }

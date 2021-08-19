@@ -1,4 +1,5 @@
 // pages/index/index.js
+import util from '../../utils/util';
 Page({
 
   /**
@@ -40,6 +41,10 @@ Page({
         showmore:false,
         name:'分包another',
         list:[
+          {
+            name:'scroll-view左右滚动导航条',
+            url:'/pages/another/scroll-x/index'
+          },
           {
             name:'swiper3D轮播图',
             url:'/pages/another/swiper-threeD/index'
@@ -93,6 +98,9 @@ Page({
 
   onReady: function () {
 
+  },
+  showTip(){
+    util.toolsFn.toastMsg('苏苏就是小苏苏呀！！！喜欢的点个关注啊~创作不易，star一下~')
   },
 
 

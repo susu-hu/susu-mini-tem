@@ -1,0 +1,64 @@
+/* pages/another/scroll-x/index.wxss */
+.scroll-wrapper {
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  background: #FFF;
+  height: 90rpx;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+/* 去掉滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.navigate-item {
+  display: inline-block;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 0 30rpx;
+}
+
+.names {
+  font-size: 28rpx;
+  color: #3c3c3c;
+}
+
+.names.active {
+  color: #db7c22;
+  font-weight: bold;
+  font-size: 34rpx;
+}
+
+.currtline {
+  margin: -8rpx auto 0 auto;
+  width: 100rpx;
+  height: 8rpx;
+  border-radius: 4rpx;
+}
+
+.currtline.active {
+  background: #db7c22;
+  transition: all .3s;
+}
+.tab_title{
+  margin: 20rpx;
+  border: 1px solid #db7c22;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+swiper {
+  min-height: calc(100vh - 100rpx);
+}
+.swiper-item {
+  width: 100%;
+  padding: 32rpx ;
+  box-sizing: border-box;
+}
+
+scroll-view {
+  height: calc(100vh - 100rpx);
+}

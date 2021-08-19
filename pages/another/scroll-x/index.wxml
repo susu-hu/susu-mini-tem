@@ -1,0 +1,17 @@
+<!--pages/another/scroll-x/index.wxml-->
+<scroll-view class="scroll-wrapper" scroll-x scroll-with-animation="true" scroll-into-view="item{{currentTab < 4 ? 0 : currentTab - 3}}">
+	<view class="navigate-item" id="item{{index}}" wx:for="{{tabList}}" wx:key="index" data-index="{{index}}" bindtap="tabNav">
+		<view class="names {{currentTab === index ? 'active' : ''}}">{{item.name}}</view>
+		<view class="currtline {{currentTab === index ? 'active' : ''}}" wx:if="{{currentTab === index}}"></view>
+	</view>
+</scroll-view>
+<swiper indicator-dots="{{false}}" bindchange="handleSwiper" current="{{currentTab}}">
+	<block wx:for="{{tabList}}" wx:key="index">
+			<swiper-item style="overflow: scroll;">
+        <view class="tab_title">tab{{currentTab+1}}内容</view>
+				<scroll-view scroll-y refresher-enabled refresher-background="#F6F7F8" refresher-triggered="{{isRefresh}}"  bindrefresherrefresh="refresherpulling" bindscrolltolower="handleTolower">
+					<view class="swiper-item" wx:for="{{20}}" wx:key="index">第{{index + 1}}条数据~</view>
+				</scroll-view>
+			</swiper-item>
+	</block>
+</swiper>
