@@ -44,6 +44,7 @@ movable-area组件实现滑动删除
 26. subPack/animationBox 新增wx.createAnimation+css3：transform的rotate+translate形成一个五福合成的效果。
 27. another/circleRing/index 新增canvas（接口wx.createCanvasContext）绘制圆环的组件，层级很高，cover-view能力有限，采用wx.canvasToTempFilePath转换成图片，展示图片，避免穿透的发生，（该接口已被废弃，canvas2d支持同层渲染）
 28. subPack/canvas2d/index 新增canvas2d 绘制圆环进度条组件，同层渲染，canvas层级不会发生穿透现象（原接口wx.createCanvasContext已被废弃）
+29. another/scroll-x 新增scroll-view+swiper实现左右滚动导航条。
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -78,6 +79,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/031157_b0c5c5ad_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0818/113837_8bea02e5_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0818/114200_b39c99c4_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0820/000229_2699901d_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
