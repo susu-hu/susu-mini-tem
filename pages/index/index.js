@@ -64,6 +64,10 @@ Page({
         name:'分包subPack',
         list:[
           {
+            name:'canvas生成海报',
+            url:'/pages/subPack/canvasPoster/index'
+          },
+          {
             name:'animation动画，五福合成效果',
             url:'/pages/subPack/animationBox/index'
           },

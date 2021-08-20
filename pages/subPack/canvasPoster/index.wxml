@@ -1,2 +1,3 @@
 <!--pages/subPack/canvasPoster/index.wxml-->
-
+<button class="share_btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo" >点我生成分享图</button>
+<share-box isCanDraw="{{isCanDraw}}" bind:initData="createShareImage" bind:close="handleClose" />

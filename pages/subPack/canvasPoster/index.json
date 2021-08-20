@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "share-box": "../components/shareBox/index"
+  },
   "navigationBarTitleText": "canvas生成海报"
 }
