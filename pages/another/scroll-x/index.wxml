@@ -1,4 +1,5 @@
 <!--pages/another/scroll-x/index.wxml-->
+<!--currentTab < 4 ? 0 : currentTab - 3  保证滑动的时候 有一部分是在一屏内  -->
 <scroll-view class="scroll-wrapper" scroll-x scroll-with-animation="true" scroll-into-view="item{{currentTab < 4 ? 0 : currentTab - 3}}">
 	<view class="navigate-item" id="item{{index}}" wx:for="{{tabList}}" wx:key="index" data-index="{{index}}" bindtap="tabNav">
 		<view class="names {{currentTab === index ? 'active' : ''}}">{{item.name}}</view>

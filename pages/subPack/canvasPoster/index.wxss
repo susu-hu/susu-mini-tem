@@ -1,0 +1,4 @@
+/* pages/subPack/canvasPoster/index.wxss */
+page{
+  background-color: #fff;
+}

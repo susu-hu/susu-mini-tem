@@ -62,7 +62,8 @@
         "animationBox/index",
         "transitionBox/index",
         "calen/index3",
-        "canvas2d/index"
+        "canvas2d/index",
+        "canvasPoster/index"
       ]
     }
   ],
