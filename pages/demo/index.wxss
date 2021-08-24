@@ -132,3 +132,11 @@
   height: 40rpx;
   margin: 0 auto;
 }
+.aa{
+  width: 400rpx;
+  height: 90rpx;
+  border: 1rpx solid #ccc;
+}
+.bb{
+  border: 1rpx solid blue;
+}

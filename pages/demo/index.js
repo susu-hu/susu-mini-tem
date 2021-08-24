@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    aa:0,
     loading:true,
     //物流情况
     expresslist:{
@@ -69,5 +70,16 @@ Page({
   onShow: function () {
 
   },
+  aa(){
+    console.log(111)
+    this.setData({
+      aa:1
+    })
+  },
+  blur(){
+    this.setData({
+      aa:0
+    })
+  }
 
 })

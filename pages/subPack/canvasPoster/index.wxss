@@ -3,12 +3,18 @@ page{
   background-color: #fff;
 }
 .share_btn{
-    width: 686rpx;
+    width: 600rpx;
     height: 88rpx;
-    background: #00cc88;
+    background: #2698da;
     color: #FFF;
-    border-radius: 16rpx;
+    border-radius: 44rpx;
     font-size: 32rpx;
     text-align: center;
-    margin: 200rpx auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  
 }

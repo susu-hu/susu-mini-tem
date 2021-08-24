@@ -46,5 +46,6 @@ Page({
   },
   createShareImage(){
     
-  }
+  },
+  
 })

@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+
     page_list:[
       {
         showmore:true,
@@ -63,6 +64,10 @@ Page({
         showmore:false,
         name:'分包subPack',
         list:[
+          {
+            name:'loading加载动画',
+            url:'/pages/subPack/loading/index'
+          },
           {
             name:'canvas生成海报',
             url:'/pages/subPack/canvasPoster/index'
@@ -128,7 +133,8 @@ Page({
     this.setData({
       page_list:page_list
     })
-  }
+  },
+  
 
 
  

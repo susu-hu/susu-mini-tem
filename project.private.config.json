@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
+          "name": "pages/subPack/loading/index",
+          "pathName": "pages/subPack/loading/index",
           "query": "",
           "scene": null
         },

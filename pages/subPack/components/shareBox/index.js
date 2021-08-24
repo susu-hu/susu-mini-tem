@@ -63,8 +63,8 @@ Component({
                 "top": "192px",
                 "left": "230px",
                 "rotate": "0",
-                "borderRadius": "60",
-                "borderWidth": "1",
+                "borderRadius": "0",
+                "borderWidth": "",
                 "borderColor": "#000000",
                 "shadow": "",
                 "mode": "scaleToFill"

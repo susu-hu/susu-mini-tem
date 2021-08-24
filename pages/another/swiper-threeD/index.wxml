@@ -55,7 +55,7 @@
       <text></text>
     </view>
   </view>
-  <view class="tui-loading-cell">
+  <!-- <view class="tui-loading-cell">
     <view class="circle-round">
       <text></text>
       <text></text>
@@ -66,9 +66,9 @@
       <text></text>
       <text></text>
     </view>
-  </view>
+  </view> -->
 </view>
-<view class="tui-loading-row">
+<!-- <view class="tui-loading-row">
   <view class="tui-loading-cell">
     <view class="circle-round-fade">
       <text></text>
@@ -132,4 +132,4 @@
     <view class="loading-spinner" style="background: url('https://i.postimg.cc/mgsKJGLw/susu1.jpg') no-repeat center top;">
     </view>
   </view>
-</view>
+</view> -->
