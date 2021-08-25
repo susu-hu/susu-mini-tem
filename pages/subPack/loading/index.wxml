@@ -3,3 +3,7 @@
   <view>sss</view>
   <view class="line"></view>
 </view>
+
+<view class="conic-progress" style="background-image: conic-gradient(from -180deg,#3696FA {{progressValue}}%,#ebebeb 0%);">
+	<text class="progress-value">{{progressValue}}%</text>
+</view>

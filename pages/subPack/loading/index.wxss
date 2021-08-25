@@ -74,3 +74,34 @@ page {
     transform: rotate(360deg);
   }
 }
+
+/* 圆弧 */
+.conic-progress {
+  margin: 100rpx auto;
+  position: relative;
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 50%;
+}
+
+.conic-progress::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.progress-value {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60rpx;
+  font-weight: bolder;
+  color: #3696FA;
+}
