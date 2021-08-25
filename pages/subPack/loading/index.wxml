@@ -1,9 +1,78 @@
 <!--pages/subPack/loading/index.wxml-->
+<view class="title">样式一：</view>
 <view class="ring">
   <view>sss</view>
   <view class="line"></view>
 </view>
 
-<view class="conic-progress" style="background-image: conic-gradient(from -180deg,#3696FA {{progressValue}}%,#ebebeb 0%);">
-	<text class="progress-value">{{progressValue}}%</text>
+<view class="title">样式二：</view>
+<view class="box">
+  <view class="loading">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="title">样式三：</view>
+<view class="box">
+  <view class="circle-line">
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+  </view>
+</view>
+<view class="title">样式四：</view>
+<view class="box">
+  <view class="circle-line1">
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+  </view>
+</view>
+<view class="title">样式五：</view>
+<view class="box">
+  <view class="circle-line-spin">
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+  </view>
+</view>
+<view class="title">样式六：</view>
+<view class="box">
+  <view class="circle-line2">
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+    <text></text>
+  </view>
+</view>
+<view class="title">样式七：</view>
+<view class="box">
+  <view class="circle_bx">
+    <view></view>
+  </view>
 </view>

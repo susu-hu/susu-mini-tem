@@ -27,8 +27,6 @@
 <!-- 无限反转 -->
 <view class="f_reverse"></view>
 
-
-
 <!-- 进度条 -->
 <view class="tui-loading-row">
   <view class="tui-loading-cell">
@@ -55,18 +53,9 @@
       <text></text>
     </view>
   </view>
-  <!-- <view class="tui-loading-cell">
-    <view class="circle-round">
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-    </view>
-  </view> -->
+</view>
+<view class="conic-progress" style="background-image: conic-gradient(from -180deg,#a8c992 {{progressValue}}%,#ebebeb 0%)">
+	<text class="progress-value">{{progressValue}}%</text>
 </view>
 <!-- <view class="tui-loading-row">
   <view class="tui-loading-cell">

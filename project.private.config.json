@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/subPack/chating/index",
-          "pathName": "pages/subPack/chating/index",
+          "name": "pages/subPack/loading/index",
+          "pathName": "pages/subPack/loading/index",
           "query": "",
           "scene": null
         },

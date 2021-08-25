@@ -1,7 +1,14 @@
 page {
   background: #fff;
+  padding-bottom: 40px;
 }
-/* Loading字符串 */
+.title{
+  margin: 20rpx ;
+  font-size: 25rpx;
+  text-align: center;
+  font-weight: bold;
+}
+/* 第一个 */
 .ring {
   position: relative;
   margin: 40rpx auto;
@@ -18,7 +25,6 @@ page {
   box-shadow: 0 0 20 rgba(0, 0, 0, .5); 
   user-select: none; /* 无法选中 */
 }
-/* 黄色长线 */
 .ring::before {
   content: ''; /* 内容 */
   position: absolute;
@@ -33,7 +39,6 @@ page {
   border-radius: 50%;
   animation: animateCircle 2s linear infinite; /* 动画：名称 时间 速率 重复 */
 }
-
 .line{
   display: block;
   position: absolute;
@@ -46,7 +51,6 @@ page {
   animation: animate 2s linear infinite;
   transform: rotate(45deg);
 }
-
 .line::before {
   content: '';
   position: absolute;
@@ -58,14 +62,12 @@ page {
   right: -4px;
   box-shadow: 0 0 20px #b3205d;
 }
-
 @keyframes animate {
   100% {
     /* 360+45 */
     transform: rotate(405deg); 
   }
 }
-
 @keyframes animateCircle {
   0% {
     transform: rotate(0deg);
@@ -75,33 +77,406 @@ page {
   }
 }
 
-/* 圆弧 */
-.conic-progress {
-  margin: 100rpx auto;
+/* 第二个 */
+.box{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.loading{
   position: relative;
-  width: 500rpx;
-  height: 500rpx;
-  border-radius: 50%;
+}
+.loading>view{
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #b3205d;
+}
+.loading>view:nth-child(1){
+  top: 20px;
+  left: 0px;
+  animation: loading infinite 1s;
+}
+.loading>view:nth-child(2){
+  top: 14.1442px;
+  left: 14.1442px;
+  transform: rotate(-45deg);
+  animation: loading infinite 1s 0.125s;
+}
+.loading>view:nth-child(3){
+  top: 0px;
+  left: 20px;
+  transform: rotate(90deg);
+  animation: loading infinite 1s 0.25s;
+}
+.loading>view:nth-child(4){
+  top: -14.1442px;
+  left: 14.1442px;
+  transform: rotate(45deg);
+  animation: loading infinite 1s 0.375s;
+}
+.loading>view:nth-child(5){
+  top: -20px;
+  left: 0px;
+  transform: rotate(0deg);
+  animation: loading infinite 1s 0.5s;
+}
+.loading>view:nth-child(6){
+  top: -14.1442px;
+  left: -14.1442px;
+  transform: rotate(-45deg);
+  animation: loading infinite 1s 0.625s;
+}
+.loading>view:nth-child(7){
+  top: 0px;
+  left: -20px;
+  transform: rotate(90deg);
+  animation: loading infinite 1s 0.75s;
+}
+.loading>view:nth-child(8){
+  top: 14.1442px;
+  left: -14.1442px;
+  transform: rotate(45deg);
+  animation: loading infinite 1s 0.875s;
 }
 
-.conic-progress::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 90%;
+@keyframes loading {
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* 第三个 */
+.circle-line,.circle-line1{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+}
+.circle-line text{
+  display: block;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 40px);
+  background-color: #a8c992;
+  transform-origin: center right; 
+  animation: circle 1.5s linear infinite; 
 }
 
-.progress-value {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60rpx;
-  font-weight: bolder;
-  color: #3696FA;
+.circle-line text:nth-child(1){
+  transform: rotate(0deg);
+  animation-delay: 0.2s;
 }
+.circle-line text:nth-child(2){
+  transform: rotate(45deg);
+  animation-delay: 0.4s;
+}
+.circle-line text:nth-child(3){
+  transform: rotate(90deg);
+  animation-delay: 0.6s;
+}
+.circle-line text:nth-child(4){
+  transform: rotate(135deg);
+  animation-delay: 0.8s;
+}
+.circle-line text:nth-child(5){
+  transform: rotate(180deg);
+  animation-delay: 1s;
+}
+.circle-line text:nth-child(6){
+  transform: rotate(225deg);
+  animation-delay: 1.2s;
+}
+.circle-line text:nth-child(7){
+  transform: rotate(270deg);
+  animation-delay: 1.4s;
+}
+.circle-line text:nth-child(8){
+  transform: rotate(315deg);
+  animation-delay: 1.6s;
+}
+@keyframes circle {
+  0%{
+      opacity: 0.45;
+  }
+  100%{
+      opacity: 0.9;
+  }
+}
+/* 第四个 */
+.circle-line1 text{
+  display: block;
+  width: 40px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 40px);
+  transform-origin: center right; 
+  animation: circle1 1.5s linear infinite; 
+
+}
+.circle-line1 text::before{
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: #a8c992;
+}
+.circle-line1 text:nth-child(1){
+  transform: rotate(0deg);
+  animation-delay: 0.2s;
+}
+.circle-line1 text:nth-child(2){
+  transform: rotate(45deg);
+  animation-delay: 0.4s;
+}
+.circle-line1 text:nth-child(3){
+  transform: rotate(90deg);
+  animation-delay: 0.6s;
+}
+.circle-line1 text:nth-child(4){
+  transform: rotate(135deg);
+  animation-delay: 0.8s;
+}
+.circle-line1 text:nth-child(5){
+  transform: rotate(180deg);
+  animation-delay: 1s;
+}
+.circle-line1 text:nth-child(6){
+  transform: rotate(225deg);
+  animation-delay: 1.2s;
+}
+.circle-line1 text:nth-child(7){
+  transform: rotate(270deg);
+  animation-delay: 1.4s;
+}
+.circle-line1 text:nth-child(8){
+  transform: rotate(315deg);
+  animation-delay: 1.6s;
+}
+@keyframes circle1 {
+  0%{
+      opacity: 0.15;
+  }
+  100%{
+      opacity: 0.9;
+  }
+}
+
+/* 第五个 */
+.circle-line-spin{
+  position: relative;
+  animation: circle-line 1.5s linear infinite;  
+}
+.circle-line-spin text{
+  display: block;
+  width: 50%;
+  height: 5px;
+  opacity: .7;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: 0px;
+  transform-origin: center right;
+}
+.circle-line-spin text::before{
+  content: '';
+  display: block;
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: #a8c992;
+}
+.circle-line-spin text:nth-child(1){
+  transform: rotate(0deg);
+  animation-delay: 0.2s;
+}
+.circle-line-spin text:nth-child(2){
+  transform: rotate(45deg);
+  animation-delay: 0.4s;
+}
+.circle-line-spin text:nth-child(3){
+  transform: rotate(90deg);
+  animation-delay: 0.6s;
+}
+.circle-line-spin text:nth-child(4){
+  transform: rotate(135deg);
+  animation-delay: 0.8s;
+}
+.circle-line-spin text:nth-child(5){
+  transform: rotate(180deg);
+  animation-delay: 1s;
+}
+.circle-line-spin text:nth-child(6){
+  transform: rotate(225deg);
+  animation-delay: 1.2s;
+}
+.circle-line-spin text:nth-child(7){
+  transform: rotate(270deg);
+  animation-delay: 1.4s;
+}
+.circle-line-spin text:nth-child(8){
+  transform: rotate(315deg);
+  animation-delay: 1.6s;
+}
+@keyframes circle-line {
+  0%{
+    transform:rotate(-360deg);
+  }
+  100%{
+    transform:rotate(10deg);
+  }
+}
+/* 第六个 */
+.circle-line2{
+  position: relative;
+}
+.circle-line2 text{
+  display: block;
+  width: 40px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 40px);
+  transform-origin: center right; 
+  animation: circle2 1.5s linear infinite; 
+
+}
+.circle-line2 text::before{
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: #22a2c2;
+}
+.circle-line2 text:nth-child(1){
+  transform: rotate(0deg);
+  animation-delay: 0.2s;
+}
+.circle-line2 text:nth-child(2){
+  transform: rotate(45deg);
+  animation-delay: 0.4s;
+}
+.circle-line2 text:nth-child(3){
+  transform: rotate(90deg);
+  animation-delay: 0.6s;
+}
+.circle-line2 text:nth-child(4){
+  transform: rotate(135deg);
+  animation-delay: 0.8s;
+}
+.circle-line2 text:nth-child(5){
+  transform: rotate(180deg);
+  animation-delay: 1s;
+}
+.circle-line2 text:nth-child(6){
+  transform: rotate(225deg);
+  animation-delay: 1.2s;
+}
+.circle-line2 text:nth-child(7){
+  transform: rotate(270deg);
+  animation-delay: 1.4s;
+}
+.circle-line2 text:nth-child(8){
+  transform: rotate(315deg);
+  animation-delay: 1.6s;
+}
+@keyframes circle2 {
+  0%{
+      opacity: 0.15;
+      scale: 0.1;
+  }
+  100%{
+      opacity: 0.9;
+      scale: 1.1;
+  }
+}
+/* 样式七 */
+.circle_bx{
+  position: relative;
+}
+.circle_bx view{
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  border-top: 48px #22a2c2 solid;
+  border-bottom: 48px #22a2c2 solid;
+  border-left: 48px #22a2c2 solid;
+  border-right: 48px transparent solid;
+  color: #22a2c2;
+  animation: circle_bx  1s linear infinite ;
+}
+/* box-shadow: h-shadow v-shadow blur spread color inset; */
+@keyframes circle_bx {
+  0% {
+    box-shadow: 120px 0px 0 -40px rgba(55, 145, 197, 0.5), 
+    100px 0px 0 -40px rgba(62, 96, 119, 0.75), 
+    80px 0px 0 -40px rgb(24, 149, 221);
+  }
+  100% {
+    box-shadow: 100px 0px 0 -45px rgba(9, 150, 206, 0.5), 
+    80px 0px 0 -45px rgba(84, 100, 117, 0.75), 
+    60px 0px 0 -45px rgb(8, 78, 90);
+  }
+}
+.circle_bx view::before {
+  position: absolute;
+  border-radius: 50%;
+  content: '';
+  top: -48px;
+  left: -48px;
+  border-top: 48px #22a2c2 solid;
+  border-bottom: 48px transparent solid;
+  border-left: 48px transparent solid;
+  border-right: 48px transparent solid;
+  animation: ccc .5s linear infinite alternate;
+}
+@keyframes ccc {
+  0% {
+      transform: rotate(45deg)
+  }
+  100% {
+      transform: rotate(0deg)
+  }
+}
+.circle_bx view::after {
+  position: absolute;
+  content: '';
+  top: -48px;
+  left: -48px;
+  border-top: 48px transparent solid;
+  border-bottom: 48px #22a2c2 solid;
+  border-left: 48px transparent solid;
+  border-right: 48px transparent solid;
+  border-radius: 50%;
+  animation: bbb .5s linear infinite alternate;
+}
+@keyframes bbb {
+  0% {
+      transform: rotate(-45deg)
+  }
+  100% {
+      transform: rotate(0deg)
+  }
+} 

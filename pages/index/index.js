@@ -102,6 +102,9 @@ Page({
   },
  
   onLoad: function (options) {
+    
+  },
+  onPullDownRefresh(){
     wx.stopPullDownRefresh() //刷新完成后停止下拉刷新动效
   },
 

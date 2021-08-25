@@ -12,16 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let intervalId = setInterval(() => {
-      if (this.data.progressValue < 100) {
-        this.data.progressValue++;
-        this.setData({
-          progressValue: this.data.progressValue
-        });
-      } else {
-        clearInterval(intervalId);
-      }
-    }, 25);
+    
 
   },
 
