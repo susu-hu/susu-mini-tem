@@ -64,7 +64,8 @@
         "calen/index3",
         "canvas2d/index",
         "canvasPoster/index",
-        "loading/index"
+        "loading/index",
+        "chating/index"
       ]
     }
   ],
