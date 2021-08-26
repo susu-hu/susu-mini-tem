@@ -144,17 +144,15 @@
 
 
 /* 进度条 */
-.tui-loading-row{
+.loading-row{
   width: 100%;
-  display: table;
-  table-layout: fixed;
+  display: flex;
+  justify-content: space-around;
 }
-.tui-loading-cell{
-width: 100%;
-display: table-cell;
-text-align: center;
+.loading-cell{
+  width: 100%;
+  text-align: center;
 }
-/*动画一：单个渐变  */
 .circle-line{
   width: 100px;
   height: 100px;
@@ -222,7 +220,7 @@ text-align: center;
       opacity: 0.9;
   }
 }
-/*动画二：整体旋转  */
+/* 第二个 */
 .circle-line-spin{
   width: 100px;
   height: 100px;

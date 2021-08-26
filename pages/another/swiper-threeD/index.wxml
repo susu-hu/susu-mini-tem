@@ -28,8 +28,8 @@
 <view class="f_reverse"></view>
 
 <!-- 进度条 -->
-<view class="tui-loading-row">
-  <view class="tui-loading-cell">
+<view class="loading-row">
+  <view class="loading-cell">
     <view class="circle-line">
       <text></text>
       <text></text>
@@ -41,7 +41,7 @@
       <text></text>
     </view>
   </view>
-  <view class="tui-loading-cell">
+  <view class="loading-cell">
     <view class="circle-line-spin">
       <text></text>
       <text></text>
@@ -57,68 +57,4 @@
 <view class="conic-progress" style="background-image: conic-gradient(from -180deg,#a8c992 {{progressValue}}%,#ebebeb 0%)">
 	<text class="progress-value">{{progressValue}}%</text>
 </view>
-<!-- <view class="tui-loading-row">
-  <view class="tui-loading-cell">
-    <view class="circle-round-fade">
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-    </view>
-  </view>
-  <view class="tui-loading-cell">
-    <view class="line-square">
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-    </view>
-  </view>
-  <view class="tui-loading-cell">
-    <view class="line-round">
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-    </view>
-  </view>
-</view>
-<view class="tui-loading-row">
-  <view class="tui-loading-cell">
-    <view class="line-bounce">
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-      <text></text>
-    </view>
-  </view>
-  <view class="tui-loading-cell">
-    <view class="loader-circle">
-    </view>
-  </view>
-  <view class="tui-loading-cell">
-    <view class="loading-circle">
-    </view>
-  </view>
-</view>
-<view class="tui-loading-row">
-  <view class="tui-loading-cell">
-    <view class="loading-sun">
-    </view>
-  </view>
-  <view class="tui-loading-cell">
-    <view class="loading-heart">
-    </view>
-  </view>
-  <view class="tui-loading-cell">
-    <view class="loading-spinner" style="background: url('https://i.postimg.cc/mgsKJGLw/susu1.jpg') no-repeat center top;">
-    </view>
-  </view>
-</view> -->
+

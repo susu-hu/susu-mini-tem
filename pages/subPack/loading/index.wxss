@@ -27,7 +27,6 @@ page {
   height: 80px; 
   text-align: center; /* 字体水平居中 */
   line-height: 80px; 
-  font-family: sans-serif; 
   font-size: 20px; 
   letter-spacing: 4px; 
   background: transparent; 
@@ -46,7 +45,7 @@ page {
   height: 100%;
   border: 3px solid transparent;
   border-top: 3px solid #b3205d;
-  border-right: 3px solid #b3205d;
+  border-right: 3px solid #771940;
   border-radius: 50%;
   animation: animateCircle 2s linear infinite; /* 动画：名称 时间 速率 重复 */
 }
