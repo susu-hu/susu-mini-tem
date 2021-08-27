@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "loading加载动画2",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "white"
 }

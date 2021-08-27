@@ -1,2 +1,29 @@
 <!--pages/subPack/loading/index2.wxml-->
-<text>pages/subPack/loading/index2.wxml</text>
+<view class="box">
+  <view class="loader loader-1">
+    <view class="loader-outter"></view>
+    <view class="loader-inner"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-2">
+    <view class="css-heart heart1"></view>
+    <view class="css-heart heart2"></view>
+    <view class="css-heart heart3"></view>
+    <view class="css-heart heart4"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-3">
+    <view class="dot dot0"></view>
+    <view class="dot dot1"></view>
+    <view class="dot dot2"></view>
+    <view class="dot dot3"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-4">
+    <view class="css-heart0"></view>
+    <view class="loader-circles"></view>
+  </view>
+</view>
