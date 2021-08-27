@@ -65,7 +65,8 @@
         "canvas2d/index",
         "canvasPoster/index",
         "loading/index",
-        "chating/index"
+        "chating/index",
+        "loading/index2"
       ]
     }
   ],

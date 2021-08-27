@@ -360,7 +360,6 @@ page {
   left: calc(50% - 40px);
   transform-origin: center right; 
   animation: circle2 1.5s linear infinite; 
-
 }
 .circle-line2 text::before{
   content: '';
@@ -407,12 +406,12 @@ page {
 }
 @keyframes circle2 {
   0%{
-      opacity: 0.15;
-      scale: 0.1;
+    opacity: 0.15;
+    transform:rotate(-360deg);
   }
   100%{
-      opacity: 0.9;
-      scale: 1.1;
+    opacity: 0.9;
+    transform:rotate(360deg);
   }
 }
 /* 样式七 */
