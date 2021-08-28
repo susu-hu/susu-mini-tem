@@ -27,3 +27,82 @@
     <view class="loader-circles"></view>
   </view>
 </view>
+<view class="box">
+  <view class="loader loader-5">
+    <view class="css-times times1"></view>
+    <view class="css-times times2"></view>
+    <view class="css-times times3"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-6">
+    <view class="css-star star1"></view>
+    <view class="css-star star2"></view>
+    <view class="css-star star3"></view>
+    <view class="css-star star4"></view>
+    <view class="css-star star5"></view>
+    <view class="css-star star6"></view>
+    <view class="css-star star7"></view>
+    <view class="css-star star8"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-7">
+    <view class="loader-pacman"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-8">
+    <view class="line line1"></view>
+    <view class="line line2"></view>
+    <view class="line line3"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-9"></view>
+</view>
+<view class="box">
+  <view class="loader loader-10">
+    <view class="loader-inner"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-11">
+    <view class="css-square square1"></view>
+    <view class="css-square square2"></view>
+    <view class="css-square square3"></view>
+    <view class="css-square square4"></view>
+    <view class="css-square square5"></view>
+    <view class="css-square square6"></view>
+    <view class="css-square square7"></view>
+    <view class="css-square square8"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-12">
+    <view class="css-star star1"></view>
+    <view class="css-star star2"></view>
+    <view class="css-star star3"></view>
+    <view class="css-star star4"></view>
+    <view class="css-star star5"></view>
+    <view class="css-star star6"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-13">
+    <view class="css-star star-1"></view>
+    <view class="css-star star-2"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-14">
+    <view class="css-star star-1"></view>
+    <view class="css-star star-2"></view>
+    <view class="css-star star-3"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader loader-15">
+    <view class="css-diamond"></view>
+  </view>
+</view>

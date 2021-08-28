@@ -65,11 +65,11 @@ Page({
         name:'分包subPack',
         list:[
           {
-            name:'loading加载动画（1）',
+            name:'loading加载动画17个（1）',
             url:'/pages/subPack/loading/index'
           },
           {
-            name:'loading加载动画（2）',
+            name:'loading加载动画15个（2）',
             url:'/pages/subPack/loading/index2'
           },
           {
