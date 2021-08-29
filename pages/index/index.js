@@ -73,6 +73,10 @@ Page({
             url:'/pages/subPack/loading/index2'
           },
           {
+            name:'loading加载动画（3）',
+            url:'/pages/subPack/loading/index3'
+          },
+          {
             name:'canvas生成海报',
             url:'/pages/subPack/canvasPoster/index'
           },

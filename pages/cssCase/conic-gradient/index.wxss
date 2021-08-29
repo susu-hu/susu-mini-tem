@@ -1,0 +1,33 @@
+/* pages/cssCase/conic-gradient/index.wxss */
+page{
+  background: #fff;
+}
+/* 圆环*/
+.conic-progress {
+  margin: 100rpx auto;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.conic-progress::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.progress-value {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20rpx;
+  color: #a8c992;
+}

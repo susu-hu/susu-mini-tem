@@ -54,7 +54,4 @@
     </view>
   </view>
 </view>
-<view class="conic-progress" style="background-image: conic-gradient(from -180deg,#a8c992 {{progressValue}}%,#ebebeb 0%)">
-	<text class="progress-value">{{progressValue}}%</text>
-</view>
 

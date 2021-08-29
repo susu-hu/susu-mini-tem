@@ -1,0 +1,13 @@
+<!--pages/subPack/loading/index3.wxml-->
+<view class="box">
+  <view class="loader1"></view>
+</view>
+<view class="box">
+  <view class="loader2"></view>
+</view>
+<view class="box">
+  <view class="loader3"></view>
+</view>
+<view class="box">
+  <view class="loader4"></view>
+</view>

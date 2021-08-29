@@ -16,7 +16,7 @@ Page({
       'https://i.postimg.cc/mgsKJGLw/susu1.jpg'
     ],
 
-    progressValue:0,
+    
   },
 
   swiperChange(e) {
@@ -29,16 +29,7 @@ Page({
 
   
   onLoad: function (options) {
-    let intervalId = setInterval(() => {
-      if (this.data.progressValue < 100) {
-        this.data.progressValue++;
-        this.setData({
-          progressValue: this.data.progressValue
-        });
-      } else {
-        clearInterval(intervalId);
-      }
-    }, 25);
+    
 
   },
 
