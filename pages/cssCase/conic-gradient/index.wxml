@@ -1,5 +1,33 @@
-<!--pages/cssCase/conic-gradient/index.wxml-->
-<view class="conic-progress" style="background-image: conic-gradient(from -180deg,#a8c992 {{progressValue}}%,#ebebeb 0%)">
-	<text class="progress-value">{{progressValue}}%</text>
+<!-- <web-view src="https://blog.csdn.net/qq_48085286/article/details/119976079?spm=1001.2014.3001.5501"></web-view> -->
+<view class="title">圆环进度条</view>
+<view class="a" style="background-image: conic-gradient(from -180deg,#a8c992 {{progressValue}}%,#ebebeb 0%)">
+	<text class="a-value">{{progressValue}}%</text>
 </view>
 
+<view class="title">颜色彩盘</view>
+<view class="b"></view>
+
+<view class="title">饼图</view>
+<view class="c"></view>
+
+<view class="title">棋盘效果</view>
+<view class="d"></view>
+
+
+<view class="title">实现扇形扫描效果</view>
+<view class="e"></view>
+
+<view class="title">loading加载效果</view>
+<view class="f"></view>
+
+<view class="title">实现菱形背景图</view>
+<view class="g"></view>
+
+
+<view class="title">重复conic-gradient</view>
+<view class="h"></view>
+
+<view class="title">表盘信用分</view>
+<view class="back">
+	<view class="dots"></view>
+</view>

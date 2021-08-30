@@ -1,17 +1,24 @@
 /* pages/cssCase/conic-gradient/index.wxss */
 page{
   background: #fff;
+  padding-bottom:100px;
+}
+.title{
+  margin: 20rpx ;
+  font-size: 25rpx;
+  text-align: center;
+  font-weight: bold;
 }
 /* 圆环*/
-.conic-progress {
-  margin: 100rpx auto;
+.a {
+  margin: 20rpx auto;
   position: relative;
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
 
-.conic-progress::before {
+.a::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -22,12 +29,196 @@ page{
   border-radius: 50%;
   background-color: #fff;
 }
-
-.progress-value {
+.a-value {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 20rpx;
   color: #a8c992;
+}
+/* b */
+.b{
+  background:conic-gradient(red, orange, yellow, green, teal, blue, purple,red);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20rpx auto;
+}
+/* c */
+.c{
+  margin: 20rpx auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  /* 写法一： */
+  background: conic-gradient(#ffaaff 0, #ffaaff 20%, #aa55ff 20%, #aa55ff  60%, #aaff7f  60%, #aaff7f   100%);
+  /* 写法二： */
+  /* background: conic-gradient(#ffaaff 0 20%, #aa55ff 30% 70%, #aaff7f  70% 100%); */
+}
+/* d */
+.d{
+  margin: 20rpx auto;
+  width: 80px;
+  height: 80px;
+  background: conic-gradient(#eee 25%, white 0deg 50%, #eee 0deg 75%, white 0deg) 0 / 20px 20px;
+}
+/* e */
+.e{
+  margin: 20rpx auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#ffaaff, 30%, white);
+  animation: loading 1s linear infinite reverse;
+}
+@keyframes loading {
+  0% { 
+    transform: rotate(0deg); 
+  }
+    100% {
+    transform: rotate(360deg); 
+  }
+}
+/* f */
+.f{
+  margin: 20rpx auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#ffaaff, 30%, white);
+  /* 写法一 */
+  -webkit-mask-image:radial-gradient(closest-side, transparent 75%, #000 0%);
+  mask-image:radial-gradient(closest-side, transparent 75%, #000 0%);
+  /* 写法二：
+  --mask: radial-gradient(closest-side, transparent 75%, #000 0%);
+  mask-image: var(--mask); 
+  -webkit-mask-image: var(--mask); */
+  animation: loading 1s linear infinite reverse;
+}
+/* g */
+.g{
+  margin: 20rpx auto;
+  width: 80px;
+  height: 80px;
+  background: conic-gradient(#aaaa7f 12.5%, #fff 0 37.5%, #aaaa7f 0 62.5%, #fff 0 87.5%, #aaaa7f 0);
+  background-size: 10px 10px;
+}
+
+/* h */
+
+.h{
+  margin: 20rpx auto;
+  width: 80px;
+  height: 80px;
+  background: repeating-conic-gradient(#aaaa7f 0 15deg,  #fff  0 30deg);
+}
+/* 信用表盘（非原创） */
+.back {
+  position: relative;
+  margin: 50px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+      #f1462c 0%,
+      #fc5d2c 12.4%,
+      #fff 12.5%,
+      #fff 12.5%,
+      #fc5d2c 12.5%,
+      #fba73e 24.9%,
+      #fff 24.9%,
+      #fff 25%,
+      #fba73e 25%,
+      #e0fa4e 37.4%,
+      #fff 37.4%,
+      #fff 37.5%,
+      #e0fa4e 37.5%,
+      #12dd7e 49.9%,
+      #fff 49.9%,
+      #fff 50%,
+      #12dd7e 50%,
+      #0a6e3f 62.4%,
+      #fff 62.4%,
+      #fff 62.5%
+  );
+  transform: rotate(-112.5deg);
+  transform-origin: 50% 50%;
+}
+
+.back::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.back::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(
+          #fff 0%,
+          #fff 25%,
+          transparent 25%,
+          transparent 100%
+      ),
+      conic-gradient(
+          #f1462c 0 12.5%,
+          #fba73e 0 25%,
+          #e0fa4e 0 37.5%,
+          #12dd7e 0 50%,
+          #0a6e3f 0 62.5%,
+          #fff 0 100%
+      );
+}
+
+.dots {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background: radial-gradient(#467dc6 0%, #a4c6f3 100%);
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.dots::before {
+  content: "";
+  position: absolute;
+  width: 5rpx;
+  height: 120px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  border-radius: 100% 100% 5% 5%;
+  background: linear-gradient(
+      180deg,
+      #9bc7f6 0,
+      #467dc6 50%,
+      transparent 50%,
+      transparent 100%
+  );
+  animation: rotate 3s cubic-bezier(.93, 1.32, .89, 1.15) infinite;
+}
+
+@keyframes rotate {
+  50% {
+      transform: translate(-50%, -50%) rotate(150deg);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(150deg);
+  }
 }
