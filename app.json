@@ -30,7 +30,8 @@
     "pages/demo/index2",
     "pages/cal/index2",
     "pages/cal2/index2",
-    "pages/cssCase/conic-gradient/index"
+    "pages/cssCase/conic-gradient/index",
+    "pages/cssCase/chargeCss/index"
   ],
   "subPackages": [
     {

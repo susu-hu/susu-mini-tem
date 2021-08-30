@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/cssCase/conic-gradient/index",
-          "pathName": "pages/cssCase/conic-gradient/index",
+          "name": "pages/cssCase/chargeCss/index",
+          "pathName": "pages/cssCase/chargeCss/index",
           "query": "",
           "scene": null
         },

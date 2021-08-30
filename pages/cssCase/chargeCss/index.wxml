@@ -1,0 +1,24 @@
+<!--pages/cssCase/chargeCss/index.wxml-->
+<div class="g-container">
+    <div class="g-number">98.7%</div>
+    <div class="g-contrast">
+        <div class="g-circle"></div>
+        <ul class="g-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
