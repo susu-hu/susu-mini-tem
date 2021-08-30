@@ -1,0 +1,4 @@
+/* pages/another/dataChose/index.wxss */
+.content { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-color: #eee; }
+.content .btn { width: 200rpx; height: 85rpx; line-height: 85rpx; background-color: #0a4935; color: #ffffff; font-size: 28rpx; text-align: center; border-radius: 50rpx; margin: 50rpx auto; }
+.content .value { text-align: center; }

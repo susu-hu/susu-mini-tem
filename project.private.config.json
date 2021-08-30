@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/cssCase/chargeCss/index",
-          "pathName": "pages/cssCase/chargeCss/index",
+          "name": "pages/another/mroevideos/index",
+          "pathName": "pages/another/mroevideos/index",
           "query": "",
           "scene": null
         },

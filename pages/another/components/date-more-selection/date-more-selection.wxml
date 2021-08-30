@@ -1,0 +1,141 @@
+<view class="content" wx:if="{{isShow}}">
+
+    <block wx:if="{{type=='未选择'}}">
+        <view class="title">请选择开始时间</view>
+    </block>
+    <block wx:elif="{{type=='已选择开始时间'}}">
+        <view class="title">请选择结束时间</view>
+    </block>
+    <block wx:elif="{{type=='已选择结束时间'}}">
+        <view class="title">请提交选择</view>
+    </block>
+    
+    <view class="box">
+        <view class="calendar-box">
+            <view class="calendar-column">
+                <view class="listing">
+                    <view class="item">日</view>
+                    <view class="item">一</view>
+                    <view class="item">二</view>
+                    <view class="item">三</view>
+                    <view class="item">四</view>
+                    <view class="item">五</view>
+                    <view class="item">六</view>
+                </view>
+            </view>
+            <scroll-view scroll-y class="scroll-y" bindscrolltolower="getCalendar">
+                <view class="calendar">
+                    <block wx:for="{{data}}">
+                        <view class="date">{{item.year}}年{{item.month}}月</view>
+                        <view class="select-box" data-test="{{item.weeks.length}}">
+                            <block wx:for="{{item.weeks}}" wx:for-item="week" wx:for-index="i1">
+                                <block wx:for="{{week}}" wx:for-item="day" wx:for-index="i2">
+
+                                    <block wx:if="{{day.noDay}}">
+                                        <!-- 月前月后补位 -->
+                                        <view class="item-box"></view>
+                                    </block>
+                                    <block wx:elif="{{day.noLessMonth}}">
+                                        <!-- 不可选择 -->
+                                        <view class="item-box">
+                                            <view class="item day_no">{{day.date}}</view>
+                                        </view>
+                                    </block>
+                                    <block wx:elif="{{day.isStart && day.isEnd}}">
+                                        <!-- 已选择【开始/结束】同为当天 -->
+                                        <view class="item-box day_late_bg_left_and_right" bindtap='getThisData' data-title="已选择状态开始和结束" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                            <view class="item">{{day.date}}</view>
+                                            <view class="start">开始</view>
+                                            <view class="end">结束</view>
+                                        </view>
+                                    </block>
+                                    <block wx:elif="{{day.isStart}}">
+                                        <!-- 已选择【开始】 -->
+                                        <block wx:if="{{i2==6 || type=='已选择开始时间' || day.isBack}}">
+                                            <view class="item-box day_late_bg_left_and_right" bindtap='getThisData' data-title="已选择状态开始-消除背景" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                                <view class="item">{{day.date}}</view>
+                                                <view class="start">开始</view>
+                                            </view>
+                                        </block>
+                                        <block wx:else>
+                                            <view class="item-box day_late_bg_left" bindtap='getThisData' data-title="已选择状态开始" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                                <view class="item">{{day.date}}</view>
+                                                <view class="start">开始</view>
+                                            </view>
+                                        </block>
+                                    </block>
+                                    <block wx:elif="{{day.isEnd}}">
+                                        <!-- 已选择【结束】 -->
+                                        <block wx:if="{{i2==0 || day.isFront}}">
+                                            <view class="item-box day_late_bg_left_and_right" bindtap='getThisData' data-title="已选择状态结束-消除背景" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                                <view class="item">{{day.date}}</view>
+                                                <view class="end">结束</view>
+                                            </view>
+                                        </block>
+                                        <block wx:else>
+                                            <view class="item-box day_late_bg_right" bindtap='getThisData' data-title="已选择状态结束" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                                <view class="item">{{day.date}}</view>
+                                                <view class="end">结束</view>
+                                            </view>
+                                        </block>
+                                    </block>
+                                    <block wx:elif="{{day.isMatter}}">
+                                        <!-- 已选择【背景】 -->
+                                        <block wx:if="{{i2==0&&day.isBack}}">
+                                            <!-- 是第一个且是本月最后一天且一行就它一个 -->
+                                            <view class="item-box day_late_bg_left_start_and_right_end day_late_bg_left_start day_late_bg_left_start_and_right_end_and_back" bindtap='getThisData' data-title="已选择状态背景-设置半边框" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                                <view class="item">{{day.date}}</view>
+                                            </view>
+                                        </block>
+                                        <block wx:elif="{{i2==6&&day.isFront}}">
+                                            <!-- 是第一个且是本月第一天且一行就它一个 -->
+                                            <view class="item-box day_late_bg_left_start_and_right_end day_late_bg_left_start day_late_bg_left_start_and_right_end_and_front" bindtap='getThisData' data-title="已选择状态背景-设置左右半边框" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                                <view class="item">{{day.date}}</view>
+                                            </view>
+                                        </block>
+                                        <block wx:elif="{{i2==0||day.isFront}}">
+                                            <!-- 是第一个或者是否本月第一天 -->
+                                            <view class="item-box day_late_bg_left_start_and_right_end day_late_bg_left_start" bindtap='getThisData' data-title="已选择状态背景-设置左半边框" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                                <view class="item">{{day.date}}</view>
+                                            </view>
+                                        </block>
+                                        <block wx:elif="{{i2==6||day.isBack}}">
+                                            <!-- 是第一个且是本月最后一天 -->
+                                            <view class="item-box day_late_bg_left_start_and_right_end day_late_bg_right_end" bindtap='getThisData' data-title="已选择状态背景-设置右半边框" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                                <view class="item">{{day.date}}</view>
+                                            </view>
+                                        </block>
+                                        <block wx:else>
+                                            <view class="item-box day_late_bg_left_start_and_right_end" bindtap='getThisData' data-title="已选择状态背景" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                                <view class="item">{{day.date}}</view>
+                                            </view>
+                                        </block>
+                                    </block>
+                                    <block wx:else>
+                                        <!-- 可选择 -->
+                                        <view class="item-box" bindtap='getThisData' data-title="可选择" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                                            <view class="item">{{day.date}}</view>
+                                        </view>
+                                    </block>
+                                    
+                                </block>
+                            </block>
+
+                        </view>
+                    </block>
+                </view>
+            </scroll-view>
+        </view>
+
+        <view class="btn-box">
+            <view class="no" bindtap="tapNo">取消</view>
+            <block wx:if="{{type=='已选择结束时间'}}">
+                <view class="yes" bindtap="tapYes">确认</view>
+            </block>
+            <block wx:else>
+                <view class="yes hide">确认</view>
+            </block>
+        </view>
+    </view>
+    
+</view>

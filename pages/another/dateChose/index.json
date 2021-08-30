@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "date-selection": "../components/date-selection/date-selection",
+    "date-more-selection": "../components/date-more-selection/date-more-selection"
+  },
+  "navigationBarTitleText": "日历日期选择(单/多)"
+}

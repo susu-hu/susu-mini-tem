@@ -29,9 +29,7 @@
     "pages/asyncPromise/index",
     "pages/demo/index2",
     "pages/cal/index2",
-    "pages/cal2/index2",
-    "pages/cssCase/conic-gradient/index",
-    "pages/cssCase/chargeCss/index"
+    "pages/cal2/index2"
   ],
   "subPackages": [
     {
@@ -53,7 +51,8 @@
         "countdown/index2",
         "circleRing/index",
         "circleRing/index2",
-        "scroll-x/index"
+        "scroll-x/index",
+        "dateChose/index"
       ]
     },
     {
@@ -70,6 +69,13 @@
         "chating/index",
         "loading/index2",
         "loading/index3"
+      ]
+    },
+    {
+      "root": "pages/cssCase/",
+      "pages": [
+        "conic-gradient/index",
+        "chargeCss/index"
       ]
     }
   ],

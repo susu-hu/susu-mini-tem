@@ -1,0 +1,11 @@
+<!--pages/another/dataChose/index.wxml-->
+<view class="content">
+    <view class="btn" bindtap="tapDate1">单日期选择</view>
+    <view class="value">{{one.defaultTime}}</view>
+    
+    <view class="btn" bindtap="tapDate2">多日期选择</view>
+    <view class="value">{{more.timeStart}} {{more.timeEnd}}</view>
+</view>
+
+<date-selection isShow="{{one.dateIsShow}}" defaultTime="{{one.defaultTime}}" time="{{one.time}}" birthday="{{one.birthday}}" bind:tapYes="tapYes1" />
+<date-more-selection isShow="{{more.dateMoreIsShow}}" timeStart="{{more.timeStart}}" timeEnd="{{more.timeEnd}}" bind:tapYes="tapYes2" />

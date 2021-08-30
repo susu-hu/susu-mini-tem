@@ -106,6 +106,10 @@ Page({
             name:'css3的圆锥渐变',
             url:'/pages/cssCase/conic-gradient/index'
           },
+          {
+            name:'仿照手机充电的动画',
+            url:'/pages/chargeCss/conic-gradient/index'
+          },
           
         ]
       }

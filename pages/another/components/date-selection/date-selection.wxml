@@ -1,0 +1,70 @@
+<view class="content" wx:if="{{isShow}}">
+    <view class="box">
+
+        <view class="calendar">
+
+            <view class="head-box">
+                <image class="icon" src="{{cdn}}/calendar/date_selection_icon_left.png"></image>
+                <picker class="val" mode="date" value="{{date}}" bindchange="bindDateChange">
+                    {{canlender.year + '年' + canlender.month  + '月' + (canlender.date ? (canlender.date + '日') : '') + (canlender.day ? (' ' + canlender.day) : '')}}
+                </picker>
+                <image class="icon" src="{{cdn}}/calendar/date_selection_icon_right.png"></image>
+                <view class="left" bindtap="tapLeft"></view>
+                <view class="right" bindtap="tapRight"></view>
+            </view>
+
+            <view class="select-box">
+                <view class="listing">
+                    <view class="item">日</view>
+                    <view class="item">一</view>
+                    <view class="item">二</view>
+                    <view class="item">三</view>
+                    <view class="item">四</view>
+                    <view class="item">五</view>
+                    <view class="item">六</view>
+                </view>
+
+                <block wx:for="{{canlender.weeks}}" wx:for-item="week" wx:for-index="i">
+                    <block wx:for="{{week}}" wx:for-item="day">
+                        <view class="item-box" data-i="{{i}}" data-index="{{index}}" bindtap='getThisData'>
+                            <view class="item {{day.click ? 'day_late' : ''}} {{day.noDay ? 'day_no' : ''}}">{{day.date}}</view>
+                        </view>
+                    </block>
+                </block>
+                
+                
+
+            </view>
+
+            <view class="time-box">
+                <view class="name">时间</view>
+                <picker class="time" mode="time" value="{{canlender.time}}" bindchange="bindchange">{{canlender.time}}</picker>
+            </view>
+        
+        </view>
+        
+
+        <view class="btn-box">
+            <view class="no" bindtap="tapNo">取消</view>
+            <view class="yes" bindtap="tapYes">确认</view>
+        </view>
+    </view>
+</view>
+
+<view class="alert-box" wx:if="{{isShowAlert1}}">
+    <view class="alert">
+        <view class="title">
+            <text>提交的时间超过今天了\n请重新选择</text>
+        </view>
+        <view class="btn" bindtap="closeAlert">好的</view>
+    </view>
+</view>
+
+<view class="alert-box" wx:if="{{isShowAlert2}}">
+    <view class="alert">
+        <view class="title">
+            <text>提交的时间早于宝宝出生日\n请重新选择</text>
+        </view>
+        <view class="btn" bindtap="closeAlert">好的</view>
+    </view>
+</view>
