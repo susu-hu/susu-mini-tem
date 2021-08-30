@@ -97,6 +97,17 @@ Page({
             url:'/pages/subPack/canvas2d/index'
           },
         ]
+      },
+      {
+        showmore:false,
+        name:'分包cssCase',
+        list:[
+          {
+            name:'css3的圆锥渐变',
+            url:'/pages/cssCase/conic-gradient/index'
+          },
+          
+        ]
       }
     ]
 
