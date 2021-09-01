@@ -243,3 +243,49 @@ page{
   width: 50rpx;
   height: 50rpx;
 }
+
+.tran {
+  width: 0px;
+  height: 0px;
+  border-width: 16px;
+  border-style: solid; /*定义的是实现边框*/
+  border-color: transparent #5c3b3b #5c3b3b transparent;
+  /*顺时针顺序，上右底左*/
+  /*若是三个值的话，上，左右两侧，底*/
+  /*若是两个值的话，上底，左右两侧*/
+  /*若是一个值的话，四个方向都一样*/
+}
+
+.main{
+  width:100px;
+  height:100px;
+  border:1px solid #0981E6;
+  position: relative;
+}
+
+.main:before {
+    content: '';
+    position: absolute;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 17%;
+    margin-left: -12px;
+    top: -10px;
+    border-bottom: 10px solid #0082df;
+}
+.main:after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    width: 0;
+    height: 0;
+    border-right: 9px solid transparent;
+    border-left: 9px solid transparent;
+    left:17%;
+    margin-left: -11px;
+    top: -9px;
+    border-bottom: 9px solid #fff;
+}

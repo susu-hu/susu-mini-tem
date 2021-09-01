@@ -6,7 +6,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-
     page_list:[
       {
         showmore:true,
@@ -108,7 +107,7 @@ Page({
           },
           {
             name:'仿照手机充电的动画',
-            url:'/pages/chargeCss/conic-gradient/index'
+            url:'/pages/cssCase/chargeCss/index'
           },
           
         ]

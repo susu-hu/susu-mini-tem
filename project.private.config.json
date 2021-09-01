@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/another/mroevideos/index",
-          "pathName": "pages/another/mroevideos/index",
+          "name": "pages/scroll/index",
+          "pathName": "pages/scroll/index",
           "query": "",
           "scene": null
         },

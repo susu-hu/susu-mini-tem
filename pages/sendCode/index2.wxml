@@ -49,5 +49,7 @@
 </view>
 <view class="flex-row j_b" style="margin-top:60rpx;padding:0 40rpx;">
   <view class="c1"></view>
+  <view class="tran"></view>
+  <view class="main"></view>
 </view>
 
