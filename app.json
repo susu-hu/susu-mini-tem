@@ -77,6 +77,13 @@
         "conic-gradient/index",
         "chargeCss/index"
       ]
+    },
+    {
+      "root": "pages/wxCase/",
+      "pages": [
+        "cutImage/index",
+        "uploadCutImg/index"
+      ]
     }
   ],
   "tabBar": {

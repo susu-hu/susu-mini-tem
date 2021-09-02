@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/scroll/index",
-          "pathName": "pages/scroll/index",
+          "name": "pages/wxCase/uploadCutImg/index",
+          "pathName": "pages/wxCase/uploadCutImg/index",
           "query": "",
           "scene": null
         },

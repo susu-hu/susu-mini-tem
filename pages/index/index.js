@@ -111,6 +111,16 @@ Page({
           },
           
         ]
+      },
+      {
+        showmore:false,
+        name:'分包wxCase',
+        list:[
+          {
+            name:'裁剪图片',
+            url:'/pages/wxCase/cutImage/index'
+          },
+        ]
       }
     ]
 

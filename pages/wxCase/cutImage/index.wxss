@@ -1,0 +1,80 @@
+/* pages/wxCase/cutImage/index.wxss */
+.imgCut_header{
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  font-size: 24rpx;
+ }
+ .allCavans{
+  margin: 20rpx auto;
+  position: relative;
+ }
+ .canvasSty{
+  position: absolute;
+ }
+ .cutImg_box{
+  width: 100%;
+  
+  border-bottom: 2rpx #f98700 solid;
+  padding-bottom: 20rpx;
+ }
+ .cutImg_box .cutImg_box_t{
+  width: 90%;
+  margin: 20rpx auto;
+ }
+ .cutImg_box image{
+  width: 100%;
+ }
+ .cutImg_box .cutImg_box_b{
+  margin-top: 20rpx;
+  width: 80%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #f98700;
+  color: #fff;
+  border-radius: 10rpx;
+  text-align: center;
+  margin:0rpx auto;
+ }
+ .selectCutMode{
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .selectCutMode .selectCutMode_in{
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  color: #f98700;
+  font-size: 24rpx;
+  padding: 20rpx;
+ }
+ .selectCutMode .selectCutMode_in_act{
+  background: #f98700;
+  color: #fff;
+  padding: 20rpx;
+ }
+ .areaSelct_box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50rpx;
+  justify-content: center;
+  margin-top: 20rpx;
+ }
+ .areaSelct_box slider{
+  width: 80%;
+ }
+ .cutImg_box .clickCutImg_txt{
+  width: 100%;
+  text-align: center;
+  height: 50rpx;
+  font-size: 24rpx;
+  line-height: 50rpx;
+  color: #999;
+ }
+ 

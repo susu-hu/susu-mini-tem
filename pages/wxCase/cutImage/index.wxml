@@ -1,0 +1,33 @@
+<!--pages/wxCase/cutImage/index.wxml-->
+<view class="index_all_box">
+ <view class="imgCut_header">
+ <view class="imgCut_header_l" bindtap='okCutImg'>开始裁剪</view>
+ <view class="imgCut_header_m" bindtap='clickUpImg'>点击上传图片</view>
+ <view class="imgCut_header_r" bindtap='okBtn'>点击确认</view>
+ </view>
+ <!-- 选择裁剪模式 -->
+ <view class="selectCutMode" wx:if='{{alreay}}'>
+ <view class="selectCutMode_in {{cutType?'selectCutMode_in_act':''}}" bindtap='etcType'>
+  等屏裁剪
+ </view>
+ <view class="selectCutMode_in {{!cutType?'selectCutMode_in_act':''}}" bindtap='areaType'>
+  区域裁剪
+ </view>
+ </view>
+ <view class="areaSelct_box" wx:if='{{!cutType && alreay}}'>
+ <slider bindchange="areaChange" min="50" max="100" show-value value='{{propor}}'/>
+ </view>
+ <view class="cutImg_box" wx:if='{{!prienFlag}}'>
+ <view class="cutImg_box_t">
+  <image src="{{cutImgUrl}}" mode='widthFix'></image>
+ </view>
+ <view class="clickCutImg_txt" bindtap='againBtn'>重新裁剪</view>
+ </view>
+ <view class="allCavans" wx:if='{{prienFlag}}' style='width: {{canvasW}}px;height: {{canvasH}}px' >
+ <canvas class='canvasSty' style='width: {{canvasW}}px;height: {{canvasH}}px' canvas-id='cutImg' disable-scroll='true' bindtouchmove='canvasMove'></canvas>
+ <view class="allCavans_inbg" style='width: {{canvasW}}px;height:{{canvasH}}px; background: url({{img}});background-size: 100% 100%'></view>
+ </view>
+ 
+ 
+</view>
+
