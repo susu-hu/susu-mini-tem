@@ -285,22 +285,22 @@ page{
 .wave::before {
   border-radius: 30%;
   background-color: #3a9168;
-  animation: animate 5s linear infinite;
+  animation: animate0 5s linear infinite;
 }
 
 .wave::after {
   border-radius: 40%;
   background-color: #1fb690;
-  animation: animate 5s linear infinite;
+  animation: animate0 5s linear infinite;
 }
 
-@keyframes animate {
+@keyframes animate0 {
   0% {
     top: 0;
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    top: -80rpx;
+    top: -70rpx;
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
