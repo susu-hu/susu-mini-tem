@@ -1,4 +1,5 @@
 <!--pages/subPack/loading/index3.wxml-->
+<view class="tips">tips:些许案例是学习而来~</view>
 <view class="box">
   <view class="loader1"></view>
 </view>
@@ -9,5 +10,48 @@
   <view class="loader3"></view>
 </view>
 <view class="box">
-  <view class="loader4"></view>
+  <view class="loader4">
+    <view class="l-item" ></view>
+    <view class="l-item"></view>
+    <view class="l-item" ></view>
+    <view class="l-item" ></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader5">
+    <view class="l-item" ></view>
+    <view class="l-item"></view>
+    <view class="l-item" ></view>
+    <view class="l-item" ></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader6">
+    <view class="dot" animation="{{alpha[0]}}"></view>
+    <view class="dot" animation="{{alpha[1]}}"></view>
+    <view class="dot" animation="{{alpha[2]}}"></view>
+    <view class="dot" animation="{{alpha[3]}}"></view>
+    <view class="dot" animation="{{alpha[4]}}"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader7">
+    <view style="--i:1;--color:#82af77"></view>
+    <view style="--i:2;--color:#39b3d8"></view>
+    <view style="--i:3;--color:#416937"></view>
+    <view style="--i:4;--color:#84d488"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader8">
+    <view class="wave"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader9">
+  </view>
+</view>
+<view class="box">
+  <view class="loader10">
+  </view>
 </view>

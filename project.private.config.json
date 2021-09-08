@@ -37,8 +37,8 @@
           "scene": null
         },
         {
-          "name": "pages/subPack/canvasPoster/index",
-          "pathName": "pages/subPack/canvasPoster/index",
+          "name": "pages/another/swiper-threeD/index2",
+          "pathName": "pages/another/swiper-threeD/index2",
           "query": "",
           "scene": null
         },
@@ -69,6 +69,12 @@
         {
           "name": "pages/subPack/calen/index2",
           "pathName": "pages/subPack/calen/index2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/subPack/loading/index3",
+          "pathName": "pages/subPack/loading/index3",
           "query": "",
           "scene": null
         }

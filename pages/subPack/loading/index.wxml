@@ -86,7 +86,7 @@
     <view></view>
   </view>
 </view>
-<view class="title">样式8：</view>
+<view class="title">样式9：</view>
 <view class="box">
   <view class="loader-rainbow">
     <view class="loader-inner">
@@ -109,7 +109,7 @@
   </view>
 </view>
 
-<view class="title">样式9：</view>
+<view class="title">样式10：</view>
 <view class="box">
   <view class="loader-line">
     <view class="bar"></view>
@@ -120,13 +120,13 @@
     <view class="ball"></view>
   </view>
 </view>
-<view class="title">样式10：(不是css写的，是一张gif)</view>
+<view class="title">样式11：(不是css写的，是一张gif)</view>
 <view class="box">
   <view class="wrapper">
     <view class="rubik-loader"></view>
   </view>
 </view>
-<view class="title">样式11：</view>
+<view class="title">样式12：</view>
 <view class="box">
   <view>
     <view class="stick"></view>
@@ -138,7 +138,7 @@
     <view class="loading_text">Loading...</view>
   </view>
 </view>
-<view class="title">样式12：</view>
+<view class="title">样式13：</view>
 <view class="box1">
   <view class="tan-loader">
     <view class="binary"></view>
@@ -147,17 +147,17 @@
   </view>
 </view>
 
-<view class="title">样式13：</view>
+<view class="title">样式14：</view>
 <view class="box">
   <view class="css-heart"></view>
 </view>
-<view class="title">样式14：</view>
+<view class="title">样式15：</view>
 <view class="box">
   <view class="circle-spin">
     <text>加载中</text>
   </view>
 </view>
-<view class="title">样式15：</view>
+<view class="title">样式16：</view>
 <view class="box">
   <view class="circle-add">
     <text class="a1"></text>
@@ -170,7 +170,7 @@
     <text class="a1"></text>
   </view>
 </view>
-<view class="title">样式16：</view>
+<view class="title">样式17：</view>
 <view class="load1">
   <view class="rect1"></view>
   <view class="rect2"></view>
@@ -179,7 +179,7 @@
   <view class="rect5"></view>
 </view>
 
-<view class="title">样式17：</view>
+<view class="title">样式18：</view>
 <view class="load1-circle">
   <view class="rect1"></view>
   <view class="rect2"></view>
