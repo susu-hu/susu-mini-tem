@@ -67,14 +67,14 @@
           "scene": null
         },
         {
-          "name": "pages/subPack/calen/index2",
-          "pathName": "pages/subPack/calen/index2",
+          "name": "pages/subPack/loading/index3",
+          "pathName": "pages/subPack/loading/index3",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/subPack/loading/index3",
-          "pathName": "pages/subPack/loading/index3",
+          "name": "pages/subPack/loading/loadPage",
+          "pathName": "pages/subPack/loading/loadPage",
           "query": "",
           "scene": null
         }

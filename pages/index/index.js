@@ -72,7 +72,7 @@ Page({
             url:'/pages/subPack/loading/index2'
           },
           {
-            name:'loading加载动画（3）',
+            name:'loading加载动画11个（3）',
             url:'/pages/subPack/loading/index3'
           },
           {

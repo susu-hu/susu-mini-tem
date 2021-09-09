@@ -49,9 +49,27 @@
 </view>
 <view class="box">
   <view class="loader9">
+    <view style="--i:1;--color:#82a877"></view>
+    <view style="--i:2;--color:#39b3d8"></view>
+    <view style="--i:3;--color:#416937"></view>
+    <view style="--i:4;--color:#84d488"></view>
   </view>
 </view>
 <view class="box">
   <view class="loader10">
+    <view class="a"></view>
+    <view class="a"> </view>
+    <view class="a"></view>
+    <view class="a"> </view>
+  </view>
+</view>
+<view class="box">
+  <view class="loader11">
+    <view class="box"></view>
+    <view class="box"></view>
+    <view class="box"></view>
+    <view class="box"></view>
+    <view class="box"></view>
+    <view class="box"></view>
   </view>
 </view>

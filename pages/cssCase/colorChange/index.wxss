@@ -53,3 +53,8 @@ page{
   height: 100%;
   border-radius: 50%;
 }
+.tips{
+  color: #eff0e9;
+  font-size: 27rpx;
+  text-align: center;
+}
