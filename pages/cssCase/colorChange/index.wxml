@@ -1,0 +1,14 @@
+<!--pages/cssCase/colorChange/index.wxml-->
+<view class="card" wx:for="{{color_card}}" wx:key="*this" bindtap="choice_color" data-color="{{item}}" >
+  <view class="card_top" >
+   <view class="cardtop_item"  wx:for="{{item.colors}}"  wx:key="*this"  style="background-color:{{item}}"></view>
+  </view>
+  <view class="card_bottom">
+   <view class="cardbottom_name">{{item.name}}</view>
+    <view class="cardbottom_img">
+      <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg"></image>
+    </view>
+  </view>
+</view>
+
+

@@ -76,7 +76,9 @@
       "root": "pages/cssCase/",
       "pages": [
         "conic-gradient/index",
-        "chargeCss/index"
+        "chargeCss/index",
+        "colorChange/index",
+        "colorChange/colorItem"
       ]
     },
     {

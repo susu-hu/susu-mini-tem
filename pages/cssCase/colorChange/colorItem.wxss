@@ -1,0 +1,11 @@
+/* pages/cssCase/colorChange/colorItem.wxss */
+
+.box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.boxitem{
+  width: 25%;
+}

@@ -2,6 +2,12 @@
 App({
   onLaunch() {
     // 展示本地存储能力
+    wx.getSystemInfo({
+      success: res => {
+        let Height=res.windowHeight;
+        this.globalData.Height=Height;
+      },
+    })
 
     // 登录
     wx.login({

@@ -1,0 +1,55 @@
+/* pages/cssCase/colorChange/index.wxss */
+
+page{
+  background: linear-gradient(179deg, #7ACD94 0%, #8BDEFB 100%, #8BDEFB 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card{
+  width: 80%;
+  height: 450rpx;
+  margin: 50rpx auto;
+  background-color:white;
+  border-radius: 10rpx;
+}
+.card_top{
+  box-sizing: border-box;
+  width: 100%;
+  height: 85%;
+  padding: 20rpx 20rpx 5rpx;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;  
+}
+.cardtop_item{
+  width: 20%;
+  height: 25%;
+}
+.card_bottom{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+}
+.cardbottom_name{
+  width: 85%;
+  height: 100%;
+  padding-left: 4%;
+  padding-top: 10rpx;
+  font-weight: 500;
+  font-size: 30rpx;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cardbottom_img{
+  width: 10%;
+  height: 95%;
+
+}
+.cardbottom_img image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

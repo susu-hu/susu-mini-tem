@@ -1,0 +1,5 @@
+<!--pages/cssCase/colorChange/colorItem.wxml-->
+
+<view class="box" style="height:{{Height}}px">
+  <view class="boxitem" wx:for="{{colors}}" wx:key="index" style="background-color:{{item}}"  data-color="{{item}}" bindtap="copycolor"></view>
+</view>
