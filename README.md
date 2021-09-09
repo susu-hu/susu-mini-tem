@@ -48,6 +48,7 @@ movable-area组件实现滑动删除
 30. subpack/loading/index 新增17个loading动画，可以根据这些样式进行其他的变化，animation实现。
 31. subpack/loading/indedx2 新增15个炫酷的loading动画。
 32. 分包csscase/conic-gradient/index 新增css的圆锥渐变，实现圆弧进度条，颜色盘，饼图等样式。
+33. csscase/colorChange,颜色盘，暂更新2种色盘，后续更新渐变色。
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -86,6 +87,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0826/160929_902bf951_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0828/205748_8abc177e_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0830/175550_c342295a_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0909/225355_0bc7e7f1_8576727.png "屏幕截图.png")
 
 #### 参与贡献
 
