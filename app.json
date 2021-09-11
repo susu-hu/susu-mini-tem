@@ -70,7 +70,8 @@
         "chating/index",
         "loading/index2",
         "loading/index3",
-        "loading/loadPage"
+        "loading/loadPage",
+        "otherAnimation/index"
       ]
     },
     {
@@ -79,7 +80,8 @@
         "conic-gradient/index",
         "chargeCss/index",
         "colorChange/index",
-        "colorChange/colorItem"
+        "colorChange/colorItem",
+        "rotateBall/index"
       ]
     },
     {

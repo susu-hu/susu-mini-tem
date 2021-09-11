@@ -73,6 +73,7 @@
   color: transparent;
   background-clip: text;
   text-shadow: 3rpx 3rpx 3rpx #fab1a0;
+  z-index:99;
 }
 
 @keyframes show {
@@ -183,7 +184,7 @@
   align-items: stretch;
   animation: bd-rise 2s cubic-bezier(0.23, 1, 0.32, 1) .75s forwards;
   opacity: 0;
-  margin-top: 6%;
+  margin-top: 18%;
 }
 
 @keyframes bd-rise {

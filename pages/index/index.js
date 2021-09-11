@@ -72,8 +72,17 @@ Page({
             url:'/pages/subPack/loading/index2'
           },
           {
-            name:'loading加载动画11个（3）',
+            name:'loading加载动画18个（3）',
             url:'/pages/subPack/loading/index3'
+          },
+          {
+            name:'其他的一些动画',
+            url:'/pages/subPack/otherAnimation/index'
+          },
+         
+          {
+            name:'小程序启动页面动画',
+            url:'/pages/subPack/loading/loadPage'
           },
           {
             name:'canvas生成海报',
@@ -109,6 +118,14 @@ Page({
             name:'仿照手机充电的动画',
             url:'/pages/cssCase/chargeCss/index'
           },
+          {
+            name:'颜色盘',
+            url:'/pages/cssCase/colorChange/index'
+          },
+          {
+            name:'炫酷能量球',
+            url:'/pages/cssCase/rotateBall/index'
+          },
           
         ]
       },
@@ -123,7 +140,6 @@ Page({
         ]
       }
     ]
-
   },
   
   toDetail(e){
@@ -168,6 +184,23 @@ Page({
     this.setData({
       page_list:page_list
     })
+  },
+
+  tap: function (res) {
+    var x = res.touches[0].pageX;
+    var y = res.touches[0].pageY+90 ;
+    this.setData({
+      left:x,
+      top:y,
+      anim:"ripple 0.4s linear"
+    });
+    setTimeout(()=>{
+      this.setData({
+        left:'',
+        top:'',
+        anim:""
+      })
+    }, 400)
   },
   
 

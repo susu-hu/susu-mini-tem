@@ -31,8 +31,8 @@
           "scene": null
         },
         {
-          "name": "pages/subPack/canvasPoster/index",
-          "pathName": "pages/subPack/canvasPoster/index",
+          "name": "pages/subPack/otherAnimation/index",
+          "pathName": "pages/subPack/otherAnimation/index",
           "query": "",
           "scene": null
         },
@@ -61,14 +61,14 @@
           "scene": null
         },
         {
-          "name": "pages/wxCase/customTab/index",
-          "pathName": "pages/wxCase/customTab/index",
+          "name": "pages/cssCase/rotateBall/index",
+          "pathName": "pages/cssCase/rotateBall/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/subPack/loading/index3",
-          "pathName": "pages/subPack/loading/index3",
+          "name": "pages/subPack/loading/loadPage",
+          "pathName": "pages/subPack/loading/loadPage",
           "query": "",
           "scene": null
         },

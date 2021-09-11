@@ -1,22 +1,17 @@
 <!--pages/subPack/loading/loadPage.wxml-->
 <view class="container">
- <view class="remind-box" wx:if="{{remind}}">
- </view>
- <block wx:else>
   <view class="title" >苏苏来了</view>
   <view class="content">
    <view class="hd" style="transform:rotateZ({{angle}}deg);">
     <open-data class="logo" type="userAvatarUrl"></open-data>
-    <!-- <image class="wave" src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" mode="aspectFill"></image>
-    <image class="wave wave-bg" src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" mode="aspectFill"></image> -->
+    <image class="wave" src="../img/wave.png" mode="aspectFill"></image>
+    <image class="wave wave-bg" src="../img/wave.png" mode="aspectFill"></image>
    </view>
    <view class="bd">
     <view class="smalltitle">HUANYINGNI~</view>
     <view class="confirm-btn">
-     <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">立即体验</button>
+     <button open-type="getUserInfo" lang="zh_CN">关注一下~</button>
     </view>
-    <view class="copyright">© {{year}} <text bindtap='goTeam'>海轰Pro</text> </view>
    </view>
   </view>
- </block>
 </view>

@@ -1,0 +1,19 @@
+<!--pages/cssCase/rotateBall/index.wxml-->
+<view class="container circle">
+  <view class="box1 circle center"></view>
+  <view class="box2 circle center"></view>
+  <view class="box3 circle center"></view>
+  <view class="box4 circle center"></view>
+  <view class="box5 circle center"></view>
+  <view class="box6 circle">
+  <view class="coil" style="--i: 0"></view>
+  <view class="coil" style="--i: 1"></view>
+  <view class="coil" style="--i: 2"></view>
+  <view class="coil" style="--i: 3"></view>
+  <view class="coil" style="--i: 4"></view>
+  <view class="coil" style="--i: 5"></view>
+  <view class="coil" style="--i: 6"></view>
+  <view class="coil" style="--i: 7"></view>
+  </view>
+</view>
+
