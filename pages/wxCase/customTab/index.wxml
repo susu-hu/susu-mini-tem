@@ -1,0 +1,11 @@
+<!--pages/wxCase/customTab/index.wxml-->
+
+
+<!-- <import src="./nav" />
+<view class="flex fix_nav_wp">
+<block wx:for="{{navData}}" wx:key="">
+    <template is="nav" data="{{...item}}"/>
+</block>
+</view>  -->
+
+<view class="loader five"></view>

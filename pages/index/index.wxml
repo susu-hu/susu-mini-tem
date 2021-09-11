@@ -1,7 +1,7 @@
 <!--pages/index/index.wxml-->
 <view class="head">
   <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class='img'></image>
-  <view class="head_name" catchtap="showTip">创作不易</view>
+  <view class="star head_name" catchtap="showTip">创作不易</view>
   <view class="head_subname">喜欢的点个关注+star一下~</view>
 </view>
 

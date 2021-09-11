@@ -73,3 +73,45 @@
     <view class="box"></view>
   </view>
 </view>
+
+<view class="box box1">
+  <view class="loader12 ">
+    <view class="s">
+      <view class="s1"></view>
+      <view class="s1"></view>
+      <view class="s1"></view>
+      <view class="s1"></view>
+    </view>
+  </view>
+</view>
+
+<view class="box">
+  <view class="loader13"></view>
+</view>
+
+<view class="box">
+  <view class="loader14"></view>
+</view>
+
+<view class="box box1">
+  <view class="loader15"></view>
+</view>
+
+<view class="box">
+  <view class="loader16"></view>
+</view>
+
+<view class="box box1">
+  <view class="loader17"></view>
+</view>
+
+<view class="box box1">
+  <view class="loader18">
+    <view></view>
+  </view>
+</view>
+
+<view class="box box1">
+  <view class="loader19">
+  </view>
+</view>

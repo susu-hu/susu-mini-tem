@@ -86,7 +86,9 @@
       "root": "pages/wxCase/",
       "pages": [
         "cutImage/index",
-        "uploadCutImg/index"
+        "uploadCutImg/index",
+        "customTab/index",
+        "customTab/nav"
       ]
     }
   ],

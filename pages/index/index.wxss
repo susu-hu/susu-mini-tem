@@ -17,8 +17,6 @@ page{
   position: absolute;
   bottom: 300rpx;
   left: 50rpx;
-  font-size:50rpx;
-  color: #fff;
   font-weight: bold;
 }
 .head_subname{
@@ -56,4 +54,30 @@ page{
 .show_img{
   width: 300rpx;
   text-align: right;
+}
+
+
+.star {
+  width: 300rpx;
+  color: #fff;
+  background-color: #f3d5da;
+  animation: scale 5s ease-in-out infinite;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  box-shadow: 0 8rpx 16rpx 0 rgba(0,0,0,0.2), 0 6rpx 20rpx 0 rgba(0,0,0,0.19);
+}
+
+
+@keyframes scale {
+  0%,50%{
+    transform: scale(1);
+    /* opacity: 0.5; */
+  }
+
+  25%,75% {
+    transform: scale(1.1);
+    /* opacity: 1; */
+  }
 }
