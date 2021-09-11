@@ -85,3 +85,11 @@ page {
    transform: rotate(360deg);
   }
  }
+
+
+ .tips{
+    font-size: 27rpx;
+    color: #fff;
+    padding-top: 50rpx;
+    text-align: center;
+ }

@@ -81,7 +81,8 @@
         "chargeCss/index",
         "colorChange/index",
         "colorChange/colorItem",
-        "rotateBall/index"
+        "rotateBall/index",
+        "line/index"
       ]
     },
     {

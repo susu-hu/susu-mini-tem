@@ -25,4 +25,4 @@
   </view>
 </view>
 <view class="ripple" style="left:{{left}}px;top:{{top}}px;animation:{{anim}};-webkit-animation:{{anim}}"></view>
-<!-- style="{{tapStyle}}" -->
+

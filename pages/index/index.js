@@ -126,6 +126,10 @@ Page({
             name:'炫酷能量球',
             url:'/pages/cssCase/rotateBall/index'
           },
+          {
+            name:'螺旋线条',
+            url:'/pages/cssCase/line/index'
+          },
           
         ]
       },

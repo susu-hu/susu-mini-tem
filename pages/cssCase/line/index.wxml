@@ -1,0 +1,20 @@
+<!--pages/cssCase/line/index.wxml-->
+<view class="box">
+    <view class="loader">
+    <view class="line"></view>
+    <view class="line"></view>
+    <view class="line"></view>
+    <view class="line"></view>
+    <view class="line"></view>
+    <view class="line"></view>
+     <view class="line"></view>
+    <view class="line"></view>
+    <view class="line"></view>
+     <view class="line"></view>
+    <view class="line"></view>
+    <view class="line"></view>
+     <view class="line"></view>
+    <view class="line"></view>
+    <view class="line"></view>
+    </view>
+</view>
