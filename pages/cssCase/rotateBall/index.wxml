@@ -1,5 +1,5 @@
 <!--pages/cssCase/rotateBall/index.wxml-->
-<view class="tips">学习于 海轰pro</view>
+<view class="tips">学习案例</view>
 <view class="container circle">
   <view class="box1 circle center"></view>
   <view class="box2 circle center"></view>

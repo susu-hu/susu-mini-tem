@@ -1,0 +1,64 @@
+/* pages/wxCase/laohuji/index.wxss */
+.cont {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+}
+ 
+ 
+.luck-draw {
+  position: relative;
+  top: 20rpx;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  background-color: #fff;
+}
+ 
+.draw-img {
+  position: relative;
+  top: 30rpx;
+  width: 700rpx;
+  height: 479rpx;
+}
+ 
+.show-draw {
+  width: 257rpx;
+  height: 71rpx;
+  position: relative;
+  z-index: 2;
+  bottom:103rpx;
+}
+ 
+.content {
+display:flex;
+justify-content:space-between;
+position:absolute;
+width:68%;
+left:15%;
+height:205rpx;
+top:99rpx;
+border-radius:10rpx;
+ 
+}
+ 
+ 
+.content .line {
+  width: 167rpx;
+  height: 201rpx;
+  border-radius: 14rpx;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.content .line image {
+  width: 167rpx;
+  height: 201rpx;
+  position: absolute;
+  top: -170rpx;
+  left: 0px;
+}
+ 
+.content .line .default-img {
+  top: 0rpx;
+}

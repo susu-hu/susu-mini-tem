@@ -4,7 +4,11 @@
   justify-content: center; 
   align-items: center; 
   min-height: 100vh; 
-  background-color: #7ACD94; 
+  background:linear-gradient(179deg,#7ACD94  0%,#8BDEFB  100%,#8BDEFB  100%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 .loader{
   position: relative; 

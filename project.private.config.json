@@ -31,8 +31,8 @@
           "scene": null
         },
         {
-          "name": "pages/subPack/otherAnimation/index",
-          "pathName": "pages/subPack/otherAnimation/index",
+          "name": "pages/wxCase/laohuji/index",
+          "pathName": "pages/wxCase/laohuji/index",
           "query": "",
           "scene": null
         },
@@ -61,14 +61,14 @@
           "scene": null
         },
         {
-          "name": "pages/cssCase/line/index",
-          "pathName": "pages/cssCase/line/index",
+          "name": "pages/cssCase/chargeCss/index",
+          "pathName": "pages/cssCase/chargeCss/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/subPack/loading/loadPage",
-          "pathName": "pages/subPack/loading/loadPage",
+          "name": "pages/subPack/otherAnimation/index",
+          "pathName": "pages/subPack/otherAnimation/index",
           "query": "",
           "scene": null
         },

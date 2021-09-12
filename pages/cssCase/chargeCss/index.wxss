@@ -1,42 +1,45 @@
 /* pages/cssCase/chargeCss/index.wxss */
 page{
-  background: #000;
-  background: radial-gradient(#222, #000);
-  padding-bottom: 100rpx;
+  /* background: radial-gradient(#222, #000); */
+  background-color: #000;
 }
 .g-container {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  margin: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 400px;
+    margin: auto;
 }
 .g-number {
-    position: absolute;
-    width: 300px;
-    top: 27%;
-    text-align: center;
-    font-size: 32px;
-    z-index: 10;
-    color: #fff;
+  position: absolute;
+  width: 300px;
+  top: 27%;
+  text-align: center;
+  font-size: 32px;
+  z-index: 10;
+  color: #fff;
 }
 
 
 
 .g-contrast {
-    filter: contrast(10) hue-rotate(0);
-    width: 300px;
-    height: 400px;
-    background-color: #000;
-    overflow: hidden;
-    animation: hueRotate 10s infinite linear;
+  filter: contrast(10) hue-rotate(0);
+  width: 300px;
+  height: 400px;
+  background-color: #000;
+  overflow: hidden;
+  animation: hueRotate 10s infinite linear;
 }
 
 .g-circle {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    box-sizing: border-box;
-    filter: blur(8px);
+  position: relative;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  filter: blur(8px);
 }
 .g-circle::after {
   content: "";
@@ -47,10 +50,9 @@ page{
   width: 200px;
   height: 200px;
   background-color: #00ff6f;
-  border-radius: 42% 38% 62% 49% / 45%;
+  border-radius: 42% 38% 62% 49%/45%;
   animation: rotate 10s infinite linear;
 }
-
 .g-circle::before {
   content: "";
   position: absolute;
@@ -65,56 +67,186 @@ page{
 }
 
 .g-bubbles {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 100px;
-    height: 40px;
-    transform: translate(-50%, 0);
-    border-radius: 100px 100px 0 0;
-    background-color: #00ff6f;
-    filter: blur(5px);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100px;
+  height: 40px;
+  transform: translate(-50%, 0);
+  border-radius: 100px 100px 0 0;
+  background-color: #00ff6f;
+  filter: blur(5px);
 }
 
 li {
-    position: absolute;
-    border-radius: 50%;
-    background: #00ff6f;
+  position: absolute;
+  border-radius: 50%;
+  background: #00ff6f;
 }
 
-/* @for $i from 0 through 15 { 
-    li:nth-child(#{$i}) {
-        $width: 15 + random(15) + px;
-        left: 15 + random(70) + px;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: $width;
-        height: $width;
-        animation: moveToTop #{random(6) + 3}s ease-in-out -#{random(5000)/1000}s infinite;
-    }
-} */
+li:nth-child(0) {
+  left: 52px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  animation: moveToTop 4s ease-in-out -1.18s infinite;
+}
+
+li:nth-child(1) {
+  left: 74px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  animation: moveToTop 9s ease-in-out -3.717s infinite;
+}
+
+li:nth-child(2) {
+  left: 36px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  animation: moveToTop 8s ease-in-out -3.376s infinite;
+}
+
+li:nth-child(3) {
+  left: 74px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  animation: moveToTop 6s ease-in-out -3.047s infinite;
+}
+
+li:nth-child(4) {
+  left: 58px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  animation: moveToTop 4s ease-in-out -3.269s infinite;
+}
+
+li:nth-child(5) {
+  left: 24px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  animation: moveToTop 4s ease-in-out -3.723s infinite;
+}
+
+li:nth-child(6) {
+  left: 77px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  animation: moveToTop 7s ease-in-out -2.536s infinite;
+}
+
+li:nth-child(7) {
+  left: 58px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  animation: moveToTop 6s ease-in-out -0.013s infinite;
+}
+
+li:nth-child(8) {
+  left: 17px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  animation: moveToTop 5s ease-in-out -3.302s infinite;
+}
+
+li:nth-child(9) {
+  left: 33px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 19px;
+  height: 19px;
+  animation: moveToTop 5s ease-in-out -4.541s infinite;
+}
+
+li:nth-child(10) {
+  left: 47px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  animation: moveToTop 6s ease-in-out -2.825s infinite;
+}
+
+li:nth-child(11) {
+  left: 22px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  animation: moveToTop 5s ease-in-out -3.107s infinite;
+}
+
+li:nth-child(12) {
+  left: 37px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  animation: moveToTop 6s ease-in-out -1.847s infinite;
+}
+
+li:nth-child(13) {
+  left: 38px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  animation: moveToTop 7s ease-in-out -4.027s infinite;
+}
+
+li:nth-child(14) {
+  left: 47px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  animation: moveToTop 4s ease-in-out -0.376s infinite;
+}
+
+li:nth-child(15) {
+  left: 42px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 29px;
+  height: 29px;
+  animation: moveToTop 6s ease-in-out -4.385s infinite;
+}
 
 @keyframes rotate {
-    50% {
-        border-radius: 45% / 42% 38% 58% 49%;
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(720deg);
-    }
+  50% {
+    border-radius: 45%/42% 38% 58% 49%;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(720deg);
+  }
 }
-
 @keyframes moveToTop {
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: .1;
-        transform: translate(-50%, -180px);
-    }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    transform: translate(-50%, -180px);
+  }
 }
-
 @keyframes hueRotate {
-    100% {
-        filter: contrast(15) hue-rotate(360deg);
-    }
+  100% {
+    filter: contrast(15) hue-rotate(360deg);
+  }
 }

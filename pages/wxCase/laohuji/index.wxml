@@ -1,0 +1,27 @@
+<!--pages/wxCase/laohuji/index.wxml-->
+<view class="cont">
+<!-- 底部抽奖 -->
+<view class='luck-draw' wx:if="{{luckDrawID==1}}">
+<image class='draw-img' src='{{bg}}'></image>
+<image class='show-draw' wx:if="{{drawId==1}}" src='https://i.postimg.cc/qRRLS16Q/susu0.jpg' bindtap='getAnmiation'></image>
+<image class='show-draw' wx:else src='https://i.postimg.cc/pXDp6RXq/susu3.jpg' ></image>
+ <view class='content'>
+      <view class='line'>
+        <image src='{{tab1.url}}' animation="{{animationData1}}" bindtransitionend="getOpenAnimation"></image>
+        <image class='default-img' hidden='{{showDefault}}' src='{{tab1.url}}'></image>
+      </view>
+      <view class='line'>
+        <image src='{{tab2.url}}' animation="{{animationData2}}" bindtransitionend="getOpenAnimation"></image>
+        <image class='default-img' hidden='{{showDefault}}' src='{{tab2.url}}'></image>
+      </view>
+      <view class='line'>
+        <image src='{{tab3.url}}' animation="{{animationData3}}" bindtransitionend="getOpenAnimation"></image>
+        <image class='default-img' hidden='{{showDefault}}' src='{{tab3.url}}'></image>
+      </view>
+    </view>
+</view>
+ 
+ 
+</view>
+ 
+ 

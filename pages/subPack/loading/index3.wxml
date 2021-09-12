@@ -115,3 +115,18 @@
   <view class="loader19">
   </view>
 </view>
+
+
+<view class="box box2">
+  <view class="loader20"></view>
+  <view class="earth-orbit" >
+    <view class="moon"></view>
+  </view>
+</view>
+
+<view class="box box2">
+  <view class="loader21"></view>
+  <view class="earth-orbit br1" >
+    <view class="moon br2"></view>
+  </view>
+</view>

@@ -1,1 +1,86 @@
 /* pages/subPack/otherAnimation/index.wxss */
+page{
+  box-sizing: border-box; 
+  font-family: sans-serif;
+}
+.box{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  min-height: 100vh; 
+  background-color: #ebf5fc; 
+  width: 100%;
+}
+.container{
+  position: relative; 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  width: 710rpx; 
+}
+.container .card{
+  width: 100%;
+  margin: 20px;
+  padding: 40px 30px;
+  border-radius: 40px; 
+  background-color: #ebf5fc;
+  box-shadow:-6px -6px 20px rgba(255, 255, 255,1), /*阴影*/
+              6px 6px 20px rgba(0, 0, 0, .1);
+}
+.container .card:hover{ /*悬停时*/
+  box-shadow: inset -6px -6px 20px rgba(255, 255, 255,.5), /*改为内部阴影*/
+              inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+.container .card .imgBx{
+  position: relative;
+  text-align: center; 
+}
+
+.container .card .content{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .content .icon{
+  padding: 10px;
+  margin-top:15px;
+  height: 100%;
+  width: 120%;
+  border-radius: 40px;
+  color: #32a3b1;
+  font-size: 16px;
+  overflow: hidden;
+  text-decoration: none; /*字体效果*/
+  box-shadow:  -4px -4px 15px rgba(255, 255, 255,1),
+      4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.container .card .content .icon image{
+  width: 100%;
+  border-radius: 10px;
+}
+.container .card .content .bt{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top:45px;
+  border-radius: 40px;
+  color: #32a3b1;
+  font-size: 16px;
+  text-decoration: none; /*字体效果*/
+  box-shadow:  -4px -4px 15px rgba(255, 255, 255,1),
+      4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.container .card .content .bt:hover{
+  box-shadow: inset -4px -4px 10px rgba(255, 255, 255,.5),
+          inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container .card .bt:hover .title{
+  display: block; 
+  transform: scale(0.98);
+}
+.container .card:hover .imgBx,
+.container .card:hover .content{ 
+  transform: scale(0.98); 
+}
+
