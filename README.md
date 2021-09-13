@@ -51,6 +51,7 @@ movable-area组件实现滑动删除
 33. csscase/colorChange,颜色盘，暂更新2种色盘，后续更新渐变色。
 34. subpack/loading/indedx3,新增18个炫酷的loading动画。
 35. 学习案例：炫酷能量球+螺旋线条
+36. css写警示按钮+蓝云+小花
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -92,6 +93,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0909/225355_0bc7e7f1_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0911/210337_3310def0_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0912/003809_22dcf91f_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0913/234228_a80b5232_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
