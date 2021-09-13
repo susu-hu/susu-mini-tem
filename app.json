@@ -82,7 +82,8 @@
         "colorChange/index",
         "colorChange/colorItem",
         "rotateBall/index",
-        "line/index"
+        "line/index",
+        "warnIcon/index"
       ]
     },
     {

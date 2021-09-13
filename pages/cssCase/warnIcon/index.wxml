@@ -1,0 +1,41 @@
+<!--pages/cssCase/warnIcon/index.wxml-->
+<view class="flex-column">
+  <!-- 感叹号 -->
+  <view class="circle flex-column">
+    <view class="gantanhao"></view>
+    <view class="points"></view>
+  </view>
+  <!-- 叉号 -->
+  <view class="circle2 flex-column">
+    <view class="line"></view>
+  </view>
+
+  <view class="btn">立即领取</view>
+
+  <view class="btn1 flex-column pop_btn">
+    <view class="btn_inner"  catchtap="closeModal">我知道了</view>
+  </view>
+
+  <view class="ballon"></view>
+
+
+  <section class="buttons">
+    <button class="draw">Draw</button>
+  
+    <button class="draw meet">Draw Meet</button>
+  
+    <button class="center">Center</button>
+  
+    <button class="spin">Spin</button>
+  
+    <button class="spin circle">Spin Circle</button>
+  
+    <button class="spin thick">Spin Thick</button>
+  </section>
+
+  <view class="code_ball"><text>1</text></view>
+
+      <!-- 箭头 -->
+      <view class="left_arrow"></view>
+
+</view>

@@ -130,6 +130,10 @@ Page({
             name:'螺旋线条',
             url:'/pages/cssCase/line/index'
           },
+          {
+            name:'警示图标',
+            url:'/pages/cssCase/warnIcon/index'
+          },
           
         ]
       },

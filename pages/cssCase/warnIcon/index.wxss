@@ -1,0 +1,373 @@
+/* pages/cssCase/warnIcon/index.wxss */
+
+page{
+  background: #F2F5FA;
+  padding:30rpx;
+}
+
+.circle{
+  width: 128rpx;
+  height: 128rpx;
+  background: #24CBFF;
+  border-radius: 50%;
+  margin-bottom: 66rpx;
+  justify-content: center;
+}
+
+.gantanhao{
+  width: 10rpx;
+  height: 50rpx;
+  border-radius: 15rpx;
+  background: #fff;
+  position: relative;
+}
+
+.points{
+  margin-top: 10rpx;
+  border-radius: 50%;
+  background: #fff;
+  width: 10rpx;
+  height: 10rpx;
+}
+
+.circle2{
+  width: 128rpx;
+  height: 128rpx;
+  background: #FFBB00;
+  border-radius: 50%;
+  margin-bottom: 66rpx;
+  justify-content: center;
+}
+
+.line{
+  width: 10rpx;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.line::after{
+  position: absolute;
+  content: '';
+  width: 10rpx;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  transform: rotate(-90deg);
+}
+
+.btn{
+  margin-top: 29rpx;
+  width: 500rpx;
+  height: 115rpx;
+  background: linear-gradient(180deg, #FFEFC3 0%, #FFBC00 100%);
+  border-radius: 59rpx;
+  position: relative;
+  line-height: 115rpx;
+  text-align: center;
+  font-size: 55rpx;
+  font-weight: 600;
+  color: #FFF;
+  text-shadow: 0px 3rpx 0px #D6A10A;
+  /* box-shadow: 0px 10rpx 10rpx #C69714; 不支持渐变*/
+}
+.btn::after{
+  position: absolute;
+  content:"";
+  width: 500rpx;
+  height: 115rpx;
+  background: linear-gradient(271deg, #C69714 0%, #C69817 50%, #C9990F 100%);
+  border-radius: 59rpx;
+  z-index: -1;
+  left: 0;
+  bottom: -10rpx;
+}
+
+.btn1{
+  margin: 98rpx auto 0 ;
+  width: 480rpx;
+  height: 104rpx;
+  background: linear-gradient(180deg, #F0C207 0%, #FFF0B1 100%);
+  border-radius: 52rpx;
+  justify-content: center;
+}
+.btn_inner{
+  width: 464rpx;
+  height: 90rpx;
+  background: linear-gradient(180deg, #FEE67B 0%, #EFC104 100%);
+  border-radius: 52rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 42rpx;
+  color: #FFFFFF;
+  text-shadow: 0px 5rpx 0px #C68428;
+  -webkit-text-stroke: 3rpx #fff;
+}
+
+.ballon{
+  width: 160px;
+ 
+  height: 160px;
+
+  background: #faf9f9;
+
+  /*css3 圆角属性*/
+
+  border-radius: 50% 50% 25% 50%;
+
+    /*顺时针旋转45度*/
+
+    transform: rotate(45deg);
+
+    /*盒子阴影 x位移 y位移 羽化 半径 颜色 */
+
+    box-shadow: -8px -8px 80px -8px #873940 inset;
+    position: relative;
+}
+
+.balloon::after{
+ 
+  position: absolute;
+
+  bottom: 5px;
+
+  right: 5px;
+
+  content:"";
+
+  display: block;
+
+  border: 8px solid transparent;
+
+  border-right-color: #873940;
+
+  transform: rotate(45deg);
+
+  border-radius: 50%;
+
+}
+
+button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  box-shadow: inset 0 0 0 2px #f45e61;
+  color: #f45e61;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+button::before, button::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+ 
+.draw {
+  transition: color 0.25s;
+}
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #60daaa;
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+ 
+.meet:hover {
+  color: #fbca67;
+}
+.meet::after {
+  top: 0;
+  left: 0;
+}
+.meet:hover::before {
+  border-top-color: #fbca67;
+  border-right-color: #fbca67;
+}
+.meet:hover::after {
+  border-bottom-color: #fbca67;
+  border-left-color: #fbca67;
+  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+}
+ 
+.center:hover {
+  color: #6477b9;
+}
+.center::before, .center::after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform-origin: center;
+}
+.center::before {
+  border-top: 2px solid #6477b9;
+  border-bottom: 2px solid #6477b9;
+  transform: scale3d(0, 1, 1);
+}
+.center::after {
+  border-left: 2px solid #6477b9;
+  border-right: 2px solid #6477b9;
+  transform: scale3d(1, 0, 1);
+}
+.center:hover::before, .center:hover::after {
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.5s;
+}
+ 
+.spin {
+  width: 5em;
+  height: 5em;
+  padding: 0;
+}
+.spin:hover {
+  color: #0eb7da;
+}
+.spin::before, .spin::after {
+  top: 0;
+  left: 0;
+}
+.spin::before {
+  border: 2px solid transparent;
+}
+.spin:hover::before {
+  border-top-color: #0eb7da;
+  border-right-color: #0eb7da;
+  border-bottom-color: #0eb7da;
+  transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+.spin::after {
+  border: 0 solid transparent;
+}
+.spin:hover::after {
+  border-top: 2px solid #0eb7da;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  transform: rotate(270deg);
+  transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+}
+ 
+.circle {
+  border-radius: 100%;
+  box-shadow: none;
+}
+.circle::before, .circle::after {
+  border-radius: 100%;
+}
+ 
+.thick {
+  color: #f45e61;
+}
+.thick:hover {
+  color: #fff;
+  font-weight: 700;
+}
+.thick::before {
+  border: 2.5em solid transparent;
+  z-index: -1;
+}
+.thick::after {
+  mix-blend-mode: color-dodge;
+  z-index: -1;
+}
+.thick:hover::before {
+  background: #f45e61;
+  border-top-color: #f45e61;
+  border-right-color: #f45e61;
+  border-bottom-color: #f45e61;
+  transition: background 0s linear 0.4s, border-top-color 0.15s linear, border-right-color 0.15s linear 0.15s, border-bottom-color 0.15s linear 0.25s;
+}
+.thick:hover::after {
+  border-top: 2.5em solid #f45e61;
+  border-left-width: 2.5em;
+  border-right-width: 2.5em;
+}
+ 
+/* Page styling */
+html {
+  background: #fefefe;
+}
+ 
+.buttons {
+  isolation: isolate;
+}
+
+.code_ball{
+  width: 54rpx;
+  height: 54rpx;
+  background: #25BFF7;
+  border-radius: 50% 50%  50% 0;
+  transform: rotate(-45deg);
+  line-height: 54rpx;
+}
+
+.code_ball text{
+  transform: rotate(45deg);
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 36rpx;
+}
+
+.left_arrow{
+  width: 88rpx;
+  height: 15rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  position: relative;
+}
+
+.left_arrow::before{
+  content: "";
+  position:absolute;
+  width: 60rpx;
+  height: 15rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  transform: rotate(45deg);
+  right: -1px;
+  top: -10px;
+}
+
+.left_arrow::after{
+  content: "";
+  position:absolute;
+  width: 60rpx;
+  height: 15rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  transform: rotate(-45deg);
+  right: -1px;
+  top: 10px;
+}

@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/cssCase/colorChange/index",
-          "pathName": "pages/cssCase/colorChange/index",
+          "name": "pages/cssCase/warnIcon/index",
+          "pathName": "pages/cssCase/warnIcon/index",
           "query": "",
           "scene": null
         },
