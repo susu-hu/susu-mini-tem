@@ -286,3 +286,36 @@ page{
   z-index: 99;
   margin-left: -15px;
 }
+
+.close_icon{
+  margin-top: 80rpx;
+  width: 63rpx;
+  height: 63rpx;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid #abdba1;
+}
+
+.close_icon::before{
+  content: "";
+  position: absolute;
+  height: 30rpx;
+  width: 5rpx;
+  background-color:  #abdba1;
+  border-radius: 5rpx;
+  transform: rotate(45deg) ;
+  top: 30%;
+  left: 48%;
+}
+
+.close_icon::after{
+  content: "";
+  position: absolute;
+  height: 30rpx;
+  width: 5rpx;
+  background-color:  #abdba1;
+  border-radius: 5rpx;
+  transform: rotate(-45deg) ;
+  top: 30%;
+  left: 48%;
+}

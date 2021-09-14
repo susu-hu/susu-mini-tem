@@ -29,4 +29,6 @@
     </view>
     <view class="d"></view>
   </view>
+  <!-- 关闭按钮 -->
+  <view class="close_icon"></view>
 </view>
