@@ -1,0 +1,30 @@
+<!--pages/cssCase/rotateTetx/index.wxml-->
+<view class="scene">
+  <view class="banner">
+   <view class="panel"></view>
+   <view class="panel"></view>
+   <view class="panel"></view>
+   <view class="panel"></view>
+   <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+    <view class="panel"></view>
+  </view>
+  <view class="screen"></view>
+</view>

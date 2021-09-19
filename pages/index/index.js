@@ -134,6 +134,10 @@ Page({
             name:'警示图标',
             url:'/pages/cssCase/warnIcon/index'
           },
+          {
+            name:'旋转字符',
+            url:'/pages/cssCase/rotateTetx/index'
+          },
           
         ]
       },

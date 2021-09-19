@@ -83,7 +83,8 @@
         "colorChange/colorItem",
         "rotateBall/index",
         "line/index",
-        "warnIcon/index"
+        "warnIcon/index",
+        "rotateTetx/index"
       ]
     },
     {
