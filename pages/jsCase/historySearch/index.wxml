@@ -1,0 +1,16 @@
+<!--pages/jsCase/historySearch/index.wxml-->
+<view class="head flex-row">
+  <view class="head_input">
+    <image src="/img/search_icon.png" class="search_icon"></image>
+    <input type="text" placeholder="搜索" placeholder-class="place_holder" bindconfirm="getSearch" value="{{search}}"></input>
+  </view>
+  <view class="sha_icon">取消</view>
+</view>
+<view class="con">
+  <view class="title">搜索历史</view>
+  <view class="flex-row">
+    <block wx:for="{{5}}" wx:key="*this">
+      <view class="c_item">历史</view>
+    </block>
+  </view>
+</view>

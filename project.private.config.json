@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/cssCase/warnIcon/index",
-          "pathName": "pages/cssCase/warnIcon/index",
+          "name": "pages/choseList/index",
+          "pathName": "pages/choseList/index",
           "query": "",
           "scene": null
         },
@@ -61,8 +61,8 @@
           "scene": null
         },
         {
-          "name": "pages/cssCase/rotateTetx/index",
-          "pathName": "pages/cssCase/rotateTetx/index",
+          "name": "pages/jsCase/historySearch/index",
+          "pathName": "pages/jsCase/historySearch/index",
           "query": "",
           "scene": null
         },

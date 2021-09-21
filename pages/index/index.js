@@ -154,6 +154,16 @@ Page({
             url:'/pages/wxCase/laohuji/index'
           },
         ]
+      },
+      {
+        showmore:false,
+        name:'分包jsCase',
+        list:[
+          {
+            name:'搜索历史',
+            url:'/pages/jsCase/historySearch/index'
+          },
+        ]
       }
     ]
   },
