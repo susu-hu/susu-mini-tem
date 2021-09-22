@@ -7,10 +7,19 @@
   <view class="sha_icon">取消</view>
 </view>
 <view class="con">
-  <view class="title">搜索历史</view>
-  <view class="flex-row">
-    <block wx:for="{{5}}" wx:key="*this">
-      <view class="c_item">历史</view>
+  <view class="title">热门搜索</view>
+  <view class="flex-row list">
+    <block wx:for="{{hot_list}}" wx:key="*this" >
+      <view class="c_item color"  data-index="{{index}}" catchtap="getSearch">{{item}}</view>
     </block>
+  </view>
+
+  <view  wx:if="{{list.length>0}}">
+    <view class="title">搜索历史</view>
+    <view class="flex-row list">
+      <block wx:for="list" wx:key="*this">
+        <view class="c_item">{{item}}</view>
+      </block>
+    </view>
   </view>
 </view>

@@ -67,3 +67,10 @@
   white-space:pre;
   color: #999;
 }
+.list{
+  flex-wrap: wrap;
+}
+
+.color{
+  color: #83B7FD;
+}
