@@ -51,7 +51,6 @@
   font-size: 30rpx;
   font-weight: 600;
   color: #333333;
-  margin-bottom: 40rpx;
 }
 
 .c_item{
@@ -68,9 +67,15 @@
   color: #999;
 }
 .list{
+  margin-top: 40rpx;
   flex-wrap: wrap;
 }
 
 .color{
   color: #83B7FD;
+}
+
+.clear{
+  color: #999;
+  font-size: 25rpx;
 }

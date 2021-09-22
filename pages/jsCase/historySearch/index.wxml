@@ -2,23 +2,27 @@
 <view class="head flex-row">
   <view class="head_input">
     <image src="/img/search_icon.png" class="search_icon"></image>
-    <input type="text" placeholder="搜索" placeholder-class="place_holder" bindconfirm="getSearch" value="{{search}}"></input>
+    <input type="text" placeholder="搜索" placeholder-class="place_holder" bindconfirm="getData" value="{{search}}"></input>
   </view>
-  <view class="sha_icon">取消</view>
+  <view class="sha_icon" catchtap="clear_input">取消</view>
 </view>
 <view class="con">
   <view class="title">热门搜索</view>
   <view class="flex-row list">
-    <block wx:for="{{hot_list}}" wx:key="*this" >
+    <block wx:for="{{hot_list}}"  wx:key="index">
       <view class="c_item color"  data-index="{{index}}" catchtap="getSearch">{{item}}</view>
     </block>
   </view>
 
   <view  wx:if="{{list.length>0}}">
-    <view class="title">搜索历史</view>
+    <view class="flex-row j_b">
+      <view class="title">搜索历史</view>
+      <view catchtap="clearHistory" class="clear">清空历史</view>
+    </view>
+  
     <view class="flex-row list">
-      <block wx:for="list" wx:key="*this">
-        <view class="c_item">{{item}}</view>
+      <block wx:for="{{list}}" wx:key="index">
+        <view class="c_item" data-index="{{index}}"  catchtap="getSearchOne">{{item}}</view>
       </block>
     </view>
   </view>
