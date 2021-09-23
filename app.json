@@ -101,7 +101,8 @@
     {
       "root": "pages/jsCase/",
       "pages": [
-        "historySearch/index"
+        "historySearch/index",
+        "keyWordHight/index"
       ]
     }
   ],

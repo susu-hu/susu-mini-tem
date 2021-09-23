@@ -163,6 +163,10 @@ Page({
             name:'搜索历史',
             url:'/pages/jsCase/historySearch/index'
           },
+          {
+            name:'关键字高亮',
+            url:'/pages/jsCase/keyWordHight/index'
+          },
         ]
       }
     ]
