@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText": "登录~",
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#f07c82"
 }

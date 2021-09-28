@@ -69,7 +69,6 @@ Page({
     this.setData({
       search:va
     })
-
     this.data.list.forEach((item, index) => {
       if (item == va) {
         this.data.list.splice(index, 1);

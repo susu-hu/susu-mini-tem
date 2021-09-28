@@ -41,5 +41,3 @@
     <image src="/img/suspen_icon02.png"></image>
   </view>
 </view>
-
-<input class="aa {{aa==1?'bb':''}}" type="text"  placeholder="cccc" bindfocus="aa"  bindblur="blur"/>

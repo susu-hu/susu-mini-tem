@@ -158,6 +158,10 @@ Page({
             name:'老虎机',
             url:'/pages/wxCase/laohuji/index'
           },
+          {
+            name:'小程序的navigator标签',
+            url:'/pages/wxCase/navigator/index'
+          },
         ]
       },
       {

@@ -28,9 +28,14 @@ page {
   text-align: center;
 }
 
+.login-box .title text {
+  text-decoration:underline;
+}
+
 .login-box .user-box {
   position: relative;
 }
+
 
 .login-box .user-box input {
   width: 100%;

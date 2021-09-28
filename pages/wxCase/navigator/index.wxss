@@ -1,7 +1,110 @@
 /* pages/wxCase/navigator/index.wxss */
-.navigator-hover {
-  color:blue;
+.btn-area {
+  margin: 20rpx auto;
+  width: 710rpx;
 }
+
+.btn-area navigator {
+  background: radial-gradient(#f07c82, #a2e2b7);
+  margin: 20rpx auto;
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.btn-area navigator:nth-child(2) {
+  background: radial-gradient(#a8ace9, #a2e2b7);
+}
+
+.btn-area navigator:nth-child(3) {
+  background: radial-gradient(#a8ace9, #dfdd94);
+}
+
+.btn-area navigator:nth-child(4) {
+  background: radial-gradient(#6ee1e9, #a2e2b7);
+}
+
+.btn-area navigator:nth-child(5) {
+  background: radial-gradient(#da8638, #dfece4);
+}
+
+.btn-area navigator:nth-child(6) {
+  background: radial-gradient(#dd8bcb, #dfece4);
+}
+
+.navigator-hover {
+  color: #e7781c !important;
+}
+
 .other-navigator-hover {
-  color:red;
+  color: #60db9e !important;
+}
+
+.hp {
+  margin: 20rpx auto;
+  width: 710rpx;
+  background: radial-gradient(#da8638, #dfece4);
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.hp view:first-child {
+  margin-bottom: 20rpx;
+}
+
+.hp view:nth-child(2) {
+  margin-bottom: 20rpx;
+  color: #800a10;
+}
+
+.hp view:nth-child(3),
+.hp view:nth-child(7) {
+  display: inline-block;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  background: rgb(94, 90, 90);
+  border-radius: 20rpx;
+}
+
+.hp view:nth-child(4) , .hp view:nth-child(5),.hp view:nth-child(6){
+  margin-bottom: 20rpx;
+}
+
+.hp view:nth-child(8) {
+  color: #333;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.btn_class{
+  color: #a2e2b7!important;
+}
+
+.hp1{
+  margin: 20rpx auto;
+  width: 710rpx;
+  background: radial-gradient(#77ce94, #dfece4);
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  font-size: 25rpx;
+  color: #947e7e;
+}
+.c_item{
+  margin-bottom: 20rpx;
+}
+.tips{
+  display: inline-block;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  background: rgb(94, 90, 90);
+  border-radius: 20rpx;
+  color: #fff;
 }

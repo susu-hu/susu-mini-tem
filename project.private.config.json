@@ -77,6 +77,12 @@
           "pathName": "pages/subPack/loading/loadPage",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/navigator/index",
+          "pathName": "pages/wxCase/navigator/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

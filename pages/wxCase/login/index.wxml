@@ -1,19 +1,19 @@
 <!--pages/wxCase/login/index.wxml-->
 <view class="login-box">
-  <view class="title"> <text>Login</text></view>
+  <view class="title"> <text>登录</text></view>
   <form>
     <view class="user-box">
-      <input type="text" name="" required="" placeholder="Username" />
+      <input type="text" name="" required="" placeholder="用户名" />
     </view>
     <view class="user-box">
-      <input type="password" name="" required="" placeholder="Password " />
+      <input type="password" name="" required="" placeholder="密码 " />
     </view>
     <button hover-class="button_hover">
       <view></view>
       <view></view>
       <view></view>
       <view></view>
-      Submit
+      提交
     </button>
   </form>
 </view>
