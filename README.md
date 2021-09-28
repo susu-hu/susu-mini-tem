@@ -53,7 +53,7 @@ movable-area组件实现滑动删除
 35. 学习案例：炫酷能量球+螺旋线条
 36. css写警示按钮+蓝云+小花
 37. 实现搜索历史记录，localStorage存储前15条，选择的最新一条放置数组的第一条。
-38. 实现navigator及其相关属性，hover-class+页面跳转接口。
+38. 实现navigator及其相关属性，hover-class+页面跳转接口的区别。
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
