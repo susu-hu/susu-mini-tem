@@ -53,7 +53,8 @@
         "circleRing/index2",
         "scroll-x/index",
         "dateChose/index",
-        "swiper-threeD/index2"
+        "swiper-threeD/index2",
+        "customScroll/index"
       ]
     },
     {
@@ -95,7 +96,8 @@
         "customTab/index",
         "customTab/nav",
         "login/index",
-        "laohuji/index"
+        "laohuji/index",
+        "navigator/index"
       ]
     },
     {

@@ -1,0 +1,7 @@
+/* pages/wxCase/navigator/index.wxss */
+.navigator-hover {
+  color:blue;
+}
+.other-navigator-hover {
+  color:red;
+}
