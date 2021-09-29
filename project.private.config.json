@@ -83,6 +83,12 @@
           "pathName": "pages/wxCase/navigator/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/aButton/index",
+          "pathName": "pages/cssCase/aButton/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

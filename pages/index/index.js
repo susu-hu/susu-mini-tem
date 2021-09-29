@@ -143,6 +143,10 @@ Page({
             name:'旋转字符',
             url:'/pages/cssCase/rotateTetx/index'
           },
+          {
+            name:'一个蛋黄派按钮',
+            url:'/pages/cssCase/aButton/index'
+          },
           
         ]
       },

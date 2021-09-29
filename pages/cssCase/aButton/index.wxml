@@ -1,0 +1,11 @@
+<!--pages/cssCase/aButton/index.wxml-->
+<view class="tips">
+  <view>学习案例</view><!-- 源码地址https://codepen.io/Squidies/pen/eoxdNe -->
+</view>
+<view catchtap="click">
+  <input id="egg-toggle" type="checkbox" />
+  <label for="egg-toggle">
+    <span id="egg" wx:if="{{ischecked==undefined}}"></span>
+    <span id="egg" wx:else class="{{ischecked?'flip':'unflip'}}" ></span>
+  </label>
+</view>
