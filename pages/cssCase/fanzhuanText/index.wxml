@@ -1,0 +1,12 @@
+<!--pages/cssCase/fanzhuanText/index.wxml-->
+<view class="box">
+  <view class="banner">
+    <view class="panel">W</view>
+    <view class="panel">E</view>
+    <view class="panel">L</view>
+    <view class="panel">C</view>
+    <view class="panel">O</view>
+    <view class="panel">M</view>
+    <view class="panel">E</view>
+  </view>
+</view>

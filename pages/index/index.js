@@ -144,8 +144,20 @@ Page({
             url:'/pages/cssCase/rotateTetx/index'
           },
           {
+            name:'翻转字符',
+            url:'/pages/cssCase/fanzhuanText/index'
+          },
+          {
             name:'一个蛋黄派按钮',
             url:'/pages/cssCase/aButton/index'
+          },
+          {
+            name:'可爱的小熊switch开关',
+            url:'/pages/cssCase/cuteSwitch/index'
+          },
+          {
+            name:'一个正在输入的动画',
+            url:'/pages/cssCase/aWirting/index'
           },
           
         ]

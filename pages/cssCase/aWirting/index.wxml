@@ -1,0 +1,10 @@
+<!--pages/cssCase/aWirting/index.wxml-->
+<view>
+  Hi! I'm <span class="tw"></span>
+</view>
+<view>
+  Hi! I'm <span class="tw t1"></span>
+</view>
+<view>
+  Hi! I'm <span class="tw t2"></span>
+</view>

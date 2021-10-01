@@ -1,0 +1,223 @@
+/* pages/cssCase/aWirting/index.wxss */
+page {
+  background: #849fb9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+view {
+  font-size: 50rpx;
+  color: #332b27;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@keyframes typing {
+
+  0.0000%,
+  27.3488% {
+    content: "";
+  }
+
+  1.1395%,
+  26.2093% {
+    content: "s";
+    -webkit-content: "s";
+  }
+
+  2.2791%,
+  25.0698% {
+    content: "su";
+    -webkit-content: "su";
+  }
+
+  3.4186%,
+  23.9302% {
+    content: "sus";
+  }
+
+  4.5581%,
+  22.7907% {
+    content: "susu";
+  }
+
+  5.6977%,
+  21.6512% {
+    content: "susui";
+  }
+
+  6.8372%,
+  20.5116% {
+    content: "susuic";
+  }
+
+  7.9767%,
+  19.3721% {
+    content: "susuico";
+  }
+
+  9.1163%,
+  18.2326% {
+    content: "susuicon";
+  }
+
+  10.2558%,
+  17.0930% {
+    content: "susuicon";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "";
+  }
+
+  31.9070%,
+  50.1395% {
+    content: "b";
+  }
+
+  33.0465%,
+  49.0000% {
+    content: "be";
+  }
+
+  34.1860%,
+  47.8605% {
+    content: "bea";
+  }
+
+  35.3256%,
+  46.7209% {
+    content: "beau";
+  }
+
+  36.4651%,
+  45.5814% {
+    content: "beaut";
+  }
+
+  37.6047%,
+  44.4419% {
+    content: "beauty";
+  }
+
+  54.6977%,
+  75.2093% {
+    content: "";
+  }
+
+  55.8372%,
+  74.0698% {
+    content: "c";
+  }
+
+  56.9767%,
+  72.9302% {
+    content: "co";
+  }
+
+  58.1163%,
+  71.7907% {
+    content: "cod";
+  }
+
+  59.2558%,
+  70.6512% {
+    content: "code";
+  }
+
+  60.3953%,
+  69.5116% {
+    content: "coder";
+  }
+
+  61.5349%,
+  68.3721% {
+    content: "coder";
+  }
+
+  78.6279%,
+  97.8605% {
+    content: "";
+  }
+
+  79.7674%,
+  96.7209% {
+    content: "w";
+  }
+
+  80.9070%,
+  95.5814% {
+    content: "wa";
+  }
+
+  81.9070%,
+  94.5814% {
+    content: "wac";
+  }
+
+  82.0465%,
+  93.4419% {
+    content: "wact";
+  }
+
+  83.1860%,
+  92.3023% {
+    content: "wacth";
+  }
+
+  84.3256%,
+  91.1628% {
+    content: "watche";
+  }
+
+  85.3256%,
+  90.1628% {
+    content: "watcher";
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.tw {
+  position: relative;
+  --caret: currentcolor;
+}
+
+.tw::before {
+  content: "";
+  animation: typing 13.5s infinite;
+  -webkit-animation: typing 13.5s infinite;
+}
+
+.tw::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+  -webkit-animation: blink 0.5s linear infinite;
+}
+
+.tw.t1::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.tw.t2::after {
+  border-right: 0;
+}
+
+

@@ -1,0 +1,75 @@
+/* pages/cssCase/fanzhuanText/index.wxss */
+page {
+  background: #222;
+}
+
+.box {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  width: 320px;
+  transform-style: preserve-3d;
+  animation: rotate 24s infinite linear;
+  height: 2px;
+  background: linear-gradient(90deg, #0ebeff, #ffdd40, #ae63e4, #47cf73, #0ebeff, #ffdd40, #ae63e4, #47cf73);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.panel {
+  position: absolute;
+  width: 50px;
+  height: 120px;
+  font-size:49px;
+  left: var(--left);
+  color: hsl(var(--hue), 75%, 75%);
+}
+.panel:nth-child(1){
+  --left: 0px;
+  --hue: 0;
+}
+.panel:nth-child(2){
+  --left: 50px;
+  --hue: 15;
+}
+.panel:nth-child(3) {
+  --left: 100px;
+  --hue: 30;
+}
+
+.panel:nth-child(4){
+  --left: 150px;
+  --hue: 45;
+}
+
+.panel:nth-child(5) {
+  --left: 200px;
+  --hue: 60;
+
+}
+
+.panel:nth-child(6) {
+  --left: 250px;
+  --hue: 75;
+}
+
+.panel:nth-child(7) {
+  --left: 300px;
+  --hue: 90;
+}

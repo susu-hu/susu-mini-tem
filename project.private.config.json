@@ -13,86 +13,20 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/another/customScroll/index",
-          "pathName": "pages/another/customScroll/index",
+          "name": "pages/cssCase/cuteSwitch/index",
+          "pathName": "pages/cssCase/cuteSwitch/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/scroll/index",
-          "pathName": "pages/scroll/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/another/scroll-x/index",
-          "pathName": "pages/another/scroll-x/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/laohuji/index",
-          "pathName": "pages/wxCase/laohuji/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/subPack/chating/index",
-          "pathName": "pages/subPack/chating/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/dots/index2",
-          "pathName": "pages/dots/index2",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/pop/index",
-          "pathName": "pages/pop/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/sendCode/index2",
-          "pathName": "pages/sendCode/index2",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/historySearch/index",
-          "pathName": "pages/jsCase/historySearch/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/subPack/otherAnimation/index",
-          "pathName": "pages/subPack/otherAnimation/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/subPack/loading/loadPage",
-          "pathName": "pages/subPack/loading/loadPage",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/navigator/index",
-          "pathName": "pages/wxCase/navigator/index",
+          "name": "pages/cssCase/aWirting/index",
+          "pathName": "pages/cssCase/aWirting/index",
           "query": "",
           "scene": null
         },
         {
           "name": "pages/cssCase/aButton/index",
           "pathName": "pages/cssCase/aButton/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cssCase/rotateTetx/index",
-          "pathName": "pages/cssCase/rotateTetx/index",
           "query": "",
           "scene": null
         }

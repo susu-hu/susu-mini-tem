@@ -86,7 +86,10 @@
         "line/index",
         "warnIcon/index",
         "rotateTetx/index",
-        "aButton/index"
+        "aButton/index",
+        "fanzhuanText/index",
+        "cuteSwitch/index",
+        "aWirting/index"
       ]
     },
     {
