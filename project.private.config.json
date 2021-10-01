@@ -37,8 +37,8 @@
           "scene": null
         },
         {
-          "name": "pages/wxCase/navigator/index",
-          "pathName": "pages/wxCase/navigator/index",
+          "name": "pages/subPack/chating/index",
+          "pathName": "pages/subPack/chating/index",
           "query": "",
           "scene": null
         },
@@ -87,6 +87,12 @@
         {
           "name": "pages/cssCase/aButton/index",
           "pathName": "pages/cssCase/aButton/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cssCase/rotateTetx/index",
+          "pathName": "pages/cssCase/rotateTetx/index",
           "query": "",
           "scene": null
         }

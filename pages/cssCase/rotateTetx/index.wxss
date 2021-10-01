@@ -1,9 +1,13 @@
 /* pages/cssCase/rotateTetx/index.wxss */
 page {
   background: #222;
+  /* background-image: linear-gradient(90deg, #000a, #0004, #000a); */
+
 }
 
 .scene {
+  width: 100%;
+  height: 400rpx;
   position: absolute;
   top: 0;
   left: 0;
@@ -11,10 +15,13 @@ page {
   bottom: 0;
   margin: auto;
   transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .banner {
-  display: flex;
   transform-style: preserve-3d;
   animation: rotate 24s infinite linear;
 }
@@ -27,9 +34,9 @@ page {
 
 .panel {
   position: absolute;
-  transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(190px);
+  transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(139px);
   width: 50px;
-  height: 120px;
+  height: 120rpx;
   overflow: hidden;
 }
 
@@ -37,7 +44,7 @@ page {
   position: absolute;
   left: var(--left);
   content: "欢迎来到苏苏的小程序";
-  font-size: 96px;
+  font-size: 101rpx;
   width: max-content;
   color: hsl(var(--hue), 75%, 75%);
 }
@@ -51,58 +58,58 @@ page {
 .panel:nth-child(2) {
   --left: -50px;
   --hue: 15;
-  --angle: 15deg;
+  --angle: 36deg;
 }
 
 .panel:nth-child(3) {
   --left: -100px;
   --hue: 30;
-  --angle: 30deg;
+  --angle: 72deg;
 }
 
 .panel:nth-child(4) {
   --left: -150px;
   --hue: 45;
-  --angle: 45deg;
+  --angle: 108deg;
 }
 
 .panel:nth-child(5) {
   --left: -200px;
   --hue: 60;
-  --angle: 60deg;
+  --angle: 144deg;
 }
 
 .panel:nth-child(6) {
   --left: -250px;
   --hue: 75;
-  --angle: 75deg;
+  --angle: 180deg;
 }
 
 .panel:nth-child(7) {
   --left: -300px;
   --hue: 90;
-  --angle: 90deg;
+  --angle: 216deg;
 }
 
 .panel:nth-child(8) {
   --left: -350px;
   --hue: 105;
-  --angle: 105deg;
+  --angle: 252deg;
 }
 
 .panel:nth-child(9) {
   --left: -400px;
   --hue: 120;
-  --angle: 120deg;
+  --angle: 288deg;
 }
 
 .panel:nth-child(10) {
   --left: -450px;
   --hue: 135;
-  --angle: 135deg;
+  --angle: 324deg;
 }
 
-.panel:nth-child(11) {
+/* .panel:nth-child(11) {
   --left: -500px;
   --hue: 150;
   --angle: 150deg;
@@ -184,14 +191,5 @@ page {
   --left: -1150px;
   --hue: 345;
   --angle: 345deg;
-}
+} */
 
-.screen {
-  position: absolute;
-  width: 400rpx;
-  height: 400rpx;
-  left: 50%;
-  top: 50%;
-  /* background-image: linear-gradient(90deg, #000a, #0004, #000a); */
-  transform: translate(-50%, -50%);
-}
