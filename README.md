@@ -55,7 +55,7 @@ movable-area组件实现滑动删除
 37. 实现搜索历史记录，localStorage存储前15条，选择的最新一条放置数组的第一条。
 38. 实现navigator及其相关属性，hover-class+页面跳转接口的区别。
 39. 一个蛋黄派样式的可爱的switch按钮，(input+label+伪元素实现）
-40. 旋转字符
+40. 旋转字符+翻转字符
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -101,7 +101,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0922/235247_bec409fb_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/000500_d469a29b_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/144514_f98d9dfa_8576727.png "屏幕截图.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/1001/151042_487fb12e_8576727.gif "GIF.gif")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1001/151042_487fb12e_8576727.gif "GIF.gif")![输入图片说明](https://images.gitee.com/uploads/images/2021/1001/180950_1bf761fc_8576727.gif "GIF.gif")
 #### 参与贡献
 
 1.  Fork 本仓库
