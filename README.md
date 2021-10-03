@@ -103,7 +103,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/000500_d469a29b_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/144514_f98d9dfa_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1001/151042_487fb12e_8576727.gif "GIF.gif")![输入图片说明](https://images.gitee.com/uploads/images/2021/1001/180950_1bf761fc_8576727.gif "GIF.gif")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/1002/021439_fac24b28_8576727.gif "GIF.gif")![输入图片说明](https://images.gitee.com/uploads/images/2021/1002/021501_c3000513_8576727.gif "GIF2.gif")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1002/021439_fac24b28_8576727.gif "GIF.gif")
 #### 参与贡献
 
 1.  Fork 本仓库
