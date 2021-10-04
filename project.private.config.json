@@ -29,6 +29,12 @@
           "pathName": "pages/cssCase/aButton/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/404Page/index",
+          "pathName": "pages/cssCase/404Page/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

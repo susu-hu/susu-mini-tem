@@ -1,0 +1,12 @@
+<!--pages/cssCase/404Page/index.wxml-->
+<view class="not_found">
+  <view class="not_found_404 ">
+    <span>4</span>
+    <span>0</span>
+    <span>4</span>
+  </view>
+  <view class="btn">
+    <navigator  class="button ">首页</navigator>
+    <navigator  class="button ">返回上页</navigator>
+  </view>
+</view>

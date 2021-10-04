@@ -159,6 +159,10 @@ Page({
             name:'一个正在输入的动画',
             url:'/pages/cssCase/aWirting/index'
           },
+          {
+            name:'一个有趣的404页面',
+            url:'/pages/cssCase/404Page/index'
+          },
           
         ]
       },
