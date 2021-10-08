@@ -163,6 +163,10 @@ Page({
             name:'一个有趣的404页面',
             url:'/pages/cssCase/404Page/index'
           },
+          {
+            name:'渐变字体',
+            url:'/pages/cssCase/shadingText/index'
+          },
           
         ]
       },

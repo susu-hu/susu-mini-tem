@@ -35,6 +35,12 @@
           "pathName": "pages/cssCase/404Page/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/shadingText/index",
+          "pathName": "pages/cssCase/shadingText/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
