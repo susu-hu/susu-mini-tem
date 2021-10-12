@@ -1,6 +1,6 @@
 /* pages/cssCase/shadingText/index.wxss */
 page {
-  --TextColor: #ddd;
+  --TextColor: #5cc9e4;
   background-color: #f1e7e7;
   width: 100%;
   height: 100%;
@@ -15,6 +15,7 @@ view {
   font-size: 10vmin;
   background-color: #000;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -26,12 +27,13 @@ view::after {
   width: 100%;
   height: 100%;
   background-image:
-    linear-gradient(120deg, transparent 0%, transparent 4vmin, var(--lightColor) 8vmin, transparent 12vmin, transparent 16vmin, var(--lightColor) 20vmin, transparent 24vmin, transparent 28vmin, var(--lightColor) 32vmin, transparent 36vmin, transparent 100%);
+    linear-gradient(120deg, transparent 0%, transparent 4vmin, var(--TextColor) 8vmin, transparent 12vmin, transparent 16vmin, var(--TextColor) 20vmin, transparent 24vmin, transparent 28vmin, var(--TextColor) 32vmin, transparent 36vmin, transparent 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   z-index: 1;
   background-size: 200% 100%;
   background-repeat: no-repeat;
-  animation: shine 5s infinite linear;
+  animation: shine 3s infinite linear;
 }
 
 @keyframes shine {
