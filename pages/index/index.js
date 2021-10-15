@@ -186,6 +186,18 @@ Page({
             name:'小程序的navigator标签',
             url:'/pages/wxCase/navigator/index'
           },
+          {
+            name:'一个弹出框动画',
+            url:'/pages/wxCase/popCustom/index'
+          },
+          {
+            name:'checkbox自定义样式',
+            url:'/pages/wxCase/checkbox/index'
+          },
+          {
+            name:'单选框+textarea(scroll-into-view)',
+            url:'/pages/wxCase/radioBox/index'
+          },
         ]
       },
       {

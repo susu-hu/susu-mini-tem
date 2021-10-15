@@ -103,7 +103,10 @@
         "customTab/nav",
         "login/index",
         "laohuji/index",
-        "navigator/index"
+        "navigator/index",
+        "popCustom/index",
+        "checkbox/index",
+        "radioBox/index"
       ]
     },
     {

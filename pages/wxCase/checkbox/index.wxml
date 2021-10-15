@@ -1,0 +1,18 @@
+<!--pages/wxCase/checkbox/index.wxml-->
+<view class="tr">
+  <view class="th">
+    <checkbox bindtap="selectall" />全选
+  </view>
+  <view class="th">id</view>
+  <view class="th">名称</view>
+</view>
+
+<checkbox-group bindchange="checkboxChange">
+  <view class="tr" wx:for="{{listData}}" wx:key="">
+    <view class="td">
+      <checkbox value="{{item.code}}" checked="{{item.checked}}" />
+    </view>
+    <view class="td" value="{{item.text}}">{{item.code}}</view>
+    <view class="td" value="{{item.text}}">{{item.text}}</view>
+  </view>
+</checkbox-group>

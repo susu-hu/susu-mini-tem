@@ -1,0 +1,25 @@
+<!--pages/wxCase/radioBox/index.wxml-->
+<!-- 申请退款的弹框 -->
+<view hidden='{{showApplyReason}}'>
+  <view class='mask' bindtap="closeShow"></view>
+  <view class='dialog_reason'>
+    <view class='promise_title'>选择退货理由</view>
+    <image src='/img/close1.png' class='layer_close' bindtap="closeShow"></image>
+    <scroll-view scroll-y="{{true}}" class="radio" scroll-into-view="{{viewId}}">
+      <radio-group class='choose_ways' bindchange="radioShowReason">
+        <view class='choose_item flex-row j_b' wx:for="{{typeList}}" wx:key="typeList">
+          <label class="label_radio">
+            <view>{{item}}</view>
+            <radio value="{{index}}" checked="{{index==reason_type}}" color="#b8e9ec"></radio>
+          </label>
+        </view>
+      </radio-group>
+      <view class="edit_box" wx:if="{{showEdit}}" id="edit_box">
+        <textarea placeholder="请输入申请的理由" maxlength="-1"></textarea>
+      </view>
+    </scroll-view>
+    <view class="btn_bo">
+      <button class='go_confirm' bindtap="submit">确定</button>
+    </view>
+  </view>
+</view>

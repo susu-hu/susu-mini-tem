@@ -41,6 +41,12 @@
           "pathName": "pages/cssCase/shadingText/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/radioBox/index",
+          "pathName": "pages/wxCase/radioBox/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

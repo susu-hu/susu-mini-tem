@@ -1,0 +1,35 @@
+/* pages/wxCase/checkbox/index.wxss */
+.table {
+  background-color: #fff;
+  border: 1px solid #dadada;
+  width: 1200rpx;
+  margin-left: 0rpx;
+}
+
+.tr {
+  background-color: #dadada;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.th {
+  background-color: #fff999;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+}
+
+.td {
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+
+}

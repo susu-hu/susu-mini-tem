@@ -1,0 +1,114 @@
+/* pages/wxCase/radioBox/index.wxss */
+/* 新增弹框 */
+.mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .6);
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+/* 弹框 */
+.dialog_reason {
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  background: #fff;
+  height: 850rpx;
+  opacity: 1;
+  border-radius: 16rpx 16rpx 0px 0px;
+  z-index: 9999;
+  padding: 40rpx 20rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.layer_close {
+  position: absolute;
+  top: 38rpx;
+  right: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
+
+}
+
+.promise_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #333333;
+  margin-bottom: 25rpx;
+}
+
+.radio {
+  margin-top: 80rpx;
+  height: 540rpx;
+}
+
+.choose_item {
+  border-bottom: 2rpx solid #F3F3F3;
+  padding: 0rpx 10rpx 30rpx;
+  font-size: 28rpx;
+  color: #333333;
+  margin-bottom: 30rpx;
+}
+
+.choose_item:last-child {
+  margin-bottom: 0;
+  border: none;
+}
+
+.choose_item text {
+  color: #666666;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+
+.label_radio {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_bo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100rpx;
+}
+
+.go_confirm {
+  width: 670rpx;
+  height: 80rpx;
+  background: #b8e9ec;
+  opacity: 1;
+  border-radius: 50rpx;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 80rpx;
+  position: fixed;
+  bottom: 30rpx;
+}
+
+.img_click {
+  margin-bottom: 20rpx;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.edit_box textarea {
+  width: 99%;
+  border: 1px solid #F3F3F3;
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}
