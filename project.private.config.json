@@ -37,14 +37,20 @@
           "scene": null
         },
         {
-          "name": "pages/cssCase/shadingText/index",
-          "pathName": "pages/cssCase/shadingText/index",
+          "name": "pages/another/customScroll/index",
+          "pathName": "pages/another/customScroll/index",
           "query": "",
           "scene": null
         },
         {
           "name": "pages/wxCase/radioBox/index",
           "pathName": "pages/wxCase/radioBox/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/checkbox/index",
+          "pathName": "pages/wxCase/checkbox/index",
           "query": "",
           "scene": null
         }

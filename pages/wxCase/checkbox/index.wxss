@@ -18,10 +18,11 @@
 .th {
   background-color: #fff999;
   text-align: center;
-  justify-content: center;
+  flex: 1;
+  /* justify-content: center;
   width: 100%;
   border-bottom: 1px solid #dadada;
-  border-right: 1px solid #dadada;
+  border-right: 1px solid #dadada; */
 }
 
 .td {
@@ -32,4 +33,82 @@
   border-bottom: 1px solid #dadada;
   border-right: 1px solid #dadada;
 
+}
+
+
+page {
+  padding-bottom: calc(constant(safe-area-inset-bottom)+ 120rpx);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 120rpx);
+}
+
+scroll-view {
+  width: 750rpx;
+  white-space: nowrap
+}
+
+.head {
+  width: 750rpx;
+  height: 88rpx;
+  background: #FFFFFF;
+  border: 1px solid #F5F5F8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  z-index: 100;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #666666;
+}
+
+.head view {
+  border-right: 1px solid red;
+  height: 100%;
+  text-align: center;
+  line-height: 88rpx;
+  display: inline-block;
+}
+
+.head view:last-child {
+  border-right: none;
+}
+
+.head view:nth-child(1) {
+  width: 100rpx;
+}
+
+.head view:nth-child(2) {
+  width: 300rpx;
+}
+
+.head view:nth-child(4),
+.head view:nth-child(3),
+.head view:nth-child(5),
+.head view:nth-child(6) {
+  width: 200rpx;
+}
+
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+}
+
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #DE59A3;
+}
+
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 18rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
 }

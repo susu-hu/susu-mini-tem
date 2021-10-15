@@ -1,18 +1,33 @@
 <!--pages/wxCase/checkbox/index.wxml-->
-<view class="tr">
-  <view class="th">
-    <checkbox bindtap="selectall" />全选
-  </view>
-  <view class="th">id</view>
-  <view class="th">名称</view>
-</view>
-
-<checkbox-group bindchange="checkboxChange">
-  <view class="tr" wx:for="{{listData}}" wx:key="">
-    <view class="td">
-      <checkbox value="{{item.code}}" checked="{{item.checked}}" />
+<!-- <scroll-view scroll-x="{{true}}">
+  <view class="tr">
+    <view class="th">
+      <checkbox bindtap="selectall" />
     </view>
-    <view class="td" value="{{item.text}}">{{item.code}}</view>
-    <view class="td" value="{{item.text}}">{{item.text}}</view>
+    <view class="th">名称</view>
+    <view class="th">原价</view>
+    <view class="th">现价</view>
+    <view class="th">开售时间</view>
+    <view class="th">结束时间</view>
   </view>
-</checkbox-group>
+  <checkbox-group bindchange="checkboxChange">
+    <view class="tr" wx:for="{{list}}" wx:key="index">
+      <view class="td">
+        <checkbox value="{{item.code}}" checked="{{item.checked}}" />
+      </view>
+      <view class="td" value="{{item.text}}">{{item.name}}</view>
+      <view class="td" value="{{item.text}}">{{item.price}}</view>
+    </view>
+  </checkbox-group>
+</scroll-view> -->
+
+<view>
+  <scroll-view scroll-x class="head">
+    <view><checkbox bindtap="selectall" /></view>
+    <view>名称</view>
+    <view>原价</view>
+    <view>现价</view>
+    <view>开售时间</view>
+    <view>结束时间</view>
+  </scroll-view>
+</view>
