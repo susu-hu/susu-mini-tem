@@ -60,6 +60,7 @@ movable-area组件实现滑动删除
 42. 一个有趣的404页面
 43. -webkiit-background-clip:text实现一个渐变色的文字
 44. scroll-view包裹一个单选弹框和textarea，textarea给定id值，与scroll-into-view绑定，实现页面定位到文本输入框。
+45. 多选框checkbox实现多选
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -111,6 +112,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1005/002616_da70a6d9_8576727.gif "GIF.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1012/222321_b5bf3e44_8576727.gif "GIF3345.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1015/174057_7cbdc2b7_8576727.gif "radio.gif")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1017/234406_e90b242a_8576727.gif "导出.gif")
 #### 参与贡献
 
 1.  Fork 本仓库
