@@ -21,13 +21,32 @@
   </checkbox-group>
 </scroll-view> -->
 
-<view>
-  <scroll-view scroll-x class="head">
-    <view><checkbox bindtap="selectall" /></view>
+
+<scroll-view scroll-x>
+  <view class="head head1">
+    <view>
+      <checkbox checked="{{select_all}}"  bindtap="selectall" />
+    </view>
     <view>名称</view>
     <view>原价</view>
     <view>现价</view>
     <view>开售时间</view>
     <view>结束时间</view>
-  </scroll-view>
-</view>
+  </view>
+  <view class="con">
+    <checkbox-group bindchange="checkboxChange">
+      <block wx:for="{{list}}" wx:key="index">
+        <view class="head">
+          <view>
+            <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+          </view>
+          <view>{{item.name}}</view>
+          <view>{{item.price}}</view>
+          <view>{{item.sell_price}}</view>
+          <view>{{item.star_date}}</view>
+          <view>{{item.end_date}}</view>
+        </view>
+      </block>
+    </checkbox-group>
+  </view>
+</scroll-view>
