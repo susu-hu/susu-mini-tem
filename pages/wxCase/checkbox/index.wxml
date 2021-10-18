@@ -1,27 +1,4 @@
 <!--pages/wxCase/checkbox/index.wxml-->
-<!-- <scroll-view scroll-x="{{true}}">
-  <view class="tr">
-    <view class="th">
-      <checkbox bindtap="selectall" />
-    </view>
-    <view class="th">名称</view>
-    <view class="th">原价</view>
-    <view class="th">现价</view>
-    <view class="th">开售时间</view>
-    <view class="th">结束时间</view>
-  </view>
-  <checkbox-group bindchange="checkboxChange">
-    <view class="tr" wx:for="{{list}}" wx:key="index">
-      <view class="td">
-        <checkbox value="{{item.code}}" checked="{{item.checked}}" />
-      </view>
-      <view class="td" value="{{item.text}}">{{item.name}}</view>
-      <view class="td" value="{{item.text}}">{{item.price}}</view>
-    </view>
-  </checkbox-group>
-</scroll-view> -->
-
-
 <scroll-view scroll-x>
   <view class="head head1">
     <view>
