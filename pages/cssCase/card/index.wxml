@@ -1,0 +1,11 @@
+<!--pages/cssCase/card/index.wxml-->
+<view class="card">
+  <view class="top">
+    <view class="title">
+      <span></span>
+      <text>卡券定义</text>
+      <span></span>
+    </view>
+  </view>
+  <view class="bottom"></view>
+</view>

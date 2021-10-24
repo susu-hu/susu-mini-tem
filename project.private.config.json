@@ -49,8 +49,8 @@
           "scene": null
         },
         {
-          "name": "pages/wxCase/checkbox/index",
-          "pathName": "pages/wxCase/checkbox/index",
+          "name": "pages/cssCase/card/index",
+          "pathName": "pages/cssCase/card/index",
           "query": "",
           "scene": null
         }

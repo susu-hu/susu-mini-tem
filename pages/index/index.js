@@ -167,7 +167,10 @@ Page({
             name:'渐变字体',
             url:'/pages/cssCase/shadingText/index'
           },
-          
+          {
+            name:'一个带半圆的卡片',
+            url:'/pages/cssCase/card/index'
+          },
         ]
       },
       {
