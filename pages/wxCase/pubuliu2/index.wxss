@@ -1,0 +1,26 @@
+/* pages/wxCase/pubuliu2/index.wxss */
+page{
+  width: 100%;
+  margin: 0;
+  background: #F2F2F2;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+  overflow: hidden;
+}
+ 
+.left{
+  width: 345rpx;
+}
+ 
+.right{
+  width: 345rpx;
+  margin-left: 20rpx;
+}
+ 
+.pic{
+  border-radius: 10rpx;
+  width: 345rpx;
+}

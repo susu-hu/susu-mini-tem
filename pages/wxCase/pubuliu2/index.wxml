@@ -1,0 +1,13 @@
+<!--pages/wxCase/pubuliu2/index.wxml-->
+<view class='content'>
+<view class='left'>
+  <block wx:for="{{leftList}}" wx:key="index">
+    <image class='pic' style='height:{{item.CoverHeight}}' src='{{item.Cover}}'></image>
+  </block>
+</view>
+<view class='right'>
+  <block wx:for="{{rightList}}" wx:key="index">
+    <image class='pic' style='height:{{item.CoverHeight}}' src='{{item.Cover}}'></image>
+  </block>
+</view>
+</view>

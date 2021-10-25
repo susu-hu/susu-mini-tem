@@ -53,6 +53,18 @@
           "pathName": "pages/cssCase/card/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/wclound/index",
+          "pathName": "pages/wxCase/wclound/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index2/index",
+          "pathName": "pages/index2/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
