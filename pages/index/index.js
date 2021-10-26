@@ -201,6 +201,22 @@ Page({
             name:'单选框+textarea(scroll-into-view)',
             url:'/pages/wxCase/radioBox/index'
           },
+          {
+            name:'瀑布流',
+            url:'/pages/wxCase/pubuliu/index'
+          },
+          {
+            name:'瀑布流',
+            url:'/pages/wxCase/pubuliu/index'
+          },
+          {
+            name:'网易云音乐播放',
+            url:'/pages/wxCase/wclound/index'
+          },
+          {
+            name:'导航栏自定义',
+            url:'/pages/wxCase/costomNav/index'
+          },
         ]
       },
       {

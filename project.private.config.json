@@ -13,56 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/cssCase/cuteSwitch/index",
-          "pathName": "pages/cssCase/cuteSwitch/index",
+          "name": "pages/another/dateChose/index",
+          "pathName": "pages/another/dateChose/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/cssCase/aWirting/index",
-          "pathName": "pages/cssCase/aWirting/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cssCase/aButton/index",
-          "pathName": "pages/cssCase/aButton/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cssCase/404Page/index",
-          "pathName": "pages/cssCase/404Page/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/another/customScroll/index",
-          "pathName": "pages/another/customScroll/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/radioBox/index",
-          "pathName": "pages/wxCase/radioBox/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cssCase/card/index",
-          "pathName": "pages/cssCase/card/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/wclound/index",
-          "pathName": "pages/wxCase/wclound/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/index2/index",
-          "pathName": "pages/index2/index",
+          "name": "pages/wxCase/costomNav/index",
+          "pathName": "pages/wxCase/costomNav/index",
           "query": "",
           "scene": null
         }

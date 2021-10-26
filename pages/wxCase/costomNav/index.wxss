@@ -1,0 +1,90 @@
+/* pages/wxCase/costomNav/index.wxss */
+/* pages/index/index.wxss */
+page {
+  padding-bottom: 40rpx;
+}
+
+.custom_head {
+  width: 750rpx;
+  background: #7ED1AC;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.head_store {
+  font-size: 30rpx;
+  font-weight: bold;
+  width: 340rpx;
+  margin-right: 30rpx;
+  margin-left: 22rpx;
+  flex-shrink: 0;
+}
+
+picker {
+  flex-shrink: 0;
+}
+
+.picker {
+  font-size: 28rpx;
+}
+
+.picker image {
+  width: 18rpx;
+  height: 10rpx;
+  margin-left: 8rpx;
+}
+
+.head {
+  width: 750rpx;
+  height: 319rpx;
+  position: relative;
+}
+
+.head::after {
+  content: '';
+  width: 140%;
+  height: 319rpx;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  background: linear-gradient(180deg, #7ED1AC 0%, #8BDEFC 100%);
+}
+
+.swiper_box {
+  width: 702rpx;
+  height: 348rpx;
+  background: #FFFFFF;
+  box-shadow: 0px 5rpx 10rpx rgba(0, 0, 0, 0.09);
+  border-radius: 20rpx;
+  margin: 20rpx auto;
+  overflow: hidden;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper_box .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: 14rpx;
+}
+
+.swiper_box .wx-swiper-dot {
+  margin-left: -5rpx;
+  width: 8rpx;
+  height: 8rpx;
+  background: #FFF;
+  border-radius: 50%;
+}
+
+.swiper_box .wx-swiper-dot-active {
+  width: 28rpx;
+  height: 8rpx;
+  border-radius: 4rpx;
+  background: #147ABE;
+}
+

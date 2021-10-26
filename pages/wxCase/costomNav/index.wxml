@@ -1,0 +1,21 @@
+<!--pages/wxCase/costomNav/index.wxml-->
+<!--pages/index/index.wxml-->
+<view class="custom_head" style="height:{{navHeight}}px;">
+  <view class="flex-row j_b" style="height:{{navObj}}px;padding-top:{{navTop}}px;padding-right:{{navObjWid+5}}px;">
+    <view class="head_store text_ellipsis">{{store_name}}</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{storeList}}" range-key="name">
+      <view class="flex-row picker">
+        <text>切换门店</text>
+        <image src="/img/down_arr.png" />
+      </view>
+    </picker>
+  </view>
+</view>
+<view class="head" style="margin-top:{{navHeight}}px">
+  <swiper class="swiper_box" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}"
+    circular="true">
+    <swiper-item wx:for="{{banner}}" wx:key="index">
+      <image bindtap="clickImg" src="{{item}}" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+</view>
