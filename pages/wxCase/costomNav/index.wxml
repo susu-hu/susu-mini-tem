@@ -5,7 +5,7 @@
     <view class="head_store text_ellipsis">{{store_name}}</view>
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{storeList}}" range-key="name">
       <view class="flex-row picker">
-        <text>切换门店</text>
+        <text>切换名称</text>
         <image src="/img/down_arr.png" />
       </view>
     </picker>
@@ -15,7 +15,7 @@
   <swiper class="swiper_box" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}"
     circular="true">
     <swiper-item wx:for="{{banner}}" wx:key="index">
-      <image bindtap="clickImg" src="{{item}}" mode="aspectFill"></image>
+      <!-- <image bindtap="clickImg" src="{{item}}" mode="aspectFill"></image> -->
     </swiper-item>
   </swiper>
 </view>
