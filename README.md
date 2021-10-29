@@ -63,6 +63,7 @@ movable-area组件实现滑动删除
 45. 多选框checkbox实现多选
 46. 一个带半圆的卡片
 47. 自定义导航栏（精准定位）
+48. 商城首页普通版（自定义导航栏）
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -117,6 +118,7 @@ movable-area组件实现滑动删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1017/234406_e90b242a_8576727.gif "导出.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1025/001059_4a1f6a90_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1026/221355_86e61315_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1029/180110_5a53c09a_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
