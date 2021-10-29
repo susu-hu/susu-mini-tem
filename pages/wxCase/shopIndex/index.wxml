@@ -1,0 +1,56 @@
+<view class="custom_head">
+  <view class="custom_title flex-row"
+    style="height:{{navObj}}px;padding-top:{{navTop}}px;padding-right:{{navObjWid+5}}px;">hi,关注+Star！</view>
+  <view class="head_swiper">
+    <swiper class="swiper_box" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}"
+      circular="true">
+      <swiper-item wx:for="{{banner}}" wx:key="index">
+        <image bindtap="clickImg" src="{{item}}" mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+<view class="band_box flex-row">
+  <swiper class="swiper_band" indicator-dots="{{true}}" autoplay="{{false}}" bindanimationfinish="swiperChange">
+    <swiper-item wx:for="{{band_list}}" wx:key="index">
+      <view class="clearfix">
+        <block wx:for="{{item.items}}" wx:key="item" wx:for-item="item0">
+          <view class="flex-column band_item">
+            <image src="{{item0.icon}}" class="band_icon" />
+            <text>{{item0.name}}</text>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 热门活动 -->
+<view class="hot_box">
+  <view class="flex-row hot_title">
+    <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
+    <text>hots</text>
+  </view>
+  <view class="flex-row">
+    <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="floor1_icon" mode="aspectFill"/>
+    <view>
+      <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="floor2_icon "mode="aspectFill" />
+      <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="floor2_icon"mode="aspectFill" />
+    </view>
+  </view>
+</view>
+<!-- 近期资讯 -->
+<view class="hot_box">
+  <view class="flex-row hot_title">
+    <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="news_icon" />
+    <text>news</text>
+  </view>
+  <view class="flex-row news_box">
+    <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="g_icon" />
+    <view class="news_info">
+      <view class="line_ellipsis">苏苏苏苏苏苏苏苏苏苏苏苏苏苏苏苏苏</view>
+      <view class="flex-row news_item">
+        <text>苏苏来了</text>
+      </view>
+    </view>
+  </view>
+</view>

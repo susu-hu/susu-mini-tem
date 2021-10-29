@@ -217,6 +217,10 @@ Page({
             name:'导航栏自定义',
             url:'/pages/wxCase/costomNav/index'
           },
+          {
+            name:'一个商城首页（普通版）',
+            url:'/pages/wxCase/shopIndex/index'
+          },
         ]
       },
       {

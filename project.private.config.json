@@ -23,6 +23,12 @@
           "pathName": "pages/wxCase/costomNav/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/shopIndex/index",
+          "pathName": "pages/wxCase/shopIndex/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
