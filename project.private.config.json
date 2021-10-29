@@ -29,6 +29,18 @@
           "pathName": "pages/wxCase/shopIndex/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/conic-gradient/index",
+          "pathName": "pages/cssCase/conic-gradient/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/svgCircle/index",
+          "pathName": "pages/wxCase/svgCircle/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

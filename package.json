@@ -1,0 +1,18 @@
+{
+  "name": "wxmini_demo",
+  "version": "1.0.0",
+  "description": "#### Description 微信小程序实现日历，可进行月份切换\r 微信小程序实现物流页面",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:susuhhhhhh/wxmini_demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.9.2"
+  }
+}
