@@ -40,6 +40,8 @@ picker {
   width: 750rpx;
   height: 319rpx;
   position: relative;
+  padding-top: 40px;
+  box-sizing: border-box;
 }
 
 .head::after {
@@ -57,10 +59,10 @@ picker {
 .swiper_box {
   width: 702rpx;
   height: 348rpx;
-  background: #FFFFFF;
+  background: pink;
   box-shadow: 0px 5rpx 10rpx rgba(0, 0, 0, 0.09);
   border-radius: 20rpx;
-  margin: 20rpx auto;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -85,6 +87,6 @@ swiper-item image {
   width: 28rpx;
   height: 8rpx;
   border-radius: 4rpx;
-  background: #147ABE;
+  background: #8BDEFC;
 }
 

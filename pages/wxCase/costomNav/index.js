@@ -10,13 +10,13 @@ Page({
     navObj: app.globalData.navObj, //胶囊的高度
     navObjWid: app.globalData.navObjWid, //胶囊宽度+距右距离
     storeList: [{
-        name: '苏苏的门店嘻嘻哈哈'
+        name: '苏苏的嘻嘻哈哈'
       },
       {
-        name: '楚翘城母婴店'
+        name: '猪猪的嘻嘻哈哈'
       },
       {
-        name: '卡us封ID哈沙发是砍价得更方便'
+        name: '可可的嘻嘻哈哈'
       },
     ],
     store_name: '', //店铺名称
