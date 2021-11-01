@@ -41,6 +41,12 @@
           "pathName": "pages/wxCase/svgCircle/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/vantCalen/index",
+          "pathName": "pages/vantCalen/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

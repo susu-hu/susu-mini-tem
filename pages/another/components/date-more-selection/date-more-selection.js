@@ -1,34 +1,45 @@
 Component({
   properties: {
     // 显示开关
-    isShow: { type: Boolean, value: false },
+    isShow: {
+      type: Boolean,
+      value: false
+    },
     // 开始时间
-    timeStart: { type: String, value: '', observer: function(e) {
-      if (this.data.data.length) {
-        this.setDate()
-      } else {
-        setTimeout(() => {
+    timeStart: {
+      type: String,
+      value: '',
+      observer: function (e) {
+        if (this.data.data.length) {
           this.setDate()
-        }, 50);
+        } else {
+          setTimeout(() => {
+            this.setDate()
+          }, 50);
+        }
       }
-    }},
+    },
     // 结束时间
-    timeEnd: { type: String, value: '', observer: function(e) {
-      if (this.data.data.length) {
-        this.setDate()
-      } else {
-        setTimeout(() => {
+    timeEnd: {
+      type: String,
+      value: '',
+      observer: function (e) {
+        if (this.data.data.length) {
           this.setDate()
-        }, 50);
+        } else {
+          setTimeout(() => {
+            this.setDate()
+          }, 50);
+        }
       }
-    }},
+    },
   },
   data: {
-    year: '',// 年
-    month: '',// 月
-    date: '',// 日
-    today: {},// 今天的年月日
-    data: [// 容器
+    year: '', // 年
+    month: '', // 月
+    date: '', // 日
+    today: {}, // 今天的年月日
+    data: [ // 容器
       // {
       //   year: '',
       //   month: '',
@@ -64,14 +75,23 @@ Component({
       let month = _date.getMonth() + 1
       let date = _date.getDate()
       // 初始化当月数据
-      this.setData({ year, month, date, today: { year, month, date } })
+      this.setData({
+        year,
+        month,
+        date,
+        today: {
+          year,
+          month,
+          date
+        }
+      })
       this.getCalendar()
     },
 
     // 获取日历（每次获得半年的月份）
     async getCalendar() {
 
-      for(let i=0; i<6; i++) {
+      for (let i = 0; i < 6; i++) {
         // set每月的数据
         this.data.data.push(await this.showThisDay(this.data.year, this.data.month, this.data.date))
         if (this.data.month == 12) { // 加一年 1月
@@ -81,7 +101,7 @@ Component({
           this.data.month = this.data.month + 1
         }
       }
-      
+
       this.setData({
         data: this.data.data
       })
@@ -91,9 +111,10 @@ Component({
     showThisDay(_year, _month) {
       return new Promise((resolve, reject) => {
         let canlender = []
-        let year = _year, month = _month
+        let year = _year,
+          month = _month
         let firstDay = new Date(year, month - 1, 1).getDay()
-        
+
         let lastMonthDays = []
         // 上个月需要显示的天数
         for (let i = firstDay - 1; i >= 0; i--) {
@@ -114,15 +135,15 @@ Component({
             'date': i,
             'month': month,
             'noDay': false,
-            'isFront': i==1 ? true : false,
-            'isBack': i==eachLast ? true : false,
+            'isFront': i == 1 ? true : false,
+            'isBack': i == eachLast ? true : false,
           }
-          
+
           if (this.data.today.year == year && this.data.today.month == month) {
             if (i < this.data.today.date) {
               // 是否小于本月日期
               info.noLessMonth = true
-            } 
+            }
             // 测试
             // else if (i == 13) {
             //   // 是否开始状态
@@ -135,8 +156,8 @@ Component({
             //   info.isMatter = true
             // }
           }
-          
-          currentMonthDys.push( info )
+
+          currentMonthDys.push(info)
         }
 
         let nextMonthDays = []
@@ -175,13 +196,21 @@ Component({
     setDate() {
       console.log('监听开始时间和结束时间修改')
       let item1 = this.data.timeStart.split('-')
-      let _item1 = { year: item1[0], month: item1[1], date: item1[2] }
+      let _item1 = {
+        year: item1[0],
+        month: item1[1],
+        date: item1[2]
+      }
       let item2 = this.data.timeEnd.split('-')
-      let _item2 = { year: item2[0], month: item2[1], date: item2[2] }
+      let _item2 = {
+        year: item2[0],
+        month: item2[1],
+        date: item2[2]
+      }
 
-      for(let item of this.data.data) {
-        for(let weeks of item.weeks) {
-          for(let i of weeks) {
+      for (let item of this.data.data) {
+        for (let weeks of item.weeks) {
+          for (let i of weeks) {
             let status1 = (i.year == _item1.year && i.month == _item1.month && i.date == _item1.date)
             let status2 = (i.year == _item2.year && i.month == _item2.month && i.date == _item2.date)
             if (status1 && status2) {
@@ -214,9 +243,9 @@ Component({
     // 清除日期
     clearDate() {
       return new Promise((resolve, reject) => {
-        for(let item of this.data.data) {
-          for(let weeks of item.weeks) {
-            for(let i of weeks) {
+        for (let item of this.data.data) {
+          for (let weeks of item.weeks) {
+            for (let i of weeks) {
               i.isStart = false
               i.isEnd = false
               i.isMatter = false
@@ -232,7 +261,11 @@ Component({
 
     // 修改当前点击状态为'开始' type改为'已选择开始时间'
     editItem1(param) {
-      let { index, i1, i2 } = param
+      let {
+        index,
+        i1,
+        i2
+      } = param
       this.data.data[index].weeks[i1][i2].isStart = true
       this.setData({
         type: '已选择开始时间',
@@ -242,17 +275,31 @@ Component({
 
     // 选择结束时间
     editItem2(param) {
-      let { data } = this.data
-      let { index, i1, i2 } = param
-      
+      let {
+        data
+      } = this.data
+      let {
+        index,
+        i1,
+        i2
+      } = param
+
       if ((getDate1() - getDate2()) >= 0) {
         // 当前点击时间晚于或等于开始时间
         // 修改当前点击状态为'结束' 开始结束中间日期状态修改为'true' type改为'已选择结束时间'
-        this.editItem3({ index, i1, i2 })
+        this.editItem3({
+          index,
+          i1,
+          i2
+        })
       } else {
         // 当前点击时间早于开始时间
         // 修改之前开始状态改为'结束' 修改当前点击状态为'开始' 开始结束中间日期状态修改为'true' type改为'已选择结束时间'
-        this.editItem4({ index, i1, i2 })
+        this.editItem4({
+          index,
+          i1,
+          i2
+        })
       }
 
       // 当前选中日期时间戳
@@ -267,9 +314,9 @@ Component({
       // 之前选中日期时间戳
       function getDate2() {
         let item2 = {}
-        for(let item of data) {
-          for(let weeks of item.weeks) {
-            for(let i of weeks) {
+        for (let item of data) {
+          for (let weeks of item.weeks) {
+            for (let i of weeks) {
               if (i.isStart) {
                 item2 = i
               }
@@ -285,14 +332,18 @@ Component({
 
     // 修改当前点击状态为'结束' 开始结束中间日期状态修改为'true' type改为'已选择结束时间'
     editItem3(param) {
-      let { index, i1, i2 } = param
+      let {
+        index,
+        i1,
+        i2
+      } = param
       // 修改当前点击状态为'结束'
       this.data.data[index].weeks[i1][i2].isEnd = true
       let _item1 = {}
       let _item2 = this.data.data[index].weeks[i1][i2]
-      for(let item of this.data.data) {
-        for(let weeks of item.weeks) {
-          for(let i of weeks) {
+      for (let item of this.data.data) {
+        for (let weeks of item.weeks) {
+          for (let i of weeks) {
             if (i.isStart) {
               _item1 = i
             }
@@ -312,12 +363,16 @@ Component({
 
     // 修改之前开始状态改为'结束' 修改当前点击状态为'开始' 开始结束中间日期状态修改为'true' type改为'已选择结束时间'
     editItem4(param) {
-      let { index, i1, i2 } = param
+      let {
+        index,
+        i1,
+        i2
+      } = param
       let _item1 = this.data.data[index].weeks[i1][i2]
       let _item2 = {}
-      for(let item of this.data.data) {
-        for(let weeks of item.weeks) {
-          for(let i of weeks) {
+      for (let item of this.data.data) {
+        for (let weeks of item.weeks) {
+          for (let i of weeks) {
             if (i.isStart) {
               i.isStart = false
               // 修改之前开始状态改为'结束'
@@ -342,9 +397,9 @@ Component({
 
     // 开始结束中间日期状态修改为'true'
     editItem5(_item1, _item2) {
-      for(let item of this.data.data) {
-        for(let weeks of item.weeks) {
-          for(let i of weeks) {
+      for (let item of this.data.data) {
+        for (let weeks of item.weeks) {
+          for (let i of weeks) {
 
             // 筛选年范围
             if (_item1.year == _item2.year) {
@@ -400,9 +455,22 @@ Component({
 
     // 选择日期
     getThisData(e) {
-      let { data, type } = this.data
-      let { title, index, i1, i2 } = e.currentTarget.dataset
-      console.log('点击参数接收值:', { title, index, i1, i2 })
+      let {
+        data,
+        type
+      } = this.data
+      let {
+        title,
+        index,
+        i1,
+        i2
+      } = e.currentTarget.dataset
+      console.log('点击参数接收值:', {
+        title,
+        index,
+        i1,
+        i2
+      })
       console.log('点击值:', data[index].weeks[i1][i2])
       console.log('当前type:', type)
 
@@ -411,20 +479,32 @@ Component({
           // 清除日期
           this.clearDate().then(() => {
             // 修改当前点击状态为'开始' type改为'已选择开始时间'
-            this.editItem1({ index, i1, i2 })
+            this.editItem1({
+              index,
+              i1,
+              i2
+            })
           })
           break;
         case '已选择开始时间':
           // 选择结束时间
-          this.editItem2({ index, i1, i2 })
+          this.editItem2({
+            index,
+            i1,
+            i2
+          })
           break;
         case '已选择结束时间':
           // 清除日期
           this.clearDate().then(() => {
             // 修改当前点击状态为'开始' type改为'已选择开始时间'
-            this.editItem1({ index, i1, i2 })
+            this.editItem1({
+              index,
+              i1,
+              i2
+            })
           })
-        break;
+          break;
       }
     },
 
@@ -440,9 +520,9 @@ Component({
 
       let start = {}
       let end = {}
-      for(let item of this.data.data) {
-        for(let weeks of item.weeks) {
-          for(let i of weeks) {
+      for (let item of this.data.data) {
+        for (let weeks of item.weeks) {
+          for (let i of weeks) {
             if (i.isStart) {
               start = i
             }
@@ -453,7 +533,10 @@ Component({
         }
       }
 
-      this.triggerEvent('tapYes', { start, end });
+      this.triggerEvent('tapYes', {
+        start,
+        end
+      });
       this.tapNo()
     }
 

@@ -29,7 +29,8 @@
     "pages/asyncPromise/index",
     "pages/demo/index2",
     "pages/cal/index2",
-    "pages/cal2/index2"
+    "pages/cal2/index2",
+    "pages/vantCalen/index"
   ],
   "subPackages": [
     {
