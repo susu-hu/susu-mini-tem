@@ -7,6 +7,3 @@
   min-date="{{ minDate }}"
   max-date="{{ maxDate }}"
 />
-<!--   min-date="{{ minDate }}"
-   -->
-   {{aa}}

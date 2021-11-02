@@ -45,9 +45,6 @@ Page({
     return months;
   },
   onShow() {
-    // this.setData({
-    //   aa: this.MonthsBetw('2021-1-1', '2021-12-1')
-    // })
     this.setData({
       aa:this.run()
     })
