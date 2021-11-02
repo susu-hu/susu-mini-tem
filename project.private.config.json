@@ -47,6 +47,12 @@
           "pathName": "pages/vantCalen/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/bgImg/index",
+          "pathName": "pages/wxCase/bgImg/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

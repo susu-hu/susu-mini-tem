@@ -34,6 +34,10 @@ Page({
           {
             name:'日历样式四',
             url:'/pages/cal2/index2'
+          },
+          {
+            name:'vant日历多日期选择',
+            url:'/pages/vantCalen/index2'
           }
         ]
       }, 
@@ -220,6 +224,10 @@ Page({
           {
             name:'一个商城首页（普通版）',
             url:'/pages/wxCase/shopIndex/index'
+          },
+          {
+            name:'背景图片在一屏内且满屏',
+            url:'/pages/wxCase/bgImg/index'
           },
         ]
       },
