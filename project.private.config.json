@@ -13,32 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/another/dateChose/index",
-          "pathName": "pages/another/dateChose/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/costomNav/index",
-          "pathName": "pages/wxCase/costomNav/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/shopIndex/index",
-          "pathName": "pages/wxCase/shopIndex/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cssCase/conic-gradient/index",
-          "pathName": "pages/cssCase/conic-gradient/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/svgCircle/index",
-          "pathName": "pages/wxCase/svgCircle/index",
+          "name": "pages/wxCase/vantCircle/index",
+          "pathName": "pages/wxCase/vantCircle/index",
           "query": "",
           "scene": null
         },
@@ -51,6 +27,18 @@
         {
           "name": "pages/wxCase/bgImg/index",
           "pathName": "pages/wxCase/bgImg/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/circleBar/index",
+          "pathName": "pages/wxCase/circleBar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/customSheet/index",
+          "pathName": "pages/wxCase/customSheet/index",
           "query": "",
           "scene": null
         }

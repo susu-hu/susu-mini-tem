@@ -1,0 +1,17 @@
+/* pages/wxCase/customSheet/index.wxss */
+page{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+.show {
+  width: 400rpx;
+  height: 200rpx;
+  background: rgba(0, 0, 0, .3);
+  color: #fff;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 200rpx;
+}

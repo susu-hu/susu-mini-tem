@@ -37,7 +37,7 @@ Page({
           },
           {
             name:'vant日历多日期选择',
-            url:'/pages/vantCalen/index2'
+            url:'/pages/vantCalen/index'
           }
         ]
       }, 
@@ -65,7 +65,6 @@ Page({
             name:'自定义滚动条',
             url:'/pages/another/customScroll/index'
           }
-
         ]
       },
       {
@@ -210,10 +209,6 @@ Page({
             url:'/pages/wxCase/pubuliu/index'
           },
           {
-            name:'瀑布流',
-            url:'/pages/wxCase/pubuliu/index'
-          },
-          {
             name:'网易云音乐播放',
             url:'/pages/wxCase/wclound/index'
           },
@@ -228,6 +223,14 @@ Page({
           {
             name:'背景图片在一屏内且满屏',
             url:'/pages/wxCase/bgImg/index'
+          },
+          {
+            name:'实现进度条的多种方式',
+            url:'/pages/wxCase/circleBar/index'
+          },
+          {
+            name:'自定义actionSheet面板',
+            url:'/pages/wxCase/customSheet/index'
           },
         ]
       },
@@ -264,8 +267,7 @@ Page({
   },
 
   onReady: function () {
-    console.log(this.getSeconds(61.24))
-
+    // console.log(this.getSeconds(61.24))
   },
   showTip(){
     util.toolsFn.toastMsg('苏苏就是小苏苏呀！！！喜欢的点个关注啊~创作不易，star一下~')

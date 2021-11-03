@@ -114,8 +114,10 @@
         "wclound/index",
         "costomNav/index",
         "shopIndex/index",
-        "svgCircle/index",
-        "bgImg/index"
+        "vantCircle/index",
+        "bgImg/index",
+        "circleBar/index",
+        "customSheet/index"
       ]
     },
     {

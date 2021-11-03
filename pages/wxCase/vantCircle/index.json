@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "van-circle": "@vant/weapp/circle/index"
-  }
+  },
+  "navigationBarTitleText": "vant的圆环进度条~"
 }
