@@ -12,10 +12,13 @@
   </view>
 </view>
 <view class="head" style="margin-top:{{navHeight}}px">
-  <swiper class="swiper_box" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}"
-    circular="true">
-    <swiper-item wx:for="{{banner}}" wx:key="index">
-      <!-- <image bindtap="clickImg" src="{{item}}" mode="aspectFill"></image> -->
-    </swiper-item>
-  </swiper>
+  <view class="head_bg"></view>
+  <view style="padding-top: 40rpx;">
+    <swiper class="swiper_box" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}"
+      circular="true">
+      <swiper-item wx:for="{{banner}}" wx:key="index">
+        <image bindtap="clickImg" src="{{item}}" mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
 </view>

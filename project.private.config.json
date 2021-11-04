@@ -41,6 +41,12 @@
           "pathName": "pages/wxCase/customSheet/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/costomNav/index",
+          "pathName": "pages/wxCase/costomNav/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

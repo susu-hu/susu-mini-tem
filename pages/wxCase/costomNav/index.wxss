@@ -39,12 +39,17 @@ picker {
 .head {
   width: 750rpx;
   height: 319rpx;
-  position: relative;
-  padding-top: 40px;
-  box-sizing: border-box;
 }
 
-.head::after {
+.head_bg {
+  width: 100%;
+  height: 319rpx;
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+}
+
+.head_bg::after {
   content: '';
   width: 140%;
   height: 319rpx;
@@ -64,11 +69,13 @@ picker {
   border-radius: 20rpx;
   margin: 0 auto;
   overflow: hidden;
+  transform: translateY(0);
 }
 
 swiper-item image {
   width: 100%;
   height: 100%;
+  border-radius: 20rpx;
 }
 
 .swiper_box .wx-swiper-dots.wx-swiper-dots-horizontal {
@@ -89,4 +96,3 @@ swiper-item image {
   border-radius: 4rpx;
   background: #8BDEFC;
 }
-

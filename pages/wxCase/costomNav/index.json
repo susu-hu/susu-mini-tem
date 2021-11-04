@@ -1,5 +1,6 @@
 {
   "usingComponents": {},
   "navigationBarTitleText": "导航栏自定义~",
-  "navigationStyle":"custom"
+  "navigationStyle":"custom",
+  "enablePullDownRefresh": false
 }

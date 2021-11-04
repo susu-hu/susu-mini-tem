@@ -1,21 +1,19 @@
 <!--pages/wxCase/customSheet/index.wxml-->
-<view class="show">点击显示弹框</view>
+<view class="show" catchtap="showPoster">点击显示弹框</view>
 <view class="mask" hidden="{{show_poster}}" catchtap="closeModal"></view>
-<view class="share_info flex-column" hidden="{{show_poster}}">
-  <view class="share_img">
-    <image class="poster" src="https://i.postimg.cc/k5cyysKQ/123123.png" mode="heightFix" />
+<view class="share_btn" hidden="{{show_poster}}">
+  <view class="flex-row btn_list j_b">
+    <button class="flex-column" open-type="share">
+      <image src="../img/share_icon.png"></image>
+      <text>分享海报给朋友</text>
+    </button>
+    <button class="flex-column" catchtap="downloadImg">
+      <image src="../img/download_icon.png"></image>
+      <text>保存海报至本地</text>
+    </button>
   </view>
-  <view class="share_btn">
-    <view class="flex-row btn_list j_b">
-      <button class="flex-column" open-type="share">
-        <image src="/img/share_icon.png"></image>
-        <text>分享海报给朋友</text>
-      </button>
-      <button class="flex-column">
-        <image src="/img/download_icon.png"></image>
-        <text>保存海报至本地</text>
-      </button>
-    </view>
-    <view class="btn_cancel" catchtap="closeModal">取消</view>
-  </view>
+  <view class="btn_cancel" catchtap="closeModal">取消</view>
+</view>
+<view class="share_img" hidden="{{show_poster}}">
+  <image class="poster" src="{{poster}}" show-menu-by-longpress="true" mode="heightFix" />
 </view>
