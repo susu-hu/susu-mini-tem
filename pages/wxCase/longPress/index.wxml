@@ -1,0 +1,4 @@
+<!--pages/wxCase/longPress/index.wxml-->
+<image class="bg1" show-menu-by-longpress="{{true}}"
+  src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.zhimg.com%2F50%2Fv2-6fe02fca98e2b5e5d41ed0d206db3f1f_hd.jpg&refer=http%3A%2F%2Fpic2.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638437301&t=7964813378f97508a545200f453d94ef'>
+</image>

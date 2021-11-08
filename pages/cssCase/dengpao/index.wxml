@@ -1,0 +1,10 @@
+<!--pages/cssCase/dengpao/index.wxml-->
+<view class="con">
+  <view class="box">
+    <view class="box_view"></view>
+  </view>
+</view>
+<view class="susu">welcome to susu blog</view>
+<view class="bottom">
+  <view class="shadow"></view>
+</view>

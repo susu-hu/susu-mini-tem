@@ -1,0 +1,164 @@
+/* pages/cssCase/dengpao/index.wxss */
+page {
+  background: #001933;
+}
+
+::after,
+::before {
+  box-sizing: border-box
+}
+
+.con {
+  width: 75rpx;
+  height: 275rpx;
+  animation: box-swing 3s infinite ease-in-out;
+  transform-origin: top center;
+  position: absolute;
+  top: -10rpx;
+  left: 40px;
+}
+
+
+.box {
+  z-index: 10;
+  display: block;
+  width: 75rpx;
+  height: 75rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 200rpx;
+  left: calc(50% -(75rpx/2));
+  background: pink;
+  box-shadow: 5rpx 5rpx 80rpx #e4cedf, 5rpx -5rpx 80rpx #e4cedf, -5rpx 5rpx 80rpx #e4cedf, -5rpx -5rpx 80rpx #e4cedf;
+  cursor: pointer;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  width: 35rpx;
+  height: 50rpx;
+  background: #222;
+  bottom: 100%;
+  left: calc(50% -(35rpx/2));
+  z-index: -1;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  width: 10rpx;
+  height: 250rpx;
+  background: #222;
+  bottom: 100%;
+  left: calc(50% - 5rpx);
+  z-index: -1
+}
+
+.box .box_view {
+  display: block;
+  position: absolute;
+  width: 2rpx;
+  height: 30rpx;
+  background: #222;
+  top: 2rpx;
+  left: 28rpx;
+  box-shadow: 17rpx 0 #222;
+  opacity: 1;
+}
+
+.box .box_view::after {
+  content: "";
+  position: absolute;
+  bottom: -2rpx;
+  left: 4rpx;
+  background: #222;
+  width: 2rpx;
+  height: 12rpx;
+  display: block;
+  box-shadow: 4.5rpx 0 #222, 9rpx 0 #222;
+}
+
+.box.off {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid #fff
+}
+
+.box_view.off {
+  opacity: 1
+}
+
+@keyframes box-swing {
+  0% {
+    transform: rotate(-10deg)
+  }
+
+  50% {
+    transform: rotate(10deg)
+  }
+
+  100% {
+    transform: rotate(-10deg)
+  }
+}
+
+.bottom {
+  position: absolute;
+  background:rgb(0, 0, 0,.1);
+  height: 200rpx;
+  width: 100%;
+  bottom: 0;
+  left: 0
+}
+
+.bottom .shadow {
+  position: absolute;
+  background: rgb(228, 206, 223,0.4);
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  top: calc(50% - 25rpx);
+  left: calc(50% - 25rpx);
+  box-shadow: 20rpx 20rpx 100rpx #e4cedf, -20rpx 20rpx 100rpx #e4cedf, 20rpx -20rpx 100rpx #e4cedf, -20rpx -20rpx 100rpx #e4cedf;
+  animation: shadow-swing 3s infinite ease-in-out;
+
+}
+
+.shadow.off {
+  background: #000c19;
+  box-shadow: none
+}
+
+@keyframes shadow-swing {
+  0% {
+    transform: translateX(100px)
+  }
+
+  50% {
+    transform: translateX(-100px)
+  }
+
+  100% {
+    transform: translateX(100px)
+  }
+}
+
+.susu {
+  width: 500rpx;
+  height: 300rpx;
+  background: rgba(85, 59, 59, 0.2);
+  box-shadow: 0px 3rpx 40rpx rgba(0, 0, 0, 0.36);
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": " 一个左右摇晃的灯泡",
+  "navigationBarBackgroundColor": "#001933",
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white"
+}
