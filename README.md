@@ -68,6 +68,7 @@ movable-area组件实现滑动删除
 step5：构建npm）
 50. 背景图片在一屏之内
 51.自定义actionSheet+保存图片（开启授权-》引导用户打开设置页）,需在调式下运行。
+52.  一个左右摇摆的灯泡动画
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -126,6 +127,7 @@ step5：构建npm）
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1102/104516_6f6ed9ce_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1102/175157_e2eedfa3_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1107/123530_a8e55a87_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1108/234414_3969cbf4_8576727.gif "灯泡.gif")
 #### 参与贡献
 
 1.  Fork 本仓库
