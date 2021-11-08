@@ -118,7 +118,8 @@
         "vantCircle/index",
         "bgImg/index",
         "circleBar/index",
-        "customSheet/index"
+        "customSheet/index",
+        "downFile/index"
       ]
     },
     {

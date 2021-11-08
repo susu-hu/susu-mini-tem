@@ -236,6 +236,10 @@ Page({
             name: '自定义actionSheet面板',
             url: '/pages/wxCase/customSheet/index'
           },
+          {
+            name: '保存多张图片（下载文件)',
+            url: '/pages/wxCase/downFile/index'
+          },
         ]
       },
       {
