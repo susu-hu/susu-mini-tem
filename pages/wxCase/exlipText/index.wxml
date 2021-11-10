@@ -1,0 +1,7 @@
+<!--pages/wxCase/exlipText/index.wxml-->
+<view class="tips_box {{ellipsis?'ellipsis':'unellipsis'}}">
+  <rich-text nodes="{{text}}"></rich-text>
+</view>
+<view class='img_box' bindtap='ellipsis'>
+  <image class='img_ellipsis' src="{{ellipsis?'../img/open.png':'../img/close.png'}}"></image>
+</view>

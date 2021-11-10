@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    off: false, //是否关闭灯泡
+  },
+  close() {
+    this.setData({
+      off: !this.data.off
+    })
   },
 
   /**

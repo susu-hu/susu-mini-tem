@@ -18,6 +18,10 @@ page {
   left: 40px;
 }
 
+.con.off {
+  animation: none;
+}
+
 
 .box {
   z-index: 10;
@@ -62,11 +66,11 @@ page {
   position: absolute;
   width: 2rpx;
   height: 30rpx;
-  background: #222;
+  background: #fff;
   top: 2rpx;
   left: 28rpx;
-  box-shadow: 17rpx 0 #222;
-  opacity: 1;
+  box-shadow: 17rpx 0 #fff;
+  opacity: 0;
 }
 
 .box .box_view::after {
@@ -74,17 +78,17 @@ page {
   position: absolute;
   bottom: -2rpx;
   left: 4rpx;
-  background: #222;
+  background: #fff;
   width: 2rpx;
   height: 12rpx;
   display: block;
-  box-shadow: 4.5rpx 0 #222, 9rpx 0 #222;
+  box-shadow: 4.5rpx 0 #fff, 9rpx 0 #fff;
 }
 
 .box.off {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #fff
+  border: 1px solid #fff;
 }
 
 .box_view.off {
@@ -107,7 +111,7 @@ page {
 
 .bottom {
   position: absolute;
-  background:rgb(0, 0, 0,.1);
+  background: rgb(0, 0, 0, .1);
   height: 200rpx;
   width: 100%;
   bottom: 0;
@@ -116,7 +120,7 @@ page {
 
 .bottom .shadow {
   position: absolute;
-  background: rgb(228, 206, 223,0.4);
+  background: rgb(228, 206, 223, 0.4);
   width: 50rpx;
   height: 50rpx;
   border-radius: 50%;
@@ -128,8 +132,7 @@ page {
 }
 
 .shadow.off {
-  background: #000c19;
-  box-shadow: none
+  display: none;
 }
 
 @keyframes shadow-swing {

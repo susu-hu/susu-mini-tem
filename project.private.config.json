@@ -53,6 +53,24 @@
           "pathName": "pages/wxCase/downFile/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/dengpao/index",
+          "pathName": "pages/cssCase/dengpao/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/touchMove2/index",
+          "pathName": "pages/touchMove2/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/exlipText/index",
+          "pathName": "pages/wxCase/exlipText/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

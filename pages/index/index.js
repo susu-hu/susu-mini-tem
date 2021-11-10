@@ -240,6 +240,10 @@ Page({
             name: '保存多张图片（下载文件)',
             url: '/pages/wxCase/downFile/index'
           },
+          {
+            name: '文字的展开与收起)',
+            url: '/pages/wxCase/exlipText/index'
+          },
         ]
       },
       {

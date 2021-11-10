@@ -1,0 +1,36 @@
+/* pages/wxCase/exlipText/index.wxss */
+.tips_box {
+  /* 超出的高度展示隐藏箭头*/
+  width: 710rpx;
+  background: #fff;
+  margin: 20rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: clip;
+  word-break: break-all;
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+  color: #999;
+  font-size: 30rpx;
+}
+
+.img_box {
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.img_ellipsis {
+  width: 45rpx;
+  height: 50rpx;
+}
+
+.ellipsis {
+  -webkit-line-clamp: 5;
+  opacity: 0.75
+}
+
+.unellipsis {
+  -webkit-line-clamp: 0;
+  opacity: 1
+}
