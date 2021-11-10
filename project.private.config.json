@@ -71,6 +71,12 @@
           "pathName": "pages/wxCase/exlipText/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/choseAddress/index",
+          "pathName": "pages/choseAddress/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
