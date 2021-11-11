@@ -1,0 +1,5 @@
+<!--pages/subPack/roateY180/index.wxml-->
+<view class="main">
+  <view class="box b1" catchtap="showb1" style="{{styleA}}"></view>
+  <view class="box b2" catchtap="showb2" style="{{styleB}}"></view>
+</view>

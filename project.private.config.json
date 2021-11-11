@@ -35,6 +35,12 @@
           "pathName": "pages/another/clockin/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/subPack/roateY180/index",
+          "pathName": "pages/subPack/roateY180/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

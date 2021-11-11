@@ -112,6 +112,10 @@ Page({
             name: 'canvas2d圆环进度条(同层渲染)',
             url: '/pages/subPack/canvas2d/index'
           },
+          {
+            name: '卡片实现翻转',
+            url: '/pages/subPack/roateY180/index'
+          },
         ]
       },
       {
@@ -261,6 +265,10 @@ Page({
           {
             name: '关键字高亮',
             url: '/pages/jsCase/keyWordHight/index'
+          },
+          {
+            name: '点击实现震动',
+            url: '/pages/jsCase/shaing/index'
           },
         ]
       }

@@ -1,0 +1,12 @@
+/* pages/jsCase/shaing/index.wxss */
+view{
+  background-color: pink;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50rpx;
+  font-size: 30rpx;
+  color: #fff;
+  margin: 40rpx auto;
+}

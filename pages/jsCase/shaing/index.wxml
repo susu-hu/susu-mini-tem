@@ -1,0 +1,2 @@
+<!--pages/jsCase/shaing/index.wxml-->
+<view bindtap="btnFun">点击</view>

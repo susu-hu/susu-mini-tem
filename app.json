@@ -75,7 +75,8 @@
         "loading/index2",
         "loading/index3",
         "loading/loadPage",
-        "otherAnimation/index"
+        "otherAnimation/index",
+        "roateY180/index"
       ]
     },
     {
@@ -135,7 +136,8 @@
         "historySearch/index",
         "keyWordHight/index",
         "addressMap/index",
-        "addressMap/index2"
+        "addressMap/index2",
+        "shaing/index"
       ]
     }
   ],
