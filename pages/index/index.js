@@ -244,6 +244,10 @@ Page({
             name: '文字的展开与收起)',
             url: '/pages/wxCase/exlipText/index'
           },
+          {
+            name: '一定长度文字的展开与收起',
+            url: '/pages/wxCase/exlipTwo/index2'
+          },
         ]
       },
       {

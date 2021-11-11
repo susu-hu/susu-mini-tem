@@ -1,0 +1,13 @@
+<!--pages/jsCase/addressMap/index2.wxml-->
+<!-- 
+  腾讯地图调用地址：https://apis.map.qq.com/ws/geocoder/v1/?location=${latitude},${longitude}&key=${keys}
+  百度地图调用地址： https://apis.map.baidu.com/ws/geocoder/v2/?location=${latitude},${longitude}&key=${keys}
+ -->
+
+<view>{{district}}</view>
+
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+  <view class="picker">
+    当前选择：{{region[0]}} - {{region[1]}} - {{region[2]}}
+  </view>
+</picker>

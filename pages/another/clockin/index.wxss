@@ -1,0 +1,385 @@
+/* pages/another/clockin/index.wxss */
+page {
+  background-color: #f4f4f4;
+}
+
+.gs_banner image {
+  width: 750rpx;
+  height: 256rpx;
+  vertical-align: top;
+}
+
+.gs_continue {
+  background-color: #fff;
+  padding: 30rpx 20rpx;
+}
+
+.gs_continue view:first-child {
+  font-size: 34rpx;
+  color: #454545;
+  padding-bottom: 20rpx;
+}
+
+.gs_continue view:last-child {
+  font-size: 32rpx;
+  color: #707070;
+
+}
+
+.gs_continue view text {
+  color: #dd2522;
+}
+
+.gs_sign {
+  margin-top: 30rpx;
+}
+
+.gs_sign_box {
+  background-color: #fff;
+  width: 677rpx;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 15rpx;
+}
+
+.gs_pillar {
+  overflow: hidden;
+  position: absolute;
+  top: -16rpx;
+  width: 100%;
+}
+
+.gs_pillar .gs_post {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.gs_pillar .gs_post view {
+  display: inline-block;
+  width: 18rpx;
+  height: 42rpx;
+  background-color: #53acfc;
+  border-radius: 20rpx;
+}
+
+.gs_sign_day {
+  padding: 60rpx 20rpx 0;
+}
+
+.gs_sign_day image {
+  width: 45rpx;
+  height: 45rpx;
+  vertical-align: middle;
+  position: relative;
+  bottom: 6rpx;
+}
+
+.gs_sign_day view {
+  display: inline-block;
+  font-size: 30rpx;
+  margin-left: 14rpx;
+  color: #707070;
+}
+
+.gs_sign_day view text {
+  color: #dd2522;
+}
+
+.gs_sign_content {
+  padding: 20rpx;
+}
+
+.gs_week {
+  overflow: hidden;
+}
+
+.gs_wook {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.gs_wook view {
+  display: inline-block;
+  font-size: 30rpx;
+  color: #707070;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.gs_clocksucceed {
+  position: absolute;
+  top: 10rpx;
+  left: 16rpx;
+}
+
+.gs_clocksucceed image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: bottom;
+  position: relative;
+  bottom: 2rpx;
+}
+
+.gs_sign_content .gs_week:nth-child(2) .gs_wook view {
+  color: #454545;
+}
+
+.gs_circle {
+  padding: 50rpx 0;
+}
+
+.gs_incircle {
+  width: 225rpx;
+  height: 225rpx;
+  background-color: #cce6ff;
+  border-radius: 50%;
+  padding: 10rpx;
+  margin: 20rpx auto;
+  cursor: pointer;
+}
+
+.gs_excircle {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.gs_innercircle {
+  width: 190rpx;
+  height: 190rpx;
+  background-color: #8bc4f6;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 36rpx;
+}
+
+.gs_calendar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.gs_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.gs_gs_calendar_box {
+  position: absolute;
+  top: 180rpx;
+  left: 40rpx;
+  width: 677rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.canlendarTopView {
+  overflow: hidden;
+  padding: 40rpx 20rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.leftBgView {
+  float: left;
+  width: 153rpx;
+  text-align: center;
+}
+
+.leftView image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.centerView {
+  float: left;
+  font-size: 32rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 260rpx;
+  text-align: center;
+}
+
+.rightBgView {
+  float: left;
+  width: 156rpx;
+  text-align: center;
+}
+
+.rightView image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.weekBgView {
+  overflow: hidden;
+}
+
+.weekView {
+  float: left;
+  width: 14.28571428571429%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #707070;
+}
+
+.dateBgView {
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+
+.dateView {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.datesView {
+  font-size: 30rpx;
+  color: #2b2b2b;
+}
+
+.dateOn {
+  border-radius: 50%;
+  background-color: #53acfc;
+  color: #fff !important;
+}
+
+.del {
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #909090;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.del>text {
+  color: #fff;
+  font-size: 36rpx;
+}
+
+.leftView>text {
+  font-size: 40rpx;
+}
+
+.clocksucceed {
+  position: absolute;
+  top: -3rpx;
+  left: 20rpx;
+}
+
+.clocksucceed image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  position: relative;
+  bottom: 4rpx;
+}
+
+#fuconl {
+  color: #FF6666;
+}
+
+/* 签到弹窗 */
+.load {
+  width: 80%;
+  height: 600rpx;
+  position: fixed;
+  top: calc((100vh - 800rpx)/2);
+  left: 10%;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  opacity: 1;
+  z-index: 10;
+}
+
+.loadingpic {
+  width: 100%;
+  height: 93%;
+  position: absolute;
+  animation: load 3s linear 1s infinite;
+  z-index: 10;
+  margin-top: 7%;
+}
+
+@keyframes load {
+  0% {
+    webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.load-imagae {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 100rpx calc((100% - 400rpx)/2);
+  position: absolute;
+  z-index: 11;
+}
+
+.load-centent {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 100rpx calc((100% - 400rpx)/2);
+  position: relative;
+  z-index: 12;
+  text-align: center;
+  padding: 25% 10% 5% 10%;
+}
+
+.load-centent>view:nth-child(1) {
+  font-size: 34rpx;
+  color: #fff;
+}
+
+.load-centent>view:nth-child(2) {
+  color: #fff;
+  opacity: 0.7;
+  margin: 20rpx 0;
+  font-size: 24rpx;
+}
+
+.load-centent>view:nth-child(3) {
+  width: 85%;
+  margin: 30rpx 7.5% 0 7.5%;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 40rpx;
+  background-color: #F8D168;
+  color: #EB4331;
+  font-size: 30rpx;
+}

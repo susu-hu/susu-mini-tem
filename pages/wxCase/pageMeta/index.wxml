@@ -1,0 +1,7 @@
+<!--pages/wxCase/pageMeta/index.wxml-->
+<page-meta background-text-style="{{bgTextStyle}}" background-color="{{bgColor}}" background-color-top="{{bgColorTop}}"
+  background-color-bottom="{{bgColorBottom}}" scroll-top="{{scrollTop}}" page-style="color: green"
+  root-font-size="16px">
+  <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}"
+    background-color="{{nbBackgroundColor}}" />
+</page-meta>

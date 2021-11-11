@@ -55,7 +55,9 @@
         "scroll-x/index",
         "dateChose/index",
         "swiper-threeD/index2",
-        "customScroll/index"
+        "customScroll/index",
+        "cal/index",
+        "clockin/index"
       ]
     },
     {
@@ -123,7 +125,8 @@
         "exlipText/index",
         "exlipTwo/index",
         "exlipTwo/index2",
-        "exlipText/index2"
+        "exlipText/index2",
+        "pageMeta/index"
       ]
     },
     {
@@ -131,7 +134,8 @@
       "pages": [
         "historySearch/index",
         "keyWordHight/index",
-        "addressMap/index"
+        "addressMap/index",
+        "addressMap/index2"
       ]
     }
   ],

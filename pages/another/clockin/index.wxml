@@ -1,0 +1,117 @@
+<!--pages/another/clockin/index.wxml-->
+<view class='gs_banner'>
+  <view class='gs_continue'>
+    <view>每日坚持签到</view>
+    <view>总共签到：<text>{{continuity}}</text>天</view>
+  </view>
+</view>
+<view class='gs_sign'>
+  <view class='gs_sign_box'>
+    <view class='gs_pillar'>
+      <view class='gs_post'>
+        <view></view>
+      </view>
+      <view class='gs_post'>
+        <view></view>
+      </view>
+      <view class='gs_post'>
+        <view></view>
+      </view>
+      <view class='gs_post'>
+        <view></view>
+      </view>
+      <view class='gs_post'>
+        <view></view>
+      </view>
+
+    </view>
+    <view class='gs_sign_day'>
+      <image bindtap='onshow' src='/pages/images/sign_icon.png'></image>
+      <view>持续签到 <text>{{continuity}}</text>天</view>
+    </view>
+    <view class='gs_sign_content'>
+      <view class='gs_week'>
+        <block wx:for="{{week}}" wx:key="index">
+          <view class='gs_wook'>
+            <view style='width: {{ sysW }}px; height: {{ sysW }}px; line-height: {{ sysW }}px;'>{{item.wook}}</view>
+          </view>
+        </block>
+      </view>
+      <view class='gs_week'>
+        <block wx:for="{{day}}" wx:key="index">
+          <view class="gs_wook {{ item.wook == getDate ? 'dateOn' : ''}}"
+            style='width: {{ sysW }}px; height: {{ sysW }}px; line-height: {{ sysW }}px;'
+            bindtap="{{item.src?'wenlin':''}}" data-index="{{index}}">
+            <view id="{{item.src?'fuconl':''}}" style="{{item.src && !item.check?'visibility: hidden;':''}}">
+              {{item.wook}}</view>
+            <view class='gs_clocksucceed' wx:if="{{item.src && !item.check}}">
+              <image src='{{item.src}}'></image>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class='gs_circle'>
+        <view class='gs_incircle' style="{{ornot?'background-color:#e7ebed;cursor:auto;':''}}">
+          <view class='gs_excircle' bindtap="{{ornot?'':'dakainc'}}">
+            <view class='gs_innercircle' style="{{ornot?'background-color:#ddd;':''}}">{{ornot?'已打卡':'打卡'}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 弹出部分 -->
+<view class='gs_calendar' style='display:{{display}}'>
+  <view class='gs_bg' bindtap='onhide'></view>
+  <view class='gs_gs_calendar_box'>
+    <view class="canlendarBgView">
+      <view class="canlendarView">
+        <view class="canlendarTopView">
+          <view class="leftBgView" bindtap="handleCalendar" data-handle="prev">
+            <view class="leftView">
+              <text class="cuIcon-back"></text>
+            </view>
+          </view>
+          <view class="centerView">{{cur_year || "--"}} 年 {{cur_month || "--"}} 月</view>
+          <view class="rightBgView" bindtap="handleCalendar" data-handle="next">
+            <view class="leftView">
+              <text class="cuIcon-right"></text>
+            </view>
+          </view>
+        </view>
+        <view class="weekBgView">
+          <view style='width: {{ sysW }}px; height: {{ sysW }}px; line-height: {{ sysW }}px;' class="weekView"
+            wx:for="{{weeks_ch}}" wx:key="index" data-idx="{{index}}">{{item}}</view>
+        </view>
+        <view class="dateBgView">
+          <view wx:if="{{hasEmptyGrid}}" class="dateEmptyView" wx:for="{{empytGrids}}" wx:key="index"
+            data-idx="{{index}}">
+          </view>
+          <view
+            style='{{ index == 0 ? "margin-left:" + sysW * marLet + "px;" : "" }}width: {{ sysW }}px; height: {{ sysW }}px; line-height: {{ sysW }}px;'
+            class="dateView {{item.wook == getDate && judge == 1?'dateOn':''}}" wx:for="{{days}}" wx:key="index"
+            bindtap="{{item.src?'wenldisp':''}}" data-index="{{index}}">
+            <!-- data-idx="{{index}}" bindtap="dateSelectAction" -->
+            <view style="{{item.src && !item.check?'visibility: hidden;':''}}" id="{{item.src?'fuconl':''}}"
+              class="datesView">{{item.wook}}</view>
+            <view class='clocksucceed' wx:if="{{item.src && !item.check}}">
+              <image src='{{item.src}}'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='del'>
+      <text bindtap="onhide" class="cuIcon-close"></text>
+    </view>
+  </view>
+</view>
+<!-- 签到弹窗 -->
+<view class="load" style="{{sign?'':'top:calc((100vh - 750rpx)/2);opacity: 0;z-index:-1;'}}">
+  <image class="load-imagae" src="/pages/images/register.png"></image>
+  <view class="load-centent">
+    <view>签到成功</view>
+    <view>持续签到<span>{{continuity}}</span>天</view>
+    <view bindtap="popup">好的</view>
+  </view>
+</view>

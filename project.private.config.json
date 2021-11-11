@@ -13,62 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/wxCase/vantCircle/index",
-          "pathName": "pages/wxCase/vantCircle/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/vantCalen/index",
-          "pathName": "pages/vantCalen/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/bgImg/index",
-          "pathName": "pages/wxCase/bgImg/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/circleBar/index",
-          "pathName": "pages/wxCase/circleBar/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/customSheet/index",
-          "pathName": "pages/wxCase/customSheet/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/costomNav/index",
-          "pathName": "pages/wxCase/costomNav/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/downFile/index",
-          "pathName": "pages/wxCase/downFile/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cssCase/dengpao/index",
-          "pathName": "pages/cssCase/dengpao/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/touchMove2/index",
-          "pathName": "pages/touchMove2/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/exlipText/index2",
-          "pathName": "pages/wxCase/exlipText/index2",
+          "name": "pages/wxCase/pageMeta/index",
+          "pathName": "pages/wxCase/pageMeta/index",
           "query": "",
           "scene": null
         },
@@ -79,14 +25,14 @@
           "scene": null
         },
         {
-          "name": "pages/wxCase/exlipTwo/index2",
-          "pathName": "pages/wxCase/exlipTwo/index2",
+          "name": "pages/another/cal/index",
+          "pathName": "pages/another/cal/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/choseAddress/index",
-          "pathName": "pages/choseAddress/index",
+          "name": "pages/another/clockin/index",
+          "pathName": "pages/another/clockin/index",
           "query": "",
           "scene": null
         }

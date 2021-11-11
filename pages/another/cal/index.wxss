@@ -1,0 +1,300 @@
+/* pages/another/cal/index.wxss */
+
+.gs_banner image {
+  width: 750rpx;
+  height: 256rpx;
+  vertical-align: top;
+}
+
+.gs_continue {
+  background-color: #fff;
+  padding: 30rpx 20rpx;
+}
+
+.gs_continue view:first-child {
+  font-size: 34rpx;
+  color: #454545;
+  padding-bottom: 20rpx;
+}
+
+.gs_continue view:last-child {
+  font-size: 32rpx;
+  color: #707070;
+
+}
+
+.gs_continue view text {
+  color: #dd2522;
+}
+
+.gs_sign {
+  margin-top: 30rpx;
+}
+
+.gs_sign_box {
+  background-color: #fff;
+  width: 677rpx;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 15rpx;
+}
+
+.gs_pillar {
+  overflow: hidden;
+  position: absolute;
+  top: -16rpx;
+  width: 100%;
+}
+
+.gs_pillar .gs_post {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.gs_pillar .gs_post view {
+  display: inline-block;
+  width: 18rpx;
+  height: 42rpx;
+  background-color: #53acfc;
+  border-radius: 20rpx;
+}
+
+.gs_sign_day {
+  padding: 60rpx 20rpx 0;
+}
+
+.gs_sign_day image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+
+.gs_sign_day view {
+  display: inline-block;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  color: #707070;
+}
+
+.gs_sign_day view text {
+  color: #dd2522;
+}
+
+.gs_sign_content {
+  padding: 20rpx;
+}
+
+.gs_week {
+  overflow: hidden;
+}
+
+.gs_wook {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.gs_wook view {
+  display: inline-block;
+  font-size: 30rpx;
+  color: #707070;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.gs_clocksucceed {
+  position: absolute;
+  top: 10rpx;
+  left: 16rpx;
+  background-color: #fff;
+}
+
+.gs_clocksucceed image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: bottom;
+}
+
+.gs_sign_content .gs_week:nth-child(2) .gs_wook view {
+  color: #454545;
+}
+
+.gs_circle {
+  padding: 50rpx 0;
+}
+
+.gs_incircle {
+  width: 225rpx;
+  height: 225rpx;
+  background-image: linear-gradient(to top, #8bc4f6, #8bc4f6);
+  border-radius: 50%;
+  padding: 10rpx;
+  margin: 20rpx auto;
+  cursor: pointer;
+}
+
+.gs_excircle {
+  width: 205rpx;
+  height: 205rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10rpx;
+}
+
+.gs_innercircle {
+  width: 185rpx;
+  height: 185rpx;
+  background-image: linear-gradient(to top, #53acfc, #63b2f7);
+  border-radius: 50%;
+  padding: 10rpx;
+}
+
+.gs_btn {
+  text-align: center;
+}
+
+.gs_btn text {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  line-height: 185rpx;
+  font-size: 36rpx;
+}
+
+.gs_calendar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.gs_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.gs_gs_calendar_box {
+  position: absolute;
+  top: 180rpx;
+  left: 40rpx;
+  width: 677rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+
+.canlendarTopView {
+  overflow: hidden;
+  padding: 40rpx 20rpx;
+  margin-left: 20rpx;
+}
+
+.leftBgView {
+  float: left;
+  width: 153rpx;
+  text-align: center;
+}
+
+
+.leftView image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.centerView {
+  float: left;
+  font-size: 32rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 260rpx;
+  text-align: center;
+}
+
+.rightBgView {
+  float: left;
+  width: 156rpx;
+  text-align: center;
+}
+
+
+
+.rightView image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.weekBgView {
+  overflow: hidden;
+}
+
+.weekView {
+  float: left;
+  width: 14.28571428571429%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #707070;
+}
+
+.dateBgView {
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+
+
+.dateView {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.datesView {
+  font-size: 30rpx;
+  color: #2b2b2b;
+}
+
+.dateOn {
+  border-radius: 50%;
+  background-color: #53acfc;
+  color: #fff !important;
+}
+
+.del {
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #fff;
+  border-radius: 50%;
+
+}
+
+.del image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: text-top;
+}
+
+.clocksucceed {
+  position: absolute;
+  top: -3rpx;
+  left: 20rpx;
+  background-color: #fff;
+}
+
+.clocksucceed image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
