@@ -1,0 +1,22 @@
+/* pages/wxCase/exlipTwo/index.wxss */
+.ative {
+  height: 90rpx;
+  overflow: hidden;
+  line-height: 45rpx;
+  /* text-shadow: 0 0 10rpx #333333;
+  -webkit-text-fill-color: transparent; */
+}
+
+.no_tive {
+  height: auto !important;
+}
+
+.img_box {
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.img_ellipsis {
+  width: 45rpx;
+  height: 50rpx;
+}

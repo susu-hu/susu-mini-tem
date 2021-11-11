@@ -1,0 +1,48 @@
+/* pages/wxCase/exlipTwo/index2.wxss */
+.con {
+  background: rgb(241, 225, 225);
+  border-radius: 20rpx;
+  padding: 20rpx;
+  margin: 24rpx 39rpx 0 24rpx;
+}
+
+.tips {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #333333;
+  line-height: 40rpx;
+  position: relative;
+}
+
+.img_box {
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.img_icon {
+  width: 45rpx;
+  height: 50rpx;
+}
+
+
+.ative {
+  height: 400rpx;
+  overflow: hidden;
+  /* text-shadow: 0 0 10rpx rgb(0, 0, 0, 0.5);
+  -webkit-text-fill-color: transparent; */
+
+}
+
+.no_tive {
+  height: auto !important;
+  /* text-shadow:none;
+  -webkit-text-fill-color: #333; */
+}
+/* .drop_shadow{
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  height: 30rpx;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(98, 98, 100, 0.9) 51, rgba(51, 51, 51, .2) 24%, rgba(51, 51, 51, 1));
+} */

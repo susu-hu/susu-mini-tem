@@ -1,0 +1,12 @@
+<!--pages/wxCase/exlipTwo/index2.wxml-->
+<view class="con">
+  <view class="tips">
+    <view class="{{height>200?'ative':''}} {{!ellipsis?'no_tive':''}}" id="text">
+      <rich-text nodes="{{rule}}"></rich-text>
+    </view>
+    <view class='img_box' catchtap='ellbtn' wx:if="{{height>200}}">
+      <image class='img_icon' src="{{ellipsis?'../img/open.png':'../img/close.png'}}"></image>
+    </view>
+    <view wx:if="{{height>200}}" class="drop_shadow"></view>
+  </view>
+</view>

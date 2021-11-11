@@ -67,8 +67,20 @@
           "scene": null
         },
         {
-          "name": "pages/wxCase/exlipText/index",
-          "pathName": "pages/wxCase/exlipText/index",
+          "name": "pages/wxCase/exlipText/index2",
+          "pathName": "pages/wxCase/exlipText/index2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/choseAddress/index",
+          "pathName": "pages/choseAddress/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/exlipTwo/index2",
+          "pathName": "pages/wxCase/exlipTwo/index2",
           "query": "",
           "scene": null
         }

@@ -1,0 +1,32 @@
+/* pages/wxCase/exlipText/index2.wxss */
+.readmore {
+  margin: 50rpx;
+}
+
+.overview {
+  padding: 0 60rpx;
+}
+
+.title-tip {
+  font-size: 28rpx;
+  margin-bottom: 22rpx;
+}
+
+.content {
+  font-size: 24rpx;
+}
+
+/* 超出3行隐藏多余部分并且显示省略号 */
+.hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.readmore-tip {
+  color: #196a99;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}

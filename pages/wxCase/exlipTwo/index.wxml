@@ -1,0 +1,8 @@
+<!--pages/wxCase/exlipTwo/index.wxml-->
+<view id="text" class="{{height>50?'ative':''}} {{!ellipsis?'no_tive':''}}">
+  苏苏苏算算算电缆敷设的高峰时段个施工方施工方给对方高度冻干粉高度返回就等结果大苏苏uuusus发的收到回复是的附件发生的姐夫地方的卢浮宫感觉改发链接感觉发返回就挂号费
+</view>
+<view class='img_box' bindtap='ellipsis' wx:if="{{height>50}}">
+  <image class='img_ellipsis' src="{{ellipsis?'../img/open.png':'../img/close.png'}}"></image>
+</view>
+<!-- 注意：动态计算view高度的方法要在this.setData后，不然view的高度会一直是line-height的高度 -->
