@@ -1,0 +1,3 @@
+<!--pages/jsCase/addressMap/index.wxml-->
+<map id="map" latitude="{{latitude}}" longitude="{{longitude}}" style="width:100%;height:600rpx;" ></map>
+

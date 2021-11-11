@@ -130,7 +130,8 @@
       "root": "pages/jsCase/",
       "pages": [
         "historySearch/index",
-        "keyWordHight/index"
+        "keyWordHight/index",
+        "addressMap/index"
       ]
     }
   ],
