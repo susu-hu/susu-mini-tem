@@ -70,6 +70,7 @@ step5：构建npm）
 51.自定义actionSheet+保存图片（开启授权-》引导用户打开设置页）,需在调式下运行。
 52.  一个左右摇摆的灯泡动画
 53. 文字的展开与收起
+54. 一定高度的文字展开与收起
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -130,6 +131,8 @@ step5：构建npm）
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1107/123530_a8e55a87_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1109/135245_a1043136_8576727.gif "灯泡.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1110/190031_ece1d834_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1111/193011_b672c847_8576727.png "屏幕截图.png")
+
 #### 参与贡献
 
 1.  Fork 本仓库
