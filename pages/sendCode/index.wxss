@@ -3,6 +3,9 @@ page{
   background: #fff;
 }
 .con {
+  overflow: hidden;
+  width: 750rpx;
+  box-sizing: border-box;
   padding: 80rpx 0 20rpx;
   font-size: 28rpx;
   color: #333333;

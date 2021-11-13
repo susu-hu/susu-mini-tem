@@ -22,7 +22,7 @@
 <view class="input_2">
   <view class="input">{{code}}</view>
   <view class="flex-row i1" >
-    <view class="line" wx:for="{{6}}"></view>
+    <view class="line" wx:for="{{6}}" wx:key="index"></view>
   </view>
 </view>
 

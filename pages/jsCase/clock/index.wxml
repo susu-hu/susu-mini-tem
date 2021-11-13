@@ -1,0 +1,64 @@
+<!--pages/jsCase/clock/index.wxml-->
+<!--pages/clockIn/index.wxml-->
+<view class="index">
+  <view class="head ">
+    <view class="head_box flex-row">
+      <view class="user_ava">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view>
+        <view class="user_name">苏苏就是小苏苏 <text>工号：100020000</text></view>
+        <view class="user_add">南京新街口门店</view>
+      </view>
+    </view>
+  </view>
+  <view class="con">
+    <view class="c_title">打卡记录时间和位置：</view>
+    <view class="c_section">
+      <view class="c_item">
+        上班打卡
+        <text wx:if="{{status!=0}}">（打卡时间：{{now_time_stop}}）</text>
+        <!-- 打卡位置 -->
+        <view wx:if="{{status!=0}}" class="flex-row start_lo">
+          <image class="now_icon" src="/img/add.png"></image>
+          <text class="now_location">当前位置：广治万科中心</text>
+        </view>
+      </view>
+
+      <view class="c_item">
+        下班打卡
+        <text wx:if="{{status==3}}">（打卡时间：{{now_time_stop_end}}）</text>
+        <!-- 打卡位置 -->
+        <view wx:if="{{status==3}}" class="flex-row start_end">
+          <image class="now_icon" src="/img/add.png"></image>
+          <text class="now_location">当前位置：广治万科中心</text>
+        </view>
+      </view>
+
+    </view>
+    <view class="c_clock flex-column">
+      <view class="clock_time flex-column j_c" animation="{{animationData}}" catchtap="clockInStart"
+        wx:if="{{status==0}}">
+        <text>上班打卡</text>
+        <text>{{now_time}}</text>
+      </view>
+      <view class="clock_time_over flex-column j_c" catchtap="clockInStart" wx:if="{{status==1}}">
+        <text>已打卡</text>
+        <text>{{now_time_stop}}</text>
+      </view>
+      <view class="clock_time flex-column j_c" catchtap="clockInEnd" wx:if="{{status==2}}">
+        <text>下班打卡</text>
+        <text>{{now_time}}</text>
+      </view>
+      <view class="clock_time_over flex-column j_c" catchtap="clockInStart" wx:if="{{status==3}}">
+        <text>已打卡</text>
+        <text>{{now_time_stop_end}}</text>
+      </view>
+      <view class="clock_address">
+        <image src="/img/add.png" class="add_icon" />
+        <text>当前位置：{{current_address}}</text>
+        <text class="refresh">刷新</text>
+      </view>
+    </view>
+  </view>
+</view>

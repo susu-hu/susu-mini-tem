@@ -1,0 +1,250 @@
+/* pages/jsCase/clock/index.wxss */
+/* pages/clockIn/index.wxss */
+page {
+  height: calc(100% - 10px)
+}
+
+.index {
+  margin-top: 10px;
+  background: #fff;
+  min-height: 100%;
+}
+
+.head {
+  padding-bottom: 10rpx;
+  border-bottom: 2rpx solid #E5E5E5;
+}
+
+.head_box {
+  padding: 12rpx 28rpx 0;
+  width: 750rpx;
+  box-sizing: border-box;
+}
+
+.user_ava {
+  width: 116rpx;
+  height: 116rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 32rpx;
+}
+
+.user_name {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 18rpx;
+}
+
+.user_name text {
+  font-size: 24rpx;
+  color: #999999;
+  font-weight: 400;
+  margin-left: 40rpx;
+}
+
+.user_add {
+  font-size: 28rpx;
+  color: #3380F3;
+}
+
+.con {
+  padding: 44rpx 28rpx;
+}
+
+.c_title {
+  font-size: 28rpx;
+  color: #666666;
+  margin-bottom: 26rpx;
+}
+
+
+.c_section .c_item {
+  position: relative;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #333333;
+  padding-left: 40rpx;
+  margin-bottom: 156rpx;
+}
+
+.c_section text {
+  color: #307CED;
+}
+
+.c_section .c_item::before {
+  content: '';
+  position: absolute;
+  width: 18rpx;
+  height: 18rpx;
+  border: 2rpx solid #999999;
+  left: 0;
+  top: 50%;
+  margin-top: -9rpx;
+  border-radius: 50%;
+}
+
+.c_section {
+  position: relative;
+}
+
+.c_section .c_item::after {
+  content: '';
+  position: absolute;
+  width: 2rpx;
+  height: 178rpx;
+  background: #E6E6E6;
+  left: 10rpx;
+  top: 34rpx;
+}
+
+.c_section view:last-child::after {
+  display: none;
+}
+
+.start_lo {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.start_end {
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+}
+
+.c_clock {
+  margin-top: 158rpx;
+}
+
+.clock_time {
+  width: 350rpx;
+  height: 350rpx;
+  margin-bottom: 30rpx;
+  position: relative;
+}
+
+.clock_time::after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  background: rgba(48, 124, 237, 0.08);
+  animation: scale 1s infinite alternate-reverse;
+}
+
+/* 已打卡 */
+.clock_time_over {
+  width: 350rpx;
+  height: 350rpx;
+  margin-bottom: 30rpx;
+  border-radius: 50%;
+  background: rgba(48, 124, 237, 0.08);
+  position: relative;
+}
+
+.clock_time_over::after {
+  position: absolute;
+  z-index: 11;
+  content: '';
+  width: 320rpx;
+  height: 320rpx;
+  background: #C6CED9;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.clock_time_over text {
+  position: relative;
+  z-index: 13;
+  color: #FFFFFF;
+}
+
+.clock_time_over text:first-child {
+  font-size: 36rpx;
+  margin-bottom: 14rpx;
+}
+
+.clock_time_over text:last-child {
+  font-size: 28rpx;
+}
+
+@keyframes scale {
+
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.clock_time::before {
+  position: absolute;
+  z-index: 11;
+  content: '';
+  width: 320rpx;
+  height: 320rpx;
+  background: rgb(48, 124, 237, 0.79);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock_time text {
+  position: relative;
+  z-index: 13;
+  color: #FFFFFF;
+}
+
+.clock_time text:first-child {
+  font-size: 36rpx;
+  margin-bottom: 14rpx;
+}
+
+.clock_time text:last-child {
+  font-size: 28rpx;
+}
+
+.clock_address {
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.clock_address text {
+  vertical-align: middle;
+}
+
+.add_icon {
+  width: 28rpx;
+  height: 36rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+}
+
+.refresh {
+  color: #307CED;
+  margin-left: 10rpx;
+}
+
+.now_icon {
+  width: 24rpx;
+  height: 30rpx;
+  margin-right: 14rpx;
+}
+
+.now_location {
+  font-size: 24rpx;
+  color: #333333 !important;
+}

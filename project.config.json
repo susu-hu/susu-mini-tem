@@ -21,6 +21,10 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
+<<<<<<< HEAD
+=======
+    "lazyloadPlaceholderEnable": false,
+>>>>>>> ac7eaa52a4f927906d44bab69d9ed0dc89bd7861
     "useMultiFrameRuntime": true,
     "useApiHook": true,
     "useApiHostProcess": true,

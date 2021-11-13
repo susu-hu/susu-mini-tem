@@ -57,7 +57,8 @@
         "swiper-threeD/index2",
         "customScroll/index",
         "cal/index",
-        "clockin/index"
+        "clockin/index",
+        "inputCode/index"
       ]
     },
     {
@@ -137,7 +138,8 @@
         "keyWordHight/index",
         "addressMap/index",
         "addressMap/index2",
-        "shaing/index"
+        "shaing/index",
+        "clock/index"
       ]
     }
   ],

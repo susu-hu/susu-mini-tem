@@ -1,0 +1,28 @@
+<!--pages/another/inputCode/index.wxml-->
+<view class='blocks'>
+  <view class="block">
+    <view wx:if="{{!numList.length}}" class="cursor"></view>
+    <text wx:if="{{numList.length}}">{{numList[0]}}</text>
+  </view>
+  <view class="block">
+    <view wx:if="{{numList.length===1}}" class="cursor"></view>
+    <text wx:if="{{numList.length>=2}}">{{numList[1]}}</text>
+  </view>
+  <view class="block">
+    <view wx:if="{{numList.length===2}}" class="cursor"></view>
+    <text wx:if="{{numList.length>=3}}">{{numList[2]}}</text>
+  </view>
+  <view class="block">
+    <view wx:if="{{numList.length===3}}" class="cursor"></view>
+    <text wx:if="{{numList.length>=4}}">{{numList[3]}}</text>
+  </view>
+  <view class="block">
+    <view wx:if="{{numList.length===4}}" class="cursor"></view>
+    <text wx:if="{{numList.length>=5}}">{{numList[4]}}</text>
+  </view>
+  <view class="block">
+    <view wx:if="{{numList.length===5}}" class="cursor"></view>
+    <text wx:if="{{numList.length>=6}}">{{numList[5]}}</text>
+  </view>
+  <input type='number' maxlength='6' focus='true' auto-focus='true' bindinput="getValue"></input>
+</view>

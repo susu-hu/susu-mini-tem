@@ -1,0 +1,38 @@
+/* pages/another/inputCode/index.wxss */
+
+input {
+  /* //脱离可视区域，偏移太少，输入6位数，可能有会出现input框，偏移太多微信开发者工具没办法输入内容 */
+  margin-left: -120%;
+}
+
+.blocks {
+  display: flex;
+}
+
+.block {
+  width: 100rpx;
+  height: 88rpx;
+  background: #b37575;
+  margin-left: 18rpx;
+}
+
+.cursor {
+  /* //光标的样式 */
+  width: 1px;
+  height: 60rpx;
+  background-color: red;
+  animation: focus 0.7s infinite;
+  margin-left: 440rpx;
+}
+
+/* 光标动画 */
+
+@keyframes focus {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
