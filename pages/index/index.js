@@ -64,6 +64,10 @@ Page({
           {
             name: '自定义滚动条',
             url: '/pages/another/customScroll/index'
+          },
+          {
+            name: '自定义input输入框',
+            url: '/pages/another/inputCode/index'
           }
         ]
       },
@@ -115,6 +119,10 @@ Page({
           {
             name: '卡片实现翻转',
             url: '/pages/subPack/roateY180/index'
+          },
+          {
+            name: '自定义input输入框',
+            url: '/pages/subPack/customIpt/index'
           },
         ]
       },

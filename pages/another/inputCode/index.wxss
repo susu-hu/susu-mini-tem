@@ -21,8 +21,8 @@ input {
   width: 1px;
   height: 60rpx;
   background-color: red;
-  animation: focus 0.7s infinite;
-  margin-left: 440rpx;
+  animation: focus 1s infinite;
+  margin-left: 40rpx;
 }
 
 /* 光标动画 */

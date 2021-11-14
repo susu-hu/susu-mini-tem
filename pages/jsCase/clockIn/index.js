@@ -37,7 +37,11 @@ Page({
     this.setData({
       status: 1, //上班已打卡
       now_time_stop: this.data.now_time,
-    })
+    },wx.showToast({
+      title: '打卡成功',
+      icon:'none'
+    }))
+  
   },
 
   getCurrentTime: function () {
