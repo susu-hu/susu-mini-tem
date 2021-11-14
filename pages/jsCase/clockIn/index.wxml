@@ -1,0 +1,59 @@
+<!--pages/clockIn/index.wxml-->
+<view class="index">
+  <!-- 用户信息 -->
+  <view class="head ">
+    <view class="head_box flex-row">
+      <view class="user_ava">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view>
+        <view class="user_name">苏苏就是小苏苏 <text>早上好</text></view>
+        <view class="user_add">新的一天开始了~</view>
+      </view>
+    </view>
+  </view>
+  <view class="con">
+    <view class="c_title">打卡记录时间和位置：</view>
+    <!-- 上传图片 -->
+    <view class="c_section">
+      <view class="c_item  {{status==1?'ative':''}}">
+        上班打卡
+        <text wx:if="{{status!=0}}">（打卡时间：{{now_time_stop}}）</text>
+        <!-- 打卡位置 -->
+        <view wx:if="{{status!=0}}" class="flex-row start_lo">
+          <image class="now_icon" src="/img/add0.png"></image>
+          <text class="now_location">当前位置：xxxxxx</text>
+        </view>
+      </view>
+
+      <view class="c_item {{imgUrl?'ative':''}}">
+        *拍照上传(必传)
+        <view class=" start_end upload_box flex-column j_c" wx:if="{{!imgUrl}}" catchtap="chooseImg">
+          <image src="/img/add.png" class="camera_icon" />
+          <text>点击上传图片</text>
+        </view>
+        <view class="start_end upload_box" wx:else>
+          <image src="{{imgUrl}}" class="clock_img" mode="aspectFill" catchtap="previewImg" />
+          <image src="/img/shape_delete.png" class="del_icon" catchtap="deleteImg" wx:if="{{status!==1}}"></image>
+        </view>
+      </view>
+    </view>
+    <!-- 打卡按钮 -->
+    <view class="c_clock flex-column">
+      <view class="clock_time flex-column j_c {{status==1?'c1':''}}" catchtap="clockInStart">
+        <text>上班打卡</text>
+        <text>{{now_time}}</text>
+      </view>
+      <view class="clock_time_over flex-column j_c  {{status==1?'c2':''}}" catchtap="clockInStart">
+        <text>已打卡</text>
+        <text>{{now_time_stop}}</text>
+      </view>
+    </view>
+    <!-- 打卡地址 -->
+    <view class="clock_address ">
+      <image src="/img/add0.png" class="add_icon" />
+      <text>当前位置：{{current_address}}</text>
+      <text class="refresh">刷新</text>
+    </view>
+  </view>
+</view>

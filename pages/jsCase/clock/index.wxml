@@ -20,7 +20,7 @@
         <text wx:if="{{status!=0}}">（打卡时间：{{now_time_stop}}）</text>
         <!-- 打卡位置 -->
         <view wx:if="{{status!=0}}" class="flex-row start_lo">
-          <image class="now_icon" src="/img/add.png"></image>
+          <image class="now_icon" src="/img/add_icon.png"></image>
           <text class="now_location">当前位置：广治万科中心</text>
         </view>
       </view>
@@ -30,7 +30,7 @@
         <text wx:if="{{status==3}}">（打卡时间：{{now_time_stop_end}}）</text>
         <!-- 打卡位置 -->
         <view wx:if="{{status==3}}" class="flex-row start_end">
-          <image class="now_icon" src="/img/add.png"></image>
+          <image class="now_icon" src="/img/add_icon.png"></image>
           <text class="now_location">当前位置：广治万科中心</text>
         </view>
       </view>
@@ -55,7 +55,7 @@
         <text>{{now_time_stop_end}}</text>
       </view>
       <view class="clock_address">
-        <image src="/img/add.png" class="add_icon" />
+        <image src="/img/add_icon.png" class="add_icon" />
         <text>当前位置：{{current_address}}</text>
         <text class="refresh">刷新</text>
       </view>

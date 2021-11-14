@@ -1,5 +1,4 @@
-/* pages/jsCase/clock/index.wxss */
-/* pages/clockIn/index.wxss */
+/* pages/jsCase/clockIn/index.wxss */
 page {
   height: calc(100% - 10px)
 }
@@ -45,7 +44,7 @@ page {
 
 .user_add {
   font-size: 28rpx;
-  color: #e79cdb;
+  color: #3380F3;
 }
 
 .con {
@@ -69,7 +68,7 @@ page {
 }
 
 .c_section text {
-  color: #e79cdb;
+  color: #307CED;
 }
 
 .c_section .c_item::before {
@@ -110,19 +109,26 @@ page {
 
 .start_end {
   position: absolute;
-  bottom: -30px;
+  bottom: -108px;
   left: 20px;
 }
 
 .c_clock {
-  margin-top: 158rpx;
+  margin: 300rpx auto 0;
+  width: 350rpx;
+  height: 380rpx;
+  perspective: 1500;
+  -webkit-perspective: 1500;
+  -moz-perspective: 1500;
 }
 
 .clock_time {
   width: 350rpx;
   height: 350rpx;
   margin-bottom: 30rpx;
-  position: relative;
+  position: absolute;
+  transition: all 1s;
+  backface-visibility: hidden;
 }
 
 .clock_time::after {
@@ -145,7 +151,10 @@ page {
   margin-bottom: 30rpx;
   border-radius: 50%;
   background: rgba(48, 124, 237, 0.08);
-  position: relative;
+  position: absolute;
+  transition: all 1s;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
 }
 
 .clock_time_over::after {
@@ -220,6 +229,8 @@ page {
 .clock_address {
   font-size: 28rpx;
   color: #333333;
+  width: 450rpx;
+  margin: 0 auto;
 }
 
 .clock_address text {
@@ -227,14 +238,14 @@ page {
 }
 
 .add_icon {
-  width: 38rpx;
+  width: 28rpx;
   height: 36rpx;
   margin-right: 16rpx;
   vertical-align: middle;
 }
 
 .refresh {
-  color: #e79cdb;
+  color: #307CED;
   margin-left: 10rpx;
 }
 
@@ -247,4 +258,53 @@ page {
 .now_location {
   font-size: 24rpx;
   color: #333333 !important;
+}
+
+.upload_box {
+  width: 260rpx;
+  height: 180rpx;
+  background: #F5F5F8;
+  border-radius: 5rpx;
+}
+
+.upload_box text {
+  font-size: 20rpx;
+  color: #999 !important;
+  font-weight: 100;
+}
+
+.camera_icon {
+  width: 42rpx;
+  height: 44rpx;
+  margin-bottom: 10rpx;
+}
+
+.clock_img {
+  width: 100%;
+  height: 100%;
+}
+
+.del_icon {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  right: -4px;
+  top: -11rpx;
+}
+
+.ative::before {
+  background: #307cedc9;
+  border: 2rpx solid #307cedc9 !important;
+}
+
+.c1 {
+  transform: rotateY(180deg)
+}
+
+.c1::after {
+  animation: none !important;
+}
+
+.c2 {
+  transform: rotateY(0deg)
 }

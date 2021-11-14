@@ -270,6 +270,14 @@ Page({
             name: '点击实现震动',
             url: '/pages/jsCase/shaing/index'
           },
+          {
+            name: '打卡样式一',
+            url: '/pages/jsCase/clock/index'
+          },
+          {
+            name: '打卡样式二',
+            url: '/pages/jsCase/clockIn/index'
+          },
         ]
       }
     ]

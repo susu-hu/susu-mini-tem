@@ -139,7 +139,8 @@
         "addressMap/index",
         "addressMap/index2",
         "shaing/index",
-        "clock/index"
+        "clock/index",
+        "clockIn/index"
       ]
     }
   ],

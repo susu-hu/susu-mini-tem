@@ -53,6 +53,12 @@
           "pathName": "pages/sendCode/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/jsCase/clockIn/index",
+          "pathName": "pages/jsCase/clockIn/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
