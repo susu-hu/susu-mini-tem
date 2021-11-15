@@ -286,6 +286,10 @@ Page({
             name: '打卡样式二',
             url: '/pages/jsCase/clockIn/index'
           },
+          {
+            name: '图片大小自适应',
+            url: '/pages/jsCase/imgLoad/index'
+          },
         ]
       }
     ]

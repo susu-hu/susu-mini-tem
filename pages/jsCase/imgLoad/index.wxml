@@ -1,0 +1,2 @@
+<!--pages/jsCase/imgLoad/index.wxml-->
+<image src="https://i.postimg.cc/k5cyysKQ/123123.png" bindload="imageLoad" style="width:{{imgwidth}}rpx; height:{{imgheight }}rpx;"></image>

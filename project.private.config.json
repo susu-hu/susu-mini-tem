@@ -13,50 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/wxCase/pageMeta/index",
-          "pathName": "pages/wxCase/pageMeta/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/choseAddress/index",
-          "pathName": "pages/choseAddress/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/another/cal/index",
-          "pathName": "pages/another/cal/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/clock/index",
-          "pathName": "pages/jsCase/clock/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/subPack/roateY180/index",
-          "pathName": "pages/subPack/roateY180/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/another/inputCode/index",
-          "pathName": "pages/another/inputCode/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/sendCode/index",
-          "pathName": "pages/sendCode/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/clockIn/index",
-          "pathName": "pages/jsCase/clockIn/index",
+          "name": "pages/subPack/customIpt/index",
+          "pathName": "pages/subPack/customIpt/index",
           "query": "",
           "scene": null
         }

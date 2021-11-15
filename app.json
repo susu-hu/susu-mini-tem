@@ -141,7 +141,8 @@
         "addressMap/index2",
         "shaing/index",
         "clock/index",
-        "clockIn/index"
+        "clockIn/index",
+        "imgLoad/index"
       ]
     }
   ],

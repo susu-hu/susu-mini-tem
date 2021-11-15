@@ -1,1 +1,93 @@
 /* pages/subPack/customIpt/index.wxss */
+.dialog_pop03 {
+  overflow: hidden;
+  width: 498rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1111;
+  box-sizing: border-box;
+  padding: 46rpx 0 39rpx;
+  color: #999;
+  font-size: 26rpx;
+}
+
+.pop03_title {
+  font-size: 28rpx;
+  color: #333333;
+  margin-bottom: 10rpx;
+}
+
+.pop03_item:first-child {
+  border-left: 1rpx solid #D9D9D9;
+}
+
+.pop03_item {
+  width: 65rpx;
+  height: 65rpx;
+  border: 1rpx solid #D9D9D9;
+  border-left: none;
+}
+
+.pop03_input {
+  margin: 38rpx 0 59rpx;
+  position: relative;
+}
+
+.pop03_btns view {
+  width: 146rpx;
+  height: 55rpx;
+  border: 2rpx solid #e2c3c3;
+  border-radius: 44rpx;
+  margin-right: 60rpx;
+  text-align: center;
+  line-height: 55rpx;
+  font-size: 28rpx;
+  color: #e2c3c3;
+}
+
+.pop03_btns view:last-child {
+  margin-right: 0;
+  background:#e2c3c3;
+  color: #fff;
+}
+
+.pop03_text {
+  position: absolute;
+  top: 0;
+  height: 65rpx;
+  width: 250%;
+  left: -350rpx;
+}
+
+.pop3_code {
+  font-size: 28rpx;
+  color: #e2c3c3;
+  position: absolute;
+  left: 25rpx;
+  letter-spacing: 51rpx;
+}
+
+.head_tip {
+  font-size: 28rpx;
+  color: #084099;
+  position: absolute;
+  right: 58rpx;
+  top: 20rpx;
+  z-index: 10;
+}
+
+.btn {
+  width: 200rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #e2c3c3;
+  color: #fff;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  margin: 150rpx auto;
+}
