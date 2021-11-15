@@ -260,6 +260,10 @@ Page({
             name: '一定长度文字的展开与收起',
             url: '/pages/wxCase/exlipTwo/index2'
           },
+          {
+            name: '边框渐变色',
+            url: '/pages/wxCase/buttonGr/index'
+          },
         ]
       },
       {
