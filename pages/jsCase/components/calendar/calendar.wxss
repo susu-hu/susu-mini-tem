@@ -118,6 +118,7 @@
   line-height: 80rpx;
   font-size: 28rpx;
   color: #333;
+  position: relative;
 }
 
 .calendar .calendar-main .day .select {
@@ -138,9 +139,12 @@
 .calendar .calendar-main .day .spot {
   width: 8rpx;
   height: 8rpx;
-  background-color: #1DCDB8;
+  background-color: #3179CB;
   border-radius: 50%;
-  margin: 6rpx auto 0;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -4rpx;
 }
 
 .cal_title {
@@ -174,4 +178,8 @@
 .right-color {
   border-left: 20rpx solid transparent;
   border-left-color: #3179CB;
+}
+
+.spot_ative {
+  background: #fff !important;
 }

@@ -1,2 +1,2 @@
 <!--pages/jsCase/cal/index.wxml-->
-<calendar bind:change="dateChange" defaultTime="" cal_title="苏苏小苏苏的日历" theme_color="#ffc0cb"></calendar>
+<calendar bind:change="dateChange" defaultTime="" spot="{{spot}}" cal_title="苏苏小苏苏的日历" theme_color="#ffc0cb"></calendar>

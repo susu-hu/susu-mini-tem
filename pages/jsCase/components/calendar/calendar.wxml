@@ -38,8 +38,11 @@
 				catchtap="selectChange" data-day="{{item.day}}" data-year="{{item.year}}" data-month="{{item.month}}"
 				data-date-string="{{item.dateString}}">
 				{{item.day}}
+				<view style="background:{{theme_color}}"
+					class="spot {{(item.year === selectDay.year && item.month === selectDay.month &&  item.day === selectDay.day)?'spot_ative':''}}"
+					wx:if="{{item.spot}}"></view>
 			</view>
-			<view class="spot" wx:if="{{item.spot}}"></view>
+
 		</view>
 	</view>
 </view>
