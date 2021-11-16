@@ -80,6 +80,7 @@ Page({
       this.luckAni(this.randomRange(0, 7)).then(e => {
         wx.showToast({
           title: '成抽中了' + e[0].id,
+          icon:'none'
         })
       })
   },

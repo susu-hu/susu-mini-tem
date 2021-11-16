@@ -1,0 +1,190 @@
+/* pages/jsCase/draw/index.wxss */
+page {
+  background: linear-gradient(to right, #90e0fc, #d4f2ff, #90e0fc);
+  padding-bottom: 40rpx;
+}
+
+.con {
+  width: 743rpx;
+  height: 824rpx;
+  margin: 50px auto 18rpx;
+  position: relative;
+  box-sizing: border-box;
+  padding: 35rpx 0 79rpx;
+}
+
+.bg_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.draw_sc {
+  width: 637rpx;
+  height: 69rpx;
+  background: rgb(0, 146, 241, .53);
+  border-radius: 34rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.draw_icon {
+  width: 37rpx;
+  height: 29rpx;
+  margin-right: 25rpx;
+}
+
+.swiper {
+  height: 100%;
+  font-size: 28rpx;
+  color: #fff;
+  flex: 1;
+  line-height: 69rpx;
+}
+
+.draw_text {
+  color: #FFF000;
+}
+
+.draw_con {
+  width: 671rpx;
+  height: 610rpx;
+  position: relative;
+  box-sizing: border-box;
+  padding: 52rpx 42rpx;
+}
+
+.btn {
+  width: 560rpx;
+  height: 97rpx;
+  background: linear-gradient(0deg, #0084FF 0%, #00DEFF 100%);
+  box-shadow: -4rpx 5rpx 8rpx 0px rgba(7, 53, 130, 0.32);
+  border-radius: 48rpx;
+  text-align: center;
+  line-height: 97rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 18rpx auto 45rpx;
+}
+
+.draw_bot {
+  width: 704rpx;
+  height: 340rpx;
+  box-shadow: 0px 0px 73rpx 0px #FFFFFF inset;
+  border-radius: 30rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 43rpx 0;
+}
+
+.bot_title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #014493;
+  margin: 0 22rpx;
+}
+
+.line {
+  width: 138rpx;
+  height: 1rpx;
+  background: #014493;
+  position: relative;
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  width: 49rpx;
+  height: 1rpx;
+  background: #014493;
+  bottom: -7rpx;
+}
+
+.line:nth-child(1):before {
+  right: 0;
+}
+
+.bot_swiper {
+  width: 629rpx;
+  height: 150rpx;
+  font-size: 28rpx;
+  color: #084A96;
+  margin: 51rpx auto 0;
+  overflow: hidden;
+}
+
+.bot_swiper view {
+  overflow: hidden;
+  width: 100%;
+}
+
+.bot_text {
+  color: #EB360C;
+}
+
+.remainin_text {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.remainin_text text {
+  color: #FFF32F;
+}
+
+.prize_box {
+  flex-wrap: wrap;
+}
+
+.prize_item {
+  width: 186rpx;
+  height: 156rpx;
+  background: #F7FCFC;
+  box-shadow: -6rpx 8rpx 16rpx 0px rgba(7, 53, 130, 0.11) inset;
+  border-radius: 34rpx;
+  margin-bottom: 14rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #014493;
+  box-sizing: border-box;
+  padding-top: 10rpx;
+}
+
+.prize_start {
+  padding-top: 0 !important;
+}
+
+.lott_btn {
+  width: 100%;
+  height: 100%;
+}
+
+
+.prize_img image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 5rpx;
+}
+
+.ative {
+  position: relative;
+  border: 2rpx solid transparent;
+  box-shadow: none;
+}
+
+.ative::after {
+  content: '';
+  position: absolute;
+  top: -8rpx;
+  bottom: -8rpx;
+  left: -8rpx;
+  right: -8rpx;
+  background: linear-gradient(0deg, #FFCD1E, #FFEFB7);
+  z-index: -1;
+  border-radius: 34rpx;
+}
+

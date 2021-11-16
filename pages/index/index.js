@@ -6,12 +6,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    page_list: [
-      {
+    page_list: [{
         showmore: true,
         name: '主包',
-        list: [
-          {
+        list: [{
             name: '物流页面+skeleton条',
             url: '/pages/demo/index'
           },
@@ -44,8 +42,7 @@ Page({
       {
         showmore: false,
         name: '分包another',
-        list: [
-          {
+        list: [{
             name: 'scroll-view左右滚动导航条',
             url: '/pages/another/scroll-x/index'
           },
@@ -74,8 +71,7 @@ Page({
       {
         showmore: false,
         name: '分包subPack',
-        list: [
-          {
+        list: [{
             name: 'loading加载动画17个（1）',
             url: '/pages/subPack/loading/index'
           },
@@ -129,8 +125,7 @@ Page({
       {
         showmore: false,
         name: '分包cssCase',
-        list: [
-          {
+        list: [{
             name: 'css3的圆锥渐变',
             url: '/pages/cssCase/conic-gradient/index'
           },
@@ -195,8 +190,7 @@ Page({
       {
         showmore: false,
         name: '分包wxCase',
-        list: [
-          {
+        list: [{
             name: '裁剪图片',
             url: '/pages/wxCase/cutImage/index'
           },
@@ -269,8 +263,7 @@ Page({
       {
         showmore: false,
         name: '分包jsCase',
-        list: [
-          {
+        list: [{
             name: '搜索历史',
             url: '/pages/jsCase/historySearch/index'
           },
@@ -294,13 +287,27 @@ Page({
             name: '图片大小自适应',
             url: '/pages/jsCase/imgLoad/index'
           },
+          {
+            name: '抽奖活动',
+            url: '/pages/jsCase/draw/index'
+          },
+          {
+            name: 'page-container',
+            url: '/pages/jsCase/pageCon/index'
+          },
+          {
+            name: '自定义日历组件01',
+            url: '/pages/jsCase/cal/index'
+          },
         ]
       }
     ]
   },
 
   toDetail(e) {
-    let { url } = e.currentTarget.dataset;
+    let {
+      url
+    } = e.currentTarget.dataset;
     wx.navigateTo({
       url: url,
     })
@@ -337,7 +344,11 @@ Page({
 
   },
   showMore(e) {
-    let { index } = e.currentTarget.dataset, { page_list } = this.data;
+    let {
+      index
+    } = e.currentTarget.dataset, {
+      page_list
+    } = this.data;
     page_list[index].showmore = !page_list[index].showmore
     this.setData({
       page_list: page_list
@@ -361,10 +372,10 @@ Page({
     }, 400)
   },
   getSeconds(s) {
-    var sTime = parseInt(s);// 秒
-    var mTime = 0;// 分
-    var hTime = 0;// 时
-    if (sTime > 60) {//如果秒数大于60，将秒数转换成整数
+    var sTime = parseInt(s); // 秒
+    var mTime = 0; // 分
+    var hTime = 0; // 时
+    if (sTime > 60) { //如果秒数大于60，将秒数转换成整数
       //获取分钟，除以60取整数，得到整数分钟
       mTime = parseInt(sTime / 60);
       //获取秒数，秒数取佘，得到整数秒数

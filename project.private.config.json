@@ -23,6 +23,36 @@
           "pathName": "pages/wxCase/buttonGr/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/another/draw/index",
+          "pathName": "pages/another/draw/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/draw/index",
+          "pathName": "pages/jsCase/draw/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cal2/index2",
+          "pathName": "pages/cal2/index2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/pageCon/index",
+          "pathName": "pages/jsCase/pageCon/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/cal/index",
+          "pathName": "pages/jsCase/cal/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -143,7 +143,10 @@
         "shaing/index",
         "clock/index",
         "clockIn/index",
-        "imgLoad/index"
+        "imgLoad/index",
+        "draw/index",
+        "pageCon/index",
+        "cal/index"
       ]
     }
   ],

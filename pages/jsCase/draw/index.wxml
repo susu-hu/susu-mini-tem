@@ -1,0 +1,63 @@
+<!--pages/jsCase/draw/index.wxml-->
+<view class="con flex-column">
+  <image src="../img/draw_bg1.png" class="bg_img"></image>
+  <view class="draw_sc flex-row">
+    <image src="../img/draw_icon.png" class="draw_icon" />
+    <swiper class="swiper" vertical="true" autoplay="true" circular="true" interval="3000" display-multiple-items='1'>
+      <block wx:for-index="idx" wx:for='{{2}}' wx:key="index">
+        <swiper-item>
+          <view>
+            <text decode="{{true}}">恭喜用户&nbsp;&nbsp;&nbsp;</text>
+            <text class="draw_text">135XXXX5678</text>
+            <text decode="{{true}}">&nbsp;&nbsp;抽中奶粉券就加水电费扫地</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="draw_con">
+    <image src="../img/draw_bg2.png" class="bg_img" />
+    <view class="flex-row j_b prize_box">
+      <block wx:for="{{prize_list}}" wx:key="index">
+        <!-- 抽奖 按钮-->
+        <block wx:if="{{index == 4}}">
+          <view class="prize_start prize_item">
+            <image src="../img/start_btn.png" class="lott_btn" mode="aspectFill" bindtap="lottery"></image>
+          </view>
+        </block>
+        <!-- 奖项 -->
+        <view class="prize_item flex-column {{item.active?'ative':''}}">
+          <view class="prize_img ">
+            <image src="{{item.icon}}" mode="aspectFill" />
+          </view>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="remainin_text">您还有<text>{{remian_num}}次</text>抽奖机会</view>
+</view>
+<!-- 活动内容按钮 -->
+<view class="btn" catchtap="toDetail">活动内容</view>
+<!--抽奖记录  -->
+<view wx:if="{{true}}" class="draw_bot">
+  <view class="flex-row j_c">
+    <view class="line"></view>
+    <view class="bot_title flex-column">我的抽奖记录</view>
+    <view class="line">
+    </view>
+  </view>
+  <swiper class="bot_swiper" vertical="true" autoplay="{{true}}" circular="true" interval="3000"
+    display-multiple-items='3'>
+    <block wx:for-index="idx" wx:for='{{9}}' wx:key="index">
+      <swiper-item>
+        <view class="flex" style="align-items: baseline;">
+          <text decode="{{true}}">5月21日 10：20：01 &nbsp;&nbsp;&nbsp;</text>
+          <text decode="{{true}}" class="bot_text text_ellipsis">&nbsp;&nbsp;抽中了奶粉券就加水电费扫地</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+
