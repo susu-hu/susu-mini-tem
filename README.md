@@ -74,6 +74,7 @@ step5：构建npm）
 55. 卡片翻转的效果
 56. 实现打卡（卡片翻转效果）
 57. 自定义input输入框
+58. 自定义日历组件，可设置不同的主题色
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -138,6 +139,7 @@ step5：构建npm）
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1112/011030_44abb6b1_8576727.gif "阿萨德.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1114/235332_f44cc0cf_8576727.gif "123123.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1115/191543_05224ce8_8576727.gif "薯条.gif")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1117/001314_c8cd11c0_8576727.png "屏幕截图.png")
 #### 参与贡献
 
 1.  Fork 本仓库
