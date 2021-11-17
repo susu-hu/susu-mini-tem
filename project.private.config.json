@@ -65,6 +65,12 @@
           "pathName": "pages/jsCase/checkIn/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/swiper_ve/index",
+          "pathName": "pages/wxCase/swiper_ve/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
