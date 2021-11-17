@@ -1,0 +1,12 @@
+<!--pages/actCheckIn/index.wxml-->
+<view class="c_clock flex-column">
+  <view class="clock_time flex-column j_c {{status==1?'c1':''}}" catchtap="clockInStart">
+    <text>即刻签到</text>
+    <text>{{now_time}}</text>
+  </view>
+  <view class="clock_time_over flex-column j_c  {{status==1?'c2':''}}">
+    <text>已打卡</text>
+    <text>{{now_time_stop}}</text>
+  </view>
+</view>
+<view class="now_date">当前时间：{{today_date}} {{now_time}}</view>

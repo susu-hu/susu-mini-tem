@@ -284,6 +284,10 @@ Page({
             url: '/pages/jsCase/clockIn/index'
           },
           {
+            name: '打卡样式三（加入日期）',
+            url: '/pages/jsCase/checkIn/index'
+          },
+          {
             name: '图片大小自适应',
             url: '/pages/jsCase/imgLoad/index'
           },

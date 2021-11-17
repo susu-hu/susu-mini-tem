@@ -146,7 +146,8 @@
         "imgLoad/index",
         "draw/index",
         "pageCon/index",
-        "cal/index"
+        "cal/index",
+        "checkIn/index"
       ]
     }
   ],

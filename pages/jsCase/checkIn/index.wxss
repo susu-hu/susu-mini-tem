@@ -1,0 +1,137 @@
+page {
+  background-color: #fff;
+  padding-bottom: 40rpx;
+}
+
+
+.c_clock {
+  margin: 117rpx auto 0;
+  width: 350rpx;
+  height: 380rpx;
+  perspective: 1500;
+  -webkit-perspective: 1500;
+  -moz-perspective: 1500;
+}
+
+.clock_time {
+  width: 350rpx;
+  height: 350rpx;
+  margin-bottom: 30rpx;
+  position: absolute;
+  transition: all 1s;
+  backface-visibility: hidden;
+}
+
+.clock_time::after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  background: rgba(48, 124, 237, 0.08);
+  animation: scale 1s infinite alternate-reverse;
+}
+
+/* 已打卡 */
+.clock_time_over {
+  width: 350rpx;
+  height: 350rpx;
+  margin-bottom: 30rpx;
+  border-radius: 50%;
+  background: rgba(48, 124, 237, 0.08);
+  position: absolute;
+  transition: all 1s;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+}
+
+.clock_time_over::after {
+  position: absolute;
+  z-index: 11;
+  content: '';
+  width: 320rpx;
+  height: 320rpx;
+  background: #C6CED9;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.clock_time_over text {
+  position: relative;
+  z-index: 13;
+  color: #FFFFFF;
+}
+
+.clock_time_over text:first-child {
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.clock_time_over text:last-child {
+  font-size: 28rpx;
+}
+
+@keyframes scale {
+
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.clock_time::before {
+  position: absolute;
+  z-index: 11;
+  content: '';
+  width: 320rpx;
+  height: 320rpx;
+  background: rgb(48, 124, 237, 0.79);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock_time text {
+  position: relative;
+  z-index: 13;
+  color: #FFFFFF;
+}
+
+.clock_time text:first-child {
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.clock_time text:last-child {
+  font-size: 28rpx;
+}
+
+.c1 {
+  transform: rotateY(180deg)
+}
+
+.c1::after {
+  animation: none !important;
+}
+
+.c2 {
+  transform: rotateY(0deg)
+}
+
+.now_date {
+  font-size: 28rpx;
+  color: #333333;
+  margin-top: 60rpx;
+  text-align: center;
+}
