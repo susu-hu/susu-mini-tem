@@ -255,8 +255,16 @@ Page({
             url: '/pages/wxCase/exlipTwo/index2'
           },
           {
-            name: '边框渐变色',
+            name: '边框圆角渐变色',
             url: '/pages/wxCase/buttonGr/index'
+          },
+          {
+            name: '上下循环滚动的弹幕条',
+            url: '/pages/wxCase/swiper_ve/index'
+          },
+          {
+            name: '文字右下角的展开按钮',
+            url: '/pages/wxCase/showEli/index'
           },
         ]
       },

@@ -1,0 +1,106 @@
+/* pages/wxCase/showEli/index.wxss */
+page {
+  background: #222;
+}
+
+.wrapper {
+  display: flex;
+  margin: 50rpx auto;
+  width: 600rpx;
+  overflow: hidden;
+  border-radius: 8rpx;
+  padding: 15rpx;
+  box-shadow: 20rpx 20rpx 60rpx #bebebe,
+    -20rpx -20rpx 60rpx #ffffff;
+}
+
+.text {
+  font-size: 28rpx;
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  text-align: justify;
+  position: relative;
+  line-height: 1.5;
+  max-height: 136rpx;
+}
+
+.text::before {
+  content: '';
+  height: calc(100% - 26px);
+  float: right;
+}
+
+.btn {
+  position: relative;
+  float: right;
+  clear: both;
+  margin-left: 20rpx;
+  font-size: 25rpx;
+  padding: 0 15rpx;
+  background: #3F51B5;
+  line-height: 42rpx;
+  border-radius: 4rpx;
+  height: 42rpx;
+  color: #fff;
+}
+
+.btn::before {
+  content: '...';
+  position: absolute;
+  left: -5rpx;
+  color: #fff;
+  transform: translateX(-100%)
+}
+
+.btn::after {
+  content: '展开'
+}
+.ative{
+  max-height: none;
+}
+.ative_label::after{
+  content: '收起'
+}
+
+.ative_label::before{
+  /*在展开状态下隐藏省略号*/
+  visibility: hidden;
+}
+
+
+.a_box {
+  display: flex;
+  overflow: hidden;
+  margin: 40px auto;
+  width: 440rpx;
+}
+
+.aa {
+  width: 440rpx;
+  font-size: 20rpx;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  position: relative;
+  max-height: 60rpx;
+}
+
+.aa::before {
+  content: '';
+  height: calc(100% - 32rpx);
+  float: right;
+}
+
+.info_see {
+  font-size: 20rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  color: #147ABE;
+  text-decoration: underline;
+  position: relative;
+  float: right;
+  clear: both;
+  margin-left: 10rpx;
+}

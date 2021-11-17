@@ -2,7 +2,11 @@
 page {
   background: #222;
 }
+view{
+  margin: 30px auto;
+}
 
+/* 注意问题：border-image的使用是不能实现圆角的效果，各位需要注意这个属性 */
 .a {
   background: transparent;
   color: #23b7cb;
@@ -12,21 +16,18 @@ page {
   height: 100px;
   border: 4px transparent solid;
   border-image: linear-gradient(to right, #000718, #23b7cb) 1 10;
-  /* 注意问题：border-image的使用是不能实现圆角的效果，各位需要注意这个属性 */
 }
 
 /* 利用伪类元素去实现背景边的渐变效果，同时我们还可以加上动画效果，利用的是transtion:all ease 300ms即可 */
 .b {
   color: #23b7cb;
   font-size: 15px;
-  /* padding: 5px 15px; */
   background: #fff;
   width: 200px;
   height: 100px;
   border: 3px transparent solid;
   border-radius: 30px;
   position: relative;
-  margin: 30px;
   box-sizing: border-box;
 }
 
@@ -38,14 +39,13 @@ page {
   left: -10px;
   right: -10px;
   background: linear-gradient(0deg, #FFCD1E, #FFEFB7);
-  /* background: linear-gradient(135deg, #000781, #23b7cb); */
   border-radius: 30px;
   content: '';
   z-index: -1;
 }
 
 
-.main {
+.d {
   border: none;
   background-color: #fff;
   font-size: 40rpx;
@@ -56,16 +56,17 @@ page {
   color: #2fd830;
   padding: 2rpx;
   border-radius: 100rpx;
+  text-align: center;
+  line-height: 1;
   background-clip: content-box, padding-box;
 }
 
 .c {
-  margin: 40rpx;
   width: 186rpx;
   height: 156rpx;
   border: 7rpx solid transparent;
   background: #F7FCFC;
-  /* box-shadow: -6rpx 8rpx 16rpx 0rpx rgba(7, 53, 130, 0.11) inset; */
+  box-shadow: -6rpx 8rpx 16rpx 0rpx rgba(7, 53, 130, 0.11) inset;
   border-radius: 34rpx;
   position: relative;
   box-sizing: border-box;
@@ -82,112 +83,4 @@ page {
   content: '';
   z-index: -1;
   border-radius: 34rpx;
-}
-
-
-/* 文字 */
-.wrapper {
-  display: flex;
-  margin: 50rpx auto;
-  width: 600rpx;
-  overflow: hidden;
-  border-radius: 8rpx;
-  padding: 15px;
-  box-shadow: 20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff;
-}
-
-.text {
-  font-size: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: justify;
-  position: relative;
-  line-height: 1.5;
-  max-height: 4.5em
-}
-
-.text::before {
-  content: '';
-  height: calc(100% - 26px);
-  float: right;
-}
-
-.btn {
-  position: relative;
-  float: right;
-  clear: both;
-  margin-left: 20px;
-  font-size: 16px;
-  padding: 0 8px;
-  background: #3F51B5;
-  line-height: 24px;
-  border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
-  /* margin-top: -30px; */
-}
-
-/* .btn::before {
-  content: '...';
-  position: absolute;
-  left: -5px;
-  color: #333;
-  transform: translateX(-100%)
-}
-
-.btn::after {
-  content: '展开'
-} */
-
-.exp {
-  display: none;
-}
-
-.exp:checked+.text {
-  max-height: none;
-}
-
-.exp:checked+.text .btn::after {
-  content: '收起'
-}
-
-.exp:checked+.text .btn::before {
-  visibility: hidden;
-  /*在展开状态下隐藏省略号*/
-}
-
-
-.a_box {
-  display: flex;
-  overflow: hidden;
-}
-
-.aa {
-  width: 440rpx;
-  font-size: 20rpx;
-  color: #fff;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: justify;
-  position: relative;
-  max-height: 60rpx;
-}
-
-.aa::before {
-  content: '';
-  height: calc(100% - 32rpx);
-  float: right;
-}
-
-.info_see {
-  font-size: 20rpx;
-  height: 28rpx;
-  line-height: 28rpx;
-  color: #147ABE;
-  text-decoration: underline;
-  position: relative;
-  float: right;
-  clear: both;
-  margin-left: 10rpx;
 }
