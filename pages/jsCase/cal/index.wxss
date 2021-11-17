@@ -1,1 +1,7 @@
 /* pages/jsCase/cal/index.wxss */
+page {
+  /* color: #ffc0cb; */
+  /* color: #8bd9e7; */
+  /* color: #6e4a3a; */
+  color: #e07d50;
+}

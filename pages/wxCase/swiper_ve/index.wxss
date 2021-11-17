@@ -1,1 +1,38 @@
 /* pages/wxCase/swiper_ve/index.wxss */
+.head_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.new_swiper {
+  width: 710rpx;
+  position: absolute;
+  height: 180rpx;
+  top: -10rpx;
+  z-index: 66;
+  left: 40rpx;
+}
+
+.new_swiper swiper-view {
+  vertical-align: bottom;
+}
+
+.box_item {
+  display: inline-block;
+  height: 40rpx;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 23rpx;
+  box-sizing: border-box;
+  padding: 0 16rpx 0;
+  font-size: 20rpx;
+  color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0;
+  line-height: 40rpx;
+}
