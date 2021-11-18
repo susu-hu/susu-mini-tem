@@ -1,8 +1,10 @@
 /* pages/wxCase/buttonGr/index.wxss */
 page {
   background: #222;
+  padding-bottom: 40rpx;
 }
-view{
+
+view {
   margin: 30px auto;
 }
 
@@ -83,4 +85,96 @@ view{
   content: '';
   z-index: -1;
   border-radius: 34rpx;
+}
+
+
+.e {
+  margin-top: 40px;
+  height: 20px;
+  border-radius: 20px;
+  width: 200px;
+  color: #fff;
+  background: linear-gradient(to right, #ffaa00 0%, red 100%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-position: 0px 0px, 200px 100px, 0px 100px, 200px 0px;
+  padding: 10px;
+  animation: border-dance 4s infinite linear;
+}
+
+@keyframes border-dance {
+  0% {
+    background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
+  }
+
+  100% {
+    background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
+  }
+}
+
+.f {
+  color: #fff;
+  margin-top: 40px;
+  height: 100px;
+  width: 200px;
+  background: linear-gradient(90deg, #ffaa00 50%, transparent 50%), linear-gradient(90deg, red 50%, transparent 50%), linear-gradient(0deg, #ffaa00 50%, transparent 50%), linear-gradient(0deg, red 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-position: 0px 0px, 200px 100px, 0px 100px, 200px 0px;
+  padding: 10px;
+  animation: border-dance 4s infinite linear;
+}
+
+.g {
+  color: #fff;
+  margin-top: 40px;
+  height: 100px;
+  width: 200px;
+  background: linear-gradient(90deg, #ffaa00 50%, transparent 50%), linear-gradient(90deg, red 50%, transparent 50%), linear-gradient(0deg, #ffaa00 50%, transparent 50%), linear-gradient(0deg, red 50%, transparent 50%);
+  background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-position: 0px 0px, 200px 100px, 0px 100px, 200px 0px;
+  padding: 10px;
+  animation: border-dance 4s infinite linear;
+}
+
+.i {
+  position: relative;
+  margin: 10% auto 0;
+  width: 50%;
+  height: 50px;
+  background: linear-gradient(0deg, #000, #272727);
+  border-radius: 25px;
+}
+
+.i:before,
+.i:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+      #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  border-radius: 25px;
+  animation: anim-moving-glow 20s linear infinite;
+}
+
+@keyframes anim-moving-glow {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.i:after {
+  filter: blur(30px);
 }
