@@ -22,7 +22,7 @@
         <!-- 打卡位置 -->
         <view wx:if="{{status!=0}}" class="flex-row start_lo">
           <image class="now_icon" src="/img/add0.png"></image>
-          <text class="now_location">当前位置：xxxxxx</text>
+          <text class="now_location">当前位置：{{current_address}}</text>
         </view>
       </view>
 
@@ -34,7 +34,7 @@
         </view>
         <view class="start_end upload_box" wx:else>
           <image src="{{imgUrl}}" class="clock_img" mode="aspectFill" catchtap="previewImg" />
-          <image src="/img/shape_delete.png" class="del_icon" catchtap="deleteImg" wx:if="{{status!==1}}"></image>
+          <image src="/img/close1.png" class="del_icon" catchtap="deleteImg" wx:if="{{status!==1}}"></image>
         </view>
       </view>
     </view>
@@ -53,7 +53,7 @@
     <view class="clock_address ">
       <image src="/img/add0.png" class="add_icon" />
       <text>当前位置：{{current_address}}</text>
-      <text class="refresh">刷新</text>
+      <text class="refresh" catchtap="refreshAdd">刷新</text>
     </view>
   </view>
 </view>

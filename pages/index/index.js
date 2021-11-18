@@ -311,6 +311,11 @@ Page({
             name: '自定义日历组件01',
             url: '/pages/jsCase/cal/index'
           },
+          {
+            name: 'wx.onLocationChange()持续定位',
+            url: '/pages/jsCase/onLoaction/index'
+          },
+         
         ]
       }
     ]

@@ -149,7 +149,8 @@
         "draw/index",
         "pageCon/index",
         "cal/index",
-        "checkIn/index"
+        "checkIn/index",
+        "onLoaction/index"
       ]
     }
   ],

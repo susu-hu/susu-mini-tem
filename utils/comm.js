@@ -1,4 +1,4 @@
-const app_secret = "9Vf4Gl2ExcVjjYfLPBRo0tUjzxx0KU";//接口请求秘钥
+const app_secret = "9Vf4Gl2ExcVjjYfLPBRo0tUjzxx0KU"; //接口请求秘钥
 
 //  js 时间戳转日期格式 --- zwj
 function formatDate(timestamp) {
@@ -12,9 +12,9 @@ function formatDate(timestamp) {
   return YY + MM + DD;
 }
 /*
-*获取当前时间
-*
-*/
+ *获取当前时间
+ *
+ */
 
 function getNowTime() {
   var now = new Date();
@@ -48,8 +48,8 @@ function getNowTime() {
 }
 
 /*
-*获取接口请求数据
-*/
+ *获取接口请求数据
+ */
 function getRequestData(data) {
   var jsonstr = objKeySort(data);
   return jsonstr;
@@ -82,17 +82,18 @@ function objKeySort(arys) {
 
 
 function encodeUTF8(s) {
-  var i, r = [], c, x;
+  var i, r = [],
+    c, x;
   for (i = 0; i < s.length; i++)
     if ((c = s.charCodeAt(i)) < 0x80) r.push(c);
     else if (c < 0x800) r.push(0xC0 + (c >> 6 & 0x1F), 0x80 + (c & 0x3F));
-    else {
-      if ((x = c ^ 0xD800) >> 10 == 0) //对四字节UTF-16转换为Unicode
-        c = (x << 10) + (s.charCodeAt(++i) ^ 0xDC00) + 0x10000,
-          r.push(0xF0 + (c >> 18 & 0x7), 0x80 + (c >> 12 & 0x3F));
-      else r.push(0xE0 + (c >> 12 & 0xF));
-      r.push(0x80 + (c >> 6 & 0x3F), 0x80 + (c & 0x3F));
-    };
+  else {
+    if ((x = c ^ 0xD800) >> 10 == 0) //对四字节UTF-16转换为Unicode
+      c = (x << 10) + (s.charCodeAt(++i) ^ 0xDC00) + 0x10000,
+      r.push(0xF0 + (c >> 18 & 0x7), 0x80 + (c >> 12 & 0x3F));
+    else r.push(0xE0 + (c >> 12 & 0xF));
+    r.push(0x80 + (c >> 6 & 0x3F), 0x80 + (c & 0x3F));
+  };
   return r;
 };
 
@@ -100,17 +101,30 @@ function encodeUTF8(s) {
 function sha1(s) {
   var data = new Uint8Array(encodeUTF8(s))
   var i, j, t;
-  var l = ((data.length + 8) >>> 6 << 4) + 16, s = new Uint8Array(l << 2);
+  var l = ((data.length + 8) >>> 6 << 4) + 16,
+    s = new Uint8Array(l << 2);
   s.set(new Uint8Array(data.buffer)), s = new Uint32Array(s.buffer);
-  for (t = new DataView(s.buffer), i = 0; i < l; i++)s[i] = t.getUint32(i << 2);
+  for (t = new DataView(s.buffer), i = 0; i < l; i++) s[i] = t.getUint32(i << 2);
   s[data.length >> 2] |= 0x80 << (24 - (data.length & 3) * 8);
   s[l - 1] = data.length << 3;
-  var w = [], f = [
-    function () { return m[1] & m[2] | ~m[1] & m[3]; },
-    function () { return m[1] ^ m[2] ^ m[3]; },
-    function () { return m[1] & m[2] | m[1] & m[3] | m[2] & m[3]; },
-    function () { return m[1] ^ m[2] ^ m[3]; }
-  ], rol = function (n, c) { return n << c | n >>> (32 - c); },
+  var w = [],
+    f = [
+      function () {
+        return m[1] & m[2] | ~m[1] & m[3];
+      },
+      function () {
+        return m[1] ^ m[2] ^ m[3];
+      },
+      function () {
+        return m[1] & m[2] | m[1] & m[3] | m[2] & m[3];
+      },
+      function () {
+        return m[1] ^ m[2] ^ m[3];
+      }
+    ],
+    rol = function (n, c) {
+      return n << c | n >>> (32 - c);
+    },
     k = [1518500249, 1859775393, -1894007588, -899497514],
     m = [1732584193, -271733879, null, null, -1009589776];
   m[2] = ~m[0], m[3] = ~m[1];
@@ -118,12 +132,12 @@ function sha1(s) {
     var o = m.slice(0);
     for (j = 0; j < 80; j++)
       w[j] = j < 16 ? s[i + j] : rol(w[j - 3] ^ w[j - 8] ^ w[j - 14] ^ w[j - 16], 1),
-        t = rol(m[0], 5) + f[j / 20 | 0]() + m[4] + w[j] + k[j / 20 | 0] | 0,
-        m[1] = rol(m[1], 30), m.pop(), m.unshift(t);
-    for (j = 0; j < 5; j++)m[j] = m[j] + o[j] | 0;
+      t = rol(m[0], 5) + f[j / 20 | 0]() + m[4] + w[j] + k[j / 20 | 0] | 0,
+      m[1] = rol(m[1], 30), m.pop(), m.unshift(t);
+    for (j = 0; j < 5; j++) m[j] = m[j] + o[j] | 0;
   };
   t = new DataView(new Uint32Array(m).buffer);
-  for (var i = 0; i < 5; i++)m[i] = t.getUint32(i << 2);
+  for (var i = 0; i < 5; i++) m[i] = t.getUint32(i << 2);
 
   var hex = Array.prototype.map.call(new Uint8Array(new Uint32Array(m).buffer), function (e) {
     return (e < 16 ? "0" : "") + e.toString(16);
@@ -175,15 +189,12 @@ function explode(inputstring, separators, includeEmpties) {
   for (var x = 0; x < inputstring.length; x++) {
     var str = inputstring.charAt(x);
     if (separators.indexOf(str) != -1) {
-      if (((includeEmpties <= 0) || (includeEmpties == false)) && (currentElement == "")) {
-      }
-      else {
+      if (((includeEmpties <= 0) || (includeEmpties == false)) && (currentElement == "")) {} else {
         fixedExplode[count] = currentElement;
         count++;
         currentElement = "";
       }
-    }
-    else {
+    } else {
       currentElement += str;
     }
   }
@@ -196,18 +207,18 @@ function explode(inputstring, separators, includeEmpties) {
 
 function limitFloat(val) {
   let sNum = val.toString(); //先转换成字符串类型
-  if (sNum.indexOf('.') == 0) {//第一位就是
+  if (sNum.indexOf('.') == 0) { //第一位就是
     sNum = '0' + sNum
   }
-  sNum = sNum.replace(/[^\d.]/g, "");  //清除“数字”和“.”以外的字符
+  sNum = sNum.replace(/[^\d.]/g, ""); //清除“数字”和“.”以外的字符
   sNum = sNum.replace(/\.{2,}/g, "."); //只保留第一个. 清除多余的
   sNum = sNum.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
-  sNum = sNum.replace(/^(\-)*(\d+)\.(\d\d).*$/, '$1$2.$3');//只能输入两个小数
+  sNum = sNum.replace(/^(\-)*(\d+)\.(\d\d).*$/, '$1$2.$3'); //只能输入两个小数
   //以上已经过滤，此处控制的是如果没有小数点，首位不能为类似于 01、02的金额
   if (sNum.indexOf(".") < 0 && sNum != "") {
     sNum = parseFloat(sNum);
   }
-  
+
   return sNum
 }
 
@@ -218,7 +229,7 @@ var toolsFn = {
     wx.showToast({
       title: msg,
       icon: icon,
-      mask : mask,
+      mask: mask,
       duration: duration,
     });
 
@@ -243,8 +254,8 @@ var toolsFn = {
       // 如果是 Tab 栏链接, 则使用 switchTab, 否则则使用 对应跳转方式
       // 如果是 tab 栏链接, 因为不允许带 ? 等参数, 所以只能使用 tabUrl[i] 来跳转
       var tabUrl = ['/pages/shop/index', '/pages/index/index', '/pages/welfare/index', '/pages/my/index'];
-      for(var i=0; i < tabUrl.length; i++){
-        if(link_url.indexOf(tabUrl[i]) != -1){
+      for (var i = 0; i < tabUrl.length; i++) {
+        if (link_url.indexOf(tabUrl[i]) != -1) {
           wx.switchTab({
             url: tabUrl[i],
           })
@@ -260,7 +271,7 @@ var toolsFn = {
             url: link_url,
           });
           break;
-        // 重定向  
+          // 重定向  
         case 'redirectTo':
           wx.redirectTo({
             url: link_url,
@@ -282,7 +293,7 @@ var toolsFn = {
       // 2020-10-10 12:12:12
       case 1:
         return year + '-' + month + '-' + day + ' ' + h + ':' + m + ':' + s;
-      // 2020-10-10  
+        // 2020-10-10  
       case 2:
         return year + '-' + month + '-' + day;
     }
@@ -294,17 +305,17 @@ var toolsFn = {
   //将对象中某个值转换成数组
   formatPickerArray: function (obj, index) {
     let array = [];
-    Object.keys(obj).forEach(function(key){
-        if (obj[key][index]) {
-          array.push(obj[key][index])
-        }
+    Object.keys(obj).forEach(function (key) {
+      if (obj[key][index]) {
+        array.push(obj[key][index])
+      }
     });
     return array;
   },
   //通过key+value，找到对应对象
   searchObj: function (index, value, obj) {
     let result = {};
-    Object.keys(obj).forEach(function(key){
+    Object.keys(obj).forEach(function (key) {
       if (obj[key][index] === value) {
         result = obj[key];
       }
@@ -312,6 +323,53 @@ var toolsFn = {
     return result;
   }
 };
+
+/**
+ * 坐标转换，百度地图坐标转换成腾讯地图坐标
+ * lng 腾讯经度（pointy）
+ * lat 腾讯纬度（pointx）
+ * 经度>纬度
+ */
+function bMapToQQMap(lng, lat) {
+
+  if (lng == null || lng == '' || lat == null || lat == '')
+    return [lng, lat];
+
+  var x_pi = 3.14159265358979324;
+  var x = parseFloat(lng) - 0.0065;
+  var y = parseFloat(lat) - 0.006;
+  var z = Math.sqrt(x * x + y * y) - 0.00002 * Math.sin(y * x_pi);
+  var theta = Math.atan2(y, x) - 0.000003 * Math.cos(x * x_pi);
+  var lng = (z * Math.cos(theta)).toFixed(7);
+  var lat = (z * Math.sin(theta)).toFixed(7);
+
+  return [lng, lat];
+
+}
+
+/**
+ * 坐标转换，腾讯地图转换成百度地图坐标
+ * lng 腾讯经度（pointy）
+ * lat 腾讯纬度（pointx）
+ * 经度>纬度
+ */
+
+function qqMapToBMap(lng, lat) {
+
+  if (lng == null || lng == '' || lat == null || lat == '')
+    return [lng, lat];
+
+  var x_pi = 3.14159265358979324;
+  var x = parseFloat(lng);
+  var y = parseFloat(lat);
+  var z = Math.sqrt(x * x + y * y) + 0.00002 * Math.sin(y * x_pi);
+  var theta = Math.atan2(y, x) + 0.000003 * Math.cos(x * x_pi);
+  var lng = (z * Math.cos(theta) + 0.0065).toFixed(5);
+  var lat = (z * Math.sin(theta) + 0.006).toFixed(5);
+  return [lng, lat];
+
+}
+
 
 module.exports = {
   sha1: sha1,

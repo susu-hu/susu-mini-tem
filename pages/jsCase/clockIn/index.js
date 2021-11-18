@@ -1,4 +1,6 @@
 // pages/clockIn/index.js
+import qqMapSdk from '../util/qqmap.js';
+const app = getApp();
 Page({
 
   /**
@@ -6,7 +8,7 @@ Page({
    */
   data: {
     now_time: '',
-    current_address: '江苏省XXXXXXXX-xxxxxxx-嘻嘻嘻嘻嘻嘻嘻',
+    current_address: '',
     status: 0, //0---》上班未打卡 1----》上班已打卡 
     now_time_stop: '', //已打卡时间
     imgUrl: '', //打卡照片
@@ -15,7 +17,7 @@ Page({
 
   onLoad: function (options) {
     this.getCurrentTime();
-    this.getUserLocation();
+    this.getLocation();
     this.setData({
       now_time: this.getTime()
     })
@@ -33,15 +35,20 @@ Page({
         icon: 'error'
       })
     }
+    if (!this.data.current_address) {
+      return wx.showToast({
+        title: '未获取当前定位',
+        icon: 'error'
+      })
+    }
     wx.vibrateLong(); //使手机震动400ms
     this.setData({
       status: 1, //上班已打卡
       now_time_stop: this.data.now_time,
-    },wx.showToast({
+    }, wx.showToast({
       title: '打卡成功',
-      icon:'none'
+      icon: 'none'
     }))
-  
   },
 
   getCurrentTime: function () {
@@ -63,59 +70,121 @@ Page({
   },
 
   // 获取当前的地址
-  getUserLocation: function () {
-    let that = this;
-    wx.getSetting({
-      success: (res) => {
-        if (res.authSetting['scope.userLocation'] != undefined && res.authSetting['scope.userLocation'] != true) {
-          wx.showModal({
-            title: '请求授权当前位置',
-            content: '需要获取您的地理位置，请确认授权',
-            success: function (res) {
-              if (res.cancel) {
-                wx.showToast({
-                  title: '拒绝授权',
-                  icon: 'none',
-                  duration: 1000
-                })
-              } else if (res.confirm) {
-                wx.openSetting({
-                  success: function (dataAu) {
-                    if (dataAu.authSetting["scope.userLocation"] == true) {
-                      //再次授权，调用wx.getLocation的API
-                      that.getLocation();
-                    } else {
-                      wx.showToast({
-                        title: '授权失败',
-                        icon: 'none',
-                        duration: 1000
-                      })
-                    }
+  getUserAuth: function () {
+    return new Promise((resolve, reject) => {
+      wx.authorize({
+        scope: 'scope.userLocation'
+      }).then(() => {
+        resolve()
+      }).catch(() => {
+        let that = this;
+        wx.getSetting({
+          success: (res) => {
+            if (res.authSetting['scope.userLocation'] != undefined && res.authSetting['scope.userLocation'] != true) {
+              wx.showModal({
+                title: '请求授权当前位置',
+                content: '需要获取您的地理位置，请确认授权',
+                success: function (res) {
+                  if (res.cancel) {
+                    wx.showToast({
+                      title: '拒绝授权',
+                      icon: 'none',
+                      duration: 1000
+                    })
+                  } else if (res.confirm) {
+                    wx.openSetting({
+                      success: function (dataAu) {
+                        if (dataAu.authSetting["scope.userLocation"] == true) {
+                          //再次授权，调用wx.getLocation的API
+                          that.getLocation();
+                        } else {
+                          wx.showToast({
+                            title: '授权失败',
+                            icon: 'none',
+                            duration: 1000
+                          })
+                        }
+                      }
+                    })
                   }
-                })
-              }
+                }
+              })
+            } else if (res.authSetting['scope.userLocation'] == undefined) {
+              that.getLocation();
+            } else {
+              that.getLocation();
             }
-          })
-        } else if (res.authSetting['scope.userLocation'] == undefined) {
-          that.getLocation();
-        } else {
-          that.getLocation();
-        }
-      }
-    })
-  },
-  getLocation: function () {
-    wx.getLocation({
-      type: 'wgs84',
-      success: (res) => {
-        console.log(res)
-        const latitude = res.latitude
-        const longitude = res.longitude;
-        //  调用腾讯地图sdk获取到当前的地址
-      }
+          }
+        })
+      })
     })
   },
 
+  getLocation: function () {
+    wx.getLocation({
+      type: 'gcj02',
+      success: (res) => {
+        console.log('哈时代峰峻艾师傅的数据恢复就收到回复是的')
+        let {
+          longitude,
+          latitude
+        } = res
+        let locations = latitude + ',' + longitude
+        // 小程序坐标转地图坐标
+        this.translate(locations).then(res => {
+          if (res.locations) {
+            latitude = res.locations[0].lat
+            longitude = res.locations[0].lng
+          }
+        })
+        qqMapSdk.reverseGeocoder({
+          location: {
+            latitude: latitude,
+            longitude: longitude
+          },
+          success: (res) => {
+            let current_address = res.result.address + res.result.formatted_addresses.recommend;
+            this.setData({
+              current_address,
+            })
+            console.log(res)
+          },
+          fail: function (err) {
+            console.log(err)
+          }
+        })
+      },
+      fail: (res) => {
+        console.log(res)
+        this.getUserAuth()
+        wx.showToast({
+          title: '获取定位失败，请打开手机定位，重新进入！',
+          icon: 'none'
+        });
+      }
+    })
+  },
+  // 刷新
+  refreshAdd() {
+    this.getLocation()
+  },
+  // 地址转换
+  translate(locations) {
+    return new Promise((resolve, reject) => {
+      let url = 'https://apis.map.qq.com/ws/coord/v1/translate'
+      wx.request({
+        url,
+        method: 'GET',
+        data: {
+          locations,
+          type: 5, //[默认]腾讯、google、高德坐标
+          key: 'CREBZ-B7PKX-GL44O-7ITDB-7UFU7-OLFDV'
+        },
+        success: res => resolve(res.data),
+        fail: (err) => reject(err),
+      })
+    })
+  },
   chooseImg() {
     wx.chooseImage({
       count: 1, // 默认9

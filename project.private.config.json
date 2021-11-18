@@ -71,6 +71,12 @@
           "pathName": "pages/wxCase/showEli/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/jsCase/onLoaction/index",
+          "pathName": "pages/jsCase/onLoaction/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
