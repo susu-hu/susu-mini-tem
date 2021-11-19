@@ -77,6 +77,12 @@
           "pathName": "pages/jsCase/onLoaction/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/jsCase/addressList/index",
+          "pathName": "pages/jsCase/addressList/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

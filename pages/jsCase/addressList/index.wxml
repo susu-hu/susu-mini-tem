@@ -1,0 +1,22 @@
+<!--pages/jsCase/addressList/index.wxml-->
+<view class="right-nav">
+  <view bindtap="getCurrentCode" class="{{chooseIndex == index ? '.city-list-active' : ''}}" wx:for="{{cityList}}"
+    style="height:{{codeHeight}}px" data-code="{{item.code}}" data-index="{{index}}">
+    {{item.code}}
+  </view>
+</view>
+
+<view class="city-layer {{isShowLayer ? '' : 'layer-hide'}}">
+  {{codeY}}
+</view>
+
+<view class="current-choose-city">当前选择机场：{{chooseCity}}</view>
+<scroll-view class="city-scroll" scroll-y="true" scroll-into-view="{{codeY}}" scroll-with-animation="true"
+  style="height:{{cityHeight}}px" bindscroll="scroll">
+  <view class="city-box" wx:for="{{cityList}}" wx:key="{{item.code}}">
+    <view class="city-code" id="{{item.code}}">{{item.code}}</view>
+    <view class="city-list" wx:for="{{item.cityList}}" wx:for-item="city" bindtap="getChooseCity" data-city="{{city}}">
+      {{city}}
+    </view>
+  </view>
+</scroll-view>
