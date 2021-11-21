@@ -1,1 +1,25 @@
 /* pages/jsCase/onLoaction/index.wxss */
+.btn {
+  margin: 40px auto;
+  width: 706rpx;
+  height: 100rpx;
+  background: linear-gradient(180deg, #FFEFC3 0%, #FFBC00 100%);
+  border-radius: 59rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 29rpx;
+  color: #fff;
+  position: relative;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 706rpx;
+  height: 100rpx;
+  background: #DBA30A;
+  border-radius: 59rpx;
+  top: 4px;
+  left: 0;
+  z-index: -1;
+}

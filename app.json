@@ -151,7 +151,8 @@
         "cal/index",
         "checkIn/index",
         "onLoaction/index",
-        "dateSel/index"
+        "dateSel/index",
+        "addressList/index"
       ]
     }
   ],
@@ -203,5 +204,9 @@
     "scope.userLocation": {
       "desc": "您的位置将用来选择收货地址"
     }
-  }
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ]
 }

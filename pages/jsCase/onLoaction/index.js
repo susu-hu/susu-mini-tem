@@ -8,9 +8,32 @@ Page({
   data: {
 
   },
+  show() {
+    wx.showToast({
+      title: 'xixihhasd a',
+    })
+  },
 
 
   onLoad: function () {
+    //后台定位
+    // wx.startLocationUpdateBackground({
+    //   success(res) {
+    //     console.log('开启后台定位', res)
+    //   },
+    //   fail(res) {
+    //     console.log('开启后台定位失败', res)
+    //   }
+    // })
+  },
+  onReady() {
+    // //获取变化的地址
+    // wx.onLocationChange(function (res) {
+    //     console.log("location has change!")
+    //     console.log(res)
+    //   }),
+    //   //通过不断刷新页面，来获取新的地址
+    //   setTimeout(this.onReady, 1000)
   },
 
   // // 这个函数 在 onLoad内触发 或 点击触发
@@ -71,7 +94,7 @@ Page({
 
 
 
-  
+
 
 
 })

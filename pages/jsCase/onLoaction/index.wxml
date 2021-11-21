@@ -1,2 +1,3 @@
 <!--pages/jsCase/onLoaction/index.wxml-->
-<text>pages/jsCase/onLoaction/index.wxml</text>
+<view class="btn">获取当前地址</view>
+<input placeholder="请输入" bindconfirm="show"/>

@@ -79,8 +79,13 @@
           "scene": null
         },
         {
+<<<<<<< HEAD
           "name": "pages/jsCase/dateSel/index",
           "pathName": "pages/jsCase/dateSel/index",
+=======
+          "name": "pages/jsCase/addressList/index",
+          "pathName": "pages/jsCase/addressList/index",
+>>>>>>> 1b004246745e3ee5962131cd9e885e26363a9c3d
           "query": "",
           "scene": null
         }
