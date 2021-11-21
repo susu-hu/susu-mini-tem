@@ -315,6 +315,10 @@ Page({
             name: 'wx.onLocationChange()持续定位',
             url: '/pages/jsCase/onLoaction/index'
           },
+          {
+            name: '自定义多日期选择',
+            url: '/pages/jsCase/dateSel/index'
+          },
          
         ]
       }

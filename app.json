@@ -150,7 +150,8 @@
         "pageCon/index",
         "cal/index",
         "checkIn/index",
-        "onLoaction/index"
+        "onLoaction/index",
+        "dateSel/index"
       ]
     }
   ],

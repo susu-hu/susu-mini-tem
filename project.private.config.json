@@ -77,6 +77,12 @@
           "pathName": "pages/jsCase/onLoaction/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/jsCase/dateSel/index",
+          "pathName": "pages/jsCase/dateSel/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

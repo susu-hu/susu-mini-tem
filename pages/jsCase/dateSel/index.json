@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "date":"../components/date/index"
+  },
+  "navigationBarTitleText": "自定义多日期选择"
+}
