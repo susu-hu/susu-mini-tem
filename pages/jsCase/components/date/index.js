@@ -75,9 +75,6 @@ Component({
     // 未选择 已选择开始时间 已选择结束时间
     type: '未选择',
   },
-  attached() {
-    this.init()
-  },
   methods: {
     // 颜色转换
     hexToRgb(hex) {
@@ -590,6 +587,7 @@ Component({
   },
   lifetimes: {
     attached() {
+      this.init()
       let color = this.hexToRgb(this.data.theme_color)
       let new_color = '',
         new_color1 = '',

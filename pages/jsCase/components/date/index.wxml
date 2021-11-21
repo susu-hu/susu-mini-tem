@@ -4,7 +4,7 @@
   <view class="box">
     <view class="calendar-box">
       <view class="calendar-column">
-        <view class="listing"  style="background: {{color2}};">
+        <view class="listing" style="background: {{color2}};">
           <view class="item" style="color: {{theme_color}};">日</view>
           <view class="item" style="color: {{theme_color}};">一</view>
           <view class="item" style="color: {{theme_color}};">二</view>
@@ -36,7 +36,7 @@
                     <!-- 已选择【开始/结束】同为当天 -->
                     <view class="item-box day_late_bg_left_and_right" bindtap='getThisData' data-title="已选择状态开始和结束"
                       data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
-                      <view class="item">{{day.date}}</view>
+                      <view class="item" style="background: {{theme_color}};">{{day.date}}</view>
                       <view class="start">开始</view>
                       <view class="end">结束</view>
                     </view>
@@ -46,14 +46,15 @@
                     <block wx:if="{{i2==6 || type=='已选择开始时间' || day.isBack}}">
                       <view class="item-box day_late_bg_left_and_right" bindtap='getThisData' data-title="已选择状态开始-消除背景"
                         data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
-                        <view class="item">{{day.date}}</view>
+                        <view class="item" style="background: {{theme_color}};">{{day.date}}</view>
                         <view class="start">开始</view>
                       </view>
                     </block>
                     <block wx:else>
                       <view class="item-box day_late_bg_left" bindtap='getThisData' data-title="已选择状态开始"
+                        style="background:linear-gradient(to right, #ffffff 50%, {{color2}} 50%);"
                         data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
-                        <view class="item">{{day.date}}</view>
+                        <view class="item" style="background: {{theme_color}};">{{day.date}}</view>
                         <view class="start">开始</view>
                       </view>
                     </block>
@@ -63,14 +64,15 @@
                     <block wx:if="{{i2==0 || day.isFront}}">
                       <view class="item-box day_late_bg_left_and_right" bindtap='getThisData' data-title="已选择状态结束-消除背景"
                         data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
-                        <view class="item">{{day.date}}</view>
+                        <view class="item" style="background: {{theme_color}};">{{day.date}}</view>
                         <view class="end">结束</view>
                       </view>
                     </block>
                     <block wx:else>
                       <view class="item-box day_late_bg_right" bindtap='getThisData' data-title="已选择状态结束"
+                        style="background: linear-gradient(to left, #ffffff 50%, {{color2}} 50%);"
                         data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
-                        <view class="item">{{day.date}}</view>
+                        <view class="item" style="background: {{theme_color}};">{{day.date}}</view>
                         <view class="end">结束</view>
                       </view>
                     </block>
@@ -79,7 +81,7 @@
                     <!-- 已选择【背景】 -->
                     <block wx:if="{{i2==0&&day.isBack}}">
                       <!-- 是第一个且是本月最后一天且一行就它一个 -->
-                      <view
+                      <view style="background: {{color2}};"
                         class="item-box day_late_bg_left_start_and_right_end day_late_bg_left_start day_late_bg_left_start_and_right_end_and_back"
                         bindtap='getThisData' data-title="已选择状态背景-设置半边框" data-index="{{index}}" data-i1="{{i1}}"
                         data-i2="{{i2}}">
@@ -88,7 +90,7 @@
                     </block>
                     <block wx:elif="{{i2==6&&day.isFront}}">
                       <!-- 是第一个且是本月第一天且一行就它一个 -->
-                      <view
+                      <view style="background: {{color2}};"
                         class="item-box day_late_bg_left_start_and_right_end day_late_bg_left_start day_late_bg_left_start_and_right_end_and_front"
                         bindtap='getThisData' data-title="已选择状态背景-设置左右半边框" data-index="{{index}}" data-i1="{{i1}}"
                         data-i2="{{i2}}">
@@ -97,7 +99,8 @@
                     </block>
                     <block wx:elif="{{i2==0||day.isFront}}">
                       <!-- 是第一个或者是否本月第一天 -->
-                      <view class="item-box day_late_bg_left_start_and_right_end day_late_bg_left_start"
+                      <view style="background: {{color2}};"
+                        class="item-box day_late_bg_left_start_and_right_end day_late_bg_left_start"
                         bindtap='getThisData' data-title="已选择状态背景-设置左半边框" data-index="{{index}}" data-i1="{{i1}}"
                         data-i2="{{i2}}">
                         <view class="item">{{day.date}}</view>
@@ -105,15 +108,17 @@
                     </block>
                     <block wx:elif="{{i2==6||day.isBack}}">
                       <!-- 是第一个且是本月最后一天 -->
-                      <view class="item-box day_late_bg_left_start_and_right_end day_late_bg_right_end"
+                      <view style="background: linear-gradient(to left, #ffffff 50%, {{color2}} 50%);"
+                        class="item-box day_late_bg_left_start_and_right_end day_late_bg_right_end"
                         bindtap='getThisData' data-title="已选择状态背景-设置右半边框" data-index="{{index}}" data-i1="{{i1}}"
                         data-i2="{{i2}}">
-                        <view class="item">{{day.date}}</view>
+                        <view class="item" style="background: {{color2}};">{{day.date}}</view>
                       </view>
                     </block>
                     <block wx:else>
-                      <view class="item-box day_late_bg_left_start_and_right_end" bindtap='getThisData'
-                        data-title="已选择状态背景" data-index="{{index}}" data-i1="{{i1}}" data-i2="{{i2}}">
+                      <view style="background: {{color2}};" class="item-box day_late_bg_left_start_and_right_end"
+                        bindtap='getThisData' data-title="已选择状态背景" data-index="{{index}}" data-i1="{{i1}}"
+                        data-i2="{{i2}}">
                         <view class="item">{{day.date}}</view>
                       </view>
                     </block>
@@ -136,10 +141,10 @@
     <view class="btn-box">
       <view class="no" bindtap="tapNo">取消</view>
       <block wx:if="{{type=='已选择结束时间'}}">
-        <view class="yes" bindtap="tapYes">确认</view>
+        <view class="yes" bindtap="tapYes" style="background: {{theme_color}};">确认</view>
       </block>
       <block wx:else>
-        <view class="yes hide">确认</view>
+        <view class="yes hide" style="background: {{theme_color}};">确认</view>
       </block>
     </view>
   </view>
