@@ -81,11 +81,11 @@
                     <!-- 已选择【背景】 -->
                     <block wx:if="{{i2==0&&day.isBack}}">
                       <!-- 是第一个且是本月最后一天且一行就它一个 -->
-                      <view style="background: {{color2}};"
+                      <view style="background: linear-gradient(to right, #ffffff 50%, {{color2}} 50%);"
                         class="item-box day_late_bg_left_start_and_right_end day_late_bg_left_start day_late_bg_left_start_and_right_end_and_back"
                         bindtap='getThisData' data-title="已选择状态背景-设置半边框" data-index="{{index}}" data-i1="{{i1}}"
                         data-i2="{{i2}}">
-                        <view class="item">{{day.date}}</view>
+                        <view class="item"  style="background:{{color2}}">{{day.date}}</view>
                       </view>
                     </block>
                     <block wx:elif="{{i2==6&&day.isFront}}">
@@ -94,16 +94,16 @@
                         class="item-box day_late_bg_left_start_and_right_end day_late_bg_left_start day_late_bg_left_start_and_right_end_and_front"
                         bindtap='getThisData' data-title="已选择状态背景-设置左右半边框" data-index="{{index}}" data-i1="{{i1}}"
                         data-i2="{{i2}}">
-                        <view class="item">{{day.date}}</view>
+                        <view class="item" style="background:{{color2}}">{{day.date}}</view>
                       </view>
                     </block>
                     <block wx:elif="{{i2==0||day.isFront}}">
                       <!-- 是第一个或者是否本月第一天 -->
-                      <view style="background: {{color2}};"
+                      <view style="background: linear-gradient(to right, #ffffff 50%, {{color2}} 50%);"
                         class="item-box day_late_bg_left_start_and_right_end day_late_bg_left_start"
                         bindtap='getThisData' data-title="已选择状态背景-设置左半边框" data-index="{{index}}" data-i1="{{i1}}"
                         data-i2="{{i2}}">
-                        <view class="item">{{day.date}}</view>
+                        <view class="item"  style="background:{{color2}}">{{day.date}}</view>
                       </view>
                     </block>
                     <block wx:elif="{{i2==6||day.isBack}}">

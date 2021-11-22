@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "calendar": "../components/calendar2/calendar"
+  },
+  "navigationBarTitleText": "多日期选择"
+}

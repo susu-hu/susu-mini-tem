@@ -1,4 +1,6 @@
 /* pages/jsCase/dateSel/index.wxss */
 page{
-  color: #ffc0cb;
+  /* color: #ffc0cb; */
+  /* color: #ffc05F; */
+  color: #63c7c7;
 }

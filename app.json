@@ -152,7 +152,8 @@
         "checkIn/index",
         "onLoaction/index",
         "dateSel/index",
-        "addressList/index"
+        "addressList/index",
+        "cal2/index"
       ]
     }
   ],

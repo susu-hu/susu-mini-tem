@@ -1,0 +1,263 @@
+/* pages/calendar/calendar.wxss */
+cover-view{
+  line-height: initial;
+}
+.calendar-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+  padding-top: 100rpx;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.calendar-box.active {
+  opacity: 1;
+}
+
+.calendar-wrapper {
+  width: 100%;
+  border-top: 1px #f5f5f5 solid;
+  border-bottom: 1px #f5f5f5 solid; 
+  box-sizing: border-box;
+  font-size: 26rpx;
+  background: #fff;
+  transition: all 0.3s;
+  transform: translateY(-100%);
+}
+
+.calendar-wrapper.active {
+  transform: translateY(0%);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100rpx;
+  background: #fff;
+  z-index: 10000;
+}
+
+.top-jiantou {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 100rpx;
+}
+
+.iconfont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #1AB16C;
+  width: 53rpx;
+  height: 53rpx;
+}
+
+.left-color, 
+.right-color
+ {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 20rpx solid transparent;
+  border-bottom: 20rpx solid transparent;
+}
+
+.left-color{
+  border-right: 40rpx solid transparent;
+  border-right-color: #1AB16C;
+}
+
+.right-color{
+  border-left: 40rpx solid transparent;
+  border-left-color: #1AB16C;
+}
+
+.btn {
+  margin: 0 30rpx;
+  width: 240rpx;
+  height: 53rpx;
+  border: 1rpx solid #1AB16C;
+  border-radius: 26rpx;
+  color: #1AB16C;
+  font-size: 26rpx;
+  box-sizing: border-box;
+}
+
+.calendar-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  height: 80rpx;
+}
+
+.backtoday {
+  position: absolute;
+  right: 0;
+  top: 15rpx;
+  padding: 0 10rpx;
+  padding-left: 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border: 1px #1AB16C solid;
+  border-right: none;
+  font-size: 28rpx;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  color: #1AB16C;
+  background: rgba(82, 184, 245, 0.1);
+}
+.checkalllbtn {
+  position: absolute;
+  left: 0;
+  top: 15rpx;
+  padding: 0 10rpx;
+  padding-right: 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border: 1px #1AB16C solid;
+  border-left: none;
+  font-size: 28rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  color: #1AB16C;
+  background: rgba(82, 184, 245, 0.1);
+}
+
+.date-befor, .date-after {
+  /* border: 1px red solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  width: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  /* margin-right: 20rpx; */
+}
+
+/* .date-after {
+    margin-left: 20rpx;
+} */
+
+.calendar-panel-box {
+  display: flex;
+}
+
+.calendar-header {
+  display: flex;
+}
+
+.calendar-header view, 
+.calendar-header cover-view {
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  color: #1AB16C;
+}
+.calendar-header.mini view,
+.calendar-header.mini cover-view
+ {
+  line-height: 50rpx;
+}
+.calendar-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calender-body-date-week {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px #f5f5f5 solid;
+}
+
+.date {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #1c1c1c;
+  background: #fff;
+  line-height: 100rpx;
+}
+.date.mini{
+  line-height: 60rpx;
+}
+.date.active {
+  background: red;
+}
+
+.placeholder {
+  color: #a4a4a4;
+}
+
+.date-current {
+  background: #1AB16C;
+  color: #fff;
+}
+
+.date-lock {
+  color: #ff5a5f;
+}
+.data-circle {
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #ff5a5f;
+  z-index: 2;
+}
+.data-circle.mini{
+  bottom: 2rpx;
+}
+
+.packup {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #1AB16C;
+  align-items: center;
+}
+.packup-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 55px;
+  line-height:55px!important;
+}
+.flex{
+  display: flex;
+}
+.flex-between{
+  justify-content: space-between;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.border-left{
+  border-left:1px solid #eee; 
+}
+.cmf-btn{
+  background-color: #39b54a;
+  color: #fff;
+  border: 1rpx solid #39b54a;
+}

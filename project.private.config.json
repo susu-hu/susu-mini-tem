@@ -13,79 +13,38 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/subPack/customIpt/index",
-          "pathName": "pages/subPack/customIpt/index",
+          "name": "pages/scroll/index",
+          "pathName": "pages/scroll/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/wxCase/buttonGr/index",
-          "pathName": "pages/wxCase/buttonGr/index",
+          "name": "pages/cardCricle/index",
+          "pathName": "pages/cardCricle/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/another/draw/index",
-          "pathName": "pages/another/draw/index",
+          "name": "pages/sendCode2/index",
+          "pathName": "pages/sendCode2/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/jsCase/draw/index",
-          "pathName": "pages/jsCase/draw/index",
+          "name": "pages/sendCode2/index2",
+          "pathName": "pages/sendCode2/index2",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/cal2/index2",
-          "pathName": "pages/cal2/index2",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/pageCon/index",
-          "pathName": "pages/jsCase/pageCon/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/cal/index",
-          "pathName": "pages/jsCase/cal/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/clockIn/index",
-          "pathName": "pages/jsCase/clockIn/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/checkIn/index",
-          "pathName": "pages/jsCase/checkIn/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/showEli/index",
-          "pathName": "pages/wxCase/showEli/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/onLoaction/index",
-          "pathName": "pages/jsCase/onLoaction/index",
-          "query": "",
-          "scene": null
-        },
-        {
-<<<<<<< HEAD
           "name": "pages/jsCase/dateSel/index",
           "pathName": "pages/jsCase/dateSel/index",
-=======
-          "name": "pages/jsCase/addressList/index",
-          "pathName": "pages/jsCase/addressList/index",
->>>>>>> 1b004246745e3ee5962131cd9e885e26363a9c3d
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/cal2/index",
+          "pathName": "pages/jsCase/cal2/index",
           "query": "",
           "scene": null
         }

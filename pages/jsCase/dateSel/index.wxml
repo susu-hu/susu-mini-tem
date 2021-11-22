@@ -1,4 +1,4 @@
 <!--pages/jsCase/dateSel/index.wxml-->
 <!--minDate最小时间 默认为2018/1/1,日期格式为yyyy/mm/dd ,最小时间和当前日期尽量不要相差太大,无最大日期,在触底时每次加载6个月-->
-<date isShow="true" timeStart="{{sel_list.start_time}}" minDate="2019/1/1" timeEnd="{{sel_list.end_time}}" theme_color="#ffc0cb"
+<date isShow="true" timeStart="{{sel_list.start_time}}" minDate="2019/1/1" timeEnd="{{sel_list.end_time}}" theme_color="#ffc05F"
   bind:tapYes="dateSubmit" bind:tapNo="closeModal" id="date" />

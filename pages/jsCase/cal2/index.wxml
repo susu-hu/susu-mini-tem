@@ -1,0 +1,3 @@
+<!--pages/jsCase/cal2/index.wxml-->
+<calendar id="calendar" isOpen="{{true}}" selected="{{selectedDays}}" lockDay="{{lockday}}" bind:select="cmfclick"
+  bind:getdate="getdate" bind:checkall="checkall" bind:clear="clear"></calendar>

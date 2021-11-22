@@ -43,7 +43,6 @@ Component({
       type: String,
       value: '#2493F8'
     }
-
   },
   data: {
     currentDate: '', //scrollintoview的id
@@ -84,6 +83,22 @@ Component({
         g: parseInt(result[2], 16),
         b: parseInt(result[3], 16)
       } : null;
+    },
+    // rgba+透明度转换到是十六进制
+    hexify(color) {
+      var values = color
+        .replace(/rgba?\(/, '')
+        .replace(/\)/, '')
+        .replace(/[\s+]/g, '')
+        .split(',');
+      var a = parseFloat(values[3] || 1),
+        r = Math.floor(a * parseInt(values[0]) + (1 - a) * 255),
+        g = Math.floor(a * parseInt(values[1]) + (1 - a) * 255),
+        b = Math.floor(a * parseInt(values[2]) + (1 - a) * 255);
+      return "#" +
+        ("0" + r.toString(16)).slice(-2) +
+        ("0" + g.toString(16)).slice(-2) +
+        ("0" + b.toString(16)).slice(-2);
     },
     reset() {
       this.data.data.forEach((item, index) => {
@@ -591,15 +606,13 @@ Component({
       let color = this.hexToRgb(this.data.theme_color)
       let new_color = '',
         new_color1 = '',
-        color1, color2;
+        color2;
       for (let i in color) {
         new_color += i;
         new_color1 += color[i] + ",";
       }
-      color1 = new_color + '(' + new_color1 + '.3)',
-        color2 = new_color + '(' + new_color1 + '.1)',
+      color2 = this.hexify(new_color + '(' + new_color1 + '.1)'),
         this.setData({
-          color1,//色值1
           color2,
         })
     }
