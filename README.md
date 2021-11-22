@@ -80,6 +80,7 @@ step5：构建npm）
 61. 抽奖活动
 62. 圆角边框渐变色
 63. 自定义多日期选择组件，可设置不同主题色
+64. swiper实现商品轮播
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -150,6 +151,7 @@ step5：构建npm）
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1118/141402_8d2bc909_8576727.gif "抽奖.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1120/205323_a07eb076_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1122/134217_6561af6b_8576727.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1123/000811_3d250d72_8576727.gif "撒旦发.gif")
 #### 参与贡献
 
 1.  Fork 本仓库
