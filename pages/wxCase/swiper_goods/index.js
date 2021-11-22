@@ -5,7 +5,47 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    goods_list:[
+      {
+        goods:[
+          {
+            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+          },
+          {
+            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+          },
+          {
+            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+          },
+        ]
+      },
+      {
+        goods:[
+          {
+            img:'https://i.postimg.cc/qRRLS16Q/susu0.jpg',
+          },
+          {
+            img:'https://i.postimg.cc/qRRLS16Q/susu0.jpg',
+          },
+          {
+            img:'https://i.postimg.cc/qRRLS16Q/susu0.jpg',
+          },
+        ]
+      },
+      {
+        goods:[
+          {
+            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+          },
+          {
+            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+          },
+          {
+            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+          },
+        ]
+      }
+    ]
   },
 
   /**

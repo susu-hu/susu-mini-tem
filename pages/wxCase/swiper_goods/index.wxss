@@ -3,12 +3,9 @@
   margin: 18rpx;
   overflow: hidden;
   position: relative;
-}
-
-.point_bg {
-  display: block;
-  width: 100%;
   height: 228rpx;
+  background: pink;
+  border-radius: 20rpx;
 }
 
 .point_con {
@@ -38,8 +35,7 @@
   display: block;
   width: 145rpx;
   height: 154rpx;
-  background: #E0F5FF;
-  box-shadow: 0px 3rpx 6rpx #B0DFF5;
+  box-shadow: 0px 3rpx 6rpx rgb(243, 210, 216);
   border-radius: 16rpx;
   margin: 0 auto;
   margin-bottom: 9rpx;
@@ -51,4 +47,33 @@
   line-height: 30rpx;
   color: #147ABE;
   text-align: center;
+}
+
+.t_box {
+  width: 110rpx;
+  height: 100%;
+  background-color: rgb(223, 181, 181);
+  text-align: center;
+}
+
+.title {
+  white-space: pre-wrap;
+  width: 50rpx;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  font-size: 30rpx;
+  /* margin: 0 auto;
+  position: relative;
+  top: 50%; 
+  transform: translateY(-50%); */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.t_box:after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
