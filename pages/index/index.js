@@ -266,6 +266,11 @@ Page({
             name: '文字右下角的展开按钮',
             url: '/pages/wxCase/showEli/index'
           },
+          {
+            name: 'swiper商品滑动区域',
+            url: '/pages/wxCase/swiper_goods/index'
+          },
+         
         ]
       },
       {
@@ -323,7 +328,7 @@ Page({
             name: '自定义多日期选择',
             url: '/pages/jsCase/dateSel/index'
           },
-         
+        
         ]
       }
     ]

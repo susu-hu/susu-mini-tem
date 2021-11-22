@@ -1,0 +1,16 @@
+<!--pages/wxCase/swiper_goods/index.wxml-->
+<view class="act">
+  <image class="point_bg" src="/img/welf_img03.png" mode="widthFix"></image>
+  <view class="point_con">
+    <swiper class="swiper-box" indicator-dots="{{false}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}"
+      circular="true">
+      <swiper-item wx:for="{{hot_goods_data}}" wx:key="index">
+        <view class="point_flex" wx:for="{{item}}" wx:for-item="its" wx:key="key" bindtap="goodsDetail"
+          data-goods_id="{{its.goods_id}}">
+          <image class="point_img" src="{{its.goods_cover}}"></image>
+          <view class="point_text">{{its.score}}积分</view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

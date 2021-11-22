@@ -1,0 +1,54 @@
+/* pages/wxCase/swiper_goods/index.wxss */
+.act {
+  margin: 18rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.point_bg {
+  display: block;
+  width: 100%;
+  height: 228rpx;
+}
+
+.point_con {
+  position: absolute;
+  top: 19rpx;
+  left: 107rpx;
+  width: 84%;
+  white-space: nowrap;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+
+.point_con .swiper-box {
+  height: 192rpx;
+  overflow: hidden;
+}
+
+.point_flex {
+  float: left;
+  width: 33.33%;
+  height: 192rpx;
+  text-align: center;
+}
+
+.point_img {
+  display: block;
+  width: 145rpx;
+  height: 154rpx;
+  background: #E0F5FF;
+  box-shadow: 0px 3rpx 6rpx #B0DFF5;
+  border-radius: 16rpx;
+  margin: 0 auto;
+  margin-bottom: 9rpx;
+}
+
+.point_text {
+  height: 30rpx;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  color: #147ABE;
+  text-align: center;
+}

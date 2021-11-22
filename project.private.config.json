@@ -47,6 +47,12 @@
           "pathName": "pages/jsCase/cal2/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/swiper_goods/index",
+          "pathName": "pages/wxCase/swiper_goods/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
