@@ -53,6 +53,12 @@
           "pathName": "pages/wxCase/swiper_goods/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/rects/index",
+          "pathName": "pages/wxCase/rects/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

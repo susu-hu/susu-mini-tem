@@ -23,3 +23,16 @@
   left: 0;
   z-index: -1;
 }
+
+.btn_pop {
+  text-align: center;
+  line-height: 72rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #5C4A1A;
+  width: 256rpx;
+  height: 72prx;
+  background: linear-gradient(180deg, #FFEDBC 0%, #FFBE07 100%);
+  box-shadow: 0rpx 6rpx 0rpx #DBA30A;
+  border-radius: 36rpx;
+}

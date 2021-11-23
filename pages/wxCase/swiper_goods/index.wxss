@@ -45,7 +45,7 @@
   height: 30rpx;
   font-size: 22rpx;
   line-height: 30rpx;
-  color: #147ABE;
+  color: #fff;
   text-align: center;
 }
 

@@ -1,0 +1,384 @@
+/* pages/wxCase/rects/index.wxss */
+page {
+  background-color: #fff;
+  padding-bottom: 40rpx;
+}
+
+.btn {
+  margin: 8px auto;
+  flex-shrink: 0;
+  width: 160px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.rect {
+  background: pink;
+}
+
+.circle {
+  border-radius: 64px;
+  background: #abdfd1;
+}
+
+.px {
+  position: relative;
+  width: 160px;
+  height: 64px;
+  z-index: 10;
+}
+
+.px::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #cf7132;
+  transform: skewX(15deg);
+  z-index: -1;
+}
+
+.px1 {
+  width: 230px;
+  height: 64px;
+  background: linear-gradient(45deg, transparent 22%, pink 22%, #9006fb 78%, transparent 0);
+}
+
+.tx {
+  position: relative;
+  width: 160px;
+  height: 64px;
+  z-index: 10;
+}
+
+.tx::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: perspective(40px) rotateX(10deg);
+  transform-origin: bottom;
+  z-index: -1;
+  background: #ff9800;
+}
+
+.ant {
+  background: linear-gradient(135deg, transparent 10px, pink 0);
+  background-repeat: no-repeat;
+}
+
+.ant4 {
+  background:
+    linear-gradient(135deg, transparent 10px, #cf6a18 0) top left,
+    linear-gradient(-135deg, transparent 10px, #cf6a18 0) top right,
+    linear-gradient(-45deg, transparent 10px, #cf6a18 0) bottom right,
+    linear-gradient(45deg, transparent 10px, #cf6a18 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.ant2 {
+  background:
+    linear-gradient(135deg, transparent 10px, #92e092 0, #fff) top left,
+    linear-gradient(-135deg, transparent 10px, #92e092 0, #fff) top right,
+    linear-gradient(-45deg, transparent 10px, #92e092 0, #fff) bottom right,
+    linear-gradient(45deg, transparent 10px, #92e092 0, #fff) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.ant1 {
+  background: linear-gradient(45deg,
+      #f9d9e7,
+      #ff1493);
+  clip-path: polygon(15px 0,
+      calc(100% - 15px) 0,
+      100% 15px,
+      100% calc(100% - 15px),
+      calc(100% - 15px) 100%,
+      15px 100%,
+      0 calc(100% - 15px),
+      0 15px);
+}
+
+.ant3 {
+  background: linear-gradient(45deg,
+      #f9d9e7,
+      #a6d189);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.ant5 {
+  background: linear-gradient(45deg,
+      #f9d9e7,
+      #a6d189);
+  -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+.ant6 {
+  background: linear-gradient(45deg,
+      #f9d9e7,
+      #ff1493);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+
+}
+
+.ant7 {
+  background: linear-gradient(45deg,
+      #f9d9e7,
+      #ff1493);
+  -webkit-clip-path: polygon(78% 100%, 28% 100%, 0 55%, 32% 0, 71% 0, 100% 54%);
+  clip-path: polygon(78% 100%, 28% 100%, 0 55%, 32% 0, 71% 0, 100% 54%);
+}
+
+.arrow {
+  background: linear-gradient(-135deg,
+      transparent 22px,
+      #04e6fb 22px,
+      #65ff9a 100%) top right,
+    linear-gradient(-45deg,
+      transparent 22px,
+      #04e6fb 22px,
+      #65ff9a 100%) bottom right;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.arrow1 {
+  background: linear-gradient(-135deg,
+      transparent 22px,
+      #1ca6b3 22px,
+      #ffc965 100%) top right,
+    linear-gradient(-45deg,
+      transparent 22px,
+      #04e6fb 22px,
+      #65ff9a 100%) bottom right;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.arrow2 {
+  background: linear-gradient(45deg, #04e6fb, #65ff9a);
+  clip-path: polygon(0 0,
+      30px 50%,
+      0 100%,
+      calc(100% - 30px) 100%,
+      100% 50%,
+      calc(100% - 30px) 0);
+}
+
+/* 渐变的颜色是透明 --> 颜色A --> 颜色B --> 透明 */
+.arrow3 {
+  background:
+    linear-gradient(45deg,
+      transparent 22%, pink 22%,
+      #9006fb 78%, transparent 0) top right,
+    linear-gradient(135deg,
+      transparent 22%, pink 22%,
+      #9006fb 78%, transparent 0) bottom right;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.c1 {
+  background-image: radial-gradient(circle at 100% 100%,
+      transparent 0, transparent 12px, #ccd1b4 12px);
+}
+
+.c2 {
+  background-size: 70% 70%;
+  background-image: radial-gradient(circle at 100% 100%,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px),
+    radial-gradient(circle at 0 0,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px),
+    radial-gradient(circle at 100% 0,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px),
+    radial-gradient(circle at 0 100%,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px);
+  background-repeat: no-repeat;
+  background-position: right bottom, left top, right top, left bottom;
+}
+
+.c3 {
+  background: linear-gradient(45deg, #2179f5, #e91e63);
+  mask: radial-gradient(circle at 100% 100%,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px),
+    radial-gradient(circle at 0 0,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px),
+    radial-gradient(circle at 100% 0,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px),
+    radial-gradient(circle at 0 100%,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px);
+  mask-repeat: no-repeat;
+  mask-position: right bottom, left top, right top, left bottom;
+  mask-size: 70% 70%;
+  -webkit-mask: radial-gradient(circle at 100% 100%,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px),
+    radial-gradient(circle at 0 0,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px),
+    radial-gradient(circle at 100% 0,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px),
+    radial-gradient(circle at 0 100%,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right bottom, left top, right top, left bottom;
+  -webkit-mask-size: 70% 70%;
+}
+
+.skew {
+  position: relative;
+  width: 120px;
+  z-index: 10;
+}
+
+.skew::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background: orange;
+  transform: skewX(15deg);
+  z-index: -1;
+}
+
+.skew::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -13px;
+  width: 100px;
+  height: 64px;
+  border-radius: 10px;
+  background: orange;
+  z-index: -1;
+}
+
+.s1 {
+  border-radius: 5px;
+  position: relative;
+  z-index: 10;
+}
+
+.s1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 64px;
+  border-radius: 5px;
+  background: #FFEED8;
+  z-index: -1;
+}
+
+.s1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 24px;
+  right: 0;
+  bottom: 0;
+  height: 64px;
+  width: 118px;
+  border-radius: 5px;
+  background: #FFEED8;
+  transform: skewX(-30deg);
+  z-index: -1;
+}
+
+.skew1 {
+  position: relative;
+  width: 120px;
+  z-index: 10;
+}
+
+.skew1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, orange, #ff1800);
+  transform: skewX(15deg);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.skew1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -13px;
+  width: 100px;
+  height: 64px;
+  border-radius: 10px;
+  background: orange;
+  z-index: -1;
+}
+
+.web_tab {
+  position: relative;
+  background: #000;
+  border-radius: 10px 10px 0 0;
+  z-index: 10;
+}
+
+.web_tab::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  bottom: 0;
+  background: #aaaa7f;
+  background: radial-gradient(circle at 0 0, transparent 20px, #000 21px);
+}
+
+.web_tab::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -20px;
+  bottom: 0;
+  background: #aaaa7f;
+  background: radial-gradient(circle at 100% 0, transparent 20px, #000 21px);
+}

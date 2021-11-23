@@ -270,7 +270,10 @@ Page({
             name: 'swiper商品滑动区域',
             url: '/pages/wxCase/swiper_goods/index'
           },
-         
+          {
+            name: '高频出现的各类奇形怪状按钮',
+            url: '/pages/wxCase/rects/index'
+          },
         ]
       },
       {
