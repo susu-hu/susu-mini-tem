@@ -49,3 +49,9 @@
 
 <!-- 外圆角按钮  类似于 Chrome 的分页-->
 <div class="web_tab btn">苏苏小苏苏</div>
+
+<!-- 形状 -->
+<view class="s_box btn">
+  <view class="s3 s1 btn"></view>
+  <view class=" s2 btn"></view>
+</view>

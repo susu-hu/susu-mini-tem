@@ -382,3 +382,22 @@ page {
   background: #aaaa7f;
   background: radial-gradient(circle at 100% 0, transparent 20px, #000 21px);
 }
+
+.s2 {
+  background: pink;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: -79rpx;
+}
+
+.s_box {
+  position: relative;
+}
+
+.s3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  rotate: 180deg;
+}
