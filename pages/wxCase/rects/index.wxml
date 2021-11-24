@@ -55,3 +55,10 @@
   <view class="s3 s1 btn"></view>
   <view class=" s2 btn"></view>
 </view>
+
+<!-- 按钮 -->
+<button class="b1 btn">这是一个按钮</button>
+
+<button class="b2 btn" open-type="contact">
+  <image src="https://i.postimg.cc/pXDp6RXq/susu3.jpg"></image>
+</button>

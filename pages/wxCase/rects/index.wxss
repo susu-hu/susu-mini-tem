@@ -401,3 +401,24 @@ page {
   left: 0;
   rotate: 180deg;
 }
+
+/* 按钮 */
+.b1 {
+  border: 1px solid pink;
+  margin: 20px auto;
+}
+
+.b2 {
+  position: fixed;
+  bottom: 57rpx;
+  right: 20rpx;
+  z-index: 99;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.b2 image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}

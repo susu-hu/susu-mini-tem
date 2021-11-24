@@ -69,7 +69,6 @@ page {
 /*  去掉button的默认样式*/
 button {
   padding: 0 !important;
-  /* margin: 0 !important; */
   background: transparent;
   font-weight: normal;
 }
@@ -77,10 +76,11 @@ button {
 button::after {
   outline: none;
   border: none;
+  display: none;
 }
 
+/*点击后样式*/
 .button-hover {
-  /*点击后样式*/
   background: transparent;
 }
 
