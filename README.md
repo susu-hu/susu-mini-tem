@@ -155,7 +155,7 @@ step5：构建npm）
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1122/134217_6561af6b_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1123/000811_3d250d72_8576727.gif "撒旦发.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1123/180409_6ed34605_8576727.png "屏幕截图.png")
-![输入图片说明](image.png)
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F0.5rpximage.png)
 #### 参与贡献
 
 1.  Fork 本仓库
