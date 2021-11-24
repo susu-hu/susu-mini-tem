@@ -1,0 +1,25 @@
+<!--pages/cssCase/lineHalf/index.wxml-->
+<view class="mb20">
+  <view class="t">1rpx的线</view>
+  <view class="l"></view>
+</view>
+
+<view class="mb20">
+  <view class="t">0.5rpx的线</view>
+  <view class="l1"></view>
+</view>
+
+<view class="mb20">
+  <view class="t">0.5rpx的线</view>
+  <view class="l2"></view>
+</view>
+
+<view class="mb20">
+  <view class="t">1rpx的线</view>
+  <view class="l3"></view>
+</view>
+
+<view class="mb20">
+  <view class="t">0.5rpx的线</view>
+  <view class="l4"></view>
+</view>

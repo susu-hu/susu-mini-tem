@@ -1,0 +1,57 @@
+/* pages/cssCase/lineHalf/index.wxss */
+page {
+  padding: 40rpx;
+}
+
+.l {
+  width: 100%;
+  border-bottom: 1rpx solid #000;
+}
+
+.t {
+  font-size: 25rpx;
+  margin-bottom: 20rpx;
+  columns: #333333;
+}
+
+.mb20 {
+  margin-bottom: 20rpx;
+}
+
+.l1 {
+  width: 100%;
+  border-bottom: 1rpx solid #000;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.l2 {
+  width: 100%;
+  border-bottom: 1rpx solid #000;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.l3 {
+  height: 100rpx;
+  width: 0px;
+  border-left: 1rpx solid #000;
+}
+
+.l4 {
+  width: 0px;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+  height: 100rpx;
+  border-left: 1rpx solid #000;
+}
+
+.l5 {
+  width: 0px;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+  height: 100rpx;
+  border-left: 1rpx solid #000;
+}

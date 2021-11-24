@@ -59,6 +59,12 @@
           "pathName": "pages/wxCase/rects/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/lineHalf/index",
+          "pathName": "pages/cssCase/lineHalf/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

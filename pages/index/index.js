@@ -185,6 +185,10 @@ Page({
             name: '一个左右摇晃的灯泡',
             url: '/pages/cssCase/dengpao/index'
           },
+          {
+            name: '0.5rpx的线',
+            url: '/pages/cssCase/lineHalf/index'
+          },
         ]
       },
       {
