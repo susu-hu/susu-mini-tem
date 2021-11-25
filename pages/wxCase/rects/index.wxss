@@ -219,25 +219,6 @@ page {
 
 .c3 {
   background: linear-gradient(45deg, #2179f5, #e91e63);
-  mask: radial-gradient(circle at 100% 100%,
-      transparent 0,
-      transparent 12px,
-      #2179f5 13px),
-    radial-gradient(circle at 0 0,
-      transparent 0,
-      transparent 12px,
-      #2179f5 13px),
-    radial-gradient(circle at 100% 0,
-      transparent 0,
-      transparent 12px,
-      #2179f5 13px),
-    radial-gradient(circle at 0 100%,
-      transparent 0,
-      transparent 12px,
-      #2179f5 13px);
-  mask-repeat: no-repeat;
-  mask-position: right bottom, left top, right top, left bottom;
-  mask-size: 70% 70%;
   -webkit-mask: radial-gradient(circle at 100% 100%,
       transparent 0,
       transparent 12px,
@@ -257,6 +238,40 @@ page {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: right bottom, left top, right top, left bottom;
   -webkit-mask-size: 70% 70%;
+}
+
+.c4 {
+  background-size: 70% 100%;
+  background-image: radial-gradient(circle at 100% 100%,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px),
+    radial-gradient(circle at 0% 100%,
+      transparent 0,
+      transparent 12px,
+      #2179f5 13px);
+  background-repeat: no-repeat;
+  background-position: right bottom, left bottom;
+}
+
+.c4_top {
+  background-size: 70% 100%;
+  background-image: radial-gradient(circle at 0 0,
+      transparent 0,
+      transparent 11px,
+      pink 11px),
+    radial-gradient(circle at 100% 0,
+      transparent 0,
+      transparent 11px,
+      pink 11px);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+.c5 {
+  mask: radial-gradient(circle at 30rpx 30rpx, transparent 30rpx, red 0) -30rpx -30rpx;
+  -webkit-mask: radial-gradient(circle at 30rpx 30rpx, transparent 30rpx, red 0) -30rpx -30rpx;
+  background: linear-gradient(45deg, #44C9A1, #48e5a4);
 }
 
 .skew {
@@ -305,7 +320,7 @@ page {
   height: 64px;
   border-radius: 5px;
   background: #FFEED8;
-  z-index: -1;
+  z-index: 2;
 }
 
 .s1::before {
@@ -320,7 +335,7 @@ page {
   border-radius: 5px;
   background: #FFEED8;
   transform: skewX(-30deg);
-  z-index: -1;
+  z-index: 2;
 }
 
 .skew1 {

@@ -135,7 +135,8 @@
         "swiper_ve/index",
         "showEli/index",
         "swiper_goods/index",
-        "rects/index"
+        "rects/index",
+        "newsSwiper/index"
       ]
     },
     {

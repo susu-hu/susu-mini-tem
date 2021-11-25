@@ -39,7 +39,9 @@
 <view class="c2 btn"></view>
 <!-- 背景色渐变色  mask 实现一层遮罩，利用 mask 的特性，把 4 个角给遮住即可-->
 <view class="c3 btn"></view>
-
+<view class="c4 btn"></view>
+<view class="c4_top btn"></view>
+<view class="c5 btn"></view>
 <!-- 圆角不规则矩形 -->
 <!-- 圆角矩形 + 圆角平行四边形组成 -->
 <view class="skew btn">不规则</view>

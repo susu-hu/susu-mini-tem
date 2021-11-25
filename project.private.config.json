@@ -65,6 +65,12 @@
           "pathName": "pages/cssCase/lineHalf/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/newsSwiper/index",
+          "pathName": "pages/wxCase/newsSwiper/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

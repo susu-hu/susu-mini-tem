@@ -62,10 +62,6 @@ Page({
             name: '自定义滚动条',
             url: '/pages/another/customScroll/index'
           },
-          {
-            name: '自定义input输入框',
-            url: '/pages/another/inputCode/index'
-          }
         ]
       },
       {
@@ -277,6 +273,10 @@ Page({
           {
             name: '高频出现的各类奇形怪状按钮',
             url: '/pages/wxCase/rects/index'
+          },
+          {
+            name: '消息滚动条',
+            url: '/pages/wxCase/newsSwiper/index'
           },
         ]
       },
