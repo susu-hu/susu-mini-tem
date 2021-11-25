@@ -1,4 +1,6 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "消息滚动~"
+  "navigationBarTitleText": "消息滚动~",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#dff0ee"
 }

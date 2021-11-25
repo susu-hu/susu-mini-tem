@@ -1,1 +1,104 @@
 /* pages/wxCase/newsSwiper/index.wxss */
+page {
+  background-color: #dff0ee;
+  padding: 20rpx;
+}
+
+.tip {
+  margin-bottom: 20rpx;
+  font-size: 25rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.mb20 {
+  margin-bottom: 20rpx;
+}
+
+.new_swiper {
+  flex: 1;
+  height: 66rpx;
+}
+
+.s_box {
+  height: 66rpx;
+  line-height: 66rpx;
+  background: rgb(20, 122, 190, 0.15);
+  padding: 0 24rpx;
+}
+
+
+.tx {
+  width: 34rpx;
+  height: 28rpx;
+  padding-right: 16rpx;
+  flex-shrink: 0;
+}
+
+.left_arr {
+  width: 12rpx;
+  height: 22rpx;
+  flex-shrink: 0;
+}
+
+.sw_text {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #147ABF;
+}
+
+
+.draw_bot {
+  width: 704rpx;
+  height: 300rpx;
+  box-shadow: 0px 0px 73rpx 0px #FFFFFF inset;
+  border-radius: 30rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 43rpx 0;
+}
+
+.bot_title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #014493;
+  margin: 0 22rpx;
+}
+
+.line {
+  width: 138rpx;
+  height: 1rpx;
+  background: #014493;
+  position: relative;
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  width: 49rpx;
+  height: 1rpx;
+  background: #014493;
+  bottom: -7rpx;
+}
+
+.line:nth-child(1):before {
+  right: 0;
+}
+
+.bot_swiper {
+  width: 629rpx;
+  height: 150rpx;
+  font-size: 28rpx;
+  color: #084A96;
+  margin: 51rpx auto 0;
+  overflow: hidden;
+}
+
+.bot_swiper view {
+  overflow: hidden;
+  width: 100%;
+}
+
+.bot_text {
+  color: #EB360C;
+}
