@@ -1,0 +1,41 @@
+<!--pages/jsCase/draw2/index.wxml-->
+<view class="con flex-column">
+  <view class="draw_sc flex-row">
+    <image src="../img/draw_icon.png" class="draw_icon" />
+    <swiper class="swiper" vertical="true" autoplay="true" circular="true" interval="3000" display-multiple-items='1'>
+      <block wx:for-index="idx" wx:for='{{2}}' wx:key="index">
+        <swiper-item>
+          <view>
+            <text decode="{{true}}">恭喜用户&nbsp;&nbsp;&nbsp;</text>
+            <text class="draw_text">135XXXX5678</text>
+            <text decode="{{true}}">&nbsp;&nbsp;抽中奶粉券就加水电费扫地</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="box">
+    <view class="b_box">
+      <view class="flex-row j_b prize_box">
+        <block wx:for="{{prize_list}}" wx:key="index">
+          <!-- 抽奖 按钮-->
+          <block wx:if="{{index == 4}}">
+            <view class="prize_start prize_item">
+              <image src="../img/start_btn.png" class="lott_btn" mode="aspectFill" bindtap="lottery"></image>
+            </view>
+          </block>
+          <!-- 奖项 -->
+          <view class="prize_item flex-column {{item.active?'ative':''}}">
+            <view class="prize_img ">
+              <image src="{{item.icon}}" mode="aspectFill" />
+            </view>
+            <text>{{index}}{{item.name}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class="remainin_text">您还有<text>{{remian_num}}次</text>抽奖机会</view>
+</view>
+<image src="../img/1.png" show-menu-by-longpress="{{true}}" />
+<rich-text nodes="{{desc}}" catchtap="rtxt"></rich-text>

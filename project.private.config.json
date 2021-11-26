@@ -13,62 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/scroll/index",
-          "pathName": "pages/scroll/index",
+          "name": "pages/jsCase/draw2/index",
+          "pathName": "pages/jsCase/draw2/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/cardCricle/index",
-          "pathName": "pages/cardCricle/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/sendCode2/index",
-          "pathName": "pages/sendCode2/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/sendCode2/index2",
-          "pathName": "pages/sendCode2/index2",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/dateSel/index",
-          "pathName": "pages/jsCase/dateSel/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/cal2/index",
-          "pathName": "pages/jsCase/cal2/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/swiper_goods/index",
-          "pathName": "pages/wxCase/swiper_goods/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/rects/index",
-          "pathName": "pages/wxCase/rects/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cssCase/lineHalf/index",
-          "pathName": "pages/cssCase/lineHalf/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/newsSwiper/index",
-          "pathName": "pages/wxCase/newsSwiper/index",
+          "name": "pages/jsCase/draw/index",
+          "pathName": "pages/jsCase/draw/index",
           "query": "",
           "scene": null
         }

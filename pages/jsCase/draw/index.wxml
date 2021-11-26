@@ -30,7 +30,7 @@
           <view class="prize_img ">
             <image src="{{item.icon}}" mode="aspectFill" />
           </view>
-          <text>{{item.name}}</text>
+          <text>{{index}}{{item.name}}</text>
         </view>
       </block>
     </view>

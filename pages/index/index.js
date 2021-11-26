@@ -275,7 +275,7 @@ Page({
             url: '/pages/wxCase/rects/index'
           },
           {
-            name: '消息滚动条',
+            name: '不定长消息滚动条',
             url: '/pages/wxCase/newsSwiper/index'
           },
         ]
@@ -312,8 +312,12 @@ Page({
             url: '/pages/jsCase/imgLoad/index'
           },
           {
-            name: '抽奖活动',
+            name: '抽奖活动1.0',
             url: '/pages/jsCase/draw/index'
+          },
+          {
+            name: '抽奖活动2.0',
+            url: '/pages/jsCase/draw2/index'
           },
           {
             name: 'page-container',
