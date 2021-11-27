@@ -278,6 +278,10 @@ Page({
             name: '不定长消息滚动条',
             url: '/pages/wxCase/newsSwiper/index'
           },
+          {
+            name: 'text标签换行，空格相关',
+            url: '/pages/wxCase/text/index'
+          },
         ]
       },
       {
