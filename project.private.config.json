@@ -23,6 +23,12 @@
           "pathName": "pages/jsCase/draw/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/text/index",
+          "pathName": "pages/wxCase/text/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

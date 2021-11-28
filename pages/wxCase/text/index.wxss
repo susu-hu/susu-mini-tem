@@ -1,1 +1,21 @@
 /* pages/wxCase/text/index.wxss */
+page {
+  padding: 20rpx;
+  background-color: #fff;
+  font-size: 25rpx;
+  color: #333;
+}
+
+.mb20 {
+  margin-bottom: 20rpx;
+}
+
+.border {
+  border: 1px solid #9190c9;
+  padding: 10rpx;
+  border-radius: 10rpx;
+}
+
+text{
+  display: block;
+}
