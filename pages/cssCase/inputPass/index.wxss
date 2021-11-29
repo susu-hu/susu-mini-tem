@@ -1,42 +1,36 @@
-/* pages/cssCase/inputPass/index.wxss */
-.sameBox {
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  overflow: hidden;
-  margin-top: 10px;
+page {
+  padding: 40rpx;
+  background-color: #fff;
 }
 
-.sameBox .iconfont:nth-child(1) {
-  float: left;
-  font-size: 1.5rem;
-  color: #4768F3;
-  padding-left: 10px;
+.eye {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+  flex-shrink: 0;
 }
 
-.sameBox input {
-  float: right;
+.fill_box {
+  font-size: 25rpx;
+  color: #333;
+  flex: 1;
+}
+
+.fill_box text {
+  margin-right: 25rpx;
+}
+
+.fill_box input {
   border-bottom: 1px solid #ccc;
-  height: 97%;
-  font-size: 0.85rem;
-  width: 85%;
-  color: #ccc;
+  flex: 1;
+}
+.ative{
+  border-bottom: 1px solid #1b347a!important;
 }
 
-.sameBox:nth-child(2) {
-  position: relative;
-}
-
-.seePass {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 50px;
-  padding-right: 20px;
-}
-
-.seePass .icon-yanjing {
-  font-size: 0.1rem;
-  padding: 0;
+.mb20 {
+  margin-bottom: 40rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #333;
 }
