@@ -3,7 +3,7 @@ Page({
 
 
   data: {
-    desc: '<img src="https://i.postimg.cc/fyg1vrhS/1.png"/>',
+    desc: '<p>哈哈哈</p><img src="https://i.postimg.cc/fyg1vrhS/1.png" style="max-width:100%;width:100%;height:auto!important;display:block"/>',
     img_url: '',
   },
 
@@ -22,11 +22,13 @@ Page({
       content.replace(/]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
         that.setData({
           img_url: capture
+        },() => {
+          that.setData({
+            desc:content.replace(/<\/?(img)[^>]*>/gi, '')
+          })
         })
       })
-
     }
-
   },
 
   rtxt(e) {

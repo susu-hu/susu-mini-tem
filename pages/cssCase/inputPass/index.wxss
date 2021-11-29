@@ -1,0 +1,42 @@
+/* pages/cssCase/inputPass/index.wxss */
+.sameBox {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.sameBox .iconfont:nth-child(1) {
+  float: left;
+  font-size: 1.5rem;
+  color: #4768F3;
+  padding-left: 10px;
+}
+
+.sameBox input {
+  float: right;
+  border-bottom: 1px solid #ccc;
+  height: 97%;
+  font-size: 0.85rem;
+  width: 85%;
+  color: #ccc;
+}
+
+.sameBox:nth-child(2) {
+  position: relative;
+}
+
+.seePass {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 50px;
+  padding-right: 20px;
+}
+
+.seePass .icon-yanjing {
+  font-size: 0.1rem;
+  padding: 0;
+}

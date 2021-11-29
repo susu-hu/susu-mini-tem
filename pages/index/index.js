@@ -185,6 +185,10 @@ Page({
             name: '0.5rpx的线',
             url: '/pages/cssCase/lineHalf/index'
           },
+          {
+            name: 'input密码框,*号显示',
+            url: '/pages/cssCase/inputPass/index'
+          },
         ]
       },
       {

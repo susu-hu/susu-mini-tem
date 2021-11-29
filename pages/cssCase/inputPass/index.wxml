@@ -1,0 +1,9 @@
+<!--pages/cssCase/inputPass/index.wxml-->
+<view class='sameBox'>
+  <icon class='iconfont .icon-mima'></icon>
+  <input bindinput='passWordInput' name="passWord" type="{{typeName}}" placeholder='请输入密码'></input>
+  <view class='seePass' bindtap='showPass'>
+    <icon class="iconfont .icon-yanjing" wx:if="{{passFlag == 1}}"></icon>
+    <icon class='iconfont .icon-bukeshi' wx:else></icon>
+  </view>
+</view>

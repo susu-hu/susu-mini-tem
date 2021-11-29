@@ -100,7 +100,8 @@
         "shadingText/index",
         "card/index",
         "dengpao/index",
-        "lineHalf/index"
+        "lineHalf/index",
+        "inputPass/index"
       ]
     },
     {

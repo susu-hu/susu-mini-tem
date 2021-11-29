@@ -41,6 +41,12 @@
           "pathName": "pages/jsCase/richImg/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/inputPass/index",
+          "pathName": "pages/cssCase/inputPass/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
