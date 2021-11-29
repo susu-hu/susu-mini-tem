@@ -4,7 +4,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    desc: '<p>呵呵哈哈哈</p><img src="https://i.postimg.cc/fyg1vrhS/1.png"/>',
     remian_num: 5, //剩余抽奖的次数
     prize_list: [{
         icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
@@ -136,20 +135,5 @@ Page({
       }, maxTime);
     })
   },
-  rtxt() {
-    // 富文本
-    const richContent = this.data.desc;
-    // 判断含有图片
-    if (richContent.indexOf("src") >= 0) {
-      const imgs = [];
-      richContent.replace(/]*src=['"]([^'"]+)[^>]*>/gi, function (match, capture) {
-        imgs.push(capture);
-      })
-      wx.previewImage({
-        current: imgs[0], // 当前显示图片的http链接
-        urls: imgs
-      })
-    }
-  }
 
 })

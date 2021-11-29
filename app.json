@@ -159,7 +159,8 @@
         "dateSel/index",
         "addressList/index",
         "cal2/index",
-        "draw2/index"
+        "draw2/index",
+        "richImg/index"
       ]
     }
   ],

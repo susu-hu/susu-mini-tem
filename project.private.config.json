@@ -29,6 +29,18 @@
           "pathName": "pages/wxCase/text/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/swiper_goods/index",
+          "pathName": "pages/wxCase/swiper_goods/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/richImg/index",
+          "pathName": "pages/jsCase/richImg/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

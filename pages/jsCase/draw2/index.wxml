@@ -37,5 +37,3 @@
   </view>
   <view class="remainin_text">您还有<text>{{remian_num}}次</text>抽奖机会</view>
 </view>
-<image src="../img/1.png" show-menu-by-longpress="{{true}}" />
-<rich-text nodes="{{desc}}" catchtap="rtxt"></rich-text>

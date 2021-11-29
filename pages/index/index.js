@@ -343,6 +343,10 @@ Page({
             name: '自定义多日期选择',
             url: '/pages/jsCase/dateSel/index'
           },
+          {
+            name: '关于富文本中的图片预览等问题',
+            url: '/pages/jsCase/richImg/index'
+          },
         
         ]
       }

@@ -1,0 +1,4 @@
+<!--pages/jsCase/richImg/index.wxml-->
+<image src="https://i.postimg.cc/fyg1vrhS/1.png" show-menu-by-longpress="{{true}}" class="code_img" mode="widthFix" />
+<rich-text nodes="{{desc}}" catchtap="rtxt"></rich-text>
+<image src="{{img_url}}" show-menu-by-longpress="{{true}}" class="code_img" mode="widthFix" />

@@ -77,3 +77,19 @@
   height: 100%;
   vertical-align: middle;
 }
+
+.point_flex_w {
+  float: left;
+  width: 100%;
+  height: 192rpx;
+  text-align: center;
+}
+
+
+.wd1 {
+  width: 28%;
+}
+
+.wd2 {
+  width: 56%;
+}

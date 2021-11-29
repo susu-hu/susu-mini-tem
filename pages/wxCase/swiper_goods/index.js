@@ -5,54 +5,76 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goods_list:[
-      {
-        goods:[
-          {
-            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+    goods_list: [{
+        goods: [{
+            img: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
           },
           {
-            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+            img: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
           },
           {
-            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+            img: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
           },
         ]
       },
       {
-        goods:[
-          {
-            img:'https://i.postimg.cc/qRRLS16Q/susu0.jpg',
+        goods: [{
+            img: 'https://i.postimg.cc/qRRLS16Q/susu0.jpg',
           },
           {
-            img:'https://i.postimg.cc/qRRLS16Q/susu0.jpg',
+            img: 'https://i.postimg.cc/qRRLS16Q/susu0.jpg',
           },
           {
-            img:'https://i.postimg.cc/qRRLS16Q/susu0.jpg',
+            img: 'https://i.postimg.cc/qRRLS16Q/susu0.jpg',
           },
         ]
       },
       {
-        goods:[
-          {
-            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+        goods: [{
+            img: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
           },
           {
-            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+            img: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
           },
           {
-            img:'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+            img: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
           },
         ]
       }
-    ]
+    ],
+    g_list: [{
+        img: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+      },
+      {
+        img: 'https://i.postimg.cc/pXDp6RXq/susu3.jpg',
+      },
+      {
+        img: 'https://i.postimg.cc/XJmpTvCD/susu2.jpg',
+      },
+      {
+        img: 'https://i.postimg.cc/qRRLS16Q/susu0.jpg',
+      },
+      {
+        img: 'https://i.postimg.cc/WzKK73vQ/20210729155755.jpg',
+      },
+      {
+        img: 'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+      },
+      {
+        img: 'https://i.postimg.cc/65STLQNc/333.webp',
+      },
+    ],
+    d_num: 3,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let len = this.data.g_list.length;
+    this.setData({
+      d_num: len > 2 ? 3 : len
+    })
   },
 
   /**
