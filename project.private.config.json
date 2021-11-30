@@ -47,6 +47,12 @@
           "pathName": "pages/cssCase/inputPass/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/bgImg/index",
+          "pathName": "pages/cssCase/bgImg/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
