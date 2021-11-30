@@ -62,12 +62,14 @@ page {
 
 .prize_box {
   flex-wrap: wrap;
+  position: relative;
+  z-index: 99;
 }
 
 .prize_item {
   width: 186rpx;
   height: 156rpx;
-  background: #F7FCFC !important;
+  background: #F7FCFC;
   box-shadow: -6rpx 8rpx 16rpx 0px rgba(7, 53, 130, 0.11) inset;
   border-radius: 34rpx;
   margin-bottom: 14rpx;
@@ -107,8 +109,7 @@ page {
   bottom: -8rpx;
   left: -8rpx;
   right: -8rpx;
-  background-color: red;
-  /* background: linear-gradient(0deg, #FFCD1E, #FFEFB7); */
+  background: linear-gradient(0deg, #ca3c11, #d81657);
   z-index: -1;
   border-radius: 34rpx;
 }
