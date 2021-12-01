@@ -286,6 +286,10 @@ Page({
             name: 'text标签换行，空格相关',
             url: '/pages/wxCase/text/index'
           },
+          {
+            name: '操作按钮的显示与隐藏',
+            url: '/pages/wxCase/showAction/index'
+          },
         ]
       },
       {

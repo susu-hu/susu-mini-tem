@@ -47,6 +47,24 @@
           "pathName": "pages/cssCase/inputPass/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/colorChange/index",
+          "pathName": "pages/cssCase/colorChange/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pie/index",
+          "pathName": "pages/pie/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/showAction/index",
+          "pathName": "pages/wxCase/showAction/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

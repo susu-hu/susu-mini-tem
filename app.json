@@ -138,7 +138,8 @@
         "swiper_goods/index",
         "rects/index",
         "newsSwiper/index",
-        "text/index"
+        "text/index",
+        "showAction/index"
       ]
     },
     {

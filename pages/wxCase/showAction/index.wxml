@@ -1,0 +1,81 @@
+<!--pages/wxCase/showAction/index.wxml-->
+<view class="head">
+  <view class="head_search flex-row">
+    <image src="/img/my_look.png" class="head_s_icon"></image>
+    <input placeholder="搜索活动名称" placeholder-class="p_class" class="head_ipt" />
+  </view>
+  <view class="flex-row j_a head_sel">
+    <picker bindchange="change" data-type="storeList" data-value="store" value="{{store}}" range="{{storeList}}" range-key="name">
+      <view class="flex-row j_c">
+        <tetx class="text_ellipsis">{{store}}</tetx>
+        <image src="/img/down_arr.png" class="arrow"></image>
+      </view>
+    </picker>
+    <picker bindchange="change" data-type="themeList" data-value="theme" value="{{theme}}" range="{{themeList}}" range-key="name">
+      <view class="flex-row j_c">
+        <tetx class="text_ellipsis">{{theme}}</tetx>
+        <image src="/img/down_arr.png" class="arrow"></image>
+      </view>
+    </picker>
+    <picker bindchange="change" data-type="statusList" data-value="status" value="{{status}}" range="{{statusList}}" range-key="name">
+      <view class="flex-row j_c">
+        <tetx class="text_ellipsis">{{status}}</tetx>
+        <image src="/img/down_arr.png" class="arrow"></image>
+      </view>
+    </picker>
+  </view>
+  <view class="flex-row j_b">
+    <picker bindchange="change" data-type="dateList" data-value="date" value="{{date}}" range="{{dateList}}" range-key="name">
+      <view class="flex-row head_date">
+        <text>{{date}}</text>
+        <image src="/img/myv_img.png" class="down_year"></image>
+      </view>
+    </picker>
+    <view class="head_ac" catchtap="showAction">{{show_action?'取消':'管理'}}</view>
+  </view>
+</view>
+<view class="con">
+  <!-- 有数据 -->
+  <block wx:if="{{hasData}}">
+    <checkbox-group bindchange="actionChange">
+      <block wx:for="{{10}}" wx:key="list">
+        <label>
+          <view class="flex-row">
+            <checkbox value="{{item.value}}" checked="{{item.checked}}" wx:if="{{show_action}}" />
+            <view class="c_item flex">
+              <image src="/img/act_icon.png" class="act_icon"></image>
+              <view>
+                <view class="item_title">省人医妈妈班啊哈数据的按时交话费高达是个一个空格好</view>
+                <view class="item_date">开始时间：2012.11.20 15:27</view>
+                <view class="flex-row j_b item_theme">
+                  <text class="text_ellipsis theme_text">主题：宝宝喂养哈哈哈哈哈哈哈呵呵哈哈哈</text>
+                  <text>当前报名人数：20</text>
+                </view>
+                <view>参与门店：省人医店</view>
+              </view>
+              <!-- 状态 -->
+              <view class="status {{1?'ing':'over'}}">{{1?'进行中':'已超时'}}</view>
+            </view>
+          </view>
+        </label>
+      </block>
+    </checkbox-group>
+  </block>
+  <!-- 无数据 -->
+  <block wx:else>
+  </block>
+</view>
+
+<!-- 底部按钮 -->
+<view class="fix_bottom flex-row">
+  <view class="flex-row j_b btn_list">
+    <view>已选{{list_num}}个</view>
+    <view class="flex-row">
+      <view class="btn {{list_num>0?'btn_ative':''}}">复制活动</view>
+      <view class="btn  {{list_num>0?'btn_ative':''}}">提审</view>
+    </view>
+  </view>
+</view>
+
+<!-- 添加按钮 -->
+<image src="/img/add.png" class="add_new" catchtap="addNew" />
