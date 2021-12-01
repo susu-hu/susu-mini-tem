@@ -1,0 +1,12 @@
+/* pages/cssCase/bgImg/index.wxss */
+page {
+  background: url(https://csdnimg.cn/release/cmsfe/public/img/skin-whitemove-bg.5a7e5126.gif) repeat;
+}
+.head{
+  background-image: url(https://csdnimg.cn/release/cmsfe/public/img/skin-whitemove-title.2730b604.gif);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 228% 100rpx;
+  width: 100%;
+  height: 100rpx;
+}

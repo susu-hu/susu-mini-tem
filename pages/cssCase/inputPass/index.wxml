@@ -1,9 +1,16 @@
 <!--pages/cssCase/inputPass/index.wxml-->
-<view class='sameBox'>
-  <icon class='iconfont .icon-mima'></icon>
-  <input bindinput='passWordInput' name="passWord" type="{{typeName}}" placeholder='请输入密码'></input>
-  <view class='seePass' bindtap='showPass'>
-    <icon class="iconfont .icon-yanjing" wx:if="{{passFlag == 1}}"></icon>
-    <icon class='iconfont .icon-bukeshi' wx:else></icon>
+<view class="mb20">小程序的type木有password属性，但有password,判断是否是密码类型</view>
+<view class="flex-row j_b">
+  <view class="flex-row fill_box">
+    <text>密码：</text>
+    <input type="text" password="{{!open}}" placeholder="请输入密码" bindfocus="focus" bindblur="blur" class="{{focus?'ative':''}}" />
   </view>
+  <image src="{{open?'../img/open_eye.png':'../img/no_eye.png'}}" class="eye" catchtap="switch" />
+</view>
+<view class="flex-row j_b" style="margin-top: 50rpx;">
+  <view class="flex-row fill_box">
+    <text>密2：</text>
+    <input type="text" value="{{pass}}" placeholder="请输入密码" bindinput="getValue" />
+  </view>
+  <image src="{{open1?'../img/open_eye.png':'../img/no_eye.png'}}" class="eye" catchtap="switch1" />
 </view>

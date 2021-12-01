@@ -6,45 +6,45 @@ Page({
   data: {
     remian_num: 5, //剩余抽奖的次数
     prize_list: [{
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
-        name: '测试1',
-        active: false
-      },
-      {
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
-        name: '谢谢惠顾',
-        active: false,
-      },
-      {
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
-        name: '测试2',
-        active: false,
-      },
-      {
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
-        name: '测试3',
-        active: false,
-      },
-      {
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
-        name: '测试4',
-        active: false,
-      },
-      {
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
-        name: '测试5',
-        active: false,
-      },
-      {
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
-        name: '测试6',
-        active: false,
-      },
-      {
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
-        name: '谢谢惠顾',
-        active: false,
-      },
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+      name: '测试1',
+      active: false
+    },
+    {
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+      name: '谢谢惠顾',
+      active: false,
+    },
+    {
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+      name: '测试2',
+      active: false,
+    },
+    {
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+      name: '测试3',
+      active: false,
+    },
+    {
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+      name: '测试4',
+      active: false,
+    },
+    {
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+      name: '测试5',
+      active: false,
+    },
+    {
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+      name: '测试6',
+      active: false,
+    },
+    {
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg',
+      name: '谢谢惠顾',
+      active: false,
+    },
     ],
     lock: false, //防止重复点击
     prizeListIndex: [0, 1, 2, 4, 7, 6, 5, 3], //抽奖顺序的索引
@@ -77,6 +77,9 @@ Page({
       wx.showToast({
         title: '成抽中了' + e[0].name,
         icon: 'none'
+      })
+      this.setData({
+        remian_num: --this.data.remian_num
       })
     })
   },

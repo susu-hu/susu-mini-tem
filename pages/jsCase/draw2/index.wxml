@@ -37,3 +37,12 @@
   </view>
   <view class="remainin_text">您还有<text>{{remian_num}}次</text>抽奖机会</view>
 </view>
+
+<!-- <view class="prize_item flex-column ative">
+  <view class="prize_img ">
+    <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" mode="aspectFill" />
+  </view>
+  <text>发测试</text>
+</view> -->
+
+<view class="a">开始抽奖</view>

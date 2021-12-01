@@ -49,6 +49,7 @@
           "scene": null
         },
         {
+<<<<<<< HEAD
           "name": "pages/cssCase/colorChange/index",
           "pathName": "pages/cssCase/colorChange/index",
           "query": "",
@@ -63,6 +64,10 @@
         {
           "name": "pages/wxCase/showAction/index",
           "pathName": "pages/wxCase/showAction/index",
+=======
+          "name": "pages/cssCase/bgImg/index",
+          "pathName": "pages/cssCase/bgImg/index",
+>>>>>>> 3c2791312e5f6708afbbdd0f24db3b9dc31c406e
           "query": "",
           "scene": null
         }

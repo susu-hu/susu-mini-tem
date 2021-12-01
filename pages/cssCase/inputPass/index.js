@@ -1,31 +1,48 @@
 // pages/cssCase/inputPass/index.js
 Page({
-
   data: {
-    typeName: 'password', // 密码框的类型,用于显示密码时更改类型可看见输入的密码而非*号
-    passFlag: 1, // 密码第几次点击代表,用于显示不同的图标
-    storePass: '', // 暂存密码,用于显示密码
+    open: false,//默认不显示密码
+    open1: false,//默认不显示密码
+    focus: false,//是否获取焦点
+    pass: '',
+    pass1: '',
   },
-  showPass() { // 显示密码而非*号
-    console.log(this.data.storePass)
-    if (this.data.passFlag == 1) { // 第一次点击
-      this.setData({
-        passFlag: 2,
-        typeName: 'text'
-      });
-    } else { // 第二次点击
-      this.setData({
-        passFlag: 1,
-        typeName: 'password'
-      });
-    }
-  },
-  passWordInput(e) { // 监听密码input框并把输入的密码在变量storePass下暂存起来,用于在显示密码操作展示
-    console.log(e.detail.value)
-
+  switch() {
     this.setData({
-      storePass: e.detail.value,
-      passWord: e.detail.value
+      open: !this.data.open
     })
   },
+  switch1() {
+    this.setData({
+      open1: !this.data.open1
+    })
+    if(this.data.open1){
+      this.setData({
+        pass:this.data.pass1
+      })
+    }else{
+      this.setData({
+        pass:this.data.pass
+      })
+    }
+  },
+  focus() {
+    this.setData({
+      focus: true
+    })
+  },
+  blur() {
+    this.setData({
+      focus: false
+    })
+  },
+  getValue(e) {
+    let pass1=JSON.stringify(e.detail.value),
+    pass=e.detail.value.replace(/./g, '*');
+    this.setData({
+      pass1,
+      pass,
+    })
+  }
+
 })
