@@ -21,8 +21,8 @@ page {
 }
 
 .head_s_icon {
-  width: 30rpx;
-  height: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
   margin-right: 16rpx;
   flex-shrink: 0;
 }

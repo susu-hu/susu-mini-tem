@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -38,6 +39,12 @@
         {
           "name": "pages/jsCase/addNew/index",
           "pathName": "pages/jsCase/addNew/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/showAction/index",
+          "pathName": "pages/wxCase/showAction/index",
           "query": "",
           "scene": null
         }
