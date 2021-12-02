@@ -163,7 +163,8 @@
         "addressList/index",
         "cal2/index",
         "draw2/index",
-        "richImg/index"
+        "richImg/index",
+        "addNew/index"
       ]
     }
   ],

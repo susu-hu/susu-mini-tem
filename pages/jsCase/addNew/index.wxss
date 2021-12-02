@@ -1,0 +1,152 @@
+/* pages/jsCase/addNew/index.wxss */
+/* pages/actCreate/index.wxss */
+page {
+  background: #F8F8F8;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 180rpx);
+  padding-bottom: calc(constant(safe-area-inset-bottom)+ 180rpx);
+}
+
+.container {
+  padding: 0 24rpx;
+  margin-top: 33rpx;
+}
+
+.act_title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #147ABF;
+
+}
+
+.act_box {
+  margin-top: 24rpx;
+}
+
+.act_item {
+  width: 702rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  margin-bottom: 24rpx;
+  box-sizing: border-box;
+  padding: 24rpx;
+  position: relative;
+  font-size: 28rpx;
+  color: #4D4D4D;
+  font-weight: 500;
+}
+
+.require {
+  color: #E9543E;
+}
+
+.right_arr {
+  width: 12rpx;
+  margin-left: 9rpx;
+  height: 20rpx;
+  flex-shrink: 0;
+}
+
+.act_right {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.act_item picker {
+  flex: 1;
+  margin-left: 40rpx;
+}
+
+.fix_bottom {
+  width: 100%;
+  background: #FFFFFF;
+  border-top: 1rpx solid #E6E6E6;
+  position: fixed;
+  left: 0;
+  z-index: 99;
+  bottom: 0;
+  font-weight: 500;
+  color: #147ABF;
+  font-size: 25rpx;
+}
+
+.fix_bottom view {
+  width: 25%;
+  text-align: center;
+  height: 98rpx;
+  line-height: 98rpx;
+  border-right: 1rpx solid #E6E6E6;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.fix_bottom view:last-child {
+  border-right: none;
+  color: #fff;
+  background: #147ABF;
+}
+
+.act_add {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+}
+
+.add_text {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #147ABF;
+}
+
+.act_item input {
+  text-align: right;
+  flex: 1;
+  margin-left: 40rpx;
+}
+
+.p_class {
+  color: #999999;
+}
+
+.mb24 {
+  margin-bottom: 24rpx;
+}
+
+.act_del {
+  width: 27rpx;
+  height: 27rpx;
+}
+
+.act_store {
+  width: 120rpx;
+  height: 48rpx;
+  background: #EBF1F5;
+  border: 1rpx solid #147ABF;
+  border-radius: 23rpx 23rpx 23rpx 0rpx;
+  text-align: center;
+  line-height: 48rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #147ABF;
+}
+
+.del_text {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #E9543E;
+  margin-left: 10rpx;
+}
+
+.xd_text {
+  color: #147ABF;
+}
+
+.del_icon {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  z-index: 11;
+  top: -5rpx;
+  right: 0;
+}

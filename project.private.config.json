@@ -1,5 +1,4 @@
 {
-  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -13,61 +12,32 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/jsCase/draw2/index",
-          "pathName": "pages/jsCase/draw2/index",
+          "name": "pages/scroll/index",
+          "pathName": "pages/scroll/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/jsCase/draw/index",
-          "pathName": "pages/jsCase/draw/index",
+          "name": "pages/cardCricle/index",
+          "pathName": "pages/cardCricle/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/wxCase/text/index",
-          "pathName": "pages/wxCase/text/index",
+          "name": "pages/sendCode2/index",
+          "pathName": "pages/sendCode2/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/wxCase/swiper_goods/index",
-          "pathName": "pages/wxCase/swiper_goods/index",
+          "name": "pages/sendCode2/index2",
+          "pathName": "pages/sendCode2/index2",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/jsCase/richImg/index",
-          "pathName": "pages/jsCase/richImg/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cssCase/inputPass/index",
-          "pathName": "pages/cssCase/inputPass/index",
-          "query": "",
-          "scene": null
-        },
-        {
-<<<<<<< HEAD
-          "name": "pages/cssCase/colorChange/index",
-          "pathName": "pages/cssCase/colorChange/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/pie/index",
-          "pathName": "pages/pie/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/wxCase/showAction/index",
-          "pathName": "pages/wxCase/showAction/index",
-=======
-          "name": "pages/cssCase/bgImg/index",
-          "pathName": "pages/cssCase/bgImg/index",
->>>>>>> 3c2791312e5f6708afbbdd0f24db3b9dc31c406e
+          "name": "pages/jsCase/addNew/index",
+          "pathName": "pages/jsCase/addNew/index",
           "query": "",
           "scene": null
         }
