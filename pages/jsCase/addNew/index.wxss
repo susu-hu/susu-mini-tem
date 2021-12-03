@@ -14,7 +14,7 @@ page {
 .act_title {
   font-size: 32rpx;
   font-weight: bold;
-  color: #147ABF;
+  color: #d14a61;
 
 }
 
@@ -67,7 +67,7 @@ page {
   z-index: 99;
   bottom: 0;
   font-weight: 500;
-  color: #147ABF;
+  color: #d14a61;
   font-size: 25rpx;
 }
 
@@ -84,7 +84,7 @@ page {
 .fix_bottom view:last-child {
   border-right: none;
   color: #fff;
-  background: #147ABF;
+  background: #d14a61;
 }
 
 .act_add {
@@ -96,7 +96,7 @@ page {
 .add_text {
   font-size: 28rpx;
   font-weight: 600;
-  color: #147ABF;
+  color: #d14a61;
 }
 
 .act_item input {
@@ -121,14 +121,14 @@ page {
 .act_store {
   width: 120rpx;
   height: 48rpx;
-  background: #EBF1F5;
-  border: 1rpx solid #147ABF;
+  background: rgb(209, 74, 97,.2);
+  border: 1rpx solid #d14a61;
   border-radius: 23rpx 23rpx 23rpx 0rpx;
   text-align: center;
   line-height: 48rpx;
   font-size: 28rpx;
   font-weight: 600;
-  color: #147ABF;
+  color: #d14a61;
 }
 
 .del_text {
@@ -139,7 +139,7 @@ page {
 }
 
 .xd_text {
-  color: #147ABF;
+  color: #d14a61;
 }
 
 .del_icon {
@@ -149,4 +149,7 @@ page {
   z-index: 11;
   top: -5rpx;
   right: 0;
+}
+.sel_text{
+  color: #333;
 }

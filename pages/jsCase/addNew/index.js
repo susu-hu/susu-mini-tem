@@ -5,8 +5,28 @@ Page({
   data: {
     list1: [], //，门店与导购
     list2: [], //费用
-    goods_list: [], //宣导商品
-    gift_list: [], //赠品
+    list: [
+      {
+        name: '选项一'
+      },
+      {
+        name: '选项2'
+      },
+      {
+        name: '选项3'
+      },
+    ],
+    sel1: '',
+  },
+  bindPickerChange: function (e) {
+    this.setData({
+      sel1: this.data.list[e.detail.value].name
+    })
+  },
+  bindDateChange(e){
+    this.setData({
+      date: e.detail.value
+    })
   },
   /*
   添加门店

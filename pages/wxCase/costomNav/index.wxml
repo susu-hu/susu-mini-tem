@@ -1,5 +1,4 @@
 <!--pages/wxCase/costomNav/index.wxml-->
-<!--pages/index/index.wxml-->
 <view class="custom_head" style="height:{{navHeight}}px;">
   <view class="flex-row j_b" style="height:{{navObj}}px;padding-top:{{navTop}}px;padding-right:{{navObjWid+5}}px;">
     <view class="head_store text_ellipsis">{{store_name}}</view>

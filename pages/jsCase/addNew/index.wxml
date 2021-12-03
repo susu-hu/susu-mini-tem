@@ -1,33 +1,14 @@
 <!--pages/actCreate/index.wxml-->
 <view class="container">
-  <view class="act_title">活动信息</view>
+  <view class="act_title">选项</view>
   <view class="act_box">
     <view class="act_item flex j_b">
-      <view><text class="require">*</text>活动方式：</view>
-      <picker>
+      <view><text class="require">*</text>选项一：</view>
+      <picker bindchange="bindPickerChange" value="{{sel1}}" range="{{list}}" range-key="name">
         <view class="flex-row act_right">
-          <text>请选择</text>
-          <image src="/img/new_right.png" class="right_arr" />
-        </view>
-      </picker>
-    </view>
-    <view class="act_item flex j_b">
-      <view><text class="require">*</text>活动经销商：</view>
-      <picker>
-        <view class="flex-row act_right">
-          <text>请选择</text>
-          <image src="/img/new_right.png" class="right_arr" />
-        </view>
-      </picker>
-    </view>
-    <view class="act_item flex j_b">
-      <view><text class="require">*</text>
-        活动地点：
-      </view>
-      <picker>
-        <view class="flex-row act_right">
-          <text>请选择</text>
-          <image src="/img/new_right.png" class="right_arr" />
+          <text wx:if="{{!sel1}}">请选择</text>
+          <text wx:else class="sel_text">{{sel1}}</text>
+          <image src="/img/de_icon2.png" class="right_arr" />
         </view>
       </picker>
     </view>
@@ -35,250 +16,89 @@
       <view><text class="require">*</text>
         开始时间：
       </view>
-      <picker>
+      <picker mode="date" fileds="day" value="{{date}}" bindchange="bindDateChange">
         <view class="flex-row act_right">
-          <text>请选择</text>
-          <image src="/img/new_right.png" class="right_arr" />
+          <text wx:if="{{!date}}">请选择</text>
+          <text wx:else class="sel_text">{{date}}</text>
+          <image src="/img/de_icon2.png" class="right_arr" />
         </view>
       </picker>
     </view>
-    <view class="act_item flex j_b">
-      <view><text class="require">*</text>
-        结束时间：
-      </view>
-      <picker>
-        <view class="flex-row act_right">
-          <text>请选择</text>
-          <image src="/img/new_right.png" class="right_arr" />
-        </view>
-      </picker>
-    </view>
-    <view class="act_item flex j_b">
-      <view><text class="require">*</text>
-        是否需要报名：
-      </view>
-      <picker>
-        <view class="flex-row act_right">
-          <text>请选择</text>
-          <image src="/img/new_right.png" class="right_arr" />
-        </view>
-      </picker>
-    </view>
-    <!-- 门店与导购 -->
     <view class="flex-row j_b mb24">
-      <view class="act_title">门店与导购</view>
+      <view class="act_title">选项新增0</view>
       <view class="flex-row" catchtap="addItems" data-type="list1">
-        <image src="/img/act_add.png" class="act_add" />
-        <text class="add_text">添加门店</text>
+        <image src="../img/add.png" class="act_add" />
+        <text class="add_text">添加选项</text>
       </view>
     </view>
     <block wx:if="{{list1.length>0}}">
       <block wx:for="{{list1}}" wx:key="index">
         <view>
           <view class="flex-row j_b mb24">
-            <view class="act_store">门店{{index+1}}</view>
+            <view class="act_store">选项{{index+1}}</view>
             <view class="flex-row" catchtap="delItems" data-index="{{index}}" data-type="list1">
-              <image src="/img/act_del.png" class="act_del" />
+              <image src="../img/del.png" class="act_del" />
               <text class="del_text">刪除</text>
             </view>
           </view>
-          <!--  参与门店： -->
           <view class="act_item flex j_b">
             <view><text class="require">*</text>
-              参与门店：
+              选项一：
             </view>
             <picker>
               <view class="flex-row act_right">
                 <text>请选择</text>
-                <image src="/img/new_right.png" class="right_arr" />
+                <image src="/img/de_icon2.png" class="right_arr" />
               </view>
             </picker>
           </view>
-          <!--  归属导购：-->
           <view class="act_item flex j_b">
             <view><text class="require">*</text>
-              归属导购：
+              选项2：
             </view>
             <picker>
               <view class="flex-row act_right">
                 <text>请选择</text>
-                <image src="/img/new_right.png" class="right_arr" />
+                <image src="/img/de_icon2.png" class="right_arr" />
               </view>
             </picker>
           </view>
         </view>
       </block>
     </block>
-    <!-- 费用申报 -->
-    <view class="act_title mb24">费用申报</view>
-    <view class="act_item flex j_b">
-      <view><text class="require">*</text>
-        总金额：
-      </view>
-      <input placeholder="请输入" placeholder-class="p_class" />
-    </view>
-    <!-- 费用 -->
     <view class="flex-row j_b mb24">
-      <view class="act_title">费用</view>
+      <view class="act_title">选项新增1</view>
       <view class="flex-row" catchtap="addItems" data-type="list2">
-        <image src="/img/act_add.png" class="act_add" />
-        <text class="add_text">添加费用</text>
+        <image src="../img/add.png" class="act_add" />
+        <text class="add_text">添加选项</text>
       </view>
     </view>
     <block wx:if="{{list2.length>0}}">
       <block wx:for="{{list2}}" wx:key="index">
         <view>
           <view class="flex-row j_b mb24">
-            <view class="act_store">费用{{index+1}}</view>
+            <view class="act_store">选项{{index+1}}</view>
             <view class="flex-row" catchtap="delItems" data-index="{{index}}" data-type="list2">
-              <image src="/img/act_del.png" class="act_del" />
+              <image src="../img/del.png" class="act_del" />
               <text class="del_text">刪除</text>
             </view>
           </view>
-          <!--   活动细类：-->
           <view class="act_item flex j_b">
             <view><text class="require">*</text>
-              活动细类：
+              选项一
             </view>
             <picker>
               <view class="flex-row act_right">
                 <text>请选择</text>
-                <image src="/img/new_right.png" class="right_arr" />
+                <image src="/img/de_icon2.png" class="right_arr" />
               </view>
             </picker>
           </view>
-          <!--  支付方式：-->
           <view class="act_item flex j_b">
             <view><text class="require">*</text>
-              支付方式：
-            </view>
-            <picker>
-              <view class="flex-row act_right">
-                <text>请选择</text>
-                <image src="/img/new_right.png" class="right_arr" />
-              </view>
-            </picker>
-          </view>
-          <!-- 费用金额 -->
-          <view class="act_item flex j_b">
-            <view><text class="require">*</text>
-              费用金额：
+              请输入：
             </view>
             <input placeholder="请输入" placeholder-class="p_class" />
-          </view>
-        </view>
-      </block>
-    </block>
-    <!--宣导商品  -->
-    <view class="flex-row j_b mb24">
-      <view class="act_title">宣导商品</view>
-      <view class="flex-row" catchtap="addItems" data-type="goods_list">
-        <image src="/img/act_add.png" class="act_add" />
-        <text class="add_text">添加商品 </text>
-      </view>
-    </view>
-    <view class="act_item flex j_b">
-      <view><text class="require">*</text>
-        是否有宣导商品：
-      </view>
-      <picker>
-        <view class="flex-row act_right">
-          <text>请选择</text>
-          <image src="/img/new_right.png" class="right_arr" />
-        </view>
-      </picker>
-    </view>
-    <block wx:if="{{goods_list.length>0}}">
-      <block wx:for="{{goods_list}}" wx:key="index">
-        <view class="act_item flex j_b">
-          <view class="xd_text">宣导商品{{index+1}}</view>
-          <picker>
-            <view class="flex-row act_right">
-              <text>请选择</text>
-              <image src="/img/new_right.png" class="right_arr" />
-            </view>
-          </picker>
-          <!-- 删除图标 -->
-          <image src="/img/del_icon.png" class="del_icon" catchtap="delItems" data-index="{{index}}" data-type="goods_list" />
-        </view>
-      </block>
-    </block>
-    <!--  赠品信息-->
-    <view class="flex-row j_b mb24">
-      <view class="act_title">赠品信息</view>
-      <view class="flex-row" catchtap="addItems" data-type="gift_list">
-        <image src="/img/act_add.png" class="act_add" />
-        <text class="add_text">添加赠品 </text>
-      </view>
-    </view>
-    <view class="act_item flex j_b">
-      <view><text class="require">*</text>
-        是否有赠品名称：
-      </view>
-      <picker>
-        <view class="flex-row act_right">
-          <text>请选择</text>
-          <image src="/img/new_right.png" class="right_arr" />
-        </view>
-      </picker>
-    </view>
-    <block wx:if="{{gift_list.length>0}}">
-      <block wx:for="{{gift_list}}" wx:key="index">
-        <view>
-          <view class="flex-row j_b mb24">
-            <view class="act_store">赠品{{index+1}}</view>
-            <view class="flex-row" catchtap="delItems" data-index="{{index}}" data-type="gift_list">
-              <image src="/img/act_del.png" class="act_del" />
-              <text class="del_text">刪除</text>
-            </view>
-          </view>
-          <!--   赠品名称：-->
-          <view class="act_item flex j_b">
-            <view><text class="require">*</text>
-              赠品名称：
-            </view>
-            <picker>
-              <view class="flex-row act_right">
-                <text>请选择</text>
-                <image src="/img/new_right.png" class="right_arr" />
-              </view>
-            </picker>
-          </view>
-          <!--  数量&金额：-->
-          <view class="act_item flex j_b">
-            <view><text class="require">*</text>
-              数量&金额:
-            </view>
-            <picker>
-              <view class="flex-row act_right">
-                <text>请选择</text>
-                <image src="/img/new_right.png" class="right_arr" />
-              </view>
-            </picker>
-          </view>
-          <!-- 赠品方式： -->
-          <view class="act_item flex j_b">
-            <view><text class="require">*</text>
-              赠品方式：
-            </view>
-            <picker>
-              <view class="flex-row act_right">
-                <text>请选择</text>
-                <image src="/img/new_right.png" class="right_arr" />
-              </view>
-            </picker>
-          </view>
-          <!-- 领取结束时间： -->
-          <view class="act_item flex j_b">
-            <view><text class="require">*</text>
-              领取结束时间：
-            </view>
-            <picker>
-              <view class="flex-row act_right">
-                <text>请选择</text>
-                <image src="/img/new_right.png" class="right_arr" />
-              </view>
-            </picker>
           </view>
         </view>
       </block>
