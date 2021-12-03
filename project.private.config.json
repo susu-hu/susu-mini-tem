@@ -53,6 +53,12 @@
           "pathName": "pages/wxCase/showEli/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/loadText/index",
+          "pathName": "pages/cssCase/loadText/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

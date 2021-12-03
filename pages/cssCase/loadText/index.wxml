@@ -1,0 +1,4 @@
+<!--pages/cssCase/loadText/index.wxml-->
+<div class="flex j_c">
+  <view class="susu">susu Fighting</view>
+</div>

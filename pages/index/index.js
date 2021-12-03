@@ -189,6 +189,10 @@ Page({
             name: 'input密码框,*号显示',
             url: '/pages/cssCase/inputPass/index'
           },
+          {
+            name: '折叠文字动画',
+            url: '/pages/cssCase/loadText/index'
+          },
         ]
       },
       {

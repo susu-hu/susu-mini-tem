@@ -1,0 +1,57 @@
+/* pages/cssCase/loadText/index.wxss */
+page {
+  background-color: #222;
+}
+
+.susu {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #ff5500;
+  letter-spacing: 5px;
+  transition: all 1s;
+  -webkit-text-stroke: 2px #ff5500;
+  transform: rotate(-5deg);
+  position: relative;
+  margin-top: 50px;
+}
+
+.susu::before {
+  content: 'susu Fighting';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  clip-path: inset(0 0 50% 0);
+  transform: rotate(0deg) skew(0deg);
+  transition: all 1s;
+  animation: c1 2s infinite alternate-reverse;
+}
+
+@keyframes c1 {
+  100% {
+    transform: rotateX(-30deg) skew(-30deg);
+    color: white;
+    text-shadow: 0 0 2px black;
+  }
+}
+
+.susu::after {
+  content: 'susu Fighting';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  clip-path: inset(50% 0 0 0);
+  /* 裁剪半个矩形区域 */
+  transform: rotate(0deg) skew(0deg);
+  transition: all 1s;
+  animation: c2 2s infinite alternate-reverse;
+}
+
+@keyframes c2 {
+  100% {
+    transform: rotateX(40deg) skew(20deg);
+    color: white;
+    text-shadow: 0 0 2px black;
+  }
+}
