@@ -47,6 +47,12 @@
           "pathName": "pages/wxCase/showAction/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/showEli/index",
+          "pathName": "pages/wxCase/showEli/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -123,6 +123,15 @@ Page({
     this.setData({
       show_action: !this.data.show_action
     })
+    if(!this.data.show_action){
+      this.data.list.forEach(item=>{
+        item.checked=false
+      })
+      this.setData({
+        list_num:0,
+        list:this.data.list
+      })
+    }
   },
 
   actionChange(e) {

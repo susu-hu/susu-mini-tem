@@ -13,7 +13,15 @@ page {
   box-shadow: 20rpx 20rpx 60rpx #bebebe,
     -20rpx -20rpx 60rpx #ffffff;
 }
-
+.wrapper1 {
+  margin: 50rpx auto;
+  width: 600rpx;
+  overflow: hidden;
+  border-radius: 8rpx;
+  padding: 15rpx;
+  box-shadow: 20rpx 20rpx 60rpx #bebebe,
+    -20rpx -20rpx 60rpx #ffffff;
+}
 .text {
   font-size: 28rpx;
   overflow: hidden;
@@ -21,13 +29,13 @@ page {
   text-overflow: ellipsis;
   text-align: justify;
   position: relative;
-  line-height: 1.5;
-  max-height: 136rpx;
+  line-height: 40rpx;
+  max-height: 160rpx;
 }
 
 .text::before {
   content: '';
-  height: calc(100% - 26px);
+  height: calc(100% - 23px);
   float: right;
 }
 
@@ -85,6 +93,7 @@ page {
   text-align: justify;
   position: relative;
   max-height: 60rpx;
+  line-height: 30rpx;
 }
 
 .aa::before {
