@@ -18,9 +18,9 @@
           <block wx:for="{{12}}" wx:key="theme_list">
             <label>
               <view class="theme_item">
-                <view class="t_title">主题名称：宝宝喂养啊啊啊啊啊巴巴爸爸包包</view>
+                <view class="t_title">主题：12312</view>
                 <view class="t_context">
-                  活动内容：主要针对准妈妈和刚生产完的妈妈进行喂养知识教育，包括食物解析和喂养时间等，让妈妈更能科学的喂养孩子。
+                  活动内容：主要针对1232131232131231232。
                 </view>
                 <!-- 选择 -->
                 <radio checked="{{item.checked}}" value="{{item.id}}"></radio>

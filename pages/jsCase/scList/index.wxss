@@ -72,8 +72,8 @@ page {
 }
 
 .ative {
-  color: #147ABF;
-  background: #E8F2F9;
+  color: #db4e0c;
+  background:#ebd5cb ;
 }
 
 .theme_box {
@@ -121,8 +121,8 @@ radio .wx-radio-input {
 }
 
 radio .wx-radio-input.wx-radio-input-checked {
-  background: #147ABF !important;
-  border-color: #147ABF !important;
+  background: #db4e0c !important;
+  border-color: #db4e0c !important;
 }
 
 .c_right_sc {
@@ -141,7 +141,7 @@ radio .wx-radio-input.wx-radio-input-checked {
 .btn {
   width: 471rpx;
   height: 72rpx;
-  background: #147ABF;
+  background: #db4e0c;
   border-radius: 40rpx;
   font-size: 28rpx;
   font-weight: 500;
