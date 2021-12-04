@@ -1,7 +1,8 @@
+<wxs module="filters" src="./filter.wxs"></wxs>
 <view class="head">
   <view class="head_search flex-row">
     <image src="/img/search.png" class="head_s_icon"></image>
-    <input placeholder="{{chosed_tab==0?'可搜索赠品名称':'可搜索优惠券名称'}}" placeholder-class="p_class" class="head_ipt" bindconfirm="search" />
+    <input placeholder="{{chosed_tab==0?'可搜索选项一':'可搜索选项二'}}" placeholder-class="p_class" class="head_ipt" bindconfirm="search" />
   </view>
 </view>
 <view class="con flex">
@@ -19,7 +20,7 @@
             <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="g_cover"></image>
             <view>
               <view class="g_name line_ellipsis">{{item.name}}</view>
-              <view class="g_price">单价：¥60</view>
+              <view class="g_price">单价：¥{{filters.toFix(item.price)}}</view>
             </view>
           </view>
           <view class="flex-row">
@@ -52,7 +53,7 @@
 <block wx:if="{{chosed_tab==0}}">
   <view class="fix_bottom">
     <view class="fix_box flex-row ">
-      <view>已选：{{total_num}}种赠品，共计{{total_price}}元</view>
+      <view>已选：{{total_num}}种赠品，共计{{filters.toFix(total_price)}}元</view>
       <view class="btn {{total_num>0&&'btn_ative'}}">确认选择</view>
     </view>
   </view>
@@ -60,7 +61,7 @@
 <block wx:if="{{chosed_tab==1}}">
   <view class="fix_bottom">
     <view class="fix_box flex-row ">
-      <view>已选：{{total_coupon}}种优惠券，共计{{total_price}}元</view>
+      <view>已选：{{total_coupon}}种优惠券</view>
       <view class="btn {{total_coupon>0&&'btn_ative'}}">确认选择</view>
     </view>
   </view>

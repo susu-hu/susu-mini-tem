@@ -4,73 +4,40 @@ Page({
     chosed_gifts: [], //选中的赠品信息
     chosed_coups: [], //选中的优惠券信息
     tab_list: [{
-        name: '医务赠品'
-      },
-      {
-        name: '优惠券'
-      },
+      name: '选项一'
+    },
+    {
+      name: '选项二'
+    },
     ],
     goods_list: [{
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
-      {
-        name: '儿童推车',
-        num: 1
-      },
+      name: '咿咿呀呀',
+      num: 1,
+      price: 55.49,
+    },
+    {
+      name: '咿咿呀呀',
+      num: 1,
+      price: 65.49,
+    },
+    {
+      name: '咿咿呀呀',
+      num: 1,
+      price: 99.49,
+    },
     ],
     total_num: 0, //选中的赠品个数
     total_price: 0, //选中的赠品价格
     coupon_list: [{
-        name: '小听粉核销券',
-        range: '可兑换小听粉1听',
-        num: 1
-      },
-      {
-        name: '满100-50优惠券',
-        range: '可用于在门店购买商品x、商品x、商品x、商品x、商品x、',
-        num: 1
-      },
+      name: '小听粉核销券',
+      range: '可兑换小听粉1听',
+      num: 1
+    },
+    {
+      name: '满100-50优惠券',
+      range: '可用于在门店购买商品x、商品x、商品x、商品x、商品x、',
+      num: 1
+    },
     ],
     total_coupon: 0, //选中的优惠券的个数
   },
@@ -108,7 +75,7 @@ Page({
       index,
       type,
     } = e.currentTarget.dataset, list = this.data[type],
-      chosed_gifts = [], chosed_coups = [], total_num = 0, total_coupon = 0;
+      chosed_gifts = [], chosed_coups = [];
     list.forEach((item, index0) => {
       if (index == index0) {
         item.checked = !item.checked
@@ -122,9 +89,14 @@ Page({
       }
     })
     if (type == 'goods_list') {
+      // chosed_gifts.forEach(item => {
+      //   item.price = parseFloat(item.price)
+      // })
       this.setData({
         chosed_gifts,
-        total_num: chosed_gifts.length
+        total_num: chosed_gifts.length,
+      }, () => {
+        this.getTotalPrice()
       })
     } else {
       this.setData({
@@ -136,7 +108,18 @@ Page({
       [type]: list,
     })
   },
-
+  /**
+   * 计算金额
+   * @param {*} e 
+   */
+  getTotalPrice() {
+    let total_price = this.data.chosed_gifts.reduce((total, cur) => {
+      return total + parseFloat(cur.num) * parseFloat(cur.price)
+    }, 0)
+    this.setData({
+      total_price,
+    })
+  },
   /**
    * 数量的++，和--的方法
    *   @param {*} e 
@@ -173,6 +156,7 @@ Page({
     this.setData({
       [list]: list0
     })
+    this.getTotalPrice()
   }
 
 })
