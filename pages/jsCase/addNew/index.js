@@ -1,4 +1,3 @@
-// pages/actCreate/index.js
 Page({
 
 

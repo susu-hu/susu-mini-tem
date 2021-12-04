@@ -5,22 +5,22 @@
     <input placeholder="搜索" placeholder-class="p_class" class="head_ipt" />
   </view>
   <view class="flex-row j_a head_sel">
-    <picker bindchange="change" data-type="storeList" data-value="store" value="{{store}}" range="{{storeList}}" range-key="name">
+    <picker bindchange="change"  data-checked="picker_chose1"data-type="storeList" data-value="store" value="{{store}}" range="{{storeList}}" range-key="name">
       <view class="flex-row j_c">
         <tetx class="text_ellipsis">{{store}}</tetx>
-        <image src="/img/down_icon.png" class="arrow"></image>
+        <image src="{{picker_chose1?'/img/open_up.png':'/img/clolse_down.png'}}" class="arrow"></image>
       </view>
     </picker>
-    <picker bindchange="change" data-type="themeList" data-value="theme" value="{{theme}}" range="{{themeList}}" range-key="name">
+    <picker bindchange="change"  data-checked="picker_chose2" data-type="themeList" data-value="theme" value="{{theme}}" range="{{themeList}}" range-key="name">
       <view class="flex-row j_c">
         <tetx class="text_ellipsis">{{theme}}</tetx>
-        <image src="/img/down_icon.png" class="arrow"></image>
+        <image src="{{picker_chose2?'/img/open_up.png':'/img/clolse_down.png'}}" class="arrow"></image>
       </view>
     </picker>
-    <picker bindchange="change" data-type="statusList" data-value="status" value="{{status}}" range="{{statusList}}" range-key="name">
+    <picker bindchange="change"data-checked="picker_chose3" data-type="statusList" data-value="status" value="{{status}}" range="{{statusList}}" range-key="name">
       <view class="flex-row j_c">
         <tetx class="text_ellipsis">{{status}}</tetx>
-        <image src="/img/down_icon.png" class="arrow"></image>
+        <image src="{{picker_chose3?'/img/open_up.png':'/img/clolse_down.png'}}" class="arrow"></image>
       </view>
     </picker>
   </view>

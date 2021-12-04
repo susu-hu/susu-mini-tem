@@ -51,7 +51,7 @@ page {
 
 .arrow {
   width: 18rpx;
-  height: 11rpx;
+  height: 18rpx;
   margin-left: 8rpx;
 }
 

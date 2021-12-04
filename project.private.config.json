@@ -59,6 +59,12 @@
           "pathName": "pages/cssCase/loadText/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/jsCase/scList/index",
+          "pathName": "pages/jsCase/scList/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

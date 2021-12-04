@@ -1,0 +1,37 @@
+<!--pages/jsCase/scList/index.wxml-->
+<view class="head">
+  <view class="head_search flex-row">
+    <image src="/img/search.png" class="head_s_icon"></image>
+    <input placeholder="搜索活动名称" placeholder-class="p_class" class="head_ipt" bindconfirm="search" />
+  </view>
+</view>
+<view class="con flex">
+  <scroll-view scroll-y="true" class="c_left">
+    <block wx:for="{{20}}" wx:key="tab_list">
+      <view catchtap="choseTab" data-index="{{index}}" class="flex-column j_c tab_item {{chosed_tab==index?'ative':''}}">选项{{index+1}}</view>
+    </block>
+  </scroll-view>
+  <view scroll-y="true" class="c_right">
+    <scroll-view scroll-y="true" class="c_right_sc">
+      <radio-group bindchange="themeChange">
+        <view class="theme_box">
+          <block wx:for="{{12}}" wx:key="theme_list">
+            <label>
+              <view class="theme_item">
+                <view class="t_title">主题名称：宝宝喂养啊啊啊啊啊巴巴爸爸包包</view>
+                <view class="t_context">
+                  活动内容：主要针对准妈妈和刚生产完的妈妈进行喂养知识教育，包括食物解析和喂养时间等，让妈妈更能科学的喂养孩子。
+                </view>
+                <!-- 选择 -->
+                <radio checked="{{item.checked}}" value="{{item.id}}"></radio>
+              </view>
+            </label>
+          </block>
+        </view>
+      </radio-group>
+    </scroll-view>
+    <view class="c_right_bottom">
+      <view class="btn">确认选择</view>
+    </view>
+  </view>
+</view>

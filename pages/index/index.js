@@ -359,7 +359,14 @@ Page({
             name: '关于富文本中的图片预览等问题',
             url: '/pages/jsCase/richImg/index'
           },
-        
+          {
+            name: '手动添加选项，可新增可删除',
+            url: '/pages/jsCase/addNew/index'
+          },
+          {
+            name: 'scroll-view实现左右两列列表',
+            url: '/pages/jsCase/scList/index'
+          },
         ]
       }
     ]

@@ -1,0 +1,152 @@
+/* pages/jsCase/scList/index.wxss */
+page {
+  background: #F8F8F8;
+  height: 100vh;
+}
+
+.head {
+  background: #fff;
+  width: 750rpx;
+  height: 110rpx;
+  box-sizing: border-box;
+  padding: 20rpx 24rpx 24rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.head_s_icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 16rpx;
+  flex-shrink: 0;
+}
+
+.head_search {
+  width: 702rpx;
+  height: 72rpx;
+  background: #F5F5F5;
+  border-radius: 36rpx;
+  padding: 0 31rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 30rpx;
+}
+
+.head_ipt {
+  height: 100%;
+  flex: 1;
+}
+
+.p_class {
+  color: rgb(127, 127, 127, .63);
+}
+
+.con {
+  padding-top: 110rpx;
+}
+
+.c_left {
+  background: #fff;
+  width: 199rpx;
+  height: calc(100vh - 110rpx);
+  /* padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom); */
+}
+
+.c_right {
+  flex: 1;
+  height: calc(100vh - 110rpx);
+}
+
+.tab_item {
+  width: 199rpx;
+  min-height: 106rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #666666;
+  text-align: center;
+}
+
+.ative {
+  color: #147ABF;
+  background: #E8F2F9;
+}
+
+.theme_box {
+  margin: 31rpx auto;
+  width: 503rpx;
+}
+
+.theme_item {
+  width: 503rpx;
+  margin-bottom: 24rpx;
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 14rpx 19rpx 24rpx 22rpx;
+  position: relative;
+}
+
+.t_title {
+  font-size: 28rpx;
+  color: #333333;
+  margin-bottom: 9rpx;
+  width: 400rpx;
+}
+
+.t_context {
+  width: 462rpx;
+  background: #F8F8F8;
+  box-sizing: border-box;
+  padding: 20rpx 12rpx;
+  min-height: 193rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #666666;
+}
+
+radio {
+  transform: scale(0.8);
+  position: absolute;
+  top: 19rpx;
+  right: 24rpx;
+}
+
+radio .wx-radio-input {
+  border: 1px solid #999999;
+}
+
+radio .wx-radio-input.wx-radio-input-checked {
+  background: #147ABF !important;
+  border-color: #147ABF !important;
+}
+
+.c_right_sc {
+  height: calc(100% - 140rpx);
+}
+
+.c_right_bottom {
+  width: 551rpx;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  height: 140rpx;
+}
+
+.btn {
+  width: 471rpx;
+  height: 72rpx;
+  background: #147ABF;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  line-height: 72rpx;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 30rpx auto;
+}
