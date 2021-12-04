@@ -97,3 +97,6 @@ button::after {
 .j_c {
   justify-content: center;
 }
+.j_e{
+  justify-content: flex-end;
+}

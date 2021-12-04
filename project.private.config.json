@@ -65,6 +65,18 @@
           "pathName": "pages/jsCase/scList/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/another/choseGoods/index",
+          "pathName": "pages/another/choseGoods/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/plusAredu/index",
+          "pathName": "pages/jsCase/plusAredu/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

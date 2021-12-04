@@ -367,6 +367,10 @@ Page({
             name: 'scroll-view实现左右两列列表',
             url: '/pages/jsCase/scList/index'
           },
+          {
+            name: '数组中某项数量的增加与减少',
+            url: '/pages/jsCase/plusAredu/index'
+          },
         ]
       }
     ]

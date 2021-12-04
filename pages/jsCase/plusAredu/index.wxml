@@ -1,0 +1,67 @@
+<view class="head">
+  <view class="head_search flex-row">
+    <image src="/img/search.png" class="head_s_icon"></image>
+    <input placeholder="{{chosed_tab==0?'可搜索赠品名称':'可搜索优惠券名称'}}" placeholder-class="p_class" class="head_ipt" bindconfirm="search" />
+  </view>
+</view>
+<view class="con flex">
+  <scroll-view scroll-y="true" class="c_left">
+    <block wx:for="{{tab_list}}" wx:key="tab_list">
+      <view catchtap="choseTab" data-index="{{index}}" class="flex-column j_c tab_item {{chosed_tab==index?'ative':''}}">{{item.name}}</view>
+    </block>
+  </scroll-view>
+  <scroll-view scroll-y="true" class="c_right">
+    <!-- 赠品 -->
+    <view wx:if="{{chosed_tab==0}}" class="right_box">
+      <block wx:for="{{goods_list}}" wx:key="goods_list">
+        <view class="g_item flex-row j_b {{item.checked&&'g_ative'}}" data-type="goods_list" catchtap="selectOne" data-index="{{index}}">
+          <view class="flex">
+            <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="g_cover"></image>
+            <view>
+              <view class="g_name line_ellipsis">{{item.name}}</view>
+              <view class="g_price">单价：¥60</view>
+            </view>
+          </view>
+          <view class="flex-row">
+            <image src="/img/reduce.png" class="reduce_icon" catchtap="numChange" data-type="0" data-list="goods_list" data-index="{{index}}" />
+            <view class="g_num">{{item.num}}</view>
+            <image src="/img/plus.png" class="reduce_icon" catchtap="numChange" data-type="1" data-list="goods_list" data-index="{{index}}" />
+          </view>
+        </view>
+      </block>
+    </view>
+    <!-- 优惠券 -->
+    <view wx:else class="right_box">
+      <block wx:for="{{coupon_list}}" wx:key="coupon_list">
+        <view class="c_item {{item.checked&&'g_ative'}}" catchtap="selectOne" data-type="coupon_list" data-index="{{index}}">
+          <view class="c_item_cou">
+            <view class="cou_title">{{item.name}}</view>
+            <view>适用范围：{{item.range}}</view>
+          </view>
+          <view class="flex-row j_e">
+            <image src="/img/reduce.png" class="reduce_icon" catchtap="numChange" data-type="0" data-list="coupon_list" data-index="{{index}}" />
+            <view class="g_num">{{item.num}}</view>
+            <image src="/img/plus.png" class="reduce_icon" catchtap="numChange" data-type="1" data-list="coupon_list" data-index="{{index}}" />
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+<!-- 底部固定按钮 -->
+<block wx:if="{{chosed_tab==0}}">
+  <view class="fix_bottom">
+    <view class="fix_box flex-row ">
+      <view>已选：{{total_num}}种赠品，共计{{total_price}}元</view>
+      <view class="btn {{total_num>0&&'btn_ative'}}">确认选择</view>
+    </view>
+  </view>
+</block>
+<block wx:if="{{chosed_tab==1}}">
+  <view class="fix_bottom">
+    <view class="fix_box flex-row ">
+      <view>已选：{{total_coupon}}种优惠券，共计{{total_price}}元</view>
+      <view class="btn {{total_coupon>0&&'btn_ative'}}">确认选择</view>
+    </view>
+  </view>
+</block>

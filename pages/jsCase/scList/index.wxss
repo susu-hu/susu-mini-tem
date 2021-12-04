@@ -73,7 +73,7 @@ page {
 
 .ative {
   color: #db4e0c;
-  background:#ebd5cb ;
+  background: #ebd5cb;
 }
 
 .theme_box {
@@ -95,7 +95,7 @@ page {
   font-size: 28rpx;
   color: #333333;
   margin-bottom: 9rpx;
-  width: 400rpx;
+  width: 100%;
 }
 
 .t_context {
@@ -111,9 +111,7 @@ page {
 
 radio {
   transform: scale(0.8);
-  position: absolute;
-  top: 19rpx;
-  right: 24rpx;
+  flex-shrink: 0;
 }
 
 radio .wx-radio-input {

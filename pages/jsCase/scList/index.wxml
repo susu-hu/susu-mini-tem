@@ -18,12 +18,16 @@
           <block wx:for="{{12}}" wx:key="theme_list">
             <label>
               <view class="theme_item">
-                <view class="t_title">主题：12312</view>
+                <view class="t_title flex j_b">
+                  主题：12312
+                  <!-- 选择 -->
+                  <radio checked="{{item.checked}}" value="{{item.id}}">
+                  </radio>
+                </view>
                 <view class="t_context">
                   活动内容：主要针对1232131232131231232。
                 </view>
-                <!-- 选择 -->
-                <radio checked="{{item.checked}}" value="{{item.id}}"></radio>
+
               </view>
             </label>
           </block>
