@@ -83,10 +83,11 @@ page {
   height: 102rpx;
   background: #FFFFFF;
   box-shadow: 0px -3rpx 12rpx rgba(178, 178, 178, 0.16);
-  position: fixed;
+  border-top: 1rpx solid rgba(178, 178, 178, 0.56);
+  /* position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  z-index: 999; */
   padding-bottom: constant(safe-area-inset-bottom);
   padding-bottom: env(safe-area-inset-bottom);
 }
