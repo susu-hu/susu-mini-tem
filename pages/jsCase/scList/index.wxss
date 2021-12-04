@@ -136,15 +136,22 @@ radio .wx-radio-input.wx-radio-input-checked {
   height: 140rpx;
 }
 
+
+
 .btn {
   width: 471rpx;
   height: 72rpx;
-  background: #db4e0c;
+  background: rgb(177, 177, 177, .3);
   border-radius: 40rpx;
   font-size: 28rpx;
   font-weight: 500;
   line-height: 72rpx;
-  color: #FFFFFF;
+  color: #999999;
   text-align: center;
   margin: 30rpx auto;
+}
+
+.btn_ative {
+  background: #db4e0c;
+  color: #FFFFFF;
 }

@@ -2,6 +2,7 @@ Page({
 
 
   data: {
+    theme: {},
     list1: [], //，门店与导购
     list2: [], //费用
     list: [
@@ -22,7 +23,7 @@ Page({
       sel1: this.data.list[e.detail.value].name
     })
   },
-  bindDateChange(e){
+  bindDateChange(e) {
     this.setData({
       date: e.detail.value
     })
@@ -61,6 +62,18 @@ Page({
 
   onShow: function () {
 
+  },
+  /**
+   * 页面跳转
+   * @param {*} e 
+   */
+  choseItem(e) {
+    let {
+      url
+    } = e.currentTarget.dataset;
+    wx.navigateTo({
+      url: url,
+    })
   },
 
 

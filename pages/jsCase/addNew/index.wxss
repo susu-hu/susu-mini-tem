@@ -121,7 +121,7 @@ page {
 .act_store {
   width: 120rpx;
   height: 48rpx;
-  background: rgb(209, 74, 97,.2);
+  background: rgb(209, 74, 97, .2);
   border: 1rpx solid #d14a61;
   border-radius: 23rpx 23rpx 23rpx 0rpx;
   text-align: center;
@@ -150,6 +150,12 @@ page {
   top: -5rpx;
   right: 0;
 }
-.sel_text{
+
+.sel_text {
   color: #333;
+}
+
+.nowp {
+  white-space: nowrap;
+  margin-right: 15rpx;
 }

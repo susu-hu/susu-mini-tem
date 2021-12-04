@@ -15,19 +15,18 @@
     <scroll-view scroll-y="true" class="c_right_sc">
       <radio-group bindchange="themeChange">
         <view class="theme_box">
-          <block wx:for="{{12}}" wx:key="theme_list">
+          <block wx:for="{{theme_list}}" wx:key="theme_list">
             <label>
               <view class="theme_item">
                 <view class="t_title flex j_b">
-                  主题：12312
+                  主题：{{item.name}}
                   <!-- 选择 -->
                   <radio checked="{{item.checked}}" value="{{item.id}}">
                   </radio>
                 </view>
                 <view class="t_context">
-                  活动内容：主要针对1232131232131231232。
+                  活动内容：{{item.content}}
                 </view>
-
               </view>
             </label>
           </block>
@@ -35,7 +34,7 @@
       </radio-group>
     </scroll-view>
     <view class="c_right_bottom">
-      <view class="btn">确认选择</view>
+      <view class="btn {{chosed_theme&&'btn_ative'}}" catchtap="{{chosed_theme&&'submit'}}">确认选择</view>
     </view>
   </view>
 </view>

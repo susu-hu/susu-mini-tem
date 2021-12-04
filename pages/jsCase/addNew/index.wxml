@@ -3,7 +3,15 @@
   <view class="act_title">选项</view>
   <view class="act_box">
     <view class="act_item flex j_b">
-      <view><text class="require">*</text>选项一：</view>
+      <view class="nowp"><text class="require">*</text>选项0：</view>
+      <view class="flex-row act_right" catchtap="choseItem" data-url="/pages/jsCase/scList/index">
+        <text wx:if="{{!theme.name}}">请选择</text>
+        <text wx:else class="sel_text">{{theme.name}}</text>
+        <image src="/img/de_icon2.png" class="right_arr" />
+      </view>
+    </view>
+    <view class="act_item flex j_b">
+      <view class="nowp"><text class="require">*</text>选项一：</view>
       <picker bindchange="bindPickerChange" value="{{sel1}}" range="{{list}}" range-key="name">
         <view class="flex-row act_right">
           <text wx:if="{{!sel1}}">请选择</text>
@@ -13,7 +21,7 @@
       </picker>
     </view>
     <view class="act_item flex j_b">
-      <view><text class="require">*</text>
+      <view class="nowp"><text class="require">*</text>
         开始时间：
       </view>
       <picker mode="date" fileds="day" value="{{date}}" bindchange="bindDateChange">
