@@ -77,6 +77,12 @@
           "pathName": "pages/jsCase/plusAredu/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/jsCase/papers/index",
+          "pathName": "pages/jsCase/papers/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
