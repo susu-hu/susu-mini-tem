@@ -132,6 +132,7 @@ Page({
     //   paperId: options.id
     // })
     // _this.getPaperDetail()
+    this.getLeftTime('2021-12-6 01:05:45')
   },
 
   
@@ -169,12 +170,12 @@ Page({
 
       if (this.data.left_time <= 600 || this.data.left_time > 0) {
         if (this.data.show_tip) {
+          console.log(123)
           // wx.showToast({
           //   title:'离结束时间10分钟',
           //   icon: 'none',
           //   duration: 1500,
           // })
-
           wx.showModal({
             title: '提示',
             content: '离结束时间不到10分钟',
@@ -192,14 +193,14 @@ Page({
         }
       }
 
-      if (this.data.left_time <= 0) {
-        wx.showToast({
-          title: '时间已到，将自动交卷',
-          icon: 'none',
-          duration: 1500,
-        })
-        // 交卷
-      }
+      // if (this.data.left_time <= 0) {
+      //   wx.showToast({
+      //     title: '时间已到，将自动交卷',
+      //     icon: 'none',
+      //     duration: 1500,
+      //   })
+      //   // 交卷
+      // }
     }, 1000);
   },
 
