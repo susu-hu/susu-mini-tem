@@ -4,7 +4,7 @@
     <view>{{index+1}}.</view>
     <view wx:if="{{item.question_name}}"> {{item.question_name}}</view>
   </view>
-  <image src="{{ImgUrl + item.question_img}}" class="title_img" wx:if="{{item.question_img}}"></image>
+  <image src="{{item.question_img}}" class="title_img" wx:if="{{item.question_img}}"></image>
   <view class="choose_box">
     <!-- 单选框 -->
     <block wx:if="{{ item.question_type == 1 }}">
@@ -15,7 +15,7 @@
             <view class="name" style="flex-shrink: 0;"> {{item1.option_label}} . </view>
             <view class="name" wx:if="{{item1.option_name}}"> {{item1.option_name}}</view>
           </view>
-          <image src="{{ImgUrl + item1.option_img}}" class="test_img" wx:if="{{item1.option_img}}"></image>
+          <image src="{{item1.option_img}}" class="test_img" wx:if="{{item1.option_img}}"></image>
         </label>
       </radio-group>
     </block>
@@ -29,7 +29,7 @@
             <view class="name" wx:if="{{item1.option_name}}">{{item1.option_name}}</view>
           </view>
 
-          <image src="{{ImgUrl + item1.option_img}}" class="test_img" wx:if="{{item1.option_img}}"></image>
+          <image src="{{ item1.option_img}}" class="test_img" wx:if="{{item1.option_img}}"></image>
         </label>
       </checkbox-group>
     </block>
@@ -38,4 +38,12 @@
 <view class="bottom_fix flex j_c">
   <view class="bottom_btn" catchtap="submitPaper" wx:if="{{status != 2}}">提交</view>
   <view class="bottom_btn" catchtap="submitPaper" wx:if="{{is_again}}">再次答题</view>
+</view>
+
+<!-- 提示弹框 -->
+<view wx:if="{{show_modal}}">
+  <view class="pop_info flex-column j_c">
+    <view>剩余时间:</view>
+    <view>{{left_time_out}}</view>
+  </view>
 </view>

@@ -77,7 +77,7 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
 
 .bottom_btn {
   width: 702rpx;
-  background: #2780F6;
+  background: #96b5e2;
   border-radius: 44rpx;
   line-height: 88rpx;
   text-align: center;
@@ -86,39 +86,12 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   color: #FFFFFF;
 }
 
-
-/* 弹框 */
-.pop_info {
-  width: 498rpx;
-  height: 215rpx;
-  background: #FFFFFF;
-  border-radius: 25rpx;
-  position: fixed;
-  z-index: 1010;
-  top: 50%;
-  left: 50%;
-  box-sizing: border-box;
-  transform: translate(-50%, -50%);
-  font-size: 30rpx;
-  color: #333;
-}
-
-/* 标题 */
-.rules_title {
-  font-size: 32rpx;
-  color: #333333;
-  font-weight: 500;
-  margin-bottom: 45rpx;
-  padding: 49rpx 49rpx 0;
-}
-
 .btn_ok {
   text-align: center;
   line-height: 80rpx;
   color: #4E7BBA;
 }
 
-/* 下面的btn按钮 */
 .btn_pop {
   width: 256rpx;
   height: 72rpx;
@@ -155,4 +128,18 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
 
 .c_head {
   padding-top: 20rpx;
+}
+
+.pop_info {
+  position: fixed;
+  top: 140rpx;
+  right: 30rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background-color: #96b5e2;
+  z-index: 999;
+  text-align: center;
+  color: #fff;
+  font-size: 25rpx;
 }

@@ -3,139 +3,151 @@ Page({
    * 页面的初始数据
    */
   data: {
-    paperId: '',
-    nc_paper_id: '',
-    checkedStoreId: '', //选择的门店
-    paper_name: '', //试卷名称
     status: 0, //状态
-    is_again: false, //是否再次答题
-    img: [],
-    list: [],
     left_time: '',//剩余时间
     end_time: '',
     show_tip: true,//用来展示10分钟提示
-
-
-    list:[
+    list: [
       {
-        question_name:'下列关于RTS/CTS机制的叙述，不正确的是',
-        question_type:1,//单选题
-        option_list:[
+        id: 1,
+        question_name: '下列关于RTS/CTS机制的叙述，不正确的是',
+        question_type: 1,//单选题
+        option_list: [
           {
-            id:1001,
-            option_label:'A',
-            option_name:'RTS/CTS机制是CSMA/CA协议的一部分',
+            id: 1001,
+            option_label: 'A',
+            option_name: 'RTS/CTS机制是CSMA/CA协议的一部分',
           },
           {
-            id:1002,
-            option_label:'B',
-            option_name:'RTS/CTS机制的主要作用是解决无线局域网中“暴露节点”问题',
+            id: 1002,
+            option_label: 'B',
+            option_name: 'RTS/CTS机制的主要作用是解决无线局域网中“暴露节点”问题',
           },
           {
-            id:1003,
-            option_label:'C',
-            option_name:'RTS/CTS机制适合于传输较大的帧时使用',
+            id: 1003,
+            option_label: 'C',
+            option_name: 'RTS/CTS机制适合于传输较大的帧时使用',
           },
           {
-            id:1004,
-            option_label:'D',
-            option_name:'以上均不正确',
+            id: 1004,
+            option_label: 'D',
+            option_name: '以上均不正确',
           },
         ]
       },
       {
-        question_name:'下列关于RTS/CTS机制的叙述，不正确的是',
-        question_type:1,//单选题
-        option_list:[
+        id: 2,
+        question_name: '下列关于RTS/CTS机制的叙述，不正确的是',
+        question_type: 1,//单选题
+        option_list: [
           {
-            id:1001,
-            option_label:'A',
-            option_name:'RTS/CTS机制是CSMA/CA协议的一部分',
+            id: 1001,
+            option_label: 'A',
+            option_name: 'RTS/CTS机制是CSMA/CA协议的一部分',
           },
           {
-            id:1002,
-            option_label:'B',
-            option_name:'RTS/CTS机制的主要作用是解决无线局域网中“暴露节点”问题',
+            id: 1002,
+            option_label: 'B',
+            option_name: 'RTS/CTS机制的主要作用是解决无线局域网中“暴露节点”问题',
           },
           {
-            id:1003,
-            option_label:'C',
-            option_name:'RTS/CTS机制适合于传输较大的帧时使用',
+            id: 1003,
+            option_label: 'C',
+            option_name: 'RTS/CTS机制适合于传输较大的帧时使用',
           },
           {
-            id:1004,
-            option_label:'D',
-            option_name:'以上均不正确',
-          },
-        ]
-      },
-      {
-        question_name:'下列关于RTS/CTS机制的叙述，不正确的是',
-        question_type:1,//单选题
-        option_list:[
-          {
-            id:1001,
-            option_label:'A',
-            option_name:'RTS/CTS机制是CSMA/CA协议的一部分',
-          },
-          {
-            id:1002,
-            option_label:'B',
-            option_name:'RTS/CTS机制的主要作用是解决无线局域网中“暴露节点”问题',
-          },
-          {
-            id:1003,
-            option_label:'C',
-            option_name:'RTS/CTS机制适合于传输较大的帧时使用',
-          },
-          {
-            id:1004,
-            option_label:'D',
-            option_name:'以上均不正确',
+            id: 1004,
+            option_label: 'D',
+            option_name: '以上均不正确',
           },
         ]
       },
       {
-        question_name:'下列关于RTS/CTS机制的叙述，不正确的是',
-        question_type:1,//单选题
-        option_list:[
+        id: 3,
+        question_name: '下列关于RTS/CTS机制的叙述，不正确的是',
+        question_type: 1,//单选题
+        option_list: [
           {
-            id:1001,
-            option_label:'A',
-            option_name:'RTS/CTS机制是CSMA/CA协议的一部分',
+            id: 1001,
+            option_label: 'A',
+            option_name: 'RTS/CTS机制是CSMA/CA协议的一部分',
           },
           {
-            id:1002,
-            option_label:'B',
-            option_name:'RTS/CTS机制的主要作用是解决无线局域网中“暴露节点”问题',
+            id: 1002,
+            option_label: 'B',
+            option_name: 'RTS/CTS机制的主要作用是解决无线局域网中“暴露节点”问题',
           },
           {
-            id:1003,
-            option_label:'C',
-            option_name:'RTS/CTS机制适合于传输较大的帧时使用',
+            id: 1003,
+            option_label: 'C',
+            option_name: 'RTS/CTS机制适合于传输较大的帧时使用',
           },
           {
-            id:1004,
-            option_label:'D',
-            option_name:'以上均不正确',
+            id: 1004,
+            option_label: 'D',
+            option_name: '以上均不正确',
+          },
+        ]
+      },
+      {
+        id: 4,
+        question_name: '下列关于RTS/CTS机制的叙述，不正确的是',
+        question_type: 1,//单选题
+        option_list: [
+          {
+            id: 1001,
+            option_label: 'A',
+            option_name: 'RTS/CTS机制是CSMA/CA协议的一部分',
+          },
+          {
+            id: 1002,
+            option_label: 'B',
+            option_name: 'RTS/CTS机制的主要作用是解决无线局域网中“暴露节点”问题',
+          },
+          {
+            id: 1003,
+            option_label: 'C',
+            option_name: 'RTS/CTS机制适合于传输较大的帧时使用',
+          },
+          {
+            id: 1004,
+            option_label: 'D',
+            option_name: '以上均不正确',
           },
         ]
       }
-    ]
+    ],
+    show_modal: true,
+    left_time_out: "",
   },
 
 
   onLoad: function (options) {
-    // var _this = this;
-    // _this.setData({
-    //   checkedStoreId: wx.getStorageSync('checkedStoreId'),
-    //   paperId: options.id
-    // })
-    // _this.getPaperDetail()
-    this.getLeftTime('2021-12-6 01:05:45')
+    this.getLeftTime('2021-12-7 01:20:45')
+  },
+  formatDuring(mss) {
+    var days = parseInt(mss / (1000 * 60 * 60 * 24));
+    var hours = parseInt((mss % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = parseInt((mss % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = (mss % (1000 * 60)) / 1000;
+    return minutes + " 分钟 " + seconds + " 秒 ";
+  },
+  formatTime(msTime) {
+
+    let time = msTime / 1000;
+
+    let day = Math.floor(time / 60 / 60 / 24);
+
+    let hour = Math.floor(time / 60 / 60) % 24;
+
+    let minute = Math.floor(time / 60) % 60;
+
+    let second = Math.floor(time) % 60;
+
+    return `${day}天${hour}时${minute}分${second}秒`
+
   },
 
-  
 
   //获取未来时间-当前时间的秒数
   handleBtnClick(end_time) {
@@ -164,7 +176,8 @@ Page({
         clearInterval(this.data.timer)
       } else {
         this.setData({
-          left_time: left_time
+          left_time,
+          left_time_out: this.formatTime(left_time)
         })
       }
 
@@ -176,19 +189,19 @@ Page({
           //   icon: 'none',
           //   duration: 1500,
           // })
-          wx.showModal({
-            title: '提示',
-            content: '离结束时间不到10分钟',
-            success: (res) => {
-              if (res.confirm) {
-                this.setData({
-                  show_tip: false
-                })
-              } else if (res.cancel) {
-                console.log('用户点击取消')
-              }
-            }
-          })
+          // wx.showModal({
+          //   title: '提示',
+          //   content: '离结束时间不到10分钟',
+          //   success: (res) => {
+          //     if (res.confirm) {
+          //       this.setData({
+          //         show_tip: false
+          //       })
+          //     } else if (res.cancel) {
+          //       console.log('用户点击取消')
+          //     }
+          //   }
+          // })
 
         }
       }
@@ -206,21 +219,7 @@ Page({
 
   //单选
   radioChange(e) {
-    var list = this.data.list
-    var index = e.currentTarget.dataset.index
-    for (let i = 0, len = list.length; i < len; ++i) {
-      for (let j = 0; j < list[i].option_list.length; j++) {
-        if (i == index) {
-          list[i].option_list[j].checked = false
-        }
-        if (list[i].option_list[j].id == e.detail.value) {
-          list[i].option_list[j].checked = true
-        }
-      }
-    }
-    this.setData({
-      list: list
-    })
+    console.log(e.detail.value)
   },
 
   //多选
