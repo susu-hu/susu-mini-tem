@@ -170,6 +170,12 @@
         "plusAredu/index",
         "papers/index"
       ]
+    },
+    {
+      "root": "pages/canvas/",
+      "pages": [
+        "denglong/index"
+      ]
     }
   ],
   "tabBar": {

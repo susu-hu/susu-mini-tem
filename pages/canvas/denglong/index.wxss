@@ -1,0 +1,523 @@
+/* pages/canvas/denglong/index.wxss */
+page {
+  height: 100%;
+  background: #222;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  perspective-origin: center center;
+}
+
+.box {
+  position: relative;
+  width: 0;
+  height: 0;
+  animation: rotate 9s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0)
+  }
+
+  100% {
+    transform: rotateY(360deg)
+  }
+}
+
+.octagon {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  transform-style: preserve-3d;
+}
+
+.octagon .surface {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0% {
+    box-shadow: rgba(0, 0, 0, .1) 0 0 1px;
+  }
+
+  50% {
+    box-shadow: #fffea1 0 0 20px;
+  }
+
+  100% {
+    box-shadow: rgba(0, 0, 0, .1) 0 0 1px;
+  }
+
+}
+
+.surface {
+  position: absolute;
+  left: -40px;
+  top: -100px;
+  width: 80px;
+  height: 150px;
+  background: radial-gradient(#fffea1, #fffea1, #fbd342);
+  transform-origin: center;
+  overflow: hidden;
+}
+
+.surface::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: #e36d00 solid 4px;
+  border-right-width: 2px;
+  border-left-width: 2px;
+  box-sizing: border-box;
+}
+
+.surface::before {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 60px;
+  height: 130px;
+  box-sizing: border-box;
+  content: '';
+  border: solid 3px #e36d00;
+}
+
+.front {
+  transform: rotateY(0) translateZ(69px);
+}
+
+.right-front {
+  transform: rotateY(60deg) translateZ(69px);
+}
+
+.right-rear {
+  transform: rotateY(120deg) translateZ(69px);
+}
+
+.rear {
+  transform: rotateY(180deg) translateZ(69px);
+}
+
+.left-rear {
+  transform: rotateY(-120deg) translateZ(69px);
+}
+
+.left-front {
+  transform: rotateY(-60deg) translateZ(69px);
+}
+
+.surface.up {
+  left: -80px;
+  top: -100px;
+  width: 160px;
+  height: 0;
+  transform: rotateX(90deg);
+  overflow: visible;
+}
+
+.surface.bottom {
+  left: -80px;
+  top: 50px;
+  width: 160px;
+  height: 0;
+  transform: rotateX(90deg);
+  overflow: visible;
+}
+
+.surface.bottom::after,
+.surface.up::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 160px;
+  height: 0;
+  border: none;
+  border-top: #e36d00 solid 69px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: none;
+}
+
+.surface.bottom::before,
+.surface.up::before {
+  position: absolute;
+  left: 0 !important;
+  top: -69px !important;
+  width: 160px;
+  height: 0;
+  content: '';
+  border: none;
+  border-bottom: #e36d00 solid 69px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  box-sizing: border-box;
+}
+
+.surface-decoration {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 3px #e36d00;
+}
+
+.surface-decoration.left-top {
+  left: -20px;
+  top: -20px;
+}
+
+.surface-decoration.right-top {
+  right: -20px;
+  top: -20px;
+}
+
+.surface-decoration.left-bottom {
+  left: -20px;
+  bottom: -20px;
+}
+
+.surface-decoration.right-bottom {
+  right: -20px;
+  bottom: -20px;
+}
+
+.extra {
+  position: absolute;
+  top: -100px;
+  width: 96px;
+  height: 150px;
+  transform-origin: left center;
+}
+
+.extra::before {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 20px;
+  height: 15px;
+  content: '';
+  border: solid 3px #e36d00;
+}
+
+.extra::after {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  width: 10px;
+  height: 15px;
+  content: '';
+  border: solid 3px #e36d00;
+}
+
+.extra-60 {
+  transform: rotateY(60deg);
+}
+
+.extra-120 {
+  transform: rotateY(120deg);
+}
+
+.extra-180 {
+  transform: rotateY(180deg);
+}
+
+.extra-240 {
+  transform: rotateY(240deg);
+}
+
+.extra-300 {
+  transform: rotateY(300deg);
+}
+
+/*重写顶部样式*/
+.octagon.octagon-top {
+  top: -40px;
+}
+
+.octagon-top .surface {
+  left: -50px;
+  height: 40px;
+  width: 100px;
+}
+
+.octagon-top .surface::before {
+  width: 80px;
+  height: 20px;
+}
+
+.octagon-top .surface.up {
+  height: 0;
+}
+
+.octagon-top .front {
+  transform: rotateY(0) translateZ(86px);
+}
+
+.octagon-top .right-front {
+  transform: rotateY(60deg) translateZ(86px);
+}
+
+.octagon-top .right-rear {
+  transform: rotateY(120deg) translateZ(86px);
+}
+
+.octagon-top .rear {
+  transform: rotateY(180deg) translateZ(86px);
+}
+
+.octagon-top .left-rear {
+  transform: rotateY(-120deg) translateZ(86px);
+}
+
+.octagon-top .left-front {
+  transform: rotateY(-60deg) translateZ(86px);
+}
+
+.octagon-top .surface.bottom,
+.octagon-top .surface.up {
+  left: -100px;
+  top: -100px;
+  width: 200px;
+}
+
+.octagon-top .surface.up {
+  top: -60px;
+  z-index: 1;
+}
+
+
+.octagon-top .surface.bottom::after,
+.octagon-top .surface.up::after {
+  width: 200px;
+  border-top: #e36d00 solid 86px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.octagon-top .surface.bottom::before,
+.octagon-top .surface.up::before {
+  top: -86px !important;
+  width: 200px;
+  border-bottom: #e36d00 solid 86px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.octagon-top .extra {
+  width: 120px;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+/*重写底部样式*/
+.octagon.octagon-bottom {
+  top: 148px;
+  z-index: -1;
+}
+
+.octagon-bottom .surface {
+  left: -40px;
+  height: 20px;
+  width: 80px;
+}
+
+.pendant {
+  position: absolute;
+  right: -6px;
+  transform-style: preserve-3d;
+}
+
+.pendant::before {
+  position: absolute;
+  width: 6px;
+  height: 3px;
+  background: #e36d00;
+  left: -6px;
+  content: '';
+}
+
+.pendant::after {
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  left: -1px;
+  width: 2px;
+  background: #F00;
+  content: '';
+}
+
+.pendant .line {
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  width: 0;
+  top: 40px;
+  transform-style: preserve-3d;
+}
+
+.knot {
+  position: absolute;
+  left: -4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  width: 10px;
+  height: 60px;
+  background: linear-gradient(#f00, #e36d00 3px, #fbd342 5px, #e36d00 8px, #e36d00 12px, #f00 16px, rgba(255, 0, 0, .8) 26px, rgba(255, 0, 0, .6));
+}
+
+.knot-rotate-60 {
+  transform: rotateY(60deg)
+}
+
+.knot-rotate-120 {
+  transform: rotateY(120deg)
+}
+
+.octagon-bottom .pendant {
+  position: absolute;
+  left: 0;
+  top: -80px;
+  transform-style: preserve-3d;
+}
+
+.octagon-bottom .pendant::before {
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  left: -1px;
+  width: 2px;
+  background: #F00;
+  content: '';
+  transform: rotateY(90deg);
+}
+
+.octagon-bottom .pendant::after {
+  height: 90px;
+}
+
+.octagon-bottom .line {
+  top: 90px;
+}
+
+.top-line {
+  position: absolute;
+  left: -1px;
+  top: -200px;
+  width: 2px;
+  background: #F00;
+  height: 100px;
+}
+
+.top-line-60 {
+  transform: rotateY(60deg);
+}
+
+.top-line-120 {
+  transform: rotateY(60deg);
+}
+
+.octagon-bottom .pendant .chinese-knot {
+  position: absolute;
+  left: -15px;
+  width: 30px;
+  top: 40px;
+  height: 30px;
+}
+
+.chinese-knot-45 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotateZ(45deg);
+}
+
+.chinese-knot--45 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: rotateZ(-45deg);
+}
+
+.chinese-knot-45::before {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 10px;
+  height: 10px;
+  border: solid 2px #F00;
+  content: '';
+  border-radius: 50%;
+  border-left-color: transparent;
+  transform: rotate(-45deg);
+}
+
+.chinese-knot-45::after {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  width: 24px;
+  height: 24px;
+  border: solid 2px #F00;
+  border-left-color: transparent;
+  content: '';
+  border-radius: 50%;
+  transform: rotate(-45deg);
+}
+
+.chinese-knot--45::before {
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  width: 10px;
+  height: 10px;
+  border: solid 2px #F00;
+  content: '';
+  border-radius: 50%;
+  border-right-color: transparent;
+  transform: rotate(45deg);
+}
+
+.chinese-knot--45::after {
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  width: 24px;
+  height: 24px;
+  border: solid 2px #F00;
+  border-right-color: transparent;
+  content: '';
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+.chinese-knot .oval {
+  width: 32px;
+  margin-left: -3px;
+  height: 2px;
+  border: solid 2px #f00;
+  border-radius: 2px;
+  margin-top: 1px;
+}
+
+.circle{
+  width: 32rpx;
+  height: 28rpx;
+  border-radius: 10rpx;
+  position: absolute;
+  top: -488rpx;
+  left: -8px;
+  background: linear-gradient(#f00, #e36d00 3px, #fbd342 5px, #e36d00 8px, #e36d00 12px, #f00 16px, rgba(255, 0, 0, .8) 26px, rgba(255, 0, 0, .6));
+}
