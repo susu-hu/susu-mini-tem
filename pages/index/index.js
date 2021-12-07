@@ -194,6 +194,10 @@ Page({
           name: '折叠文字动画',
           url: '/pages/cssCase/loadText/index'
         },
+        {
+          name: '卡券半圆式透明',
+          url: '/pages/cssCase/cardTrans/index'
+        },
         ]
       },
       {
@@ -376,6 +380,10 @@ Page({
           name: '试卷列表（单选+多选+时间倒计时)',
           url: '/pages/jsCase/papers/index'
         },
+        {
+          name: '多列选择器，时间+日期',
+          url: '/pages/jsCase/multiTime/index'
+        },
         ]
       },
       {
@@ -385,6 +393,10 @@ Page({
           {
             name: '六角灯笼',
             url: '/pages/canvas/denglong/index'
+          },
+          {
+            name: '圆角灯笼',
+            url: '/pages/canvas/cdenglong/index'
           }
         ]
       }

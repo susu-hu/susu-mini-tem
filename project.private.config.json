@@ -23,6 +23,42 @@
           "pathName": "pages/canvas/denglong/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/cardTrans/index",
+          "pathName": "pages/cssCase/cardTrans/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/canvas/cdenglong/index",
+          "pathName": "pages/canvas/cdenglong/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/draw/index",
+          "pathName": "pages/jsCase/draw/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/multiTime/index",
+          "pathName": "pages/jsCase/multiTime/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/multiTime/index2",
+          "pathName": "pages/jsCase/multiTime/index2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/multiTime/index2",
+          "pathName": "pages/jsCase/multiTime/index3",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -1,0 +1,102 @@
+/* pages/cssCase/cardTrans/index.wxss */
+page {
+  background-color: rgb(238, 185, 188);
+}
+
+.card {
+  width: 683rpx;
+  border-radius: 40rpx;
+  box-sizing: border-box;
+  margin: 40px auto;
+}
+
+.top {
+  box-sizing: border-box;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 1px dashed #66E0FE;
+  position: relative;
+}
+
+
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.title text {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #147ABE;
+  padding: 0 13rpx 0 20rpx;
+}
+
+.title span {
+  width: 21rpx;
+  height: 21rpx;
+  background: #7FE0F7;
+  border-radius: 50%;
+  position: relative;
+}
+
+.title span::after {
+  content: '';
+  position: absolute;
+  width: 14rpx;
+  height: 14rpx;
+  background: rgba(255, 190, 85, 0.58);
+  border-radius: 50%;
+  bottom: 0;
+  right: -7rpx;
+}
+
+
+.tips {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #333333;
+  margin: 24rpx 39rpx 0 24rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  height: 50px;
+}
+
+.bottom {
+  padding-bottom: 40rpx;
+  height: 200px;
+}
+
+.t_box {
+  border-radius: 40rpx 40rpx 0 0;
+  padding: 0 24rpx;
+  background-size: 70% 100%;
+  background-image: radial-gradient(circle at 100% 100%,
+      transparent 0,
+      transparent 11px,
+      #fff 11px),
+    radial-gradient(circle at 0 100%,
+      transparent 0,
+      transparent 11px,
+      #fff 11px);
+  background-repeat: no-repeat;
+  background-position: right bottom, left bottom;
+}
+
+.b_box {
+  border-radius: 0 0 40rpx 40rpx;
+  padding: 64rpx 24rpx 0;
+  background-size: 70% 100%;
+  background-image: radial-gradient(circle at 0 0,
+      transparent 0,
+      transparent 11px,
+      #fff 11px),
+    radial-gradient(circle at 100% 0,
+      transparent 0,
+      transparent 11px,
+      #fff 11px);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}

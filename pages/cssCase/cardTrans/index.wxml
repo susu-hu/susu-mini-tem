@@ -1,0 +1,18 @@
+<!--pages/cssCase/cardTrans/index.wxml-->
+<view class="card">
+  <view class="t_box">
+    <view class="top">
+      <view class="title">
+        <span></span>
+        <text>苏苏</text>
+        <span></span>
+      </view>
+      <view class="tips">
+      </view>
+    </view>
+  </view>
+  <view class="b_box">
+    <view class="bottom">
+    </view>
+  </view>
+</view>

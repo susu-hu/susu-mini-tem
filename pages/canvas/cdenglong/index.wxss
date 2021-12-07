@@ -1,0 +1,4 @@
+/* pages/canvas/cdenglong/index.wxss */
+page{
+  background-color: #222;
+}

@@ -103,7 +103,8 @@
         "lineHalf/index",
         "inputPass/index",
         "bgImg/index",
-        "loadText/index"
+        "loadText/index",
+        "cardTrans/index"
       ]
     },
     {
@@ -168,13 +169,17 @@
         "addNew/index",
         "scList/index",
         "plusAredu/index",
-        "papers/index"
+        "papers/index",
+        "multiTime/index",
+        "multiTime/index2",
+        "multiTime/index3"
       ]
     },
     {
       "root": "pages/canvas/",
       "pages": [
-        "denglong/index"
+        "denglong/index",
+        "cdenglong/index"
       ]
     }
   ],

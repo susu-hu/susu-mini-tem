@@ -1,0 +1,4 @@
+<!--pages/jsCase/multiTime/index2.wxml-->
+<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+  <input value='{{time}}' disabled="" placeholder='选择时间' />
+</picker>
