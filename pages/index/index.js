@@ -382,7 +382,7 @@ Page({
         },
         {
           name: '多列选择器，时间+日期',
-          url: '/pages/jsCase/multiTime/index'
+          url: '/pages/jsCase/multiTime/index4'
         },
         ]
       },

@@ -1,0 +1,45 @@
+/* pages/jsCase/multiTime/index4.wxss */
+.act_item {
+  width: 702rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  margin-bottom: 24rpx;
+  box-sizing: border-box;
+  padding: 24rpx;
+  position: relative;
+  font-size: 28rpx;
+  color: #4D4D4D;
+  font-weight: 500;
+}
+
+.require {
+  color: #E9543E;
+}
+
+.nowp {
+  white-space: nowrap;
+  margin-right: 15rpx;
+}
+
+.act_right {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.act_item picker {
+  flex: 1;
+  margin-left: 40rpx;
+}
+
+.act_box {
+  margin: 24rpx auto;
+  width: 710rpx;
+}
+
+.sel_text {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #4D4D4D;
+}

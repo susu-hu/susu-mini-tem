@@ -1,0 +1,25 @@
+<!--pages/jsCase/multiTime/index4.wxml-->
+<view class="act_box">
+  <view class="act_item flex j_b">
+    <view class="nowp"><text class="require">*</text>
+      开始时间：
+    </view>
+    <picker mode="multiSelector" value="{{start_time}}" data-type="start_time" data-param='start_time_p' bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+      <view class="flex-row act_right">
+        <text wx:if="{{!start_time_p}}">请选择</text>
+        <text wx:else class="sel_text">{{start_time_p}}</text>
+      </view>
+    </picker>
+  </view>
+  <view class="act_item flex j_b">
+    <view class="nowp"><text class="require">*</text>
+      结束时间：
+    </view>
+    <picker mode="multiSelector" value="{{end_time}}" data-type="end_time" data-param='end_time_p' bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+      <view class="flex-row act_right">
+        <text wx:if="{{!end_time_p}}">请选择</text>
+        <text wx:else class="sel_text">{{end_time_p}}</text>
+      </view>
+    </picker>
+  </view>
+</view>

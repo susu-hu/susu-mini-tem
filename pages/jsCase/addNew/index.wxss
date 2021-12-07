@@ -1,9 +1,8 @@
 /* pages/jsCase/addNew/index.wxss */
-/* pages/actCreate/index.wxss */
 page {
   background: #F8F8F8;
   padding-bottom: calc(env(safe-area-inset-bottom) + 180rpx);
-  padding-bottom: calc(constant(safe-area-inset-bottom)+ 180rpx);
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 180rpx);
 }
 
 .container {
