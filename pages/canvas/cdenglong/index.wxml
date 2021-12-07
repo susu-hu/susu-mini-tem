@@ -1,2 +1,32 @@
 <!--pages/canvas/cdenglong/index.wxml-->
-<text>pages/canvas/cdenglong/index.wxml</text>
+<!-- 灯笼1 -->
+<view class="deng-box">
+  <view class="deng">
+    <view class="xian"></view>
+    <view class="deng-a">
+      <view class="deng-b">
+        <view class="deng-t">节</view>
+      </view>
+    </view>
+    <view class="shui shui-a">
+      <view class="shui-c"></view>
+      <view class="shui-b"></view>
+    </view>
+  </view>
+</view>
+
+<!-- 灯笼2 -->
+<view class="deng-box1">
+  <view class="deng">
+    <view class="xian"></view>
+    <view class="deng-a">
+      <view class="deng-b">
+        <view class="deng-t">春</view>
+      </view>
+    </view>
+    <view class="shui shui-a">
+      <view class="shui-c"></view>
+      <view class="shui-b"></view>
+    </view>
+  </view>
+</view>

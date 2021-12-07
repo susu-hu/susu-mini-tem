@@ -65,6 +65,12 @@
           "pathName": "pages/jsCase/multiTime/index3",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/canvas/cdenglong/index",
+          "pathName": "pages/canvas/cdenglong/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
