@@ -13,6 +13,7 @@ page {
   box-shadow: 20rpx 20rpx 60rpx #bebebe,
     -20rpx -20rpx 60rpx #ffffff;
 }
+
 .wrapper1 {
   margin: 50rpx auto;
   width: 600rpx;
@@ -22,6 +23,7 @@ page {
   box-shadow: 20rpx 20rpx 60rpx #bebebe,
     -20rpx -20rpx 60rpx #ffffff;
 }
+
 .text {
   font-size: 28rpx;
   overflow: hidden;
@@ -64,14 +66,16 @@ page {
 .btn::after {
   content: '展开'
 }
-.ative{
+
+.ative {
   max-height: none;
 }
-.ative_label::after{
+
+.ative_label::after {
   content: '收起'
 }
 
-.ative_label::before{
+.ative_label::before {
   /*在展开状态下隐藏省略号*/
   visibility: hidden;
 }
@@ -92,13 +96,16 @@ page {
   text-overflow: ellipsis;
   text-align: justify;
   position: relative;
-  max-height: 60rpx;
-  line-height: 30rpx;
+  /* max-height: 60rpx;
+  line-height: 30rpx; */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .aa::before {
   content: '';
-  height: calc(100% - 32rpx);
+  height: calc(100% - 28rpx);
   float: right;
 }
 
@@ -112,4 +119,43 @@ page {
   float: right;
   clear: both;
   margin-left: 10rpx;
+}
+
+.bb {
+  width: 440rpx;
+  font-size: 20rpx;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.bb::before {
+  content: '';
+  float: right;
+}
+
+.cc {
+  width: 440rpx;
+  font-size: 20rpx;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  position: relative;
+  line-height: 30rpx; 
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.cc::before {
+  content: '';
+  float: right;
+  height:100%;
+  margin-bottom: -28rpx;
 }
