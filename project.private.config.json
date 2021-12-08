@@ -67,8 +67,20 @@
           "scene": null
         },
         {
-          "name": "pages/canvas/cdenglong/index",
-          "pathName": "pages/canvas/cdenglong/index",
+          "name": "pages/effects/cdenglong/index",
+          "pathName": "pages/effects/cdenglong/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/effects/3dClound/index",
+          "pathName": "pages/effects/3dClound/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/effects/labelColor/index",
+          "pathName": "pages/effects/labelColor/index",
           "query": "",
           "scene": null
         }

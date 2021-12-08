@@ -1,0 +1,6 @@
+<!--pages/effects/labelColor/index.wxml-->
+<view class='content'>
+  <block wx:for="{{labArr}}" wx:key="key" wx:for-index="key" wx:for-item="v">
+    <view class='lab' data-key="{{key}}" style="background-color:{{randomColorArr[key]}}">{{v}}</view>
+  </block>
+</view>

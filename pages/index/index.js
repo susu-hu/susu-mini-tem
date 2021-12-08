@@ -388,15 +388,15 @@ Page({
       },
       {
         showmore: false,
-        name: '分包canvas',
+        name: '分包effects',
         list: [
           {
             name: '六角灯笼',
-            url: '/pages/canvas/denglong/index'
+            url: '/pages/effects/denglong/index'
           },
           {
             name: '圆角灯笼',
-            url: '/pages/canvas/cdenglong/index'
+            url: '/pages/effects/cdenglong/index'
           }
         ]
       }

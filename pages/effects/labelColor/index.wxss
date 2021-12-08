@@ -1,0 +1,16 @@
+/* pages/effects/labelColor/index.wxss */
+.content {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 50rpx auto;
+}
+
+.lab {
+  padding: 4rpx 10rpx;
+  margin: 20rpx;
+  border-radius: 4rpx;
+  float: left;
+  color: #fff;
+  font-size: 28rpx;
+}

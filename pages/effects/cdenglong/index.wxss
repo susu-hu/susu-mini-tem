@@ -25,7 +25,7 @@ page {
   background: #d8000f;
   background: rgba(216, 0, 15, 0.8);
   border-radius: 50% 50%;
-  transform-origin:50% -100px;
+  transform-origin: 50% -100px;
   -webkit-transform-origin: 50% -100px;
   animation: swing 5s infinite ease-in-out;
   -webkit-animation: swing 5s infinite ease-in-out;

@@ -177,10 +177,12 @@
       ]
     },
     {
-      "root": "pages/canvas/",
+      "root": "pages/effects/",
       "pages": [
         "denglong/index",
-        "cdenglong/index"
+        "cdenglong/index",
+        "3dClound/index",
+        "labelColor/index"
       ]
     }
   ],

@@ -39,11 +39,11 @@ Page({
     });
   },
   changeDateTimeColumn(e) {
-    var arr = this.data.start_time,
-      dateArr = this.data.dateTimeArray,
+    var dateArr = this.data.dateTimeArray,
       {
         type
-      } = e.currentTarget.dataset;
+      } = e.currentTarget.dataset,
+      arr = this.data[type];
     arr[e.detail.column] = e.detail.value;
     dateArr[2] = dateTimePicker.getMonthDay(dateArr[0][arr[0]], dateArr[1][arr[1]]);
     this.setData({

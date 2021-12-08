@@ -1,0 +1,6 @@
+<!--pages/effects/3dClound/index.wxml-->
+<view class="tagBall">
+  <view class="tag" wx:for="{{tagEle}}" wx:key="index" style="opacity:{{item.o}};z-index:{{item.z}};left: {{item.x}}rpx;top: {{item.y}}rpx;transform: scale({{item.s}})">
+    {{item.title}}
+  </view>
+</view>
