@@ -1,0 +1,39 @@
+/* pages/wxCase/exFont/index.wxss */
+.text {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #147ABE;
+}
+
+.a1 {
+  font-family: PingFang SC;
+}
+
+.SimSun {
+  font-family: SimSun;
+}
+
+.SimHei {
+  font-family: SimHei;
+}
+
+.wr {
+  font-family: Microsoft YaHei;
+}
+
+.wr1 {
+  font-family: Microsoft JhengHei;
+}
+
+.NSimSun {
+  font-family: NSimSun;
+}
+
+rich-text {
+  width: 700rpx;
+  border: 1px solid;
+}
+
+.s2 {
+  width:auto!important;
+}

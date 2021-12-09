@@ -1,0 +1,9 @@
+<!--pages/wxCase/exFont/index.wxml-->
+<view class="text">君乐宝优萃6送1活动</view>
+<view class="text a1">君乐宝优萃6送1活动</view>
+<view class="text SimSun">君乐宝优萃6送1活动</view>
+<view class="text wr">君乐宝优萃6送1活动</view>
+<view class="text wr1">君乐宝优萃6送1活动</view>
+<view class="text NSimSun">君乐宝优萃6送1活动</view>
+<rich-text nodes="{{a}}"></rich-text>
+<!-- <div style='overflow:inherit;text-overflow:ellipsis;word-break:break-word;'> -->

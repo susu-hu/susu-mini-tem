@@ -142,7 +142,8 @@
         "rects/index",
         "newsSwiper/index",
         "text/index",
-        "showAction/index"
+        "showAction/index",
+        "exFont/index"
       ]
     },
     {

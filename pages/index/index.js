@@ -299,6 +299,10 @@ Page({
           name: '操作按钮的显示与隐藏',
           url: '/pages/wxCase/showAction/index'
         },
+        {
+          name: '引入外部字体',
+          url: '/pages/wxCase/exFont/index'
+        },
         ]
       },
       {
