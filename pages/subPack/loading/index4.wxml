@@ -1,0 +1,137 @@
+<!--pages/subPack/loading/index4.wxml-->
+<view class="tips">tips:些许案例是学习而来~</view>
+<view class="box">
+  <view class="charge">
+    <view class="wave"></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loading1"></view>
+</view>
+<view class="box">
+  <view class="loading2"></view>
+</view>
+<view class="box">
+  <view class="loading3"></view>
+</view>
+<view class="box">
+  <view class="loading4"></view>
+</view>
+<view class="box">
+  <view class="loading5"></view>
+</view>
+<view class="box">
+  <view class="loading6"></view>
+</view>
+<view class="box">
+  <view class="loading7"></view>
+</view>
+<view class="box">
+  <view class="loading8"></view>
+</view>
+<view class="box">
+  <view class="loading9"></view>
+</view>
+<view class="box">
+  <view class="loading10"></view>
+</view>
+<view class="box">
+  <view class="loading11"></view>
+</view>
+<view class="box">
+  <view class="loading12">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loading13">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loading14">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loading15">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loading16">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loading17">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box">
+  <view class="loading18">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+
+<view class="box">
+  <view class="loading19">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+
+<view class="box">
+  <view class="loading20">
+    <view></view>
+    <view></view>
+  </view>
+</view>

@@ -89,6 +89,12 @@
           "pathName": "pages/wxCase/exFont/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/subPack/loading/index4",
+          "pathName": "pages/subPack/loading/index4",
+          "query": "",
+          "scene": null
         }
       ]
     }
