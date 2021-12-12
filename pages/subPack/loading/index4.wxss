@@ -6,7 +6,7 @@ page {
 
 .tips {
   font-size: 26rpx;
-  color: #c6d6b4;
+  color: #fff;
   padding: 10rpx 40rpx;
 }
 
