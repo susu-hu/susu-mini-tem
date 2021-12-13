@@ -1,7 +1,8 @@
-page{
+page {
   background: #fff;
 }
-.head_top{
+
+.head_top {
   width: 100%;
   height: 300rpx;
   position: relative;
@@ -9,8 +10,9 @@ page{
   overflow: hidden;
   /* border: 1rpx  solid #333; */
 }
-.head_top::after{
-  content: '';  
+
+.head_top::after {
+  content: '';
   width: 140%;
   height: 300rpx;
   position: absolute;
@@ -21,56 +23,63 @@ page{
   background: #e0bbc3;
 }
 
-  
-/* con */
-.con{
-  margin: 0 20rpx;
- }
- .title{
-   padding-left: 31rpx;
-   font-size: 28rpx;
-   font-weight: bold;
-   color: #333333;
- }
 
- .img_list{
-   flex-wrap: wrap;
-   margin-top: 24rpx;
- }
- .item_img{
+/* con */
+.con {
+  margin: 0 20rpx;
+}
+
+.title {
+  padding-left: 31rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.img_list {
+  flex-wrap: wrap;
+  margin-top: 24rpx;
+}
+
+.item_img {
   width: 220rpx;
   height: 220rpx;
   margin-right: 23rpx;
   margin-bottom: 23rpx;
   position: relative;
   /* border: 1px solid #ccc; */
- }
- .img_item{
-   width: 220rpx;
-   height: 220rpx;
- }
- .item_img:nth-child(3n){
-    margin-right: 0;
- }
- .item_img1{
+}
+
+.img_item {
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.item_img:nth-child(3n) {
+  margin-right: 0;
+}
+
+.item_img1 {
   width: 220rpx;
   height: 220rpx;
   margin-bottom: 23rpx;
   border: 1px solid #ccc;
   justify-content: center;
- }
- .item_img1 text{
+}
+
+.item_img1 text {
   font-size: 26rpx;
   /* font-weight: bold; */
   color: #999999;
- }
-.add_img{
+}
+
+.add_img {
   width: 60rpx;
   height: 60rpx;
   margin-bottom: 30rpx;
 }
 
-.close{
+.close {
   width: 30rpx;
   height: 30rpx;
   position: absolute;

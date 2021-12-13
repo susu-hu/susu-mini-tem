@@ -11,7 +11,6 @@ Page({
     content = content.replace(/<[^>]+>/, '<ol class="s2"')
     // let reg = getRegExp("<[^>]+>", "g");
     // content = content.replace(/<[^>]+>/gi, '< class="s2"')
-
     this.setData({
       a: content
     })

@@ -105,7 +105,8 @@
         "inputPass/index",
         "bgImg/index",
         "loadText/index",
-        "cardTrans/index"
+        "cardTrans/index",
+        "circleHead/index"
       ]
     },
     {
