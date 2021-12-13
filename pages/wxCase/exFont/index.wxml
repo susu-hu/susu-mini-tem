@@ -1,7 +1,12 @@
 <!--pages/wxCase/exFont/index.wxml-->
-<view class="text">君乐宝优萃6送1活动</view>
-<view class="text a1">君乐宝优萃6送1活动</view>
-<view class="text SimSun">君乐宝优萃6送1活动</view>
-<view class="text wr">君乐宝优萃6送1活动</view>
-<view class="text wr1">君乐宝优萃6送1活动</view>
-<view class="text NSimSun">君乐宝优萃6送1活动</view>
+<view class="text mb20">苏苏就是小苏苏</view>
+<view wx:if="{{show}}">
+  <view class="text mb20 text1">苏苏就是小苏苏</view>
+</view>
+
+<view class="text mb20 text1">abcdddsdfhsdfd</view>
+<view class="text mb20 text2">苏苏就是小苏苏</view>
+<view class="text mb20 text2">susu is xiaosusu</view>
+<view class="text mb20 t3">s121231231231</view>
+<view class="text mb20 t4">s121231231231</view>
+<view class="text mb20">s121231231231</view>

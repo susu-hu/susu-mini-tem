@@ -1,4 +1,9 @@
 /* pages/wxCase/exFont/index.wxss */
+page {
+  background-color: #fff;
+  padding: 40rpx;
+}
+
 .text {
   font-size: 30rpx;
   font-weight: bold;
@@ -34,6 +39,40 @@ rich-text {
   border: 1px solid;
 }
 
-.s2 {
-  width:auto!important;
+.mb20 {
+  margin-bottom: 20rpx;
+}
+
+.text1 {
+  font-family: 'wtf';
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'wtf';
+  src: url('https://gitee.com/susuhhhhhh/su-sus-picture/blob/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%AD%97%E5%BF%83%E5%9D%8A%E6%A2%A6%E5%B9%BB%E5%93%A5%E7%89%B9%E4%BD%93(1).ttf');
+}
+.text2 {
+  font-family: Bitstream Vera Serif Bold;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'wtf0';
+  src: url("https://sungd.github.io/Pacifico.ttf");
+}
+
+.t3 {
+  font-family: 'wtf0';
+}
+
+@font-face {
+  font-family: YH;
+  src: url(http://domain/fonts/MSYH.TTF);
+}
+
+.t4 {
+  font-family: 'YH';
 }
