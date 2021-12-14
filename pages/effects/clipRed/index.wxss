@@ -1,0 +1,15 @@
+/* pages/effects/clipRed/index.wxss */
+page{
+  background-color: #fff;
+}
+.red_box {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  color: rgb(235, 205, 153);
+  width: 500rpx;
+  height: 700rpx;
+  background-color: rgb(242, 85, 66);
+  border-radius: 15rpx;
+}

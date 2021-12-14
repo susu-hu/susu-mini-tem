@@ -1,2 +1,5 @@
 <!--pages/cssCase/circleHead/index.wxml-->
-<view class="head"></view>
+<view class="head mb20"></view>
+<view class="circle">
+  <view class="nox"></view>
+</view>

@@ -289,3 +289,29 @@ page{
     top: -9px;
     border-bottom: 9px solid #fff;
 }
+
+
+.center_btn {
+  width: 153rpx;
+  height: 47rpx;
+  background: #FB962C;
+  border-radius: 13rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+  justify-content: center;
+  position: relative;
+}
+
+.center_btn::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 14rpx solid transparent;
+  border-right: 14rpx solid transparent;
+  border-bottom: 14rpx solid #FB962C;
+  top: -10rpx;
+  right: 21rpx;
+}

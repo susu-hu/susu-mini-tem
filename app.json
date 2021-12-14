@@ -145,7 +145,8 @@
         "newsSwiper/index",
         "text/index",
         "showAction/index",
-        "exFont/index"
+        "exFont/index",
+        "popCust/index"
       ]
     },
     {
@@ -185,7 +186,9 @@
         "denglong/index",
         "cdenglong/index",
         "3dClound/index",
-        "labelColor/index"
+        "labelColor/index",
+        "redRain/index",
+        "clipRed/index"
       ]
     }
   ],

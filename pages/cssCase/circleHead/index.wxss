@@ -17,3 +17,27 @@
   border-radius: 0 0 50% 50%;
   background: #FA871E;
 }
+
+.mb20 {
+  margin-bottom: 20rpx;
+}
+
+.circle {
+  border: 1px solid #FA871E;
+  width: 600rpx;
+  overflow: hidden;
+  height: 700rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nox {
+  width: 680rpx;
+  height: 680rpx;
+  background-color: #FA871E;
+  border-radius: 50%;
+  margin-top: -260rpx;
+}

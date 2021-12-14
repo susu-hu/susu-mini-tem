@@ -407,6 +407,14 @@ Page({
           {
             name: '圆角灯笼',
             url: '/pages/effects/cdenglong/index'
+          },
+          {
+            name: '红包雨',
+            url: '/pages/effects/redRain/index'
+          },
+          {
+            name: '仿微信拆红包',
+            url: '/pages/effects/clipRed/index'
           }
         ]
       }

@@ -100,3 +100,6 @@ button::after {
 .j_e{
   justify-content: flex-end;
 }
+.j_a{
+  justify-content: space-around;
+}

@@ -91,14 +91,20 @@
           "scene": null
         },
         {
-          "name": "pages/subPack/loading/index4",
-          "pathName": "pages/subPack/loading/index4",
+          "name": "pages/cssCase/circleHead/index",
+          "pathName": "pages/cssCase/circleHead/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/cssCase/circleHead/index",
-          "pathName": "pages/cssCase/circleHead/index",
+          "name": "pages/effects/clipRed/index",
+          "pathName": "pages/effects/clipRed/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/popCust/index",
+          "pathName": "pages/wxCase/popCust/index",
           "query": "",
           "scene": null
         }

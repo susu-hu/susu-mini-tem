@@ -1,0 +1,146 @@
+/* pages/wxCase/popCust/index.wxss */
+.box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1111;
+}
+
+.g_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20rpx;
+  width: 670rpx;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 7% 42rpx 3%;
+  background: linear-gradient(180deg, #6697C9 0%, #9CBFDE 48%, #83BEE3 100%);
+  overflow: hidden;
+}
+
+.g_tab {
+  width: 100%;
+  margin-bottom: 35rpx;
+}
+
+.tab-item {
+  font-size: 28rpx;
+  font-size: 30rpx;
+  color: #C9DEF4;
+  text-shadow: 0rpx 3rpx 6rpx rgba(0, 0, 0, 0.16);
+}
+
+.on {
+  position: relative;
+  font-size: 34rpx;
+  color: #FFFFFF;
+  text-shadow: 0rpx 3rpx 6rpx rgba(0, 0, 0, 0.16);
+}
+
+.on::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -13rpx;
+  margin-left: -45rpx;
+  background: #FFFFFF;
+  border-radius: 90rpx;
+  width: 100rpx;
+  height: 4rpx;
+}
+
+.c_box {
+  width: 586rpx;
+  height: 85%;
+  border: 8rpx solid #FFFFFF;
+  border-radius: 44rpx;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 1%;
+}
+
+.c_box_border {
+  width: 572rpx;
+  height: 100%;
+  border: 4rpx solid #6685A5;
+  box-sizing: border-box;
+  border-radius: 37rpx;
+  padding: 77rpx 0 33rpx;
+}
+
+.con_title_bg {
+  width: 615rpx;
+  height: 83rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -308rpx;
+  top: -16rpx;
+}
+
+.c_title {
+  font-size: 30rpx;
+  color: #FFFFFF;
+  text-shadow: 0rpx 3rpx 3rpx #468DCE;
+  padding-bottom: 21rpx;
+}
+
+.con_scroll {
+  height: 95%;
+  box-sizing: border-box;
+  padding: 14rpx 0;
+}
+
+.c_item {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 0rpx 3rpx 3rpx #5295D0;
+  margin-bottom: 14rpx;
+}
+
+.now_text {
+  width: 186rpx;
+  height: 47rpx;
+  margin-right: 8rpx;
+}
+
+.font_text {
+  font-weight: 500;
+  font-size: 44rpx;
+  color: #FFFFFF;
+  text-shadow: 0rpx 3rpx 3rpx #5295D0;
+}
+
+.name {
+  font-size: 30rpx;
+  color: #FFFFFF;
+  text-align: center;
+  width: 40%;
+}
+
+.km {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  width: 40%;
+}
+
+.much {
+  font-size: 44rpx;
+  color: #FFFFFF;
+  text-align: center;
+  width: 20%;
+}
+
+.close_icon {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 21rpx;
+  right: 20rpx;
+}
