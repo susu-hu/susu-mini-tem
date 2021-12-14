@@ -107,6 +107,12 @@
           "pathName": "pages/wxCase/popCust/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/pageMeta/index",
+          "pathName": "pages/wxCase/pageMeta/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

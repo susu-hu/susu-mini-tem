@@ -15,10 +15,10 @@
   transform: translate(-50%, -50%);
   border-radius: 20rpx;
   width: 670rpx;
-  height: 80%;
+  height: 78%;
   box-sizing: border-box;
   padding: 7% 42rpx 3%;
-  background: linear-gradient(180deg, #6697C9 0%, #9CBFDE 48%, #83BEE3 100%);
+  background: linear-gradient(180deg, #e7bdd7 0%, #9CBFDE 48%, #e2a4bc 100%);
   overflow: hidden;
 }
 
@@ -122,7 +122,7 @@
   width: 40%;
 }
 
-.km {
+.chose {
   font-size: 30rpx;
   font-weight: bold;
   color: #FFFFFF;
@@ -130,7 +130,7 @@
   width: 40%;
 }
 
-.much {
+.c_index {
   font-size: 44rpx;
   color: #FFFFFF;
   text-align: center;
@@ -143,4 +143,14 @@
   position: absolute;
   top: 21rpx;
   right: 20rpx;
+}
+
+.w2 {
+  width: 20%;
+  text-align: center;
+}
+
+.w4 {
+  width: 40%;
+  text-align: center;
 }

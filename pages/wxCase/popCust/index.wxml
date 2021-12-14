@@ -1,38 +1,38 @@
 <!--pages/wxCase/popCust/index.wxml-->
-<view class="mask"></view>
-<view class="box">
+<view class="mask" catchtouchmove="true"></view>
+<view class="box" catchtouchmove="true">
   <view class="g_box flex-column">
     <view class="g_tab flex j_a">
-      <view class="tab-item {{currentTab == 0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全省排名TOP10</view>
-      <view class="tab-item {{currentTab == 1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">全国排名TOP100</view>
+      <view class="tab-item {{currentTab == 0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">选项一</view>
+      <view class="tab-item {{currentTab == 1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">选项二</view>
     </view>
     <view class="c_box flex-row">
       <image src="../img/1.png" class="con_title_bg" />
       <view class="c_box_border">
         <block wx:if="{{hasData}}">
           <view class=" c_title flex-row j_a">
-            <view>排名</view>
-            <view>会员名</view>
-            <view>最高分(km)</view>
+            <view class="w2">排名</view>
+            <view class="w4">昵称</view>
+            <view class="w4">得分</view>
           </view>
           <scroll-view scroll-y="true" class="con_scroll">
             <block wx:for="{{15}}" wx:key="list">
               <view class="c_item flex j_a">
-                <view class="much text_ellipsis">{{index+1}}</view>
+                <view class="c_index text_ellipsis">{{index+1}}</view>
                 <view class="name text_ellipsis">如***风</view>
-                <view class="km text_ellipsis">87389</view>
+                <view class="chose text_ellipsis">87389</view>
               </view>
             </block>
           </scroll-view>
         </block>
         <block wx:else>
-        
+
         </block>
       </view>
     </view>
     <view class="flex-row">
       <image src="../img/now_text.png" class="now_text" />
-      <text class="font_text">9111</text>
+      <text class="font_text">---</text>
     </view>
     <!-- 关闭按钮 -->
     <image src="../img/close11.png" class="close_icon"></image>
