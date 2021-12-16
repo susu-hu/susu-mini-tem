@@ -64,6 +64,7 @@ page {
 
 .flex {
   display: flex;
+  align-items: flex-start;
 }
 
 /*  去掉button的默认样式*/

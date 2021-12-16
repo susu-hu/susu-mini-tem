@@ -1,6 +1,6 @@
 <!--pages/wxCase/popCust/index.wxml-->
-<view class="mask" catchtouchmove="true"></view>
-<view class="box" catchtouchmove="true">
+<view class="mask" catchtouchmove="catmove"></view>
+<view class="box" catchtouchmove="catmove">
   <view class="g_box flex-column">
     <view class="g_tab flex j_a">
       <view class="tab-item {{currentTab == 0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">选项一</view>
@@ -16,7 +16,7 @@
             <view class="w4">得分</view>
           </view>
           <scroll-view scroll-y="true" class="con_scroll">
-            <block wx:for="{{15}}" wx:key="list">
+            <block wx:for="{{17}}" wx:key="list">
               <view class="c_item flex j_a">
                 <view class="c_index text_ellipsis">{{index+1}}</view>
                 <view class="name text_ellipsis">如***风</view>

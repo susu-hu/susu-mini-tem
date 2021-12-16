@@ -205,6 +205,10 @@ Page({
             name: '半圆弧头部背景',
             url: '/pages/cssCase/circleHead/index'
           },
+          {
+            name: '步骤条不定长度',
+            url: '/pages/cssCase/stepsAnt/index'
+          },
         ]
       },
       {
@@ -309,6 +313,10 @@ Page({
           {
             name: '引入外部字体',
             url: '/pages/wxCase/exFont/index'
+          },
+          {
+            name: '80%高度的弹框',
+            url: '/pages/wxCase/popCust/index'
           },
         ]
       },

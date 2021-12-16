@@ -13,6 +13,9 @@ Page({
   onLoad: function (options) {
 
   },
+  catmove(){
+    return false;
+  },
 
   swichNav: function (e) {
     var that = this;

@@ -1,0 +1,16 @@
+<!--pages/cssCase/stepsAnt/index.wxml-->
+<view class="con">
+  <block wx:for="{{list}}" wx:key="list">
+    <view class="flex">
+      <view class="left">
+        <view>{{item.date}}</view>
+        <view class="time">{{item.time}}</view>
+      </view>
+      <view class="right">
+        <!-- 小圆点 -->
+        <view class="circle"></view>
+        <view class="r_box">{{item.content}}</view>
+      </view>
+    </view>
+  </block>
+</view>

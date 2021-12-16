@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/jsCase/papers/index",
-          "pathName": "pages/jsCase/papers/index",
+          "name": "pages/cssCase/stepsAnt/index",
+          "pathName": "pages/cssCase/stepsAnt/index",
           "query": "",
           "scene": null
         },
