@@ -1,0 +1,320 @@
+/* pages/cssCase/meteor/index.wxss */
+page {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(45deg);
+}
+
+.rain {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px #699bff);
+  animation: tail 3s ease-in-out infinite, start 3s ease-in-out infinite;
+}
+
+.rain::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 3s ease-in-out infinite;
+}
+
+.rain::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 3s ease-in-out infinite;
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.rain:nth-child(1) {
+  top: calc(50% - 81px);
+  left: calc(50% - 37px);
+  animation-delay: 1023ms;
+}
+
+.rain:nth-child(1)::before,
+.rain:nth-child(1)::after {
+  animation-delay: 1023ms;
+}
+
+.rain:nth-child(2) {
+  top: calc(50% - 22px);
+  left: calc(50% - 154px);
+  animation-delay: 4673ms;
+}
+
+.rain:nth-child(2)::before,
+.rain:nth-child(2)::after {
+  animation-delay: 4673ms;
+}
+
+.rain:nth-child(3) {
+  top: calc(50% - 128px);
+  left: calc(50% - 1px);
+  animation-delay: 5495ms;
+}
+
+.rain:nth-child(3)::before,
+.rain:nth-child(3)::after {
+  animation-delay: 5495ms;
+}
+
+.rain:nth-child(4) {
+  top: calc(50% - 86px);
+  left: calc(50% - 147px);
+  animation-delay: 1132ms;
+}
+
+.rain:nth-child(4)::before,
+.rain:nth-child(4)::after {
+  animation-delay: 1132ms;
+}
+
+.rain:nth-child(5) {
+  top: calc(50% - -1px);
+  left: calc(50% - 52px);
+  animation-delay: 1517ms;
+}
+
+.rain:nth-child(5)::before,
+.rain:nth-child(5)::after {
+  animation-delay: 1517ms;
+}
+
+.rain:nth-child(6) {
+  top: calc(50% - 55px);
+  left: calc(50% - 209px);
+  animation-delay: 9108ms;
+}
+
+.rain:nth-child(6)::before,
+.rain:nth-child(6)::after {
+  animation-delay: 9108ms;
+}
+
+.rain:nth-child(7) {
+  top: calc(50% - 47px);
+  left: calc(50% - 154px);
+  animation-delay: 2702ms;
+}
+
+.rain:nth-child(7)::before,
+.rain:nth-child(7)::after {
+  animation-delay: 2702ms;
+}
+
+.rain:nth-child(8) {
+  top: calc(50% - 186px);
+  left: calc(50% - 273px);
+  animation-delay: 8824ms;
+}
+
+.rain:nth-child(8)::before,
+.rain:nth-child(8)::after {
+  animation-delay: 8824ms;
+}
+
+.rain:nth-child(9) {
+  top: calc(50% - 53px);
+  left: calc(50% - 245px);
+  animation-delay: 9125ms;
+}
+
+.rain:nth-child(9)::before,
+.rain:nth-child(9)::after {
+  animation-delay: 9125ms;
+}
+
+.rain:nth-child(10) {
+  top: calc(50% - 57px);
+  left: calc(50% - 283px);
+  animation-delay: 2233ms;
+}
+
+.rain:nth-child(10)::before,
+.rain:nth-child(10)::after {
+  animation-delay: 2233ms;
+}
+
+.rain:nth-child(11) {
+  top: calc(50% - -126px);
+  left: calc(50% - 144px);
+  animation-delay: 6880ms;
+}
+
+.rain:nth-child(11)::before,
+.rain:nth-child(11)::after {
+  animation-delay: 6880ms;
+}
+
+.rain:nth-child(12) {
+  top: calc(50% - -197px);
+  left: calc(50% - 131px);
+  animation-delay: 8614ms;
+}
+
+.rain:nth-child(12)::before,
+.rain:nth-child(12)::after {
+  animation-delay: 8614ms;
+}
+
+.rain:nth-child(13) {
+  top: calc(50% - -57px);
+  left: calc(50% - 146px);
+  animation-delay: 8211ms;
+}
+
+.rain:nth-child(13)::before,
+.rain:nth-child(13)::after {
+  animation-delay: 8211ms;
+}
+
+.rain:nth-child(14) {
+  top: calc(50% - 191px);
+  left: calc(50% - 80px);
+  animation-delay: 1686ms;
+}
+
+.rain:nth-child(14)::before,
+.rain:nth-child(14)::after {
+  animation-delay: 1686ms;
+}
+
+.rain:nth-child(15) {
+  top: calc(50% - -143px);
+  left: calc(50% - 279px);
+  animation-delay: 6485ms;
+}
+
+.rain:nth-child(15)::before,
+.rain:nth-child(15)::after {
+  animation-delay: 6485ms;
+}
+
+.rain:nth-child(16) {
+  top: calc(50% - 97px);
+  left: calc(50% - 11px);
+  animation-delay: 260ms;
+}
+
+.rain:nth-child(16)::before,
+.rain:nth-child(16)::after {
+  animation-delay: 260ms;
+}
+
+.rain:nth-child(17) {
+  top: calc(50% - -145px);
+  left: calc(50% - 43px);
+  animation-delay: 9745ms;
+}
+
+.rain:nth-child(17)::before,
+.rain:nth-child(17)::after {
+  animation-delay: 9745ms;
+}
+
+.rain:nth-child(18) {
+  top: calc(50% - 105px);
+  left: calc(50% - 79px);
+  animation-delay: 4761ms;
+}
+
+.rain:nth-child(18)::before,
+.rain:nth-child(18)::after {
+  animation-delay: 4761ms;
+}
+
+.rain:nth-child(19) {
+  top: calc(50% - -71px);
+  left: calc(50% - 48px);
+  animation-delay: 5821ms;
+}
+
+.rain:nth-child(19)::before,
+.rain:nth-child(19)::after {
+  animation-delay: 5821ms;
+}
+
+.rain:nth-child(20) {
+  top: calc(50% - -149px);
+  left: calc(50% - 39px);
+  animation-delay: 1116ms;
+}
+
+.rain:nth-child(20)::before,
+.rain:nth-child(20)::after {
+  animation-delay: 1116ms;
+}
+
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+
+  30% {
+    width: 100px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 30px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes start {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(300px);
+  }
+}
+
+@keyframes sky {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(405deg);
+  }
+}

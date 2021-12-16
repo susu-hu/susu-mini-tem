@@ -1,7 +1,8 @@
 /* pages/cssCase/stepsAnt/index.wxss */
-page{
+page {
   padding-bottom: 40rpx;
 }
+
 .con {
   width: 702rpx;
   background: #FFFFFF;
