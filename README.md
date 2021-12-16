@@ -100,6 +100,7 @@ step5：构建npm）
 81. 新增n个loading动画
 82. 弹框高度不定长，一屏长度的80%
 83. 实现圆弧的两种方式
+84. 步骤条不定长高度+气泡框
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -190,6 +191,7 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/loading.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/pop.png)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9C%86%E5%BC%A7.png)
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/steps.png)
 #### 参与贡献
 
 1.  Fork 本仓库
