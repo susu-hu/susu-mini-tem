@@ -109,8 +109,8 @@
           "scene": null
         },
         {
-          "name": "pages/wxCase/pageMeta/index",
-          "pathName": "pages/wxCase/pageMeta/index",
+          "name": "pages/cssCase/bottomText/index",
+          "pathName": "pages/cssCase/bottomText/index",
           "query": "",
           "scene": null
         }

@@ -108,7 +108,8 @@
         "cardTrans/index",
         "circleHead/index",
         "stepsAnt/index",
-        "meteor/index"
+        "meteor/index",
+        "bottomText/index"
       ]
     },
     {

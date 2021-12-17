@@ -213,6 +213,10 @@ Page({
             name: '流星雨来啦',
             url: '/pages/cssCase/meteor/index'
           },
+          {
+            name: '位于底部的提示文字',
+            url: '/pages/cssCase/bottomText/index'
+          },
         ]
       },
       {

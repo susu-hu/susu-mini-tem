@@ -1,0 +1,30 @@
+/* pages/cssCase/bottomText/index.wxss */
+.last_tip {
+  text-align: center;
+  color: #333;
+  font-size: 25rpx;
+  margin-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+
+.tabList {
+  width: 702rpx;
+  height: 244rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  margin: 40rpx auto;
+  position: relative;
+  z-index: 1000;
+  font-size: 28rpx;
+  color: #333333;
+  align-items: center;
+}
+
+.tabList image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+  flex-shrink: 0;
+}

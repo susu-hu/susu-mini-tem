@@ -1,0 +1,12 @@
+<!--pages/cssCase/bottomText/index.wxml-->
+<view class="flex-column j_b" style="min-height: 100vh;">
+  <view class="tabList flex j_a">
+    <block wx:for="{{tabList}}" wx:key="tabList">
+      <view class="flex-column">
+        <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="work3_img"></image>
+        <view>{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="last_tip">小程序案例,创作不易，喜欢的点个关注吧</view>
+</view>
