@@ -1,0 +1,12 @@
+<!--pages/cssCase/cubeRun/index.wxml-->
+<view class="base">
+  <view class="cube"></view>
+  <view class="cube"></view>
+  <view class="cube"></view>
+  <view class="cube"></view>
+  <view class="cube"></view>
+  <view class="cube"></view>
+  <view class="cube"></view>
+  <view class="cube"></view>
+  <view class="cube"></view>
+</view>

@@ -217,6 +217,10 @@ Page({
             name: '位于底部的提示文字',
             url: '/pages/cssCase/bottomText/index'
           },
+          {
+            name: '跳动的方块',
+            url: '/pages/cssCase/cubeRun/index'
+          },
         ]
       },
       {

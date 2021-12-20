@@ -109,8 +109,14 @@
           "scene": null
         },
         {
-          "name": "pages/cssCase/bottomText/index",
-          "pathName": "pages/cssCase/bottomText/index",
+          "name": "pages/cssCase/cubeRun/index",
+          "pathName": "pages/cssCase/cubeRun/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/draw/index",
+          "pathName": "pages/jsCase/draw/index",
           "query": "",
           "scene": null
         }

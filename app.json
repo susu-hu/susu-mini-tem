@@ -109,7 +109,8 @@
         "circleHead/index",
         "stepsAnt/index",
         "meteor/index",
-        "bottomText/index"
+        "bottomText/index",
+        "cubeRun/index"
       ]
     },
     {

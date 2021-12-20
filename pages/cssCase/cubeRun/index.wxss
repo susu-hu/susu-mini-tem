@@ -1,0 +1,94 @@
+/* pages/cssCase/cubeRun/index.wxss */
+page {
+  background-color: #222;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* em相对父元素 */
+.base {
+  font-size: 25rpx;
+  height: 9em;
+  padding: 3em;
+  width: 9em;
+  transform: rotateX(45deg) rotateZ(45deg);
+  transform-style: preserve-3d;
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+
+.cube,
+.cube:after,
+.cube:before {
+  content: '';
+  float: left;
+  height: 3em;
+  position: absolute;
+  width: 3em;
+}
+
+.cube {
+  background-color: #8971aa;
+  position: relative;
+  transform: translateZ(3em);
+  transform-style: preserve-3d;
+  transition: .25s;
+  box-shadow: 10em 10em 1.5em rgba(0, 0, 0, 0.1);
+  animation: anim 1s infinite;
+}
+
+.cube:after {
+  background-color: #72697f;
+  transform: rotateX(-90deg) translateY(3em);
+  transform-origin: 100% 100%;
+}
+
+.cube:before {
+  background-color: #a79bbc;
+  transform: rotateY(90deg) translateX(3em);
+  transform-origin: 100% 0;
+}
+
+.cube:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.cube:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.cube:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.cube:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+.cube:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+.cube:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+.cube:nth-child(7) {
+  animation-delay: 0.35s;
+}
+
+.cube:nth-child(8) {
+  animation-delay: 0.4s;
+}
+
+.cube:nth-child(9) {
+  animation-delay: 0.45s;
+}
+
+@keyframes anim {
+  50% {
+    transform: translateZ(0.5em);
+  }
+}
