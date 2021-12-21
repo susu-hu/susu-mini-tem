@@ -150,7 +150,8 @@
         "text/index",
         "showAction/index",
         "exFont/index",
-        "popCust/index"
+        "popCust/index",
+        "statusList/index"
       ]
     },
     {

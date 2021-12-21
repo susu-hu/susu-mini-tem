@@ -40,7 +40,7 @@ Page({
         ]
       },
       {
-        showmore: false,
+        showmore: true,
         name: '分包another',
         list: [{
             name: 'scroll-view左右滚动导航条',
@@ -65,7 +65,7 @@ Page({
         ]
       },
       {
-        showmore: false,
+        showmore: true,
         name: '分包subPack',
         list: [{
             name: 'loading加载动画17个（1）',
@@ -123,7 +123,7 @@ Page({
         ]
       },
       {
-        showmore: false,
+        showmore: true,
         name: '分包cssCase',
         list: [{
             name: 'css3的圆锥渐变',
@@ -224,7 +224,7 @@ Page({
         ]
       },
       {
-        showmore: false,
+        showmore: true,
         name: '分包wxCase',
         list: [{
             name: '裁剪图片',
@@ -330,10 +330,14 @@ Page({
             name: '80%高度的弹框',
             url: '/pages/wxCase/popCust/index'
           },
+          {
+            name: '不同状态不同颜色',
+            url: '/pages/wxCase/statusList/index'
+          },
         ]
       },
       {
-        showmore: false,
+        showmore: true,
         name: '分包jsCase',
         list: [{
             name: '搜索历史',
@@ -418,7 +422,7 @@ Page({
         ]
       },
       {
-        showmore: false,
+        showmore: true,
         name: '分包effects',
         list: [{
             name: '六角灯笼',
@@ -435,6 +439,10 @@ Page({
           {
             name: '仿微信拆红包',
             url: '/pages/effects/clipRed/index'
+          },
+          {
+            name: '数组标签自定义颜色',
+            url: '/pages/effects/labelColor/index'
           }
         ]
       }
