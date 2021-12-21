@@ -35,11 +35,10 @@ movable-area{
   border-radius: 20rpx;
   line-height:200rpx;
   text-align:center;
-  width: calc(710rpx - 120rpx);
+  width: calc(710rpx - 115rpx);
 
 }
 .movable_delete_btn {
-  justify-content: center;
   width: 115rpx;
   font-size: 24rpx;
   font-weight: 600;

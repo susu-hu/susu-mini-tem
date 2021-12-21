@@ -1,16 +1,26 @@
 /* pages/effects/labelColor/index.wxss */
-.content {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  margin: 50rpx auto;
+page {
+  background-color: #f5f5ff;
 }
 
-.lab {
+.box {
+  width: 710rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 40rpx 20rpx;
+  margin: 20rpx auto;
+  border-radius: 10rpx;
+  flex-wrap: wrap;
+}
+
+
+
+.box_item {
   padding: 4rpx 10rpx;
   margin: 20rpx;
   border-radius: 4rpx;
   float: left;
   color: #fff;
   font-size: 28rpx;
+  flex-shrink: 0;
 }

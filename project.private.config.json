@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/cssCase/stepsAnt/index",
-          "pathName": "pages/cssCase/stepsAnt/index",
+          "name": "pages/effects/labelColor/index",
+          "pathName": "pages/effects/labelColor/index",
           "query": "",
           "scene": null
         },
