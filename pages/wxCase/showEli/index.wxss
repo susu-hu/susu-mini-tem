@@ -147,7 +147,7 @@ page {
   text-overflow: ellipsis;
   text-align: justify;
   position: relative;
-  line-height: 30rpx; 
+  line-height: 30rpx;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -156,6 +156,34 @@ page {
 .cc::before {
   content: '';
   float: right;
-  height:100%;
+  height: 100%;
   margin-bottom: -28rpx;
+}
+
+.btn11 {
+  width: 500rpx;
+  height: 100rpx;
+  border: 1px solid red;
+}
+
+.d_box {
+  width: 440rpx;
+  font-size: 20rpx;
+  color: #fff;
+  position: relative;
+  line-height: 30rpx;
+  height: 60rpx;
+  overflow: hidden;
+  margin: 30rpx auto;
+}
+
+.sdd {
+  font-size: 20rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  color: #147ABE;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

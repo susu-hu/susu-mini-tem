@@ -54,3 +54,8 @@
     至国力日弱。这些年，幸得庞太师之子庞统领兵力抗，辽人才愿意和谈！
   </view>
 </view>
+
+<view class="d_box">
+  <view>{{a}}</view>
+  <view class="sdd">了解详情</view>
+</view>

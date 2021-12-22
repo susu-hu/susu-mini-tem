@@ -119,6 +119,12 @@
           "pathName": "pages/jsCase/draw/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/wxCase/showEli/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -419,6 +419,10 @@ Page({
             name: '多列选择器，时间+日期',
             url: '/pages/jsCase/multiTime/index4'
           },
+          {
+            name: '点击按钮有音频效果',
+            url: '/pages/jsCase/btnAudio/index4'
+          },
         ]
       },
       {
