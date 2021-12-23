@@ -1,2 +1,2 @@
 <!--pages/jsCase/btnAudio/index.wxml-->
-<text>pages/jsCase/btnAudio/index.wxml</text>
+<view class="btn" catchtap="show">点击按钮</view>

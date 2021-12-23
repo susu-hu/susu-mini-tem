@@ -1,7 +1,7 @@
-var Mock = require('../WxMock.js')
+var Mock = require('./wxmock.js')
 //基于ajax请求地址的模拟数据
 //格式： Mock.mock('请求地址',数据模板)
-var users = Mock.mock('https://1608A.com/users', {
+var users = Mock.mock('https://susu/test/dataList', {
   "codeText": "成功返回",
   "code": 200,
   "data|1-20": [

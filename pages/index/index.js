@@ -36,6 +36,22 @@ Page({
           {
             name: 'vant日历多日期选择',
             url: '/pages/vantCalen/index'
+          },
+          {
+            name: '滑动删除',
+            url: '/pages/touchMove2/index'
+          },
+          {
+            name: '滑动删除2',
+            url: '/pages/touchRemove/index'
+          },
+          {
+            name: '自定义指示点',
+            url: '/pages/dots/index'
+          },
+          {
+            name: '自定义指示点2',
+            url: '/pages/dots/index2'
           }
         ]
       },
@@ -421,7 +437,7 @@ Page({
           },
           {
             name: '点击按钮有音频效果',
-            url: '/pages/jsCase/btnAudio/index4'
+            url: '/pages/jsCase/btnAudio/index'
           },
         ]
       },

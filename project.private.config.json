@@ -74,7 +74,7 @@
         },
         {
           "name": "pages/effects/3dClound/index",
-          "pathName": "pages/effects/3dClound/index",
+          "pathName": "pages/dots/index",
           "query": "",
           "scene": null
         },
@@ -92,7 +92,7 @@
         },
         {
           "name": "pages/cssCase/circleHead/index",
-          "pathName": "pages/cssCase/circleHead/index",
+          "pathName": "pages/jsCase/btnAudio/index",
           "query": "",
           "scene": null
         },
@@ -104,13 +104,13 @@
         },
         {
           "name": "pages/wxCase/popCust/index",
-          "pathName": "pages/wxCase/popCust/index",
+          "pathName": "pages/touchRemove/index",
           "query": "",
           "scene": null
         },
         {
           "name": "pages/cssCase/cubeRun/index",
-          "pathName": "pages/cssCase/cubeRun/index",
+          "pathName": "pages/touchMove2/index",
           "query": "",
           "scene": null
         },
@@ -123,6 +123,12 @@
         {
           "name": "",
           "pathName": "pages/wxCase/showEli/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/wxCase/statusList/index",
           "query": "",
           "scene": null
         }

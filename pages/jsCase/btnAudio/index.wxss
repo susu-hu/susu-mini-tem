@@ -1,1 +1,11 @@
 /* pages/jsCase/btnAudio/index.wxss */
+.btn {
+  width: 145rpx;
+  height: 53rpx;
+  line-height: 53rpx;
+  background: linear-gradient(90deg, #6CAAD6 0%, #7EBADB 52%, #56A0D0 100%);
+  border-radius: 27rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #FFFFFF;
+}
