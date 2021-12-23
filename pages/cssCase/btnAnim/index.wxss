@@ -1,0 +1,137 @@
+/* pages/cssCase/btnAnim/index.wxss */
+page {
+  background-color: #fff;
+}
+
+.box {
+  padding-top: 100rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.box .tbox {
+  display: inline-block;
+  width: 200rpx;
+  height: 200rpx;
+  background: #4bb84b34;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  line-height: 200rpx;
+  position: relative;
+}
+
+.ripple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid #dae7dd;
+}
+
+.confirm {
+  margin: 140rpx auto;
+  width: 325rpx;
+  height: 80rpx;
+  background: linear-gradient(90deg, #b3d6b0 0%, #51bd6c 52%, #b1c0ca 100%);
+  border-radius: 6rpx;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 80rpx;
+  text-align: center;
+
+}
+
+.bubble {
+  position: relative;
+  overflow: hidden;
+}
+
+.bubble:after {
+  content: "";
+  background: #999;
+  position: absolute;
+  width: 750rpx;
+  height: 750rpx;
+  left: calc(50% - 375rpx);
+  top: calc(50% - 375rpx);
+  opacity: 0;
+  margin: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.bubble:active:after {
+  transform: scale(0);
+  opacity: 1;
+  transition: 0s;
+}
+
+
+
+
+.box1 {
+  padding-top: 50rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.box1 .tbox1 {
+  display: inline-block;
+  width: 200rpx;
+  height: 200rpx;
+  background: #8fb9ca;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  line-height: 200rpx;
+  position: relative;
+}
+
+.ripple1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid rgb(113, 143, 155, .4);
+}
+
+.rippleAnimation1 {
+  animation: ripple 1s infinite linear;
+}
+
+.rippleAnimation2 {
+  animation: ripple 1s infinite linear;
+  animation-delay: 0.3s;
+}
+
+.rippleAnimation3 {
+  animation: ripple 1s infinite linear;
+  animation-delay: 0.6s;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(1, 1)
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(2, 2)
+  }
+}
+
+.record_icon {
+  width: 60rpx;
+  height: 67rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

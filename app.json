@@ -110,7 +110,8 @@
         "stepsAnt/index",
         "meteor/index",
         "bottomText/index",
-        "cubeRun/index"
+        "cubeRun/index",
+        "btnAnim/index"
       ]
     },
     {

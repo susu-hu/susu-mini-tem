@@ -1,0 +1,22 @@
+<!--pages/cssCase/btnAnim/index.wxml-->
+<view class="box">
+  <view class="tbox" bindtouchstart='recodeClick' bindtouchend='recodeEnd'>
+    <image src="../img/reciord.png" class="record_icon" />
+    <view class="ripple"></view>
+    <view class="ripple" animation="{{animationData1}}"></view>
+    <view class="ripple" animation="{{animationData2}}"></view>
+  </view>
+</view>
+
+<view class="btn confirm bubble" bindtouchstart="audioPlay">点击按钮</view>
+
+
+<view class="box1">
+  <view class="tbox1" bindtouchstart='recodeClick1' bindtouchend='recodeEnd1'>
+    <image src="../img/reciord.png" class="record_icon" />
+    <view class="ripple1"></view>
+    <view class="ripple1 {{animationStatus1?'rippleAnimation1':''}}"></view>
+    <view class="ripple1 {{animationStatus1?'rippleAnimation2':''}}"></view>
+    <view class="ripple1 {{animationStatus1?'rippleAnimation3':''}}"></view>
+  </view>
+</view>

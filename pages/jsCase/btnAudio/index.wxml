@@ -1,3 +1,3 @@
 <!--pages/jsCase/btnAudio/index.wxml-->
-<view class="btn confirm bubble" bindtouchstart="audioPlay">点击按钮</view>
-<view class="btn confirm bubble" catchtap="cantcatme">联系我</view>
+<view class=" confirm bubble" bindtouchstart="audioPlay">点击按钮</view>
+<view class=" confirm bubble" catchtap="cantcatme">联系我</view>

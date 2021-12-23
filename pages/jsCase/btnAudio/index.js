@@ -36,9 +36,9 @@ Page({
     this.setData({
       ifFlag: !this.data.ifFlag
     })
-    wx.navigateTo({
-      url: '/pages/jsCase/keyWordHight/index',
-    })
+    // wx.navigateTo({
+    //   url: '/pages/jsCase/keyWordHight/index',
+    // })
     // this.data.innerAudioContext.seek(0)
 
     // if (this.data.innerAudioContext.play()) {
