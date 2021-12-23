@@ -37,18 +37,6 @@ App({
       }
     })
   },
-  addClickAudio: function () {
-    const innerAudioContext = wx.createInnerAudioContext()
-    innerAudioContext.autoplay = true // 是否自动开始播放，默认为 false
-    innerAudioContext.loop = false // 是否循环播放，默认为 false
-    wx.setInnerAudioOption({ // ios在静音状态下能够正常播放音效
-      obeyMuteSwitch: false, // 是否遵循系统静音开关，默认为 true。当此参数为 false 时，即使用户打开了静音开关，也能继续发出声音。
-      success: function (e) {},
-      fail: function (e) {}
-    })
-    innerAudioContext.src = 'https://yjh-jlb.oss-cn-hangzhou.aliyuncs.com/dc86032b76143085bff649dd790f74fb.mp3'; // 音频资源的地址
-    innerAudioContext.onPlay()
-  },
   globalData: {
     userInfo: null
   }

@@ -1,11 +1,43 @@
 /* pages/jsCase/btnAudio/index.wxss */
-.btn {
-  width: 145rpx;
-  height: 53rpx;
-  line-height: 53rpx;
+page {
+  background-color: #fff;
+}
+
+.confirm {
+  margin: 140rpx auto;
+  width: 325rpx;
+  height: 80rpx;
   background: linear-gradient(90deg, #6CAAD6 0%, #7EBADB 52%, #56A0D0 100%);
-  border-radius: 27rpx;
+  border-radius: 6rpx;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 80rpx;
   text-align: center;
-  font-size: 26rpx;
-  color: #FFFFFF;
+
+}
+
+.bubble {
+  position: relative;
+  overflow: hidden;
+}
+
+.bubble:after {
+  content: "";
+  background: #999;
+  position: absolute;
+  width: 750rpx;
+  height: 750rpx;
+  left: calc(50% - 375rpx);
+  top: calc(50% - 375rpx);
+  opacity: 0;
+  margin: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.bubble:active:after {
+  transform: scale(0);
+  opacity: 1;
+  transition: 0s;
 }
