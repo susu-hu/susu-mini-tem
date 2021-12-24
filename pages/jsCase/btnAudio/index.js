@@ -6,6 +6,7 @@ Page({
     ifFlag: true,
   },
   onLoad() {
+    console.log(!!true)
     const innerAudioContext = wx.createInnerAudioContext()
     innerAudioContext.autoplay = false  // 是否自动开始播放，默认为 false
     innerAudioContext.loop = false  // 是否循环播放，默认为 false
@@ -20,8 +21,8 @@ Page({
         console.log('play fail')
       }
     })
-    // innerAudioContext.src="../img/btnaudio.mp3"
-    innerAudioContext.src = 'https://yjh-jlb.oss-cn-hangzhou.aliyuncs.com/dc86032b76143085bff649dd790f74fb.mp3';  // 音频资源的地址
+    innerAudioContext.src="/pages/jsCase/img/btnaudio.mp3"
+    // innerAudioContext.src = 'https://yjh-jlb.oss-cn-hangzhou.aliyuncs.com/dc86032b76143085bff649dd790f74fb.mp3';  // 音频资源的地址
     this.setData({
       innerAudioContext,
     })
