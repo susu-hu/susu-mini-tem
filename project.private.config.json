@@ -23,6 +23,12 @@
           "pathName": "pages/cssCase/btnAnim/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/jsCase/btnAudio/index",
+          "pathName": "pages/jsCase/btnAudio/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

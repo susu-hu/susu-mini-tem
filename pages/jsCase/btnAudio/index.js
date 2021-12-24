@@ -6,19 +6,14 @@ Page({
     ifFlag: true,
   },
   onLoad() {
-    console.log(!!true)
     const innerAudioContext = wx.createInnerAudioContext()
     innerAudioContext.autoplay = false  // 是否自动开始播放，默认为 false
     innerAudioContext.loop = false  // 是否循环播放，默认为 false
     wx.setInnerAudioOption({ // ios在静音状态下能够正常播放音效
       obeyMuteSwitch: false,   // 是否遵循系统静音开关，默认为 true。当此参数为 false 时，即使用户打开了静音开关，也能继续发出声音。
       success: function (e) {
-        console.log(e)
-        console.log('play success')
       },
       fail: function (e) {
-        console.log(e)
-        console.log('play fail')
       }
     })
     innerAudioContext.src="/pages/jsCase/img/btnaudio.mp3"
@@ -28,15 +23,17 @@ Page({
     })
   },
   audioPlay() {
+    this.data.innerAudioContext.play()
 
-    if (this.data.ifFlag) {
-      this.data.innerAudioContext.play()
-    } else {
-      this.data.innerAudioContext.pause()
-    }
-    this.setData({
-      ifFlag: !this.data.ifFlag
-    })
+
+    // if (this.data.ifFlag) {
+    //   this.data.innerAudioContext.play()
+    // } else {
+    //   this.data.innerAudioContext.pause()
+    // }
+    // this.setData({
+    //   ifFlag: !this.data.ifFlag
+    // })
     // wx.navigateTo({
     //   url: '/pages/jsCase/keyWordHight/index',
     // })
