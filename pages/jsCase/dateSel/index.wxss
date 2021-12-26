@@ -1,6 +1,41 @@
 /* pages/jsCase/dateSel/index.wxss */
-page{
+page {
   /* color: #ffc0cb; */
   /* color: #ffc05F; */
   color: #63c7c7;
+}
+
+.btn {
+  margin: 140rpx auto;
+  width: 325rpx;
+  height: 80rpx;
+  background: linear-gradient(90deg, #6CAAD6 0%, #7EBADB 52%, #56A0D0 100%);
+  border-radius: 6rpx;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 80rpx;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:after {
+  content: "";
+  background: #999;
+  position: absolute;
+  width: 750rpx;
+  height: 750rpx;
+  left: calc(50% - 375rpx);
+  top: calc(50% - 375rpx);
+  opacity: 0;
+  margin: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:active:after {
+  transform: scale(0);
+  opacity: 1;
+  transition: 0s;
 }

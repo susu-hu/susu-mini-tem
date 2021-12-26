@@ -1,0 +1,5 @@
+<!--pages/cssCase/sunset/index.wxml-->
+<view class="con">
+  <view class="sun"></view>
+  <view wx:for="{{box}}" wx:key="index" class="rise" style="bottom:{{160 + 4 * index }}px;animation-delay: {{item.delay}}s;width:{{item.width}}px;height:{{item.height}}px;animation-duration: {{item.duration}}s;"></view>
+</view>

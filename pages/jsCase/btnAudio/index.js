@@ -6,6 +6,24 @@ Page({
     ifFlag: true,
   },
   onLoad() {
+    // const innerAudioContext = wx.createInnerAudioContext()
+    // innerAudioContext.autoplay = false  // 是否自动开始播放，默认为 false
+    // innerAudioContext.loop = false  // 是否循环播放，默认为 false
+    // wx.setInnerAudioOption({ // ios在静音状态下能够正常播放音效
+    //   obeyMuteSwitch: false,   // 是否遵循系统静音开关，默认为 true。当此参数为 false 时，即使用户打开了静音开关，也能继续发出声音。
+    //   success: function (e) {
+    //   },
+    //   fail: function (e) {
+    //   }
+    // })
+    // innerAudioContext.src="/pages/jsCase/img/btnaudio.mp3"
+    // // innerAudioContext.src = 'https://yjh-jlb.oss-cn-hangzhou.aliyuncs.com/dc86032b76143085bff649dd790f74fb.mp3';  // 音频资源的地址
+    // this.setData({
+    //   innerAudioContext,
+    // })
+  },
+  audioPlay() {
+
     const innerAudioContext = wx.createInnerAudioContext()
     innerAudioContext.autoplay = false  // 是否自动开始播放，默认为 false
     innerAudioContext.loop = false  // 是否循环播放，默认为 false
@@ -17,13 +35,14 @@ Page({
       }
     })
     innerAudioContext.src="/pages/jsCase/img/btnaudio.mp3"
-    // innerAudioContext.src = 'https://yjh-jlb.oss-cn-hangzhou.aliyuncs.com/dc86032b76143085bff649dd790f74fb.mp3';  // 音频资源的地址
-    this.setData({
-      innerAudioContext,
+    innerAudioContext.play()
+    innerAudioContext.onPlay(()=>{
+      // 监听音频播放事件
+      setTimeout(() => {
+        innerAudioContext.stop()
+      }, 1000);
     })
-  },
-  audioPlay() {
-    this.data.innerAudioContext.play()
+    // this.data.innerAudioContext.play()
 
 
     // if (this.data.ifFlag) {
@@ -53,7 +72,7 @@ Page({
     // })
   },
   onUnload() {
-    this.data.innerAudioContext.pause()
+    // this.data.innerAudioContext.pause()
   },
   cantcatme() {
     wx.makePhoneCall({

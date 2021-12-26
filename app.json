@@ -111,7 +111,8 @@
         "meteor/index",
         "bottomText/index",
         "cubeRun/index",
-        "btnAnim/index"
+        "btnAnim/index",
+        "sunset/index"
       ]
     },
     {
@@ -184,7 +185,8 @@
         "multiTime/index2",
         "multiTime/index3",
         "multiTime/index4",
-        "btnAudio/index"
+        "btnAudio/index",
+        "fixChose/index"
       ]
     },
     {

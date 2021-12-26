@@ -237,7 +237,10 @@ Page({
         name: '跳动的方块',
         url: '/pages/cssCase/cubeRun/index'
       },
-      ]
+      {
+        name: '落日',
+        url: '/pages/cssCase/sunset/index'
+      },]
     },
     {
       showmore: true,
@@ -408,7 +411,7 @@ Page({
         url: '/pages/jsCase/onLoaction/index'
       },
       {
-        name: '自定义多日期选择',
+        name: '自定义多日期选择03',
         url: '/pages/jsCase/dateSel/index'
       },
       {
@@ -439,7 +442,10 @@ Page({
         name: '点击按钮有音频效果',
         url: '/pages/jsCase/btnAudio/index'
       },
-      ]
+      {
+        name: '固定头部筛选项',
+        url: '/pages/jsCase/fixChose/index'
+      },]
     },
     {
       showmore: true,

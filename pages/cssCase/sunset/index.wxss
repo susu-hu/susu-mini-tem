@@ -1,0 +1,58 @@
+/* pages/cssCase/sunset/index.wxss */
+page {
+  background-color: #000;
+  height: 100%;
+}
+
+.con {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  filter: contrast(20);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.sun {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  bottom: 300px;
+  border-radius: 50%;
+  background: linear-gradient(#ff7400 50%, #ff7400);
+  filter: blur(8px);
+}
+
+.sun::after {
+  position: absolute;
+  content: "";
+  left: 10%;
+  border-radius: 50%;
+  width: 80%;
+  height: 65%;
+  top: 75%;
+  background: #ff8400;
+  border: #ff7400 dashed 10px;
+}
+
+.rise {
+  position: absolute;
+  left: -50px;
+  bottom: 320px;
+  width: 90px;
+  height: 13px;
+  background: #000;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  filter: blur(5px);
+  border-radius: 50%;
+  animation-timing-function: ease-in;
+}
+
+@keyframes move {
+  50% {
+    transform: translateX(500rpx);
+  }
+}

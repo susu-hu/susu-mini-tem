@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    show: false
+  },
+  show() {
+    this.setData({
+      show: true
+    })
   },
 
   /**
@@ -81,7 +86,7 @@ Page({
     }
   },
 
-  closeModal(){
-    
+  closeModal() {
+
   }
 })
