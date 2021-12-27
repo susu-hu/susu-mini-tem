@@ -240,6 +240,9 @@ Page({
       {
         name: '落日',
         url: '/pages/cssCase/sunset/index'
+      },{
+        name: '雪花飘落',
+        url: '/pages/cssCase/snow/index'
       },]
     },
     {

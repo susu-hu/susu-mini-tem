@@ -47,6 +47,18 @@
           "pathName": "pages/cssCase/sunset/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/cssCase/snow/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/cssCase/snow/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

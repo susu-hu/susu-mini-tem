@@ -1,0 +1,12 @@
+<!--pages/cssCase/snow/index.wxml-->
+<view>
+  <block wx:if="{{donghua}}">
+    <view wx:for="{{50}}" wx:key="index">
+      <text style="left:{{left[index]}}rpx" animation="{{animation[index]}}" class='snow' bindtap="hide" data-index='{{index}}'>*</text>
+    </view>
+    <text class="iconfont icon-shengdanshu1" style="color: rgb(19, 83, 19); position: fixed; font-size: 600rpx; left: 151rpx; top: 669rpx"></text>
+    <text class="iconfont icon-shengdanshu1" style="color: rgb(20, 124, 20); position: fixed; font-size: 600rpx; left: -252rpx; top: 629rpx"></text>
+    <text class="iconfont icon-shengdanshu1" style="color: rgb(41, 119, 41); position: fixed; font-size: 600rpx; left: 401rpx; top: 721rpx"></text>
+    <text class="iconfont icon-shengdanshu1" style="color: forestgreen; position: fixed; left: -58rpx; font-size: 600rpx; top: 756rpx"></text>
+  </block>
+</view>
