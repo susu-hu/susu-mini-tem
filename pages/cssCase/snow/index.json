@@ -1,4 +1,6 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "雪花飘落效果"
+  "navigationBarTitleText": "雪花飘落效果",
+  "navigationBarBackgroundColor": "#6699CC",
+  "navigationBarTextStyle": "white"
 }

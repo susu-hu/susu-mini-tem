@@ -1,7 +1,6 @@
 var i = 0;
 Page({
   data: {
-    donghua: true,
     left: [],
     animation: [],
     tm: 0

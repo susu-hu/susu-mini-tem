@@ -59,6 +59,12 @@
           "pathName": "pages/cssCase/snow/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/effects/audioCust/index",
+          "pathName": "pages/effects/audioCust/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

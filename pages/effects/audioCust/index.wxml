@@ -1,2 +1,2 @@
 <!--pages/effects/audioCust/index.wxml-->
-<text>pages/effects/audioCust/index.wxml</text>
+<view catchtap="toNext"> 去下一个页面</view>
