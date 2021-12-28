@@ -1,15 +1,22 @@
 // pages/effects/audioCust/index.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    
+    checked: false,
   },
 
   onShow: function () {
     this.player(wx.getBackgroundAudioManager())
+  },
+  checkMusic() {
+    this.setData({
+      checked: !this.data.checked
+    })
+    if (checked) {
+      wx.getBackgroundAudioManager().stop();
+    } else {
+      this.player(wx.getBackgroundAudioManager())
+    }
   },
   player(e) {
     e.title = '苏苏的音乐'

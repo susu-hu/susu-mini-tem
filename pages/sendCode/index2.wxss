@@ -1,17 +1,19 @@
 /* pages/sendCode/index2.wxss */
-page{
+page {
   background: #fff;
   padding-bottom: 300rpx;
 }
-.head_top{
+
+.head_top {
   width: 100%;
   height: 100rpx;
   position: relative;
   z-index: -1;
   overflow: hidden;
 }
-.head_top::after{
-  content: '';  
+
+.head_top::after {
+  content: '';
   width: 140%;
   height: 100rpx;
   position: absolute;
@@ -22,28 +24,32 @@ page{
   background: #a4d1eb;
 }
 
-.bg_img{
+.bg_img {
   position: absolute;
-  z-index:-1;
+  z-index: -1;
   width: 100%;
   height: 750rpx;
   filter: blur(10rpx);
 }
-.top{
+
+.top {
   padding: 250rpx 0 20rpx;
 }
-.top image{
+
+.top image {
   width: 200rpx;
   height: 200rpx;
   border-radius: 50%;
 }
-.top text{
+
+.top text {
   margin-top: 20rpx;
   font-size: 28rpx;
   color: #fff;
   margin-bottom: 40rpx;
 }
-.btn{
+
+.btn {
   margin-top: 20rpx;
   font-size: 28rpx;
   color: #fff;
@@ -51,39 +57,54 @@ page{
   height: 60rpx;
   border: 1px solid rgb(218, 205, 205);
   background: rgb(218, 205, 205);
-  text-align:center;
-  line-height:60rpx;
+  text-align: center;
+  line-height: 60rpx;
 }
 
-.st_icon{
+.st_icon {
   width: 122rpx;
   height: 42rpx;
   z-index: 111;
   font-size: 20rpx;
   line-height: 42rpx;
   text-align: center;
-  border-radius: 21rpx  0 8rpx 0;
+  border-radius: 21rpx 0 8rpx 0;
 }
-.s_bg2{
+
+.st_icon1 {
+  width: 122rpx;
+  height: 42rpx;
+  z-index: 111;
+  font-size: 20rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border-radius:0 21rpx 0 21rpx ;
+}
+
+.s_bg2 {
   color: #1F2879;
   background: linear-gradient(262deg, #B6AEF7 0%, #F0EFFF 48%, #CAC4FA 100%);
 }
-.s_bg1{
+
+.s_bg1 {
   color: #4E3D04;
   background: linear-gradient(262deg, #F2D678 0%, #FFF4D1 48%, #F2D576 100%);
 }
-.s_bg0{
+
+.s_bg0 {
   color: #1F3E79;
   background: linear-gradient(262deg, #AED0F7 0%, #EFF8FF 48%, #AAD8FF 100%);
 }
+
 .left1 {
   width: 18rpx;
   height: 18rpx;
   border-top: 2px solid #867f7a;
   border-right: 2px solid #867f7a;
   transform: rotate(45deg);
-} 
-.i{
+}
+
+.i {
   border: solid black;
   border-width: 0 1px 1px 0;
   display: inline-block;
@@ -110,13 +131,14 @@ page{
   -webkit-transform: rotate(45deg);
 }
 
-.box{
+.box {
   border-top: 40rpx solid #a4d1eb;
   border-left: 25rpx solid transparent;
   border-right: 25rpx solid transparent;
   height: 0;
   width: 100rpx;
 }
+
 .triangle-up {
   width: 0;
   height: 0;
@@ -124,6 +146,7 @@ page{
   border-right: 20rpx solid transparent;
   border-bottom: 20rpx solid #a4d1eb;
 }
+
 .triangle-down {
   width: 0;
   height: 0;
@@ -131,6 +154,7 @@ page{
   border-right: 20rpx solid transparent;
   border-top: 20rpx solid #a4d1eb;
 }
+
 .triangle-left {
   width: 0;
   height: 0;
@@ -138,6 +162,7 @@ page{
   border-bottom: 20rpx solid transparent;
   border-right: 20rpx solid #a4d1eb;
 }
+
 .triangle-right {
   width: 0;
   height: 0;
@@ -145,39 +170,45 @@ page{
   border-bottom: 20rpx solid transparent;
   border-left: 20rpx solid #a4d1eb;
 }
+
 .triangle-topleft {
   width: 0;
   height: 0;
   border-top: 20rpx solid #a4d1eb;
   border-right: 20px solid transparent;
 }
-.jux{
+
+.jux {
   width: 50rpx;
-  height:50rpx;
+  height: 50rpx;
   border: 30rpx solid transparent;
   border-top-color: #a4d1eb;
 }
-.jux1{
+
+.jux1 {
   width: 50rpx;
-  height:50rpx;
+  height: 50rpx;
   border: 30rpx solid transparent;
   border-left-color: #a4d1eb;
 }
-.jux2{
+
+.jux2 {
   width: 50rpx;
-  height:50rpx;
+  height: 50rpx;
   border: 30rpx solid transparent;
   border-right-color: #a4d1eb;
 }
-.jux3{
+
+.jux3 {
   width: 50rpx;
-  height:50rpx;
+  height: 50rpx;
   border: 30rpx solid transparent;
   border-bottom-color: #a4d1eb;
 }
-.jux4{
+
+.jux4 {
   width: 50rpx;
-  height:50rpx;
+  height: 50rpx;
   background-color: #a4d1eb;
   border: 30rpx solid transparent;
   border-bottom-color: #0c537c;
@@ -185,9 +216,10 @@ page{
   border-left-color: #232c31;
   border-top-color: #1c3644;
 }
-.jux5{
+
+.jux5 {
   width: 50rpx;
-  height:0;
+  height: 0;
   background-color: #a4d1eb;
   border: 30rpx solid transparent;
   border-bottom-color: #0c537c;
@@ -195,12 +227,16 @@ page{
   border-left-color: #232c31;
   border-top-color: #1c3644;
 }
-.jux6{
+
+.jux6 {
   width: 0;
-  height:0;
-  overflow: hidden; /* 这里设置overflow, font-size, line-height */
-  font-size: 0;     /*是因为, 虽然宽高度为0, 但在IE6下会具有默认的 */
-  line-height: 0;  /* 字体大小和行高, 导致盒子呈现被撑开的长矩形 */
+  height: 0;
+  overflow: hidden;
+  /* 这里设置overflow, font-size, line-height */
+  font-size: 0;
+  /*是因为, 虽然宽高度为0, 但在IE6下会具有默认的 */
+  line-height: 0;
+  /* 字体大小和行高, 导致盒子呈现被撑开的长矩形 */
   background-color: #a4d1eb;
   border: 30rpx solid transparent;
   border-bottom-color: #0c537c;
@@ -208,36 +244,40 @@ page{
   border-left-color: #232c31;
   border-top-color: #1c3644;
 }
-.jux7{
-  height:20rpx;
-  width:20rpx;
-  border-color:#0c537c #2592d1 #232c31 #1c3644;
-  border-style:solid;
-  border-width:20rpx;
+
+.jux7 {
+  height: 20rpx;
+  width: 20rpx;
+  border-color: #0c537c #2592d1 #232c31 #1c3644;
+  border-style: solid;
+  border-width: 20rpx;
 }
-.jux8{
-  height:0;
-  width:0;
+
+.jux8 {
+  height: 0;
+  width: 0;
   overflow: hidden;
   font-size: 0;
   line-height: 0;
-  border-color:#2592d1 transparent transparent transparent;
-  border-style:solid;
-  border-width:20rpx;
+  border-color: #2592d1 transparent transparent transparent;
+  border-style: solid;
+  border-width: 20rpx;
   /* IE6下不支持透明啊用下面的就可以了 */
   /* border-style:solid dashed dashed dashed; */
 }
-.jux9{
-  height:0;
-  width:0;
+
+.jux9 {
+  height: 0;
+  width: 0;
   overflow: hidden;
   font-size: 0;
   line-height: 0;
-  border-color:#6c94c2 #193eaf transparent transparent;
-  border-style:solid solid dashed dashed;
-  border-width:40rpx 40rpx 0 0 ;
+  border-color: #6c94c2 #193eaf transparent transparent;
+  border-style: solid solid dashed dashed;
+  border-width: 40rpx 40rpx 0 0;
 }
-.c1{
+
+.c1 {
   content: url('https://i.postimg.cc/WzKK73vQ/20210729155755.jpg');
   border-radius: 50%;
   width: 50rpx;
@@ -248,7 +288,8 @@ page{
   width: 0px;
   height: 0px;
   border-width: 16px;
-  border-style: solid; /*定义的是实现边框*/
+  border-style: solid;
+  /*定义的是实现边框*/
   border-color: transparent #5c3b3b #5c3b3b transparent;
   /*顺时针顺序，上右底左*/
   /*若是三个值的话，上，左右两侧，底*/
@@ -256,38 +297,39 @@ page{
   /*若是一个值的话，四个方向都一样*/
 }
 
-.main{
-  width:100px;
-  height:100px;
-  border:1px solid #0981E6;
+.main {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #0981E6;
   position: relative;
 }
 
 .main:before {
-    content: '';
-    position: absolute;
-    right: -10px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    left: 17%;
-    margin-left: -12px;
-    top: -10px;
-    border-bottom: 10px solid #0082df;
+  content: '';
+  position: absolute;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  left: 17%;
+  margin-left: -12px;
+  top: -10px;
+  border-bottom: 10px solid #0082df;
 }
+
 .main:after {
-    content: '';
-    position: absolute;
-    top: 11px;
-    width: 0;
-    height: 0;
-    border-right: 9px solid transparent;
-    border-left: 9px solid transparent;
-    left:17%;
-    margin-left: -11px;
-    top: -9px;
-    border-bottom: 9px solid #fff;
+  content: '';
+  position: absolute;
+  top: 11px;
+  width: 0;
+  height: 0;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+  left: 17%;
+  margin-left: -11px;
+  top: -9px;
+  border-bottom: 9px solid #fff;
 }
 
 

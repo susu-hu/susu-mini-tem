@@ -56,13 +56,19 @@
         },
         {
           "name": "",
-          "pathName": "pages/cssCase/snow/index",
+          "pathName": "pages/cssCase/meteor/index",
           "query": "",
           "scene": null
         },
         {
           "name": "pages/effects/audioCust/index",
           "pathName": "pages/effects/audioCust/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/effects/snows/index",
           "query": "",
           "scene": null
         }

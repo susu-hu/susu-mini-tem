@@ -1,0 +1,2 @@
+<!--pages/effects/snows/index.wxml-->
+<canvas id='canv'></canvas>

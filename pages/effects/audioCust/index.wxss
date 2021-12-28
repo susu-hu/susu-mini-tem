@@ -1,1 +1,28 @@
 /* pages/effects/audioCust/index.wxss */
+page {
+  background-color: aliceblue;
+}
+
+.music {
+  width: 86rpx;
+  height: 86rpx;
+  position: absolute;
+  top: 108rpx;
+  right: 0;
+  z-index: 99;
+
+}
+
+.circle {
+  animation: cirlce 4s linear infinite;
+}
+
+@keyframes cirlce {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
