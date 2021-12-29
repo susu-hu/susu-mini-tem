@@ -1,1 +1,22 @@
 /* pages/effects/snows/index.wxss */
+page {
+  background: linear-gradient(180deg, #6699CC 0%, #B8DBF0 100%);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+}
+
+.snow {
+  width: fit-content;
+  position: absolute;
+  top: -100rpx;
+  width: 30rpx;
+  height: 27rpx;
+  z-index: 11;
+}
+
+.snow:nth-child(2n+2) {
+  width: 35rpx;
+  height: 33rpx;
+}

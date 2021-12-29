@@ -241,7 +241,7 @@ Page({
         name: '落日',
         url: '/pages/cssCase/sunset/index'
       },{
-        name: '雪花飘落',
+        name: '雪花飘落01',
         url: '/pages/cssCase/snow/index'
       },]
     },
@@ -476,6 +476,10 @@ Page({
       {
         name: '播放背景音乐',
         url: '/pages/effects/audioCust/index'
+      },
+      {
+        name: '雪花漂亮2.0',
+        url: '/pages/effects/snows/index'
       }
       ]
     }

@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "雪花",
+  "disableScroll":true,
+  "navigationBarBackgroundColor": "#6699CC",
+  "navigationBarTextStyle": "white"
 }
