@@ -13,68 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/jsCase/btnAudio/index",
-          "pathName": "pages/jsCase/btnAudio/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cssCase/btnAnim/index",
-          "pathName": "pages/cssCase/btnAnim/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/btnAudio/index",
-          "pathName": "pages/jsCase/btnAudio/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/dateSel/index",
-          "pathName": "pages/jsCase/dateSel/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/fixChose/index",
-          "pathName": "pages/jsCase/fixChose/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cssCase/sunset/index",
-          "pathName": "pages/cssCase/sunset/index",
+          "name": "",
+          "pathName": "pages/another/login/index",
           "query": "",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/cssCase/snow/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/cssCase/meteor/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/effects/snows/index",
-          "pathName": "pages/effects/snows/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/effects/snows/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/jsCase/draw2/index",
+          "pathName": "pages/subPack/navTab/index",
           "query": "",
           "scene": null
         }

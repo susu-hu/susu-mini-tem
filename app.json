@@ -58,7 +58,8 @@
         "customScroll/index",
         "cal/index",
         "clockin/index",
-        "inputCode/index"
+        "inputCode/index",
+        "login/index"
       ]
     },
     {
@@ -79,7 +80,8 @@
         "otherAnimation/index",
         "roateY180/index",
         "customIpt/index",
-        "loading/index4"
+        "loading/index4",
+        "navTab/index"
       ]
     },
     {
@@ -188,7 +190,8 @@
         "multiTime/index3",
         "multiTime/index4",
         "btnAudio/index",
-        "fixChose/index"
+        "fixChose/index",
+        "draw3/index"
       ]
     },
     {

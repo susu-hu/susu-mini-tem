@@ -1,35 +1,23 @@
-// pages/dots/index.js
+// pages/subPack/navTab/index.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
+
   data: {
-    autoplay: true, //是否自动切换
-    interval: 3000, //自动切换时间间隔,3s
-    duration: 1000, //  滑动动画时长1s
-    swiperCurrent: '',
-    goodsInfo: {
-      imgList: [{
-          img: 'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-        },
-        {
-          img: 'https://i.postimg.cc/Gm7KjGmN/111.jpg',
-        },
-        {
-          img: 'https://i.postimg.cc/Bv28vfkg/222.webp',
-        },
-        {
-          img: 'https://i.postimg.cc/65STLQNc/333.webp'
-        },
-      ]
+    navList: ['正在进行', '即将开始', '已结束'],
+    nav_type: 0,
+  },
+  changeType: function (e) {
+    let {
+      index
+    } = e.currentTarget.dataset;
+    if (this.data.type === index || index === undefined) {
+      return false;
+    } else {
+      this.setData({
+        nav_type: index
+      })
     }
 
-  },
-  swiperChange: function (e) {
-    this.setData({
-      swiperCurrent: e.detail.current
-    })
   },
 
   /**

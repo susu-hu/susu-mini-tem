@@ -109,7 +109,7 @@ page {
   bottom: -8rpx;
   left: -8rpx;
   right: -8rpx;
-  background: linear-gradient(0deg, #ca3c11, #d81657);
+  background: linear-gradient(0deg, #cc745a, #d81657);
   z-index: -1;
   border-radius: 34rpx;
 }
