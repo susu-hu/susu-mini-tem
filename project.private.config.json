@@ -71,6 +71,12 @@
           "pathName": "pages/effects/snows/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/jsCase/draw2/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
