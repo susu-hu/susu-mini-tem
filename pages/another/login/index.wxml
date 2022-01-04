@@ -1,2 +1,56 @@
 <!--pages/another/login/index.wxml-->
-<text>pages/another/login/index.wxml</text>
+<image class="logo_icon" src="https://i.postimg.cc/mgsKJGLw/susu1.jpg"></image>
+<view class="choose_box flex j_c">
+  <view class="cbtn {{currentTab == 0?'':'t_fss'}}" data-id="0" bindtap="clickTab">选项一</view>
+  <view class="cbtn {{currentTab == 1?'':'t_fss'}}" data-id="1" bindtap="clickTab">选项二</view>
+</view>
+
+<view class="con" wx:if="{{acc}}">
+  <block wx:if="{{currentTab == 1}}">
+    <input class="{{sel_phone ?'border_bot1': ''}}" data-type="1" type="number" placeholder="请输入手机号" placeholder-class="p_class" bindfocus="bindfocus" bindblur="bindblur" bindinput="bindPhone" value="{{phone}}" maxlength="11"></input>
+    <input class="{{sel_pass ?'border_bot1': ''}}" data-type="2" type="password" placeholder="请输入密码" placeholder-class="p_class" bindfocus="bindfocus" bindblur="bindblur" bindinput="bindPass" value="{{pass}}"></input>
+    <image class="phone {{show == 1 ?'show':''}}" data-type="1" src="/img/login_close.png" catchtap="phone_empty"></image>
+    <image class="pass {{show == 2 ?'show':''}}" data-type="2" src="/img/login_close.png" catchtap="phone_empty"></image>
+  </block>
+  <block wx:else>
+    <input class="{{sel_phone ?'border_bot1': ''}}" data-type="1" type="number" placeholder="请输入账号" placeholder-class="p_class" bindfocus="bindfocus" bindblur="bindblur" bindinput="bindPhone" value="{{phone}}" maxlength="11"></input>
+    <input class="{{sel_pass ?'border_bot1': ''}}" data-type="2" type="password" placeholder="请输入密码" placeholder-class="p_class" bindfocus="bindfocus" bindblur="bindblur" bindinput="bindPass" value="{{pass}}"></input>
+    <image class="phone {{show == 1 ?'show':''}}" data-type="1" src="/img/login_close.png" catchtap="phone_empty"></image>
+    <image class="pass {{show == 2 ?'show':''}}" data-type="2" src="/img/login_close.png" catchtap="phone_empty"></image>
+  </block>
+</view>
+
+<view class="con" wx:else>
+  <input class="{{sel_phone ?'border_bot1': ''}}" data-type="1" type="number" placeholder="请输入手机号" placeholder-class="p_class" bindfocus="bindfocus" bindblur="bindblur" bindinput="bindPhone" value="{{phone}}" maxlength="11"></input>
+  <input class="{{sel_pass ?'border_bot1': ''}}" data-type="2" type="number" placeholder="请输入验证码" placeholder-class="p_class" bindfocus="bindfocus" bindblur="bindblur" bindinput="bindCode" value="{{ver_code}}" maxlength="6"></input>
+  <image class="code {{show == 1 ?'show':''}}" data-type="1" src="/img/login_close.png" catchtap="phone_empty"></image>
+  <image class="pass {{show == 2 ?'show':''}}" data-type="2" src="/img/login_close.png" catchtap="phone_empty"></image>
+  <button class="con_btn {{codeSend == 1 ?'veri_ok':''}}" style="width: 200rpx;" bindtap="{{codeSend == 1 ? 'sendCode':''}}" disabled="{{smsFlag}}">{{sendTime}}</button>
+</view>
+
+
+<view class="change" wx:if="{{acc}}">
+  <block wx:if="{{currentTab == 1}}">
+    <view class="jump" bindtap="changeCode" data-type="2">手机验证码登录</view>
+    <view class="forget2" bindtap="changePass">忘记密码？</view>
+  </block>
+  <block wx:else>
+    <view class="forget" bindtap="changePass">忘记密码？</view>
+  </block>
+</view>
+
+
+<view class="change" wx:else>
+  <view class="jump" bindtap="changeCode" data-type="1">账号密码登录</view>
+</view>
+
+
+<!-- 登录按钮 -->
+<view class="con">
+  <block wx:if="{{is_can_click}}">
+    <button class="login_btn btn_ok" bindtap="btnLogin">登录</button>
+  </block>
+  <block wx:else>
+    <button class="login_btn btn_no">登录</button>
+  </block>
+</view>

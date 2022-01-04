@@ -1,1 +1,208 @@
 /* pages/another/login/index.wxss */
+page {
+  background-color: #fff;
+}
+
+.logo_icon {
+  display: block;
+  width: 167rpx;
+  height: 167rpx;
+  margin: 26rpx auto;
+  border-radius: 50%;
+}
+
+.con {
+  padding: 0 55rpx;
+  position: relative;
+  margin-bottom: 30rpx;
+}
+
+.con input {
+  display: block;
+  width: 100%;
+  line-height: 100rpx;
+  height: 100rpx;
+  padding-right: 40%;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #EFEFEF;
+  box-sizing: border-box;
+}
+
+.border_bot1 {
+  border-bottom: 2rpx solid #FA871E !important;
+}
+
+.p_class {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #CCCCCC;
+}
+
+.phone {
+  display: none;
+  position: absolute;
+  top: 37rpx;
+  right: 60rpx;
+  width: 24rpx;
+  height: 24rpx;
+  z-index: 100;
+}
+
+.pass {
+  display: none;
+  position: absolute;
+  top: 142rpx;
+  right: 60rpx;
+  width: 24rpx;
+  height: 24rpx;
+  z-index: 100;
+}
+
+.code {
+  display: none;
+  position: absolute;
+  top: 38rpx;
+  right: 260rpx;
+  width: 24rpx;
+  height: 24rpx;
+  z-index: 100;
+}
+
+.change {
+  padding: 0 55rpx;
+  display: flex;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  margin-bottom: 59rpx;
+  font-size: 24rpx;
+  color: #666666;
+}
+
+.show {
+  display: block;
+}
+
+.jump {
+  flex: 1;
+  /* text-align: right; */
+}
+
+.forget2 {
+  flex: 1;
+  text-align: right;
+}
+
+.forget {
+  flex: 1;
+}
+
+.login_btn {
+  display: block;
+  width: 100% !important;
+  line-height: 40px;
+  height: 88rpx;
+  margin: 0;
+  padding: 0;
+  border-radius: 44rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #fff;
+}
+
+.login_btn::after {
+  border: none;
+  outline: none;
+}
+
+.con_btn {
+  position: absolute;
+  top: 0;
+  right: 55rpx;
+  color: #999999;
+  font-size: 28rpx;
+  text-align: right;
+  width: 200rpx !important;
+  padding: 0 !important;
+  font-weight: normal;
+  line-height: 99rpx;
+  height: 99rpx;
+  background: #fff;
+}
+
+.con_btn[disabled] {
+  color: #999999 !important;
+  background: #fff !important;
+}
+
+.con_btn::after {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+/* .con_btn_ok{
+  color: #DE59A3;
+} */
+.go_reg {
+  margin-top: 39rpx;
+  line-height: 34rpx;
+  /* color:#DE59A3; */
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.reg_title {
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.reg_btn_per {
+  width: 380rpx;
+  height: 74rpx;
+  line-height: 74rpx;
+  color: #fff;
+  background: #2D7EDE;
+  border: 1rpx solid #DE59A3;
+  border-radius: 38px;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.reg_btn_enter {
+  width: 380rpx;
+  height: 74rpx;
+  line-height: 74rpx;
+  color: #DE59A3;
+  background: #fff;
+  border: 1rpx solid #DE59A3;
+  border-radius: 38px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.cbtn {
+  width: 214rpx;
+  height: 64rpx;
+  background: #FA871E;
+  border: 2rpx solid #FA871E;
+  border-radius: 44rpx;
+  font-size: 28rpx;
+  line-height: 64rpx;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 70rpx 40rpx 50rpx;
+}
+
+.t_fss {
+  width: 214rpx;
+  height: 64rpx;
+  border: 2rpx solid #FA871E;
+  font-size: 28rpx;
+  color: #FA871E;
+  background: #FFFFFF;
+}
