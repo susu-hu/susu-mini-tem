@@ -4,6 +4,9 @@ Page({
     left: [],
     animation: [],
     tm: 0
+
+
+    
   },
   onShow: function () {
     this.donghua();
