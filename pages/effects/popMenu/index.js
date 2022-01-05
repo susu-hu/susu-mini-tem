@@ -9,8 +9,6 @@ Page({
     animationcollect: {},//item位移,透明度
     animationTranspond: {},//item位移,透明度
     animationInput: {},//item位移,透明度
-    //我的博客:http://blog.csdn.net/qq_31383345
-    //CSDN微信小程序开发专栏:http://blog.csdn.net/column/details/13721.html
   },
   onLoad: function () {
 
