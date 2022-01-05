@@ -204,7 +204,8 @@
         "redRain/index",
         "clipRed/index",
         "audioCust/index",
-        "snows/index"
+        "snows/index",
+        "popMenu/index"
       ]
     }
   ],

@@ -1,0 +1,20 @@
+/* pages/effects/popMenu/index.wxss */
+/**index.wxss**/
+
+.image-style {
+  height: 150rpx;
+  width: 150rpx;
+  position: absolute;
+  bottom: 250rpx;
+  right: 100rpx;
+  opacity: 0;
+}
+
+.image-plus-style {
+  height: 150rpx;
+  width: 150rpx;
+  position: absolute;
+  bottom: 250rpx;
+  right: 100rpx;
+  z-index: 100;
+}

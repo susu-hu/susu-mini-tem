@@ -41,6 +41,12 @@
           "pathName": "pages/wxCase/downFile/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/effects/popMenu/index",
+          "pathName": "pages/effects/popMenu/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
