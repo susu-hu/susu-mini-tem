@@ -1,5 +1,5 @@
 // pages/wxCase/statusList/index.js
-import api from "../utils/api.js"
+// import api from "../utils/api.js"
 Page({
 
 
@@ -32,8 +32,8 @@ Page({
     //     console.log(res)
     //   }
     // })
-    let user=api.users;
-    console.log(user)
+    // let user=api.users;
+    // console.log(user)
   }
  
 })

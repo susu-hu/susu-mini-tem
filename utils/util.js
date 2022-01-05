@@ -38,7 +38,7 @@ var toolsFn = {
 };
 
 //保存图片到相册
-export const writePhotosAlbum = (successFun, failFun) => {
+const writePhotosAlbum = (successFun, failFun) => {
   wx.getSetting({
     success(res) {
       if (!res.authSetting['scope.writePhotosAlbum']) {
@@ -51,7 +51,7 @@ export const writePhotosAlbum = (successFun, failFun) => {
             wx.hideLoading()
             wx.showModal({
               title: '提示',
-              content: "小程序需要您的微信授权保存图片，是否重新授权？",
+              content: "微信授权保存图片，是否重新授权？",
               showCancel: true,
               cancelText: "否",
               confirmText: "是",
@@ -126,5 +126,6 @@ module.exports = {
   formatTime,
   toolsFn: toolsFn,
   formatTimeTwo: formatTimeTwo,
-  getWeekByDate: getWeekByDate
+  getWeekByDate: getWeekByDate,
+  writePhotosAlbum,
 }

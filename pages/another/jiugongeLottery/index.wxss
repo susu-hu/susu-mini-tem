@@ -1,30 +1,143 @@
 /* pages/another/jiugongeLottery/index.wxss */
-page { 
-  width: 100%; 
+page {
+  width: 100%;
   height: 100%;
-  background: #fff!important;
- }
-view, picker, textarea, button, navigator { word-break: break-word; background-position: 50% 50%; background-repeat: no-repeat; background-size: 100% 100%; background-origin: padding-box; background-clip: padding-box; line-height: 1; box-sizing: border-box; background-color: transparent; border: none; padding: 0; margin: 0; border-radius: 0; display: block; position: relative; }
-/* 禁止触摸互动事件 */
-.noPointer { pointer-events: none; }
-/*禁用长触弹出的下载图片菜单*/
-.noCallout { -webkit-touch-callout: none; }
-/*禁用长触选择文字等功能*/
-.noSelect { -webkit-user-select: none; }
-button::after { display: none; }
-.button-hover { background: rgba(0,0,0,0); }
+  background: #fff !important;
+}
 
-.content { width: 100%; height: 100%; position: absolute !important; left: 0; top: 0; background-color: #fff; display: flex; justify-content: center; align-items: center; }
-.content .lucky { width: 623rpx; height: 800rpx; }
-.content .lucky .dish { width: 623rpx; height: 623rpx; position: absolute; left: 0; top: 0; }
-.content .lucky image.lucky0 { transform: rotate(0deg); transition-duration: 0s; }
-.content .lucky image.lucky1 { transform: rotate(1035deg); transition-duration: 3s; }
-.content .lucky image.lucky2 { transform: rotate(855deg); transition-duration: 3s; }
-.content .lucky image.lucky3 { transform: rotate(1080deg); transition-duration: 3s; }
-.content .lucky image.lucky4 { transform: rotate(810deg); transition-duration: 3s; }
-.content .lucky image.lucky5 { transform: rotate(990deg); transition-duration: 3s; }
-.content .lucky image.lucky6 { transform: rotate(900deg); transition-duration: 3s; }
-.content .lucky image.lucky7 { transform: rotate(765deg); transition-duration: 3s; }
-.content .lucky image.lucky8 { transform: rotate(945deg); transition-duration: 3s; }
-.content .lucky .go { width: 125rpx; height: 208rpx; position: absolute; left: 258rpx; top: 185rpx; }
-.content .lucky .go-lucky { width: 480rpx; height: 85rpx; line-height: 85rpx; position: absolute; left: 70rpx; bottom: 50rpx; background-color: #0a4935; color: #ffffff; font-size: 28rpx; text-align: center; letter-spacing: 3rpx; }
+view,
+picker,
+textarea,
+button,
+navigator {
+  word-break: break-word;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-origin: padding-box;
+  background-clip: padding-box;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  display: block;
+  position: relative;
+}
+
+/* 禁止触摸互动事件 */
+.noPointer {
+  pointer-events: none;
+}
+
+/*禁用长触弹出的下载图片菜单*/
+.noCallout {
+  -webkit-touch-callout: none;
+}
+
+/*禁用长触选择文字等功能*/
+.noSelect {
+  -webkit-user-select: none;
+}
+
+button::after {
+  display: none;
+}
+
+.button-hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .lucky {
+  width: 623rpx;
+  height: 800rpx;
+}
+
+.content .lucky .dish {
+  width: 623rpx;
+  height: 623rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.content .lucky image.lucky0 {
+  transform: rotate(0deg);
+  transition-duration: 0s;
+}
+
+.content .lucky image.lucky1 {
+  transform: rotate(1035deg);
+  transition-duration: 3s;
+}
+
+.content .lucky image.lucky2 {
+  transform: rotate(855deg);
+  transition-duration: 3s;
+}
+
+.content .lucky image.lucky3 {
+  transform: rotate(1080deg);
+  transition-duration: 3s;
+}
+
+.content .lucky image.lucky4 {
+  transform: rotate(810deg);
+  transition-duration: 3s;
+}
+
+.content .lucky image.lucky5 {
+  transform: rotate(990deg);
+  transition-duration: 3s;
+}
+
+.content .lucky image.lucky6 {
+  transform: rotate(900deg);
+  transition-duration: 3s;
+}
+
+.content .lucky image.lucky7 {
+  transform: rotate(765deg);
+  transition-duration: 3s;
+}
+
+.content .lucky image.lucky8 {
+  transform: rotate(945deg);
+  transition-duration: 3s;
+}
+
+.content .lucky .go {
+  width: 125rpx;
+  height: 208rpx;
+  position: absolute;
+  left: 258rpx;
+  top: 185rpx;
+}
+
+.content .lucky .go-lucky {
+  width: 480rpx;
+  height: 85rpx;
+  line-height: 85rpx;
+  position: absolute;
+  left: 70rpx;
+  bottom: 50rpx;
+  background-color: #0a4935;
+  color: #ffffff;
+  font-size: 28rpx;
+  text-align: center;
+  letter-spacing: 3rpx;
+}

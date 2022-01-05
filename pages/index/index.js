@@ -306,7 +306,7 @@ Page({
             url: '/pages/wxCase/circleBar/index'
           },
           {
-            name: '自定义actionSheet面板',
+            name: '自定义actionSheet面板(单图片下载）',
             url: '/pages/wxCase/customSheet/index'
           },
           {

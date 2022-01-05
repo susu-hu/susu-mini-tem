@@ -1,2 +1,12 @@
 <!--pages/wxCase/downFile/index.wxml-->
-<text>pages/wxCase/downFile/index.wxml</text>
+<view class="img_box flex">
+  <block wx:for="{{img_list}}" wx:key="index">
+    <view class="img_item" catchtap="choseOne" data-index="{{index}}">
+      <image src="{{item.icon}}" class="img_img" />
+      <view class="item_check {{item.checked && 'checked'}}"></view>
+      <!-- 蒙层 -->
+      <view class=" {{item.checked && 'item_mask'}}"></view>
+    </view>
+  </block>
+</view>
+<view class="btn" catchtap="saveTo">保存到相册</view>
