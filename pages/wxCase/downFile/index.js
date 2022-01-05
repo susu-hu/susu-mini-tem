@@ -5,40 +5,40 @@ import {
 Page({
   data: {
     img_list: [{
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg'
-      },
-      {
-        icon: 'https://i.postimg.cc/qRRLS16Q/susu0.jpg'
-      },
-      {
-        icon: 'https://i.postimg.cc/pXDp6RXq/susu3.jpg'
-      },
-      {
-        icon: 'https://i.postimg.cc/XJmpTvCD/susu2.jpg'
-      },
-      {
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg'
-      },
-      {
-        icon: 'https://i.postimg.cc/qRRLS16Q/susu0.jpg'
-      },
-      {
-        icon: 'https://i.postimg.cc/pXDp6RXq/susu3.jpg'
-      },
-      {
-        icon: 'https://i.postimg.cc/XJmpTvCD/susu2.jpg'
-      },
-      {
-        icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg'
-      },
-      {
-        icon: 'https://i.postimg.cc/qRRLS16Q/susu0.jpg'
-      },
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg'
+    },
+    {
+      icon: 'https://i.postimg.cc/qRRLS16Q/susu0.jpg'
+    },
+    {
+      icon: 'https://i.postimg.cc/pXDp6RXq/susu3.jpg'
+    },
+    {
+      icon: 'https://i.postimg.cc/XJmpTvCD/susu2.jpg'
+    },
+    {
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg'
+    },
+    {
+      icon: 'https://i.postimg.cc/qRRLS16Q/susu0.jpg'
+    },
+    {
+      icon: 'https://i.postimg.cc/pXDp6RXq/susu3.jpg'
+    },
+    {
+      icon: 'https://i.postimg.cc/XJmpTvCD/susu2.jpg'
+    },
+    {
+      icon: 'https://i.postimg.cc/mgsKJGLw/susu1.jpg'
+    },
+    {
+      icon: 'https://i.postimg.cc/qRRLS16Q/susu0.jpg'
+    },
     ],
     checkd_list: [],
 
   },
-
+  can_click:true,
   choseOne(e) {
     let {
       index
@@ -55,30 +55,29 @@ Page({
     })
   },
   saveTo() {
-    this.clicked = false;
-    if (!this.clicked) {
-      console.log(11111)
-      if (this.data.checkd_list.length === 0) {
-        this.clicked = true
-        return wx.showToast({
-          title: '请选择需要保存的图片',
-          icon: 'none'
-        })
-      }
-      if (this.data.checkd_list.length > 9) {
-        this.clicked = true
-        return wx.showToast({
-          title: '同时最多只能保存9张图片',
-          icon: 'none'
-        })
-      }
+    if (this.data.checkd_list.length === 0) {
+      return wx.showToast({
+        title: '请选择需要保存的图片',
+        icon: 'none'
+      })
+    }
+    if (this.data.checkd_list.length > 9) {
+      return wx.showToast({
+        title: '同时最多只能保存9张图片',
+        icon: 'none'
+      })
+    }
+    if (this.can_click) {
+      console.log(1111)
+      this.can_click=false;
       var that = this;
       writePhotosAlbum(
         function success() {
           that.downForque(that.data.checkd_list).then(res => {
             wx.hideLoading()
             wx.showToast({
-              title: '下载完成'
+              title: '下载完成',
+              icon: 'none'
             })
             that.data.img_list.forEach(item => {
               item.checked = false;
@@ -86,8 +85,8 @@ Page({
             that.setData({
               img_list: that.data.img_list
             })
-            that.data.checkd_list = []
-            that.clicked = true
+            that.data.checkd_list = [];
+            that.can_click=true;
           }).catch(err => {
             that.data.img_list.forEach(item => {
               item.checked = false;
@@ -96,8 +95,8 @@ Page({
               img_list: that.data.img_list
             })
             that.data.checkd_list = []
-            that.clicked = true
-            wx.hideLoading()
+            wx.hideLoading();
+            that.can_click=true;
           })
         },
         function fail() {
@@ -105,7 +104,6 @@ Page({
             title: '您拒绝了保存到相册',
             icon: 'none'
           })
-          that.clicked = true
         }
       )
     }

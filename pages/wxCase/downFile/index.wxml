@@ -1,5 +1,5 @@
 <!--pages/wxCase/downFile/index.wxml-->
-<view class="img_box flex">
+<view class="img_box">
   <block wx:for="{{img_list}}" wx:key="index">
     <view class="img_item" catchtap="choseOne" data-index="{{index}}">
       <image src="{{item.icon}}" class="img_img" />
