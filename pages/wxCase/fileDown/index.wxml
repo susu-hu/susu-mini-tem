@@ -1,0 +1,33 @@
+<!--pages/wxCase/fileDown/index.wxml-->
+<wxs src="./file.wxs" module="time" />
+<view class="box">
+  <block wx:for="{{upfilelist}}" wx:key="upfilelist">
+    <view class="flex-row item" catchtap="openfile" data-path="{{item.path}}">
+      <image src="../img/word.png" wx:if="{{time.suffix(item.path,'docx')}}" class="icon"></image>
+      <image src="../img/excel.png" wx:if="{{time.suffix(item.path,'xlsx')}}" class="icon"></image>
+      <image src="../img/ppt.png" wx:if="{{time.suffix(item.path,'ppt')}}" class="icon"></image>
+      <view class="name text_ellipsis">{{item.name}}</view>
+      <view>{{time.timeFormat(item.time)}}</view>
+      <view class="del">
+        <image src="/img/close1.png" />
+      </view>
+    </view>
+  </block>
+  <view class="btn" bindtap="chooseFile">上传文件</view>
+</view>
+
+<view class="box">
+  <block wx:for="{{downloadFile}}" wx:key="downloadFile">
+    <view class="flex-row item" catchtap="openfile" data-path="{{item.path}}">
+      <image src="../img/word.png" wx:if="{{time.suffix(item.path,'docx')}}" class="icon"></image>
+      <image src="../img/excel.png" wx:if="{{time.suffix(item.path,'xlsx')}}" class="icon"></image>
+      <image src="../img/ppt.png" wx:if="{{time.suffix(item.path,'ppt')}}" class="icon"></image>
+      <view class="name text_ellipsis">{{item.name}}</view>
+      <view>{{time.timeFormat(item.time)}}</view>
+      <view class="del">
+        <image src="{{item.checked?'/img/cart_select.png':'/img/cart_uncheck.png'}}" />
+      </view>
+    </view>
+  </block>
+  <view class="btn btn1" bindtap="chooseFile">下载文件</view>
+</view>

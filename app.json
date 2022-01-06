@@ -157,7 +157,8 @@
         "showAction/index",
         "exFont/index",
         "popCust/index",
-        "statusList/index"
+        "statusList/index",
+        "fileDown/index"
       ]
     },
     {

@@ -1,0 +1,81 @@
+/* pages/wxCase/fileDown/index.wxss */
+.box {
+  margin: 20rpx auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  width: 710rpx;
+  padding: 40rpx 20rpx;
+}
+
+.btn {
+  margin: 50rpx auto 0;
+  width: 625rpx;
+  height: 80rpx;
+  background: linear-gradient(90deg, #dd8449 0%, #e28e74 52%, #dbb290 100%);
+  border-radius: 6rpx;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 80rpx;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:after {
+  content: "";
+  background: #999;
+  position: absolute;
+  width: 750rpx;
+  height: 750rpx;
+  left: calc(50% - 375rpx);
+  top: calc(50% - 375rpx);
+  opacity: 0;
+  margin: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:active:after {
+  transform: scale(0);
+  opacity: 1;
+  transition: 0s;
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  flex-shrink: 0;
+  margin-right: 20rpx;
+}
+
+.item {
+  box-sizing: border-box;
+  margin: 20rpx;
+  color: #999;
+  font-size: 26rpx;
+  position: relative;
+}
+
+.del {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 0;
+  right: 10rpx;
+}
+
+.del image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.btn1 {
+  background: linear-gradient(90deg, #84a7d4 0%, #5f87bd 52%, #4c49e2 100%);
+}
+
+.name {
+  margin-right: 20rpx;
+  max-width: 300rpx;
+}

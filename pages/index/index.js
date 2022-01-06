@@ -310,8 +310,12 @@ Page({
         url: '/pages/wxCase/customSheet/index'
       },
       {
-        name: '保存多张图片（下载文件)',
+        name: '保存多张图片（下载图片)',
         url: '/pages/wxCase/downFile/index'
+      },
+      {
+        name: '保存文件与上传文件等',
+        url: '/pages/wxCase/fileDown/index'
       },
       {
         name: '文字的展开与收起)',

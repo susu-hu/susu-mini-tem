@@ -1,0 +1,25 @@
+function timeFormat(time) {
+  // 判断时间戳是否为13位数，如果不是则*1000，时间戳只有13位数(带毫秒)和10(不带毫秒)位数的
+  if (time.toString().length == 13) {
+    var tme = getDate(time);
+  } else {
+    var tme = getDate(time * 1000);
+  }
+  var Y = tme.getFullYear();
+  var M = (tme.getMonth() + 1 < 10 ? '0' + (tme.getMonth() + 1) : tme.getMonth() + 1);
+  var D = tme.getDate();
+  var h = tme.getHours();
+  var m = tme.getMinutes();
+  var s = tme.getSeconds();
+  tem1 = Y + '-' + M + '-' + D + ' ' + h + ':' + m + ':' + s
+  return tem1;
+}
+
+function suffix(e, type) {
+  return e && e.indexOf(type) != -1
+}
+//导出
+module.exports = {
+  timeFormat: timeFormat,
+  suffix:suffix
+}
