@@ -17,6 +17,12 @@
           "pathName": "pages/effects/popMenu/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/effects/popMenu/index2",
+          "pathName": "pages/effects/popMenu/index2",
+          "query": "",
+          "scene": null
         }
       ]
     }

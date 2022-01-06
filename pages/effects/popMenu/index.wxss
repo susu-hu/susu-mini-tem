@@ -11,7 +11,6 @@ page {
   bottom: 250rpx;
   right: 100rpx;
   opacity: 0;
-  transform: rotateZ(180deg);
 }
 
 .icon_new {
