@@ -55,10 +55,10 @@ const writePhotosAlbum = (successFun, failFun) => {
               showCancel: true,
               cancelText: "否",
               confirmText: "是",
-              success: function (res2) {
-                if (res2.confirm) { //用户点击确定'
+              success: function (res) {
+                if (res.confirm) { //用户点击确定'
                   wx.openSetting({
-                    success: (res3) => {
+                    success: (res) => {
                       if (res3.authSetting['scope.writePhotosAlbum']) {
                         //已授权
                         successFun && successFun()

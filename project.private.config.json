@@ -13,44 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "",
-          "pathName": "pages/another/login/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/subPack/navTab/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/another/jiugongeLottery/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/wxCase/customSheet/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/wxCase/downFile/index",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/effects/popMenu/index",
           "pathName": "pages/effects/popMenu/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/wxCase/fileDown/index",
           "query": "",
           "scene": null
         }

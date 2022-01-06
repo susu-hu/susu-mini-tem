@@ -1,18 +1,22 @@
 /* pages/effects/popMenu/index.wxss */
-/**index.wxss**/
+page {
+  background-color: #fff;
+  /* 87ceeb */
+}
 
-.image-style {
-  height: 150rpx;
-  width: 150rpx;
+.icon {
+  height: 100rpx;
+  width: 100rpx;
   position: absolute;
   bottom: 250rpx;
   right: 100rpx;
   opacity: 0;
+  transform: rotateZ(180deg);
 }
 
-.image-plus-style {
-  height: 150rpx;
-  width: 150rpx;
+.icon_new {
+  height: 100rpx;
+  width: 100rpx;
   position: absolute;
   bottom: 250rpx;
   right: 100rpx;

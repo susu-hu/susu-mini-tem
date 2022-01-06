@@ -1,5 +1,5 @@
 <!--pages/effects/popMenu/index.wxml-->
-<image src="https://i.postimg.cc/pXDp6RXq/susu3.jpg" animation="{{animationcollect}}" class="image-style" bindtap="collect"></image>
-<image src="https://i.postimg.cc/pXDp6RXq/susu3.jpg" animation="{{animationTranspond}}" class="image-style" bindtap="transpond"></image>
-<image src="https://i.postimg.cc/pXDp6RXq/susu3.jpg" animation="{{animationInput}}" class="image-style" bindtap="input"></image>
-<image src="https://i.postimg.cc/pXDp6RXq/susu3.jpg" animation="{{animationPlus}}" class="image-plus-style" bindtap="plus"></image>
+<image src="https://i.postimg.cc/Gpm5bmJz/image.png" animation="{{a1}}" class="icon"></image>
+<image src="https://i.postimg.cc/dVshQb74/image.png" animation="{{a2}}" class="icon" ></image>
+<image src="https://i.postimg.cc/prQdRCRw/image.png" animation="{{a3}}" class="icon" ></image>
+<image src="https://i.postimg.cc/y89F9XfG/add.png" animation="{{start}}" class="icon_new" catchtap="btnPop"></image>

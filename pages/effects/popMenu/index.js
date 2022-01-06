@@ -1,104 +1,81 @@
 // pages/effects/popMenu/index.js
-//index.js
 //获取应用实例
 var app = getApp()
 Page({
   data: {
-    isPopping: false,//是否已经弹出
-    animationPlus: {},//旋转动画
-    animationcollect: {},//item位移,透明度
-    animationTranspond: {},//item位移,透明度
-    animationInput: {},//item位移,透明度
+    isShow: false,//是否已经弹出
+    start: {},//旋转动画
+    a1: {},
+    a2: {},
+    a3: {},
   },
-  onLoad: function () {
-
-  },
-  //点击弹出
-  plus: function () {
-    if (this.data.isPopping) {
-      //缩回动画
-      popp.call(this);
-      this.setData({
-        isPopping: false
-      })
+  btnPop() {
+    this.setData({
+      isShow: !this.data.isShow
+    })
+    if (this.data.isShow) {
+      startPop.call(this);
     } else {
-      //弹出动画
-      takeback.call(this);
-      this.setData({
-        isPopping: true
-      })
+      endPop.call(this);
     }
   },
-  input: function () {
-    console.log("input")
-  },
-  transpond: function () {
-    console.log("transpond")
-  },
-  collect: function () {
-    console.log("collect")
-  }
 })
 
-
-
 //弹出动画
-function popp() {
-  //plus顺时针旋转
-  var animationPlus = wx.createAnimation({
+function startPop() {
+  var start = wx.createAnimation({
     duration: 500,
     timingFunction: 'ease-out'
   })
-  var animationcollect = wx.createAnimation({
+  var a1 = wx.createAnimation({
     duration: 500,
     timingFunction: 'ease-out'
   })
-  var animationTranspond = wx.createAnimation({
+  var a2 = wx.createAnimation({
     duration: 500,
     timingFunction: 'ease-out'
   })
-  var animationInput = wx.createAnimation({
+  var a3 = wx.createAnimation({
     duration: 500,
     timingFunction: 'ease-out'
   })
-  animationPlus.rotateZ(180).step();
-  animationcollect.translate(-100, -100).rotateZ(180).opacity(1).step();
-  animationTranspond.translate(-140, 0).rotateZ(180).opacity(1).step();
-  animationInput.translate(-100, 100).rotateZ(180).opacity(1).step();
+  start.rotateZ(180).step();
+  a1.translate(-65, -70).rotateZ(360).opacity(1).step();
+  a2.translate(-120, 0).rotateZ(360).opacity(1).step();
+  a3.translate(-65, 70).rotateZ(360).opacity(1).step();
   this.setData({
-    animationPlus: animationPlus.export(),
-    animationcollect: animationcollect.export(),
-    animationTranspond: animationTranspond.export(),
-    animationInput: animationInput.export(),
+    start: start.export(),
+    a1: a1.export(),
+    a2: a2.export(),
+    a3: a3.export(),
   })
 }
 //收回动画
-function takeback() {
-  //plus逆时针旋转
-  var animationPlus = wx.createAnimation({
+function endPop() {
+  var start = wx.createAnimation({
     duration: 500,
     timingFunction: 'ease-out'
   })
-  var animationcollect = wx.createAnimation({
+  var a1 = wx.createAnimation({
     duration: 500,
     timingFunction: 'ease-out'
   })
-  var animationTranspond = wx.createAnimation({
+  var a2 = wx.createAnimation({
     duration: 500,
     timingFunction: 'ease-out'
   })
-  var animationInput = wx.createAnimation({
+  var a3 = wx.createAnimation({
     duration: 500,
     timingFunction: 'ease-out'
   })
-  animationPlus.rotateZ(0).step();
-  animationcollect.translate(0, 0).rotateZ(0).opacity(0).step();
-  animationTranspond.translate(0, 0).rotateZ(0).opacity(0).step();
-  animationInput.translate(0, 0).rotateZ(0).opacity(0).step();
+  start.rotateZ(0).step();
+  a1.translate(0, 0).rotateZ(0).opacity(0).step();
+  a2.translate(0, 0).rotateZ(0).opacity(0).step();
+  a3.translate(0, 0).rotateZ(0).opacity(0).step();
   this.setData({
-    animationPlus: animationPlus.export(),
-    animationcollect: animationcollect.export(),
-    animationTranspond: animationTranspond.export(),
-    animationInput: animationInput.export(),
+    start: start.export(),
+    a1: a1.export(),
+    a2: a2.export(),
+    a3: a3.export(),
   })
 }
