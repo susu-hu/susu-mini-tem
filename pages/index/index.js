@@ -202,7 +202,7 @@ Page({
         url: '/pages/cssCase/shadingText/index'
       },
       {
-        name: '一个带半圆的卡片',
+        name: '半圆的卡片,底部色值需固定',
         url: '/pages/cssCase/card/index'
       },
       {

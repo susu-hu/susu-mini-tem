@@ -23,6 +23,12 @@
           "pathName": "pages/effects/popMenu/index2",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/cssCase/cardTrans/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

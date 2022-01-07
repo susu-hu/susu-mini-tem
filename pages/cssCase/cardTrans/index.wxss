@@ -1,6 +1,6 @@
-/* pages/cssCase/cardTrans/index.wxss */
 page {
   background-color: rgb(238, 185, 188);
+
 }
 
 .card {

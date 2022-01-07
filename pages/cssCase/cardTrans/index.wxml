@@ -16,3 +16,24 @@
     </view>
   </view>
 </view>
+
+<!-- new -->
+<view class="card">
+  <view class="t_box">
+    <view class="top">
+      <view class="title">
+        <span></span>
+        <text>活动规则</text>
+        <span></span>
+      </view>
+      <view class="tips">
+        <rich-text nodes="{{activity.b_rules}}">
+        </rich-text>
+      </view>
+    </view>
+  </view>
+  <view class="b_box">
+    <view class="bottom">
+    </view>
+  </view>
+</view>
