@@ -29,6 +29,18 @@
           "pathName": "pages/cssCase/cardTrans/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/card/index",
+          "pathName": "pages/cssCase/card/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/effects/audioCust/index",
+          "pathName": "pages/effects/audioCust/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "播放背景音乐"
+  "navigationBarTitleText": "播放背景音乐",
+  "navigationBarBackgroundColor": "#87ceeb"
 }

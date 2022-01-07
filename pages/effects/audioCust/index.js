@@ -9,18 +9,19 @@ Page({
     this.player(wx.getBackgroundAudioManager())
   },
   checkMusic() {
+    console.log(11)
     this.setData({
       checked: !this.data.checked
     })
-    if (checked) {
-      wx.getBackgroundAudioManager().stop();
+    if (this.data.checked) {
+      wx.getBackgroundAudioManager().pause();
     } else {
       this.player(wx.getBackgroundAudioManager())
     }
   },
   player(e) {
     e.title = '苏苏的音乐'
-    e.src = 'https://yjh-jlb.oss-cn-hangzhou.aliyuncs.com/dc86032b76143085bff649dd790f74fb.mp3'
+    e.src = "http://music.163.com/song/media/outer/url?id=36587407.mp3"
     //音乐播放结束后继续播放此音乐，循环不停的播放
     e.onEnded(() => {
       this.player(wx.getBackgroundAudioManager())
@@ -40,6 +41,4 @@ Page({
       url: '/pages/jsCase/draw/index',
     })
   }
-
-
 })

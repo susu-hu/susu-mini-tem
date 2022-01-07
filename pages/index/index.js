@@ -202,10 +202,6 @@ Page({
         url: '/pages/cssCase/shadingText/index'
       },
       {
-        name: '半圆的卡片,底部色值需固定',
-        url: '/pages/cssCase/card/index'
-      },
-      {
         name: '一个左右摇晃的灯泡',
         url: '/pages/cssCase/dengpao/index'
       },
@@ -222,7 +218,11 @@ Page({
         url: '/pages/cssCase/loadText/index'
       },
       {
-        name: '卡券半圆式透明',
+        name: '半圆的卡片,底部色值需固定',
+        url: '/pages/cssCase/card/index'
+      },
+      {
+        name: '半圆的卡片,底部设置动态',
         url: '/pages/cssCase/cardTrans/index'
       },
       {

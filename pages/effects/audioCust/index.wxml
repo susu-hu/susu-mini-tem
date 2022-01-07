@@ -1,3 +1,4 @@
 <!--pages/effects/audioCust/index.wxml-->
 <image src="{{checked?'../img/stop.png':'../img/play.png'}}" class="music {{!checked && 'circle'}}" catchtap="checkMusic"></image>
 <view catchtap="toNext" class="btn"> 去下一个页面</view>
+<view class="fix_img"></view>
