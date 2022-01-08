@@ -116,7 +116,8 @@
         "btnAnim/index",
         "sunset/index",
         "snow/index",
-        "snow/index2"
+        "snow/index2",
+        "autoOnePage/index"
       ]
     },
     {
@@ -158,7 +159,8 @@
         "exFont/index",
         "popCust/index",
         "statusList/index",
-        "fileDown/index"
+        "fileDown/index",
+        "vanUpload/index"
       ]
     },
     {
@@ -192,7 +194,8 @@
         "multiTime/index4",
         "btnAudio/index",
         "fixChose/index",
-        "draw3/index"
+        "draw3/index",
+        "draw4/index"
       ]
     },
     {
@@ -207,7 +210,8 @@
         "audioCust/index",
         "snows/index",
         "popMenu/index",
-        "popMenu/index2"
+        "popMenu/index2",
+        "popMenu2/index"
       ]
     }
   ],

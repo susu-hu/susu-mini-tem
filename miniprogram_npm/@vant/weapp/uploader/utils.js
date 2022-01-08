@@ -89,12 +89,12 @@ function chooseFile(_a) {
                 });
                 break;
             default:
-                wx.chooseMessageFile({
-                    count: multiple ? maxCount : 1,
-                    type: accept,
-                    success: function (res) { return resolve(formatFile(res)); },
-                    fail: reject,
-                });
+                // wx.chooseMessageFile({
+                //     count: multiple ? maxCount : 1,
+                //     type: accept,
+                //     success: function (res) { return resolve(formatFile(res)); },
+                //     fail: reject,
+                // });
                 break;
         }
     });

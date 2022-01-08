@@ -1,0 +1,2 @@
+<!--pages/effects/popMenu2/index.wxml-->
+<van-uploader upload-text="susu" image-fit="aspectFill" file-list="{{ fileList }}" bind:delete="fileDel" bind:after-read="afterRead" use-before-read bind:before-read="beforeRead" />

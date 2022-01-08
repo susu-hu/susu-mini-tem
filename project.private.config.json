@@ -13,14 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/effects/popMenu/index",
-          "pathName": "pages/effects/popMenu/index",
+          "name": "pages/jsCase/draw4/index",
+          "pathName": "pages/jsCase/draw4/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/effects/popMenu/index2",
-          "pathName": "pages/effects/popMenu/index2",
+          "name": "pages/effects/popMenu2/index",
+          "pathName": "pages/effects/popMenu2/index",
           "query": "",
           "scene": null
         },
@@ -39,6 +39,12 @@
         {
           "name": "pages/effects/audioCust/index",
           "pathName": "pages/effects/audioCust/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/vanUpload/index",
+          "pathName": "pages/wxCase/vanUpload/index",
           "query": "",
           "scene": null
         }

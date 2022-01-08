@@ -415,6 +415,10 @@ Page({
         url: '/pages/jsCase/draw3/index'
       },
       {
+        name: '抽奖',
+        url: '/pages/jsCase/draw4/index'
+      },
+      {
         name: 'page-container',
         url: '/pages/jsCase/pageCon/index'
       },
@@ -500,7 +504,11 @@ Page({
         url: '/pages/effects/snows/index'
       }, {
         name: '弹出的菜单',
-        url: '/pages/effects/popMenu/index'
+        url: '/pages/effects/popMenu/index2'
+      },
+      {
+        name: '弹出的菜单2',
+        url: '/pages/effects/popMenu2/index'
       }
       ]
     }
