@@ -1,2 +1,4 @@
 <!--pages/wxCase/statusList/index.wxml-->
-
+<block wx:for="{{list}}" wx:key="list">
+  <view class="item {{item.style}}">{{item.name}}</view>
+</block>

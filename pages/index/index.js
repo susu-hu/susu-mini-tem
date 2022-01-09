@@ -369,6 +369,10 @@ Page({
         name: '不同状态不同颜色',
         url: '/pages/wxCase/statusList/index'
       },
+      {
+        name: 'vant上传文件',
+        url: '/pages/wxCase/vanUpload/index'
+      },
       ]
     },
     {

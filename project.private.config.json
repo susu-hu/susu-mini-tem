@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "",
-          "pathName": "pages/cssCase/cardTrans/index",
+          "name": "pages/wxCase/statusList/index",
+          "pathName": "pages/wxCase/statusList/index",
           "query": "",
           "scene": null
         },

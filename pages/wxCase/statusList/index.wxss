@@ -1,1 +1,40 @@
 /* pages/wxCase/statusList/index.wxss */
+page {
+  background: #fff;
+}
+
+.item {
+  margin: 20rpx;
+  background-color: #ffffff;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+  border-radius: 30rpx;
+  height: 60rpx;
+  display: inline-block;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.s1 {
+  background-color: coral;
+}
+
+.s2 {
+  background-color: cornflowerblue;
+}
+
+.s3 {
+  background-color: rgb(100, 237, 152);
+}
+
+.s4 {
+  background-color: rgb(189, 167, 149);
+}
+
+.s5 {
+  background-color: rgb(46, 97, 117);
+}
+
+.s0 {
+  background-color: rgb(192, 81, 109);
+}

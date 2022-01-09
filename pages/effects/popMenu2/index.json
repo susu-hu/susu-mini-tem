@@ -3,7 +3,6 @@
     "van-uploader": "@vant/weapp/uploader/index"
   },
   "navigationBarTitleText": "弹出的菜单2",
-  "enablePullDownRefresh":true,
   "backgroundTextStyle": "dark",
   "backgroundColor":"#fff"
 }

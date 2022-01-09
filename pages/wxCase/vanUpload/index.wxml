@@ -1,2 +1,2 @@
 <!--pages/wxCase/vanUpload/index.wxml-->
-<text>pages/wxCase/vanUpload/index.wxml</text>
+<van-uploader upload-text="susu" image-fit="aspectFill" file-list="{{ fileList }}" bind:delete="fileDel" bind:after-read="afterRead" use-before-read bind:before-read="beforeRead" />

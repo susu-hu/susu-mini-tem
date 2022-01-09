@@ -1,1 +1,170 @@
 /* pages/effects/popMenu2/index.wxss */
+.mask1 {
+  height: 48px;
+  width: 48px;
+  background-color: #ddacac;
+  opacity: 0.85;
+  z-index: 1000;
+  border-radius: 750rpx;
+  transform: scale(0);
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -24px;
+}
+
+.maskOpen {
+  animation: maskO 0.3s both;
+}
+
+.maskClose {
+  animation: maskC 0.3s both;
+}
+
+@keyframes maskO {
+  0% {
+    transform: scale(0);
+  }
+
+  75% {
+    transform: scale(24);
+  }
+
+  100% {
+    transform: scale(48);
+  }
+}
+
+@keyframes maskC {
+  0% {
+    transform: scale(48);
+  }
+
+  25% {
+    transform: scale(24);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1005;
+  bottom: calc(10rpx + env(safe-area-inset-bottom));
+}
+
+.btn-main {
+  border-radius: 50%;
+  z-index: 1005;
+  height: 48px;
+  font-size: 28px;
+  width: 48px;
+  line-height: 48px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  background: pink;
+}
+
+.menuOpen {
+  animation: menuO 0.3s both;
+}
+
+.menuClose {
+  animation: menuC 0.3s both;
+}
+
+@keyframes menuO {
+  0% {
+    transform: rotate(0deg);
+    color: #fff;
+    background: pink;
+  }
+
+  100% {
+    transform: rotate(45deg);
+    color: #000;
+    background: #fff;
+  }
+}
+
+@keyframes menuC {
+  0% {
+    transform: rotate(45deg);
+    color: #000;
+    background: #fff;
+  }
+
+  100% {
+    transform: rotate(-0deg);
+    color: #fff;
+    background: pink;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  width: 100%;
+  z-index: 1002;
+  bottom: 0rpx;
+}
+
+.menu {
+  padding-bottom: calc(48px + 40rpx + env(safe-area-inset-bottom));
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 15rpx;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: bounceInDown 0.45s linear both;
+}
+
+.menu-icon {
+  width: 110rpx;
+  height: 110rpx;
+  margin-bottom: 15rpx;
+  border-radius: 100%;
+}
+
+.menu-name {
+  color: #333;
+  font-size: 25rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(100%)
+  }
+
+  60% {
+    transform: translateY(-10%);
+  }
+
+  80% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}

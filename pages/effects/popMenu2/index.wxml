@@ -1,2 +1,15 @@
 <!--pages/effects/popMenu2/index.wxml-->
-<van-uploader upload-text="susu" image-fit="aspectFill" file-list="{{ fileList }}" bind:delete="fileDel" bind:after-read="afterRead" use-before-read bind:before-read="beforeRead" />
+<view class="mask1 {{maskAnimation}}" catchtouchmove="preventdefault"></view>
+<view class='menu-container' catchtouchmove="preventdefault" hidden='{{isShow}}'>
+  <view class='menu'>
+    <view class='menu-list'>
+      <navigator url="{{item.url}}" class='menu-item' wx:for='{{menuList}}' wx:key="menuList" style="width:{{menuList.length>=4?'25':100/menuList.length}}%;animation-delay: {{(index+1)*0.1}}s">
+        <image mode='aspectFill' src='{{item.src}}' class="menu-icon"></image>
+        <text class='menu-name'>{{item.name}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view class="btn">
+  <view catchtap="click" class="btn-main {{btnAnimation}}">+</view>
+</view>
