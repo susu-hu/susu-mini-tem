@@ -47,6 +47,18 @@
           "pathName": "pages/wxCase/vanUpload/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/jsCase/draw4/index",
+          "pathName": "pages/jsCase/draw4/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/vanUpload/index2",
+          "pathName": "pages/wxCase/vanUpload/index2",
+          "query": "",
+          "scene": null
         }
       ]
     }
