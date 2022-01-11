@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "vant上传文件",
+  "usingComponents": {
+    "van-uploader": "@vant/weapp/uploader/index"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "backgroundColor": "#fff"
+}

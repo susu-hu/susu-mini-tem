@@ -1,2 +1,7 @@
 <!--pages/wxCase/vanUpload/index.wxml-->
-<van-uploader upload-text="susu" image-fit="aspectFill" file-list="{{ fileList }}" bind:delete="fileDel" bind:after-read="afterRead" use-before-read bind:before-read="beforeRead" />
+<block wx:for="{{list}}" wx:key="list">
+  <view>
+    <view>{{item.name}}</view>
+    <van-uploader wx:if="{{item.show}}" data-index="{{index}}" upload-text="susu" image-fit="aspectFill" file-list="{{ item.fileList }}" bind:delete="fileDel" bind:after-read="afterRead" data-params="{{params}}" use-before-read bind:before-read="beforeRead" />
+  </view>
+</block>
