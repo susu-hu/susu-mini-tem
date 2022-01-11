@@ -1,1 +1,14 @@
 /* pages/wxCase/vanUpload/index2.wxss */
+page {
+  background-color: #fff;
+}
+
+.menu {
+  margin: 20rpx;
+}
+
+.memu_title {
+  color: #333;
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
