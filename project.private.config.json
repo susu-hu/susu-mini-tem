@@ -47,6 +47,12 @@
           "pathName": "pages/wxCase/vanUpload/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/effects/avatar/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

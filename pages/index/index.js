@@ -513,6 +513,10 @@ Page({
       {
         name: '弹出的菜单2',
         url: '/pages/effects/popMenu2/index'
+      },
+      {
+        name: '生成头像',
+        url: '/pages/effects/avatar/index'
       }
       ]
     }
