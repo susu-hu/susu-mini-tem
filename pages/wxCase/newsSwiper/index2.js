@@ -9,32 +9,32 @@ Page({
         create_time: "2021-1-1 12:00",
         prize_name: "测试"
       },
-      // {
-      //   create_time: "2021-1-1 12:00",
-      //   prize_name: "测试"
-      // }, {
-      //   create_time: "2021-1-1 12:00",
-      //   prize_name: "测试"
-      // },
-      // {
-      //   create_time: "2021-1-1 12:00",
-      //   prize_name: "测试"
-      // },
-      // {
-      //   create_time: "2021-1-1 12:00",
-      //   prize_name: "测试"
-      // },
-      // {
-      //   create_time: "2021-1-1 12:00",
-      //   prize_name: "测试"
-      // }, {
-      //   create_time: "2021-1-1 12:00",
-      //   prize_name: "测试"
-      // },
-      // {
-      //   create_time: "2021-1-1 12:00",
-      //   prize_name: "测试"
-      // },
+      {
+        create_time: "2021-1-1 12:00",
+        prize_name: "测试"
+      }, {
+        create_time: "2021-1-1 12:00",
+        prize_name: "测试"
+      },
+      {
+        create_time: "2021-1-1 12:00",
+        prize_name: "测试"
+      },
+      {
+        create_time: "2021-1-1 12:00",
+        prize_name: "测试"
+      },
+      {
+        create_time: "2021-1-1 12:00",
+        prize_name: "测试"
+      }, {
+        create_time: "2021-1-1 12:00",
+        prize_name: "测试"
+      },
+      {
+        create_time: "2021-1-1 12:00",
+        prize_name: "测试"
+      },
     ]
 
   },
