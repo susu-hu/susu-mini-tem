@@ -55,14 +55,14 @@
           "scene": null
         },
         {
-          "name": "pages/wxCase/vanUpload/index2",
-          "pathName": "pages/wxCase/textarea/index",
+          "name": "pages/charts/index5",
+          "pathName": "pages/charts/index5",
           "query": "",
           "scene": null
         },
         {
-          "name": "",
-          "pathName": "pages/effects/3dClound/index",
+          "name": "pages/another/scrollNews/index",
+          "pathName": "pages/another/scrollNews/index",
           "query": "",
           "scene": null
         },

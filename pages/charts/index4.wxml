@@ -2,12 +2,4 @@
 <view class="container">
   <ec-canvas class="ec-canvas1" id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ec1}}" bind:init="echartInit"></ec-canvas>
 </view>
-<view class="bpm2">
-  <view class="bpm1">  
-    <view>84</view>
-    <view class="bpm">
-      <view>BPM</view>
-    </view>
-  </view>
-  <view>当前心率</view>
-</view>
+

@@ -1,5 +1,4 @@
 import * as echarts from '../../components/ec-canvas/echarts';
-const app = getApp();
 function initChart1(canvas, width, height) {
   var value = 80;//这里控制着圆环图的进度
   const chart = echarts.init(canvas, null, {

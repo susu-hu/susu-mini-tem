@@ -1,0 +1,4 @@
+<!--pages/another/scrollNews/index.wxml-->
+<view class="box flex-row">
+  <text class="roll">纯CSS文字滚动播放</text>
+</view>

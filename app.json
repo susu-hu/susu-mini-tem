@@ -32,7 +32,8 @@
     "pages/cal2/index2",
     "pages/vantCalen/index",
     "pages/charts/index3",
-    "pages/charts/index4"
+    "pages/charts/index4",
+    "pages/charts/index5"
   ],
   "subPackages": [
     {
@@ -61,7 +62,8 @@
         "cal/index",
         "clockin/index",
         "inputCode/index",
-        "login/index"
+        "login/index",
+        "scrollNews/index"
       ]
     },
     {

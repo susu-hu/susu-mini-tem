@@ -1,0 +1,8 @@
+<!--pages/charts/index5.wxml-->
+<view class="data_chart">
+  <view class="flex-row j_b">
+    <view class="chart_title">全年服务费趋势</view>
+    <view class="chart_unit">单位:万元</view>
+  </view>
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+</view>

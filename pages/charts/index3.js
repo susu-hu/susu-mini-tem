@@ -10,7 +10,7 @@ function initChart(canvas, width, height) {
   var option = {
     //折线图标题
     title: {
-      text: '今日心率',
+      text: '折线图',
       left: 'center'
     },
     // 折线图线条的颜色

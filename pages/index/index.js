@@ -52,6 +52,18 @@ Page({
           {
             name: '自定义指示点2',
             url: '/pages/dots/index2'
+          },
+          {
+            name: 'echarts的折线图',
+            url: '/pages/charts/index3'
+          },
+          {
+            name: 'echarts的折线图1',
+            url: '/pages/charts/index5'
+          },
+          {
+            name: 'echarts的饼图',
+            url: '/pages/charts/index4'
           }
         ]
       },
@@ -75,12 +87,16 @@ Page({
             url: '/pages/another/circleRing/index2'
           },
           {
-            name: '自定义滚动条',
+            name: '自定义滚动条样式',
             url: '/pages/another/customScroll/index'
           },
           {
             name: '一个简单的登录页面',
             url: '/pages/another/login/index'
+          },
+          {
+            name: '头部横向滚动的消息提示',
+            url: '/pages/another/scrollNews/index'
           },
         ]
       },

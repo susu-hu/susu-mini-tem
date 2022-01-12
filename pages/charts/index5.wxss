@@ -1,0 +1,20 @@
+/* pages/charts/index5.wxss */
+.data_chart {
+  width: 750rpx;
+  height: 551rpx;
+  background: #fff;
+  margin: 20rpx 0;
+  padding: 22rpx 24rpx 29rpx;
+  box-sizing: border-box;
+}
+
+.chart_title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.chart_unit {
+  font-size: 26rpx;
+  color: #999999;
+}
