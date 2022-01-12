@@ -161,7 +161,9 @@
         "statusList/index",
         "fileDown/index",
         "vanUpload/index",
-        "vanUpload/index2"
+        "vanUpload/index2",
+        "textarea/index",
+        "newsSwiper/index2"
       ]
     },
     {

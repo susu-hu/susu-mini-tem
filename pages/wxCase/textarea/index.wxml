@@ -1,0 +1,6 @@
+<!--pages/wxCase/textarea/index.wxml-->
+<view>
+  <block wx:for="{{form_list}}" wx:key="form_list">
+    <input placeholder="{{item.place}}"/>
+  </block>
+</view> 

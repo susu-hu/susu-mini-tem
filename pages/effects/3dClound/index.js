@@ -20,7 +20,43 @@ Page({
 
   innit() {
     var tagEle = [{
-        title: '被子',
+        title: '测试1',
+        x: 0,
+        y: 0,
+        z: 0,
+        s: 0,
+        o: 1,
+        f: 15,
+        angleX: 0,
+        angleY: 0,
+        color:"pink"
+      },
+      {
+        title: '测试2',
+        x: 0,
+        y: 0,
+        z: 0,
+        s: 0,
+        o: 1,
+        f: 15,
+        angleX: 0,
+        angleY: 0,
+        color:"#222"
+      },
+      {
+        title: '测试3',
+        x: 0,
+        y: 0,
+        z: 0,
+        s: 0,
+        o: 1,
+        f: 15,
+        angleX: 0,
+        angleY: 0,
+        color:"#234234"
+      },
+      {
+        title: '测试4',
         x: 0,
         y: 0,
         z: 0,
@@ -31,7 +67,7 @@ Page({
         angleY: 0
       },
       {
-        title: '咖啡機',
+        title: '测试5',
         x: 0,
         y: 0,
         z: 0,
@@ -42,7 +78,7 @@ Page({
         angleY: 0
       },
       {
-        title: '飛機',
+        title: '测试6',
         x: 0,
         y: 0,
         z: 0,
@@ -53,7 +89,7 @@ Page({
         angleY: 0
       },
       {
-        title: '电脑',
+        title: '测试7',
         x: 0,
         y: 0,
         z: 0,
@@ -64,7 +100,7 @@ Page({
         angleY: 0
       },
       {
-        title: '手机',
+        title: '测试8',
         x: 0,
         y: 0,
         z: 0,
@@ -75,7 +111,7 @@ Page({
         angleY: 0
       },
       {
-        title: '键盘',
+        title: '测试9',
         x: 0,
         y: 0,
         z: 0,
@@ -86,7 +122,7 @@ Page({
         angleY: 0
       },
       {
-        title: '奶飞机',
+        title: '测试10',
         x: 0,
         y: 0,
         z: 0,
@@ -97,7 +133,7 @@ Page({
         angleY: 0
       },
       {
-        title: '桌子',
+        title: '测试11',
         x: 0,
         y: 0,
         z: 0,
@@ -108,7 +144,7 @@ Page({
         angleY: 0
       },
       {
-        title: '板凳',
+        title: '测试12',
         x: 0,
         y: 0,
         z: 0,
@@ -119,7 +155,7 @@ Page({
         angleY: 0
       },
       {
-        title: '杯子',
+        title: '测试123',
         x: 0,
         y: 0,
         z: 0,
@@ -130,7 +166,7 @@ Page({
         angleY: 0
       },
       {
-        title: '被子',
+        title: '测试14',
         x: 0,
         y: 0,
         z: 0,
@@ -141,7 +177,7 @@ Page({
         angleY: 0
       },
       {
-        title: '咖啡機',
+        title: '测试15',
         x: 0,
         y: 0,
         z: 0,
@@ -152,7 +188,7 @@ Page({
         angleY: 0
       },
       {
-        title: '飛機',
+        title: '测试16',
         x: 0,
         y: 0,
         z: 0,
@@ -163,7 +199,7 @@ Page({
         angleY: 0
       },
       {
-        title: '电脑',
+        title: '测试177',
         x: 0,
         y: 0,
         z: 0,
@@ -174,7 +210,7 @@ Page({
         angleY: 0
       },
       {
-        title: '手机',
+        title: '测试188',
         x: 0,
         y: 0,
         z: 0,
@@ -185,7 +221,7 @@ Page({
         angleY: 0
       },
       {
-        title: '键盘',
+        title: '测试199',
         x: 0,
         y: 0,
         z: 0,
@@ -196,40 +232,7 @@ Page({
         angleY: 0
       },
       {
-        title: '奶飞机',
-        x: 0,
-        y: 0,
-        z: 0,
-        s: 0,
-        o: 1,
-        f: 15,
-        angleX: 0,
-        angleY: 0
-      },
-      {
-        title: '桌子',
-        x: 0,
-        y: 0,
-        z: 0,
-        s: 0,
-        o: 1,
-        f: 15,
-        angleX: 0,
-        angleY: 0
-      },
-      {
-        title: '板凳',
-        x: 0,
-        y: 0,
-        z: 0,
-        s: 0,
-        o: 1,
-        f: 15,
-        angleX: 0,
-        angleY: 0
-      },
-      {
-        title: '杯子',
+        title: '测试200',
         x: 0,
         y: 0,
         z: 0,

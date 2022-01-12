@@ -1,4 +1,8 @@
 /* pages/effects/3dClound/index.wxss */
+page {
+  background-color: #fff;
+}
+
 .tagBall {
   width: 420rpx;
   height: 300rpx;

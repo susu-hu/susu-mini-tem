@@ -56,7 +56,19 @@
         },
         {
           "name": "pages/wxCase/vanUpload/index2",
-          "pathName": "pages/wxCase/vanUpload/index2",
+          "pathName": "pages/wxCase/textarea/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/effects/3dClound/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/wxCase/newsSwiper/index2",
           "query": "",
           "scene": null
         }
