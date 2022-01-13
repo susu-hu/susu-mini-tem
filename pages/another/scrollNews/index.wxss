@@ -1,4 +1,8 @@
 /* pages/another/scrollNews/index.wxss */
+page {
+  background-color: pink;
+}
+
 .box {
   width: 702rpx;
   margin: 10rpx auto;
