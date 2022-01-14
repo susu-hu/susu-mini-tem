@@ -1,2 +1,2 @@
 <!--pages/effects/avatar/index.wxml-->
-<text>pages/effects/avatar/index.wxml</text>
+<image src="../img/1.png" class="aa" mode="widthFix"/>

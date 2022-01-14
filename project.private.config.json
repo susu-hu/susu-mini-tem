@@ -62,13 +62,25 @@
         },
         {
           "name": "pages/another/scrollNews/index",
-          "pathName": "pages/another/scrollNews/index",
+          "pathName": "pages/subPack/navTab/index",
           "query": "",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/charts/index4",
+          "pathName": "pages/effects/avatar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/charts/index6",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/wxCase/vanUpload/index2",
           "query": "",
           "scene": null
         }

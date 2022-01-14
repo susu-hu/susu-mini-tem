@@ -1,4 +1,6 @@
-<view class="head_top"></view>
+<view class="head_top">
+  <!-- <image src="https://i.postimg.cc/Bn1XpkSn/susu.jpg" class="bg_img"/> -->
+</view>
 
 <view class="con">
   <text class="title">上传照片</text>

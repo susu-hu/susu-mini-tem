@@ -64,6 +64,10 @@ Page({
           {
             name: 'echarts的饼图',
             url: '/pages/charts/index4'
+          },
+          {
+            name: 'echarts的柱形图',
+            url: '/pages/charts/index6'
           }
         ]
       },

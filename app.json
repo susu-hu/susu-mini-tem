@@ -33,7 +33,8 @@
     "pages/vantCalen/index",
     "pages/charts/index3",
     "pages/charts/index4",
-    "pages/charts/index5"
+    "pages/charts/index5",
+    "pages/charts/index6"
   ],
   "subPackages": [
     {

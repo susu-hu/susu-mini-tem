@@ -38,7 +38,8 @@ Page({
       url: file.url
     });
     this.setData({
-      ['memu_list[' + index + '].fileList']: list
+      [`memu_list[` + index + `].fileList`]: list
+      // ['memu_list[' + index + '].fileList']: list
     })
 
   },
