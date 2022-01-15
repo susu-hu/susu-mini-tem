@@ -272,6 +272,10 @@ Page({
         name: '雪花飘落01',
         url: '/pages/cssCase/snow/index'
       },
+      {
+        name: '图标飘落',
+        url: '/pages/cssCase/iconFall/index'
+      },
       ]
     },
     {
@@ -532,7 +536,7 @@ Page({
         url: '/pages/effects/snows/index'
       }, {
         name: '雪花飘落canvas（太卡，不建议）',
-        url: '/pages/effects/snows2/index'
+        url: '/pages/effects/snow2/index'
       }, {
 
         name: '弹出的菜单',

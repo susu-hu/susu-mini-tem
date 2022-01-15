@@ -1,0 +1,12 @@
+/* pages/cssCase/iconFall/index.wxss */
+page {
+  background-color: pink;
+}
+
+
+/*点透canvas  */
+.myCanvas {
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+}

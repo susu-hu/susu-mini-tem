@@ -1,0 +1,6 @@
+<!--pages/cssCase/iconFall/index.wxml-->
+<view  bindtap="handleTap">
+  <canvas class="myCanvas" style="width: 100%; height:{{canvasHeight}}px" canvas-id="myCanvas"></canvas>
+  <scroll-view class="scroll-view" scroll-y="true" style="height: 100%;">
+  </scroll-view>
+</view>
