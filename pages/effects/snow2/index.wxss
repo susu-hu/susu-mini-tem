@@ -1,0 +1,8 @@
+/* pages/effects/snow2/index.wxss */
+page {
+  background: linear-gradient(180deg, #6699CC 0%, #B8DBF0 100%);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+}

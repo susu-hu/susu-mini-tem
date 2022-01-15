@@ -1,4 +1,4 @@
-/* pages/another/scrollNews/index.wxss */
+/* pages/another/scrNews/index.wxss */
 page {
   background-color: pink;
 }
@@ -13,7 +13,7 @@ page {
   box-sizing: border-box;
 }
 
-.roll {
+.r {
   white-space: nowrap;
   animation: 10s loop linear infinite normal;
   display: inline-block;

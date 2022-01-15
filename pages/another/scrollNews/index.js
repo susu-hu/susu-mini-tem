@@ -1,4 +1,4 @@
-// pages/another/scrollNews/index.js
+// pages/another/scrNews/index.js
 Page({
 
   /**

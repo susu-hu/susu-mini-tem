@@ -1,0 +1,3 @@
+<!--pages/effects/snow2/index.wxml-->
+<canvas style="width: 100%; height:{{canvasHeight}}px" canvas-id="myCanvas">
+</canvas>
