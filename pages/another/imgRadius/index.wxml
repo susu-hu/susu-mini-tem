@@ -1,0 +1,6 @@
+<!--pages/another/imgRadius/index.wxml-->
+<view style="overflow: hidden;" class="flex-column">
+  <view class="imgbox">
+    <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="im" mode="aspectFill"></image>
+  </view>
+</view>

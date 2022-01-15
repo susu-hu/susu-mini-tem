@@ -102,6 +102,10 @@ Page({
         name: '头部横向滚动的消息提示',
         url: '/pages/another/scrollNews/index'
       },
+      {
+        name: '图片带有圆弧',
+        url: '/pages/another/imgRadius/index'
+      },
       ]
     },
     {

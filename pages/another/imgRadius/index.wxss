@@ -1,0 +1,14 @@
+/* pages/another/imgRadius/index.wxss */
+.imgbox {
+  width: 1151rpx;
+  height: 711rpx;
+  background-color: #FA871E;
+  border-radius: 50%;
+  margin-top: -242rpx;
+  overflow: hidden;
+}
+
+.im{
+  width: 100%;
+  height: 100%;
+}

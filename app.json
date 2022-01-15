@@ -64,7 +64,8 @@
         "clockin/index",
         "inputCode/index",
         "login/index",
-        "scrollNews/index"
+        "scrollNews/index",
+        "imgRadius/index"
       ]
     },
     {
