@@ -1,0 +1,10 @@
+<!--pages/cssCase/smile/index.wxml-->
+<view class="box1">
+  <view class="box2"></view>
+  <view class="box3">
+    <view class="box5"></view>
+  </view>
+  <view class="box4">
+    <view class="box6"></view>
+  </view>
+</view>

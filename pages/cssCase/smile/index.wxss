@@ -1,0 +1,77 @@
+/* pages/cssCase/smile/index.wxss */
+.box1 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: pink;
+  border-radius: 75% 75% 75% 75%;
+  margin: 50px auto;
+}
+
+.box2 {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 95px;
+  border: 2px solid black;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  /*如果“/”前后的值都存在，那么“/”前面的值设置其水平半径，“/”后面值设置其垂直半径。*/
+  border-top: none;
+  animation: box2 2s infinite;
+}
+
+.box3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 95px;
+  background: #fff;
+}
+
+.box4 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 95px;
+  background: #fff;
+}
+
+.box5,
+.box6 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  background: #000;
+  animation: box 2s infinite;
+}
+
+@keyframes box {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes box2 {
+  0% {
+    border: 2px solid black;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    border-top: none;
+  }
+
+  100% {
+    border: 2px solid black;
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+  }
+}

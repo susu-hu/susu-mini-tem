@@ -5,3 +5,5 @@
     <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="im" mode="aspectFill"></image>
   </view>
 </view>
+<view class="mb20">方法二:border-radius</view>
+<image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" mode="aspectFill" class="box" />
