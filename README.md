@@ -3,7 +3,7 @@
 #### 介绍
 微信小程序各种demo合集
 
-### 开源不易，您如果觉得项目不错的话可以给项目一个 Star 嘛，也是对我一直更新代码的一种鼓励啦，谢谢各位的支持。（最近很失望，可能要私密该仓库了）
+### 开源不易，您如果觉得项目不错的话可以给项目一个 Star 嘛，也是对我一直更新代码的一种鼓励啦，谢谢各位的支持。
 
 #### 软件架构
 软件架构说明
@@ -111,6 +111,7 @@ step5：构建npm）
 96. vant上传图片
 97. swiper展示数量的不同，swiper高度随之变化
 98. 横向消息滚动条
+99. css实现一个笑脸
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -216,6 +217,7 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/upload.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/swiperHeight.png)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%A8%AA%E5%90%91%E6%BB%9Awx.gif)
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/smile.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
