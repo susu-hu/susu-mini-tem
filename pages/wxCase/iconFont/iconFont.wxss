@@ -1,0 +1,32 @@
+/* 当添加新的图标之后，@font-face需要进行更新 */
+@font-face {
+  font-family: 'iconfont';
+  /* Project id 2361238 */
+  src: url('//at.alicdn.com/t/font_2361238_cxshqh1m3m7.woff2?t=1642320886173') format('woff2'),
+    url('//at.alicdn.com/t/font_2361238_cxshqh1m3m7.woff?t=1642320886173') format('woff'),
+    url('//at.alicdn.com/t/font_2361238_cxshqh1m3m7.ttf?t=1642320886173') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_01 {
+  font-size: 40px;
+}
+
+.icon_01::before {
+  content: "\e6f1";
+}
+
+.icon_02::before {
+  content: "\e7bd";
+}
+
+.icon_03::before {
+  content: "\e61a";
+}

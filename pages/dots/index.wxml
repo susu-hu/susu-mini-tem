@@ -1,15 +1,15 @@
 <!--pages/dots/index.wxml-->
 <view class="top">
-  <swiper current="{{swiperCurrent}}" bindchange="swiperChange"  circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{goodsInfo.imgList}}" wx:key="index">
+  <swiper current="{{swiperCurrent}}" bindchange="swiperChange" circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgList}}" wx:key="imgList">
       <swiper-item>
-        <image src="{{item}}" data-src="{{item}}" class="img_goodcover" bindtap="previewImage"></image>
+        <image src="{{item.img}}" data-src="{{item.img}}" class="img_goodcover" bindtap="previewImage"></image>
       </swiper-item>
     </block>
   </swiper>
   <!-- 指示点 -->
   <view class="dots flex-row">
-    <block wx:for="{{goodsInfo.imgList.length}}"wx:key="index">
+    <block wx:for="{{imgList.length}}" wx:key="index">
       <view class="{{index==swiperCurrent?'active':'dot'}}" data-index="{{index}}"></view>
     </block>
   </view>

@@ -1,14 +1,24 @@
 /* pages/another/imgRadius/index.wxss */
+page {
+  background-color: #fff;
+}
+
+.mb20 {
+  margin-bottom: 20rpx;
+  color: #333;
+  font-size: 29rpx;
+  padding: 0 20px;
+}
+
 .imgbox {
   width: 1151rpx;
   height: 711rpx;
-  background-color: #FA871E;
   border-radius: 50%;
   margin-top: -242rpx;
   overflow: hidden;
 }
 
-.im{
+.im {
   width: 100%;
   height: 100%;
 }

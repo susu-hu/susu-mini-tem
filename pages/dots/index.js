@@ -9,21 +9,19 @@ Page({
     interval: 3000, //自动切换时间间隔,3s
     duration: 1000, //  滑动动画时长1s
     swiperCurrent: '',
-    goodsInfo: {
-      imgList: [{
-          img: 'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
-        },
-        {
-          img: 'https://i.postimg.cc/Gm7KjGmN/111.jpg',
-        },
-        {
-          img: 'https://i.postimg.cc/Bv28vfkg/222.webp',
-        },
-        {
-          img: 'https://i.postimg.cc/65STLQNc/333.webp'
-        },
-      ]
-    }
+    imgList: [{
+      img: 'https://i.postimg.cc/Bn1XpkSn/susu.jpg',
+    },
+    {
+      img: 'https://i.postimg.cc/Gm7KjGmN/111.jpg',
+    },
+    {
+      img: 'https://i.postimg.cc/Bv28vfkg/222.webp',
+    },
+    {
+      img: 'https://i.postimg.cc/65STLQNc/333.webp'
+    },
+    ]
 
   },
   swiperChange: function (e) {
@@ -32,59 +30,18 @@ Page({
     })
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  /*
+    * 图片预览
+    * @param e
+    */
+  //  previewImage(e) {
+  //   let currentUrl = e.currentTarget.dataset.src;
+  //   let urls = this.data.imgList
+  //   wx.previewImage({
+  //     current: currentUrl, // 当前显示图片的http链接
+  //     urls: urls// 需要预览的图片http链接列表
+  //   })
+  // },
 
-  },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

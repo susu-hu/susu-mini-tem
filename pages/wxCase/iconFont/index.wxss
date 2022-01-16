@@ -1,0 +1,15 @@
+/* pages/wxCase/iconFont/index.wxss */
+@import "./iconFont.wxss";
+
+page {
+  background-color: #fff;
+}
+
+.box {
+  margin: 30rpx auto;
+  width: 700rpx;
+}
+
+.mb20 {
+  margin-bottom: 20rpx;
+}

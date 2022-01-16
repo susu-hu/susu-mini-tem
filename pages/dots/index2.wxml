@@ -9,7 +9,7 @@
 
 <!-- 页码 -->
 <view class="swiper-box1">
-  <swiper  bindchange="monitorCurrent" indicator-dots="{{false}}" circular="true" current="{{current}}" autoplay="{{false}}">
+  <swiper bindanimationfinish="monitorCurrent"  indicator-dots="{{false}}" circular="true" current="{{current}}" autoplay="{{false}}">
     <block wx:for="{{banner_list}}" wx:key="*this">
       <swiper-item>
         <image src="{{item}}" class="slide-image"  mode="aspectFill"></image>
@@ -34,7 +34,7 @@
   <view class="dots-parent">
     <block wx:for="{{banner_list.length}}" wx:for-index="index" wx:key="*this">
       <view class="progress-line-bg">
-        <view class="{{current1==index?'progress-line':''}}" style="width:{{progressNum}}%;"></view>
+        <view class="{{current1==index?'progress-line':''}}" style="width:{{progressNum}}%"></view>
       </view>
     </block>
   </view>

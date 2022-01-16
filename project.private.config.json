@@ -79,8 +79,8 @@
           "scene": null
         },
         {
-          "name": "",
-          "pathName": "pages/wxCase/vanUpload/index2",
+          "name": "pages/wxCase/iconFont/index",
+          "pathName": "pages/wxCase/iconFont/index",
           "query": "",
           "scene": null
         }

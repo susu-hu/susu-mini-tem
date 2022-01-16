@@ -1,4 +1,5 @@
 <!--pages/another/imgRadius/index.wxml-->
+<view class="mb20">方法一:不推荐，图片适配不好,被放的很大</view>
 <view style="overflow: hidden;" class="flex-column">
   <view class="imgbox">
     <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="im" mode="aspectFill"></image>
