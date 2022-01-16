@@ -7,3 +7,9 @@
 </view>
 <view class="mb20">方法二:border-radius</view>
 <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" mode="aspectFill" class="box" />
+
+<view class="mb20">border-radius设置</view>
+<view class="a"></view>
+<view class="b"></view>
+<view class="c"></view>
+<view class="d"></view>

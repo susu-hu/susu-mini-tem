@@ -28,3 +28,35 @@ page {
   height: 300px;
   border-radius: 100% 100% 100% 100% / 0% 0% 18% 18%;
 }
+
+.a {
+  border-radius: 50% 50% 50% 50% / 0% 0% 18% 18%;
+  width: 750rpx;
+  height: 300px;
+  margin: 30px auto;
+  background-color: #222;
+}
+
+.b{
+  width: 750rpx;
+  height: 300px;
+  margin: 30px auto;
+  background-color: #aaaaff;
+  border-radius: 50% / 100% 100% 0 0;
+}
+
+.c {
+  border-radius: 100% 0 0 0;
+  width: 750rpx;
+  height: 300px;
+  margin: 30px auto;
+  background-color: #aa557f;
+}
+
+.d {
+  border-radius: 100% 0 0 100% / 50%;
+  width: 750rpx;
+  height: 300px;
+  margin: 30px auto;
+  background-color: #00aa7f;
+}
