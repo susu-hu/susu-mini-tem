@@ -1,0 +1,26 @@
+<!--pages/apiDemo/moveCert/index3.wxml-->
+<button bindtap="visidlisd">滑动验证</button>
+<!-- 滑动验证弹窗 -->
+<view class="slide_model" wx:if="{{slidebel}}">
+  <view>
+    <view class="canvas_img">
+      <canvas wx:if="{{!canfile_image}}" style="width: 300px; height: 104px;" canvas-id="firstCanvas"></canvas>
+      <image wx:if="{{canfile_image}}" class="canvas_srinl" src="/images/slideimage_{{canfile_index}}.jpg"></image>
+      <view class="canvas_view" style="left:{{canfile_x}}px;top:{{canfile_y}}px;"></view>
+      <image class="canfile_image" style="top:{{canfile_y}}px;left:{{slide_clientX > 250 ? 250 : slide_clientX}}px;" src="{{canfile_image}}"></image>
+    </view>
+    <view class="canvas_slide">
+      <view class="canvas_width" style="width:{{slide_clientX > 260?260:slide_clientX}}px;{{slide_status == 2?'background:#52CCBA;':''}}{{slide_status == 3?'background:#F57A7A;':''}}"></view>
+      <view class="canvas_kus" bindtouchstart="slide_start" bindtouchmove="slide_hmove" bindtouchend="slide_chend" style="left:{{slide_clientX > 260?260:slide_clientX}}px;{{slide_status == 0?'color: #333;':''}}{{slide_status == 1?'background:#1991FA;':''}}{{slide_status == 2?'background:#52CCBA;':''}}{{slide_status == 3?'background:#F57A7A;':''}}">
+        <view wx:if="{{slide_status < 2}}" class="cuIcon-back_android"></view>
+        <view wx:if="{{slide_status == 2}}" class="cuIcon-check"></view>
+        <view wx:if="{{slide_status == 3}}" class="cuIcon-close"></view>
+      </view>
+      <view wx:if="{{slide_status == 0}}">拖动左边滑块完成上方拼图</view>
+    </view>
+    <view class="canvas_guil">
+      <view bindtap="visidlisd" class="cuIcon-roundclose"></view>
+      <view bindtap="slide_tap" class="cuIcon-refresh"></view>
+    </view>
+  </view>
+</view>

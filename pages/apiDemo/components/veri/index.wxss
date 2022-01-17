@@ -1,0 +1,126 @@
+/* pages/apiDemo/components/veri/index.wxss */
+/* 拼图滑动验证 */
+.slide_model {
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide_wrapper {
+  float: left;
+  z-index: 1;
+  position: relative;
+  width: 90%;
+  background-color: #fff;
+}
+
+.canvas_img {
+  width: 90%;
+  min-height: 150px;
+  position: relative;
+  margin: 25rpx auto 0;
+}
+
+#firstCanvas {
+  z-index: 1 !important;
+  width: 100%;
+  height: 100%;
+}
+
+/* 被抠的空格 */
+.canvas_view {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* 移动的空格 */
+.canfile_image {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+}
+
+.canfile_image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.8) inset;
+}
+
+.canvas_slide {
+  width: 90%;
+  height: 45px;
+  background: #eee;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 0 auto;
+  position: relative;
+  font-size: 26rpx;
+}
+
+/* 滑条上滑块经过的部分 */
+.canvas_width {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45px;
+  background-color: #1991FA;
+  width: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 滑块 */
+.canvas_kus {
+  width: 48px;
+  height: 45px;
+  background-color: #fff;
+  font-size: 36rpx;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ddd;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.canvas_kus>view {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 50% 40%;
+  background-repeat: no-repeat;
+}
+
+/* 底部按钮位置 */
+.canvas_guil {
+  width: 100%;
+  border-top: 1px solid #f4f4f4;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  float: left;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.canvas_guil>image {
+  margin-left: 30rpx;
+}

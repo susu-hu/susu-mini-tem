@@ -1,0 +1,38 @@
+<!--pages/apiDemo/components/veri/index.wxml-->
+<!-- 滑动验证弹窗 -->
+<view class="slide_model" wx:if="{{slidebel}}">
+  <view class="slide_wrapper">
+    <!-- 拼图图片部分 -->
+    <view class="canvas_img" id="canvas_img">
+      <!-- 背景图片 -->
+      <canvas style="width: {{canvas_width}}px; height: {{canvas_width * 13 / 28}}px;" canvas-id="firstCanvas" id="firstCanvas"></canvas>
+      <!-- 被抠方块 -->
+      <cover-view class="canvas_view" style="left:{{canfile_x}}px;top:{{canfile_y}}px;"></cover-view>
+      <!-- 可移动空格 -->
+      <cover-image class="canfile_image" style="top:{{canfile_y}}px;left:{{slide_clientX > canvas_width-50 ? canvas_width-50 : slide_clientX}}px;" src="{{canfile_image}}"></cover-image>
+    </view>
+    <!-- 滑块 -->
+    <view class="canvas_slide">
+      <view class="canvas_width" style="width:{{slide_clientX > canvas_width-50?canvas_width-50:slide_clientX}}px;{{slide_status == 2?'background:#52CCBA;':''}}{{slide_status == 3?'background:#F57A7A;':''}}">
+      </view>
+      <view class="canvas_kus" bindtouchstart="slide_start" bindtouchmove="slide_hmove" bindtouchend="slide_chend" style="left:{{slide_clientX > canvas_width-50?canvas_width-50:slide_clientX}}px; {{slide_status == 0?'color: #333;':''}} {{slide_status == 1?'background:#1991FA;':''}} {{slide_status == 2?'background:#52CCBA;':''}} {{slide_status == 3?'background:#F57A7A;':''}}">
+        <view wx:if="{{slide_status < 2}}" style="background-image: {{slide_status==0?'url(/imgs/puzzle-uncheck.png)':'url(/imgs/puzzle-uncheck2.png)'}}">
+        </view>
+        <view wx:if="{{slide_status == 2}}">
+          <image src="/imgs/puzzle-checked.png" mode="aspectFit" style="width:40rpx;height:40rpx;margin-top:10px;">
+          </image>
+        </view>
+        <view wx:if="{{slide_status == 3}}">
+          <image src="/imgs/puzzle-fail.png" mode="aspectFit" style="width:40rpx;height:40rpx;margin-top:10px;">
+          </image>
+        </view>
+      </view>
+      <view wx:if="{{slide_status == 0 || slide_status == 1}}">拖动左边滑块完成上方拼图</view>
+    </view>
+    <!-- 底部按钮 -->
+    <view class="canvas_guil">
+      <image bindtap="visidlisd" class="footer-icon" src="/imgs/puzzle-close.png" style="width: 50rpx; height: 50rpx;"></image>
+      <image bindtap="slide_tap" class="footer-icon" src="/imgs/puzzle-fresh.png" style="width: 48rpx; height: 48rpx;"></image>
+    </view>
+  </view>
+</view>

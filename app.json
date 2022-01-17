@@ -232,7 +232,11 @@
       "root": "pages/apiDemo/",
       "pages": [
         "accelerometer/index",
-        "shad/index"
+        "shad/index",
+        "canvastoImg/index",
+        "moveCert/index",
+        "moveCert/index2",
+        "moveCert/index3"
       ]
     }
   ],

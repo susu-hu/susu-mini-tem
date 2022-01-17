@@ -572,6 +572,10 @@ Page({
           name: '摇一摇',
           url: '/pages/apiDemo/shad/index'
         },
+        {
+          name: '图片添加边框',
+          url: '/pages/apiDemo/canvastoImg/index'
+        },
       ]
     }
     ]

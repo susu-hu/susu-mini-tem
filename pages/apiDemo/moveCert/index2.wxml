@@ -1,0 +1,6 @@
+<!--pages/apiDemo/moveCert/index2.wxml-->
+<view style="display: none;">
+  拼图验证
+  用canvas与微信官方组件movable-area、movable-view实现，加载图片，裁剪特殊形状图片后加载到image上，用movable-view的移动来控制image移动
+</view>
+<veri id="puzzleVerify" bind:puzzleVerify="countDown" sildeBlockCont="{{sildeBlockCont}}"></veri>

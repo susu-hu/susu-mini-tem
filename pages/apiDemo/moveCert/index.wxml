@@ -1,0 +1,13 @@
+<!--pages/apiDemo/moveCert/index.wxml-->
+<view style="display: none;">
+  滑块验证
+  用微信官方组件movable-area、movable-view实现，方便快捷。
+
+  无规则验证码
+  用canvas实现，先画随机字母，再画随机线条，再画随机点，如果有其他更好想法，还可以再画随机其他。
+</view>
+<movable-area class="content" style="width:{{area_width}}%">拖动滑块验证
+  <movable-view class='box' style='width:{{box_width}}rpx' friction="{{100}}" direction="horizontal" x="{{x}}" damping="{{500}}" bindchange="drag" bindtouchend="dragOver">
+    <view class='movable-icon'></view>
+  </movable-view>
+</movable-area>
