@@ -1,66 +1,155 @@
 // pages/charts/index6.js
+import * as echarts from '../../components/ec-canvas/echarts';
+// function initChart(canvas, width, height, dpr) {
+//   const chart = echarts.init(canvas, null, {
+//     width: width,
+//     height: height,
+//     devicePixelRatio: dpr //解决小程序视图模糊的问题，必写
+//   });
+//   canvas.setChart(chart);
+
+//   chart.setOption(option);
+//   return chart;
+// }
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    ec: {
+      lazyLoad: true // 延迟加载
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
+
   onLoad: function (options) {
-
+    this.echartsComponnet = this.selectComponent('#mychart-dom-pie');
+    this.getData(); //获取数据
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  getData() {
+    this.echartsComponnet.init((canvas, width, height, dpr) => {
+      // 初始化图表
+      const Chart = echarts.init(canvas, null, {
+        width: width,
+        height: height,
+        devicePixelRatio: dpr
+      });
+      Chart.setOption(this.getOption());
+      // 注意这里一定要返回 chart 实例，否则会影响事件处理等
+      return Chart;
+    });
   },
+  getOption() {
+    var checkName = '今天';
+    var dataLength = 14; //默认的数据长度，既真实数组的长度，必须设置，长度来源：后台传输
+    //这里是echart基础配置
+    var option = {
+      backgroundColor: 'rgba(25,1,169,.05)',
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'shadow',
+          backgroundColor: 'rgba(245, 245, 245, 1)',
+          borderWidth: 1,
+          // padding: 10,
+        }
+      },
+      dataZoom: [{
+        show: false, //是否显示下方滚动条
+        realtime: true,
+        startValue: dataLength - 7,
+        endValue: dataLength - 1, //显示数据结束位置
+      },
+      {
+        type: 'inside',
+        realtime: true,
+        startValue: dataLength - 7,
+        endValue: dataLength - 1, //显示数据结束位置
+      }
+      ],
+      grid: {
+        top: '20%',
+        right: '0',
+        left: '0',
+        bottom: '12%'
+      },
+      xAxis: [{
+        type: 'category',
+        data: ['02.25', '02.26', '02.27', '02.28', '03.01', '03.02', '03.02', '02.25', '02.26', '02.27', '02.28', '03.01', '03.02', '今天'],
+        axisLine: {
+          lineStyle: {
+            color: 'rgba(255,255,255,0.12)'
+          }
+        },
+        position: 'top',
+        axisLabel: {
+          color: function (params) {
+            //通过判断选中的名字改变柱子的颜色样式
+            if (checkName === params) {
+              return 'rgba(38,74,255,1)';
+            } else {
+              return 'rgba(38,74,255,.3)';
+            }
+          },
+          textStyle: {
+            fontSize: 14
+          },
+          padding: [10, 0]
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+        },
 
-  },
+      }],
+      yAxis: [{
+        show: false,
+        axisLabel: {
+          formatter: '{value}',
+          color: '#e2e9ff',
+        },
+        axisLine: {
+          show: false
+        },
+        splitLine: {
+          lineStyle: {
+            color: 'rgba(255,255,255,0.12)'
+          }
+        }
+      }],
+      series: [{
+        type: 'bar',
+        data: [300, 450, 770, 203, 255, 188, 156, 300, 450, 770, 203, 255, 188, 156],
+        // itemStyle: {
+        //     normal: {
+        //         color: 'rgba(38,74,255,.3)',
+        //     }
+        // },
+        itemStyle: {
+          normal: {
+            label: {
+              show: true
+            },
+            color: function (params) {
+              //通过判断选中的名字改变柱子的颜色样式
+              if (checkName === params.name) {
+                return 'rgba(38,74,255,1)';
+              } else {
+                return 'rgba(38,74,255,.3)';
+              }
+            }
+          }
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+        },
+        label: {
+          normal: {
+            show: true,
+            position: 'top',
+            textStyle: {
+              color: '#B9C5FC',
+              fontSize: '12'
+            },
+            formatter: '{c}分'
+          }
+        }
+      }]
+    };
+    return option;
   }
 })

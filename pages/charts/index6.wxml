@@ -1,2 +1,4 @@
 <!--pages/charts/index6.wxml-->
-<text>pages/charts/index6.wxml</text>
+<view style="width: 100%;height: 500px;">
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+</view>
