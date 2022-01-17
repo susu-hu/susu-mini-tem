@@ -65,7 +65,8 @@
         "inputCode/index",
         "login/index",
         "scrollNews/index",
-        "imgRadius/index"
+        "imgRadius/index",
+        "imgHead/index"
       ]
     },
     {

@@ -83,6 +83,12 @@
           "pathName": "pages/cssCase/smile/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/another/imgHead/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

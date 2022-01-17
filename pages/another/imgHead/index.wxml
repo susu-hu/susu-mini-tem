@@ -1,0 +1,4 @@
+<!--pages/another/imgHead/index.wxml-->
+<view>
+  <image src=""/>
+</view>
