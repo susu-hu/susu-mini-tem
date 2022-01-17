@@ -1,0 +1,4 @@
+<!--pages/apiDemo/moveCert/index5.wxml-->
+<view class="canvas">
+	<canvas type="2d" id="myCanvas" bindtap='crash'></canvas>
+</view>

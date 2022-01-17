@@ -1,0 +1,11 @@
+/* pages/apiDemo/moveCert/index5.wxss */
+.canvas {
+  overflow: hidden;
+  width: 89px;
+  height: 34px;
+  position: fixed;
+  margin-top: 5px;
+  left: 5px;
+  text-align: center;
+  border-radius: 5px;
+}

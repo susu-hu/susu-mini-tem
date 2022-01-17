@@ -1,0 +1,3 @@
+<!--pages/apiDemo/moveCert/index4.wxml-->
+<input class="input font_14" placeholder-class="grey" type="text" placeholder="输入图形验证码" maxlength="4" model:value="{{guiCode}}" bindinput="bindinput" />
+<canvas class="guiCode" type="2d" id="guiCodeCanvas" bindtap="guiCodeTap"></canvas>

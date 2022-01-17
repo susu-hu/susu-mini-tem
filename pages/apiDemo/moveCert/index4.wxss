@@ -1,0 +1,12 @@
+/* pages/apiDemo/moveCert/index4.wxss */
+.input {
+  width: calc(165vmin / 3.75);
+  height: 100%;
+  padding: 0 calc(12vmin / 3.75);
+  box-sizing: border-box;
+}
+
+.guiCode {
+  width: calc(70vmin / 3.75);
+  height: 100%;
+}
