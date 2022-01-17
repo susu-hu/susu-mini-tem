@@ -1,0 +1,12 @@
+/* pages/apiDemo/shad/index.wxss */
+page {
+  background-color: #fff;
+}
+
+.sja {
+  display: block;
+  margin: 50px auto;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}

@@ -559,6 +559,20 @@ Page({
         url: '/pages/effects/3dClound/index'
       }
       ]
+    },
+    {
+      showmore: true,
+      name: '分包api Demos',
+      list: [
+        {
+          name: '水平仪',
+          url: '/pages/apiDemo/accelerometer/index'
+        },
+        {
+          name: '摇一摇',
+          url: '/pages/apiDemo/shad/index'
+        },
+      ]
     }
     ]
   },

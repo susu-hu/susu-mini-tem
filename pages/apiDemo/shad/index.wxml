@@ -1,0 +1,4 @@
+<!--pages/apiDemo/shad/index.wxml-->
+<view animation="{{animation}}">
+  <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="sja"></image>
+</view>

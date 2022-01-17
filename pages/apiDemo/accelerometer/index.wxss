@@ -1,0 +1,4 @@
+/* pages/apiDemo/accelerometer/index.wxss */
+page {
+  background-color: #fff;
+}

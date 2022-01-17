@@ -227,6 +227,13 @@
         "avatar/index",
         "snow2/index"
       ]
+    },
+    {
+      "root": "pages/apiDemo/",
+      "pages": [
+        "accelerometer/index",
+        "shad/index"
+      ]
     }
   ],
   "tabBar": {

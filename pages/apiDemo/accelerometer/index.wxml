@@ -1,0 +1,7 @@
+<!--pages/apiDemo/accelerometer/index.wxml-->
+<view class="container">
+  <view class="view-row" style="color:#aaa;font-size:36rpx;margin:30rpx;border-bottom:1rpx solid #aaa;padding:10rpx">hardware—水平仪</view>
+  <view style="font-size:32rpx;color:#aaa">加速计实现(请竖直摆放手机)</view>
+  <view style="width:300rpx;height:10rpx;background:{{backgroundColor}};margin-top:200rpx;transform: rotate({{rotateXY}}deg);border-radius:5rpx;"></view>
+  <view class="view-row" style="color:#aaa;font-size:36rpx;margin:30rpx;padding:10rpx;margin-top:200rpx;">水平偏移{{degreesXY}}°</view>
+</view>
