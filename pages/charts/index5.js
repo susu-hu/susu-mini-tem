@@ -2,7 +2,7 @@
 import * as echarts from '../../components/ec-canvas/echarts';
 Page({
   data: {
-    
+
     ec: {
       lazyLoad: true // 延迟加载
     }
@@ -14,20 +14,6 @@ Page({
     this.getData(); //获取数据
   },
 
-
-  onShow: function () {
-
-  },
-
-
-  onPullDownRefresh: function () {
-
-  },
-
-
-  onReachBottom: function () {
-
-  },
   /**
    * 获取图表数据
    */
@@ -70,9 +56,21 @@ Page({
         },
 
       }],
+      // 悬浮图标
+      tooltip: {
+        show: true,
+        trigger: 'axis',
+        position: function (pos, params, dom, rect, size) {
+          var obj = {
+            top: 60
+          };
+          obj[['left', 'right'][+(pos[0] < size.viewSize[0] / 2)]] = 5;
+          return obj;
+        }
+      },
     };
     return option;
   },
-  
+
 
 })

@@ -1,16 +1,5 @@
 // pages/charts/index6.js
 import * as echarts from '../../components/ec-canvas/echarts';
-// function initChart(canvas, width, height, dpr) {
-//   const chart = echarts.init(canvas, null, {
-//     width: width,
-//     height: height,
-//     devicePixelRatio: dpr //解决小程序视图模糊的问题，必写
-//   });
-//   canvas.setChart(chart);
-
-//   chart.setOption(option);
-//   return chart;
-// }
 Page({
 
   data: {
