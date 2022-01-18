@@ -3,26 +3,18 @@ Page({
 
 
   data: {
+    doc: ['docx', 'doc'],
+    excel: ['xlsx'],
+    ppt: ['ppt'],
     downloadFile: [{
         name: "test.xlsx",
-        size: 8714,
+        path: "https://eln-public.oss-cn-shanghai.aliyuncs.com/dev/ee74ca70-7a62-45e7-849c-751c9dab8d00.xlsx",
         time: 1641448025,
-        path: "https://susu-file.oss-cn-beijing.aliyuncs.com/susu/test.xlsx",
-        type: "file"
       },
       {
-        name: "testppt.ppt",
-        size: 0,
-        time: 1641448055,
-        path: "http://tmp/sIpYAAEIYPQPd41d8cd98f00b204e9800998ecf8427e.ppt",
-        type: "file"
-      },
-      {
-        name: "苏苏word.docx",
-        size: 11639,
-        time: 1641446030,
-        path: "http://tmp/fqjFrp737iPIb5c37166c350c0551919c488bc663057.docx",
-        type: "file"
+        name: "test.docx",
+        path: "http://124.223.40.74:8233/img/Test.doc",
+        time: 1641448025,
       }
     ], //下载到本地的文件列表
     upfilelist: [], // 要上传的文件列表 

@@ -98,7 +98,13 @@
         },
         {
           "name": "",
-          "pathName": "pages/apiDemo/getUserInfo/index",
+          "pathName": "pages/effects/databoad/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/wxCase/fileDown/index",
           "query": "",
           "scene": null
         }

@@ -16,10 +16,22 @@ function timeFormat(time) {
 }
 
 function suffix(e, type) {
-  return e && e.indexOf(type) != -1
+  // console.log(type.constructor === Array)
+  // return e && e.indexOf(type) != -1
+  var flieArr = e.split('.');
+  // 获取分割后数组最后一项就是后缀
+  var suffix = flieArr[flieArr.length - 1];
+  var flag = false;
+  type.forEach(function (i) {
+    if (i == suffix) {
+      flag = true
+    }
+  })
+  return e && flag
+  // return e && type.includes(e)
 }
 //导出
 module.exports = {
   timeFormat: timeFormat,
-  suffix:suffix
+  suffix: suffix
 }

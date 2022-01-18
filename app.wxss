@@ -98,9 +98,19 @@ button::after {
 .j_c {
   justify-content: center;
 }
-.j_e{
+
+.j_e {
   justify-content: flex-end;
 }
-.j_a{
+
+.j_a {
   justify-content: space-around;
+}
+
+.flex_1 {
+  flex: 1;
+}
+
+.flex_0 {
+  flex-shrink: 0;
 }

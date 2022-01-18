@@ -19,9 +19,9 @@
 <view class="box">
   <block wx:for="{{downloadFile}}" wx:key="downloadFile">
     <view class="flex-row item" catchtap="openfile" data-path="{{item.path}}">
-      <image src="../img/word.png" wx:if="{{time.suffix(item.path,'docx')}}" class="icon"></image>
-      <image src="../img/excel.png" wx:if="{{time.suffix(item.path,'xlsx')}}" class="icon"></image>
-      <image src="../img/ppt.png" wx:if="{{time.suffix(item.path,'ppt')}}" class="icon"></image>
+      <image src="../img/word.png" wx:if="{{time.suffix(item.path,doc)}}" class="icon"></image>
+      <image src="../img/excel.png" wx:if="{{time.suffix(item.path,excel)}}" class="icon"></image>
+      <image src="../img/ppt.png" wx:if="{{time.suffix(item.path,ppt)}}" class="icon"></image>
       <view class="name text_ellipsis">{{item.name}}</view>
       <view>{{time.timeFormat(item.time)}}</view>
       <view class="del">

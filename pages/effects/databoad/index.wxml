@@ -1,0 +1,71 @@
+<!--pages/effects/databoad/index.wxml-->
+<view class="cust_head">
+  <view class="head_title" style="height:{{navHeight}}px;">
+    <view class="flex-row " style="height:{{navObj}}px;padding-top:{{navTop}}px;">
+      <view class="back_view flex-row" catchtap="goBack">
+        <view class="i"></view>
+      </view>
+      <text class="title_text">基础数据</text>
+    </view>
+  </view>
+  <view class="head_con flex-row j_c">
+    <view class="flex-column flex_1">
+      <text>9999</text>
+      <text class="head_con_title">测试</text>
+    </view>
+    <view class="flex-column flex_1">
+      <text>888</text>
+      <text class="head_con_title">测试</text>
+    </view>
+  </view>
+</view>
+<view class="con_data">
+  <view>
+    <view class="data_title">基础数据</view>
+    <view class="flex-row j_b">
+      <block wx:for="{{dash_data}}" wx:key="dash_data">
+        <view class="flex-column">
+          <view class="data_num {{item.type==1 &&'data_num2'}}">{{item.num}}</view>
+          <text class=" data_name">{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view>
+    <view class="data_title mt57">销售金额</view>
+    <view class="flex-row j_b">
+      <view class="sale_box">
+        <view class="flex-row">
+          <view class="sale_day">日</view>
+          <view>当日销售金额</view>
+        </view>
+        <view class="sale_price">25<text>万元</text></view>
+      </view>
+      <view class="sale_box">
+        <view class="flex-row">
+          <view class="sale_day sales_month">月</view>
+          <view>当月销售金额</view>
+        </view>
+        <!--金额最多到亿 -->
+        <view class="sale_price">1223<text>万元</text></view>
+      </view>
+    </view>
+    <view class="ser_free">
+      <view class="flex-row j_b ser_box">
+        <view class="flex_0">
+          <view class="ser_title">上月预估服务费</view>
+          <view>（以实际发放为准）</view>
+        </view>
+        <view class="ser_price text_ellipsis">100000000<text>元</text></view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 图表 -->
+<view class="data_chart">
+  <view class="flex-row j_b">
+    <view class="chart_title">全年服务费趋势</view>
+    <view class="chart_unit">单位:万元</view>
+  </view>
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+</view>

@@ -1,0 +1,207 @@
+/* pages/effects/databoad/index.wxss */
+/* pages/basicData/index.wxss */
+page {
+  padding-bottom: 40rpx;
+}
+
+.cust_head {
+  width: 750rpx;
+  height: 480rpx;
+  position: relative;
+  z-index: 11;
+  background: orange;
+}
+
+.head_title {
+  font-size: 32rpx;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.back_view {
+  width: 100rpx;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  height: 100%;
+}
+
+.i {
+  border: solid #fff;
+  border-width: 0 4rpx 4rpx 0;
+  display: inline-block;
+  padding: 11rpx;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  font-weight: bold;
+}
+
+.title_text {
+  flex: 1;
+  text-align: center;
+  padding-right: 100rpx;
+  font-weight: bold;
+}
+
+.head_con {
+  margin: 30rpx auto;
+  font-size: 52rpx;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.head_con::after {
+  content: "";
+  position: absolute;
+  width: 7rpx;
+  height: 51rpx;
+  background: #fff;
+  border-radius: 4rpx;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head_con_title {
+  font-size: 26rpx;
+  color: #FFFFFF;
+  margin-top: 8rpx;
+}
+
+.con_data {
+  width: 750rpx;
+  background: #fff;
+  border-radius: 50rpx 50rpx 0px 0px;
+  margin: -137rpx auto 0;
+  position: relative;
+  z-index: 22;
+  box-sizing: border-box;
+  padding: 47rpx 24rpx 28rpx;
+  min-height: 300rpx;
+}
+
+.data_title {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 38rpx;
+}
+
+.data_num {
+  width: 97rpx;
+  height: 97rpx;
+  background: rgba(240, 240, 252, 0.39);
+  border-radius: 10rpx;
+  font-size: 38rpx;
+  line-height: 97rpx;
+  color: #4242CB;
+  text-align: center;
+}
+
+.data_name {
+  margin-top: 22rpx;
+  font-size: 24rpx;
+  color: #333333;
+}
+
+.data_num2 {
+  background: rgba(222, 238, 255, 0.39);
+  color: #116AC7;
+}
+
+.mt57 {
+  margin-top: 57rpx;
+}
+
+.sale_box {
+  position: relative;
+  width: 343rpx;
+  height: 171rpx;
+  box-sizing: border-box;
+  padding: 22rpx 16rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  z-index: 11;
+  background: skyblue;
+  border-radius: 10rpx;
+}
+
+.ser_free {
+  margin-top: 16rpx;
+  width: 702rpx;
+  height: 120rpx;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 59rpx 0 36rpx;
+  background: orange;
+  border-radius: 10rpx;
+}
+
+.sale_day {
+  width: 35rpx;
+  height: 35rpx;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35rpx;
+  font-size: 24rpx;
+  color: #6186FC;
+  margin-right: 12rpx;
+  flex-shrink: 0;
+}
+
+.sales_month {
+  color: #36B5FD;
+}
+
+.sale_price {
+  font-size: 52rpx;
+  color: #FFFFFF;
+  margin-top: 26rpx;
+}
+
+.sale_price text {
+  font-size: 28rpx;
+}
+
+.ser_box {
+  height: 100%;
+  font-size: 24rpx;
+  color: #FFFFFF;
+}
+
+.ser_title {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 7rpx;
+}
+
+.ser_price {
+  font-size: 52rpx;
+  font-weight: 500;
+  color: #fff;
+}
+
+.ser_price text {
+  font-size: 28rpx;
+}
+
+.data_chart {
+  width: 750rpx;
+  height: 551rpx;
+  background: #fff;
+  margin: 20rpx 0;
+  padding: 22rpx 24rpx 29rpx;
+  box-sizing: border-box;
+}
+
+.chart_title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.chart_unit {
+  font-size: 26rpx;
+  color: #999999;
+}
