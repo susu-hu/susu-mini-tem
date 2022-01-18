@@ -1,0 +1,27 @@
+/* pages/apiDemo/getUserInfo/index.wxss */
+page {
+  background-color: #fff;
+}
+
+.avatar-wrapper {
+  margin: 50px auto;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.i {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  font-size: 25rpx;
+}
