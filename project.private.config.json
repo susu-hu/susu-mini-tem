@@ -95,6 +95,12 @@
           "pathName": "pages/apiDemo/shad/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/charts/index6",
+          "query": "",
+          "scene": null
         }
       ]
     }

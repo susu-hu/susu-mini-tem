@@ -32,7 +32,7 @@ Page({
     var dataLength = 14; //默认的数据长度，既真实数组的长度，必须设置，长度来源：后台传输
     //这里是echart基础配置
     var option = {
-      backgroundColor: 'rgba(25,1,169,.05)',
+      backgroundColor: '#fff',
       tooltip: {
         trigger: 'axis',
         axisPointer: {
@@ -66,7 +66,7 @@ Page({
         data: ['02.25', '02.26', '02.27', '02.28', '03.01', '03.02', '03.02', '02.25', '02.26', '02.27', '02.28', '03.01', '03.02', '今天'],
         axisLine: {
           lineStyle: {
-            color: 'rgba(255,255,255,0.12)'
+            color: '#222'
           }
         },
         position: 'top',
@@ -74,16 +74,15 @@ Page({
           color: function (params) {
             //通过判断选中的名字改变柱子的颜色样式
             if (checkName === params) {
-              return 'rgba(38,74,255,1)';
+              return 'rgb(51, 51, 51)';
             } else {
-              return 'rgba(38,74,255,.3)';
+              return 'rgb(51, 51, 51,.3)';
             }
           },
           textStyle: {
             fontSize: 14
           },
           padding: [10, 0]
-
         },
 
       }],
@@ -91,7 +90,7 @@ Page({
         show: false,
         axisLabel: {
           formatter: '{value}',
-          color: '#e2e9ff',
+          color: '#69dbbf',
         },
         axisLine: {
           show: false
@@ -118,9 +117,9 @@ Page({
             color: function (params) {
               //通过判断选中的名字改变柱子的颜色样式
               if (checkName === params.name) {
-                return 'rgba(38,74,255,1)';
+                return 'rgb(221, 104, 57)';
               } else {
-                return 'rgba(38,74,255,.3)';
+                return 'rgb(236, 137, 97)';
               }
             }
           }
@@ -131,7 +130,7 @@ Page({
             show: true,
             position: 'top',
             textStyle: {
-              color: '#B9C5FC',
+              color: '#000',
               fontSize: '12'
             },
             formatter: '{c}分'

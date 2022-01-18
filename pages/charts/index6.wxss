@@ -1,1 +1,10 @@
 /* pages/charts/index6.wxss */
+page {
+  background-color: #fff;
+}
+
+.box {
+  width: 100%;
+  height:900rpx;
+  border-radius: 20rpx;
+}

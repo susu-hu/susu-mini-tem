@@ -15,7 +15,7 @@ function initChart(canvas, width, height,dpr) {
       left: 'center'
     },
     // 折线图线条的颜色
-    color: ["#37A2DA", "#67E0E3", "#9FE6B8"],
+    color: ["#e09028", "#c78b3c", "#e2ab63"],
     // 折线图的线条代表意义
     legend: {
       itemWidth: 5, //小圆点的宽度
@@ -23,7 +23,7 @@ function initChart(canvas, width, height,dpr) {
       selectedModel: 'single', //折线可多选
       inactiveColor: '#87CEEB',
       data: [{
-        name: '今日心率',
+        name: '测试',
         icon: 'circle',
         textStyle: {
           color: '#000000',
@@ -75,7 +75,7 @@ function initChart(canvas, width, height,dpr) {
       }
     ],
     series: [{
-      name: '心率',
+      name: '测试',
       type: 'line',
       // 设置折线是否平滑
       smooth: false,
@@ -84,7 +84,7 @@ function initChart(canvas, width, height,dpr) {
       symbolSize: 8,
       lineStyle: {
         normal: {
-          color: "#2B68D4", // 线条颜色
+          color: "#e2ab63", // 线条颜色
         },
       },
       //如果不需要阴影部分，直接删除areaStyle就可以了
@@ -93,7 +93,7 @@ function initChart(canvas, width, height,dpr) {
           //线性渐变，前4个参数分别是x0,y0,x2,y2(范围0~1);相当于图形包围盒中的百分比。如果最后一个参数是‘true’，则该四个值是绝对像素位置。
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
               offset: 0,
-              color: '#97CDFF'
+              color: '#e2ab63'
             },
             {
               offset: 1,
