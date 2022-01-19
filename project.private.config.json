@@ -98,13 +98,25 @@
         },
         {
           "name": "",
-          "pathName": "pages/effects/databoad/index",
+          "pathName": "pages/wxCase/iconFont/index",
           "query": "",
           "scene": null
         },
         {
           "name": "",
           "pathName": "pages/wxCase/fileDown/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/effects/guaguale/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/wxCase/showEli/index",
           "query": "",
           "scene": null
         }

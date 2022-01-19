@@ -143,11 +143,13 @@ page {
   width: 440rpx;
   font-size: 20rpx;
   color: #fff;
+  max-height: 60rpx;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
   position: relative;
   line-height: 30rpx;
+  /* ios不生效，用不了，去掉...可ios没问题 */
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -186,4 +188,30 @@ page {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.text11 {
+  color: red;
+  font-size: 24rpx;
+  width: 80%;
+  margin: 20rpx auto;
+}
+
+.dd {
+  width: 440rpx;
+  font-size: 20rpx;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  position: relative;
+  line-height: 30rpx;
+  max-height: 60rpx;
+}
+
+.dd::before {
+  content: '';
+  float: right;
+  height: 100%;
+  margin-bottom: -28rpx;
 }

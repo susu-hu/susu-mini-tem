@@ -15,9 +15,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon_01 {
+/* .icon_01 {
   font-size: 40px;
-}
+} */
 
 .icon_01::before {
   content: "\e6f1";

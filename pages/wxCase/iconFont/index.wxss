@@ -12,4 +12,23 @@ page {
 
 .mb20 {
   margin-bottom: 20rpx;
+  width: 150rpx;
+  height: 150rpx;
+  background-color: #551e1e;
+  border-radius: 50%;
+  line-height: 150rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+
+.a1 {
+  background-color: rgb(61, 148, 224);
+  color: #333;
+}
+
+.a2 {
+  background-color: rgb(123, 231, 177);
+  color: #333;
+  font-size: 20px;
 }

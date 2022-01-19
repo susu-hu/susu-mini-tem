@@ -1,6 +1,17 @@
 <!--pages/wxCase/iconFont/index.wxml-->
-<view class="box">
+<view class="box flex-row j_b">
   <view class="iconfont icon_01 mb20"></view>
   <view class="iconfont icon_02 mb20"></view>
   <view class="iconfont icon_03 mb20"></view>
+</view>
+
+<view class="box flex-row j_b">
+  <view class="iconfont icon_01 mb20 a1"></view>
+  <view class="iconfont icon_02 mb20 a1 "></view>
+  <view class="iconfont icon_03 mb20 a1"></view>
+</view>
+<view class="box flex-row j_b">
+  <view class="iconfont icon_01 mb20 a2"></view>
+  <view class="iconfont icon_02 mb20 a2 "></view>
+  <view class="iconfont icon_03 mb20 a2"></view>
 </view>
