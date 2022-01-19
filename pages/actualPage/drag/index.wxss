@@ -1,0 +1,18 @@
+/* pages/actualPage/drag/index.wxss */
+Page {
+  background: #fff;
+}
+
+.fix_btn {
+  width: 147rpx;
+  height: 147rpx;
+  position: fixed;
+  z-index: 10;
+}
+
+
+.icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

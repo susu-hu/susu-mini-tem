@@ -248,7 +248,8 @@
     {
       "root": "pages/actualPage/",
       "pages": [
-        "list/index"
+        "list/index",
+        "drag/index"
       ]
     }
   ],

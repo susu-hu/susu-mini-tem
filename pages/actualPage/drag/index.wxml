@@ -1,0 +1,5 @@
+<!--pages/actualPage/drag/index.wxml-->
+<!--buttonStart和buttonEnd一定不能用catch事件，否则按钮点击事件会失效-->
+<view class="fix_btn" bindtap="btnAction" catchtouchmove="buttonMove" bindtouchstart="buttonStart" bindtouchend="buttonEnd" style="top:{{buttonTop}}px;left:{{buttonLeft}}px;">
+  <image class="icon" src="https://i.postimg.cc/pXDp6RXq/susu3.jpg"></image>
+</view>
