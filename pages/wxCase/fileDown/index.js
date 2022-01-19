@@ -48,6 +48,49 @@ Page({
       }
     })
   },
+  openfile(e) {
+    let path = e.currentTarget.dataset.path;
+    wx.downloadFile({
+      url: path,
+      success: (res) => {
+        console.log(res)
+        wx.openDocument({
+          filePath: res.tempFilePath,
+          success: (res) => {},
+          fail: (err) => {
+            console.log(err)
+          }
+        })
+      }
+    })
+
+  },
+  selectFile(e) {
+    let {
+      index
+    } = e.currentTarget.dataset;
+    this.setData({
+      ['downloadFile[' + index + '].checked']: !this.data.downloadFile[index].checked
+    })
+  },
+  downFile() {
+    let list = this.data.downloadFile.filter(item => item.checked)
+    console.log(list)
+    if (list.length == 0) {
+      return wx.showToast({
+        title: '尚未选择',
+        icon: 'none'
+      })
+    }
+  },
+
+
+
+
+
+
+
+
   //读取本地缓存文件
   readFiles1(manager, $this) {
     manager.readdir({
@@ -92,22 +135,6 @@ Page({
       })
     })
   },
-  openfile(e) {
-    let path = e.currentTarget.dataset.path;
-    wx.downloadFile({
-      url: path,
-      success: (res) => {
-        console.log(res)
-        wx.openDocument({
-          filePath: res.tempFilePath,
-          success: (res) => {},
-          fail: (err) => {
-            console.log(err)
-          }
-        })
-      }
-    })
 
-  },
 
 })
