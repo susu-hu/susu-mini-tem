@@ -582,6 +582,15 @@ Page({
             url: '/pages/apiDemo/canvastoImg/index'
           },
         ]
+      },
+      {
+        showmore: true,
+        name: '分包实用页面',
+        list: [{
+            name: '列表页',
+            url: '/pages/actualPage/list/index'
+          },
+        ]
       }
     ]
   },

@@ -1,0 +1,89 @@
+<!--pages/actualPage/list/index.wxml-->
+<view class="head_top"></view>
+<view class="head_tab flex-row j_c">
+  <view class="flex-column flex_1 tab_item">
+    <text class="tab_price">88.99</text>
+    <text>今日收益</text>
+  </view>
+  <view class="flex-column flex_1 tab_item">
+    <text class="tab_price">8899.99</text>
+    <text>本月收益</text>
+  </view>
+  <view class="flex-column flex_1 tab_item">
+    <text class="tab_price">88.99</text>
+    <text>待提现收益</text>
+  </view>
+</view>
+<view class="flex-row j_b tab_nv">
+  <view class="flex-row">
+    <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="nv_icon"></image>
+    <text class="nv_text">规则说明</text>
+  </view>
+  <view class="flex-row">
+    <view class="no_check flex-row" wx:if="{{!checkd}}" catchtap="swithChange">
+      <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="check_icon"></image>
+    </view>
+    <view class="no_check checkd flex-row " wx:else catchtap="swithChange">
+      <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="check_icon"></image>
+    </view>
+    <text class="nv_text">发放至导购账户</text>
+  </view>
+</view>
+<view class="con">
+  <view class="flex-row j_b mb36">
+    <view class="flex-row tab_lsit">
+      <block wx:for="{{tab_lsit}}" wx:key="list">
+        <view class="t_item {{index == curTab && 't_active'}}" catchtap="tabNav" data-index="{{index}}">{{item}}</view>
+      </block>
+    </view>
+    <view class="flex-row one_re j_c">
+      <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="c_icon"></image>
+      <text>一键领取</text>
+    </view>
+  </view>
+  <view wx:if="{{hasData}}">
+    <block wx:for="{{20}}" wx:key="list">
+      <view class="c_item">
+        <view class="flex-row j_b">
+          <view class="flex">
+            <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="user_ava" />
+            <view class="user_name text_ellipsis">苏苏就是小苏苏</view>
+          </view>
+          <view class="item_staus error" wx:if="{{false}}">提现失败</view>
+          <view class="item_staus " wx:if="{{false}}">待提现</view>
+          <view class="item_staus flex-row" wx:if="{{false}}">
+            <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="status_icon" />
+            <text>提现成功</text>
+          </view>
+          <view class="item_staus flex-row">
+            <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="status_icon" />
+            <text>提现等待中</text>
+          </view>
+        </view>
+        <view class="flex-row j_b item_time">
+          <view class="flex_1">出库流水号：1009028993</view>
+          <view>2022-01-10 18:00:00</view>
+        </view>
+        <view class="flex-row j_b">
+          <view>出库商品数量：9</view>
+          <view class="flex-row">
+            <view class="price">¥8.98</view>
+            <view class="flex-row one_re j_c" wx:if="{{false}}">
+              <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="c_icon"></image>
+              <text>立即提现</text>
+            </view>
+          </view>
+        </view>
+        <view wx:if="{{true}}" class="mt18">
+          提现时间：2022-10-10 18:00:00
+        </view>
+      </view>
+    </block>
+  </view>
+  <view wx:else class="flex-column">
+    <image src="https://i.postimg.cc/pXDp6RXq/susu3.jpg" class="guide_none_img" mode="aspectFill"/>
+    <text class="guide_no_txt">暂无数据，抓紧去办理出库拿奖励吧~</text>
+  </view>
+</view>
+<!-- 按钮 -->
+<image src="https://i.postimg.cc/pXDp6RXq/susu3.jpg" class="fix_btn"  mode="aspectFill"/>

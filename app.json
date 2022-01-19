@@ -244,6 +244,12 @@
         "moveCert/index5",
         "getUserInfo/index"
       ]
+    },
+    {
+      "root": "pages/actualPage/",
+      "pages": [
+        "list/index"
+      ]
     }
   ],
   "tabBar": {
