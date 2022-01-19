@@ -1,2 +1,38 @@
 <!--pages/effects/guaguale/index.wxml-->
-<text>pages/effects/guaguale/index.wxml</text>
+<view class="scratch_body">
+  <image class="scratch_body_bg" mode="widthFix" src="https://img-blog.csdnimg.cn/2022010702543295939.png"></image>
+
+  <view class="scratch_time">您有 <text>{{cjNum}}</text> 次刮奖机会</view>
+
+  <view class="scratch_do">
+
+    <view class="scratch_do_after">
+      <view wx:if="{{hasPrize}}" class="scratch_do_after_box">
+        <image mode="widthFix" src="https://img-blog.csdnimg.cn/2022010702543242350.png"></image>
+        <view>恭喜你刮中{{prizeName}}</view>
+        <view class="scratch_do_after_btn" bindtap="gj">再来一次</view>
+      </view>
+      <view wx:else class="scratch_do_after_box">
+        <view>很遗憾未中奖</view>
+        <view class="scratch_do_after_btn" bindtap="gj">再来一次</view>
+      </view>
+    </view>
+
+    <canvas wx:if="{{!gjEnd}}" class="scratch_do_in" disable-scroll="false" canvas-id='canvas-demo' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
+
+    <cover-image wx:if="{{showGjBth}}" class="scratch_do_before" src="https://img-blog.csdnimg.cn/2022010702543256236.png" bindtap="gj"></cover-image>
+
+    <!-- <view wx:if="{{again}}" class="scratch_btn again_btn" bindtap="gj">
+			<view>再刮一次</view>
+		</view> -->
+  </view>
+
+
+  <view class="scratch_btn">
+    <view>我的奖品</view>
+  </view>
+  <view class="scratch_btn">
+    <view>活动规则</view>
+  </view>
+
+</view>

@@ -116,7 +116,7 @@
         },
         {
           "name": "",
-          "pathName": "pages/wxCase/showEli/index",
+          "pathName": "pages/effects/roatePan/index",
           "query": "",
           "scene": null
         }

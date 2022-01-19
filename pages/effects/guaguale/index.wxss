@@ -1,1 +1,102 @@
 /* pages/effects/guaguale/index.wxss */
+page {
+  box-sizing: border-box;
+  padding-top: 50rpx;
+  background-color: pink;
+}
+
+.scratch_body {
+  width: 630rpx;
+  padding-top: 24rpx;
+  margin: 0 auto;
+  position: relative;
+}
+
+.scratch_body_bg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.scratch_time {
+  width: 440rpx;
+  height: 64rpx;
+  margin: 0 auto 20rpx auto;
+  text-align: center;
+  color: #e81903;
+  font-size: 28rpx;
+  position: relative;
+}
+
+.scratch_time text {
+  font-size: 42rpx;
+}
+
+.scratch_do {
+  width: 570rpx;
+  height: 213rpx;
+  /* margin: 0 auto 160rpx auto; */
+  margin: 0 auto 110rpx auto;
+  position: relative;
+}
+
+.scratch_do_after,
+.scratch_do_after_box,
+.scratch_do_after_box image,
+.scratch_do_in,
+.scratch_do_before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.scratch_do_after_box {
+  padding-top: 25rpx;
+  line-height: 82rpx;
+  color: #7a7a7a;
+  font-size: 40rpx;
+  text-align: center;
+}
+
+.scratch_do_after_box view {
+  position: relative;
+}
+
+.scratch_do_after_btn {
+  width: 210rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 27rpx;
+  background-color: #ff3c9d;
+}
+
+.scratch_btn {
+  width: 310rpx;
+  height: 64rpx;
+  margin: 34rpx auto 0 auto;
+  border: #fff solid 2rpx;
+  border-radius: 32rpx;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px 5px rgba(102, 12, 164, .8);
+}
+
+.scratch_btn view {
+  width: 300rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  text-align: center;
+  color: #3b0a8e;
+  font-size: 30rpx;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 26rpx;
+}

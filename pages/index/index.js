@@ -560,6 +560,9 @@ Page({
           }, {
             name: '刮刮乐',
             url: '/pages/effects/guaguale/index'
+          }, {
+            name: '大转盘抽奖',
+            url: '/pages/effects/roatePan/index'
           },
         ]
       },
