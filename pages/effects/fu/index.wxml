@@ -1,0 +1,27 @@
+<!--pages/effects/fu/index.wxml-->
+<view class="box">
+  <view class="bg">
+    <view class="bar">
+      <view class="bar-top">
+        <view class="bar-top-left">
+        </view>
+        <view class="bar-top-right">
+        </view>
+      </view>
+      <view class="bar-bottom">
+        <view class="bar-bottom-left">
+        </view>
+        <view class="bar-bottom-right">
+        </view>
+      </view>
+    </view>
+    <view class="fu-text">
+      <view class="left-rect"></view>
+      <view class="middle-rect"></view>
+      <view class="right-rect"></view>
+      <view class="bottom-rect">
+        <view class="trangle"></view>
+      </view>
+    </view>
+  </view>
+</view>

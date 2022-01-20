@@ -1,4 +1,4 @@
-import Dial from "./utils/dial.js"
+// import Dial from "./utils/dial.js"
 
 Page({
   data: {
