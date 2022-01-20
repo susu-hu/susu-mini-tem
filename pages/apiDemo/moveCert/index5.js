@@ -1,24 +1,24 @@
 //index.js
 const app = getApp()
 var ctx;
-var fontSize = 20 //字体大小
+var fontSize = 25 //字体大小
 var fontFamily = "SimHei" //字体
-var code = null //验证码文本
 
 Page({
   data: {
     //验证码属性
-    text: '',
-    count: 4,
-    width: 90,
-    height: 35,
+    text: 'susu',
+    count: 4, //4位验证码
+    width: 100,
+    height: 50,
+    code: "",
   },
 
   onLoad: function () {
-    this.crash()
+    this.reset()
   },
 
-  crash() {
+  reset() {
     this.drawPic(this)
   },
 
@@ -41,7 +41,7 @@ Page({
         ctx.fillRect(0, 0, that.data.width, that.data.height)
         /**绘制文字**/
         var arr;
-        var text = '';
+        var text = that.data.text;
         var str = 'ABCEFGHJKLMNPQRSTWXY123456789';
         var code_temp = "";
         for (var i = 0; i < that.data.count; i++) {
@@ -57,12 +57,16 @@ Page({
           ctx.rotate(deg * Math.PI / 180);
           ctx.fillText(txt, 5, 0);
           text = text + txt;
+          console.log(text)
           //恢复坐标原点和旋转角度
           ctx.rotate(-deg * Math.PI / 180);
           ctx.translate(-x, -y);
         }
-        code = code_temp;
+        let code = code_temp;
         console.log(code)
+        that.setData({
+          code,
+        })
         /**绘制干扰线**/
         for (var i = 0; i < 4; i++) {
           ctx.strokeStyle = that.randomColor(40, 180);
@@ -91,5 +95,4 @@ Page({
     var b = that.randomNum(min, max);
     return "rgb(" + r + "," + g + "," + b + ")";
   }
-
 })

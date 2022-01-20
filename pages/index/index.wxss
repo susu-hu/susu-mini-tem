@@ -204,3 +204,19 @@ page {
     transform: rotate(-10deg)
   }
 }
+
+.fix_btn {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  z-index: 10;
+  bottom: 220rpx;
+  right: 20rpx;
+}
+
+
+.icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

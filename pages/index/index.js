@@ -2,9 +2,6 @@
 import util from '../../utils/util';
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     page_list: [{
         showmore: true,
@@ -581,6 +578,10 @@ Page({
             name: '图片添加边框',
             url: '/pages/apiDemo/canvastoImg/index'
           },
+          {
+            name: 'canvas图形验证码',
+            url: '/pages/apiDemo/moveCert/index5'
+          },
         ]
       },
       {
@@ -590,9 +591,18 @@ Page({
             name: '列表页',
             url: '/pages/actualPage/list/index'
           },
+          {
+            name: '按钮可拖拽',
+            url: '/pages/actualPage/drag/index'
+          },
+          {
+            name: '状态步骤条',
+            url: '/pages/actualPage/steps/index'
+          },
         ]
       }
-    ]
+    ],
+    no_scroll: true,
   },
 
   toDetail(e) {
@@ -604,10 +614,7 @@ Page({
     })
   },
 
-  onLoad: function (options) {
-
-
-  },
+  onLoad: function (options) {},
   onPullDownRefresh() {
     wx.stopPullDownRefresh() //刷新完成后停止下拉刷新动效
   },
@@ -696,7 +703,29 @@ Page({
       result = "" + parseInt(hTime) + ":" + result;
     }
     return result;
+  },
+  goTop: function (e) {
+    if (wx.pageScrollTo) {
+      wx.pageScrollTo({
+        scrollTop: 0
+      })
+    } else {
+      wx.showModal({
+        title: '提示',
+        content: '当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试。'
+      })
+    }
+  },
+  onPageScroll: function (e) {
+    if (e.scrollTop > 200) {
+      this.setData({
+        no_scroll: false
+      });
+    } else {
+      this.setData({
+        no_scroll: true
+      });
+    }
   }
-
 
 })

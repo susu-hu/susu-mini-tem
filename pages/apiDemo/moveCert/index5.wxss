@@ -1,11 +1,19 @@
 /* pages/apiDemo/moveCert/index5.wxss */
+page {
+  background-color: #fff;
+}
+
 .canvas {
   overflow: hidden;
-  width: 89px;
-  height: 34px;
-  position: fixed;
-  margin-top: 5px;
-  left: 5px;
+  width: 100px;
+  height: 50px;
+  margin: 100px auto;
+}
+
+.text {
+  width: 80%;
+  margin: 40px auto;
+  font-size: 28rpx;
+  color: #333;
   text-align: center;
-  border-radius: 5px;
 }

@@ -1,5 +1,5 @@
 /* pages/effects/roatePan/index.wxss */
-@import './utils/dial.wxss';
+/* @import './utils/dial.wxss'; */
 
 .index-hd {
   padding: 80rpx;

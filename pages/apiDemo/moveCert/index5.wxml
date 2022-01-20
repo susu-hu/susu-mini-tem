@@ -1,4 +1,5 @@
 <!--pages/apiDemo/moveCert/index5.wxml-->
 <view class="canvas">
-	<canvas type="2d" id="myCanvas" bindtap='crash'></canvas>
+	<canvas type="2d" id="myCanvas" bindtap='reset'></canvas>
 </view>
+<view class="text">验证码：{{code}}</view>

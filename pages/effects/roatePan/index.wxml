@@ -1,5 +1,5 @@
 <!--pages/effects/roatePan/index.wxml-->
-<import src="utils/dial.wxml" />
+<!-- <import src="utils/dial.wxml" /> -->
 
 <view class="index">
   <view class="index-hd">

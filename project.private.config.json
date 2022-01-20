@@ -131,6 +131,12 @@
           "pathName": "pages/wxCase/fileDown/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/apiDemo/moveCert/index5",
+          "query": "",
+          "scene": null
         }
       ]
     }

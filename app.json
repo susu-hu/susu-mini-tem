@@ -249,7 +249,8 @@
       "root": "pages/actualPage/",
       "pages": [
         "list/index",
-        "drag/index"
+        "drag/index",
+        "steps/index"
       ]
     }
   ],

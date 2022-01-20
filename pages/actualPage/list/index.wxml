@@ -86,4 +86,4 @@
   </view>
 </view>
 <!-- 按钮 -->
-<image src="https://i.postimg.cc/pXDp6RXq/susu3.jpg" class="fix_btn"  mode="aspectFill"/>
+<image src="https://i.postimg.cc/pXDp6RXq/susu3.jpg" class="fix_btn"  mode="aspectFill"  style="top:{{buttonTop}}px;left:{{buttonLeft}}px;" catchtouchmove="buttonMove" bindtouchstart="buttonStart" />
