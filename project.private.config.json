@@ -137,6 +137,12 @@
           "pathName": "pages/apiDemo/moveCert/index5",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/effects/fu/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

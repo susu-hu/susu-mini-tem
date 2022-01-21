@@ -561,6 +561,10 @@ Page({
             name: '大转盘抽奖',
             url: '/pages/effects/roatePan/index'
           },
+          {
+            name: '福字',
+            url: '/pages/effects/fu/index'
+          },
         ]
       },
       {
