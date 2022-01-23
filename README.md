@@ -119,6 +119,7 @@ step5：构建npm）
 104. 一键返回顶部
 105. canvas实现图片文字验证码
 106. 一个福字
+107. 一个弹出框动画
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -232,6 +233,7 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E4%B8%80%E9%94%AE%E9%A1%B6%E9%83%A8.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/canvas%E5%9B%BE%E7%89%87%E9%AA%8C%E8%AF%81%E7%A0%81.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E7%A6%8F%E5%AD%97.gif)
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BC%B9%E5%87%BA.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
