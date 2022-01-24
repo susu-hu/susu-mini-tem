@@ -40,7 +40,7 @@ function startPop() {
     timingFunction: 'ease-out'
   })
   start.rotateZ(180).step();
-  a1.translate(-65, -70).rotateZ(360).opacity(1).step();
+  
   a2.translate(-120, 0).rotateZ(360).opacity(1).step();
   a3.translate(-65, 70).rotateZ(360).opacity(1).step();
   this.setData({

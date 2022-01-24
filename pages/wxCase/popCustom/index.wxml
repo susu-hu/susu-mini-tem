@@ -1,2 +1,7 @@
 <!--pages/wxCase/popCustom/index.wxml-->
-<text>pages/wxCase/popCustom/index.wxml</text>
+<view class="box" catchtap="show">弹出一个弹框</view>
+<view class="codeBox" hidden="{{isShow}}" catchtap="hide">
+  <view id="hide">
+    <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
+  </view>
+</view>

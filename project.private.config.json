@@ -13,6 +13,126 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/jsCase/draw4/index",
+          "pathName": "pages/jsCase/draw4/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/effects/popMenu2/index",
+          "pathName": "pages/effects/popMenu2/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/statusList/index",
+          "pathName": "pages/wxCase/statusList/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cssCase/card/index",
+          "pathName": "pages/cssCase/card/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/effects/audioCust/index",
+          "pathName": "pages/effects/audioCust/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/vanUpload/index",
+          "pathName": "pages/wxCase/vanUpload/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jsCase/draw4/index",
+          "pathName": "pages/jsCase/draw4/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/charts/index5",
+          "pathName": "pages/charts/index5",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/effects/snow2/index",
+          "pathName": "pages/effects/snow2/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cssCase/iconFall/index",
+          "pathName": "pages/cssCase/iconFall/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/charts/index6",
+          "pathName": "pages/charts/index6",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cssCase/smile/index",
+          "pathName": "pages/cssCase/smile/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/apiDemo/moveCert/index5",
+          "pathName": "pages/apiDemo/moveCert/index5",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/apiDemo/shad/index",
+          "pathName": "pages/apiDemo/shad/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/wxCase/iconFont/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/popCustom/index",
+          "pathName": "pages/wxCase/popCustom/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/effects/guaguale/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/actualPage/list/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/actualPage/drag/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/wxCase/fileDown/index",
+          "query": "",
+          "scene": null
+        },
+        {
           "name": "",
           "pathName": "pages/actualPage/oneTop/index",
           "query": "",
