@@ -33,6 +33,6 @@
 </view>
 
 <!-- 一键回到顶部 -->
-<view class="fix_btn" hidden='{{no_scroll}}' bindtap="goTop">
+<!-- <view class="fix_btn" hidden='{{no_scroll}}' bindtap="goTop">
   <image class="icon" src="https://i.postimg.cc/NFDWnd3H/image.png"></image>
-</view>
+</view> -->

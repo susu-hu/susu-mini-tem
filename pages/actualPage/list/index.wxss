@@ -73,6 +73,7 @@ page {
   height: 45rpx;
   flex-shrink: 0;
   margin-right: 28rpx;
+  border-radius: 50%;
 }
 
 .nv_text {
@@ -100,6 +101,7 @@ page {
 .check_icon {
   width: 34rpx;
   height: 40rpx;
+  border-radius: 50%;
 }
 
 .con {
@@ -120,6 +122,7 @@ page {
   width: 37rpx;
   height: 33rpx;
   flex-shrink: 0;
+  border-radius: 50%;
 }
 
 .t_item {
@@ -233,6 +236,7 @@ page {
   height: 27rpx;
   flex-shrink: 0;
   margin-right: 12rpx;
+  border-radius: 50%;
 }
 
 .mt18 {

@@ -251,7 +251,8 @@
       "pages": [
         "list/index",
         "drag/index",
-        "steps/index"
+        "steps/index",
+        "oneTop/index"
       ]
     }
   ],

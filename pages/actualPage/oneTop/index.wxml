@@ -1,0 +1,7 @@
+<!--pages/actualPage/oneTop/index.wxml-->
+<view class="fix_btn" hidden='{{no_scroll}}' bindtap="goTop">
+  <image class="icon" src="https://i.postimg.cc/NFDWnd3H/image.png"></image>
+</view>
+<block wx:for="{{40}}" wx:key="list">
+  <view class="item">{{index+1}}.苏苏</view>
+</block>
