@@ -82,6 +82,31 @@ Page({
         icon: 'none'
       })
     }
+    wx.downloadFile({
+      url: list[0].path,
+      success: function (res) {
+        const tempFilePath = res.tempFilePath;
+        wx.saveFile({
+          tempFilePath,
+          success: function (res) {
+            const savedFilePath = res.savedFilePath;
+            wx.openDocument({
+              filePath: savedFilePath,
+              showMenu:true,
+              success: function (res) {
+                console.log('打开文档成功')
+              },
+            });
+          },
+          fail: function (err) {
+            console.log('保存失败：', err)
+          }
+        });
+      },
+      fail: function (err) {
+        console.log('下载失败：', err);
+      },
+    });
   },
 
 

@@ -600,6 +600,10 @@ Page({
             url: '/pages/actualPage/drag/index'
           },
           {
+            name: '一键返回顶部',
+            url: '/pages/actualPage/oneTop/index'
+          },
+          {
             name: '状态步骤条',
             url: '/pages/actualPage/steps/index'
           },
