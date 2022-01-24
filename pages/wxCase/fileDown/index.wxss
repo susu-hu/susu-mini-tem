@@ -77,5 +77,5 @@
 
 .name {
   margin-right: 20rpx;
-  max-width: 300rpx;
+  max-width: 176rpx;
 }

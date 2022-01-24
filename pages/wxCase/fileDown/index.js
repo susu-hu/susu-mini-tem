@@ -7,23 +7,23 @@ Page({
     excel: ['xlsx'],
     ppt: ['ppt'],
     downloadFile: [{
-        name: "test.xlsx",
-        path: "https://eln-public.oss-cn-shanghai.aliyuncs.com/dev/ee74ca70-7a62-45e7-849c-751c9dab8d00.xlsx",
-        time: 1641448025,
-      },
-      {
-        name: "test.docx",
-        path: "http://124.223.40.74:8233/img/Test.doc",
-        time: 1641448025,
-      }
+      name: "test.xlsx",
+      path: "https://eln-public.oss-cn-shanghai.aliyuncs.com/dev/ee74ca70-7a62-45e7-849c-751c9dab8d00.xlsx",
+      time: 1641448025,
+    },
+    {
+      name: "test.docx",
+      path: "http://124.223.40.74:8233/img/Test.doc",
+      time: 1641448025,
+    }
     ], //下载到本地的文件列表
     upfilelist: [], // 要上传的文件列表 
   },
 
 
-  onLoad: function (options) {
-    // const manager = wx.getFileSystemManager(); //获取全局唯一的文件管理器
-    // this.readFiles(manager, this)
+  onShow: function (options) {
+    const manager = wx.getFileSystemManager(); //获取全局唯一的文件管理器
+    this.readFiles(manager)
   },
   //选择要上传的上传文件
   chooseFile() {
@@ -49,21 +49,42 @@ Page({
     })
   },
   openfile(e) {
+    console.log(e)
     let path = e.currentTarget.dataset.path;
     wx.downloadFile({
       url: path,
       success: (res) => {
         console.log(res)
         wx.openDocument({
+          showMenu: true,
           filePath: res.tempFilePath,
-          success: (res) => {},
+          success: (res) => { },
           fail: (err) => {
             console.log(err)
           }
         })
       }
     })
-
+  },
+  openfile1(e) {
+    let path = e.currentTarget.dataset.path;
+    wx.openDocument({
+      showMenu: true,
+      filePath: path,
+      success: (res) => { },
+      fail: (err) => {
+        console.log(err)
+      }
+    })
+  },
+  delFile(e) {
+    let {
+      index
+    } = e.currentTarget.dataset;
+    this.data.upfilelist.splice(index, 1);
+    this.setData({
+      upfilelist: this.data.upfilelist
+    })
   },
   selectFile(e) {
     let {
@@ -90,9 +111,15 @@ Page({
           tempFilePath,
           success: function (res) {
             const savedFilePath = res.savedFilePath;
+            // 查看下载的文件列表
+            wx.getSavedFileList({
+              success: function (res) {
+                console.log(res);
+              }
+            })
             wx.openDocument({
               filePath: savedFilePath,
-              showMenu:true,
+              showMenu: true,
               success: function (res) {
                 console.log('打开文档成功')
               },
@@ -108,58 +135,56 @@ Page({
       },
     });
   },
-
-
-
-
-
-
-
-
-  //读取本地缓存文件
-  readFiles1(manager, $this) {
-    manager.readdir({
-      dirPath: `${wx.env.USER_DATA_PATH}/download`,
-      encoding: 'utf8',
+  readFiles(manager) {
+    // manager.readdir({
+    //   dirPath: `${wx.env.USER_DATA_PATH}/download`,
+    //   success: (res) => {
+    //     console.log('本地文件列表: ', res)
+    //     let downloadFile = [];
+    //     res.files.forEach((item, index) => {
+    //       downloadFile.push({
+    //         file: item,
+    //         path: `${wx.env.USER_DATA_PATH}/download/` + item,
+    //       })
+    //     })
+    //     console.log(downloadFile)
+    //   },
+    //   fail: (err) => {
+    //     console.log(err)
+    //   }
+    // })
+    manager.getSavedFileList({
       success: (res) => {
-        // console.log('本地文件列表: ', res)
-        let downloadFile = [];
-        res.files.forEach((item, index) => {
-          downloadFile.push({
-            file: item,
-            path: `${wx.env.USER_DATA_PATH}/download/` + item,
-            sel: false,
-          })
-        })
-        $this.setData({
-          downloadFile,
-        })
-      },
-      fail: (err) => {
-        console.log('本地文件列表读取失败: ', err)
+        console.log(res)
+        // wx.removeSavedFile({
+        //   filePath: res.fileList[0].filePath,
+        //   complete(res) {
+        //     console.log(res)
+        //   }
+        // })
       }
     })
   },
-  readFiles(fileName) {
-    return new Promise((resolve, reject) => {
-      const FileSystemManager = wx.getFileSystemManager()
-      FileSystemManager.readFile({ //读文件
-        filePath: wx.env.USER_DATA_PATH + "/" + fileName,
-        encoding: 'utf8',
-        success(res) {
-          console.log(res)
-          if (res.data) {
-            let obj = JSON.parse(res.data);
-            resolve(obj)
-          }
-        },
-        fail(err) {
-          console.log('读取失败', err)
-          reject(err)
-        }
-      })
-    })
-  },
+  // readFiles(fileName) {
+  //   return new Promise((resolve, reject) => {
+  //     const FileSystemManager = wx.getFileSystemManager()
+  //     FileSystemManager.readFile({ //读文件
+  //       filePath: wx.env.USER_DATA_PATH + "/" + fileName,
+  //       encoding: 'utf8',
+  //       success(res) {
+  //         console.log(res)
+  //         if (res.data) {
+  //           let obj = JSON.parse(res.data);
+  //           resolve(obj)
+  //         }
+  //       },
+  //       fail(err) {
+  //         console.log('读取失败', err)
+  //         reject(err)
+  //       }
+  //     })
+  //   })
+  // },
 
 
 })

@@ -229,7 +229,8 @@
         "databoad/index",
         "guaguale/index",
         "roatePan/index",
-        "fu/index"
+        "fu/index",
+        "mixins/index"
       ]
     },
     {
