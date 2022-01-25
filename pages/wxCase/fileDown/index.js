@@ -7,15 +7,15 @@ Page({
     excel: ['xlsx'],
     ppt: ['ppt'],
     downloadFile: [{
-      name: "test.xlsx",
-      path: "https://eln-public.oss-cn-shanghai.aliyuncs.com/dev/ee74ca70-7a62-45e7-849c-751c9dab8d00.xlsx",
-      time: 1641448025,
-    },
-    {
-      name: "test.docx",
-      path: "http://124.223.40.74:8233/img/Test.doc",
-      time: 1641448025,
-    }
+        name: "test.xlsx",
+        path: "https://eln-public.oss-cn-shanghai.aliyuncs.com/dev/ee74ca70-7a62-45e7-849c-751c9dab8d00.xlsx",
+        time: 1641448025,
+      },
+      {
+        name: "test.docx",
+        path: "http://124.223.40.74:8233/img/Test.doc",
+        time: 1641448025,
+      }
     ], //下载到本地的文件列表
     upfilelist: [], // 要上传的文件列表 
   },
@@ -53,12 +53,14 @@ Page({
     let path = e.currentTarget.dataset.path;
     wx.downloadFile({
       url: path,
+      filePath: wx.env.USER_DATA_PATH + '/' +'自定义',//指定文件下载后存储的路径 (本地路径)
       success: (res) => {
         console.log(res)
         wx.openDocument({
+          filePath: res.filePath,
+          fileType:"xlsx",
           showMenu: true,
-          filePath: res.tempFilePath,
-          success: (res) => { },
+          success: (res) => {},
           fail: (err) => {
             console.log(err)
           }
@@ -71,7 +73,7 @@ Page({
     wx.openDocument({
       showMenu: true,
       filePath: path,
-      success: (res) => { },
+      success: (res) => {},
       fail: (err) => {
         console.log(err)
       }
@@ -105,10 +107,13 @@ Page({
     }
     wx.downloadFile({
       url: list[0].path,
-      success: function (res) {
-        const tempFilePath = res.tempFilePath;
+      filePath: wx.env.USER_DATA_PATH + '/' + list[0].name,//指定文件下载后存储的路径 (本地路径)
+      success: (res) => {
+        console.log(res)
+        // const tempFilePath = res.tempFilePath;//临时文件路径 (本地路径)。没传入 filePath 指定文件存储路径时会返回，下载后的文件会存储到一个临时文件
+        const filePath=res.filePath;//用户文件路径 (本地路径)。传入 filePath 时会返回，跟传入的 filePath 一致
         wx.saveFile({
-          tempFilePath,
+          tempFilePath:filePath,
           success: function (res) {
             const savedFilePath = res.savedFilePath;
             // 查看下载的文件列表
