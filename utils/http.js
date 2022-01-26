@@ -39,7 +39,6 @@ function httpReq(url, method, data = '', is_show_msg = false, msg = '', header =
         if (is_show_msg) {
           wx.hideLoading();
         }
-
         if (res.statusCode == 200) {
           if (res.data.code == 20003) {
             console.log('登录会话失效，重新登录');

@@ -254,7 +254,8 @@
         "drag/index",
         "steps/index",
         "oneTop/index",
-        "percent/index"
+        "percent/index",
+        "scrollGap/index"
       ]
     }
   ],
@@ -298,8 +299,7 @@
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true
+    "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
   "permission": {

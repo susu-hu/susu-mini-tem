@@ -615,6 +615,10 @@ Page({
             name: '进度条百分比',
             url: '/pages/actualPage/percent/index'
           },
+          {
+            name: '上滑关闭,下拉加载',
+            url: '/pages/actualPage/scrollGap/index'
+          },
         ]
       }
     ],

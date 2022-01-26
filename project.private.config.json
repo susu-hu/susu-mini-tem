@@ -29,6 +29,12 @@
           "pathName": "pages/actualPage/percent/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/actualPage/scrollGap/index",
+          "pathName": "pages/actualPage/scrollGap/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

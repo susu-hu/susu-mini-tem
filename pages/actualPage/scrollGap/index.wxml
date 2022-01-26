@@ -1,0 +1,21 @@
+<!--pages/actualPage/scrollGap/index.wxml-->
+<swiper class="swiper" circular="{{false}}" vertical="{{true}}" current="{{currentIndex}}" bindchange="choiceCurrent" bindtransition="transition" bindanimationfinish="animationfinish">
+  <swiper-item>
+    <view class="activity-video-header">
+      <image src="{{muted?'../img/vioce-none.png':'../img/vioce-open.png'}}" class="muted_icon" catchtap="mutedTap" />
+      <view class="vioce-again" catchtap="closeVioce">跳过</view>
+    </view>
+    <view class="activity-video">
+      <video id="myVideo" class="video" src="{{activityAnimation}}" controls="{{false}}" loop="{{true}}" muted="{{muted}}" object-fit="cover" show-center-play-btn="{{false}}" enable-progress-gesture="{{false}}" style="height: {{currentIndex == 0 ? windowWidth * 1.88 + 'px' : windowHeight + 'px'}}" bindended="handleVideoEnd"></video>
+      <view class="activity-video-icon">
+        <image src="/img/clolse_down.png" class="u-icon"></image>
+        <view>上滑关闭</view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="info-box">苏苏苏苏苏</view>
+  </swiper-item>
+</swiper>
+
+<!--bindtransition： swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy} -->

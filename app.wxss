@@ -114,3 +114,8 @@ button::after {
 .flex_0 {
   flex-shrink: 0;
 }
+
+image {
+  vertical-align: middle;
+  display: inline-block;
+}

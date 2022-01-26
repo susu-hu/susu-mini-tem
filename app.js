@@ -21,6 +21,7 @@ App({
     let menuButtonObject = wx.getMenuButtonBoundingClientRect();
     wx.getSystemInfo({
       success: res => {
+        console.log(res)
         //导航高度
         let statusBarHeight = res.statusBarHeight,
           navTop = menuButtonObject.top,
@@ -30,6 +31,8 @@ App({
         this.globalData.navTop = navTop; //胶囊距离顶部距离
         this.globalData.navObj = menuButtonObject.height; //胶囊高度
         this.globalData.navObjWid = navObjWid; //胶囊宽度(包括右边距离)
+        this.globalData.windowHeight = res.windowHeight;
+        this.globalData.windowWidth = res.windowWidth;
         // console.log(navHeight,navTop,menuButtonObject.height,navObjWid)
       },
       fail(err) {

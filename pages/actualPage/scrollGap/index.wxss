@@ -1,0 +1,76 @@
+/* pages/actualPage/scrollGap/index.wxss */
+view {
+  box-sizing: border-box;
+}
+
+.swiper {
+  height: 100vh;
+}
+
+.activity-video-header {
+  position: absolute;
+  top: 20rpx;
+  right: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1000;
+  flex-direction: row;
+}
+
+.muted_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.activity-video-header .vioce-again {
+  width: 155rpx;
+  height: 62rpx;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 31rpx;
+  border: solid 5rpx rgba(196, 196, 196, 0.3);
+  margin-left: 20rpx;
+  border-radius: 62rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 1rpx;
+  color: #ffffff;
+}
+
+.activity .activity-video {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.activity-video-icon {
+  position: absolute;
+  bottom: 250rpx;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -50rpx;
+  color: #fff;
+}
+
+.activity-video-icon .u-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.info-box {
+  border-radius: 30rpx 30rpx 0 0;
+  background: pink;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+.video {
+  width: 100%;
+}
