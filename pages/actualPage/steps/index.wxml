@@ -1,2 +1,76 @@
 <!--pages/actualPage/steps/index.wxml-->
-<text>pages/actualPage/steps/index.wxml</text>
+<swiper class="swiper_box" circular="{{true}}" bindanimationfinish="handleSwiper" current="{{currentTab}}">
+  <block wx:for="{{swiper_box}}" wx:key="swiper_box">
+    <swiper-item>
+      <view class="guide_box">
+        <view class="flex-row j_b">
+          <view class="flex-row">
+            <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="guide_icon"></image>
+            <text class="guide_title">{{item.name}}</text>
+          </view>
+          <view class="guide_rule">苏苏测试</view>
+        </view>
+        <view class="guide_recent">
+          苏苏苏苏苏苏
+          <text>1200</text>
+        </view>
+        <view class="flex-row j_b line_box">
+          <view class="flex-column l">
+            <view class="grade_box">
+              <text>苏苏一</text>
+            </view>
+            <view class="flex-column">
+              <view class="grade_cir {{currGrade==0 && 'grade0'}} {{ (currGrade==1 || currGrade==2) && 'grade1'}}">
+                <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="bg_img z_index" />
+              </view>
+              <text class="grade_step">苏苏<text>1</text>倍</text>
+            </view>
+          </view>
+          <view class="flex-column l">
+            <view class="grade_box">
+              <text>苏苏2</text>
+            </view>
+            <view class="flex-column">
+              <view class="grade_cir {{ currGrade==2 && 'grade1'}}">
+                <view wx:if="{{currGrade==0}}" class="grade_ce">1200</view>
+                <view wx:else class="grade_oth flex-row j_c">
+                  <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="bg_img z_index" />
+                  <text>1200</text>
+                </view>
+              </view>
+              <text class="grade_step">啊呀呀<text>1.2</text>倍</text>
+            </view>
+          </view>
+          <view class="flex-column l">
+            <view class="grade_box">
+              <text>苏苏3</text>
+            </view>
+            <view class="flex-column">
+              <view class="grade_cir">
+                <view wx:if="{{currGrade==0 || currGrade==1}}" class="grade_ce">3000</view>
+                <view wx:else class="grade_oth flex-row j_c">
+                  <image src="https://i.postimg.cc/qRRLS16Q/susu0.jpg" class="bg_img z_index" />
+                  <text>3000</text>
+                </view>
+              </view>
+              <text class="grade_step">苏苏<text>1.5</text>倍</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<view>
+  <view class="title">苏苏苏说</view>
+  <view class="val_box flex-row ">
+    <block wx:for="{{task_list}}" wx:key="task_list">
+      <view class="flex-column" style="width: 20%;">
+        <image src="{{item.icon}}" class="va_icon" />
+        <view>{{item.name}}</view>
+        <view class="va_num" wx:if="{{index==4}}"><text>{{currentTab==0?'2':currentTab==1?'2.2':'3'}}</text>橙长值/次</view>
+        <view class="va_num" wx:else><text>{{currentTab==0?'1':currentTab==1?'1.2':'1.5'}}</text>橙长值/次</view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -17,6 +17,12 @@
           "pathName": "pages/wxCase/fileDown/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/actualPage/steps/index",
+          "pathName": "pages/actualPage/steps/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

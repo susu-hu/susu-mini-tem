@@ -1,1 +1,195 @@
 /* pages/actualPage/steps/index.wxss */
+.swiper_box {
+  width: 710rpx;
+  height: 353rpx;
+  margin: 25rpx auto 0;
+  border-radius: 20rpx;
+  overflow: hidden;
+  background: #FA8E23;
+}
+
+.guide_box {
+  width: 710rpx;
+  height: 353rpx;
+  position: relative;
+  box-sizing: border-box;
+  padding: 22rpx 24rpx 20rpx 28rpx;
+}
+
+.guide_icon {
+  width: 36rpx;
+  height: 38rpx;
+  margin-right: 10rpx;
+  border-radius: 50%;
+}
+
+.guide_title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.guide_rule {
+  width: 139rpx;
+  height: 44rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  font-size: 26rpx;
+  color: #FA871E;
+  line-height: 44rpx;
+  text-align: center;
+}
+
+.guide_recent {
+  font-size: 28rpx;
+  color: #954A00;
+  margin-top: 12rpx;
+  margin-bottom: 40rpx;
+}
+
+.guide_recent text {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #FFF5A7;
+}
+
+.grade_box {
+  display: inline-block;
+  padding: 0 12rpx;
+  box-sizing: border-box;
+  min-width: 129rpx;
+  height: 35rpx;
+  background: linear-gradient(77deg, #FFFFFF 0%, #FFE89D 100%);
+  border-radius: 18rpx;
+  font-size: 22rpx;
+  color: #D57A17;
+  line-height: 35rpx;
+  margin-bottom: 16rpx;
+}
+
+.grade_icon {
+  width: 18rpx;
+  height: 18rpx;
+  margin-right: 6rpx;
+}
+
+.grade_cir {
+  position: relative;
+  width: 75rpx;
+  height: 75rpx;
+  z-index: 11;
+  font-size: 22rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 50%;
+}
+
+.grade_cir::after {
+  content: "";
+  width: 265rpx;
+  height: 6rpx;
+  background: rgba(96, 47, 0, 0.39);
+  border-radius: 4rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+
+.line_box .l:last-child .grade_cir::after {
+  display: none;
+}
+
+.grade_step {
+  font-size: 18rpx;
+  color: #FFFFFF;
+  margin-top: 16rpx;
+}
+
+.grade_step text {
+  color: #FFF5A7;
+  font-weight: bold;
+}
+
+.val_box {
+  width: 710rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 30rpx 0;
+  margin: 0 auto;
+  font-size: 24rpx;
+  color: #333333;
+}
+
+.va_icon {
+  width: 78rpx;
+  height: 78rpx;
+  margin-bottom: 12rpx;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.va_num {
+  font-size: 18rpx;
+  color: #999999;
+  margin-top: 8rpx;
+}
+
+.va_num text {
+  color: #FA8C22;
+}
+
+.z_index {
+  z-index: 2;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+.grade0::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 138rpx;
+  height: 6rpx;
+  background: linear-gradient(270deg, #FFFFFF 0%, #FFE79A 100%);
+  border-radius: 4rpx;
+  z-index: 1;
+}
+
+.grade_ce {
+  width: 75rpx;
+  height: 75rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  background-color: #FA9329;
+  color: #FFFFFF;
+}
+
+.grade_oth {
+  width: 100%;
+  height: 100%;
+  color: #FA8E23;
+}
+
+.grade_oth text {
+  position: relative;
+  z-index: 111;
+}
+
+.grade1::after {
+  background: linear-gradient(270deg, #FFFFFF 0%, #FFE79A 100%);
+}
+
+.title {
+  padding: 25rpx 22rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+}

@@ -1,66 +1,55 @@
 // pages/actualPage/steps/index.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
+
   data: {
-
+    swiper_box: [{
+      name: '专业导购'
+    },
+    {
+      name: '金牌导购'
+    },
+    {
+      name: '王牌导购'
+    }
+    ],
+    task_list: [{
+      name: '每日签到',
+      icon: "https://i.postimg.cc/qRRLS16Q/susu0.jpg"
+    },
+    {
+      name: '会员纳新',
+      icon: "https://i.postimg.cc/qRRLS16Q/susu0.jpg"
+    },
+    {
+      name: '素材转发',
+      icon: "https://i.postimg.cc/qRRLS16Q/susu0.jpg"
+    },
+    {
+      name: '产品出库',
+      icon: "https://i.postimg.cc/qRRLS16Q/susu0.jpg"
+    },
+    {
+      name: '会员积分',
+      icon: "https://i.postimg.cc/qRRLS16Q/susu0.jpg"
+    },
+    ],
+    currentTab: 2,
+    currGrade: 0, //当前等级 0-专业 1-金牌 2-王牌
   },
-
   /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  * swiper
+  * @param {*} e 
+  */
+  handleSwiper(e) {
+    let {
+      current,
+      source
+    } = e.detail
+    if (source === 'autoplay' || source === 'touch') {
+      this.setData({
+        currentTab: current
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
