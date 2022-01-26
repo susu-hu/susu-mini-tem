@@ -1,0 +1,26 @@
+<!--pages/actualPage/percent/index.wxml-->
+<view class="con_box">
+  <block wx:for="{{task_list}}" wx:key="task_list">
+    <view class="c_item flex-row j_b">
+      <view class="flex">
+        <image src="{{item.icon}}" class="item_icon" />
+        <view>
+          <view class="flex-row mb20">
+            <text class="item_name">{{item.name}}</text>
+            <text class="item_num">+{{item.num}}</text>
+            <text>{{item.name_val}}</text>
+          </view>
+          <view class="flex-row" wx:if="{{item.name!='会员积分'}}">
+            <view class="item_basic">
+              <view class="prgress" style="width:{{item.progress/item.total*100}}%"></view>
+            </view>
+            <view class="item_pro"><text>{{item.progress}}</text>/{{item.total}}</view>
+          </view>
+          <view wx:else>会员扫码获得的橙长值无上限喔～</view>
+        </view>
+      </view>
+      <view class="item_url item_over" wx:if="{{item.name!='会员积分' && item.progress == item.total}}">已完成</view>
+      <view class="item_url" data-url="{{item.url}}" wx:else>{{item.url_text}}</view>
+    </view>
+  </block>
+</view>

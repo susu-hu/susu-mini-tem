@@ -611,6 +611,10 @@ Page({
             name: '状态步骤条',
             url: '/pages/actualPage/steps/index'
           },
+          {
+            name: '进度条百分比',
+            url: '/pages/actualPage/percent/index'
+          },
         ]
       }
     ],

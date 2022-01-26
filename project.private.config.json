@@ -23,6 +23,12 @@
           "pathName": "pages/actualPage/steps/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/actualPage/percent/index",
+          "pathName": "pages/actualPage/percent/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -253,7 +253,8 @@
         "list/index",
         "drag/index",
         "steps/index",
-        "oneTop/index"
+        "oneTop/index",
+        "percent/index"
       ]
     }
   ],

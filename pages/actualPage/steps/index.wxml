@@ -68,8 +68,8 @@
       <view class="flex-column" style="width: 20%;">
         <image src="{{item.icon}}" class="va_icon" />
         <view>{{item.name}}</view>
-        <view class="va_num" wx:if="{{index==4}}"><text>{{currentTab==0?'2':currentTab==1?'2.2':'3'}}</text>橙长值/次</view>
-        <view class="va_num" wx:else><text>{{currentTab==0?'1':currentTab==1?'1.2':'1.5'}}</text>橙长值/次</view>
+        <view class="va_num" wx:if="{{index==4}}"><text>{{currentTab==0?'2':currentTab==1?'2.2':'3'}}</text>苏苏/次</view>
+        <view class="va_num" wx:else><text>{{currentTab==0?'1':currentTab==1?'1.2':'1.5'}}</text>苏苏/次</view>
       </view>
     </block>
   </view>

@@ -18,19 +18,19 @@ Page({
       icon: "https://i.postimg.cc/qRRLS16Q/susu0.jpg"
     },
     {
-      name: '会员纳新',
+      name: '每日签到',
       icon: "https://i.postimg.cc/qRRLS16Q/susu0.jpg"
     },
     {
-      name: '素材转发',
+      name: '每日签到',
       icon: "https://i.postimg.cc/qRRLS16Q/susu0.jpg"
     },
     {
-      name: '产品出库',
+      name: '每日签到',
       icon: "https://i.postimg.cc/qRRLS16Q/susu0.jpg"
     },
     {
-      name: '会员积分',
+      name: '每日签到',
       icon: "https://i.postimg.cc/qRRLS16Q/susu0.jpg"
     },
     ],
