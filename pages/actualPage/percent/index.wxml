@@ -24,3 +24,5 @@
     </view>
   </block>
 </view>
+
+<view class="btn" catchtap="proAdd">进度++</view>

@@ -51,6 +51,16 @@ Page({
     ],
 
   },
-
+  proAdd() {
+    let { task_list } = this.data;
+    task_list.forEach(item => {
+      if (item.progress <= item.total) {
+        item.progress += 1;
+      }
+    })
+    this.setData({
+      task_list,
+    })
+  }
 
 })
