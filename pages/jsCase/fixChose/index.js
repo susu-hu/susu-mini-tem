@@ -101,7 +101,8 @@ Page({
     }
 
     if (index == 1 || index == 2) {
-      this.selectComponent('#date').reset()
+      // this.selectComponent('#date').reset()
+      console.log(beginTime,endTime)
       this.setData({
         show_chose: true,
         'sel_list.start_time': beginTime,

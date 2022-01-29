@@ -1,5 +1,4 @@
 <!--pages/jsCase/fixChose/index.wxml-->
-<!--pages/memberList/index.wxml-->
 <view class="head_fix" id="fix_box">
   <scroll-view scroll-x="{{true}}" class="head_scroll">
     <block wx:for="{{select_list}}" wx:key="select_list">
