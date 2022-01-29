@@ -14,6 +14,9 @@ Page({
       {
         name: '近30天'
       },
+      {
+        name: '指定日期'
+      },
     ],
     hasData: true,
     choseType: undefined, //选中的弹框类型
@@ -98,11 +101,14 @@ Page({
       var day = nowDate.getDate() < 10 ? "0" + nowDate.getDate() : nowDate.getDate();
       var beginTime = year + "-" + month + "-" + day;
       var endTime = util.toolsFn.getNowTime(2);
+    } else if (index == 3) {
+      var beginTime = '2022-1-15';
+      var endTime = '2022-2-4';
     }
 
-    if (index == 1 || index == 2) {
-      // this.selectComponent('#date').reset()
-      console.log(beginTime,endTime)
+    if (index != 0) {
+      this.selectComponent('#date').reset()
+      console.log(beginTime, endTime)
       this.setData({
         show_chose: true,
         'sel_list.start_time': beginTime,
