@@ -1,2 +1,50 @@
 <!--pages/jsCase/fixChose/index.wxml-->
-<text>pages/jsCase/fixChose/index.wxml</text>
+<!--pages/memberList/index.wxml-->
+<view class="head_fix" id="fix_box">
+  <scroll-view scroll-x="{{true}}" class="head_scroll">
+    <block wx:for="{{select_list}}" wx:key="select_list">
+      <view class="head_item {{index==choseType?'active':''}}" catchtap="tabSelect" data-index="{{index}}">
+        <text>{{item.name}}</text>
+        <image src="{{index==choseType?'/img/down_icon.png':'/img/down_icon.png'}}" />
+      </view>
+    </block>
+  </scroll-view>
+  <view class="head_result" wx:if="{{show_chose}}">
+    <view class="flex con_title j_b">
+      <view class="flex-row head_list">
+        <view class="item_sele" wx:if="{{sel_list.start_time || sel_list.end_time}}">
+          {{sel_list.start_time}}至{{sel_list.end_time}}
+        </view>
+      </view>
+      <view class="reset" catchtap="reset">重置</view>
+    </view>
+    <view class="result_tip">查询结果共计：{{total}}位</view>
+  </view>
+</view>
+<view class="con" style="margin-top:{{!show_chose?fix_top+10:fix_top}}px">
+  <!-- 有数据 -->
+  <view class="me_list" wx:if="{{hasData}}">
+    <block wx:for="{{10}}" wx:key="listData">
+      <view class="m_item flex-row j_b" catchtap="goJump" data-phone="{{item.phone}}">
+        <view class="flex">
+          <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="user_ava" />
+          <view class="user_info">
+            <view class="flex-row">
+              <view class="u_name text_ellipsis">苏苏小苏苏</view>
+              <view class="u_phone text_ellipsis">12312131111</view>
+              <view class="status new_me">测试数据</view>
+            </view>
+            <view class="u_time">注册时间：2022-1-20</view>
+            <view>注册来源：测试</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- 无数据 -->
+  <view wx:else class="flex-column none">
+  </view>
+</view>
+<!-- 时间选择弹框 -->
+<!--minDate最小时间 默认为2018/1/1,日期格式为yyyy/mm/dd ,最小时间和当前日期尽量不要相差太大,无最大日期,在触底时每次加载6个月-->
+<date isShow="{{choseType==0}}" timeStart="{{sel_list.start_time}}" minDate="2019/1/1" timeEnd="{{sel_list.end_time}}" bind:tapYes="dateSubmit" bind:tapNo="closeModal" id="date" />

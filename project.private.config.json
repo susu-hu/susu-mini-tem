@@ -35,6 +35,12 @@
           "pathName": "pages/actualPage/scrollGap/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/jsCase/fixChose/index",
+          "pathName": "pages/jsCase/fixChose/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

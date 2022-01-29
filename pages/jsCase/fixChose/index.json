@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "date": "../components/date/index"
+  },
   "navigationBarTitleText": "头部固定筛选项"
 }
