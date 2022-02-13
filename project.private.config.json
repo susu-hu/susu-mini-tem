@@ -41,6 +41,12 @@
           "pathName": "pages/jsCase/fixChose/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/cssCase/bdd/index",
+          "pathName": "pages/cssCase/bdd/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

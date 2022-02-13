@@ -1,0 +1,18 @@
+<!--pages/cssCase/bdd/index.wxml-->
+<div class="bdd">
+  <h2 class="title">苏苏加油</h2>
+  <div class="circle-body">
+    <div class="ear-left"></div>
+    <div class="ear-right"></div>
+    <div class="circle-face">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="footer footer-left"></div>
+    <div class="footer footer-right"></div>
+    <div class="arm arm-left"></div>
+    <div class="arm arm-right"></div>
+  </div>
+</div>
