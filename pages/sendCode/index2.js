@@ -1,5 +1,11 @@
 // pages/sendCode/index2.js
 Page({
+  onTabItemTap(item){
+    console.log(12312312)
+    wx.showToast({
+      title: '苏苏来了',
+    })
+  },
 
   /**
    * 页面的初始数据
@@ -23,14 +29,17 @@ Page({
      });
   },
 
+
  
   onLoad: function (options) {
     //选择组件对象
     this.verifycode = this.selectComponent("#verifycode");
+    console.log('onload执行的不')
   },
 
   
   onShow: function () {
+    console.log('onShow执行的不')
     //自定义的tabbar
     if (typeof this.getTabBar === 'function' &&
       this.getTabBar()) {
