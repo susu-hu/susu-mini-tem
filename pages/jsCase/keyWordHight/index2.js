@@ -74,6 +74,11 @@ Page({
     this.setData({
       filterList: datalist
     })
-
+  },
+  clear_input() {
+    this.setData({
+      search: "",
+      filterList: []
+    })
   }
 })
