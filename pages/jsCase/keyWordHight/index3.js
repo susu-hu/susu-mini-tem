@@ -38,42 +38,10 @@ Page({
           arr.push({ name: this.data.list[i].name })
         }
       }
-      this.setData({ filterList: arr, }, () => {
-        this.getHighlight(arr, val)
-      })
+      this.setData({ filterList: arr, })
     } else {
       this.setData({ filterList: [], })
     }
-  },
-  /**
- * 关键字高亮处理
- * @param { String } datalist - 文本
- * @param { String } val - 关键字
- */
-  getHighlight(datalist, val) {
-    datalist.forEach(item => {
-      let textList = item.name.split("");
-      let keyList = val.split("");
-      let list = [];
-      for (let i = 0; i < textList.length; i++) {
-        let obj = {
-          set: false,
-          val: textList[i]
-        }
-        list.push(obj);
-      };
-      for (let k = 0; k < keyList.length; k++) {
-        list.forEach(i0 => {
-          if (i0.val === keyList[k]) {
-            i0.set = true;
-          }
-        })
-      }
-      item.list = list;
-    });
-    this.setData({
-      filterList: datalist
-    })
   },
   clear_input() {
     this.setData({

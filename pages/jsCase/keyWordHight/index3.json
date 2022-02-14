@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "highlight":"../components/highlight/index"
+  },
+  "navigationBarTitleText": "关键字高亮3"
+}

@@ -1,0 +1,2 @@
+<!--pages/jsCase/components/highlight/index.wxml-->
+<text class="{{ item.set &&'ative'}}" wx:for="{{ highlightList }}" wx:key="index">{{ item.val }}</text>

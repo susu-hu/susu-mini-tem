@@ -1,0 +1,4 @@
+/* pages/jsCase/components/highlight/index.wxss */
+.ative {
+  color: rgb(175, 91, 253);
+}
