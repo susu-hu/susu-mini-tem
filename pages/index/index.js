@@ -281,6 +281,10 @@ Page({
         name: '冰墩墩',
         url: '/pages/cssCase/bdd/index'
       },
+      {
+        name: '雪容融',
+        url: '/pages/cssCase/xrr/index'
+      },
       ]
     },
     {
