@@ -1,0 +1,13 @@
+<!--pages/jsCase/keyWordHight/index2.wxml-->
+<view class="head flex-row">
+  <view class="head_input">
+    <image src="/img/search_icon.png" class="search_icon"></image>
+    <input type="text" placeholder="搜索" placeholder-class="place_holder" bindinput="getValue" value="{{search}}"></input>
+  </view>
+  <view class="sha_icon" catchtap="clear_input">取消</view>
+</view>
+<view class="con">
+  <view class="item" wx:for="{{ filterList }}" wx:key="index" data-index="{{ index }}">
+    <text wx:for="{{item.list}}" class="{{i0.set &&'ative'}}" wx:key="idx" wx:for-item="i0">{{i0.val}}</text>
+  </view>
+</view>

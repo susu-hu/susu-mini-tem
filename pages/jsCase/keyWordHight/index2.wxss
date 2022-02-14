@@ -1,0 +1,66 @@
+/* pages/jsCase/keyWordHight/index2.wxss */
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  background: #fff;
+}
+
+.head_input {
+  position: relative;
+  flex: 1;
+  margin-left: 12rpx;
+}
+
+.search_icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -15rpx;
+  width: 28rpx;
+  height: 30rpx;
+  padding-left: 23rpx;
+}
+
+.head input {
+  height: 60rpx;
+  padding-left: 75rpx;
+  font-size: 28rpx;
+  border-radius: 30rpx;
+  background: #F5F5F5;
+}
+
+.place_holder {
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.sha_icon {
+  margin-left: 18rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.con {
+  padding-top: 90rpx;
+  margin: 0 20rpx;
+}
+
+.item {
+  border-bottom: 1rpx solid rgb(241, 239, 239);
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.ative {
+  color: rgb(76, 156, 221);
+}
