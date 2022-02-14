@@ -1,0 +1,2 @@
+<!--pages/actualPage/switchIndex/index.wxml-->
+<CardSwiper data="{{swiperData}}" bindloadmore="loadMore" back="pink"> </CardSwiper>

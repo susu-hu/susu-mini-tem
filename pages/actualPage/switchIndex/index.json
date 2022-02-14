@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "CardSwiper": "../components/cardSwiper/cardSwiper"
+  },
+  "navigationBarTitleText": "一个切换图片的ui交互"
+
+}

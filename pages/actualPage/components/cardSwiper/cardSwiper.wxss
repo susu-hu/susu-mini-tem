@@ -1,0 +1,71 @@
+/**index.wxss**/
+  .card-swiper{
+    position: relative;
+    width: 600rpx;
+    height: 1000rpx;
+    color: #666;
+    font-size: 28rpx;
+  }
+
+.card-swiper-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600rpx;
+    height: 1000rpx;
+    border-radius: 26rpx;
+    background-color: #fff;
+    transition: all .3s ease-out;
+    z-index: 0;
+    display: none;
+  }
+  
+  .card-swiper .card-swiper-item.curdistance0{
+    z-index: 10;
+    display: flex;
+  }
+  
+  .card-swiper .card-swiper-item.curdistance1{
+    display: flex;
+    z-index: 9;
+    transform: scale(.95);
+    opacity: .7;
+    top: 40rpx;
+  }
+  .card-swiper .card-swiper-item.curdistance2{
+    display: flex;
+    z-index: 8;
+    transform: scale(.9);
+    opacity: .4;
+    top: 80rpx;
+  }
+  
+  .ani-slide-up{
+    display: flex;
+    animation: slideUp .6s ease-out;
+    z-index: 11;
+    /* transform: rotate(25deg); */
+  }
+  
+  .ani-slide-down{
+    display: flex;
+    animation: slideUp .6s ease-in;
+    animation-direction: reverse;
+  }
+  
+  
+  @keyframes slideUp{
+    0% {
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(15deg) translateY(-1000rpx);
+      opacity: 0;
+    }
+  }
+  

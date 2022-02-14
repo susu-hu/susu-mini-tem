@@ -629,7 +629,11 @@ Page({
       },
       {
         name: '上下滑动scroll-view',
-        url: '/pages/actualPage/know/index'
+        url: '/pages/actualPage/konw/index'
+      },
+      {
+        name: '一个切换图片的ui交互',
+        url: '/pages/actualPage/switchIndex/index'
       },
       ]
     }

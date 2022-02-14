@@ -260,7 +260,8 @@
         "oneTop/index",
         "percent/index",
         "scrollGap/index",
-        "konw/index"
+        "konw/index",
+        "switchIndex/index"
       ]
     }
   ],
