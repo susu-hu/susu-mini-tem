@@ -257,7 +257,8 @@
         "steps/index",
         "oneTop/index",
         "percent/index",
-        "scrollGap/index"
+        "scrollGap/index",
+        "konw/index"
       ]
     }
   ],

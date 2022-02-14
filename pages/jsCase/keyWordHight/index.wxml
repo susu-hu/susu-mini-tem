@@ -1,2 +1,9 @@
 <!--pages/jsCase/keyWordHight/index.wxml-->
-<text>pages/jsCase/keyWordHight/index.wxml</text>
+<!--公共的wxs工具-->
+<wxs src="./highlight.wxs" module="util" />
+<view wx:for="{{list}}" wx:key="item">
+  <view wx:for="{{util.highLight(item,'苏苏')}}" wx:key="item" style="display: inline-block;">
+    <text wx:if="{{item.type==1}}" decode="true" space="true" style='color:red;'>{{util.myReplace(item.text)}} </text>
+    <text wx:else decode="true" space="true">{{util.myReplace(item.text)}}</text>
+  </view>
+</view>

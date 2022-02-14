@@ -1,1 +1,7 @@
 /* pages/jsCase/keyWordHight/index.wxss */
+page {
+  background-color: #fff;
+  padding: 30rpx;
+  color: #333;
+  font-size: 25rpx;
+}

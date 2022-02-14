@@ -1,0 +1,61 @@
+var sliceStr = function (str, len) {
+  var len = len || 8;
+  if (str != null) {
+    if (str.length > len) {
+      return str.substring(0, len) + "...";
+    } else {
+      return str;
+    }
+  }
+  return '';
+}
+var highLight = function (content, key, res) {
+  if (res == undefined) {
+    res = [];
+  }
+  key = key.toUpperCase();
+  var keyLen = key.length;
+  var tmp = content.toUpperCase();
+  if (tmp.length >= keyLen && keyLen > 0) {
+
+    var index = -1;
+    index = tmp.indexOf(key);
+
+    if (index != -1) {
+      var n = content.substring(0, index);
+      res.push({
+        type: 2,
+        text: n
+      });
+      var y = content.substring(index, index + keyLen);
+      res.push({
+        type: 1,
+        text: y
+      });
+      content = content.substring(index + keyLen, content.length);
+      highLight(content, key, res);
+    } else {
+      res.push({
+        type: 2,
+        text: content
+      });
+    }
+  } else {
+    res.push({
+      type: 2,
+      text: content
+    });
+  }
+  return res;
+}
+var myReplace = function (content) {
+  content = content.replace(" ", "&nbsp;");
+  if (content.indexOf(" ") != -1) {
+    return myReplace(content);
+  }
+
+  return content;
+}
+module.exports.myReplace = myReplace;
+module.exports.highLight = highLight;
+module.exports.sliceStr = sliceStr;
