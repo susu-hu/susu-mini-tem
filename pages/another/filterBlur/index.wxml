@@ -1,2 +1,3 @@
 <!--pages/another/filterBlur/index.wxml-->
-<view class="award">苏苏小苏苏</view>
+<view class="award a">苏苏小苏苏</view>
+<view class="award ">苏苏小苏苏</view>

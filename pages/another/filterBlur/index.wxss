@@ -15,7 +15,6 @@ page {
   font-size: 34rpx;
   font-weight: 500;
   color: #FB962C;
-  overflow: hidden;
   text-align: center;
 }
 
@@ -29,4 +28,9 @@ page {
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+.a {
+  overflow: hidden;
+  margin-bottom: 40px;
 }
