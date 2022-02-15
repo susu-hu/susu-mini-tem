@@ -211,7 +211,9 @@
         "draw3/index",
         "draw4/index",
         "keyWordHight/index2",
-        "keyWordHight/index3"
+        "keyWordHight/index3",
+        "consoleLog/index",
+        "pageDestory/index"
       ]
     },
     {

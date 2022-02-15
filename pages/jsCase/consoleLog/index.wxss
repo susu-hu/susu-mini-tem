@@ -1,0 +1,7 @@
+/* pages/jsCase/consoleLog/index.wxss */
+page {
+  background-color: #fff;
+  font-size: 30rpx;
+  color: #222;
+  padding: 30rpx;
+}

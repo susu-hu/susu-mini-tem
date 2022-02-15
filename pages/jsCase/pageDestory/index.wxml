@@ -1,0 +1,4 @@
+<!--pages/jsCase/pageDestory/index.wxml-->
+<view class="refresh" catchtap="refresh">刷新</view>
+<view  class="refresh" >要想触发销毁页面onUnload生命周期执行方法，必须要使用不存在页面栈的路由。比如：wx.reLaunch、wx.redirectTo、wx.navigateBack
+不能使用wx.navigateTo，因为此路由是可以保存页面栈的，也就是并没有销毁页面，而是叠加页面栈，最多可以叠加5层。</view>

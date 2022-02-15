@@ -25,13 +25,19 @@ Component({
       text: "验证码"
     }]
   },
-  attached() {
-  },
+  attached() {},
   methods: {
     switchTab(e) {
       const data = e.currentTarget.dataset
       const url = data.path
-      wx.switchTab({url})
+      wx.switchTab({
+        url,
+        success: (res) => {
+          let page = getCurrentPages().pop();
+          if (page == undefined || page == null) return;
+          page.onLoad()
+        }
+      })
       this.setData({
         selected: data.index
       })

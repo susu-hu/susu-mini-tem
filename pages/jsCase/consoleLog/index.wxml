@@ -1,0 +1,2 @@
+<!--pages/jsCase/consoleLog/index.wxml-->
+<view> console.log("%c需要输出的信息 ", "css 代码");</view>

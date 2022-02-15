@@ -1,0 +1,10 @@
+/* pages/jsCase/pageDestory/index.wxss */
+page {
+  background-color: #ffffff;
+}
+
+.refresh {
+  padding: 30rpx;
+  color: #333;
+  font-size: 30rpx;
+}
