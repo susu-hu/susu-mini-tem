@@ -47,6 +47,12 @@
           "pathName": "pages/jsCase/pageDestory/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/actualPage/myIndex/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

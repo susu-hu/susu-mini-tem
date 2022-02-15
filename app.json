@@ -263,7 +263,8 @@
         "percent/index",
         "scrollGap/index",
         "konw/index",
-        "switchIndex/index"
+        "switchIndex/index",
+        "myIndex/index"
       ]
     }
   ],

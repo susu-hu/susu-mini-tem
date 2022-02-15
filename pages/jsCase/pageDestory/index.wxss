@@ -8,3 +8,18 @@ page {
   color: #333;
   font-size: 30rpx;
 }
+
+.btn {
+  width: 710rpx;
+  height: 100rpx;
+  background: linear-gradient(360deg, #F7F7F7 0%, #FFE8CC 100%);
+  box-shadow: 0rpx 3rpx 15rpx rgba(0, 0, 0, 0.04);
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: absolute;
+  top: 420rpx;
+  left: 20rpx;
+  font-size: 28rpx;
+  color: #5F2A17;
+}

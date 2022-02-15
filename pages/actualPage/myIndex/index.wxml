@@ -1,0 +1,96 @@
+<!--pages/actualPage/myIndex/index.wxml-->
+<view class="head_top " style="padding-top:{{navHeight+10}}px">
+  <view class="flex-row uu_info">
+    <view class="user_ava">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="user_info">
+      <view class="text_ellipsis u_name">
+        <open-data type="userNickName"></open-data>
+      </view>
+      <view class="flex-row  u_id" wx:if="{{phone == '' && hyid == ''}}">
+        <view>暂未完善会员信息</view>
+      </view>
+      <view class="flex-row  u_id" wx:else>
+        <view>{{phone}} </view>
+        <view class="text_ellipsis">会员ID：{{hyid}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="uu_box">
+    <image src="../img/my.png" class="bg_img"></image>
+    <image src="/img/my8.png" class="uu_code" catchtap="showCode"></image>
+    <view class="u1">
+      <text class="uu_l_text">银星级会员</text>
+      <image src="/img/my9.png" class="uu_level"></image>
+      <view wx:if="{{hyid}}">会员ID：{{hyid}}</view>
+    </view>
+  </view>
+</view>
+<view class="uu_card flex-row j_b">
+  <view class="u_card u_left flex a_e" catchtap="toCard">
+    <view class="u_desc">
+      <view class="mb21">
+        <text class="u_num">{{coupon_num}}</text>
+        <text class="u_unit">张</text>
+      </view>
+      <view class="flex-row">
+        <view>我的优惠券</view>
+        <view class="left_arrow"></view>
+      </view>
+    </view>
+    <image src="/img/my2.png" class="u_left_img"></image>
+  </view>
+  <view class="u_right u_card flex a_e" catchtap="toGift">
+    <view class="u_desc">
+      <view class="mb21">
+        <text class="u_num">{{gift_num}}</text>
+        <text class="u_unit">张</text>
+      </view>
+      <view class="flex-row">
+        <view>我的礼品券</view>
+        <view class="left_arrow"></view>
+      </view>
+    </view>
+    <image src="/img/my3.png" class="u_left_img"></image>
+  </view>
+</view>
+<view class="cen">
+  <swiper class="swiper-box" current="{{swiperCurrent}}" bindanimationfinish="swiperChange" circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banner}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item.img_url}}" class="bg_img" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view>
+  <text class="b_title">会员服务</text>
+  <view class="b_box">
+    <block wx:for="{{tabList}}" wx:key="*this">
+      <view class="b_item flex-row j_b" catchtap="toDetail" data-url="{{item.url}}">
+        <view class="flex-row">
+          <image src="{{item.icon}}" class="item_icon"></image>
+          <view>{{item.name}}</view>
+        </view>
+        <image src="/img/left_icon.png" class="b_left_icon"></image>
+      </view>
+    </block>
+  </view>
+</view>
+<!-- 弹框 -->
+<view class="mask" hidden="{{show_code}}" catchtap="closeModal"></view>
+<view class="pop_info " hidden="{{show_code}}">
+  <view class="pop_box flex-column">
+    <view class="p_ava">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <image src="/img/close_icon.png" catchtap="closeModal" class="p_close_icon"></image>
+    <view class="flex-row">
+      <view class="p_code_id">会员ID：{{hyid}}</view>
+      <view class="p_btn" bindtap="copyCodeId">点击复制</view>
+    </view>
+    <image src="{{code_uri}}" class="p_code_img"></image>
+    <view class="show_tips">请向线下门店人员出示此二维码</view>
+  </view>
+</view>
