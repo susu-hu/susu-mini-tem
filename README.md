@@ -129,6 +129,7 @@ step5：构建npm）
 113. css实现一个雪容融
 115. 实现关键词高亮
 116. 背景高斯模糊
+117. 卡片切换效果
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -251,6 +252,7 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/xrr.png)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%85%B3%E9%94%AE%E8%AF%8D%E9%AB%98%E4%BA%AE.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A.png)
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%8D%A1%E7%89%87.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
