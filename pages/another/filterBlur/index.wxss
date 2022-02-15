@@ -1,0 +1,32 @@
+/* pages/another/filterBlur/index.wxss */
+page {
+  background: #ffbb5e;
+  margin-top: 50px;
+}
+
+.award {
+  width: 710rpx;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 73rpx 0 42rpx;
+  position: relative;
+  min-height: 423rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #FB962C;
+  overflow: hidden;
+  text-align: center;
+}
+
+.award::before {
+  content: '';
+  background: rgba(255, 245, 237);
+  filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
