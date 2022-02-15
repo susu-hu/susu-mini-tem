@@ -64,3 +64,6 @@
 <button class="b2 btn" open-type="contact">
   <image src="https://i.postimg.cc/pXDp6RXq/susu3.jpg"></image>
 </button>
+
+<view class="award_left btn">1</view>
+<view class="award_right btn">1</view>
