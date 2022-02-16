@@ -1,0 +1,39 @@
+/* pages/cssCase/mediaScreen/index.wxss */
+@media screen and (min-height: 926px) {
+  .dialog {
+    height: 1300rpx;
+    border: 1px solid darkblue;
+  }
+}
+
+@media screen and (max-height: 896px) {
+  .dialog {
+    height: 1200rpx;
+    border: 1px solid pink;
+  }
+}
+
+@media screen and (max-height: 736px) {
+  .dialog {
+    height: 1000rpx;
+    border: 1px solid yellow;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .dialog {
+    height: 800rpx;
+    border: 1px solid green;
+  }
+}
+
+.dialog {
+  width: 600rpx;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1111;
+  border-radius: 20rpx;
+  background-color: #fff;
+}

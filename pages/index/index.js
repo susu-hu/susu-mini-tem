@@ -285,6 +285,10 @@ Page({
             name: '雪容融',
             url: '/pages/cssCase/xrr/index'
           },
+          {
+            name: '媒体查询',
+            url: '/pages/cssCase/mediaScreen/index'
+          },
         ]
       },
       {

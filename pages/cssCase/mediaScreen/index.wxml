@@ -1,0 +1,3 @@
+<!--pages/cssCase/mediaScreen/index.wxml-->
+<view class="mask"></view>
+<view class="dialog"></view>
