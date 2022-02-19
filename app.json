@@ -67,7 +67,8 @@
         "scrollNews/index",
         "imgRadius/index",
         "imgHead/index",
-        "filterBlur/index"
+        "filterBlur/index",
+        "cust-swiper/index"
       ]
     },
     {
