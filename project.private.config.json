@@ -59,6 +59,12 @@
           "pathName": "pages/cssCase/mediaScreen/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/slot/index",
+          "pathName": "pages/wxCase/slot/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -1,0 +1,9 @@
+<!--pages/wxCase/components/slot/inex.wxml-->
+<!-- 在同一个节点上使用普通样式类和外部样式类时，两个类的优先级是未定义的，因此最好避免这种情况。 -->
+<view class="wrapper">
+  <slot name="before"></slot>
+  <view>苏苏苏，{{propA}}-{{propB}}</view>
+  <view my-class="text">外部样式测试</view>
+  <slot name="after"></slot>
+  <!-- <slot></slot> -->
+</view>

@@ -1,0 +1,4 @@
+/* pages/wxCase/slot/index.wxss */
+page {
+  background-color: #fff;
+}

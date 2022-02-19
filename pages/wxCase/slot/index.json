@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "slot-com": "../components/slot/inex"
+  },
+  "navigationBarTitleText": "slot组件"
+}
