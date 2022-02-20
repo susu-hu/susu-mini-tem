@@ -55,8 +55,8 @@
           "scene": null
         },
         {
-          "name": "",
-          "pathName": "pages/cssCase/mediaScreen/index",
+          "name": "pages/wxCase/slot/index",
+          "pathName": "pages/wxCase/slot/index",
           "query": "",
           "scene": null
         },
