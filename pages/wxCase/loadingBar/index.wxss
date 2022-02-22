@@ -1,0 +1,63 @@
+/* pages/wxCase/loadingBar/index.wxss */
+.btn {
+  margin: 140rpx auto;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background-color: orange;
+  font-size: 27rpx;
+  color: #ffffff;
+}
+
+.progress {
+  pointer-events: none;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 2000;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4rpx;
+  overflow: hidden;
+  transition: all 200ms ease 0s;
+  background: orange;
+}
+
+.progress-spinner {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  z-index: 2000;
+  display: block;
+  border-color: orange;
+}
+
+.progress-spinner::after {
+  content: "";
+  display: block;
+  width: 24rpx;
+  height: 24rpx;
+  box-sizing: border-box;
+  border: solid 4rpx transparent;
+  border-top-color: inherit;
+  border-left-color: inherit;
+  border-radius: 50%;
+  -webkit-animation: load-spinner 0.4s linear infinite;
+  animation: load-spinner 0.4s linear infinite;
+}
+
+@keyframes load-spinner {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
