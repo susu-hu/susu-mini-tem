@@ -1,0 +1,9 @@
+<!--pages/another/cust-swiper/index.wxml-->
+<view class="swiper-box" bindtouchmove="tauchMove" bindtouchstart="tauchStart" bindtouchend="tauchEnd">
+  <view class="item-box {{item.zIndex==1?'none':''}}" wx:for="{{swiperList}}" wx:key="index" style="--index:{{item.zIndex}};--left:{{item.mLeft}}">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </view>
+</view>

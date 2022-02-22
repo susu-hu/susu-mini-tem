@@ -1,0 +1,18 @@
+/* pages/wxCase/components/slot/inex.wxss */
+.wrapper {
+  padding: 20rpx;
+  color: #333;
+  font-size: 25rpx;
+}
+
+/* #a { } 在组件中不能使用 */
+/* [a] { } 在组件中不能使用 */
+/* button { } 在组件中不能使用 */
+/* .a > .b { } 除非 .a 是 view 组件节点，否则不一定会生效 */
+/* :host {
+  color: pink !important;
+} */
+
+.text {
+  color: navajowhite;
+}

@@ -55,8 +55,8 @@
           "scene": null
         },
         {
-          "name": "",
-          "pathName": "pages/wxCase/radioBox/index",
+          "name": "pages/another/cust-swiper/index",
+          "pathName": "pages/another/cust-swiper/index",
           "query": "",
           "scene": null
         }

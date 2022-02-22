@@ -1,0 +1,11 @@
+<!--pages/wxCase/slot/index.wxml-->
+<slot-com prop-a="{{dataFieldA}}" prop-b="{{dataFieldB}}">
+  <view slot="before">苏苏就是小苏苏将显示在 name="before"中的内容</view>
+  <view slot="after">苏苏就是小苏苏将显示在 name="after"中的内容</view>
+</slot-com>
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
+  <van-tabbar-item icon="search">标签</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
+  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+</van-tabbar>

@@ -1,0 +1,62 @@
+/* pages/another/cust-swiper/index.wxss */
+page {
+  background-color: #fff;
+}
+
+.swiper-item image,
+.swiper-item video {
+  width: 100%;
+  display: block;
+  height: 100%;
+  margin: 0;
+  pointer-events: none;
+}
+
+image {
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.swiper-box {
+  height: 420rpx;
+  position: relative;
+  max-width: 750rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 90rpx;
+}
+
+.swiper-box .item-box {
+  position: absolute;
+  width: 300rpx;
+  height: 380rpx;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin: auto;
+  transition: all 0.2s ease-in 0s;
+  opacity: 1;
+  box-shadow: 0px 13rpx 12rpx rgba(0, 0, 0, .5);
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+
+.swiper-box .item-box.none {
+  opacity: 0;
+}
+
+.swiper-box .item-box .swiper-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+
+
+.swiper-box .item-box {
+  transform: scale(calc(0.5 + var(--index) / 10));
+  margin-left: calc(var(--left) * 100rpx - 150rpx);
+  z-index: var(--index);
+}

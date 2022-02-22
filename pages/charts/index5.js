@@ -43,7 +43,7 @@ Page({
         type: 'value'
       },
       series: [{
-        data: [180, 223, 128, 180, 143, 500],
+        data: [180, 223, 128, 180, 143, 500, 700],
         type: 'line',
         smooth: true,
         itemStyle: {
@@ -54,7 +54,7 @@ Page({
             }
           }
         },
-
+        center: ['50%'],
       }],
       // 悬浮图标
       tooltip: {

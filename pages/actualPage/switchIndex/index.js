@@ -5,14 +5,15 @@ Page({
   data: {
     currentPage: 0,
     swiperData: [{
-      name: "page: 0, index: 1"
+      name: "内容1"
     }, {
-      name: "page: 0, index: 2"
+      name: "内容2"
     }, {
-      name: "page: 0, index: 3"
+      name: "内容3"
     }]
   },
   loadMore({ detail }) {
+    console.log(detail)
     if (this.data.currentPage >= 1) return; //模拟总页数为3
     // mock数据（请求api分页数据）
     setTimeout(() => {

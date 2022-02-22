@@ -67,7 +67,8 @@
         "scrollNews/index",
         "imgRadius/index",
         "imgHead/index",
-        "filterBlur/index"
+        "filterBlur/index",
+        "cust-swiper/index"
       ]
     },
     {
@@ -176,7 +177,8 @@
         "vanUpload/index2",
         "textarea/index",
         "newsSwiper/index2",
-        "iconFont/index"
+        "iconFont/index",
+        "slot/index"
       ]
     },
     {
