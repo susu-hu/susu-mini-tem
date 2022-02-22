@@ -1,6 +1,7 @@
 /* pages/actualPage/percent/index.wxss */
 page {
   background: #FFF0E0;
+  padding-bottom: 40rpx;
 }
 
 .con_box {

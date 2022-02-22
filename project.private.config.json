@@ -59,6 +59,12 @@
           "pathName": "pages/another/cust-swiper/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/actualPage/percent/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
