@@ -31,4 +31,7 @@
     <view class="box_view"></view>
   </view>
 </view>
-
+<!-- <view wx:for="{{aaa}}" wx:key="index">
+  {{item}}.--value
+  {{index}}--key
+</view> -->

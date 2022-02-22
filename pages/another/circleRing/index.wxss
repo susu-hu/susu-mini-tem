@@ -1,9 +1,10 @@
 /* pages/another/circleRing/index.wxss */
 /* pages/targetPlan/index.wxss */
-page{
+page {
   padding-bottom: 40rpx;
 }
-.head_fix{
+
+.head_fix {
   width: 750rpx;
   height: 120rpx;
   background: #FFF;
@@ -15,7 +16,8 @@ page{
   color: #333;
   z-index: 99;
 }
-.head_box{
+
+.head_box {
   width: 613rpx;
   height: 60rpx;
   background: #F5F5F5;
@@ -24,21 +26,26 @@ page{
   box-sizing: border-box;
   padding: 0 37rpx;
 }
-.i_ipt{
+
+.i_ipt {
   flex: 1;
 }
-.p_class{
+
+.p_class {
   color: #999999;
 }
-.s_icon{
+
+.s_icon {
   width: 28rpx;
   height: 28rpx;
   margin-right: 16rpx;
 }
-.con{
-  margin:140rpx 20rpx 0 ;
+
+.con {
+  margin: 140rpx 20rpx 0;
 }
-.c_item{
+
+.c_item {
   width: 710rpx;
   background: #FFF;
   border-radius: 12rpx;
@@ -47,97 +54,113 @@ page{
   padding: 26rpx 38rpx 27rpx 24rpx;
   font-size: 26rpx;
 }
-.c_value{
+
+.c_value {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.c_a{
+
+.c_a {
   position: fixed;
   top: 99999px;
 }
-.vaa{
+
+.vaa {
   position: relative;
   width: 80px;
 }
 
-.canvas_img{
+.canvas_img {
   width: 80px;
   height: 80px;
 }
-.c_one{
+
+.c_one {
   margin-bottom: 12rpx;
 }
-.c_one:last-child{
+
+.c_one:last-child {
   margin-bottom: 0;
 }
-.c_name{
+
+.c_name {
   color: #666;
   white-space: nowrap;
   margin-right: 12rpx;
 }
-.c_va{
+
+.c_va {
   width: 398rpx;
   color: #333;
   line-height: 37rpx;
 }
-.c_va1{
+
+.c_va1 {
   width: 220rpx;
   color: #333;
   line-height: 37rpx;
 }
-.c_status{
+
+.c_status {
   color: #3696FA;
 }
-.c_charts{
+
+.c_charts {
   padding-top: 8rpx;
   font-size: 22rpx;
   color: #333;
 }
-.c_cha{
+
+.c_cha {
   width: 100%;
   height: 100%;
   margin-bottom: 12rpx;
   font-size: 28rpx;
   color: #333;
 }
-.c_num_has{
+
+.c_num_has {
   color: #3696FA;
 }
 
 /* nodata */
-.no_data{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+.no_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-top: 307rpx;
 }
-.n_img{
-  width:237rpx ;
+
+.n_img {
+  width: 237rpx;
   height: 184rpx;
   margin-bottom: 48rpx;
 }
-.text_tip{
+
+.text_tip {
   font-size: 28rpx;
   font-weight: 400;
   color: #333333;
 }
+
 /* 弹框 */
 /* 遮罩 */
-.mask{
+.mask {
   position: fixed;
   z-index: 1000;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0,0,0,.6);
+  background: rgba(0, 0, 0, .6);
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
 }
-.dialog{
+
+.dialog {
   width: 610rpx;
   height: 100%;
   background: #FFFFFF;
@@ -147,23 +170,28 @@ page{
   z-index: 9999;
   right: 0;
 }
-.main_con{
+
+.main_con {
   width: 610rpx;
   padding: 36rpx 20rpx 30rpx 30rpx;
   box-sizing: border-box;
 }
-.dialog_item{
+
+.dialog_item {
   margin-bottom: 28rpx;
 }
-.zhank_icon{
+
+.zhank_icon {
   width: 17rpx;
   height: 16rpx;
-  margin-left:9rpx;
+  margin-left: 9rpx;
 }
-.d_chose{
+
+.d_chose {
   flex-wrap: wrap;
 }
-.d_item{
+
+.d_item {
   width: 176rpx;
   height: 60rpx;
   background: #F5F5F5;
@@ -173,45 +201,54 @@ page{
   color: #666666;
   line-height: 60rpx;
   text-align: center;
-  margin-bottom:11rpx ;
+  margin-bottom: 11rpx;
 }
-.d_item_none:nth-child(n+7){
+
+.d_item_none:nth-child(n+7) {
   color: red;
   display: none;
 }
-.d_item:nth-child(3n){
+
+.d_item:nth-child(3n) {
   margin-right: 0;
 }
-.d_title{
+
+.d_title {
   margin-bottom: 28rpx;
 }
-.d_name{
+
+.d_name {
   font-size: 28rpx;
   color: #333;
 }
-.d_status{
+
+.d_status {
   font-size: 20rpx;
   color: #999;
 }
-.chosed{
+
+.chosed {
   color: #3696FA;
 }
+
 /* d_bottom */
-.d_bottom{
+.d_bottom {
   width: 610rpx;
   position: fixed;
   bottom: 0;
-  height:100rpx;
+  height: 100rpx;
   border-top: 1px solid #ccc;
   padding-bottom: env(safe-area-inset-bottom);
 }
-.d_view{
+
+.d_view {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 9991;
 }
-.line{
+
+.line {
   width: 1px;
   height: 100rpx;
   background: #CCCCCC;
@@ -219,30 +256,35 @@ page{
   left: 50%;
   top: 0;
 }
-.btn_text{
+
+.btn_text {
   display: inline-flex;
   justify-content: center;
-  width:305rpx;
-  line-height:100rpx;
+  width: 305rpx;
+  line-height: 100rpx;
   font-size: 28rpx;
   color: #999999;
 }
-.btn_text:last-child{
-  color:#3696FA;
+
+.btn_text:last-child {
+  color: #3696FA;
 }
+
 /* 隐藏scroll-view的滚动条 */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0;
   height: 0;
   color: transparent;
 }
-.rows{
+
+.rows {
   margin: 30rpx 20rpx;
   background: #fff;
   border-radius: 20rpx;
   box-sizing: border-box;
   padding: 30rpx 10rpx;
 }
+
 /* 时间进度条 */
 .out {
   margin: 0 auto;
@@ -252,90 +294,102 @@ page{
   border-radius: 20px;
   overflow: hidden;
 }
+
 .in {
-  height:100%;
-  background-color:rgb(23, 163, 42);
+  height: 100%;
+  background-color: rgb(23, 163, 42);
 }
-.action{
-  font-size:14px;
-  color:#333;
-  margin:10rpx auto;
-  width:250px;
+
+.action {
+  font-size: 14px;
+  color: #333;
+  margin: 10rpx auto;
+  width: 250px;
 }
+
 /* 圆环3 */
-.ca_img{
+.ca_img {
   width: 220px;
   height: 220px;
   margin: 0 auto;
   display: block;
 }
-.progress_box{
+
+.progress_box {
   position: relative;
-  width:220px;
-  height: 220px; 
+  width: 220px;
+  height: 220px;
   margin: 0 auto;
- /* // 这里的宽高是必须大于等于canvas圆环的直径 否则绘制到盒子外面就看不见了
+  /* // 这里的宽高是必须大于等于canvas圆环的直径 否则绘制到盒子外面就看不见了
  // 一开始设置 width:440rpx; height:440rpx; 发现 在360X640分辨率的设备，下绘制的圆环跑盒子外去了
  // 小程序使用rpx单位适配 ，但是canvas绘制的是px单位的。所以只能用px单位绘制的圆环在盒子内显示 */
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
- }
- .progress_bg{
+}
+
+.progress_bg {
   position: absolute;
-  width:220px;
-  height: 220px; 
- }
- .progress_canvas{ 
-  width:220px;
-  height: 220px; 
- } 
- .progress_text{ 
-  position: absolute; 
-  display: flex; 
+  width: 220px;
+  height: 220px;
+}
+
+.progress_canvas {
+  width: 220px;
+  height: 220px;
+}
+
+.progress_text {
+  position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center
- }
- .progress_info{ 
+}
+
+.progress_info {
   font-size: 36rpx;
   padding-left: 16rpx;
   letter-spacing: 2rpx
- } 
- .progress_dot{
-  width:16rpx;
-  height: 16rpx; 
+}
+
+.progress_dot {
+  width: 16rpx;
+  height: 16rpx;
   border-radius: 50%;
   background-color: #fb9126;
- }
- /* 圆环4 */
- .circle-box{
- text-align: center;
- margin-top: 10vw;
 }
- 
+
+/* 圆环4 */
+.circle-box {
+  text-align: center;
+  margin-top: 10vw;
+}
+
 .circle {
- position: absolute;
- left: 0;
- right: 0;
- margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
- 
+
 .draw_btn {
- width: 35vw;
- position: absolute;
- top: 33vw;
- right: 0;
- left: 0;
- margin: auto;
- border: 1px #000 solid;
- border-radius: 5vw;
+  width: 35vw;
+  position: absolute;
+  top: 33vw;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border: 1px #000 solid;
+  border-radius: 5vw;
 }
-.new_ca{
+
+.new_ca {
   width: 220px;
   height: 220px;
   margin: 0 auto;
 }
-.new_ca canvas{
+
+.new_ca canvas {
   width: 220px;
   height: 220px;
 }

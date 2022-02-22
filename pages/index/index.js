@@ -3,6 +3,12 @@ import util from '../../utils/util';
 Page({
 
   data: {
+    aaa: {
+      'c': '王五',
+      'd': '马六',
+      'a': '张三',
+      'b': '李四',
+    },
     page_list: [{
         showmore: true,
         name: '主包',
@@ -650,6 +656,7 @@ Page({
         ]
       }
     ],
+
   },
 
   toDetail(e) {

@@ -6,7 +6,7 @@ Page({
    */
   data: {
     showApplyReason: false, //申请理由的弹框
-    typeList: ['多拍、发错、 不想要', '缺货', '发货慢', '协商一致退款', '其他'],
+    typeList: ['多拍、发错、 不想要', '缺货', '发货慢', '协商一致退款', '其他','12312312'],
     reason_type: undefined,
     showEdit: false, //展示编辑区域
     viewId: '', //文本框id

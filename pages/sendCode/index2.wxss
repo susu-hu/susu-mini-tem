@@ -78,7 +78,7 @@ page {
   font-size: 20rpx;
   line-height: 42rpx;
   text-align: center;
-  border-radius:0 21rpx 0 21rpx ;
+  border-radius: 0 21rpx 0 21rpx;
 }
 
 .s_bg2 {
@@ -356,4 +356,13 @@ page {
   border-bottom: 14rpx solid #FB962C;
   top: -10rpx;
   right: 21rpx;
+}
+
+.trighht {
+  width: 0;
+  height: 0;
+  border-top: 40rpx solid transparent;
+  border-bottom: 40rpx solid transparent;
+  border-left: 40rpx solid #000;
+  margin-left: 50px;
 }
