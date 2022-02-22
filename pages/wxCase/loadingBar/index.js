@@ -12,21 +12,34 @@ Page({
     if (!this.data.flag) {
       this.setData({
         scwidth: this.data.scwidth + 3,
+        flag: true
       })
       if (this.data.scwidth < 100) {
         setTimeout(() => {
-          this.action();
+          this.actionDack();
         }, 100)
       } else {
         this.setData({
-          scwidth: 0,
-          flag: true
+          scwidth: 0
         })
       }
     }
-
   },
-
+  actionDack() {
+    this.setData({
+      scwidth: this.data.scwidth + 3,
+    })
+    if (this.data.scwidth < 100) {
+      setTimeout(() => {
+        this.actionDack();
+      }, 100)
+    } else {
+      this.setData({
+        scwidth: 0,
+        flag: false
+      })
+    }
+  },
 
   onShow: function () {
 
