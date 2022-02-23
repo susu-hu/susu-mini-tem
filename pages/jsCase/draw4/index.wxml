@@ -1,2 +1,4 @@
 <!--pages/jsCase/draw4/index.wxml-->
-<text>pages/jsCase/draw4/index.wxml</text>
+<view class="draw_box flex-row j_c">
+<view class="draw_con"></view>
+</view>

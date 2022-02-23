@@ -1,0 +1,17 @@
+<!--pages/jsCase/draw4/easy.wxml-->
+
+<view class="box">
+  <text class="{{index%2==0? red[0]:red[1]}}" wx:for="{{list}}" wx:key='index' style="top:{{item.zh}};left:{{item.zl}}"></text>
+  <view class="bo">
+    <text class="{{index==1?'sky':''}}">1</text>
+    <text class="{{index==2?'sky':''}}">2</text>
+    <text class="{{index==3?'sky':''}}">3</text>
+    <text class="{{index==8?'sky':''}}">4</text>
+    <text class="sta" bindtap="chou">开始</text>
+    <text class="{{index==4?'sky':''}}">5</text>
+    <text class="{{index==7?'sky':''}}">6</text>
+    <text class="{{index==6?'sky':''}}">7</text>
+    <text class="{{index==5?'sky':''}}">8</text>
+  </view>
+
+</view>

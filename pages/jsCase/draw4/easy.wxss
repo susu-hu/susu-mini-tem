@@ -1,0 +1,58 @@
+/* pages/jsCase/draw4/easy.wxss */
+.box {
+  width: 550rpx;
+  height: 550rpx;
+  background-color: blue;
+  border-radius: 12rpx;
+  margin: 130rpx auto 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.dot {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  position: absolute;
+  background-color: red;
+  top: 30rpx;
+  left: 30rpx;
+}
+
+.red {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(229, 255, 0);
+  top: 30rpx;
+  left: 30rpx;
+}
+
+.bo {
+  width: 400rpx;
+  height: 400rpx;
+  background-color: pink;
+  border-radius: 12rpx;
+  margin-left: 75rpx;
+  margin-top: 75rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.bo text {
+  width: 26%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin: 7rpx;
+}
+
+.sky {
+  background: skyblue;
+}
+
+.sta {
+  background: tomato;
+}

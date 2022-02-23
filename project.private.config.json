@@ -62,13 +62,13 @@
         },
         {
           "name": "",
-          "pathName": "pages/actualPage/percent/index",
+          "pathName": "pages/jsCase/draw3/index",
           "query": "",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/wxCase/webview/index",
+          "pathName": "pages/jsCase/draw4/index2",
           "query": "",
           "scene": null
         }
