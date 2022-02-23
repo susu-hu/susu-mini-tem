@@ -77,7 +77,6 @@ Page({
         endAngle = steps * 2 * Math.PI / speed + startAngle;
         drawing(startAngle, endAngle);
         steps++;
-        console.log(steps);
       } else {
         clearInterval(this.interval);
       }

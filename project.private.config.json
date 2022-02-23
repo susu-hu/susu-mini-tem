@@ -61,14 +61,8 @@
           "scene": null
         },
         {
-          "name": "",
-          "pathName": "pages/jsCase/draw3/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/jsCase/draw4/index2",
+          "name": "pages/subPack/loadingIndex/index",
+          "pathName": "pages/subPack/loadingIndex/index",
           "query": "",
           "scene": null
         }
