@@ -71,9 +71,15 @@ page {
   width: 200rpx;
   height: 200rpx;
   position: relative;
+  border-radius: 50%;
+  border-top: 6rpx solid rgba(0, 0, 0, 0.25);
+  border-right: 6rpx solid rgba(0, 0, 0, 0.25);
+  border-bottom: 6rpx solid rgba(0, 0, 0, 0.25);
+  border-left: 6rpx solid orange;
+  animation: circle-ani 1s infinite linear;
 }
 
-.load_circle::after {
+/* .load_circle::after {
   content: "";
   position: absolute;
   left: 0;
@@ -88,7 +94,7 @@ page {
   border-left: 6rpx solid orange;
   animation: circle-ani 1s infinite linear;
   z-index: -1;
-}
+} */
 
 @keyframes circle-ani {
   0% {
