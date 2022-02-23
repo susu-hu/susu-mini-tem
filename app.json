@@ -178,7 +178,8 @@
         "textarea/index",
         "newsSwiper/index2",
         "iconFont/index",
-        "slot/index"
+        "slot/index",
+        "webview/index"
       ]
     },
     {

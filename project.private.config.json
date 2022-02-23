@@ -65,6 +65,12 @@
           "pathName": "pages/actualPage/percent/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/wxCase/webview/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
