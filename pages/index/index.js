@@ -428,6 +428,10 @@ Page({
         name: '自定义组件的slot用法',
         url: '/pages/wxCase/slot/index'
       },
+      {
+        name: '一个加载条',
+        url: '/pages/wxCase/loadingBar/index'
+      },
       ]
     },
     {

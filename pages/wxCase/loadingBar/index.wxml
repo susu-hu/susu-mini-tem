@@ -1,0 +1,87 @@
+<!--pages/wxCase/loadingBar/index.wxml-->
+<button class='btn' bindtap='action'>加载按钮</button>
+<view class='progress' hidden="{{scwidth==0}}" style="top:0px;">
+  <view class='progress-bar' style="transform: translate3d(-{{100-scwidth}}%, 0px, 0px);"></view>
+  <view class='progress-spinner'></view>
+</view>
+<view class="load_circle" hidden="{{scwidth==0}}"></view>
+
+
+<!-- canvas -->
+<view class="loading-warp">
+  <canvas class="canvas" canvas-id="canvasCircle"></canvas>
+  <canvas class="canvas-mask" canvas-id="canvasRing"></canvas>
+  <view class="rate">{{step}}%</view>
+</view>
+<view class="loading-tips">{{tips}}</view>
+<!-- 还有锥形渐变 -->
+
+<!-- 环文件 -->
+<view class="box">
+	<view class="preloader">
+		<view class="preloader__ring">
+			<view class="preloader__sector">L</view>
+			<view class="preloader__sector">o</view>
+			<view class="preloader__sector">a</view>
+			<view class="preloader__sector">d</view>
+			<view class="preloader__sector">i</view>
+			<view class="preloader__sector">n</view>
+			<view class="preloader__sector">g</view>
+			<view class="preloader__sector">.</view>
+			<view class="preloader__sector">.</view>
+			<view class="preloader__sector">.</view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+		</view>
+		<view class="preloader__ring">
+			<view class="preloader__sector">L</view>
+			<view class="preloader__sector">o</view>
+			<view class="preloader__sector">a</view>
+			<view class="preloader__sector">d</view>
+			<view class="preloader__sector">i</view>
+			<view class="preloader__sector">n</view>
+			<view class="preloader__sector">g</view>
+			<view class="preloader__sector">.</view>
+			<view class="preloader__sector">.</view>
+			<view class="preloader__sector">.</view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+			<view class="preloader__sector"></view>
+		</view>
+	</view>
+</view>

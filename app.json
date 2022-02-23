@@ -179,7 +179,8 @@
         "newsSwiper/index2",
         "iconFont/index",
         "slot/index",
-        "webview/index"
+        "webview/index",
+        "loadingBar/index"
       ]
     },
     {
