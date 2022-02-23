@@ -13,7 +13,6 @@
   <canvas class="canvas-mask" canvas-id="canvasRing"></canvas>
   <view class="rate">{{step}}%</view>
 </view>
-<view class="loading-tips">{{tips}}</view>
 <!-- 还有锥形渐变 -->
 
 

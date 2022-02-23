@@ -1,4 +1,8 @@
 /* pages/wxCase/loadingBar/index.wxss */
+page {
+  background-color: #fff;
+}
+
 .btn {
   margin: 140rpx auto;
   width: 150rpx;
@@ -125,18 +129,11 @@
 .rate {
   z-index: 1;
   position: absolute;
-  top: 80px;
+  top: 50%;
   left: 0;
   width: 100%;
   text-align: center;
   color: #333;
   font-size: 40rpx;
+  transform: translateY(-50%);
 }
-
-.loading-tips {
-  text-align: center;
-  font-size: 28rpx;
-  font-weight: 400;
-  color: #333;
-}
-
