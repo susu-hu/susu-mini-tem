@@ -61,8 +61,26 @@
           "scene": null
         },
         {
-          "name": "pages/subPack/loadingIndex/index",
-          "pathName": "pages/subPack/loadingIndex/index",
+          "name": "",
+          "pathName": "pages/jsCase/draw4/index2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/jsCase/draw4/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/jsCase/draw3/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/jsCase/btnAudio/index",
           "query": "",
           "scene": null
         }

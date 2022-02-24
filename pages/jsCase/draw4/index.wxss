@@ -1,21 +1,94 @@
 /* pages/jsCase/draw4/index.wxss */
 page {
-  background-color: #fff;
+  background: #C9E8FF;
 }
 
 .draw_box {
   width: 652rpx;
   height: 569rpx;
-  background: rgba(123, 205, 255, 0.39);
+  background: rgba(123, 205, 255, 0.89);
   border: 1rpx solid #FFFFFF;
   box-shadow: 0px 5rpx 20rpx rgba(36, 137, 209);
   border-radius: 25rpx;
   margin: 50px auto;
+  position: relative;
 }
 
 .draw_con {
   width: 588rpx;
   height: 497rpx;
-  background: rgba(102, 180, 230, 0.59);
+  background: rgba(102, 180, 230, 0.89);
   border-radius: 20rpx;
+  padding: 12rpx 10rpx;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 9;
+}
+
+/* 小球闪烁点 */
+.circle {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  height: 16rpx;
+  width: 16rpx;
+  box-shadow: 0px 3rpx 6rpx #3A98D4;
+}
+
+.prize_box {
+  flex-wrap: wrap;
+}
+
+.prize_item {
+  width: 180rpx;
+  height: 147rpx;
+  background: #F7FCFC;
+  box-shadow: 0px 3rpx 6rpx #4A99D1;
+  border-radius: 37rpx;
+  font-size: 25rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #1E82C1;
+  margin-bottom: 16rpx;
+  box-sizing: border-box;
+  padding-top: 10rpx;
+}
+
+.prize_img image {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 5rpx;
+}
+
+.ative {
+  position: relative;
+  border: 2rpx solid transparent;
+  box-shadow: none;
+}
+
+.ative::after {
+  content: '';
+  position: absolute;
+  top: -8rpx;
+  bottom: -8rpx;
+  left: -8rpx;
+  right: -8rpx;
+  background: linear-gradient(0deg, #FFCD1E, #FFEFB7);
+  z-index: -1;
+  border-radius: 34rpx;
+}
+
+.e_text {
+  width: 80%;
+  text-align: center;
+}
+
+.prize_start {
+  padding-top: 0 !important;
+  background: none;
+}
+
+.lott_btn {
+  width: 100%;
+  height: 100%;
 }

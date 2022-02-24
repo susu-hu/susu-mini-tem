@@ -1,4 +1,21 @@
 <!--pages/jsCase/draw4/index.wxml-->
 <view class="draw_box flex-row j_c">
-<view class="draw_con"></view>
+  <view class="circle" wx:for="{{dotList}}" wx:key="index" style="top:{{item.topCircle}}rpx;left:{{item.leftCircle}}rpx;background: {{(index%2==0)?dotColor1:dotColor2}};"></view>
+  <view class="draw_con">
+    <view class="flex-row j_b prize_box">
+      <block wx:for="{{prize_list}}" wx:key="index">
+        <block wx:if="{{index == 4}}">
+          <view class="prize_start prize_item">
+            <image src="../img/{{start_btn ? 'start_btn.png' : 'start_btn_gray.png'}}" class="lott_btn" mode="aspectFill" bindtap="lottery"></image>
+          </view>
+        </block>
+        <view class="prize_item flex-column {{item.active?'ative':''}}" data-index="{{index}}">
+          <view class="prize_img ">
+            <image src="{{item.icon}}" mode="aspectFill" />
+          </view>
+          <text class="text_ellipsis e_text">{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
 </view>
