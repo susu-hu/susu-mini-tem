@@ -299,6 +299,10 @@ Page({
             name: '媒体查询',
             url: '/pages/cssCase/mediaScreen/index'
           },
+          {
+            name: 'Grid布局',
+            url: '/pages/cssCase/gird/index'
+          },
         ]
       },
       {

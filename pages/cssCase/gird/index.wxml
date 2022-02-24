@@ -1,0 +1,17 @@
+<!--pages/cssCase/gird/index.wxml-->
+<!-- https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html -->
+<view class="g"><text class="susu-01">Grid布局</text></view>
+<view class="grid">
+  <view class="item item-1">1</view>
+  <view class="item item-2">2</view>
+  <view class="item item-3">3</view>
+  <view class="item item-4">4</view>
+  <view class="item item-5">5</view>
+  <view class="item item-6">6</view>
+  <view class="item item-7">7</view>
+  <view class="item item-8">8</view>
+  <view class="item item-9">9</view>
+</view>
+<view class="grid2">
+  <view class="item2" wx:for="123456789" wx:key="index">{{item}}</view>
+</view>

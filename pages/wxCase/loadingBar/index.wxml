@@ -5,8 +5,6 @@
   <view class='progress-spinner'></view>
 </view>
 <view class="load_circle" hidden="{{scwidth==0}}"></view>
-
-
 <!-- canvas -->
 <view class="loading-warp">
   <canvas class="canvas" canvas-id="canvasCircle"></canvas>

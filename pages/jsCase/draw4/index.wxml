@@ -13,7 +13,7 @@
           <view class="prize_img ">
             <image src="{{item.icon}}" mode="aspectFill" />
           </view>
-          <text class="text_ellipsis e_text">{{item.name}}</text>
+          <text class="text_ellipsis e_text">{{index}}.{{item.name}}</text>
         </view>
       </block>
     </view>

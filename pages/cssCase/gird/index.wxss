@@ -1,0 +1,88 @@
+/* pages/cssCase/gird/index.wxss */
+.g {
+  background: #fff;
+  margin: 20rpx auto;
+  width: 710rpx;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-radius: 10rpx;
+}
+
+.g>text[class*="susu-"] {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.grid {
+  display: inline-grid;
+  grid-template-columns: 237rpx 237rpx 237rpx;
+  grid-template-rows: 50px 50px 50px;
+  padding: 0 20rpx;
+}
+
+.item {
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid #e5e4e9;
+}
+
+.item-1 {
+  background-color: #ef342a;
+}
+
+.item-2 {
+  background-color: #f68f26;
+}
+
+.item-3 {
+  background-color: #4ba946;
+}
+
+.item-4 {
+  background-color: #0376c2;
+}
+
+.item-5 {
+  background-color: #c077af;
+}
+
+.item-6 {
+  background-color: #f8d29d;
+}
+
+.item-7 {
+  background-color: #8f6428;
+}
+
+.item-8 {
+  background-color: #51d0da;
+}
+
+.item-9 {
+  background-color: #e7ad5b;
+}
+
+.grid2 {
+  display: grid;
+  margin-top: 10rpx;
+  grid-template-columns: repeat(auto-fill, 100px);
+  /** 平铺宽度为100px的单元格 */
+  grid-template-rows: 100px;
+  /** 设置高度为100px */
+  grid-auto-rows: 100px;
+  /** 当容易高度不够时，多余的组件高度将怎么分配，默认的高度由单元格内容决定 */
+  justify-content: center;
+  /** 水平居中  */
+  grid-gap: 10rpx;
+  /** 水平和垂直间距为10rpx*/
+  padding: 10rpx;
+}
+
+.item2 {
+  font-size: 4em;
+  border: 1px solid #e5e4e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

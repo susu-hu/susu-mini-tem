@@ -42,9 +42,6 @@ Page({
     }
   },
 
-  onShow: function () {
-
-  },
   onReady: function () {
     var that = this;
     var cxt = wx.createCanvasContext('canvasCircle');
@@ -81,6 +78,5 @@ Page({
     }
     this.interval = setInterval(drawLoading, sec);
   }
-
 
 })
