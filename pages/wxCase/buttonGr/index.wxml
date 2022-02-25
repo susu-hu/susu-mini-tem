@@ -7,3 +7,15 @@
 <view class="f"></view>
 <view class="g"></view>
 <view class="i"></view>
+
+<!-- 多组头像 -->
+<view class="ava_grop">
+  <view class="avatar" wx:for="{{4}}" wx:key="index" style="background-image:url(https://i.postimg.cc/mgsKJGLw/susu1.jpg);"></view>
+</view>
+<view class="ava_grop">
+  <view class="avatar" wx:for="{{4}}" wx:key="index" style="background-image:url(https://i.postimg.cc/mgsKJGLw/susu1.jpg);"></view>
+</view>
+<!-- 按钮 -->
+<button class="gray">苏苏小苏苏 </button>
+<!-- switch -->
+<switch class="sw"></switch>

@@ -77,6 +77,12 @@
           "pathName": "pages/jsCase/btnAudio/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/buttonGr/index",
+          "pathName": "pages/wxCase/buttonGr/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

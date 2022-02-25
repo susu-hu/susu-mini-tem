@@ -1,6 +1,16 @@
 /**app.wxss**/
 page {
   background: #F5F5F5;
+  --pink: #ffc0cb;
+  --white: #fff;
+  --red: #e54d42;
+  --orange: #f37b1d;
+  --yellow: #fbbd08;
+  --olive: #8dc63f;
+  --green: #39b54a;
+  --grey: #8799a3;
+  --black: #333333;
+  --darkGray: #666666;
 }
 
 /* 多行文字换行 */

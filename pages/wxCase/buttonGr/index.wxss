@@ -178,3 +178,122 @@ view {
 .i:after {
   filter: blur(30px);
 }
+
+.ava_grop {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  margin-left: 50rpx;
+  display: inline-block;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin: 0;
+  display: inline-block;
+  color: var(--white);
+  position: relative;
+  width: 100rpx;
+  height: 100rpx;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: -30rpx;
+  border: 4rpx solid var(--white);
+  vertical-align: middle;
+}
+
+.cu-avatar-group {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  padding: 0 10rpx 0 40rpx;
+  display: inline-block;
+}
+
+.cu-avatar {
+  border-radius: 50%;
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  color: var(--white);
+  white-space: nowrap;
+  position: relative;
+  width: 96rpx;
+  height: 96rpx;
+  font-size: 2em;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  margin-left: -30rpx;
+  border: 4rpx solid var(--white);
+  vertical-align: middle;
+}
+
+.gray {
+  padding: 0 40rpx;
+  font-size: 32rpx;
+  height: 80rpx;
+  background-color: #ccc;
+  color: var(--white);
+  margin: 30rpx auto;
+  display: block;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  width: 710rpx;
+  margin: 30rpx auto;
+}
+
+.gray.button-hover {
+  transform: translate(1rpx, 1rpx);
+}
+
+switch,
+checkbox,
+radio {
+  position: relative;
+}
+
+switch::after,
+switch::before {
+  font-family: "cuIcon";
+  content: "\e645";
+  position: absolute;
+  color: var(--white) !important;
+  top: 0%;
+  left: 0rpx;
+  font-size: 26rpx;
+  line-height: 26px;
+  width: 50%;
+  text-align: center;
+  pointer-events: none;
+  transform: scale(0, 0);
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 9;
+  bottom: 0;
+  height: 26px;
+  margin: auto;
+}
+
+switch::before {
+  content: "\e646";
+  right: 0;
+  transform: scale(1, 1);
+  left: auto;
+}
+
+switch[checked]::after,
+switch.checked::after {
+  transform: scale(1, 1);
+}
+
+switch[checked]::before,
+switch.checked::before {
+  transform: scale(0, 0);
+}
+
+switch[checked]::before {
+  transform: scale(0, 0);
+}
