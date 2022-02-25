@@ -86,3 +86,55 @@
   align-items: center;
   justify-content: center;
 }
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  /* 每一列的列宽 */
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  /* 每一行的行高 */
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(3, 33.33%);
+}
+
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(2, 100px 20px 80px);
+}
+
+.grid6 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 80px);
+}
+
+.grid7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid8 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.grid9 {
+  /* 第一列的宽度为150像素，第二列的宽度是第三列的一半 */
+  display: grid;
+  grid-template-columns: 150px 1fr 2fr;
+}
+
+.grid10 {
+  display: grid;
+  /* minmax(100px, 1fr)表示列宽不小于100px，不大于1fr */
+  grid-template-columns: 1fr 1fr minmax(100px, 1fr);
+}
+
+.grid11 {
+  display: grid;
+  /* 第二列的宽度，基本上等于该列单元格的最大宽度，除非单元格内容设置了min-width，且这个值大于最大宽度 */
+  grid-template-columns: 100px auto 100px;
+}
