@@ -1,0 +1,43 @@
+/* pages/cssCase/progress/index.wxss */
+page {
+  padding: 30rpx;
+  background: #fff;
+}
+
+.box {
+  height: 25rpx;
+  overflow: hidden;
+  background-color: #ebeef5;
+  width: 100%;
+  border-radius: 20rpx;
+}
+
+.pink_pro {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 72rpx 72rpx;
+  height: 100%;
+  transition: width 0.6s ease;
+  background-color: pink;
+  width: 20%;
+  animation: progres 2s linear infinite;
+}
+
+@keyframes progres {
+  from {
+    background-position: 72rpx 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
+
+.btn1 {
+  width: 200rpx;
+  margin: 40rpx auto;
+  height: 50rpx;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: var(--white);
+}

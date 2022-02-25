@@ -79,8 +79,8 @@
           "scene": null
         },
         {
-          "name": "pages/wxCase/buttonGr/index",
-          "pathName": "pages/wxCase/buttonGr/index",
+          "name": "1",
+          "pathName": "pages/cssCase/progress/index",
           "query": "",
           "scene": null
         }

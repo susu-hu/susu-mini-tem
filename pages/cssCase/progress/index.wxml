@@ -1,0 +1,11 @@
+<!--pages/cssCase/progress/index.wxml-->
+<view class="box">
+  <view class="pink_pro" style="width:{{progress}}%"></view>
+</view>
+<view class="box btn1" catchtap="prAdd" data-type="0">
+  <view class="pink_pro" style="width:100%;">进度++</view>
+</view>
+
+<view class="box btn1" catchtap="prAdd" data-type="1">
+  <view class="pink_pro" style="width:100%;">进度--</view>
+</view>

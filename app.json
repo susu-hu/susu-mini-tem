@@ -132,7 +132,8 @@
         "bdd/index",
         "xrr/index",
         "mediaScreen/index",
-        "gird/index"
+        "gird/index",
+        "progress/index"
       ]
     },
     {
