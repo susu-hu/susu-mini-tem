@@ -1,7 +1,7 @@
 <!--pages/effects/snows/index.wxml-->
 <scroll-view scroll-y="true">
+  <!-- 页面内容 -->
 </scroll-view>
 <view>
   <image wx:for="{{snows}}" wx:key="index" src="../img/snow.png" style="left:{{snows[index]}}rpx" animation="{{animation[index]}}" class='snow' data-index='{{index}}' />
 </view>
-<!-- 11 -->

@@ -67,12 +67,6 @@
           "scene": null
         },
         {
-          "name": "pages/cssCase/gird/index",
-          "pathName": "pages/cssCase/gird/index",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "",
           "pathName": "pages/jsCase/draw3/index",
           "query": "",
