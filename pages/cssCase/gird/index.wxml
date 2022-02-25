@@ -29,9 +29,9 @@
 
 <!-- repeat()接受两个参数，第一个参数是重复的次数（上例是3），第二个参数是所要重复的值。
 repeat()重复某种模式也是可以的 -->
-<view class="grid5">
+<!-- <view class="grid5">
   <view class="item2" wx:for="123456789" wx:key="index">{{item}}</view>
-</view>
+</view> -->
 
 <!-- （2）auto-fill 关键字 自动填充，直到容器不能放置更多的列-->
 <view class="grid6">
@@ -58,4 +58,10 @@ repeat()重复某种模式也是可以的 -->
 <view class="grid11">
   <view class="item2" wx:for="12345" wx:key="index">{{item}}</view>
 </view>
-<!-- 未完待续 -->
+<!-- grid-row-gap 属性，
+grid-column-gap 属性，
+grid-gap 属性 -->
+
+<view class="grid12">
+  <view class="item2" wx:for="12345" wx:key="index">{{item}}</view>
+</view>

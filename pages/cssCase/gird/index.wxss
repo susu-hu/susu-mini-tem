@@ -138,3 +138,13 @@
   /* 第二列的宽度，基本上等于该列单元格的最大宽度，除非单元格内容设置了min-width，且这个值大于最大宽度 */
   grid-template-columns: 100px auto 100px;
 }
+
+
+/* grid-gap: <grid-row-gap> <grid-column-gap>; */
+.grid12 {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
