@@ -307,6 +307,10 @@ Page({
         name: '进度条',
         url: '/pages/cssCase/progress/index'
       },
+      {
+        name: '自定义tabbar',
+        url: '/pages/cssCase/cusCircleTab/index'
+      },
       ]
     },
     {

@@ -133,7 +133,8 @@
         "xrr/index",
         "mediaScreen/index",
         "gird/index",
-        "progress/index"
+        "progress/index",
+        "cusCircleTab/index"
       ]
     },
     {

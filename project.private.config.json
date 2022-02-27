@@ -79,8 +79,8 @@
           "scene": null
         },
         {
-          "name": "1",
-          "pathName": "pages/cssCase/progress/index",
+          "name": "pages/cssCase/cusCircleTab/index",
+          "pathName": "pages/cssCase/cusCircleTab/index",
           "query": "",
           "scene": null
         }

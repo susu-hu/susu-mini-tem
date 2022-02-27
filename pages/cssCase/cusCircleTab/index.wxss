@@ -1,0 +1,53 @@
+/* pages/cssCase/cusCircleTab/index.wxss */
+page {
+  padding: 30rpx 0;
+}
+
+.tabbar {
+  margin-bottom: 60rpx;
+  background: #fff;
+  height: 100rpx;
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+
+.bar {
+  flex: 1;
+  font-size: 27rpx;
+  color: #333;
+  position: relative;
+}
+
+.bar image {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-bottom: 8rpx;
+  flex-shrink: 0;
+}
+
+.bg_balck {
+  background-color: #222!important;
+}
+
+.bar_circle {
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  top: -59rpx;
+  margin: auto;
+  box-shadow: 0 -3rpx 8rpx rgba(0, 0, 0, 0.08);
+  border-radius: 50rpx;
+  background-color: #fff;
+  z-index: 1;
+  text-align: center;
+}
+
+.bar_circle image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 10rpx;
+}
+
+.bar_center {
+  padding-top: 48rpx;
+}

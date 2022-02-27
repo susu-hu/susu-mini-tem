@@ -1,0 +1,45 @@
+<!--pages/cssCase/cusCircleTab/index.wxml-->
+<view class="tabbar flex-row">
+  <block wx:for="{{4}}" wx:key="index">
+    <view class="bar flex-column">
+      <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
+      <text>菜单</text>
+    </view>
+  </block>
+</view>
+<view class="tabbar flex-row bg_balck">
+  <block wx:for="{{5}}" wx:key="index">
+    <view class="bar flex-column">
+      <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
+      <text style="color: var(--white);">菜单</text>
+    </view>
+  </block>
+</view>
+<view class="tabbar flex-row">
+  <block wx:for="{{5}}" wx:key="index">
+    <view class="bar flex-column bar_center" wx:if="{{index==2}}">
+      <view class="bar_circle">
+        <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
+      </view>
+      <text>扫一扫</text>
+    </view>
+    <view class="bar flex-column " wx:else>
+      <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
+      <text>菜单</text>
+    </view>
+  </block>
+</view>
+<view class="tabbar flex-row bg_balck">
+  <block wx:for="{{5}}" wx:key="index">
+    <view class="bar flex-column bar_center" wx:if="{{index==2}}">
+      <view class="bar_circle bg_balck">
+        <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
+      </view>
+      <text style="color: var(--white);">扫一扫</text>
+    </view>
+    <view class="bar flex-column " wx:else>
+      <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
+      <text style="color: var(--white);">菜单</text>
+    </view>
+  </block>
+</view>
