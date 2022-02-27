@@ -1,26 +1,32 @@
 /* pages/wxCase/pubuliu2/index.wxss */
-page{
-  width: 100%;
-  margin: 0;
-  background: #F2F2F2;
-}
-.content{
+.content {
   display: flex;
-  flex-direction: row;
   margin: 20rpx;
   overflow: hidden;
 }
- 
-.left{
+
+.left {
   width: 345rpx;
 }
- 
-.right{
+
+.right {
   width: 345rpx;
   margin-left: 20rpx;
 }
- 
-.pic{
-  border-radius: 10rpx;
+
+.img_cover {
+  border-radius: 10rpx 10rpx 0 0;
   width: 345rpx;
+}
+
+.item {
+  margin-bottom: 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.name {
+  padding: 20rpx;
+  font-size: 28rpx;
 }
