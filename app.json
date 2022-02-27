@@ -225,7 +225,8 @@
         "consoleLog/index",
         "pageDestory/index",
         "draw4/index2",
-        "draw4/easy"
+        "draw4/easy",
+        "lazyLoad/index"
       ]
     },
     {

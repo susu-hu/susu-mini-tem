@@ -3,7 +3,7 @@
   <block wx:for="{{4}}" wx:key="index">
     <view class="bar flex-column">
       <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
-      <text>菜单</text>
+      <text class="{{index==0&&'ative'}}">菜单</text>
     </view>
   </block>
 </view>
@@ -11,7 +11,7 @@
   <block wx:for="{{5}}" wx:key="index">
     <view class="bar flex-column">
       <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
-      <text style="color: var(--white);">菜单</text>
+      <text style="color: var(--white);" class="{{index==0&&'ative'}}">菜单</text>
     </view>
   </block>
 </view>
@@ -25,7 +25,7 @@
     </view>
     <view class="bar flex-column " wx:else>
       <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
-      <text>菜单</text>
+      <text class="{{index==0&&'ative'}}">菜单</text>
     </view>
   </block>
 </view>
@@ -35,11 +35,11 @@
       <view class="bar_circle bg_balck">
         <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
       </view>
-      <text style="color: var(--white);">扫一扫</text>
+      <text style="color: var(--white);" >扫一扫</text>
     </view>
     <view class="bar flex-column " wx:else>
       <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" />
-      <text style="color: var(--white);">菜单</text>
+      <text style="color: var(--white);" class="{{index==0&&'ative'}}">菜单</text>
     </view>
   </block>
 </view>

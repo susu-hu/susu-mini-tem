@@ -557,6 +557,10 @@ Page({
         name: '页面跳转及卸载事件',
         url: '/pages/jsCase/pageDestory/index'
       },
+      {
+        name: '图片懒加载（待更新.....',
+        url: '/pages/jsCase/lazyLoad/index'
+      },
       ]
     },
     {

@@ -26,7 +26,7 @@ page {
 }
 
 .bg_balck {
-  background-color: #222!important;
+  background-color: #222 !important;
 }
 
 .bar_circle {
@@ -50,4 +50,8 @@ page {
 
 .bar_center {
   padding-top: 48rpx;
+}
+
+.ative {
+  color: orange!important;
 }
