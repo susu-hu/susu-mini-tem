@@ -85,7 +85,7 @@ Page({
     }, () => {
       setTimeout(() => {
         this.initData()
-      }, 200)
+      }, 300)
     })
   },
   initData() {

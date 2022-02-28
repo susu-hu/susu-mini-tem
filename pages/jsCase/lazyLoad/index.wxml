@@ -1,2 +1,13 @@
-<!--pages/jsCase/lazyLoad/index.wxml-->
-<text>pages/jsCase/lazyLoad/index.wxml</text>
+<view class="girls-list-wrap">
+  <view class='girls-list clearfix' id="J_GirlsList">
+    <view class='item item-{{index}}' wx:for="{{group}}" wx:key="index">
+      <view class='a'>
+        <view class='item-wrap'>
+          <view class='img'>
+            <image src='{{item.show? item.src : item.def}}' class='{{item.show? "active" : ""}}'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

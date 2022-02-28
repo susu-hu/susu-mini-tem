@@ -89,6 +89,12 @@
           "pathName": "pages/wxCase/pubuliu3/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/jsCase/lazyLoad/index",
+          "pathName": "pages/jsCase/lazyLoad/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -1,12 +1,12 @@
 <!--pages/wxCase/pubuliu/index.wxml-->
 <view class="content">
   <view class="left">
-    <block wx:for="{{note}}" wx:key="index">
+    <block wx:for="{{list}}" wx:key="index">
       <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
     </block>
   </view>
   <view class="right">
-    <block wx:for="{{note}}" wx:key="index">
+    <block wx:for="{{list}}" wx:key="index">
       <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
     </block>
   </view>
@@ -21,7 +21,7 @@
       <image class="item-ava" src="{{avatar}}"></image>
       <text class="name-title">{{name}}</text>
       <view class="heart">
-        <text>{{heart_num}}</text>
+        <text>{{num}}</text>
       </view>
     </view>
   </view>

@@ -129,3 +129,7 @@ image {
   vertical-align: middle;
   display: inline-block;
 }
+
+.flex-wrap {
+  flex-wrap: wrap;
+}

@@ -1,0 +1,21 @@
+<!--pages/wxCase/pubuliu/index2.wxml-->
+<view class="flex flex-wrap">
+  <block wx:for="{{note}}" wx:key="index">
+    <template is="item" data="{{...item}}"></template>
+  </block>
+</view>
+<template name="item">
+  <view class="item">
+    <image class="item-img" src="{{url}}" mode="widthFix"></image>
+    <view class="item-title-box">
+      <navigator url="url" class="item-title">{{title}}</navigator>
+    </view>
+    <view class="name">
+      <image class="item-ava" src="{{avatar}}"></image>
+      <text class="name-title">{{name}}</text>
+      <view class="heart">
+        <text>{{heart_num}}</text>
+      </view>
+    </view>
+  </view>
+</template>
