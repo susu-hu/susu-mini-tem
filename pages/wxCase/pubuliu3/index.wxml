@@ -1,0 +1,15 @@
+<!--pages/wxCase/pubuliu3/index.wxml-->
+<view class="flex">
+  <view id="left">
+    <view wx:for="{{leftList}}" wx:key="index" class="item">
+      <image src="{{item.url}}" mode='widthFix' lazy-load></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <view id="right">
+    <view wx:for="{{rightList}}" wx:key="index" class="item">
+      <image src="{{item.url}}" mode='widthFix' lazy-load></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+/* pages/wxCase/pubuliu3/index.wxss */
+page {
+  padding: 20rpx 0;
+}
+
+#left,
+#right {
+  width: 48%;
+  margin: 0 1%;
+}
+
+#left image,
+#right image {
+  width: 100%;
+}
+
+.item {
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.item text {
+  display: block;
+  padding: 20rpx;
+  font-size: 26rpx;
+  color: pink;
+}

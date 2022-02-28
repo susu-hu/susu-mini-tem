@@ -6,24 +6,26 @@ Page({
   data: {
 
     list: [{
-      cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/1.png",
-      name: "苏苏1"
-    },
-    {
-      cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/2.png", name: "苏苏2"
-    },
-      // {
-      //   cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/3.png", name: "苏苏3"
-      // },
-      // {
-      //   cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/4.png", name: "苏苏4"
-      // },
-      // {
-      //   cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/5.png", name: "苏苏5"
-      // },
-      // {
-      //   cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/6.png", name: "苏苏6"
-      // },
+        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/1.png",
+        name: "苏苏1"
+      },
+      {
+        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/2.png",
+        name: "苏苏2"
+      },
+      {
+        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/3.png",
+        name: "苏苏3"
+      },
+      {
+        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/4.png", name: "苏苏4"
+      },
+      {
+        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/5.png", name: "苏苏5"
+      },
+      {
+        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/6.png", name: "苏苏6"
+      },
       // {
       //   cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/7.png", name: "苏苏7"
       // },
@@ -47,13 +49,19 @@ Page({
   },
   loadImage(e) {
     //定义两个临时的变量来记录左右两栏的高度，避免频繁调用setData方法
-    var { leftHight, rightHight, list } = this.data;
+    var {
+      leftHight,
+      rightHight,
+      list
+    } = this.data;
     var leftList = [];
     var rightList = [];
     list.forEach((item) => {
-      item.width = e.detail.height;
-      item.height = e.detail.width;
-      item.actual_height = parseInt(Math.round(e.detail.height * 345 / e.detail.width))
+      if (item.cover == e.currentTarget.dataset.item) {
+        item.width = e.detail.height;
+        item.height = e.detail.width;
+        item.actual_height = parseInt(Math.round(e.detail.height * 345 / e.detail.width))
+      }
       //   var actual_height = parseInt(Math.round(e.detail.height * 345 / e.detail.width))
       //   if (leftHight == rightHight || leftHight < rightHight) {//判断左右两侧当前的累计高度，来确定item应该放置在左边还是右边
       //     console.log('11')
@@ -77,9 +85,25 @@ Page({
   },
   initData() {
     //定义两个临时的变量来记录左右两栏的高度，避免频繁调用setData方法
-    var { leftHight, rightHight, list } = this.data;
+    var {
+      leftHight,
+      rightHight,
+      list
+    } = this.data;
     var leftList = [];
     var rightList = [];
+    for (var i = 0; i < list.length; i++) {
+      console.log(list[i].actual_height)
+      if (leftHight == rightHight || leftHight < rightHight) {
+        leftList.push(list[i])
+        console.log('lll',leftList)
+        leftHight += list[i].actual_height
+      } else {
+        rightList.push(list[i])
+        console.log('rrrr',rightList)
+        rightHight += list[i].actual_height
+      }
+    }
     // for (let i = 0; i < list.length; i++) {
     //   var currentItemHeight = parseInt(Math.round(list[i].height * 345 / list[i].width));
     //   list[i].actual_height = currentItemHeight;
@@ -92,23 +116,24 @@ Page({
     //   }
     // }
     // console.log(leftHight,rightHight)
-    list.forEach((item) => {
-      if (leftHight == rightHight || leftHight < rightHight) {//判断左右两侧当前的累计高度，来确定item应该放置在左边还是右边
-        console.log('左边')
-        leftList.push(item)
-        leftHight = leftList.reduce((t, item) => {
-          return t + item.actual_height;
-        }, 0)
-        console.log('执照号', leftHight)
-      } else {
-        console.log('you边')
-        rightList.push(item)
-        rightHight = rightList.reduce((t, item) => {
-          return t + item.actual_height;
-        }, 0)
-        console.log('执照号youb', rightHight)
-      }
-    })
+    // list.forEach((item) => {
+    //   console.log(item)
+    //   if (leftHight == rightHight || leftHight < rightHight) { //判断左右两侧当前的累计高度，来确定item应该放置在左边还是右边
+    //     console.log('左边')
+    //     leftList.push(item)
+    //     leftHight = leftList.reduce((t, item) => {
+    //       return t + item.actual_height;
+    //     }, 0)
+    //     console.log('执照号', leftHight)
+    //   } else {
+    //     console.log('you边')
+    //     rightList.push(item)
+    //     rightHight = rightList.reduce((t, item) => {
+    //       return t + item.actual_height;
+    //     }, 0)
+    //     console.log('执照号youb', rightHight)
+    //   }
+    // })
     //更新左右两栏的数据以及累计高度
     this.setData({
       leftHight,

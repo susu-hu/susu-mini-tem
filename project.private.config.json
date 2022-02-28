@@ -83,6 +83,12 @@
           "pathName": "pages/wxCase/pubuliu2/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/wxCase/pubuliu3/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
