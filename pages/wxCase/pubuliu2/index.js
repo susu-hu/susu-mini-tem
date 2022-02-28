@@ -18,13 +18,16 @@ Page({
         name: "苏苏3"
       },
       {
-        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/4.png", name: "苏苏4"
+        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/4.png",
+        name: "苏苏4"
       },
       {
-        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/5.png", name: "苏苏5"
+        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/5.png",
+        name: "苏苏5"
       },
       {
-        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/6.png", name: "苏苏6"
+        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/6.png",
+        name: "苏苏6"
       },
       // {
       //   cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/7.png", name: "苏苏7"
@@ -80,7 +83,9 @@ Page({
       // rightList,
       list,
     }, () => {
-      this.initData()
+      setTimeout(() => {
+        this.initData()
+      }, 200)
     })
   },
   initData() {
@@ -92,16 +97,24 @@ Page({
     } = this.data;
     var leftList = [];
     var rightList = [];
-    for (var i = 0; i < list.length; i++) {
+    for (let i = 0; i < list.length; i++) {
       console.log(list[i].actual_height)
       if (leftHight == rightHight || leftHight < rightHight) {
         leftList.push(list[i])
-        console.log('lll',leftList)
-        leftHight += list[i].actual_height
+        console.log('lll', leftList)
+        leftHight += list[i].actual_height,
+          this.setData({
+            leftList,
+            leftHight
+          })
       } else {
         rightList.push(list[i])
-        console.log('rrrr',rightList)
-        rightHight += list[i].actual_height
+        console.log('rrrr', rightList)
+        rightHight += list[i].actual_height;
+        this.setData({
+          rightList,
+          rightHight
+        })
       }
     }
     // for (let i = 0; i < list.length; i++) {

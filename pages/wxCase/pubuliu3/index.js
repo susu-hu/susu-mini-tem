@@ -44,6 +44,24 @@ Page({
         title: '8',
         url: 'https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/6.png'
       },
+      {
+        title: '9',
+        url: 'https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/1.png'
+      }, {
+        title: '7',
+        url: 'https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/5.png'
+      }, {
+        title: '8',
+        url: 'https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/6.png'
+      },
+      {
+        title: '8',
+        url: 'https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/6.png'
+      },
+      {
+        title: '8',
+        url: 'https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/6.png'
+      },
     ],
     leftList: [],
     rightList: []
@@ -57,7 +75,7 @@ Page({
       leftList,
       rightList
     } = this.data;
-    query = wx.createSelectorQuery();
+    query = wx.createSelectorQuery().in(this);
     for (const item of list) {
       leftHeight <= rightHeight ? leftList.push(item) : rightList.push(item); //判断两边高度，来觉得添加到那边
       await this.getBoxHeight(leftList, rightList);
