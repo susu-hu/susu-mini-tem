@@ -31,7 +31,20 @@
     <view class="box_view"></view>
   </view>
 </view>
-<!-- <view wx:for="{{aaa}}" wx:key="index">
-  {{item}}.--value
-  {{index}}--key
-</view> -->
+<view wx:for="{{brand}}" wx:key="index" style="display: none;">
+  {{item.act}}.
+  {{item.le}}.
+  {{item.per}}
+  <!-- --value -->
+  {{index}}
+  <!-- --key -->
+</view>
+
+<view wx:for="{{bb_list}}" wx:key="index">
+  {{index}}
+  <view wx:for="{{item}}" wx:for-item="i0" wx:key="index0" >
+    {{i0.act}}.
+    {{i0.le}}.
+    {{i0.per}}
+  </view>
+</view>
