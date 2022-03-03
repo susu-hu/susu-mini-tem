@@ -6,35 +6,35 @@ Page({
   data: {
 
     list: [{
-        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/1.png",
-        name: "苏苏1"
-      },
-      {
-        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/2.png",
-        name: "苏苏2"
-      },
-      {
-        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/3.png",
-        name: "苏苏3"
-      },
-      {
-        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/4.png",
-        name: "苏苏4"
-      },
-      {
-        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/5.png",
-        name: "苏苏5"
-      },
-      {
-        cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/6.png",
-        name: "苏苏6"
-      },
-      // {
-      //   cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/7.png", name: "苏苏7"
-      // },
-      // {
-      //   cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/1.png", name: "苏苏8"
-      // },
+      cover: "https://i.postimg.cc/mgsKJGLw/susu1.jpg",
+      name: "苏苏1"
+    },
+    {
+      cover: "https://i.postimg.cc/mgsKJGLw/susu1.jpg",
+      name: "苏苏2"
+    },
+    {
+      cover: "https://i.postimg.cc/mgsKJGLw/susu1.jpg",
+      name: "苏苏3"
+    },
+    {
+      cover: "https://i.postimg.cc/mgsKJGLw/susu1.jpg",
+      name: "苏苏4"
+    },
+    {
+      cover: "https://i.postimg.cc/mgsKJGLw/susu1.jpg",
+      name: "苏苏5"
+    },
+    {
+      cover: "https://i.postimg.cc/mgsKJGLw/susu1.jpg",
+      name: "苏苏6"
+    },
+    {
+      cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/7.png", name: "苏苏7"
+    },
+    {
+      cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/1.png", name: "苏苏8"
+    },
       // {
       //   cover: "https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%A5%BD%E7%9C%8B%E5%9B%BE%E7%89%87/7.png", name: "苏苏9"
       // },
@@ -50,7 +50,11 @@ Page({
     leftHight: 0,
     rightHight: 0
   },
+  onLoad() {
+    console.log('12312')
+  },
   loadImage(e) {
+    console.log(e)
     //定义两个临时的变量来记录左右两栏的高度，避免频繁调用setData方法
     var {
       leftHight,
@@ -83,12 +87,14 @@ Page({
       // rightList,
       list,
     }, () => {
-      setTimeout(() => {
-        this.initData()
-      }, 300)
+      this.initData()
+      // setTimeout(() => {
+      //   this.initData()
+      // }, 300)
     })
   },
   initData() {
+    console.log(122)
     //定义两个临时的变量来记录左右两栏的高度，避免频繁调用setData方法
     var {
       leftHight,
