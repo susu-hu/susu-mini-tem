@@ -92,7 +92,7 @@
         },
         {
           "name": "pages/jsCase/lazyLoad/index",
-          "pathName": "pages/jsCase/lazyLoad/index",
+          "pathName": "pages/wxCase/scrollCard/index",
           "query": "",
           "scene": null
         }

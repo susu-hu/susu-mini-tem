@@ -363,8 +363,16 @@ Page({
             url: '/pages/wxCase/radioBox/index'
           },
           {
-            name: '瀑布流',
+            name: '瀑布流1',
             url: '/pages/wxCase/pubuliu/index'
+          },
+          {
+            name: '瀑布流2',
+            url: '/pages/wxCase/pubuliu2/index'
+          },
+          {
+            name: '瀑布流3',
+            url: '/pages/wxCase/pubuliu3/index'
           },
           {
             name: '网易云音乐播放',
@@ -469,6 +477,10 @@ Page({
           {
             name: 'webview',
             url: '/pages/wxCase/webview/index'
+          },
+          {
+            name: 'scroll-view实现滚动卡片',
+            url: '/pages/wxCase/scrollCard/index'
           },
         ]
       },

@@ -1,0 +1,83 @@
+/* pages/wxCase/scrollCard/index.wxss */
+page {
+  height: 100%;
+}
+
+/* ScrollCard 最外层，背景那一层 */
+.scrollcard-view {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  background-color: #e0e0e0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ScrollCard 卡片那一层，负责控制尺寸、位置 */
+.scrollcard {
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+}
+
+/* ScrollCard 卡片阴影外层，负责控制位置，以防被 scroll-view 截断阴影等样式 */
+.scrollcard-outter {
+  box-sizing: border-box;
+  margin-top: 80%;
+  padding-top: 40rpx;
+  height: 100%;
+}
+
+/* ScrollCard 卡片阴影圆角那一层，负责控制样式 */
+.scrollcard-inner {
+  overflow: hidden;
+  height: 100%;
+  color: #333;
+  background-color: #fff;
+  border-radius: 60rpx 60rpx 0 0;
+  box-shadow: 0 0 40rpx rgba(0, 0, 0, .3);
+}
+
+/* ScrollCard 卡片头部 */
+.scrollcard-ctrl {
+  padding: 0 60rpx;
+  text-align: center;
+}
+
+/* ScrollCard 卡片头部横条 */
+.scrollcard-ctrlbar {
+  display: inline-block;
+  width: 120rpx;
+  height: 12rpx;
+  background-color: #333;
+  border-radius: 12rpx;
+}
+
+/* ScrollCard 卡片头部内容区 */
+.scrollcard-head {
+  text-align: left;
+}
+
+/* ScrollCard 主内容区 */
+.scrollcard-main {
+  overflow: scroll;
+  box-sizing: border-box;
+  padding: 0 60rpx 180rpx;
+  height: 100%;
+}
+
+
+/* 以下为 ScrollCard 自定义的一些样式，可以删掉 */
+.scrollcard-title {
+  font-size: 48rpx;
+}
+
+.scrollcard-item {
+  margin: 0 0 20rpx;
+  font-size: 28rpx;
+}
+
+.scrollcard-h3 {
+  padding-top: 20rpx;
+  font-size: 32rpx;
+}
