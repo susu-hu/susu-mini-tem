@@ -1,0 +1,16 @@
+/* pages/wxCase/scrollIntoView/index.wxss */
+page {
+  background-color: #fff;
+}
+
+.card {
+  text-align: center;
+  font-size: 26rpx;
+  color: #333;
+  padding: 20rpx;
+  width: 710rpx;
+  margin: 30rpx auto;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  box-shadow: 5rpx 5rpx 5rpx rgb(250, 245, 245), -5rpx -5rpx 5rpx rgb(247, 243, 243);
+}

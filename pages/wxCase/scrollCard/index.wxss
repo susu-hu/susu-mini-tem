@@ -36,6 +36,7 @@ page {
 .scrollcard-ctrl {
   padding: 0 60rpx;
   text-align: center;
+  height: 100%;
 }
 
 
@@ -61,4 +62,11 @@ page {
   height: 261rpx;
   border-radius: 10rpx;
   margin-right: 10rpx;
+}
+
+/* 去掉滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
 }
