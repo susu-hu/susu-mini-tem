@@ -139,6 +139,7 @@ step5：构建npm）
 124. swiper+scroll-view实现不同内容的滑动切换
 124. 自定义tabbar样式
 125. 瀑布流写法1
+126. scroll-view实现滚动卡片
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -271,6 +272,7 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/scroll-left.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/cust-tabbar.png)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E7%80%91%E5%B8%83%E6%B5%81.gif)
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/scard.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
