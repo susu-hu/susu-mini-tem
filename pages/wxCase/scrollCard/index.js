@@ -6,6 +6,7 @@ Page({
   },
   toTop (e) {
     var view = this.data.scrollInToView ? '' : e.currentTarget.dataset.toview;
+    console.log(view)
     this.setData({
       scrollInToView: view,
       scrollTop: 0

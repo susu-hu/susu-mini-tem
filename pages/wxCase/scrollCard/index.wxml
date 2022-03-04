@@ -4,8 +4,12 @@
         <view class="scrollcard-outter">
             <view class="scrollcard-inner">
                 <view id="topview" class="scrollcard-ctrl" catchtap="toTop" data-toview="topview">
-                    <view class="scrollcard-ctrlbar"></view>
-                   
+                    <view class="scbar"></view>
+                    <scroll-view scroll-x class="img_sc">
+                        <view wx:for="{{4}}" wx:key="idx">
+                            <image src="https://i.postimg.cc/XJmpTvCD/susu2.jpg" mode="as"></image>
+                        </view>
+                    </scroll-view>
                 </view>
             </view>
         </view>

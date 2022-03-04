@@ -39,7 +39,7 @@ page {
 }
 
 
-.scrollcard-ctrlbar {
+.scbar {
   display: inline-block;
   width: 120rpx;
   height: 12rpx;
@@ -47,4 +47,18 @@ page {
   border-radius: 12rpx;
 }
 
-/* ScrollCard 卡片头部内容区 */
+.img_sc {
+  margin-top: 30px;
+  white-space: nowrap;
+}
+
+.img_sc view {
+  display: inline-block;
+}
+
+.img_sc view image {
+  width: 281rpx;
+  height: 261rpx;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+}
