@@ -1,1 +1,57 @@
 /* pages/wxCase/scrollIntoView/detail.wxss */
+page {
+  background-color: #fff;
+}
+
+.header {
+  margin: 20rpx;
+}
+
+.head_b {
+  width: 700rpx;
+  height: 402rpx;
+  border-radius: 20rpx;
+  margin: 0 auto;
+}
+
+.con {
+  margin: 20rpx;
+}
+
+.title {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.scroll {
+  white-space: nowrap;
+  padding: 20rpx 0;
+}
+
+.card_item {
+  display: inline-block;
+  width: 202rpx;
+  height: 132rpx;
+  border-radius: 20rpx;
+  margin-right: 12rpx;
+  opacity: .5;
+  position: relative;
+}
+
+.card_item:last-child {
+  margin-right: 0;
+}
+
+.opcity {
+  opacity: 1;
+}
+
+.show_icon {
+  position: absolute;
+  top: -11rpx;
+  right: 0px;
+  z-index: 1;
+  width: 30rpx;
+  height: 30rpx;
+}

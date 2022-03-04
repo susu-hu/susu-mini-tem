@@ -95,6 +95,18 @@
           "pathName": "pages/wxCase/scrollIntoView/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/wxCase/scrollCard/index",
+          "pathName": "pages/wxCase/scrollCard/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wxCase/scrollIntoView/detail",
+          "pathName": "pages/wxCase/scrollIntoView/detail",
+          "query": "index=0",
+          "scene": null
         }
       ]
     }

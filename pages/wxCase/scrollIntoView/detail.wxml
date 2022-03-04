@@ -1,2 +1,14 @@
 <!--pages/wxCase/scrollIntoView/detail.wxml-->
-<text>pages/wxCase/scrollIntoView/detail.wxml</text>
+<view class="header">
+  <view style="background: {{back}};" class="head_b"></view>
+</view>
+<view class="con">
+  <view class="title">选择卡片</view>
+  <scroll-view class="scroll" scroll-x="true" scroll-into-view='{{toView}}'>
+    <view style="padding: 10px 0;">
+      <view wx:for="{{list}}" id="view{{index}}" wx:key="index" class="card_item {{index==current&&'opcity'}}" style="background: {{item.back}};" catchtap="tap" data-index="{{index}}">
+        <image src="/img/cart_select.png" wx:if="{{index==current}}" class="show_icon"></image>
+      </view>
+    </view>
+  </scroll-view>
+</view>
