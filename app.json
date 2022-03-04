@@ -189,7 +189,8 @@
         "pubuliu/index2",
         "pubuliu/index3",
         "scrollCard/index",
-        "scrollIntoView/index"
+        "scrollIntoView/index",
+        "scrollIntoView/detail"
       ]
     },
     {
