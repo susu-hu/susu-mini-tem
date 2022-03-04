@@ -1,0 +1,39 @@
+/* pages/wxCase/scrollIntoView/index.wxss */
+page {
+  background-color: #fff;
+  --va:rgb(223, 177, 116);
+}
+
+.card {
+  text-align: center;
+  font-size: 26rpx;
+  color: #333;
+  padding: 20rpx;
+  width: 710rpx;
+  margin: 30rpx auto;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  /* box-shadow: 5rpx 5rpx 5rpx rgb(250, 245, 245), -5rpx -5rpx 5rpx rgb(247, 243, 243); */
+}
+
+.card_item {
+  width: 340rpx;
+  height: 214rpx;
+  margin-top: 42rpx;
+  border-radius: 10px;
+  background-color: pink;
+  margin-right: 10rpx;
+}
+
+.card_item:nth-child(2n+2) {
+  margin-right: 0;
+}
+.card_item:nth-child(2){
+  background-color: pink!important;
+}
+.card_item:nth-child(3){
+  background-color: rgb(121, 60, 70)!important;
+}
+.card_item:nth-child(4){
+  background-color: rgb(202, 81, 101)!important;
+}

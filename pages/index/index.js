@@ -482,6 +482,10 @@ Page({
             name: 'scroll-view实现滚动卡片',
             url: '/pages/wxCase/scrollCard/index'
           },
+          {
+            name: 'scrollIntoView的实现',
+            url: '/pages/wxCase/scrollIntoView/index'
+          },
         ]
       },
       {

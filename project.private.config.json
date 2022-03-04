@@ -92,7 +92,7 @@
         },
         {
           "name": "sc",
-          "pathName": "pages/wxCase/scrollCard/index",
+          "pathName": "pages/wxCase/scrollIntoView/index",
           "query": "",
           "scene": null
         }

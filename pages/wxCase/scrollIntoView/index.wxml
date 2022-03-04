@@ -1,0 +1,7 @@
+<!--pages/wxCase/scrollIntoView/index.wxml-->
+<view class="card">礼品</view>
+<view class="flex flex-wrap j_c">
+  <block wx:for="{{4}}" wx:key="index">
+    <view class="card_item" style="background: var(--va);" catchtap="toDetail" data-index="{{index}}"></view>
+  </block>
+</view>

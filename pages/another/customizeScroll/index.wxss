@@ -1,30 +1,196 @@
 /* pages/another/customizeScroll/index.wxss */
-page { width: 100%; height: 100%; }
-page > view { position: initial !important; }
-view, picker, textarea, button, navigator { word-break: break-word; background-position: 50% 50%; background-repeat: no-repeat; background-size: 100% 100%; background-origin: padding-box; background-clip: padding-box; line-height: 1; box-sizing: border-box; background-color: transparent; border: none; padding: 0; margin: 0; border-radius: 0; display: block; position: relative; }
+page {
+  width: 100%;
+  height: 100%;
+}
+
+page>view {
+  position: initial !important;
+}
+
+view,
+picker,
+textarea,
+button,
+navigator {
+  word-break: break-word;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-origin: padding-box;
+  background-clip: padding-box;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  display: block;
+  position: relative;
+}
+
 /* 禁止触摸互动事件 */
-.noPointer { pointer-events: none; }
+.noPointer {
+  pointer-events: none;
+}
+
 /*禁用长触弹出的下载图片菜单*/
-.noCallout { -webkit-touch-callout: none; }
+.noCallout {
+  -webkit-touch-callout: none;
+}
+
 /*禁用长触选择文字等功能*/
-.noSelect { -webkit-user-select: none; }
-button::after { display: none; }
-.button-hover { background: rgba(0,0,0,0); }
-.content { width: 100%; height: 100%; position: absolute !important; left: 0; top: 0; background-color: #a4d1eb; display: flex; justify-content: center; align-items: center; }
-.content .but { width: 100%; height: 85rpx; position: absolute; left: 0; top: 0; display: flex; justify-content: space-around; align-items: center; z-index: 1; }
-.content .but button { width: 200rpx; height: 85rpx; line-height: 85rpx; background-color: #0a4935; color: #ffffff; font-size: 28rpx; text-align: center; border-radius: 50rpx; }
-.content .rule { width: 690rpx; height: 1170rpx; background-color:#f5f5f5; border-radius: 15rpx; }
-.content .rule .title { width: 600rpx; height: 100rpx; position: absolute; left: 40rpx; top: 47rpx; text-align: center; line-height: 100rpx; font-size: 40rpx; }
-.content .rule .scroll-view { width: 610rpx; height: 800rpx; position: absolute; left: 40rpx; top: 180rpx; }
-.content .rule .scroll-view scroll-view { width: 100%; height: 100%; }
-.content .rule .scroll-view scroll-view .rule-image { width: 100%; height: 100%; padding-right: 10rpx; }
-.content .rule .scroll-view scroll-view .rule-image image { width: 100%; height: auto; }
+.noSelect {
+  -webkit-user-select: none;
+}
+
+button::after {
+  display: none;
+}
+
+.button-hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  background-color: #a4d1eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .but {
+  width: 100%;
+  height: 85rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+.content .but button {
+  width: 200rpx;
+  height: 85rpx;
+  line-height: 85rpx;
+  background-color: #0a4935;
+  color: #ffffff;
+  font-size: 28rpx;
+  text-align: center;
+  border-radius: 50rpx;
+}
+
+.content .rule {
+  width: 690rpx;
+  height: 1170rpx;
+  background-color: #f5f5f5;
+  border-radius: 15rpx;
+}
+
+.content .rule .title {
+  width: 600rpx;
+  height: 100rpx;
+  position: absolute;
+  left: 40rpx;
+  top: 47rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 40rpx;
+}
+
+.content .rule .scroll-view {
+  width: 610rpx;
+  height: 800rpx;
+  position: absolute;
+  left: 40rpx;
+  top: 180rpx;
+}
+
+.content .rule .scroll-view scroll-view {
+  width: 100%;
+  height: 100%;
+}
+
+.content .rule .scroll-view scroll-view .rule-image {
+  width: 100%;
+  height: 100%;
+  padding-right: 10rpx;
+}
+
+.content .rule .scroll-view scroll-view .rule-image image {
+  width: 100%;
+  height: auto;
+}
+
 /* 自定义滚动条 */
-.content .rule .scroll-view scroll-view ::-webkit-scrollbar { width: 10rpx; height: 10rpx; color:#dddddd; border-radius: 30rpx; }
-.content .rule .scroll-view scroll-view ::-webkit-scrollbar-track { border-radius: 30rpx; -webkit-box-shadow: inset 0 0 10rpx rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6rpx rgba(0, 0, 0, 0.1); background-color:#dddddd; }
-.content .rule .scroll-view scroll-view ::-webkit-scrollbar-thumb { border-radius: 30rpx; -webkit-box-shadow: inset 0 0 10rpx rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6rpx rgba(0, 0, 0, 0.1); background-color:#751625; }
-.content .rule .scroll-view .scroll-bar { width: 10rpx; height: 100%; position: absolute; top: 0; right: 0; border-radius: 30px; overflow: hidden; background-color:#dddddd; }
-.content .rule .scroll-view .scroll-bar .progress { width: 100%; position: absolute; left: 0; top: 0; border-radius: 30px; background-color:#751625; }
+.content .rule .scroll-view scroll-view ::-webkit-scrollbar {
+  width: 10rpx;
+  height: 10rpx;
+  color: #dddddd;
+  border-radius: 30rpx;
+}
+
+.content .rule .scroll-view scroll-view ::-webkit-scrollbar-track {
+  border-radius: 30rpx;
+  -webkit-box-shadow: inset 0 0 10rpx rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6rpx rgba(0, 0, 0, 0.1);
+  background-color: #dddddd;
+}
+
+.content .rule .scroll-view scroll-view ::-webkit-scrollbar-thumb {
+  border-radius: 30rpx;
+  -webkit-box-shadow: inset 0 0 10rpx rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6rpx rgba(0, 0, 0, 0.1);
+  background-color: #751625;
+}
+
+.content .rule .scroll-view .scroll-bar {
+  width: 10rpx;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+.content .rule .scroll-view .scroll-bar .progress {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  background-color: #751625;
+}
+
 /* 隐藏滚动条 */
-.content .rule .hide ::-webkit-scrollbar{ display: none; width: 0 !important; height: 0 !important; -webkit-appearance: none; background: transparent; }
-.content .rule .close { width: 610rpx; height: 88rpx; position: absolute; left: 40rpx; bottom: 41rpx; text-align: center; line-height: 88rpx; font-size: 35rpx; color: #ffffff; background-color: #751625; border-radius: 10rpx; }
+.content .rule .hide ::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.content .rule .close {
+  width: 610rpx;
+  height: 88rpx;
+  position: absolute;
+  left: 40rpx;
+  bottom: 41rpx;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 35rpx;
+  color: #ffffff;
+  background-color: #751625;
+  border-radius: 10rpx;
+}
