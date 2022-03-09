@@ -366,3 +366,11 @@ page {
   border-left: 40rpx solid #000;
   margin-left: 50px;
 }
+
+.c_btn {
+  width: 710rpx;
+  color: #fff;
+  font-size: 28rpx;
+  background: pink;
+  margin-top: 20rpx;
+}

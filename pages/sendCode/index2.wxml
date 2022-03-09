@@ -57,3 +57,5 @@
 <view class="flex-row center_btn"></view>
 
 <view class="trighht"></view>
+
+<button open-type="contact" class="c_btn">联系客服</button>
