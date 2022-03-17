@@ -1,5 +1,11 @@
 # 微信小程序实现购物车+日历等页面
-
+![输入图片说明](https://img.shields.io/badge/%E8%87%AA%E5%AE%9A%E4%B9%89tabbar----yellowgreen)
+![输入图片说明](https://img.shields.io/badge/UI%E7%BB%84%E4%BB%B6----yellowgreen)
+![输入图片说明](https://img.shields.io/badge/%20%20%E5%8E%9F%E7%94%9F----blue)
+![输入图片说明](https://img.shields.io/badge/vant----green)
+![输入图片说明](https://img.shields.io/badge/%E7%BB%84%E4%BB%B6%E5%8C%96----red)
+![输入图片说明](https://img.shields.io/badge/%E6%8A%BD%E5%A5%96%E7%BB%84%E4%BB%B6----orange)
+![输入图片说明](https://img.shields.io/badge/%E6%97%A5%E5%8E%86%E7%BB%84%E4%BB%B6----orange)
 #### 介绍
 微信小程序各种demo合集
 
