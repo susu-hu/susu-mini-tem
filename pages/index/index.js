@@ -497,7 +497,7 @@ Page({
           },
           {
             name: '关键字高亮',
-            url: '/pages/jsCase/keyWordHight/index'
+            url: '/pages/jsCase/keyWordHight/index2'
           },
           {
             name: '点击实现震动',
