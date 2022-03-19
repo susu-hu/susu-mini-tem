@@ -151,6 +151,8 @@ step5：构建npm）
 127. scroll-into-view实现页面联动
 128. 首页loading加载页
 129. loading加载动画（更新ing）
+130. 节流+防抖
+131. rotateZ实现卡片翻转
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -288,6 +290,10 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index-lo.gif)
 #### loading动画ing
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/loainging.png)
+#### 节流防抖
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E8%8A%82%E6%B5%81+%E9%98%B2%E6%8A%96.gif)
+#### rotateZ实现卡片翻转
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/slide-image.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
