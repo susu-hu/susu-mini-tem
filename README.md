@@ -158,6 +158,7 @@ step5：构建npm）
 132. css渐变实现条纹背景
 133. 单选跳跃选择动画
 134. 页面监听watch
+135. wx.createAnimation实现一个带有transition效果的弹框动画
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -305,6 +306,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/radioChange.gif)
 #### 页面监听watch
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/c1e03cc20975782fe7d98df56c360ec3d01a0f7f/%E5%B0%8F%E7%A8%8B%E5%BA%8F/watch.gif)
+#### 带有transition效果的弹框动画
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/transition-modal.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
