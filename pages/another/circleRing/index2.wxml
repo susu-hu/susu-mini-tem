@@ -1,5 +1,4 @@
 <!--pages/another/circleRing/index2.wxml-->
-<!-- 圆环4 -->
 <view  class="flex-row j_b rows">
   <view class="wrap">
     <view class="circle-box">
@@ -7,7 +6,7 @@
       </canvas>
       <canvas class="circle" style="z-index: -5; width:200px; height:200px;" canvas-id="canvasCircle">
       </canvas>
-      <view class="draw_btn" bindtap="drawCircle">开始动态绘制</view>
+      <view class="draw_btn" catchtap="drawCircle">开始</view>
     </view>
   </view>
 </view>

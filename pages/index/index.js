@@ -670,18 +670,19 @@ Page({
       {
         showmore: true,
         name: '分包api Demos',
-        list: [{
-            name: '水平仪',
-            url: '/pages/apiDemo/accelerometer/index'
-          },
-          {
-            name: '摇一摇',
-            url: '/pages/apiDemo/shad/index'
-          },
-          {
-            name: '图片添加边框',
-            url: '/pages/apiDemo/canvastoImg/index'
-          },
+        list: [
+          // {
+          //   name: '水平仪',
+          //   url: '/pages/apiDemo/accelerometer/index'
+          // },
+          // {
+          //   name: '摇一摇',
+          //   url: '/pages/apiDemo/shad/index'
+          // },
+          // {
+          //   name: '图片添加边框',
+          //   url: '/pages/apiDemo/canvastoImg/index'
+          // },
           {
             name: 'canvas图形验证码',
             url: '/pages/apiDemo/moveCert/index5'

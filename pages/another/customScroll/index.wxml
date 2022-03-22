@@ -1,13 +1,10 @@
 <!--pages/another/customScroll/index.wxml-->
-<scroll-view scroll-y="{{true}}" style="height:200rpx">
-  <view style="height:300px;"></view>
-</scroll-view>
 <!--垂直滚动，这里必须设置高度-->
-<scroll-view scroll-y="true" style="height: 200px">
-  <view style="background: red; width: 100px; height: 100px"></view>
-  <view style="background: green; width: 100px; height: 100px"></view>
-  <view style="background: blue; width: 100px; height: 100px"></view>
-  <view style="background: yellow; width: 100px; height: 100px"></view>
+<scroll-view scroll-y="true" style="height: 200px;margin-bottom:50px">
+  <view style="background: #e08282; width: 100%; height: 100px"></view>
+  <view style="background: #e4861b; width: 100%; height: 100px"></view>
+  <view style="background: #c8c8df; width: 100%; height: 100px"></view>
+  <view style="background: #e6a275; width: 100%; height: 100px"></view>
 </scroll-view>
 <!--  white-space
   normal: 正常无变化(默认处理方式.文本自动处理换行.假如抵达容器边界内容会转到下一行)
@@ -18,10 +15,10 @@
   inherit: 继承
 -->
 <!--水平滚动-->
-<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
+<scroll-view scroll-x="true" style="width: 750rpx; white-space: nowrap; display: flex">
   <!--  display: inline-block-->
-  <view style="background: red; width: 200px; height: 100px; display: inline-block"></view>
-  <view style="background: green; width: 200px; height: 100px; display: inline-block"></view>
-  <view style="background: blue; width: 200px; height: 100px; display: inline-block"></view>
-  <view style="background: yellow; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: #e08282; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: #e4861b; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: #c8c8df; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: #e6a275; width: 200px; height: 100px; display: inline-block"></view>
 </scroll-view>

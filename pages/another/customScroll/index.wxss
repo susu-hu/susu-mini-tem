@@ -15,7 +15,7 @@ page {
   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  background-color: yellow;
+  background-color: #fafae7;
 }
 
 /*定义滑块 内阴影+圆角*/
@@ -23,5 +23,5 @@ page {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, .3);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, .3);
-  background-color: #ff5500;
+  background-color: #ee976b;
 }

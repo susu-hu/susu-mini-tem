@@ -12,7 +12,18 @@
     },
     "miniprogram": {
       "list": [
-        
+        {
+          "name": "pages/another/circleRing/index2",
+          "pathName": "pages/another/circleRing/index2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/another/customScroll/index",
+          "pathName": "pages/another/customScroll/index",
+          "query": "",
+          "scene": null
+        }
       ]
     }
   }
