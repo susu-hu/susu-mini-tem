@@ -160,6 +160,8 @@ step5：构建npm）
 134. 页面监听watch
 135. wx.createAnimation实现一个带有transition效果的弹框动画
 136. tab切换添加过渡效果
+137. 雪碧图+帧动画
+138. mask自定义tabbar样式
 #### 效果截图
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -311,6 +313,10 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/transition-modal.gif)
 #### tab切换过渡效果
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E8%BF%87%E6%B8%A1%E6%80%A7tab%E9%80%89%E6%8B%A9.gif)
+####  雪碧图+帧动画
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/sprite-steps.gif)
+#### mask自定义tabbar样式
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/customTab%E5%88%87%E6%8D%A2.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
