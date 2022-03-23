@@ -1,4 +1,4 @@
-# 微信小程序实现购物车+日历等页面
+# 微信小程序模板页面合集
 ![输入图片说明](https://img.shields.io/badge/%E8%87%AA%E5%AE%9A%E4%B9%89tabbar----yellowgreen)
 ![输入图片说明](https://img.shields.io/badge/UI%E7%BB%84%E4%BB%B6----yellowgreen)
 ![输入图片说明](https://img.shields.io/badge/%20%20%E5%8E%9F%E7%94%9F----blue)
@@ -9,7 +9,7 @@
 ![输入图片说明](https://gitee.com/susuhhhhhh/wxmini_demo/badge/star.svg)
 ![输入图片说明](https://gitee.com/susuhhhhhh/wxmini_demo/badge/fork.svg)
 #### 介绍
-微信小程序各种demo合集
+微信小程序各种demo合集，微信小程序-购物车，日历，echarts，tabbar，抽奖，评分等组件
 
 ### 伙伴们，这是一个小程序组件合集，涵盖了常见的一些需求，该版本是开源版，后续我将重新对此版本改版，并加上一些新的需求，作为一个ui组件库出现，针对微信小程序和uniapp！
 
