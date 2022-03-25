@@ -166,6 +166,7 @@ step5：构建npm）
 139. mask自定义tabbar样式
 140. 微信拆红包动画
 141. map+腾讯地图sdk，地图拖拽，经纬度到地址转换
+142. scroll-view+swiper，切换状态下scroll-left的使用
 #### 效果截图
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -328,6 +329,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E6%8B%86%E7%BA%A2%E5%8C%85.gif)
 #### 地图拖拽定位
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9C%B0%E5%9B%BE%E6%8B%96%E6%8B%BD.gif)
+#### scroll-left切换
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/sleft.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
