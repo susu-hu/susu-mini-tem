@@ -23,9 +23,9 @@
 
 #### 安装教程
 
-1.  微信开发者工具打开(2021.8.15 新增页面导航，首页为所有页面导航）
+1.  首页为所有页面导航(2021.8.15 新增页面导航）
 2.  cal：为日历页面
-3.  demo/index：为物流页面,在页面完全渲染之前，通过一些灰色的区块大致勾勒出轮廓，待数据加载完成后，再替换成真实的内容。通常在小程序中，我们需要手工维护骨架屏的代码。
+3.  demo/index：物流页面,页面完全渲染前，展示骨架屏（需要手工维护），待数据加载完成后，替换为真实的内容
     demo/index2:新增伪元素写法。
 4.  dots：为自定义轮播图指示点页面
 5.  touchRemove： 购物车页面+左滑删除
@@ -166,7 +166,7 @@ step5：构建npm）
 139. 微信拆红包动画
 140. map+腾讯地图sdk，地图拖拽，经纬度到地址转换
 #### 效果截图
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/033934_0a4d1de7_8576727.png "屏幕截图.png")
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0611/134711_a94e772a_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0708/160232_d0a6c802_8576727.png "屏幕截图.png")
