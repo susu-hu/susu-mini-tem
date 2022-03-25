@@ -333,7 +333,8 @@ Page({
         })
       }
     })
+  },
+  onUnload() {
+    clearTimeout(this.data.timer)
   }
-
-
 })
