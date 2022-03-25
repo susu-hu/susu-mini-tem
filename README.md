@@ -152,19 +152,20 @@ step5：构建npm）
 125. 瀑布流写法1
 126. scroll-view实现滚动卡片
 127. scroll-into-view实现页面联动
-128. 首页loading加载页
-129. loading加载动画（更新ing）
-130. 节流+防抖
-131. rotateZ实现卡片翻转
-132. css渐变实现条纹背景
-133. 单选跳跃选择动画
-134. 页面监听watch
-135. wx.createAnimation实现一个带有transition效果的弹框动画
-136. tab切换添加过渡效果
-137. 雪碧图+帧动画
-138. mask自定义tabbar样式
-139. 微信拆红包动画
-140. map+腾讯地图sdk，地图拖拽，经纬度到地址转换
+128. canvas图片裁剪
+129. 首页loading加载页
+130. loading加载动画（更新ing）
+131. 节流+防抖
+132. rotateZ实现卡片翻转
+133. css渐变实现条纹背景
+134. 单选跳跃选择动画
+135. 页面监听watch
+136. wx.createAnimation实现一个带有transition效果的弹框动画
+137. tab切换添加过渡效果
+138. 雪碧图+帧动画
+139. mask自定义tabbar样式
+140. 微信拆红包动画
+141. map+腾讯地图sdk，地图拖拽，经纬度到地址转换
 #### 效果截图
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
@@ -300,6 +301,9 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/scard.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/scrollintoview.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index-lo.gif)
+
+#### 图片裁剪
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/suUI/%E5%9B%BE%E7%89%87%E8%A3%81%E5%89%AA.gif)
 #### loading动画ing
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/loainging.png)
 #### 节流防抖
