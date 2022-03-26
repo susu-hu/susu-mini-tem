@@ -414,12 +414,10 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/scard.gif)
 ##### scroll-into-view实现页面联动
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/scrollintoview.gif)
-#### 图片裁剪
+##### 图片裁剪
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/suUI/%E5%9B%BE%E7%89%87%E8%A3%81%E5%89%AA.gif)
-
 ##### 首页loading加载页
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index-lo.gif)
-
 ##### loading动画ing(++)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/loainging.png)
 ##### 节流防抖
