@@ -17,16 +17,11 @@
 ### 开源不易，您如果觉得项目不错的话可以给项目一个 Star 嘛，也是对我一直更新代码的一种鼓励啦，谢谢各位的支持。
 2022！新年快乐🎉 艾瑞巴蒂！
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
+#### 功能总结
 
 1.  首页为所有页面导航(2021.8.15 新增页面导航）
 2.  cal：为日历页面
-3.  demo/index：物流页面,页面完全渲染前，展示骨架屏（需要手工维护），待数据加载完成后，替换为真实的内容
-    demo/index2:新增伪元素写法。
+3.  demo/index：物流页面,页面完全渲染前，展示骨架屏（需要手工维护），待数据加载完成后，替换为真实的内容、demo/index2:新增伪元素写法。
 4.  dots：为自定义轮播图指示点页面
 5.  touchRemove： 购物车页面+左滑删除
 6.  touchMove2： 滑动删除2  movable-area组件
@@ -167,169 +162,289 @@ step5：构建npm）
 140. 微信拆红包动画
 141. map+腾讯地图sdk，地图拖拽，经纬度到地址转换
 142. scroll-view+swiper，切换状态下scroll-left的使用
-#### 效果截图
+#### 页面部分截图
+##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
+##### 日历组件1
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0609/014902_58a0114f_8576727.png "屏幕截图.png")
+##### 日历组件2
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0611/134711_a94e772a_8576727.png "屏幕截图.png")
+##### 骨架屏+物流步骤条
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0708/160232_d0a6c802_8576727.png "屏幕截图.png")
+##### 自定义指示点（新增指示点
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/094522_d9f4edd2_8576727.png "屏幕截图.png")
+##### 自定义指示点（修改原样式
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/133743_364a7e9e_8576727.png "屏幕截图.png")
+##### 购物车页面+左滑删除
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0622/172244_6fb1820e_8576727.png "屏幕截图.png")
+##### 左滑删除（movable-area组件
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0622/202320_1f0fc980_8576727.png "屏幕截图.png")
+##### 卡券半圆
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0624/011304_db1c1301_8576727.png "屏幕截图.png")
+##### 弹框+禁止底层滑动
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0624/135040_dd3e47de_8576727.png "屏幕截图.png")
+##### 饼图+折线图（wxcharts.js
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0628/024530_4aac3d1a_8576727.png "屏幕截图.png")
+##### 官方ec-canvas组件
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0628/172928_2a09dda9_8576727.png "屏幕截图.png")
+##### 自定义tabbar
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0630/234347_ab08d7ff_8576727.png "屏幕截图.png")
+##### 星星评分 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0701/215113_594682a5_8576727.png "屏幕截图.png")
+##### 自定义input输入框
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0702/180223_9717aca8_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0704/174532_8f716965_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0705/003442_3bf4c90a_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0801/234214_094d9427_8576727.png "屏幕截图.png")
+##### 多图上传
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0705/195514_8d93c7a2_8576727.png "屏幕截图.png")
+##### 侧边弹框筛选，超出4条数据默认隐藏，可点击展开
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0708/144350_35f1473c_8576727.png "屏幕截图.png")
+##### 自定义导航栏
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0710/203648_bc744c24_8576727.png "屏幕截图.png")
+##### 锚点定位
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0731/234212_daa602ea_8576727.png "屏幕截图.png")
+##### swiper消息滚动
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0725/001154_b595fe93_8576727.png "屏幕截图.png")
+##### echarts饼图+tooltip
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0726/011703_a6b02f93_8576727.png "屏幕截图.png")
+##### 数值计算math.min
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0726/144805_f583bdb8_8576727.png "屏幕截图.png")
+##### 地址选择（chooseLocation
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0726/170500_2159196e_8576727.png "屏幕截图.png")
+##### 双向锚点+富文本（商品详情页
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0808/002806_73c8f2be_8576727.png "屏幕截图.png")
+##### 气泡框（三角形+矩形+梯形等
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0805/120304_81f75c5f_8576727.png "屏幕截图.png")
+##### 自定义播放与暂停的按钮与事件
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0808/183102_ea59811f_8576727.png "屏幕截图.png")
+##### 3d轮播（swiper+scale
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/004542_f323df58_8576727.png "屏幕截图.png")
+##### css3动画（五福合成效果
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0815/031157_b0c5c5ad_8576727.png "屏幕截图.png")
+##### canvas2d圆环
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0818/113837_8bea02e5_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0818/114200_b39c99c4_8576727.png "屏幕截图.png")
+##### scroll-view+swiper双向切换
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0820/000229_2699901d_8576727.png "屏幕截图.png")
+##### 不错的loading动画
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0826/160929_902bf951_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0828/205748_8abc177e_8576727.png "屏幕截图.png")
+##### 圆锥渐变
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0830/175550_c342295a_8576727.png "屏幕截图.png")
+##### 颜色盘
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0909/225355_0bc7e7f1_8576727.png "屏幕截图.png")
+##### 炫酷的loading动画
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0911/210337_3310def0_8576727.png "屏幕截图.png")
+##### 炫酷能量球+螺旋线条（学习案例
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0912/003809_22dcf91f_8576727.png "屏幕截图.png")
+##### 纯css图标（警示按钮+蓝云+小花
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0913/234228_a80b5232_8576727.png "屏幕截图.png")
+##### 搜索历史（前15条数据
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0922/235247_bec409fb_8576727.png "屏幕截图.png")
+##### navigator
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/000500_d469a29b_8576727.png "屏幕截图.png")
+##### 蛋黄派switch(学习案例
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0929/144514_f98d9dfa_8576727.png "屏幕截图.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/1005/004036_e11034c3_8576727.gif "3.gif")
+##### 一些css3动画
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1005/003351_333fc9ca_8576727.gif "2.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1005/003038_32f73c30_8576727.gif "1.gif")
+##### 404页面（动画
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1005/002616_da70a6d9_8576727.gif "GIF.gif")
+##### 文字渐变（background-clip:text
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1012/222321_b5bf3e44_8576727.gif "GIF3345.gif")
+##### scroll-into-view输入框定位
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1015/174057_7cbdc2b7_8576727.gif "radio.gif")
+##### checkbox（自定义样式
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1017/234406_e90b242a_8576727.gif "导出.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1025/001059_4a1f6a90_8576727.png "屏幕截图.png")
+##### 自定义导航栏（精准定位）
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1026/221355_86e61315_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1029/180110_5a53c09a_8576727.png "屏幕截图.png")
+##### vant日历多日期选择
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1102/104516_6f6ed9ce_8576727.png "屏幕截图.png")
+##### 背景一屏
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1102/175157_e2eedfa3_8576727.png "屏幕截图.png")
+##### 图片授权保存
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1107/123530_a8e55a87_8576727.png "屏幕截图.png")
+##### 摇摆的灯泡动画
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1109/135245_a1043136_8576727.gif "灯泡.gif")
+
+##### 文字的展开与收起
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1110/190031_ece1d834_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1111/193011_b672c847_8576727.png "屏幕截图.png")
+##### 卡片翻转动画
+
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1112/011030_44abb6b1_8576727.gif "阿萨德.gif")
+##### 打卡（腾讯地图sdk
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1114/235332_f44cc0cf_8576727.gif "123123.gif")
+##### input自定义样式2
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1115/191543_05224ce8_8576727.gif "薯条.gif")
+##### 日历组件03+主题色选择
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1117/001314_c8cd11c0_8576727.png "屏幕截图.png")
+##### 消息飘窗（swiper
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1117/204706_2449da10_8576727.gif "弹幕.gif")
+##### 文字省略右下角的展开按钮
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1118/005140_c4f66bc1_8576727.gif "扎克.gif")
+##### 营销组件抽奖
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1118/141402_8d2bc909_8576727.gif "抽奖.gif")
+##### 圆角边框渐变色
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1120/205323_a07eb076_8576727.png "屏幕截图.png")
+##### 日历组件04+主题色选择
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1122/134217_6561af6b_8576727.png "屏幕截图.png")
+##### swiper实现商品轮播
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1123/000811_3d250d72_8576727.gif "撒旦发.gif")
+##### css高频形状
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1123/180409_6ed34605_8576727.png "屏幕截图.png")
+##### 0.5rpx的线
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F0.5rpximage.png)
+##### swiper不定长展示数据
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/swiper.gif)
+##### text标签空格，换行，转换
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/image.png)
+##### input密码的显示与隐藏
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%A3%89%E9%BA%BB.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E4%BD%8E%E5%88%86%E5%B1%80.gif)
+##### 多选框按钮的显示与隐藏
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E7%88%B1%E4%BB%95%E8%BE%BE.gif)
+##### 手动添加列表
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%88%97%E8%A1%A8.gif)
+##### 折叠文字动画
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%8A%98%E5%8F%A0%E6%96%87%E5%AD%97.gif)
+##### 左右两列满屏（滑动选择
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/sc.gif)
+##### 金额的计算（reduce
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%80%89%E6%8B%A9.gif)
+##### 页面栈(设置上一页数据并返回
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/setData.gif)
+##### css实现六角灯笼(学习案例)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E7%81%AF%E7%AC%BC.gif)
+##### 卡券背景透明，随着内容自动撑开元素大小
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%8D%A1%E7%89%87.png)
+##### 多列选择器实现时间和日期的选择
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/time.gif)
+##### css实现圆角灯笼
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9C%86%E8%A7%92%E7%81%AF%E7%AC%BC.gif)
+##### 新增n个loading动画
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/loading.gif)
+##### 一屏长度的80%的弹框
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/pop.png)
+##### 实现圆弧的两种方式
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9C%86%E5%BC%A7.png)
+##### 气泡框+步骤条不定长高度
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/steps.png)
+##### css流星雨
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%B5%81%E6%98%9F%E9%9B%A8.gif)
+##### 页面底部的提示文字（flex
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BA%95%E9%83%A8%E6%96%87%E5%AD%97.png)
+##### css3跳动的方块
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/jumpCubd.gif)
+##### 列表标签随机颜色
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/labelColor.png)
+##### css按钮点击水波纹+录音圆环扩散效果
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BD%95%E9%9F%B3%E6%8C%89%E9%92%AE.gif)
+##### css落日
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/sunset.gif)
+##### css3实现雪花飘落
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/snows.gif)
-![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/navtab.png)
+##### 一次多图片下载
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9B%BE%E7%89%87%E4%B8%8B%E8%BD%BD.gif)
+##### 实现一个弹出的菜单
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BC%B9%E5%87%BAmenu.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E8%8F%9C%E5%8D%95pop.gif)
+##### vant文件上传
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/upload.gif)
+##### swiper高度与数量同步 
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/swiperHeight.png)
+##### 消息走马灯效果
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%A8%AA%E5%90%91%E6%BB%9Awx.gif)
+##### css3笑脸 
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/smile.gif)
+##### border-radius实现一个图片带弧度
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/br.png)
+##### 折线图+柱形图
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/echarts.png)
+##### 引入外部icon（阿里巴巴矢量图标
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/iconFont.png)
+##### 按钮可拖拽
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/drag.gif)
+##### 一键返回顶部
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E4%B8%80%E9%94%AE%E9%A1%B6%E9%83%A8.gif)
+##### canvas实现图片文字验证码
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/canvas%E5%9B%BE%E7%89%87%E9%AA%8C%E8%AF%81%E7%A0%81.gif)
+##### css-福字
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E7%A6%8F%E5%AD%97.gif)
+##### css3弹出框动画
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BC%B9%E5%87%BA.gif)
+##### 等级进度条
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/steps-mi.gif)
+##### 百分比进度条
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E7%99%BE%E5%88%86%E6%AF%94%E8%BF%9B%E5%BA%A6.gif)
+##### 文件的上传下载与预览
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/filedown.png)
+##### 头部固定筛选不定高度
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%A4%B4%E9%83%A8%E7%AD%9B%E9%80%89.gif)
+##### css-冰墩墩
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/bdd.png)
+##### css-雪容融
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/xrr.png)
+##### 关键词高亮
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%85%B3%E9%94%AE%E8%AF%8D%E9%AB%98%E4%BA%AE.gif)
+##### css-高斯模糊
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A.png)
+##### 手势滑动切换卡片组件（学习案例
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%8D%A1%E7%89%87.gif)
+##### 媒体查询
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2.png)
+##### 堆叠式轮播
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/dts.gif)
+##### 加载进度条
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%8A%A0%E8%BD%BD%E8%BF%9B%E5%BA%A6%E6%9D%A1.gif)
+##### 营销组件（抽奖走马灯
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%8A%BD%E5%A5%964gif.gif)
+##### css-grid布局（display:grid
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/grid%E5%B8%83%E5%B1%80.png)
+##### css-渐变色实现条纹进度条
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%9D%A1%E7%BA%B9%E8%BF%9B%E5%BA%A6.gif)
-![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/scroll-left.gif)
+##### 自定义tabbar样式
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/cust-tabbar.png)
+##### 瀑布流写法1
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E7%80%91%E5%B8%83%E6%B5%81.gif)
+##### scroll-view实现滚动卡片
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/scard.gif)
+##### scroll-into-view实现页面联动
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/scrollintoview.gif)
-![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index-lo.gif)
-
 #### 图片裁剪
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/suUI/%E5%9B%BE%E7%89%87%E8%A3%81%E5%89%AA.gif)
-#### loading动画ing
+
+##### 首页loading加载页
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index-lo.gif)
+
+##### loading动画ing(++)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/loainging.png)
-#### 节流防抖
+##### 节流防抖
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E8%8A%82%E6%B5%81+%E9%98%B2%E6%8A%96.gif)
-#### rotateZ实现卡片翻转
+##### rotateZ实现卡片翻转
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/slide-image.gif)
-#### css渐变实现条纹背景
+##### css渐变实现条纹背景
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%9D%A1%E7%BA%B9%E8%83%8C%E6%99%AF.png)
-#### 单选跳跃选择动画
+##### 单选跳跃选择动画
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/radioChange.gif)
-#### 页面监听watch
+##### 页面监听watch
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/c1e03cc20975782fe7d98df56c360ec3d01a0f7f/%E5%B0%8F%E7%A8%8B%E5%BA%8F/watch.gif)
-#### 带有transition效果的弹框动画
+##### 带有transition效果的弹框动画
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/transition-modal.gif)
-#### tab切换过渡效果
+##### tab切换过渡效果
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E8%BF%87%E6%B8%A1%E6%80%A7tab%E9%80%89%E6%8B%A9.gif)
-####  雪碧图+帧动画
+#####  雪碧图+帧动画
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/sprite-steps.gif)
-#### mask自定义tabbar样式
+##### mask自定义tabbar样式
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/customTab%E5%88%87%E6%8D%A2.gif)
-#### 微信拆红包动画
+##### 微信拆红包动画
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E6%8B%86%E7%BA%A2%E5%8C%85.gif)
-#### 地图拖拽定位
+##### 地图拖拽定位
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9C%B0%E5%9B%BE%E6%8B%96%E6%8B%BD.gif)
-#### scroll-left切换
+##### scroll-left切换
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/sleft.gif)
 #### 参与贡献
 
@@ -339,11 +454,5 @@ step5：构建npm）
 4.  新建 Pull Request
 
 
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### 联系我
+##### 公众号：苏苏的bug
