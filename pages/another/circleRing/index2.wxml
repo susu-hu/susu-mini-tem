@@ -1,12 +1,12 @@
 <!--pages/another/circleRing/index2.wxml-->
-<view  class="flex-row j_b rows">
+<view class="flex-row j_b rows">
   <view class="wrap">
     <view class="circle-box">
       <canvas class="circle" style="width:200px; height:200px;" canvas-id="canvasArcCir">
       </canvas>
       <canvas class="circle" style="z-index: -5; width:200px; height:200px;" canvas-id="canvasCircle">
       </canvas>
-      <view class="draw_btn" catchtap="drawCircle">开始</view>
+      <view class="draw_btn" catchtap="{{no_click?'drawCircle':''}}">开始</view>
     </view>
   </view>
 </view>
