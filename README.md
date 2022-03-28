@@ -163,6 +163,7 @@ step5：构建npm）
 141. map+腾讯地图sdk，地图拖拽，经纬度到地址转换
 142. scroll-view+swiper，切换状态下scroll-left的使用
 143. canvas生成海报图片
+144. 关闭小房子+按钮退出小程序
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
@@ -447,6 +448,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/sleft.gif)
 ##### canvas生成海报图片
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E7%94%9F%E6%88%90%E6%B5%B7%E6%8A%A5.gif)
+##### 关闭小房子+按钮退出小程序
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%80%80%E5%87%BA%E5%B0%8F%E7%A8%8B%E5%BA%8F.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
