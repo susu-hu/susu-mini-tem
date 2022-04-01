@@ -166,6 +166,7 @@ step5：构建npm）
 144. 关闭小房子+按钮退出小程序
 145. canvas手写签名
 146. 颜色选择器
+147. 列表显示动画
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
@@ -454,8 +455,10 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%80%80%E5%87%BA%E5%B0%8F%E7%A8%8B%E5%BA%8F.gif)
 ##### canvas手写签名
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/canvas%E7%AD%BE%E5%AD%97.gif)
-###### 颜色选择器
+##### 颜色选择器
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A2%9C%E8%89%B2%E9%80%89%E6%8B%A91.gif)
+##### 列表显示动画
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/ani-sldown.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
