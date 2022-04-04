@@ -167,6 +167,7 @@ step5：构建npm）
 145. canvas手写签名
 146. 颜色选择器
 147. 列表显示动画
+148. 城市索引选择
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
@@ -459,6 +460,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A2%9C%E8%89%B2%E9%80%89%E6%8B%A91.gif)
 ##### 列表显示动画
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/ani-sldown.gif)
+##### 城市索引选择
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9F%8E%E5%B8%82%E9%80%89%E6%8B%A9.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
