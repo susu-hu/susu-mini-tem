@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    sysW: null,
+    sysW: 47,
     lastDay: null,
     firstDay: null,
     year: null,
@@ -29,10 +29,10 @@ Page({
       wook: "六"
     }, {
       wook: "日"
-    }, ],
+    },],
     day: [{
       wook: '',
-      src: "../../image/newspaper.png",
+      src: "https://i.postimg.cc/mgsKJGLw/susu1.jpg",
     }, {
       wook: ''
     }, {
@@ -47,7 +47,7 @@ Page({
       wook: ''
     }],
     days: [{
-      src: "../../image/newspaper.png"
+      src: "https://i.postimg.cc/mgsKJGLw/susu1.jpg"
     }]
   },
   getProWeekList: function () {
@@ -58,7 +58,6 @@ Page({
     let oneDayTime = 24 * 60 * 60 * 1000; //一天的时间
     let proWeekList;
     let weekday;
-    console.log(dateTime)
     for (let i = 0; i < 7; i++) {
       let time = dateTime - (dateDay - 1 - i) * oneDayTime;
       proWeekList = new Date(time).getDate(); //date格式转换为yyyy-mm-dd格式的字符串
@@ -131,9 +130,6 @@ Page({
         src: ''
       })
     }
-
-
-    console.log(this.data.days)
   },
   handleCalendar(e) {
     const handle = e.currentTarget.dataset.handle;
@@ -243,7 +239,6 @@ Page({
     this.dataTime();
     var res = wx.getSystemInfoSync();
     this.setData({
-      sysW: res.windowHeight / 12 - 5, //更具屏幕宽度变化自动设置宽度
       marLet: this.data.firstDay,
       getDate: this.data.getDate,
       judge: 1,
@@ -284,52 +279,34 @@ Page({
   scroll: function (e) {
     console.log(e)
   },
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
+
   onReady: function () {
+    // px
+    // let query = wx.createSelectorQuery();
+    // query.select('.content').boundingClientRect(rect => {
+    //   let height = rect.height;
+    //   console.log(height);
+    // }).exec();
+    // rpx
 
+    // let query = wx.createSelectorQuery();
+    // query.select('.content').boundingClientRect(rect => {
+    //   let clientHeight = rect.height;
+    //   let clientWidth = rect.width;
+    //   let ratio = 750 / clientWidth;
+    //   let height = clientHeight * ratio;
+    //   console.log(height);
+    // }).exec();
+    setTimeout(() => {
+      let query = wx.createSelectorQuery();
+      query.select('#week').boundingClientRect(rect => {
+        let width = rect.width;
+        this.setData({
+          sysW: width / 7
+        })
+      }).exec();
+    }, 300)
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
