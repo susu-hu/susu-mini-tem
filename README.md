@@ -169,6 +169,7 @@ step5：构建npm）
 147. 列表显示动画
 148. 城市索引选择
 149. 滚动吸顶
+150. 数字滚动
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
@@ -465,6 +466,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9F%8E%E5%B8%82%E9%80%89%E6%8B%A9.gif)
 ##### 滚动吸顶
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%BB%9A%E5%8A%A8%E5%90%B8%E9%A1%B6.gif)
+##### 数字滚动
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%95%B0%E5%AD%97%E6%BB%9A%E5%8A%A8.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
