@@ -171,6 +171,7 @@ step5：构建npm）
 149. 滚动吸顶
 150. 数字滚动
 151. 一些tab选中样式
+152. 上下左右滑动切换（transform）
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
@@ -471,6 +472,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%95%B0%E5%AD%97%E6%BB%9A%E5%8A%A8.gif)
 ##### 一些tab选中样式
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/tab.gif)
+##### 上下左右滑动切换（transform）
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E4%B8%8A%E4%B8%8B%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8A%A8%E5%88%87%E6%8D%A2.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
