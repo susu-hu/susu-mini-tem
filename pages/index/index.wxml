@@ -3,7 +3,7 @@
   <view class="head">
     <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class='img'></image>
     <view class="star head_name" catchtap="showTip">创作不易</view>
-    <view class="head_subname">喜欢的点个关注+star一下~</view>
+    <view class="head_subname">期待您的关注+star~</view>
   </view>
   <view class="con">
     <block wx:for="{{page_list}}" wx:key="page_list">
