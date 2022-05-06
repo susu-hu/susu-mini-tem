@@ -174,6 +174,7 @@ step5：构建npm）
 152. 上下左右滑动切换（transform）
 153. 数据懒加载
 154. 营销组件滚动抽奖
+155. 共享元素+ page-container实现弹出动画
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
@@ -480,6 +481,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%87%92%E5%8A%A0%E8%BD%BD.gif)
 ##### 营销组件滚动抽奖
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/yxzj.gif)
+##### 共享元素+ page-container实现弹出动画
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%85%B1%E4%BA%AB%E5%85%83%E7%B4%A0%E5%8A%A8%E7%94%BB.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
