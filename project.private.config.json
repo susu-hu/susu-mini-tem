@@ -15,6 +15,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/jsCase/pageCon/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
