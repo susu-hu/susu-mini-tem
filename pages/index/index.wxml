@@ -20,6 +20,7 @@
             <view class="i_item" catchtap="toDetail" data-url="{{item.url}}">{{index+1}}.{{item.name}}</view>
           </block>
         </view>
+        <view class="total" data-text="共计页面：{{item.list.length}}">共计页面：{{item.list.length}}</view>
       </view>
     </block>
   </view>
@@ -31,19 +32,3 @@
     <view class="box_view"></view>
   </view>
 </view>
-<!-- item是value ，index是key -->
-<!-- <view wx:for="{{brand}}" wx:key="index" style="display: none;">
-  {{item.act}}.
-  {{item.le}}.
-  {{item.per}}
-  {{index}}
-</view> -->
-
-<!-- <view wx:for="{{bb_list}}" wx:key="index">
-  {{index}}
-  <view wx:for="{{item}}" wx:for-item="i0" wx:key="index0" >
-    {{i0.act}}.
-    {{i0.le}}.
-    {{i0.per}}
-  </view>
-</view> -->

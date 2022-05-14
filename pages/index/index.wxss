@@ -5,35 +5,35 @@ page {
 
 .head {
   position: relative;
-  width: 750rpx;
-  height: 750rpx;
+  width   : 750rpx;
+  height  : 750rpx;
 }
 
 .img {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  width   : 100%;
+  height  : 100%;
+  z-index : -1;
 }
 
 .head_name {
-  position: absolute;
-  bottom: 300rpx;
-  left: 50rpx;
+  position   : absolute;
+  bottom     : 300rpx;
+  left       : 50rpx;
   font-weight: bold;
 }
 
 .head_subname {
-  position: absolute;
-  bottom: 230rpx;
-  left: 50rpx;
-  font-size: 40rpx;
-  color: #fff;
+  position   : absolute;
+  bottom     : 230rpx;
+  left       : 50rpx;
+  font-size  : 40rpx;
+  color      : #fff;
   font-weight: bold;
 }
 
 .down_arr {
-  width: 20rpx;
+  width : 20rpx;
   height: 20rpx;
 }
 
@@ -42,18 +42,18 @@ page {
 }
 
 .c_item {
-  width: 710rpx;
-  background: #FFFFFF;
+  width        : 710rpx;
+  background   : #FFFFFF;
   border-radius: 20rpx;
-  margin: 0 auto 24rpx;
-  box-sizing: border-box;
-  padding: 30rpx;
-  font-size: 26rpx;
-  color: #666;
+  margin       : 0 auto 24rpx;
+  box-sizing   : border-box;
+  padding      : 30rpx;
+  font-size    : 26rpx;
+  color        : #666;
 }
 
 .showMore {
-  margin-top: 30rpx;
+  margin-top  : 30rpx;
   padding-left: 30rpx;
 }
 
@@ -62,21 +62,21 @@ page {
 }
 
 .show_img {
-  width: 300rpx;
+  width     : 300rpx;
   text-align: right;
 }
 
 
 .star {
-  width: 300rpx;
-  color: #fff;
+  width           : 300rpx;
+  color           : #fff;
   background-color: #f3d5da;
-  animation: scale 5s ease-in-out infinite;
-  height: 80rpx;
-  line-height: 80rpx;
-  text-align: center;
-  border-radius: 40rpx;
-  box-shadow: 0 8rpx 16rpx 0 rgba(0, 0, 0, 0.2), 0 6rpx 20rpx 0 rgba(0, 0, 0, 0.19);
+  animation       : scale 5s ease-in-out infinite;
+  height          : 80rpx;
+  line-height     : 80rpx;
+  text-align      : center;
+  border-radius   : 40rpx;
+  box-shadow      : 0 8rpx 16rpx 0 rgba(0, 0, 0, 0.2), 0 6rpx 20rpx 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -96,19 +96,19 @@ page {
 
 .ripple {
   background-color: #ceebaa;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  margin-top: -90px;
-  position: absolute;
-  transform: scale(0);
+  border-radius   : 50%;
+  height          : 20px;
+  width           : 20px;
+  margin-top      : -90px;
+  position        : absolute;
+  transform       : scale(0);
 }
 
 @keyframes ripple {
   100% {
     -webkit-transform: scale(12);
-    transform: scale(12);
-    background-color: transparent;
+    transform        : scale(12);
+    background-color : transparent;
   }
 }
 
@@ -119,75 +119,75 @@ page {
 }
 
 .war_pop {
-  width: 75rpx;
-  height: 275rpx;
-  animation: box-swing 3s infinite ease-in-out;
+  width           : 75rpx;
+  height          : 275rpx;
+  animation       : box-swing 3s infinite ease-in-out;
   transform-origin: top center;
-  position: absolute;
-  top: -10rpx;
-  left: 40px;
+  position        : absolute;
+  top             : -10rpx;
+  left            : 40px;
 }
 
 
 .box {
-  z-index: 10;
-  display: block;
-  width: 75rpx;
-  height: 75rpx;
+  z-index      : 10;
+  display      : block;
+  width        : 75rpx;
+  height       : 75rpx;
   border-radius: 50%;
-  position: absolute;
-  top: 200rpx;
-  left: calc(50% -(75rpx/2));
-  background: pink;
-  box-shadow: 5rpx 5rpx 80rpx #e4cedf, 5rpx -5rpx 80rpx #e4cedf, -5rpx 5rpx 80rpx #e4cedf, -5rpx -5rpx 80rpx #e4cedf;
-  cursor: pointer;
+  position     : absolute;
+  top          : 200rpx;
+  left         : calc(50% -(75rpx/2));
+  background   : pink;
+  box-shadow   : 5rpx 5rpx 80rpx #e4cedf, 5rpx -5rpx 80rpx #e4cedf, -5rpx 5rpx 80rpx #e4cedf, -5rpx -5rpx 80rpx #e4cedf;
+  cursor       : pointer;
 }
 
 .box::before {
-  content: "";
-  position: absolute;
-  width: 35rpx;
-  height: 50rpx;
-  background: #222;
-  bottom: 100%;
-  left: calc(50% -(35rpx/2));
-  z-index: -1;
-  border-top-left-radius: 10rpx;
+  content                : "";
+  position               : absolute;
+  width                  : 35rpx;
+  height                 : 50rpx;
+  background             : #222;
+  bottom                 : 100%;
+  left                   : calc(50% -(35rpx/2));
+  z-index                : -1;
+  border-top-left-radius : 10rpx;
   border-top-right-radius: 10rpx
 }
 
 .box::after {
-  content: "";
-  position: absolute;
-  width: 10rpx;
-  height: 250rpx;
+  content   : "";
+  position  : absolute;
+  width     : 10rpx;
+  height    : 250rpx;
   background: #222;
-  bottom: 100%;
-  left: calc(50% - 5rpx);
-  z-index: -1
+  bottom    : 100%;
+  left      : calc(50% - 5rpx);
+  z-index   : -1
 }
 
 .box .box_view {
-  display: block;
-  position: absolute;
-  width: 2rpx;
-  height: 30rpx;
+  display   : block;
+  position  : absolute;
+  width     : 2rpx;
+  height    : 30rpx;
   background: #222;
-  top: 2rpx;
-  left: 28rpx;
+  top       : 2rpx;
+  left      : 28rpx;
   box-shadow: 17rpx 0 #222;
-  opacity: 1;
+  opacity   : 1;
 }
 
 .box .box_view::after {
-  content: "";
-  position: absolute;
-  bottom: -2rpx;
-  left: 4rpx;
+  content   : "";
+  position  : absolute;
+  bottom    : -2rpx;
+  left      : 4rpx;
   background: #222;
-  width: 2rpx;
-  height: 12rpx;
-  display: block;
+  width     : 2rpx;
+  height    : 12rpx;
+  display   : block;
   box-shadow: 4.5rpx 0 #222, 9rpx 0 #222;
 }
 
@@ -206,17 +206,40 @@ page {
 }
 
 .fix_btn {
-  width: 100rpx;
-  height: 100rpx;
+  width   : 100rpx;
+  height  : 100rpx;
   position: fixed;
-  z-index: 10;
-  bottom: 220rpx;
-  right: 20rpx;
+  z-index : 10;
+  bottom  : 220rpx;
+  right   : 20rpx;
 }
 
 
 .icon {
-  width: 100%;
-  height: 100%;
+  width        : 100%;
+  height       : 100%;
   border-radius: 50%;
+}
+
+.total {
+  font-size      : 30rpx;
+  font-weight    : bold;
+  position       : relative;
+  margin-top     : 30rpx;
+  color          : pink;
+  display        : flex;
+  justify-content: flex-end;
+}
+
+.total::after {
+  content    : attr(data-text);
+  position   : absolute;
+  display    : inline-block;
+  bottom     : -0.7rem;
+  right      : 0.5rem;
+  opacity    : 0.2;
+  z-index    : 0;
+  text-align : right;
+  font-weight: 900;
+  font-size  : 30rpx;
 }

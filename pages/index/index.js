@@ -3,34 +3,7 @@ import util from '../../utils/util';
 Page({
 
   data: {
-    aaa: {
-      'c': '王五',
-      'd': '马六',
-      'a': '张三',
-      'b': '李四',
-    },
-    brand: {
-      Gold: {
-        per: 89.95,
-        le: 157128,
-        act: 155560,
-      },
-      Novas: {
-        per: 89.95,
-        le: 157128,
-        act: 155560,
-      },
-      Prestige: {
-        per: 102.3,
-        le: 157128,
-        act: 155560,
-      },
-      total: {
-        per: 89.95,
-        le: 157128,
-        act: 155560,
-      },
-    },
+
     page_list: [{
       showmore: true,
       name: '主包',
@@ -336,6 +309,10 @@ Page({
       {
         name: '自定义tabbar',
         url: '/pages/cssCase/cusCircleTab/index'
+      },
+      {
+        name: 'tab标签选中样式',
+        url: '/pages/cssCase/newTab/index'
       },
       ]
     },
@@ -731,136 +708,6 @@ Page({
       ]
     }
     ],
-    bb_list: {
-      brand: {
-        Gold: {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-
-        },
-        Novas: {
-          per: 44.95,
-          le: 234,
-          act: 155560,
-        },
-        Prestige: {
-          per: 102.3,
-          le: 1,
-          act: 223423,
-        },
-        total: {
-          per: 89.95,
-          le: 157128,
-          act: 155560,
-        },
-      },
-      channel: {
-        '2B': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'EC': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'FrisoGo': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        '2B': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'LKA': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'NKA': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'Other': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'RKA': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'Total': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-      },
-      Zone: {
-        'West Zone': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'South Zone': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'FrisoGo': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'Go wide': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'ROC': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'North Zone': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'NKA NON Field': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'Go Far': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'EC': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'East Zone': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-        'Total': {
-          act: 155560,
-          le: 455,
-          per: 12.95,
-        },
-      }
-    }
-
   },
 
   toDetail(e) {
