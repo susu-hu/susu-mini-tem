@@ -488,7 +488,7 @@ step5：构建npm）
 ##### 地址选择组件（主题色）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9C%B0%E5%9D%80%E9%80%89%E6%8B%A9%E7%BB%84%E4%BB%B6.png)
 ##### 多个菜单按钮滑动轮播（数组拆分成几个一组）
-![输入图片说明](https://upload-images.jianshu.io/upload_images/26325037-559e0b3772dd2a85.gif)
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%8B%86%E5%88%86%E6%95%B0%E7%BB%84%E8%BD%AE%E6%92%AD.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
