@@ -36,7 +36,8 @@
     "pages/charts/index5",
     "pages/charts/index6"
   ],
-  "subPackages": [{
+  "subPackages": [
+    {
       "root": "pages/another/",
       "pages": [
         "subIndex/index",
@@ -134,7 +135,8 @@
         "gird/index",
         "progress/index",
         "cusCircleTab/index",
-        "newTab/index"
+        "newTab/index",
+        "menuSwiper/index"
       ]
     },
     {
@@ -293,7 +295,8 @@
     "selectedColor": "#6B1F72",
     "borderStyle": "white",
     "backgroundColor": "#ffffff",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "iconPath": "img/tabbar/icon_index.png",
         "selectedIconPath": "img/tabbar/icon_index_sel.png",

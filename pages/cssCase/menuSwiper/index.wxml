@@ -1,0 +1,15 @@
+<!--pages/cssCase/menuSwiper/index.wxml-->
+<view class="band_box flex-row">
+  <swiper class="swiper_band" indicator-dots="{{true}}" autoplay="{{false}}" bindanimationfinish="swiperChange">
+    <swiper-item wx:for="{{lists}}" wx:key="index">
+      <view class="clearfix">
+        <block wx:for="{{item}}" wx:key="item" wx:for-item="item0">
+          <view class="flex-column band_item">
+            <image src="{{item0.icon}}" class="band_icon" />
+            <text>{{item0.name}}</text>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

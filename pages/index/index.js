@@ -314,6 +314,10 @@ Page({
         name: 'tab标签选中样式',
         url: '/pages/cssCase/newTab/index'
       },
+      {
+        name: '菜单按钮轮播',
+        url: '/pages/cssCase/menuSwiper/index'
+      },
       ]
     },
     {
