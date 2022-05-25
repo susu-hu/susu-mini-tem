@@ -176,6 +176,7 @@ step5：构建npm）
 154. 营销组件滚动抽奖
 155. 共享元素+ page-container实现弹出动画
 156. 地址选择组件（支持主题色选择）
+157. 多个菜单按钮滑动轮播（数组拆分成几个一组）
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
@@ -486,6 +487,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%85%B1%E4%BA%AB%E5%85%83%E7%B4%A0%E5%8A%A8%E7%94%BB.gif)
 ##### 地址选择组件（主题色）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9C%B0%E5%9D%80%E9%80%89%E6%8B%A9%E7%BB%84%E4%BB%B6.png)
+##### 多个菜单按钮滑动轮播（数组拆分成几个一组）
+![输入图片说明](https://upload-images.jianshu.io/upload_images/26325037-559e0b3772dd2a85.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
