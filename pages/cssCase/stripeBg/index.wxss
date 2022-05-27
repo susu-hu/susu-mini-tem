@@ -1,0 +1,169 @@
+/* pages/cssCase/stripeBg/index.wxss */
+page {
+  padding-bottom: 50px;
+}
+
+.banner {
+  width: 100%;
+  background: linear-gradient(146deg,
+      #7ab6d1 40%,
+      #a8edea 0,
+      #a8edea 83%,
+      white 0);
+  height: 350rpx;
+}
+
+.line {
+  margin-top      : 20px;
+  width           : 100%;
+  height          : 20rpx;
+  background-image: linear-gradient(to right, #e25717 40%, #58a 0, #58a 60%, #e25717 0);
+}
+
+.line1 {
+  margin-top      : 20px;
+  width           : 100%;
+  height          : 20rpx;
+  background-image: linear-gradient(to right, #e25717 40%, transparent 0, transparent 60%, #e25717 0);
+}
+
+.line2 {
+  margin-top      : 30px;
+  height          : 10px;
+  background-color: transparent;
+  position        : relative;
+  margin-bottom   : 30px;
+}
+
+.line2::after {
+  content : "";
+  position: absolute;
+  right   : 0;
+  bottom  : 0;
+  left    : 0;
+  height  : 2px;
+  background: repeating-linear-gradient(-45deg,
+      #ff6c6c,
+      #ff6c6c 20%,
+      transparent 0,
+      transparent 25%,
+      #1989fa 0,
+      #1989fa 45%,
+      transparent 0,
+      transparent 50%);
+  background-size: 80px;
+
+}
+
+.line3 {
+  width   : 100%;
+  height  : 2px;
+  overflow: hidden;
+}
+
+.line-item {
+  width       : 23px;
+  height      : 2px;
+  margin-right: 6px;
+  color       : #333;
+  transform   : skew(-45deg);
+  float       : left;
+}
+
+.line-item:nth-child(odd) {
+  background-color: #1989fa;
+}
+
+.line-item:nth-child(even) {
+  background-color: #ff6c6c;
+}
+
+.line-item:last-child {
+  margin-right: 0;
+}
+
+.line4 {
+  background     : linear-gradient(pink 50%, #d3edf7 50%);
+  background-size: 100% 10px;
+  height         : 50px;
+}
+
+.line5 {
+  background     : #FFF;
+  margin-top     : 50rpx;
+  background     : linear-gradient(45deg, #e96d08 50%, #f0cbcb 50%);
+  background-size: 30rpx 30rpx;
+  height         : 60px;
+  width          : 100%;
+}
+
+.line6 {
+  background     : #FFF;
+  margin-top     : 50rpx;
+  background     : linear-gradient(45deg, #3498DB 25%, #2980B9 0, #2980B9 50%, #3498DB 0%, #3498DB 75%, #2980B9 0);
+  background-size: 30rpx 30rpx;
+  height         : 60px;
+  width          : 100%;
+}
+
+.line7 {
+  margin-top: 50rpx;
+  background: #FFF;
+  background-image: linear-gradient(0deg, rgba(200, 0, 0, .5) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(200, 0, 0, .5) 50%, transparent 50%);
+  background-size: 30rpx 30rpx;
+  height         : 60px;
+  width          : 100%;
+}
+
+.line8 {
+  margin-top: 50rpx;
+  background: pink;
+  background-image: linear-gradient(0deg, #fff 1px, transparent 0),
+    linear-gradient(90deg, #fff 1px, transparent 0);
+  background-size: 30rpx 30rpx;
+  height         : 60px;
+  width          : 100%;
+}
+
+.line9 {
+  margin-top: 50rpx;
+  background: orange;
+  background-image:
+    linear-gradient(0deg, hsla(0, 0%, 100%, .3) 1px, transparent 0),
+    linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0),
+    linear-gradient(0deg, white 2px, transparent 0),
+    linear-gradient(90deg, white 2px, transparent 0);
+  background-size: 15rpx 15rpx, 15rpx 15rpx, 75rpx 75rpx, 75rpx 75rpx;
+  height         : 100px;
+  width          : 100%;
+}
+
+.line10 {
+  margin-top: 50rpx;
+  background: skyblue;
+  background-image:
+    linear-gradient(45deg, #fff 25%, transparent 25%),
+    linear-gradient(-45deg, #fff 25%, transparent 25%);
+  background-size: 30rpx 30rpx;
+  height         : 90rpx;
+  width          : 100%;
+}
+
+.line11 {
+  margin-top      : 50rpx;
+  background      : rgb(226, 108, 29);
+  background-image: radial-gradient(#fff 20%, transparent 0);
+  background-size : 30rpx 30rpx;
+  height          : 120rpx;
+  width           : 100%;
+}
+
+.line12 {
+  margin-top      : 50rpx;
+  background      : rgb(238, 57, 11);
+  background-image: radial-gradient(#fff 20%, transparent 0);
+  background-size : 30px 30px;
+  height          : 90rpx;
+  width           : 100%;
+}

@@ -136,7 +136,8 @@
         "progress/index",
         "cusCircleTab/index",
         "newTab/index",
-        "menuSwiper/index"
+        "menuSwiper/index",
+        "stripeBg/index"
       ]
     },
     {

@@ -318,6 +318,10 @@ Page({
         name: '菜单按钮轮播',
         url: '/pages/cssCase/menuSwiper/index'
       },
+      {
+        name: '条纹渐变背景',
+        url: '/pages/cssCase/stripeBg/index'
+      },
       ]
     },
     {
