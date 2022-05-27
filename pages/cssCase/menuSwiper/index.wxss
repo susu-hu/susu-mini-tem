@@ -16,6 +16,11 @@ page {
   height: 330rpx;
 }
 
+.swiper_band_small {
+  width : 100%;
+  height: 165rpx;
+}
+
 .swiper_band .wx-swiper-dots.wx-swiper-dots-horizontal {
   margin-bottom: -15rpx;
 }
