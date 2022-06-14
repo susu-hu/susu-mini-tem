@@ -588,6 +588,10 @@ Page({
         name: '图片懒加载（待更新.....',
         url: '/pages/jsCase/lazyLoad/index'
       },
+      {
+        name: '索引选择（城市)',
+        url: '/pages/jsCase/citySel/index'
+      },
       ]
     },
     {

@@ -1,0 +1,255 @@
+/* pages/jsCase/citySel/index.wxss */
+page {
+  height    : 100%;
+  background: #f2f5f7;
+}
+
+.head {
+  position  : fixed;
+  top       : 0;
+  left      : 0;
+  width     : 100%;
+  height    : 170rpx;
+  box-sizing: border-box;
+  padding   : 3rpx 20rpx 0;
+  background: #fff;
+  z-index   : 9999;
+}
+
+.r_head {
+  height: 90rpx;
+}
+
+.head_input {
+  position: relative;
+  flex    : 1;
+}
+
+.search_icon {
+  position    : absolute;
+  top         : 50%;
+  left        : 0;
+  margin-top  : -15rpx;
+  width       : 28rpx;
+  height      : 30rpx;
+  padding-left: 23rpx;
+}
+
+.head input {
+  height       : 60rpx;
+  padding-left : 75rpx;
+  font-size    : 28rpx;
+  border-radius: 30rpx;
+  background   : #f2f5f7;
+}
+
+.place_holder {
+  font-size: 28rpx;
+  color    : #999999;
+}
+
+.sha_icon {
+  margin-left: 18rpx;
+  font-size  : 28rpx;
+  color      : #333333;
+}
+
+.head_curr {
+  height     : 100rpx;
+  color      : #333;
+  font-size  : 28rpx;
+  padding-top: 20rpx;
+  box-sizing : border-box;
+}
+
+.h_c_icon {
+  flex-shrink : 0;
+  margin-right: 15rpx;
+  width       : 40rpx;
+  height      : 40rpx;
+}
+
+.sy_container {
+  box-sizing : border-box;
+  width      : 100%;
+  height     : 100%;
+  padding-top: 170rpx;
+}
+
+.hot_city .title {
+  padding  : 10rpx 30rpx;
+  color    : #999;
+  font-size: 26rpx;
+}
+
+.hot_city .box {
+  background-color: #fff;
+  padding         : 5rpx 30rpx 15rpx 40rpx;
+  box-sizing      : border-box;
+}
+
+.hot_city .box .name {
+  vertical-align: top;
+  display       : inline-block;
+  min-width     : 140rpx;
+  line-height   : 56rpx;
+  height        : 56rpx;
+  border-radius : 28rpx;
+  font-size     : 28rpx;
+  color         : #333;
+  text-align    : center;
+  padding       : 0 20rpx;
+  box-sizing    : border-box;
+  margin-top    : 10rpx;
+  margin-right  : 20rpx;
+  position      : relative;
+}
+
+.hot_city .box .name::after {
+  content                 : '';
+  position                : absolute;
+  width                   : 200%;
+  height                  : 200%;
+  -webkit-transform-origin: 0 0;
+  transform-origin        : 0 0;
+  -webkit-transform       : scale(0.5, 0.5);
+  transform               : scale(0.5, 0.5);
+  -webkit-box-sizing      : border-box;
+  box-sizing              : border-box;
+  left                    : 0;
+  top                     : 0;
+  border-radius           : 56rpx;
+  border                  : 1rpx solid rgb(235, 225, 225);
+}
+
+.sel_city {
+  color     : #fff !important;
+  background: pink;
+}
+
+.all_city .letter_name {
+  height     : 48rpx;
+  font-size  : 24rpx;
+  color      : #999;
+  background : #f2f5f7;
+  padding    : 0 30rpx;
+  line-height: 48rpx;
+}
+
+.all_city .city {
+  background-color: #fff;
+}
+
+.all_city .city .name {
+  width    : 100%;
+  padding  : 30rpx;
+  font-size: 28rpx;
+  color    : #333;
+  position : relative;
+  overflow : hidden;
+}
+
+
+.all_city .city .name::after {
+  content          : '';
+  position         : absolute;
+  border-bottom    : 1rpx solid #eaeef1;
+  -webkit-transform: scaleY(0.5);
+  transform        : scaleY(0.5);
+  bottom           : 0;
+  right            : 0;
+  left             : 30rpx;
+}
+
+.city_hover {
+  background-color: #eee !important;
+}
+
+.fixed_bar {
+  position     : fixed;
+  z-index      : 999;
+  top          : 180rpx;
+  right        : 0px;
+  padding-right: 10rpx;
+  width        : 50rpx;
+  font-size    : 22rpx;
+  text-align   : center;
+}
+
+.bar_item {
+  background-color: rgb(233, 228, 220);
+  border-radius   : 50%;
+}
+
+@media screen and (max-width: 320px) {
+  .fixed_bar {
+    font-size: 20rpx;
+  }
+}
+
+.bar_item_active {
+  background-color: #fff;
+  box-shadow      : 5rpx 5rpx 5rpx #f7c3ee;
+}
+
+.fixed_letter {
+  position        : absolute;
+  z-index         : 20;
+  width           : 160rpx;
+  height          : 160rpx;
+  left            : 50%;
+  top             : 50%;
+  margin-left     : -80rpx;
+  margin-top      : -80rpx;
+  border-radius   : 80rpx;
+  text-align      : center;
+  line-height     : 160rpx;
+  font-size       : 70rpx;
+  color           : #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow      : 5rpx 5rpx 5rpx #f7c3ee;
+}
+
+/* 搜索结果 */
+.result_list {
+  padding-top: 90rpx;
+  background : #fff;
+  width      : 100%;
+}
+
+.r_item {
+  width     : 100%;
+  position  : relative;
+  padding   : 30rpx 0 30rpx 30rpx;
+  font-size : 28rpx;
+  color     : #333;
+  box-sizing: border-box;
+}
+
+.r_item::after {
+  content          : '';
+  position         : absolute;
+  border-bottom    : 1rpx solid #eaeef1;
+  -webkit-transform: scaleY(0.5);
+  transform        : scaleY(0.5);
+  bottom           : 0;
+  right            : 0;
+  left             : 30rpx;
+}
+
+.r_item_hover {
+  background-color: #eee !important;
+}
+
+.no_data {
+  height         : 500rpx;
+  justify-content: center;
+  font-size      : 27rpx;
+  color          : #999;
+}
+
+.no_data image {
+  width        : 250rpx;
+  height       : 162rpx;
+  margin-bottom: 30rpx;
+}
