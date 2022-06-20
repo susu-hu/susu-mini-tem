@@ -177,6 +177,7 @@ step5：构建npm）
 155. 共享元素+ page-container实现弹出动画
 156. 地址选择组件（支持主题色选择）
 157. 多个菜单按钮滑动轮播（数组拆分成几个一组）
+158. 引导用户添加-小程序-动画效果
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
@@ -489,6 +490,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9C%B0%E5%9D%80%E9%80%89%E6%8B%A9%E7%BB%84%E4%BB%B6.png)
 ##### 多个菜单按钮滑动轮播（数组拆分成几个一组）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%8B%86%E5%88%86%E6%95%B0%E7%BB%84%E8%BD%AE%E6%92%AD.gif)
+##### 引导用户添加-小程序-动画效果
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/guideFollow.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
