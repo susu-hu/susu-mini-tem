@@ -322,6 +322,10 @@ Page({
         name: '条纹渐变背景',
         url: '/pages/cssCase/stripeBg/index'
       },
+      {
+        name: '引导添加小程序动画',
+        url: '/pages/cssCase/guardFollow/index'
+      },
       ]
     },
     {

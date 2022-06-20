@@ -1,0 +1,127 @@
+.scorll_head {
+  background: linear-gradient(0deg, #f3dcae 0%, #ffffff 100%);
+  height    : 100vh;
+}
+
+.show_box {
+  top       : 20%;
+  position  : fixed;
+  width     : 100%;
+  z-index   : 1111;
+  box-sizing: border-box;
+  padding   : 30px;
+  color     : #fff;
+  font-size : 25rpx;
+}
+
+.show_box .show_item {
+  margin-bottom: 50rpx;
+}
+
+.show_box .show_item:nth-child(1) {
+  animation: fadeIn-left 1s;
+}
+
+.show_box .show_item:nth-child(2) {
+  animation: fadeIn-left 2s;
+}
+
+.show_box .show_item:nth-child(3) {
+  animation: fadeIn-left 3s;
+}
+
+.show_box .show_jiao {
+  border        : 1px dashed #fff;
+  width         : 95rpx;
+  height        : 40rpx;
+  margin-left   : 20px;
+  text-align    : center;
+  vertical-align: top;
+  border-radius : 20rpx;
+  font-size     : 30px;
+}
+
+.show_box .show_jiao view {
+  width        : 13rpx;
+  height       : 13rpx;
+  background   : #fff;
+  border-radius: 50%;
+  box-shadow   : 22rpx 0rpx #fff, -22rpx 0 #fff;
+  margin       : 0 auto;
+}
+
+.show_box .box_index {
+  font-size    : 20rpx;
+  flex-shrink  : 0;
+  color        : #fff;
+  line-height  : 40rpx;
+  width        : 40rpx;
+  height       : 40rpx;
+  text-align   : center;
+  border-radius: 50%;
+  background   : #e4a451;
+  margin-right : 20rpx;
+}
+
+.show_box .show_btn {
+  border       : 1px dashed #fff;
+  width        : 70%;
+  animation    : fadeIn 7s;
+  font-size    : 30rpx;
+  line-height  : 72rpx;
+  text-align   : center;
+  border-radius: 44rpx;
+  margin       : 12% auto 0 auto;
+  color        : #fff;
+}
+
+/* 动画 */
+
+
+@-webkit-keyframes fadeIn-left {
+  from {
+    opacity          : 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform        : translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity          : 1;
+    -webkit-transform: none;
+    transform        : none;
+  }
+}
+
+@keyframes fadeIn-left {
+  from {
+    opacity          : 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform        : translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity          : 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform        : translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
