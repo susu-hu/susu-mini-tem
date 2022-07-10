@@ -134,6 +134,10 @@ Page({
         url: '/pages/subPack/loading/index4'
       },
       {
+        name: 'loading加载动画n个（5）',
+        url: '/pages/subPack/loading/index5'
+      },
+      {
         name: '拟物态',
         url: '/pages/subPack/otherAnimation/index'
       },

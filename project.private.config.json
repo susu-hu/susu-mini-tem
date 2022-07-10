@@ -29,6 +29,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/subPack/loading/index5",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
