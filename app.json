@@ -34,7 +34,8 @@
     "pages/charts/index3",
     "pages/charts/index4",
     "pages/charts/index5",
-    "pages/charts/index6"
+    "pages/charts/index6",
+    "pages/charts/index7"
   ],
   "subPackages": [
     {

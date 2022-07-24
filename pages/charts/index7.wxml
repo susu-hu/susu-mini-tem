@@ -1,0 +1,13 @@
+<!--pages/charts/index7.wxml-->
+<view class="box">
+  <ec-canvas id="mychart-dom-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="box">
+  <ec-canvas id="mychart-dom-line" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="box">
+  <ec-canvas id="mychart-dom-line1" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="box">
+  <ec-canvas id="mychart-dom-pie" ec="{{ ec }}"></ec-canvas>
+</view>
