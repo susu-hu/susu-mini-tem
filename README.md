@@ -180,6 +180,7 @@ step5：构建npm）
 158. 引导用户添加-小程序-动画效果
 159. 图片九宫格拖拽 
 160. 折线面积图-玫瑰图-立体柱状图
+161. 横向步骤条
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
@@ -498,6 +499,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9B%BE%E7%89%87%E4%B9%9D%E5%AE%AB%E6%A0%BC%E6%8B%96%E6%8B%BD.gif)
 ##### 折线面积图-玫瑰图-立体柱状图
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9B%BE%E8%A1%A8echarts.gif)
+##### 横向步骤条
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-07-25%20000957.png)
 #### 参与贡献
 
 1.  Fork 本仓库
