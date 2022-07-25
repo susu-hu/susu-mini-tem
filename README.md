@@ -500,7 +500,7 @@ step5：构建npm）
 ##### 折线面积图-玫瑰图-立体柱状图
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9B%BE%E8%A1%A8echarts.gif)
 ##### 横向步骤条
-![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%AD%A5%E9%AA%A4%E6%9D%A1%E6%A8%AA%E5%90%91.jpg)
+![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E6%A8%AA%E5%90%91%E6%AD%A5%E9%AA%A4%E6%9D%A1.jpg)
 #### 参与贡献
 
 1.  Fork 本仓库
