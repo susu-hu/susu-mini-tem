@@ -8,6 +8,8 @@
 ![输入图片说明](https://img.shields.io/badge/%E6%97%A5%E5%8E%86%E7%BB%84%E4%BB%B6----orange)
 ![输入图片说明](https://gitee.com/susuhhhhhh/wxmini_demo/badge/star.svg)
 ![输入图片说明](https://gitee.com/susuhhhhhh/wxmini_demo/badge/fork.svg)
+
+![](https://s3.bmp.ovh/imgs/2022/07/27/85dabf1d5821a98b.png)
 #### 介绍
 微信小程序封装组件，覆盖常用需求：包括轮播组件（堆叠式轮播等）、canvas（圆环、生海报、裁图片等）、map、echarts、css3动画，scroll-view、步骤条、日历组件、自定义tabbar+导航栏、loading加载动画、css渐变、雪碧图、瀑布流、关键词高亮、搜索历史、图片懒加载、节流防抖、索引选择（如城市）、微信拆红包、红包雨、菜单弹出动画、3d云、按钮拖拽、营销组件（九宫格等）等！（ **_无其他ui组件库----vant引入只为做测试_** ）
 ##### 注意：所使用到的图片素材均为学习交流使用, 请勿将其用于商业用途, 由此产生的任何法律纠纷概不负责。
