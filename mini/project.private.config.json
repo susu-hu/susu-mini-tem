@@ -45,6 +45,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/another/countdown/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

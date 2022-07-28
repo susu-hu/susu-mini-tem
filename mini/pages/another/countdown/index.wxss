@@ -1,63 +1,112 @@
 /* pages/another/countdown/index.wxss */
-.inform{
-  width:96%;
-  height:70rpx;
-  background-color: #F6F6F6;
-  margin:10rpx 0;
-  margin-left: 2%;
-  border-radius: 10rpx;
-  display: flex;
-  float: left;
-  
-}
-.inform-img{
-  width:10%;
-  margin-left: 5%;
-  text-align: center;
-  
-}
-.inform-image{
-  width:60rpx;
-  height:60rpx;
-  margin-top:5rpx;
-}
- 
- 
-.marquee{
-  width:80%;
-  height: 70rpx;
-  overflow: hidden;
-  line-height: 70rpx;
-}
-.marqueeTitle{
-  height: 70rpx;
-  color:#ff0000;
+page {
+  background: #fff;
 }
 
-/* 滚动弹框 */
-.scroll_box{
-  top:398rpx;
-  position: absolute;
-  z-index: 999;
-  left: 30rpx;
+/* 心跳 */
+.move-box {
+  padding: 20px;
+  animation: heartBeat 2s linear infinite;
+  transform-origin: 50% 50%;
 }
-.box_item{
-  display: inline-block;
-  height: 40rpx;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 28rpx;
-  box-sizing: border-box;
-  padding: 0 16rpx 0 4rpx; 
-  font-size: 20rpx;
-  color: rgba(255, 255, 255, 0.9);
-  letter-spacing: 1rpx;
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
-.box_item view{
-  height: 40rpx;
+
+.move-img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10rpx;
 }
-.b_user_ava{
-  width: 32rpx;
-  height: 32rpx;
-  border-radius: 50%;
-  margin-right: 8rpx;
+
+.move-text {
+  font-size: 22rpx;
+  color: pink;
+}
+
+/* 左右摆动 */
+.shake-box {
+  padding: 20px;
+  animation: shake 1.5s linear infinite;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-10deg);
+  }
+
+  30% {
+    transform: rotate(5deg);
+  }
+
+  40% {
+    transform: rotate(-5deg);
+  }
+
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+}
+
+/* 上下晃动 */
+.jump-box {
+  padding: 20px;
+  animation: jump 1.5s linear infinite;
+}
+
+
+@keyframes jump {
+  25% {
+    transform: translateY(-4px);
+  }
+
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(4px);
+  }
+}
+
+/* 转圈 */
+.circle-box {
+  padding: 20px;
+  animation: circle 1.5s infinite cubic-bezier(.34, 0, .99, 1);
+}
+
+@keyframes circle {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.circle-box-h {
+  padding: 20px;
+  animation: circle1 10s infinite cubic-bezier(.34, 0, .84, 1);
+}
+
+@keyframes circle1 {
+  100% {
+    transform: rotate(30turn);
+    /* 666turn */
+  }
 }
