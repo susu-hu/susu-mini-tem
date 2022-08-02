@@ -290,7 +290,8 @@
         "scrollGap/index",
         "konw/index",
         "switchIndex/index",
-        "myIndex/index"
+        "myIndex/index",
+        "countdown/index"
       ]
     }
   ],

@@ -116,6 +116,10 @@ Page({
             name: ' 堆叠式轮播',
             url: '/pages/another/cust-swiper/index'
           },
+          {
+            name: ' 常见律动动画',
+            url: '/pages/another/countdown/index'
+          },
         ]
       },
       {
@@ -729,6 +733,11 @@ Page({
             name: '一个切换图片的ui交互',
             url: '/pages/actualPage/switchIndex/index'
           },
+          {
+            name: '指定时间倒计时',
+            url: '/pages/actualPage/countdown/index',
+            style: true
+          },
         ]
       }
     ],
@@ -833,6 +842,4 @@ Page({
     }
     return result;
   },
-
-
 })

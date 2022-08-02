@@ -1,0 +1,7 @@
+<!--pages/actualPage/countdown/index.wxml-->
+<view class="flex-row time-box j_c">
+  <view class="time-item">{{left_time_list[0]}}</view>天
+  <view class="time-item">{{left_time_list[1]}}</view>时
+  <view class="time-item">{{left_time_list[2]}}</view>分
+  <view class="time-item">{{left_time_list[3]}}</view>秒
+</view>
