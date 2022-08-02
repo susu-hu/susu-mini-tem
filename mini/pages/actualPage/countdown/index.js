@@ -5,7 +5,7 @@ Page({
     left_time_list: [], //剩余秒数转换 天，小时 分 秒
   },
   onShow: function () {
-    this.getLeftTime('2022/08/03 01:20:00')
+    this.getLeftTime('2023/08/03 11:20:00')
   },
   /**
    * 定时器，计算剩下时间
