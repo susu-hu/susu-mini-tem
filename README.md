@@ -183,6 +183,7 @@ step5：构建npm）
 159. 图片九宫格拖拽 
 160. 折线面积图-玫瑰图-立体柱状图
 161. 横向步骤条
+162. 指定时间倒计时
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
@@ -503,6 +504,8 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%9B%BE%E8%A1%A8echarts.gif)
 ##### 横向步骤条
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E6%A8%AA%E5%90%91%E6%AD%A5%E9%AA%A4%E6%9D%A1.jpg)
+##### 指定时间倒计时
+![输入图片说明](mini-picture/%E6%8C%87%E5%AE%9A%E6%97%B6%E9%97%B4%E5%80%92%E8%AE%A1%E6%97%B6.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
