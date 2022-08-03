@@ -3,6 +3,7 @@ Page({
     left_time: '', //活动剩余时间的秒数
     timer: '', //倒计时定时器
     left_time_list: [], //剩余秒数转换 天，小时 分 秒
+    left_time_list_date: []
   },
   onShow: function () {
     this.getLeftTime('2023/08/03 11:20:00')
@@ -12,12 +13,8 @@ Page({
    * @param {*} end_time 
    */
   getLeftTime(end_time) {
-    let left_time = this.getTimestap(end_time),
-      left_time_list = this.formatSeconds(left_time);
-    this.setData({
-      left_time,
-      left_time_list
-    })
+    let left_time = this.getTimestap(end_time);
+    this.initDate(left_time)
     this.data.timer = setInterval(() => {
       if (left_time-- === 0) {
         this.setData({
@@ -26,13 +23,21 @@ Page({
         })
         clearInterval(this.data.timer)
       } else {
-        let left_time_list = this.formatSeconds(left_time)
-        this.setData({
-          left_time,
-          left_time_list
-        })
+        this.initDate(left_time)
       }
     }, 1000);
+  },
+  /**
+   * 初始化数据
+   */
+  initDate(e) {
+    let left_time_list = this.formatSeconds(e),
+      left_time_list_date = this.formatDate(JSON.stringify(left_time_list));
+    this.setData({
+      left_time: e,
+      left_time_list,
+      left_time_list_date
+    })
   },
   /**
    * 获取指定时间-当前时间的秒数
@@ -62,12 +67,24 @@ Page({
     return time;
   },
   /**
+   * 拆分数组-天-时-分-秒
+   * @param {*} e 
+   */
+  formatDate(e) {
+    let list = JSON.parse(e);
+    for (let i = 0; i < list.length; i++) {
+      list[i] = list[i].toString().split('');
+    }
+    return list;
+  },
+  /**
    * 补0
    * @param {*} num 
    */
   addZero(num) {
     return num < 10 ? "0" + num : num;
   },
+
   onUnload() {
     if (this.data.timer) {
       console.log('销毁计时器')

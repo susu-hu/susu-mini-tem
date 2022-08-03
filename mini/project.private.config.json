@@ -48,7 +48,7 @@
         },
         {
           "name": "",
-          "pathName": "pages/another/countdown/index",
+          "pathName": "pages/actualPage/countdown/index",
           "query": "",
           "launchMode": "default",
           "scene": null
