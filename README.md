@@ -11,7 +11,7 @@
 
 ![](https://s3.bmp.ovh/imgs/2022/07/27/85dabf1d5821a98b.png)
 #### 介绍
-微信小程序封装组件，覆盖常用需求：包括轮播组件（堆叠式轮播等）、canvas（圆环、生海报、裁图片等）、map、echarts、css3动画，scroll-view、步骤条、日历组件、自定义tabbar+导航栏、loading加载动画、css渐变、雪碧图、瀑布流、关键词高亮、搜索历史、图片懒加载、节流防抖、索引选择（如城市）、微信拆红包、红包雨、菜单弹出动画、3d云、按钮拖拽、营销组件（九宫格等）等！（ **_无其他ui组件库----vant引入只为做测试_** ）
+微信小程序封装组件，覆盖常用需求：包括轮播组件（堆叠式轮播等）、canvas（圆环、生海报、裁图片等）、map、echarts、css3动画，scroll-view、步骤条、日历组件、自定义tabbar+导航栏、loading加载动画、css渐变、雪碧图、瀑布流、关键词高亮、搜索历史、图片懒加载、节流防抖、索引选择（如城市）、微信拆红包、红包雨、菜单弹出动画、3d云、按钮拖拽、营销组件（九宫格等）等！（ **_无其他ui组件库----vant仅限于测试_** ）
 ##### 注意：所使用到的图片素材均为学习交流使用, 请勿将其用于商业用途, 由此产生的任何法律纠纷概不负责。
 
 ### 伙伴们，这是一个小程序组件合集，涵盖了常见的一些需求，该版本是开源版，后续我将重新对此版本改版，并加上一些新的需求，作为一个ui组件库出现，针对微信小程序和uniapp！
@@ -21,170 +21,170 @@
 
 #### 功能总结
 
-1.  首页为所有页面导航(2021.8.15 新增页面导航）
-2.  cal：为日历页面
-3.  demo/index：物流页面,页面完全渲染前，展示骨架屏（需要手工维护），待数据加载完成后，替换为真实的内容、demo/index2:新增伪元素写法。
-4.  dots：为自定义轮播图指示点页面
-5.  touchRemove： 购物车页面+左滑删除
-6.  touchMove2： 滑动删除2  movable-area组件
-7.  cardCircle： 卡券实现半圆状态
-8.  pop： 自定义弹框 禁止底层滑动（catchtouchmove+scroll-view)
-9.  pie: echarts的饼图和折线图(wxcharts.js)
-10. charts/index: echarts官方推荐小程序使用的ec-canvas组件和echarts.js
-11. index: 自定义tabbar组件，cover-view进行覆盖
-12. getStar:星星评分 1-5颗星 分别对应'极好','较好','一般','较差','很差'，点星星字段产生变化  点字段星星变化
-13. sendCode/index: 自定义input输入框的样式 （粘贴的时候无法实现长按粘贴 待完善的bug）
-14. sendCode/index2:自定义弹框验证码组件（v-code)+新增背景图虚化(filter: blur(10rpx);)+新增三角形 箭头 矩形 梯形 圆弧等样式
-15. addImg: 上传多张图片 wx.chooseImage()+预览图片wx.previewImage()+上传文件到服务器 wx.uploadFile()
-16. choseList: 筛选页（1.小程序自带日期选择2.tab切换 3.右边弹框筛选，超出4条数据默认隐藏，可点击展开）
-17. charts/index: 自定义导航 "navigationStyle": "custom" 获取胶囊和导航栏等高度，自定义图标等
-18. scroll: scroll-view填充剩余高度 ，滚动条滑动选中相应分类，点击分类实现锚点定位。
-19. index2: 自定义导航栏+swiper+ 新增消息滚动弹框+左滑的tablist
-20. charts/index2: echarts实现饼图，canvas为原生组件，层级很高，用cover-view实现覆盖，可覆盖的原生组件包括 map、video、canvas、camera、live-player、live-pusher。新增修改，头部用cover-view实现fixed的tab栏 。多个cover-view的层级关系，写在页面越后面层级越高！（存在tooltip被底部字体遮挡的bug 待解决）
-21. another/choseGoods:数值计算，引入math.min.js处理精度问题。
-22. choseAddress:地址选择，wx.chooseLocation(需要用户授权）+wx.chooseAddress（无须用户授权，直接调用该接口）
-23. scroll/index3:商品详情页，头部导航栏为自定义的tab(fixed)+双向锚点（scroll-view实现点击tab选中对应的区域，页面滚动头部tab被选中)，新增富文本样式修改，正则表达式进行匹配。（情况一：富文本不带style，此时可以正则添加style，class。或者在rich-text或父元素标签来定义样式！情况二：富文本带style，正则添加class才行）
-24. another/mrovevideos:视频页面，自定义播放与暂停的按钮与事件
-25. another/swiper-threeD新增swiper+transform: scale(1)实现3D轮播效果，animation实现动画效果，360度翻转，来回滚动等效果
-26. subPack/animationBox 新增wx.createAnimation+css3：transform的rotate+translate形成一个五福合成的效果。
-27. another/circleRing/index 新增canvas（接口wx.createCanvasContext）绘制圆环的组件，层级很高，cover-view能力有限，采用wx.canvasToTempFilePath转换成图片，展示图片，避免穿透的发生，（该接口已被废弃，canvas2d支持同层渲染）
-28. subPack/canvas2d/index 新增canvas2d 绘制圆环进度条组件，同层渲染，canvas层级不会发生穿透现象（原接口wx.createCanvasContext已被废弃）
-29. another/scroll-x 新增scroll-view+swiper实现左右滚动导航条。
-30. subpack/loading/index 新增17个loading动画，可以根据这些样式进行其他的变化，animation实现。
-31. subpack/loading/indedx2 新增15个炫酷的loading动画。
-32. 分包csscase/conic-gradient/index 新增css的圆锥渐变，实现圆弧进度条，颜色盘，饼图等样式。
-33. csscase/colorChange,颜色盘，暂更新2种色盘，后续更新渐变色。
-34. subpack/loading/indedx3,新增18个炫酷的loading动画。
-35. 学习案例：炫酷能量球+螺旋线条
-36. css写警示按钮+蓝云+小花
-37. 实现搜索历史记录，localStorage存储前15条，选择的最新一条放置数组的第一条。
-38. 实现navigator及其相关属性，hover-class+页面跳转接口的区别。
-39. 一个蛋黄派样式的可爱的switch按钮，(input+label+伪元素实现）
-40. 旋转字符+翻转字符
-41. 一个正在输入文字的动画
-42. 一个有趣的404页面
-43. -webkiit-background-clip:text实现一个渐变色的文字
-44. scroll-view包裹一个单选弹框和textarea，textarea给定id值，与scroll-into-view绑定，实现页面定位到文本输入框。
-45. 多选框checkbox实现多选
-46. 一个带半圆的卡片
-47. 自定义导航栏（精准定位）
-48. 商城首页普通版（自定义导航栏）
-49. vant日历多日期选择（安装vant step1：npm init step2：npm i @vant/weapp -S --production step3：将 app.json 中的 "style": "v2" 去除 step4：使用npm模块 
+- [x] 1.  首页为所有页面导航(2021.8.15 新增页面导航）
+- [x] 2.  cal：为日历页面
+- [x] 3.  demo/index：物流页面,页面完全渲染前，展示骨架屏（需要手工维护），待数据加载完成后，替换为真实的内容、demo/index2:新增伪元素写法。
+- [x] 4.  dots：为自定义轮播图指示点页面
+- [x] 5.  touchRemove： 购物车页面+左滑删除
+- [x] 6.  touchMove2： 滑动删除2  movable-area组件
+- [x] 7.  cardCircle： 卡券实现半圆状态
+- [x] 8.  pop： 自定义弹框 禁止底层滑动（catchtouchmove+scroll-view)
+- [x] 9.  pie: echarts的饼图和折线图(wxcharts.js)
+- [x] 10. charts/index: echarts官方推荐小程序使用的ec-canvas组件和echarts.js
+- [x] 11. index: 自定义tabbar组件，cover-view进行覆盖
+- [x] 12. getStar:星星评分 1-5颗星 分别对应'极好','较好','一般','较差','很差'，点星星字段产生变化  点字段星星变化
+- [x] 13. sendCode/index: 自定义input输入框的样式 （粘贴的时候无法实现长按粘贴 待完善的bug）
+- [x] 14. sendCode/index2:自定义弹框验证码组件（v-code)+新增背景图虚化(filter: blur(10rpx);)+新增三角形 箭头 矩形 梯形 圆弧等样式
+- [x] 15. addImg: 上传多张图片 wx.chooseImage()+预览图片wx.previewImage()+上传文件到服务器 wx.uploadFile()
+- [x] 16. choseList: 筛选页（1.小程序自带日期选择2.tab切换 3.右边弹框筛选，超出4条数据默认隐藏，可点击展开）
+- [x] 17. charts/index: 自定义导航 "navigationStyle": "custom" 获取胶囊和导航栏等高度，自定义图标等
+- [x] 18. scroll: scroll-view填充剩余高度 ，滚动条滑动选中相应分类，点击分类实现锚点定位。
+- [x] 19. index2: 自定义导航栏+swiper+ 新增消息滚动弹框+左滑的tablist
+- [x] 20. charts/index2: echarts实现饼图，canvas为原生组件，层级很高，用cover-view实现覆盖，可覆盖的原生组件包括 map、video、canvas、camera、live-player、live-pusher。新增修改，头部用cover-view实现fixed的tab栏 。多个cover-view的层级关系，写在页面越后面层级越高！（存在tooltip被底部字体遮挡的bug 待解决）
+- [x] 21. another/choseGoods:数值计算，引入math.min.js处理精度问题。
+- [x] 22. choseAddress:地址选择，wx.chooseLocation(需要用户授权）+wx.chooseAddress（无须用户授权，直接调用该接口）
+- [x] 23. scroll/index3:商品详情页，头部导航栏为自定义的tab(fixed)+双向锚点（scroll-view实现点击tab选中对应的区域，页面滚动头部tab被选中)，新增富文本样式修改，正则表达式进行匹配。（情况一：富文本不带style，此时可以正则添加style，class。或者在rich-text或父元素标签来定义样式！情况二：富文本带style，正则添加class才行）
+- [x] 24. another/mrovevideos:视频页面，自定义播放与暂停的按钮与事件
+- [x] 25. another/swiper-threeD新增swiper+transform: scale(1)实现3D轮播效果，animation实现动画效果，360度翻转，来回滚动等效果
+- [x] 26. subPack/animationBox 新增wx.createAnimation+css3：transform的rotate+translate形成一个五福合成的效果。
+- [x] 27. another/circleRing/index 新增canvas（接口wx.createCanvasContext）绘制圆环的组件，层级很高，cover-view能力有限，采用wx.canvasToTempFilePath转换成图片，展示图片，避免穿透的发生，（该接口已被废弃，canvas2d支持同层渲染）
+- [x] 28. subPack/canvas2d/index 新增canvas2d 绘制圆环进度条组件，同层渲染，canvas层级不会发生穿透现象（原接口wx.createCanvasContext已被废弃）
+- [x] 29. another/scroll-x 新增scroll-view+swiper实现左右滚动导航条。
+- [x] 30. subpack/loading/index 新增17个loading动画，可以根据这些样式进行其他的变化，animation实现。
+- [x] 31. subpack/loading/indedx2 新增15个炫酷的loading动画。
+- [x] 32. 分包csscase/conic-gradient/index 新增css的圆锥渐变，实现圆弧进度条，颜色盘，饼图等样式。
+- [x] 33. csscase/colorChange,颜色盘，暂更新2种色盘，后续更新渐变色。
+- [x] 34. subpack/loading/indedx3,新增18个炫酷的loading动画。
+- [x] 35. 学习案例：炫酷能量球+螺旋线条
+- [x] 36. css写警示按钮+蓝云+小花
+- [x] 37. 实现搜索历史记录，localStorage存储前15条，选择的最新一条放置数组的第一条。
+- [x] 38. 实现navigator及其相关属性，hover-class+页面跳转接口的区别。
+- [x] 39. 一个蛋黄派样式的可爱的switch按钮，(input+label+伪元素实现）
+- [x] 40. 旋转字符+翻转字符
+- [x] 41. 一个正在输入文字的动画
+- [x] 42. 一个有趣的404页面
+- [x] 43. -webkiit-background-clip:text实现一个渐变色的文字
+- [x] 44. scroll-view包裹一个单选弹框和textarea，textarea给定id值，与scroll-into-view绑定，实现页面定位到文本输入框。
+- [x] 45. 多选框checkbox实现多选
+- [x] 46. 一个带半圆的卡片
+- [x] 47. 自定义导航栏（精准定位）
+- [x] 48. 商城首页普通版（自定义导航栏）
+- [x] 49. vant日历多日期选择（安装vant step1：npm init step2：npm i @vant/weapp -S --production step3：将 app.json 中的 "style": "v2" 去除 step4：使用npm模块 
 step5：构建npm）
-50. 背景图片在一屏之内
-51.自定义actionSheet+保存图片（开启授权-》引导用户打开设置页）,需在调式下运行。
-52.  一个左右摇摆的灯泡动画
-53. 文字的展开与收起
-54. 一定高度的文字展开与收起
-55. 卡片翻转的效果
-56. 实现打卡（卡片翻转效果）
-57. 自定义input输入框
-58. 自定义日历组件，可设置不同的主题色
-59. 上下循环滚动的swiper弹幕条
-60. 文字右下角的展开按钮
-61. 抽奖活动
-62. 圆角边框渐变色
-63. 自定义多日期选择组件，可设置不同主题色
-64. swiper实现商品轮播
-65. css实现常见的一些特殊的形状，谷歌导航栏等等
-66. 0.5rpx的线
-67. swiper不定长展示数据
-68. text标签空格，换行，转换等等
-69. input密码的显示与隐藏
-70. 背景图片
-71. 多选框按钮的显示与隐藏
-72. 手动添加列表
-73. 折叠文字动画
-74. scroll-view铺满剩余高度，左右两列
-75. 数组中某项数量的增加与减少，金额的计算
-76. 设置上一个data值并返回上一页
-77. 纯css实现六角灯笼
-78. css实现卡券背景透明，随着内容自动撑开元素大小
-79. 多列选择器实现时间和日期的选择
-80. css实现圆角灯笼
-81. 新增n个loading动画
-82. 弹框高度不定长，一屏长度的80%
-83. 实现圆弧的两种方式
-84. 步骤条不定长高度+气泡框
-85. css实现流星雨效果
-86. flex布局实现位于页面底部的提示文字
-87. 跳动的方块
-88. 数组每一项展示随机颜色
-89. 按钮点击水波纹效果+录音圆环扩散效果
-90. css实现落日效果
-91. 小程序的animation实现雪花飘落的效果
-92. 固定tab切换栏
-93. 多图片下载
-94. 弹出的菜单
-95. css实现一个弹出的菜单
-96. vant上传图片
-97. swiper展示数量的不同，swiper高度随之变化
-98. 横向消息滚动条
-99. css实现一个笑脸
-100. border-radius实现一个图片带弧度
-101. 折线图，柱形图等echarts图表
-102. 引入外部icon，阿里巴巴矢量图标
-103. 一个可以拖拽的按钮
-104. 一键返回顶部
-105. canvas实现图片文字验证码
-106. 一个福字
-107. 一个弹出框动画
-108. 一个等级进度条
-109. 百分比进度条
-110. 文件的上传下载与预览
-111. 头部固定筛选不定高度
-112. 纯css实现一个冰墩墩
-113. css实现一个雪容融
-115. 实现关键词高亮
-116. 背景高斯模糊
-117. 卡片切换效果
-118. 小程序中的媒体查询 @media screen
-119. 实现堆叠式轮播图
-120. 加载进度条
-121. 抽奖4.0走马灯效果
-122. 小程序实现grid布局
-123. 渐变色实现条纹进度条
-124. swiper+scroll-view实现不同内容的滑动切换
-124. 自定义tabbar样式
-125. 瀑布流写法1
-126. scroll-view实现滚动卡片
-127. scroll-into-view实现页面联动
-128. canvas图片裁剪
-129. 首页loading加载页
-130. loading加载动画（更新ing）
-131. 节流+防抖
-132. rotateZ实现卡片翻转
-133. css渐变实现条纹背景
-134. 单选跳跃选择动画
-135. 页面监听watch
-136. wx.createAnimation实现一个带有transition效果的弹框动画
-137. tab切换添加过渡效果
-138. 雪碧图+帧动画
-139. mask自定义tabbar样式
-140. 微信拆红包动画
-141. map+腾讯地图sdk，地图拖拽，经纬度到地址转换
-142. scroll-view+swiper，切换状态下scroll-left的使用
-143. canvas生成海报图片
-144. 关闭小房子+按钮退出小程序
-145. canvas手写签名
-146. 颜色选择器
-147. 列表显示动画
-148. 城市索引选择
-149. 滚动吸顶
-150. 数字滚动
-151. 一些tab选中样式
-152. 上下左右滑动切换（transform）
-153. 数据懒加载
-154. 营销组件滚动抽奖
-155. 共享元素+ page-container实现弹出动画
-156. 地址选择组件（支持主题色选择）
-157. 多个菜单按钮滑动轮播（数组拆分成几个一组）
-158. 引导用户添加-小程序-动画效果
-159. 图片九宫格拖拽 
-160. 折线面积图-玫瑰图-立体柱状图
-161. 横向步骤条
-162. 指定时间倒计时
-163. 课程表
+- [x] 50. 背景图片在一屏之内
+- [x] 51.自定义actionSheet+保存图片（开启授权-》引导用户打开设置页）,需在调式下运行。
+- [x] 52.  一个左右摇摆的灯泡动画
+- [x] 53. 文字的展开与收起
+- [x] 54. 一定高度的文字展开与收起
+- [x] 55. 卡片翻转的效果
+- [x] 56. 实现打卡（卡片翻转效果）
+- [x] 57. 自定义input输入框
+- [x] 58. 自定义日历组件，可设置不同的主题色
+- [x] 59. 上下循环滚动的swiper弹幕条
+- [x] 60. 文字右下角的展开按钮
+- [x] 61. 抽奖活动
+- [x] 62. 圆角边框渐变色
+- [x] 63. 自定义多日期选择组件，可设置不同主题色
+- [x] 64. swiper实现商品轮播
+- [x] 65. css实现常见的一些特殊的形状，谷歌导航栏等等
+- [x] 66. 0.5rpx的线
+- [x] 67. swiper不定长展示数据
+- [x] 68. text标签空格，换行，转换等等
+- [x] 69. input密码的显示与隐藏
+- [x] 70. 背景图片
+- [x] 71. 多选框按钮的显示与隐藏
+- [x] 72. 手动添加列表
+- [x] 73. 折叠文字动画
+- [x] 74. scroll-view铺满剩余高度，左右两列
+- [x] 75. 数组中某项数量的增加与减少，金额的计算
+- [x] 76. 设置上一个data值并返回上一页
+- [x] 77. 纯css实现六角灯笼
+- [x] 78. css实现卡券背景透明，随着内容自动撑开元素大小
+- [x] 79. 多列选择器实现时间和日期的选择
+- [x] 80. css实现圆角灯笼
+- [x] 81. 新增n个loading动画
+- [x] 82. 弹框高度不定长，一屏长度的80%
+- [x] 83. 实现圆弧的两种方式
+- [x] 84. 步骤条不定长高度+气泡框
+- [x] 85. css实现流星雨效果
+- [x] 86. flex布局实现位于页面底部的提示文字
+- [x] 87. 跳动的方块
+- [x] 88. 数组每一项展示随机颜色
+- [x] 89. 按钮点击水波纹效果+录音圆环扩散效果
+- [x] 90. css实现落日效果
+- [x] 91. 小程序的animation实现雪花飘落的效果
+- [x] 92. 固定tab切换栏
+- [x] 93. 多图片下载
+- [x] 94. 弹出的菜单
+- [x] 95. css实现一个弹出的菜单
+- [x] 96. vant上传图片
+- [x] 97. swiper展示数量的不同，swiper高度随之变化
+- [x] 98. 横向消息滚动条
+- [x] 99. css实现一个笑脸
+- [x] 100. border-radius实现一个图片带弧度
+- [x] 101. 折线图，柱形图等echarts图表
+- [x] 102. 引入外部icon，阿里巴巴矢量图标
+- [x] 103. 一个可以拖拽的按钮
+- [x] 104. 一键返回顶部
+- [x] 105. canvas实现图片文字验证码
+- [x] 106. 一个福字
+- [x] 107. 一个弹出框动画
+- [x] 108. 一个等级进度条
+- [x] 109. 百分比进度条
+- [x] 110. 文件的上传下载与预览
+- [x] 111. 头部固定筛选不定高度
+- [x] 112. 纯css实现一个冰墩墩
+- [x] 113. css实现一个雪容融
+- [x] 115. 实现关键词高亮
+- [x] 116. 背景高斯模糊
+- [x] 117. 卡片切换效果
+- [x] 118. 小程序中的媒体查询 @media screen
+- [x] 119. 实现堆叠式轮播图
+- [x] 120. 加载进度条
+- [x] 121. 抽奖4.0走马灯效果
+- [x] 122. 小程序实现grid布局
+- [x] 123. 渐变色实现条纹进度条
+- [x] 124. swiper+scroll-view实现不同内容的滑动切换
+- [x] 124. 自定义tabbar样式
+- [x] 125. 瀑布流写法1
+- [x] 126. scroll-view实现滚动卡片
+- [x] 127. scroll-into-view实现页面联动
+- [x] 128. canvas图片裁剪
+- [x] 129. 首页loading加载页
+- [x] 130. loading加载动画（更新ing）
+- [x] 131. 节流+防抖
+- [x] 132. rotateZ实现卡片翻转
+- [x] 133. css渐变实现条纹背景
+- [x] 134. 单选跳跃选择动画
+- [x] 135. 页面监听watch
+- [x] 136. wx.createAnimation实现一个带有transition效果的弹框动画
+- [x] 137. tab切换添加过渡效果
+- [x] 138. 雪碧图+帧动画
+- [x] 139. mask自定义tabbar样式
+- [x] 140. 微信拆红包动画
+- [x] 141. map+腾讯地图sdk，地图拖拽，经纬度到地址转换
+- [x] 142. scroll-view+swiper，切换状态下scroll-left的使用
+- [x] 143. canvas生成海报图片
+- [x] 144. 关闭小房子+按钮退出小程序
+- [x] 145. canvas手写签名
+- [x] 146. 颜色选择器
+- [x] 147. 列表显示动画
+- [x] 148. 城市索引选择
+- [x] 149. 滚动吸顶
+- [x] 150. 数字滚动
+- [x] 151. 一些tab选中样式
+- [x] 152. 上下左右滑动切换（transform）
+- [x] 153. 数据懒加载
+- [x] 154. 营销组件滚动抽奖
+- [x] 155. 共享元素+ page-container实现弹出动画
+- [x] 156. 地址选择组件（支持主题色选择）
+- [x] 157. 多个菜单按钮滑动轮播（数组拆分成几个一组）
+- [x] 158. 引导用户添加-小程序-动画效果
+- [x] 159. 图片九宫格拖拽 
+- [x] 160. 折线面积图-玫瑰图-立体柱状图
+- [x] 161. 横向步骤条
+- [x] 162. 指定时间倒计时
+- [x] 163. 课程表
 #### 页面部分截图
 ##### 页面导航
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E9%A6%96%E9%A1%B5.png)
