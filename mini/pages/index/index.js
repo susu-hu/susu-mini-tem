@@ -736,8 +736,11 @@ Page({
           {
             name: '指定时间倒计时',
             url: '/pages/actualPage/countdown/index',
-            style: true
           },
+          {
+            name: '课程表',
+            url: '/pages/actualPage/scheduleCard/index',
+          }
         ]
       }
     ],

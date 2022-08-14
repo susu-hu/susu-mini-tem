@@ -52,6 +52,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/actualPage/scheduleCard/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

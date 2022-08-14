@@ -291,7 +291,8 @@
         "konw/index",
         "switchIndex/index",
         "myIndex/index",
-        "countdown/index"
+        "countdown/index",
+        "scheduleCard/index"
       ]
     }
   ],
