@@ -491,7 +491,6 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%BB%9A%E5%8A%A8%E5%90%B8%E9%A1%B6.gif)
 ##### 数字滚动
 ![输入图片说明](mini-picture/numscroll.gif)
-![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%95%B0%E5%AD%97%E6%BB%9A%E5%8A%A8.gif)
 ##### 一些tab选中样式
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/tab.gif)
 ##### 上下左右滑动切换（transform）
