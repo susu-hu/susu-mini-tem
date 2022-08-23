@@ -5,14 +5,14 @@ page {
 
 .con {
   width: 702rpx;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 20rpx;
   margin: 40rpx auto;
   box-sizing: border-box;
   padding: 37rpx 24rpx;
   font-size: 24rpx;
   font-weight: 500;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 .left {
@@ -38,30 +38,32 @@ page {
 }
 
 .right::after {
-  content: '';
+  content: "";
   position: absolute;
-  height: 100%;
   width: 2rpx;
   background: pink;
   border-radius: 4rpx;
   left: -40rpx;
-  top: 13%;
+  height: 100%;
+  top: 35rpx;
+  /* top: 13%; */
 }
 
 .circle {
   position: absolute;
   width: 29rpx;
   height: 29rpx;
-  border: 2rpx solid rgb(255, 192, 203, .4);
+  border: 2rpx solid rgb(255, 192, 203, 0.4);
   border-radius: 50%;
-  top: 9%;
+  /* top: 9%; */
+  top: 20rpx;
   left: -54rpx;
   z-index: 99;
   background: #fff;
 }
 
 .circle::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 15rpx;
   height: 15rpx;
@@ -83,7 +85,7 @@ page {
 }
 
 .r_box::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -91,7 +93,8 @@ page {
   border-bottom: 13rpx solid transparent;
   border-right: 17rpx solid #e4c1c1;
   left: -15rpx;
-  top: 15%;
+  /* top: 15%; */
+  top: 20rpx;
 }
 
 .flex:last-child .right .r_box {
