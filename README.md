@@ -520,7 +520,7 @@ step5：构建npm）
 ##### 课程表-支持课长为2节课
 ![输入图片说明](mini-picture/%E8%AF%BE%E7%A8%8B%E8%A1%A8.png)
 ##### 课程表-支持课长为1-6节课
-![输入图片说明](mini-picture/scheduleCard1-6.gif)
+![输入图片说明](mini-picture/demo164.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
