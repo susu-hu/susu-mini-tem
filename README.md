@@ -194,6 +194,7 @@ step5：构建npm）
 - [x] 162. 指定时间倒计时
 - [x] 163. 课程表-支持课长为2节课
 - [x] 164. 课程表-支持课长为1-6节课
+- [x] 165. 自定义tabbar-选中有弧度的圆+transition丝滑切换
 
 #### 页面部分截图
 ##### 页面导航
@@ -521,6 +522,8 @@ step5：构建npm）
 ![输入图片说明](mini-picture/%E8%AF%BE%E7%A8%8B%E8%A1%A8.png)
 ##### 课程表-支持课长为1-6节课
 ![输入图片说明](mini-picture/demo164.gif)
+##### 自定义tabbar-选中有弧度的圆+transition丝滑切换
+![输入图片说明](mini-picture/demo165.gif)
 #### 参与贡献
 
 1.  Fork 本仓库
