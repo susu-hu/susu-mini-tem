@@ -1,6 +1,0 @@
-<!--pages/subPack/navTab/index.wxml-->
-<view class="hd">
-  <block wx:for="{{navList}}" wx:key="navList">
-    <view class="hd_flex {{nav_type == index ? 'hd_flex_on' : ''}}" catchtap="changeType" data-index="{{index}}">{{item}}</view>
-  </block>
-</view>

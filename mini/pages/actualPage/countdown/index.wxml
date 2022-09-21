@@ -1,0 +1,34 @@
+<!--pages/actualPage/countdown/index.wxml-->
+<view class="flex-row time-box j_c">
+  <view class="time-item">{{left_time_list[0]}}</view>天
+  <view class="time-item">{{left_time_list[1]}}</view>时
+  <view class="time-item">{{left_time_list[2]}}</view>分
+  <view class="time-item">{{left_time_list[3]}}</view>秒
+</view>
+
+<view class="flex-row time-box j_c ">
+  <view class="flex-row">
+    <block wx:for="{{left_time_list_date[0]}}" wx:key="list">
+      <view class="time-item1">{{item}}</view>
+    </block>
+    <text>天</text>
+  </view>
+  <view class="flex-row">
+    <block wx:for="{{left_time_list_date[1]}}" wx:key="list">
+      <view class="time-item1">{{item}}</view>
+    </block>
+    <text>时</text>
+  </view>
+  <view class="flex-row">
+    <block wx:for="{{left_time_list_date[2]}}" wx:key="list">
+      <view class="time-item1">{{item}}</view>
+    </block>
+    <text>分</text>
+  </view>
+  <view class="flex-row">
+    <block wx:for="{{left_time_list_date[3]}}" wx:key="list">
+      <view class="time-item1">{{item}}</view>
+    </block>
+    <text>秒</text>
+  </view>
+</view>

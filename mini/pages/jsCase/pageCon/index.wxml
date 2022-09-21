@@ -1,0 +1,45 @@
+<!--pages/jsCase/pageCon/index.wxml-->
+<view>
+  <view class="screen screen1">
+    <block wx:for="{{contacts}}" wx:key="id" wx:for-item="contact">
+      <view class="contact" bindtap="showNext" data-idx="{{index}}">
+        <share-element class="avatar" key="avatar" duration="{{duration}}" transform="{{transformIdx === index}}">
+          <image mode="widthFix" src="{{contact.img}}"></image>
+        </share-element>
+        <share-element duration="{{duration}}" class="name" key="name" transform="{{transformIdx === index}}">
+          {{contact.name}}
+        </share-element>
+        <view class="list">
+          <view>手机号: {{contact.phone}}</view>
+          <view>邮箱: {{contact.email}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<page-container show="{{show}}" overlay="{{overlay}}" close-on-slide-down duration="{{duration}}" position="{{position}}" bindbeforeenter="onBeforeEnter" bindenter="onEnter" bindafterenter="onAfterEnter" bindbeforeleave="onBeforeLeave" bindleave="onLeave" bindafterleave="onAfterLeave" bindclickoverlay="onClickOverlay">
+  <view class="screen screen2">
+    <view class="contact">
+      <share-element class="avatar ava_pa" duration="{{duration}}" key="avatar" transform>
+        <image mode="widthFix" src="{{contact.img}}" />
+      </share-element>
+      <share-element class="name" key="name" duration="{{duration}}" transform>
+        {{contact.name}}
+      </share-element>
+      <view class="paragraph {{show ? 'enter' : ''}}">
+        共享元素是一种动画形式，类似于 flutter Hero动画，表现为元素像是在页面间穿越一样。该组件需与 page-container 组件结合使用。
+        使用时需在当前页放置 share-element 组件，同时在 page-container 容器中放置对应的 share-element 组件，对应关系通过属性值 key 映射。
+        当设置 page-container 显示时，transform 属性为 true 的共享元素会产生动画。当前页面容器退出时，会产生返回动画。
+        <view></view>
+        小程序如果在页面内进行复杂的界面设计（如在页面内弹出半屏的弹窗、在页面内加载一个全屏的子页面等），用户进行返回操作会直接离开当前页面，不符合用户预期，预期应为关闭当前弹出的组件。 为此提供“假页”容器组件，效果类似于 popup 弹出层，页面内存在该容器时，当用户进行返回操作，关闭该容器不关闭页面。返回操作包括三种情形，右滑手势、安卓物理返回键和调用 navigateBack 接口。
+      </view>
+      <button class="screen2-button" bindtap="showPrev" hidden="{{!show}}" hover-class="none">Click Me</button>
+    </view>
+  </view>
+</page-container>
+
+<!-- 共享元素。
+共享元素是一种动画形式，类似于 flutter Hero动画，表现为元素像是在页面间穿越一样。该组件需与 page-container 组件结合使用。
+使用时需在当前页放置 share-element 组件，同时在 page-container 容器中放置对应的 share-element 组件，对应关系通过属性值 key 映射。
+当设置 page-container 显示时，transform 属性为 true 的共享元素会产生动画。当前页面容器退出时，会产生返回动画。 -->
+<!-- 小程序如果在页面内进行复杂的界面设计（如在页面内弹出半屏的弹窗、在页面内加载一个全屏的子页面等），用户进行返回操作会直接离开当前页面，不符合用户预期，预期应为关闭当前弹出的组件。 为此提供“假页”容器组件，效果类似于 popup 弹出层，页面内存在该容器时，当用户进行返回操作，关闭该容器不关闭页面。返回操作包括三种情形，右滑手势、安卓物理返回键和调用 navigateBack 接口。 -->

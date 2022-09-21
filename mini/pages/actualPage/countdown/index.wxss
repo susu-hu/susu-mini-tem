@@ -1,0 +1,32 @@
+/* pages/actualPage/countdown/index.wxss */
+.time-box {
+  font-size: 26rpx;
+  color: #EAA81B;
+  margin-bottom: 40rpx;
+  border-radius: 20rpx;
+  padding: 20px;
+  background: #fff;
+  margin: 20rpx;
+}
+
+.time-item {
+  width: 60rpx;
+  height: 40rpx;
+  background: linear-gradient(90deg, #FFEBB1 0%, #FFDB8F 100%);
+  border-radius: 4rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 40rpx;
+  margin: 0 20rpx;
+}
+
+.time-item1 {
+  width: 30rpx;
+  height: 40rpx;
+  background: linear-gradient(90deg, #FFEBB1 0%, #FFDB8F 100%);
+  border-radius: 4rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 40rpx;
+  margin: 0 10rpx;
+}

@@ -1,0 +1,35 @@
+<!--pages/effects/clipRed/index.wxml-->
+<view class="flex">
+  <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="user_avatar" />
+  <view class="wallet_box" catchtap="show">
+    <view class="flex-row j_c">
+      <image src="../img/red.png" class="red_icon" />
+      <view>恭喜发财，大吉大利</view>
+    </view>
+    <view class="wallet_tip">微信红包</view>
+  </view>
+</view>
+<!-- 红包弹框 -->
+<view class="mask" hidden="{{!show}}"></view>
+<view class="red_box flex-column" animation="{{animationData}}" hidden="{{!show}}">
+  <view class="top flex-column" animation="{{animationData1}}">
+    <view class="flex-row">
+      <image src="https://i.postimg.cc/mgsKJGLw/susu1.jpg" class="user_avatar_dia" />
+      <view>小苏苏的红包</view>
+    </view>
+    <view class="text">恭喜发财，大吉大利</view>
+    <view class="top_radius">
+      <view class="open" catchtap="open" wx:if="{{not_open}}">開</view>
+      <view wx:else class="anim-rotate">
+        <view class="roate_box" style="transform: translateZ(-3px);">開</view>
+        <view class="roate_box roate_box_center" wx:for="{{5}}" wx:key="index" style="transform:translateZ({{index-3}}px)"></view>
+        <view class="roate_box roate_box_center" style="transform: translateZ(3px);">開</view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom" animation="{{animationData2}}">
+    <view class="line"></view>
+    <view class="bottom_box"></view>
+  </view>
+  <image src="/img/close_icon.png" class="close_icon" catchtap="closeModal" />
+</view>

@@ -1,0 +1,29 @@
+<!--pages/cssCase/stripeBg/index.wxml-->
+<view class="banner"></view>
+<view class="line"></view>
+<view class="line1"></view>
+<view class="line2"></view>
+<view class="line3 mb20">
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+  <view class="line-item"></view>
+</view>
+<view class="line4 mb20"></view>
+<view class="line5 mb20"></view>
+<view class="line6 mb20"></view>
+<view class="line7 mb20"></view>
+<view class="line8 mb20"></view>
+<view class="line9 mb20"></view>
+<view class="line10 mb20"></view>
+<view class="line11 mb20"></view>
+<view class="line12 mb20"></view>

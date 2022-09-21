@@ -1,0 +1,54 @@
+/* pages/cssCase/menuSwiper/index.wxss */
+page {
+  padding   : 20px 0;
+  background: #f7dada;
+}
+
+.band_box {
+  font-size : 26rpx;
+  color     : #575757;
+  box-sizing: border-box;
+  padding   : 22rpx;
+}
+
+.swiper_band {
+  width : 100%;
+  height: 330rpx;
+}
+
+.swiper_band_small {
+  width : 100%;
+  height: 165rpx;
+}
+
+.swiper_band .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: -15rpx;
+}
+
+.swiper_band .wx-swiper-dot {
+  margin-left  : -5rpx;
+  width        : 40rpx;
+  height       : 10rpx;
+  background   : rgba(40, 146, 255, .5);
+  border-radius: 4rpx;
+}
+
+.swiper_band .wx-swiper-dot-active {
+  width        : 40rpx;
+  height       : 10rpx;
+  background   : #2892FF;
+  border-radius: 4rpx;
+}
+
+.band_item {
+  width        : 25%;
+  float        : left;
+  margin-bottom: 19rpx;
+}
+
+.band_icon {
+  width        : 87rpx;
+  height       : 87rpx;
+  margin-bottom: 11rpx;
+  border-radius: 50%;
+}

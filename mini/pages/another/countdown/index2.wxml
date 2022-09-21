@@ -1,0 +1,30 @@
+<!--pages/another/countdown/index2.wxml-->
+<view class="banber">
+  <image src="https://s3.bmp.ovh/imgs/2022/07/27/85dabf1d5821a98b.png" mode="widthFix" class="banner-img"/>
+  <!-- display-multiple-items:1--显示单条 -->
+  <swiper class="new_swiper" vertical="true" autoplay="true" circular="true" interval="4000" duration="1500" display-multiple-items='2' easing-function="easeInOutCubic">
+    <block wx:for-index="idx" wx:for='{{finish_list}}' wx:key="index">
+      <swiper-item>
+        <view class="box_item">
+          <view class="flex-row">
+            <image src="{{item.head_img}}" class="b_user_ava"></image>
+            <text>恭喜{{item.nickname}}集赞成功</text>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item wx:if="{{finish_list.length==1}}">
+        <view class="box_item">
+          <view class="flex-row">
+            <image src="{{item.head_img}}" class="b_user_ava"></image>
+            <text>恭喜{{item.nickname}}集赞成功!!!</text>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="banber">
+  <image src="https://s3.bmp.ovh/imgs/2022/07/27/6289fe4ab016c74a.png" mode="widthFix" />
+</view>
+<!-- <canvas canvas-id='MyCanvas' class='MyCanvas' style="width:{{screenWidth}}px;height:{{screenHeight}}px;"></canvas> -->

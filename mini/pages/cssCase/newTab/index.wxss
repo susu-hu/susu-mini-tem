@@ -1,0 +1,103 @@
+page {
+  background: linear-gradient(180deg, #c0e0e4 0%, #F4F4F4 100%);
+  padding: 20rpx;
+}
+.head_tab {
+  width: 450rpx;
+  text-align: center;
+  height: 85rpx;
+  line-height: 85rpx;
+  display: flex;
+  background: linear-gradient(180deg, #d6001f 50%, #fff 50%);
+  border-radius: 20rpx 20rpx 0 0;
+  color: #ccc;
+  font-size: 30rpx;
+  overflow: hidden;
+}
+.head_tab_four {
+  border-radius: 20rpx;
+}
+.head_tab .head_item {
+  flex: 1;
+  text-align: center;
+  background: #d6001f;
+  color: #e7c7c7;
+  border-radius: 20rpx 20rpx 20rpx 0;
+  text-shadow: -1rpx 0 #fff, 0 1rpx #fff, 1rpx 0 #fff, 0 -1rpx #fff;
+}
+.head_tab .head_item:last-child {
+  border-radius: 20rpx 20rpx 0 20rpx;
+}
+.head_tab .head_item_active {
+  background: #fff;
+  color: #333;
+  text-shadow: -1rpx 0 #e98383, 0 1rpx #e98383, 1rpx 0 #e98383, 0 -1rpx #e98383;
+}
+.head_con {
+  width: 600rpx;
+  height: 250rpx;
+  background: #fff;
+  border-radius: 0 20rpx 20rpx;
+  box-shadow: 5rpx 5rpx 5rpx rgba(235, 41, 70, 0.5);
+}
+.head_tab_one {
+  width: 450rpx;
+  text-align: center;
+  height: 85rpx;
+  line-height: 85rpx;
+  display: flex;
+  border-radius: 43rpx;
+  color: #ccc;
+  font-size: 30rpx;
+  overflow: hidden;
+  background-color: #d6001f;
+}
+.head_tab_one .head_item {
+  flex: 1;
+  border-radius: 43rpx;
+}
+.head_tab_one .head_item_active {
+  background-color: #fff;
+}
+.head_tab_two {
+  width: 450rpx;
+  text-align: center;
+  height: 85rpx;
+  line-height: 85rpx;
+  display: flex;
+  border-radius: 43rpx;
+  color: #ccc;
+  font-size: 30rpx;
+  overflow: hidden;
+  background-color: #d6001f;
+}
+.head_tab_two .head_item {
+  flex: 1;
+}
+.head_tab_two .head_item_active {
+  background-color: #fff;
+}
+.head_tab_three {
+  width: 450rpx;
+  text-align: center;
+  height: 85rpx;
+  line-height: 85rpx;
+  display: flex;
+  border-radius: 43rpx;
+  color: #ccc;
+  font-size: 30rpx;
+  overflow: hidden;
+  background-color: #d6001f;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.head_tab_three .head_item {
+  flex: 1;
+  border-radius: 43rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head_tab_three .head_item_active {
+  background-color: #fff;
+}

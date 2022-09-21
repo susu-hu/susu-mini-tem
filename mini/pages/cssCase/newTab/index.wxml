@@ -1,0 +1,37 @@
+<!--pages/cssCase/newTab/index.wxml-->
+<view class="mb20">
+  <view class="head_tab_one ">
+    <block wx:for="{{tab}}" wx:key="tab">
+      <view catchtap="navTab" class=" head_item {{index==nav_type&&'head_item_active'}}" data-index="{{index}}">{{item.name}}</view>
+    </block>
+  </view>
+</view>
+<view class="mb20">
+  <view class="head_tab_two ">
+    <block wx:for="{{tab}}" wx:key="tab">
+      <view catchtap="navTab" class=" head_item {{index==nav_type&&'head_item_active'}}" data-index="{{index}}">{{item.name}}</view>
+    </block>
+  </view>
+</view>
+<view class="mb20">
+  <view class="head_tab_three ">
+    <block wx:for="{{tab}}" wx:key="tab">
+      <view catchtap="navTab" class=" head_item {{index==nav_type&&'head_item_active'}}" data-index="{{index}}">{{item.name}}</view>
+    </block>
+  </view>
+</view>
+<view class="mb20">
+  <view class="head_tab head_tab_four ">
+    <block wx:for="{{tab}}" wx:key="tab">
+      <view catchtap="navTab" class=" head_item {{index==nav_type&&'head_item_active'}}" data-index="{{index}}">{{item.name}}</view>
+    </block>
+  </view>
+</view>
+<view class="mb20">
+  <view class="head_tab ">
+    <block wx:for="{{tab}}" wx:key="tab">
+      <view catchtap="navTab" class=" head_item {{index==nav_type&&'head_item_active'}}" data-index="{{index}}">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="head_con"></view>
+</view>

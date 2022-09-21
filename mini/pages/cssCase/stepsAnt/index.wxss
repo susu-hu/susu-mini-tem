@@ -1,0 +1,110 @@
+/* pages/cssCase/stepsAnt/index.wxss */
+page {
+  padding-bottom: 40rpx;
+}
+
+.con {
+  width: 702rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+  margin: 40rpx auto;
+  box-sizing: border-box;
+  padding: 37rpx 24rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.left {
+  width: 130rpx;
+  text-align: center;
+  line-height: 33rpx;
+  margin-right: 60rpx;
+  flex-shrink: 0;
+}
+
+.time {
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.right {
+  flex: 1;
+  font-size: 26rpx;
+  font-weight: 500;
+  line-height: 37rpx;
+  color: #333333;
+  position: relative;
+}
+
+.right::after {
+  content: "";
+  position: absolute;
+  width: 2rpx;
+  background: pink;
+  border-radius: 4rpx;
+  left: -40rpx;
+  height: 100%;
+  top: 35rpx;
+  /* top: 13%; */
+}
+
+.circle {
+  position: absolute;
+  width: 29rpx;
+  height: 29rpx;
+  border: 2rpx solid rgb(255, 192, 203, 0.4);
+  border-radius: 50%;
+  /* top: 9%; */
+  top: 20rpx;
+  left: -54rpx;
+  z-index: 99;
+  background: #fff;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  width: 15rpx;
+  height: 15rpx;
+  background: pink;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.r_box {
+  width: 453rpx;
+  background: #e4c1c1;
+  border-radius: 14rpx;
+  box-sizing: border-box;
+  padding: 16rpx 28rpx 23rpx 29rpx;
+  position: relative;
+  margin-bottom: 60rpx;
+}
+
+.r_box::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 13rpx solid transparent;
+  border-bottom: 13rpx solid transparent;
+  border-right: 17rpx solid #e4c1c1;
+  left: -15rpx;
+  /* top: 15%; */
+  top: 20rpx;
+}
+
+.flex:last-child .right .r_box {
+  margin-bottom: 0;
+}
+
+.flex:last-child .right .r_box {
+  margin-bottom: 0;
+}
+
+.flex:last-child .right::after {
+  display: none;
+}

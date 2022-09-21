@@ -1,0 +1,55 @@
+<!--pages/jsCase/citySel/index.wxml-->
+<view class="head {{search&&'r_head'}}">
+  <!-- 搜索框 -->
+  <view class="flex-row">
+    <view class="head_input">
+      <image src="/img/search_icon.png" class="search_icon"></image>
+      <input type="text" placeholder="搜索" placeholder-class="place_holder" bindinput="getValue" value="{{search}}"></input>
+    </view>
+    <view class="sha_icon" catchtap="clear_input">取消</view>
+  </view>
+  <view class="flex-row head_curr" wx:if="{{!search}}">
+    <image src="/img/add_icon.png" class="h_c_icon" />
+    <view>当前定位城市:{{current_city}}</view>
+  </view>
+</view>
+<scroll-view wx:if="{{!search}}" scroll-y="true" class="sy_container" scroll-into-view="{{scrollViewId}}">
+  <view class="hot_city">
+    <view class="title">热门城市</view>
+    <view class="flex-row flex-wrap box">
+      <block wx:for="{{hot_city}}" wx:key="hot">
+        <view class="name" hover-class="sel_city" hover-stay-time="150">{{item.name}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="all_city">
+    <view wx:for="{{city_list}}" wx:key="city_list" wx:if="{{item.data.length>0}}">
+      <view class="letter_name" id="{{item.letter}}">{{item.letter}}</view>
+      <view class="city">
+        <block wx:for="{{item.data}}" wx:key="data" wx:for-index="index0" wx:for-item="item0">
+          <view class="name flex-row" hover-class="city_hover" hover-stay-time='150'>{{item0.cityName}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 侧边选择索引 -->
+<view wx:if="{{!search}}">
+  <view class="fixed_bar" style="height: {{barHeight}}px;" catchtouchstart="touchStart" catchtouchmove="touchMove" catchtouchend="touchEnd" catchtouchcancel="touchCancel">
+    <view wx:for="{{city_list}}" wx:key="index" style="height: {{barHeight/22}}px;">
+      <view class="bar_item flex-column j_c {{curr==index&&'bar_item_active'}}" style="width: {{barHeight/22*0.75}}px;height: {{barHeight/22*0.75}}px;">{{item.letter}}</view>
+    </view>
+  </view>
+  <view wx:if="{{showLetter &&city_list[curr].letter}}" class="fixed_letter">{{city_list[curr].letter}}</view>
+</view>
+<view wx:if="{{search}}" class="result_list">
+  <view wx:if="{{result.length>0}}">
+    <block wx:for="{{result}}" wx:key="result">
+      <view class="r_item" hover-stay-time='150' hover-class="r_item_hover">{{item.name}}</view>
+    </block>
+  </view>
+  <view wx:else class="flex-column no_data">
+    <image src="https://i.postimg.cc/7P00ckMG/image.png" />
+    <view>请输入正确的城市名称呢</view>
+  </view>
+</view>

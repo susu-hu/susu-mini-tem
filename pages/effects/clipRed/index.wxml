@@ -1,4 +1,0 @@
-<!--pages/effects/clipRed/index.wxml-->
-<block wx:if="{{status==0}}">
-  <view class="red_box flex-column"></view>
-</block>

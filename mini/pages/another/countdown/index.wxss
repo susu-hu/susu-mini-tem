@@ -1,0 +1,112 @@
+/* pages/another/countdown/index.wxss */
+page {
+  background: #fff;
+}
+
+/* 心跳 */
+.move-box {
+  padding: 20px;
+  animation: heartBeat 2s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.move-img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10rpx;
+}
+
+.move-text {
+  font-size: 22rpx;
+  color: pink;
+}
+
+/* 左右摆动 */
+.shake-box {
+  padding: 20px;
+  animation: shake 1.5s linear infinite;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-10deg);
+  }
+
+  30% {
+    transform: rotate(5deg);
+  }
+
+  40% {
+    transform: rotate(-5deg);
+  }
+
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+}
+
+/* 上下晃动 */
+.jump-box {
+  padding: 20px;
+  animation: jump 1.5s linear infinite;
+}
+
+
+@keyframes jump {
+  25% {
+    transform: translateY(-4px);
+  }
+
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(4px);
+  }
+}
+
+/* 转圈 */
+.circle-box {
+  padding: 20px;
+  animation: circle 1.5s infinite cubic-bezier(.34, 0, .99, 1);
+}
+
+@keyframes circle {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.circle-box-h {
+  padding: 20px;
+  animation: circle1 10s infinite cubic-bezier(.34, 0, .84, 1);
+}
+
+@keyframes circle1 {
+  100% {
+    transform: rotate(30turn);
+    /* 666turn */
+  }
+}

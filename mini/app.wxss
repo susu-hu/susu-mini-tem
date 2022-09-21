@@ -1,0 +1,143 @@
+/**app.wxss**/
+page {
+  background: #f5f5f5;
+  --pink: #ffc0cb;
+  --white: #fff;
+  --red: #e54d42;
+  --orange: #f37b1d;
+  --yellow: #fbbd08;
+  --olive: #8dc63f;
+  --green: #39b54a;
+  --grey: #8799a3;
+  --black: #333333;
+  --darkGray: #666666;
+}
+
+/* 多行文字换行 */
+.line_ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.j_b {
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 遮罩 */
+.mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/* 单行文字换行  */
+.text_ellipsis {
+  /*宽度自定义*/
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* 多行文字换行 */
+.line_ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+/*  去掉button的默认样式*/
+button {
+  padding: 0 !important;
+  background: transparent;
+  font-weight: normal;
+}
+
+button::after {
+  outline: none;
+  border: none;
+  display: none;
+}
+
+/*点击后样式*/
+.button-hover {
+  background: transparent;
+}
+
+/* 背景图片 */
+.bg_img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.j_c {
+  justify-content: center;
+}
+
+.j_e {
+  justify-content: flex-end;
+}
+
+.j_a {
+  justify-content: space-around;
+}
+
+.flex_1 {
+  flex: 1;
+}
+
+.flex_0 {
+  flex-shrink: 0;
+}
+
+image {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.mb20 {
+  margin-bottom: 20rpx;
+}
+
+.mb10 {
+  margin-bottom: 10rpx;
+}

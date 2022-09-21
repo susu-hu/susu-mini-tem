@@ -1,0 +1,53 @@
+/* pages/another/countdown/index2.wxss */
+page {
+  background: #fff;
+}
+
+.banber {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+/* 滚动弹框 */
+.new_swiper {
+  width: 100%;
+  position: absolute;
+  height: 218rpx;
+  top: -10rpx;
+  z-index: 669;
+  left: 40rpx;
+}
+
+.new_swiper swiper-view {
+  vertical-align: bottom;
+}
+
+.box_item {
+  display: inline-block;
+  height: 40rpx;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 28rpx;
+  box-sizing: border-box;
+  padding: 0 16rpx 0 4rpx;
+  font-size: 20rpx;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1rpx;
+  position: absolute;
+  bottom: 0;
+
+}
+
+.box_item view {
+  height: 40rpx;
+}
+
+.b_user_ava {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  margin-right: 8rpx;
+}

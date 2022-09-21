@@ -1,0 +1,20 @@
+<!--pages/subPack/navTab/index.wxml-->
+<!-- <view class="hd">
+  <block wx:for="{{navList}}" wx:key="navList">
+    <view class="hd_flex {{nav_type == index ? 'hd_flex_on' : ''}}" catchtap="changeType" data-index="{{index}}">{{item}}</view>
+  </block>
+</view> -->
+<view class="head">
+  <view class="hd">
+    <block wx:for="{{navList}}" wx:key="navList">
+      <view class="hd_flex {{nav_type == index ? 'hd_flex_on' : ''}}" catchtap="changeType" data-index="{{index}}">{{item}}
+        <!-- <view class="line_checked {{nav_type == index&&'checked'}}"></view> -->
+      </view>
+    </block>
+  </view>
+  <view style="height: 88rpx;width: 100%;"></view>
+</view>
+<view class="container">
+  <view class="box {{show&&'anim'}}" style="background-image: {{bg_color}}"></view>
+</view>
+<view class="text" data-attr="transition+animation">transition+animation</view>
