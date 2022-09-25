@@ -1,0 +1,10 @@
+<!--pages/cssCase/nTabbar/index.wxml-->
+<view class="tabbar-box">
+  <block wx:for="{{menu}}" wx:key="list">
+    <view class="menu-item {{currIndex==index && 'active'}}" catchtap="tabClick" data-index="{{index}}">
+      <view class="iconfont {{item.icon}}"></view>
+      <text>{{item.name}}</text>
+    </view>
+  </block>
+  <view class="active-tabbar-box" style="--n:{{currIndex}}"></view>
+</view>

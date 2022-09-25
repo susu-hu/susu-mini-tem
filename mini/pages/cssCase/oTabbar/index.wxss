@@ -1,0 +1,123 @@
+/* pages/cssCase/nTabbar/index.wxss */
+@import "../utils/icon-font.wxss";
+
+page {
+  /* #F5F5F5 */
+  --color: #222;
+  background: var(--color);
+  --bg: orange;
+  --w: 175rpx;
+  --t: 750rpx;
+  --c: 120rpx;
+  /* 注意：env()和constant()需要同时存在，且constant()在前 */
+  padding-bottom: calc(constant(safe-area-inset-bottom) +140rpx);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 140rpx);
+}
+
+.tabbar-box {
+  background: #fff;
+  border-radius: 10rpx 10rpx 0 0;
+  position: relative;
+  height: 120rpx;
+  width: var(--t);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: var(--w);
+  height: 100%;
+  /* border: 1rpx solid red; */
+  /* 点击出现蓝色背景色问题 */
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu-item .iconfont {
+  font-size: 40rpx;
+  /* font-weight: bold; 不能加这个属性*/
+  color: var(--color);
+  transition: 0.5s all;
+  position: relative;
+  z-index: 9;
+}
+
+.menu-item text {
+  position: absolute;
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #222;
+  transition: 0.5s all;
+  opacity: 0;
+  transform: translateY(50rpx);
+}
+
+.menu-item.active .iconfont {
+  transform: translateY(-60rpx);
+}
+
+.menu-item.active text {
+  opacity: 1;
+  transform: translateY(22rpx);
+}
+
+.active-tabbar-box {
+  box-sizing: border-box;
+  position: absolute;
+  width: var(--c);
+  height: var(--c);
+  background: var(--bg);
+  --left-pad: calc(var(--t) - (4 * var(--w)));
+  left: calc((var(--left-pad) / 2) + (var(--w) / 2) - (var(--c) / 2));
+  top: calc(-50% + constant(safe-area-inset-bottom) / 2);
+  top: calc(-50% + env(safe-area-inset-bottom) / 2);
+  border-radius: 50%;
+  border: 10rpx solid var(--color);
+  transition: 0.5s all;
+}
+
+.active-tabbar-box::before,
+.active-tabbar-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30rpx;
+  height: 30rpx;
+  background: transparent;
+}
+
+.active-tabbar-box::before {
+  left: -33rpx;
+  border-radius: 0 30rpx 0 0;
+  box-shadow: 0 -15rpx 0 0 var(--color);
+}
+
+.active-tabbar-box::after {
+  right: -33rpx;
+  border-radius: 30rpx 0 0 0;
+  box-shadow: 0 -15rpx 0 0 var(--color);
+}
+
+
+
+.active-tabbar-box {
+  transform: translateX(calc(var(--w) * var(--n)));
+}
+.a {
+  margin: 50px auto;
+  border-radius: 15rpx 50rpx;
+  width: 200rpx;
+  height: 100rpx;
+  border: 1px solid orange;
+}

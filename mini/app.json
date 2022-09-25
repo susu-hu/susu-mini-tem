@@ -140,7 +140,8 @@
         "newTab/index",
         "menuSwiper/index",
         "stripeBg/index",
-        "guardFollow/index"
+        "guardFollow/index",
+        "oTabbar/index"
       ]
     },
     {

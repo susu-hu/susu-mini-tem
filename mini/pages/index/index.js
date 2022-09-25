@@ -327,6 +327,10 @@ Page({
             url: '/pages/cssCase/newTab/index'
           },
           {
+            name: 'tabbar凹凸圆丝滑选中 2022/9/25',
+            url: '/pages/cssCase/oTabbar/index'
+          },
+          {
             name: '菜单按钮轮播',
             url: '/pages/cssCase/menuSwiper/index'
           },

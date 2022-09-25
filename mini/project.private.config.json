@@ -6,63 +6,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/another/circleRing/index2",
-          "pathName": "pages/another/circleRing/index2",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/jsCase/papers/index",
-          "pathName": "pages/another/cal/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
           "name": "",
-          "pathName": "pages/cssCase/menuSwiper/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/subPack/navTab/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/subPack/loading/index5",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/jsCase/citySel/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/actualPage/countdown/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/actualPage/scheduleCard/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/cssCase/stepsAnt/index",
+          "pathName": "pages/cssCase/oTabbar/index",
           "query": "",
           "launchMode": "default",
           "scene": null

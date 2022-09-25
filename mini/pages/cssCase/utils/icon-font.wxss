@@ -1,0 +1,57 @@
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: 'iconfont';
+  /* Project id 3655600 */
+  src:
+    url('//at.alicdn.com/t/c/font_3655600_s9yflwtj1u8.woff2?t=1663513710232') format('woff2'),
+    url('//at.alicdn.com/t/c/font_3655600_s9yflwtj1u8.woff?t=1663513710232') format('woff'),
+    url('//at.alicdn.com/t/c/font_3655600_s9yflwtj1u8.ttf?t=1663513710232') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-susua-2-53:before {
+  content: "\e611";
+}
+
+.icon-susua-2-57:before {
+  content: "\e612";
+}
+
+.icon-susua-2-61:before {
+  content: "\e614";
+}
+
+.icon-susunailao:before {
+  content: "\e65b";
+}
+
+.icon-susukele:before {
+  content: "\e65c";
+}
+
+.icon-susuhanbao:before {
+  content: "\e65e";
+}
+
+.icon-susupaofu-53:before {
+  content: "\e617";
+}
+
+.icon-susubingsha:before {
+  content: "\e698";
+}
+
+.icon-sususuannai:before {
+  content: "\e699";
+}
+
+.icon-susushiwutubiao00-66:before {
+  content: "\e61c";
+}
