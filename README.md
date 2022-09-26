@@ -196,6 +196,7 @@ step5：构建npm）
 - [x] 164. 课程表-支持课长为1-6节课
 - [x] 165. 自定义tabbar-选中有弧度的圆+transition丝滑切换
 - [x] 166. 自定义tabbar-选中动画
+- [x] 167. 圆形布局菜单-弹出选中动画
 
 #### 页面部分截图
 ##### 页面导航
@@ -527,6 +528,8 @@ step5：构建npm）
 ![输入图片说明](mini-picture/demo165.gif)
 ##### 自定义tabbar-选中动画
 ![输入图片说明](mini-picture/demo166.gif)
+![输入图片说明](mini-picture/demo166-2.gif)
+##### 圆形布局菜单-弹出选中动画
 ![输入图片说明](mini-picture/demo167.gif)
 #### 参与贡献
 
