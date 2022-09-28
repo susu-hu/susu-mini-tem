@@ -3,13 +3,13 @@
   <view id="left">
     <view wx:for="{{leftList}}" wx:key="index" class="item">
       <image src="{{item.url}}" mode='widthFix' lazy-load></image>
-      <text>{{item.title}}</text>
+      <text>{{item.name}}</text>
     </view>
   </view>
   <view id="right">
     <view wx:for="{{rightList}}" wx:key="index" class="item">
       <image src="{{item.url}}" mode='widthFix' lazy-load></image>
-      <text>{{item.title}}</text>
+      <text>{{item.name}}</text>
     </view>
   </view>
 </view>
