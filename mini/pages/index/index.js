@@ -372,15 +372,11 @@ Page({
             url: '/pages/wxCase/radioBox/index'
           },
           {
-            name: '瀑布流1',
+            name: '瀑布流1(简单处理-不完全适配',
             url: '/pages/wxCase/pubuliu/index'
           },
           {
             name: '瀑布流2',
-            url: '/pages/wxCase/pubuliu2/index'
-          },
-          {
-            name: '瀑布流3',
             url: '/pages/wxCase/pubuliu3/index'
           },
           {

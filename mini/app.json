@@ -158,7 +158,6 @@
         "checkbox/index",
         "radioBox/index",
         "pubuliu/index",
-        "pubuliu2/index",
         "wclound/index",
         "costomNav/index",
         "shopIndex/index",
@@ -193,8 +192,6 @@
         "webview/index",
         "loadingBar/index",
         "pubuliu3/index",
-        "pubuliu/index2",
-        "pubuliu/index3",
         "scrollCard/index",
         "scrollIntoView/index",
         "scrollIntoView/detail"
