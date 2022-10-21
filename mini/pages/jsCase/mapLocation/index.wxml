@@ -1,0 +1,18 @@
+<!--pages/jsCase/mapLocation/index.wxml-->
+<view class="box">
+  <!-- 从 2.8.0 起 map 支持同层渲染 
+  基础库2.12.2 map新增罗盘-->
+  <map id="maps" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" show-location bindregionchange="regionchange">
+    <cover-image class="cover-image {{show_ani}}" src="../img/map.png" />
+  </map>
+  <view class="address_box">
+    <view class="adress flex-row">
+      <view class="b"></view>
+      <view class="text_ellipsis" style="width: 650rpx;">{{address}}</view>
+    </view>
+    <view class="adress flex-row">
+      <view class="b d"></view>
+      <view class="text_ellipsis"> {{longitude}},{{latitude}}</view>
+    </view>
+  </view>
+</view>

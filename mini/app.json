@@ -237,7 +237,8 @@
         "draw4/index2",
         "draw4/easy",
         "lazyLoad/index",
-        "citySel/index"
+        "citySel/index",
+        "mapLocation/index"
       ]
     },
     {
@@ -342,6 +343,9 @@
       "desc": "您的位置将用来选择收货地址"
     }
   },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
   "requiredBackgroundModes": [
     "audio",
     "location"
