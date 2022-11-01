@@ -141,7 +141,8 @@
         "menuSwiper/index",
         "stripeBg/index",
         "guardFollow/index",
-        "oTabbar/index"
+        "oTabbar/index",
+        "cardVoucher/index"
       ]
     },
     {

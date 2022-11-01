@@ -1,0 +1,219 @@
+/* pages/cssCase/cardVoucher/index.wxss */
+page {
+  padding: 20rpx;
+  --c1: orange;
+  --c2: #ff2e63;
+  --c3: #a33b55;
+  --c4: #ffe2e2;
+  --c5: #bbded6;
+  --c6: #ffde7d;
+}
+
+/* 样式1 */
+.card-box {
+  width: 700rpx;
+  height: 360rpx;
+  margin: 0 auto 20px;
+  border-radius: 30rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20rpx;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .3));
+  position: relative;
+  color: #fff;
+}
+
+.card-box::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(35deg, var(--c1), var(--c2));
+  -webkit-mask: radial-gradient(circle at 20rpx 65%, transparent 20rpx, red 0) -20rpx;
+  mask: radial-gradient(circle at 20rpx 65%, transparent 20rpx, red 0) -20rpx;
+  z-index: -1;
+}
+
+.card-name {
+  font-size: 40rpx;
+  font-weight: bold;
+  letter-spacing: 2rpx;
+  margin-bottom: 45rpx;
+}
+
+.card-banner {
+  position: absolute;
+  display: inline-block;
+  min-width: 100rpx;
+  padding: 10rpx 0;
+  text-align: center;
+  height: 30rpx;
+  line-height: 30rpx;
+  border-radius: 30rpx;
+  background: rgba(255, 255, 255, .26);
+  top: 20rpx;
+  right: 20rpx;
+
+}
+
+.card-content {
+  font-size: 28rpx;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 40rpx;
+}
+
+.card-content::before {
+  content: '';
+  width: 600rpx;
+  height: 3rpx;
+  position: absolute;
+  background-image: linear-gradient(90deg, var(--c3) 50%, transparent 50%);
+  background-size: 30rpx 30rpx;
+  left: calc(50% - 300rpx);
+  bottom: -30rpx;
+}
+
+.card-content text:nth-child(2) {
+  font-size: 80rpx;
+  line-height: 90rpx;
+  letter-spacing: 2rpx;
+  margin: 0px 20rpx;
+}
+
+.card-btm {
+  font-size: 28rpx;
+}
+
+.card-btm-item {
+  width: 30%;
+  line-height: 48rpx;
+}
+
+/* 样式2 */
+.coupon-box {
+  width: 700rpx;
+  height: 220rpx;
+  overflow: hidden;
+  border-radius: 20rpx;
+  position: relative;
+  background: radial-gradient(circle at right top, transparent 18rpx, var(--c4) 0) top left / 214rpx 51% no-repeat,
+    radial-gradient(circle at right bottom, transparent 18rpx, var(--c4) 0) bottom left /214rpx 51% no-repeat,
+    radial-gradient(circle at left top, transparent 18rpx, var(--c4) 0) top right /486rpx 51% no-repeat,
+    radial-gradient(circle at left bottom, transparent 18rpx, var(--c4) 0) bottom right /486rpx 51% no-repeat;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .3));
+  margin: 20px auto;
+}
+
+.coupon-box::after {
+  content: '';
+  height: 184rpx;
+  border: 1rpx dashed #fff;
+  position: absolute;
+  left: 214rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.cou-banner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 130rpx;
+  text-align: center;
+  padding: 0 10rpx;
+  line-height: 45rpx;
+  height: 45rpx;
+  font-size: 25rpx;
+  color: red;
+  background: rgba(255, 165, 0, .2);
+  border-radius: 20rpx 0 20rpx 0;
+}
+
+.cou-left {
+  width: 214rpx;
+  height: 100%;
+  font-size: 25rpx;
+  color: red;
+}
+
+.cou-left text:nth-child(1) {
+  font-size: 35px;
+}
+
+.cou-right {
+  width: 484rpx;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 20rpx 20rpx 35rpx;
+  color: #333;
+  font-size: 30rpx;
+  font-weight: bold;
+  line-height: 48rpx;
+}
+
+.cou-right-time {
+  color: red;
+}
+
+/* 样式3 */
+.card-3 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 220rpx;
+  position: relative;
+  background: var(--c5);
+}
+
+.card-3::after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  bottom: -5px;
+  background-image: linear-gradient(to right, var(--c5) 10rpx, transparent 10rpx, transparent),
+    radial-gradient(10px circle at 10px 5px, transparent 10rpx, var(--c5) 10rpx);
+  background-size: 30rpx 10rpx;
+}
+
+/* 样式4 */
+.card-4 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 200rpx;
+  position: relative;
+  background: radial-gradient(circle at right top, transparent 12rpx, var(--c6) 0) top left / 200rpx 51% no-repeat,
+    radial-gradient(circle at right bottom, transparent 12rpx, var(--c6) 0) bottom left /200rpx 51% no-repeat,
+    radial-gradient(circle at left top, transparent 12rpx, #eeeeee 0) top right /500rpx 51% no-repeat,
+    radial-gradient(circle at left bottom, transparent 12rpx, #eeeeee 0) bottom right /500rpx 51% no-repeat;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .2));
+}
+
+.card-4::before {
+  content: '';
+  height: 176rpx;
+  border: 1px dashed #fff;
+  position: absolute;
+  left: 200rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.card-4::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 6rpx;
+  top: 0;
+  left: -6rpx;
+  background-image: linear-gradient(to bottom, var(--c6) 6rpx, transparent 6rpx, transparent),
+    radial-gradient(6px circle at 0px 12rpx, transparent 6rpx, var(--c6) 6rpx);
+  background-size: 6rpx 18rpx;
+}

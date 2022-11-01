@@ -342,6 +342,10 @@ Page({
             name: '引导添加小程序动画',
             url: '/pages/cssCase/guardFollow/index'
           },
+          {
+            name: "会员卡/卡券",
+            url: "/pages/cssCase/cardVoucher/index",
+          },
         ]
       },
       {
