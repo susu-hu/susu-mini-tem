@@ -7,6 +7,7 @@ page {
   --c4: #ffe2e2;
   --c5: #bbded6;
   --c6: #ffde7d;
+  --c7: #eeeeee;
 }
 
 /* 样式1 */
@@ -18,7 +19,7 @@ page {
   overflow: hidden;
   box-sizing: border-box;
   padding: 20rpx;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .3));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
   position: relative;
   color: #fff;
 }
@@ -34,6 +35,17 @@ page {
   -webkit-mask: radial-gradient(circle at 20rpx 65%, transparent 20rpx, red 0) -20rpx;
   mask: radial-gradient(circle at 20rpx 65%, transparent 20rpx, red 0) -20rpx;
   z-index: -1;
+  animation: bgchange 3s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes bgchange {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(-50deg);
+  }
 }
 
 .card-name {
@@ -101,23 +113,26 @@ page {
   overflow: hidden;
   border-radius: 20rpx;
   position: relative;
-  background: radial-gradient(circle at right top, transparent 18rpx, var(--c4) 0) top left / 214rpx 51% no-repeat,
-    radial-gradient(circle at right bottom, transparent 18rpx, var(--c4) 0) bottom left /214rpx 51% no-repeat,
-    radial-gradient(circle at left top, transparent 18rpx, var(--c4) 0) top right /486rpx 51% no-repeat,
-    radial-gradient(circle at left bottom, transparent 18rpx, var(--c4) 0) bottom right /486rpx 51% no-repeat;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .3));
+  background: radial-gradient(circle at right top, transparent 18rpx, var(--c4) 0) top left / 215rpx 51% no-repeat,
+    radial-gradient(circle at right bottom, transparent 18rpx, var(--c4) 0) bottom left /215rpx 51% no-repeat,
+    radial-gradient(circle at left top, transparent 18rpx, var(--c4) 0) top right /487rpx 51% no-repeat,
+    radial-gradient(circle at left bottom, transparent 18rpx, var(--c4) 0) bottom right /487rpx 51% no-repeat;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
   margin: 20px auto;
 }
 
 .coupon-box::after {
   content: '';
   height: 184rpx;
-  border: 1rpx dashed #fff;
+  width: 3rpx;
+  background-image: linear-gradient(0deg, #fff 50%, transparent 50%);
+  background-size: 20rpx 20rpx;
   position: absolute;
-  left: 214rpx;
+  left: 212rpx;
   top: 0;
   bottom: 0;
   margin: auto;
+
 }
 
 .cou-banner {
@@ -173,10 +188,10 @@ page {
 .card-3::after {
   content: '';
   position: absolute;
-  height: 5px;
+  height: 10rpx;
   width: 100%;
   left: 0;
-  bottom: -5px;
+  bottom: -10rpx;
   background-image: linear-gradient(to right, var(--c5) 10rpx, transparent 10rpx, transparent),
     radial-gradient(10px circle at 10px 5px, transparent 10rpx, var(--c5) 10rpx);
   background-size: 30rpx 10rpx;
@@ -190,17 +205,19 @@ page {
   position: relative;
   background: radial-gradient(circle at right top, transparent 12rpx, var(--c6) 0) top left / 200rpx 51% no-repeat,
     radial-gradient(circle at right bottom, transparent 12rpx, var(--c6) 0) bottom left /200rpx 51% no-repeat,
-    radial-gradient(circle at left top, transparent 12rpx, #eeeeee 0) top right /500rpx 51% no-repeat,
-    radial-gradient(circle at left bottom, transparent 12rpx, #eeeeee 0) bottom right /500rpx 51% no-repeat;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .2));
+    radial-gradient(circle at left top, transparent 12rpx, var(--c7) 0) top right /500rpx 51% no-repeat,
+    radial-gradient(circle at left bottom, transparent 12rpx, var(--c7) 0) bottom right /500rpx 51% no-repeat;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
 }
 
 .card-4::before {
   content: '';
+  width: 5rpx;
   height: 176rpx;
-  border: 1px dashed #fff;
+  background-image: linear-gradient(0deg, #fff 50%, transparent 50%);
+  background-size: 20rpx 20rpx;
   position: absolute;
-  left: 200rpx;
+  left: 199rpx;
   top: 0;
   bottom: 0;
   margin: auto;
