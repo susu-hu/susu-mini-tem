@@ -1,4 +1,12 @@
 <!--pages/cssCase/cardVoucher/index.wxml-->
+<!-- 引导篇 -->
+<view class="card-000 card">渐变</view>
+<view class="card-001 card">半圆伪元素</view>
+<view class="card-002 card">mask遮罩</view>
+<view class="card-003 card">渐变</view>
+<view class="card-004 card">mask遮罩</view>
+<view class="card-005 card">mask遮罩+多重drop-shadow实现边框</view>
+<view class="card-006 card">mask遮罩+伪元素+border</view>
 <!-- 样式1 -->
 <view class="card-box">
   <view class="card-name">苏苏就是小苏苏哇</view>
@@ -43,3 +51,37 @@
 <view class="card-3"></view>
 <!-- 样式4 -->
 <view class="card-4"></view>
+<!-- 样式5 -->
+<view class="card-5"></view>
+<!-- 渐变带边框 -->
+<view class="card-border card"></view>
+<!-- 样式18 -->
+<view class="card-18"></view>
+<!-- 样式6 -->
+<view class="card-6"></view>
+<!-- 样式7 -->
+<view class="card-7"></view>
+<!-- 样式8 -->
+<view class="card-8"></view>
+<!-- 样式9 -->
+<view class="card-9"></view>
+<!-- 样式10 -->
+<view class="card-10"></view>
+<!-- 样式11 -->
+<view class="card-11"></view>
+<!-- 样式12 -->
+<view class="card-12"></view>
+<!-- 样式13 -->
+<view class="card-13"></view>
+<!-- 样式14 -->
+<view class="card-14"></view>
+<!-- 样式15 -->
+<view class="card-15">
+  <view class="inner"></view>
+</view>
+<!-- 样式16 -->
+<view class="card-16"></view>
+<!-- 样式17 -->
+<view class="card-17"></view>
+<!-- 样式19-- -->
+<view class="card-19"></view>

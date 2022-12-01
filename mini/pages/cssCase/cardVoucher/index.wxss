@@ -1,6 +1,7 @@
 /* pages/cssCase/cardVoucher/index.wxss */
 page {
   padding: 20rpx;
+  --bg: #F5F5F5;
   --c1: orange;
   --c2: #ff2e63;
   --c3: #a33b55;
@@ -8,6 +9,8 @@ page {
   --c5: #bbded6;
   --c6: #ffde7d;
   --c7: #eeeeee;
+  --c8: #a8edea;
+  --c9: #fed6e3;
 }
 
 /* 样式1 */
@@ -20,6 +23,7 @@ page {
   box-sizing: border-box;
   padding: 20rpx;
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
+  /*  mask 裁剪的图形需要在外层嵌套一层父级，不然投影会被 mask 直接裁剪掉 */
   position: relative;
   color: #fff;
 }
@@ -33,6 +37,7 @@ page {
   top: 0;
   background: linear-gradient(35deg, var(--c1), var(--c2));
   -webkit-mask: radial-gradient(circle at 20rpx 65%, transparent 20rpx, red 0) -20rpx;
+  /* red 0 ：后面颜色的位置只需要小于等于前面颜色的位置就行了 */
   mask: radial-gradient(circle at 20rpx 65%, transparent 20rpx, red 0) -20rpx;
   z-index: -1;
   animation: bgchange 3s infinite ease-in-out alternate-reverse;
@@ -115,10 +120,12 @@ page {
   position: relative;
   background: radial-gradient(circle at right top, transparent 18rpx, var(--c4) 0) top left / 215rpx 51% no-repeat,
     radial-gradient(circle at right bottom, transparent 18rpx, var(--c4) 0) bottom left /215rpx 51% no-repeat,
-    radial-gradient(circle at left top, transparent 18rpx, var(--c4) 0) top right /487rpx 51% no-repeat,
-    radial-gradient(circle at left bottom, transparent 18rpx, var(--c4) 0) bottom right /487rpx 51% no-repeat;
+    radial-gradient(circle at left top, transparent 18rpx, var(--c5) 0) top right /487rpx 51% no-repeat,
+    radial-gradient(circle at left bottom, transparent 18rpx, var(--c5) 0) bottom right /487rpx 51% no-repeat;
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
   margin: 20px auto;
+  /* 解决filter-导致border-radius生效 */
+  transform: translate3d(0, 0, 0);
 }
 
 .coupon-box::after {
@@ -183,6 +190,7 @@ page {
   height: 220rpx;
   position: relative;
   background: var(--c5);
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
 }
 
 .card-3::after {
@@ -192,7 +200,9 @@ page {
   width: 100%;
   left: 0;
   bottom: -10rpx;
-  background-image: linear-gradient(to right, var(--c5) 10rpx, transparent 10rpx, transparent),
+  /* background-image: linear-gradient(to right, var(--c5) 10rpx, transparent 10rpx, transparent),
+    radial-gradient(10px circle at 10px 5px, transparent 10rpx, var(--c5) 10rpx); */
+  background-image:
     radial-gradient(10px circle at 10px 5px, transparent 10rpx, var(--c5) 10rpx);
   background-size: 30rpx 10rpx;
 }
@@ -233,4 +243,557 @@ page {
   background-image: linear-gradient(to bottom, var(--c6) 6rpx, transparent 6rpx, transparent),
     radial-gradient(6px circle at 0px 12rpx, transparent 6rpx, var(--c6) 6rpx);
   background-size: 6rpx 18rpx;
+}
+
+/* 样式5 */
+.card-5 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 200rpx;
+  position: relative;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
+}
+
+.card-5::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  -webkit-mask: radial-gradient(circle at 30rpx 30rpx, transparent 30rpx, red 0) -30rpx -30rpx;
+  mask: radial-gradient(circle at 30rpx 30rpx, transparent 30rpx, red 0) -30rpx -30rpx;
+  background-image: linear-gradient(to right, var(--c8) 0%, var(--c9) 100%);
+}
+
+.card-18 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 200rpx;
+  position: relative;
+  filter: drop-shadow(0 0 2rpx) drop-shadow(0 0 0) drop-shadow(0 0 0) drop-shadow(0 0 0) drop-shadow(0 0 0);
+  color: orange;
+  /* 投影的颜色默认是跟随当前文字颜色的 */
+}
+
+.card-18::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  -webkit-mask: radial-gradient(circle at 30rpx 30rpx, transparent 30rpx, red 0) -30rpx -30rpx;
+  mask: radial-gradient(circle at 30rpx 30rpx, transparent 30rpx, red 0) -30rpx -30rpx;
+  background: var(--bg);
+}
+
+/* 样式6 */
+.card-6 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 200rpx;
+  position: relative;
+  border-radius: 20rpx;
+  background: radial-gradient(circle at 30rpx 25rpx, transparent 10rpx, var(--c1) 0, var(--c2)) top left/700rpx 40rpx;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
+}
+
+/* 样式7 */
+.card-7 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 200rpx;
+  position: relative;
+  background: var(--c2);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .2));
+  background: #ba5370;
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.card-7::after {
+  content: '';
+  position: absolute;
+  height: 20rpx;
+  left: 0;
+  right: 0;
+  bottom: -18rpx;
+  background: radial-gradient(28rpx 20rpx ellipse at top, #ba5370 15rpx, transparent 16rpx);
+  background-size: 28rpx 20rpx;
+}
+
+/* 样式8 */
+.card-8 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 200rpx;
+  position: relative;
+  border-radius: 20rpx;
+  filter: drop-shadow(8rpx 8rpx 0 var(--c3));
+}
+
+.card-8::after {
+  content: '';
+  border-radius: 20rpx;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-mask: radial-gradient(circle at 20rpx 50%, transparent 20rpx, red 21rpx);
+  mask: radial-gradient(circle at 20rpx 50%, transparent 20rpx, red 21rpx);
+  -webkit-mask-position: -20rpx center;
+  mask-position: -20rpx center;
+  background: linear-gradient(45deg, var(--c1), var(--c2));
+}
+
+/* 样式9 */
+.card-9 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 250rpx;
+  position: relative;
+  border-radius: 20rpx;
+  filter: drop-shadow(8rpx 8rpx 0 rgba(34, 34, 34, .1));
+}
+
+.card-9::after {
+  content: '';
+  border-radius: 20rpx;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-mask: radial-gradient(circle at right 202rpx bottom 20rpx, transparent 20rpx, red 22rpx),
+    radial-gradient(closest-side circle at 50%, red 99%, transparent 100%);
+  mask: radial-gradient(circle at right 202rpx bottom 20rpx, transparent 20rpx, red 22rpx),
+    radial-gradient(closest-side circle at 50%, red 99%, transparent 100%);
+  -webkit-mask-size: 100%, 12rpx 24rpx;
+  mask-size: 100%, 12rpx 24rpx;
+  -webkit-mask-repeat: repeat, repeat-y;
+  mask-repeat: repeat, repeat-y;
+  -webkit-mask-position: 0 20rpx, calc(100% - 196rpx);
+  mask-position: 0 20rpx, calc(100% - 196rpx);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  background: linear-gradient(45deg, var(--c8), var(--c1));
+}
+
+/* 样式10 */
+.card-10 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 250rpx;
+  position: relative;
+  border-radius: 20rpx;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .3));
+}
+
+.card-10::after {
+  content: '';
+  border-radius: 20rpx;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-mask-image: radial-gradient(circle at 9px 46px, transparent 9px, red 9.5px),
+    linear-gradient(90deg, transparent 25%, red 0, red 75%, transparent 0);
+  mask-image: radial-gradient(circle at 9px 46px, transparent 9px, red 9.5px),
+    linear-gradient(90deg, transparent 25%, red 0, red 75%, transparent 0);
+  -webkit-mask-size: 100%, 8px 3px;
+  mask-size: 100%, 8px 3px;
+  -webkit-mask-repeat: repeat, repeat-x;
+  mask-repeat: repeat, repeat-x;
+  -webkit-mask-position: -9px, 50% 44.5px;
+  mask-position: -9px, 50% 44.5px;
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  background: linear-gradient(45deg, var(--c2), var(--c4));
+}
+
+/* 样式11 */
+.card-11 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 320rpx;
+  position: relative;
+  border-radius: 20rpx;
+  filter: drop-shadow(8rpx 8rpx 0 rgba(34, 34, 34, .1));
+}
+
+.card-11::after {
+  content: '';
+  border-radius: 20rpx;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-mask-image: radial-gradient(circle at 15rpx, transparent 15rpx, red 0rpx);
+  -webkit-mask-position: -15rpx;
+  -webkit-mask-size: 100% 60rpx;
+  background: linear-gradient(45deg, var(--c2), var(--c1));
+}
+
+/* 样式12 */
+.card-12 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 240rpx;
+  position: relative;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .3));
+}
+
+.card-12::after {
+  content: '';
+  border-radius: 20rpx;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-mask-image: radial-gradient(circle at 50% 10rpx, transparent 10rpx, red 12rpx);
+  mask-image: radial-gradient(circle at 50% 10rpx, transparent 10rpx, red 12rpx);
+  -webkit-mask-position: 50% -10rpx;
+  mask-position: 50% -10rpx;
+  -webkit-mask-size: 40rpx 100%;
+  mask-size: 40rpx 100%;
+  background: linear-gradient(45deg, var(--c2), var(--c5));
+}
+
+/* 样式13 */
+.card-13 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 300rpx;
+  position: relative;
+  border-radius: 20rpx;
+  filter: drop-shadow(8rpx 8rpx 0 rgba(34, 34, 34, .1));
+}
+
+.card-13::after {
+  content: '';
+  border-radius: 20rpx;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-mask-image: radial-gradient(circle at 5px, transparent 5px, red 5.5px),
+    radial-gradient(circle at 50% 5px, red 5px, transparent 5.5px);
+  mask-image: radial-gradient(circle at 5px, transparent 5px, red 5.5px),
+    radial-gradient(circle at 50% 5px, red 5px, transparent 5.5px);
+  -webkit-mask-position: -5px, 50% -5px;
+  mask-position: -5px, 50% -5px;
+  -webkit-mask-size: 100% 50rpx, 50rpx 100%;
+  mask-size: 100% 50rpx, 50rpx 100%;
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  background: linear-gradient(to bottom, var(--c8), #fff);
+}
+
+/* 样式14 */
+.card-14 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 220rpx;
+  position: relative;
+  border-radius: 20rpx;
+  filter: drop-shadow(8rpx 8rpx 0 rgba(34, 34, 34, .1));
+}
+
+.card-14::after {
+  content: '';
+  border-radius: 20rpx;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-mask: radial-gradient(circle at 50%, red 5rpx, #0000 0) 50% 50% / 100% 20rpx,
+    radial-gradient(circle at 20rpx 20rpx, #0000 20rpx, red 0) -20rpx -20rpx / 50%;
+  -webkit-mask-composite: destination-out;
+  background: linear-gradient(45deg, var(--c1), var(--c2));
+}
+
+
+/* 样式15 */
+.card-15 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 200rpx;
+  position: relative;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
+}
+
+.card-15::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  -webkit-mask: radial-gradient(circle at 20rpx 20rpx, transparent 20rpx, red 0) -20rpx -20rpx;
+  background: #fff;
+}
+
+.card-15::after {
+  content: '';
+  width: 250rpx;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(45deg, var(--c2), pink);
+  -webkit-mask: radial-gradient(circle at 20rpx 20rpx, transparent 20rpx, red 0) -20rpx -20rpx;
+}
+
+.card-15 .inner {
+  box-sizing: border-box;
+  position: absolute;
+  right: 4rpx;
+  top: calc(50% - 45%);
+  width: 90%;
+  height: 90%;
+  border: 3rpx solid var(--c2);
+  border-radius: 8rpx;
+}
+
+
+/* 样式16 */
+.card-16 {
+  margin: 20px auto;
+  width: 700rpx;
+  height: 200rpx;
+  position: relative;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
+}
+
+.card-16::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-mask: radial-gradient(circle at 20rpx 20rpx, transparent 20rpx, red 0) -20rpx -20rpx;
+  background: #fff;
+}
+
+.card-16::after {
+  content: '';
+  width: 250rpx;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(45deg, var(--c8), pink);
+  -webkit-mask: radial-gradient(circle at left top, transparent 20rpx, red 0),
+    radial-gradient(circle at left bottom, transparent 20rpx, red 0),
+    radial-gradient(circle at right 23rpx, #0000 10rpx, red 0) right/100% 40rpx;
+  /*chrome*/
+  -webkit-mask-composite: source-in;
+  /*Firefox*/
+  mask-composite: intersect;
+}
+
+/* 安卓可以, 1rpx时候ios不显示！！！！ */
+.card-17 {
+  width: 700rpx;
+  height: 200rpx;
+  margin: 0 auto 20px;
+  position: relative;
+  filter: drop-shadow(0 0 2rpx) drop-shadow(0 0 0) drop-shadow(0 0 0) drop-shadow(0 0 0) drop-shadow(0 0 0);
+  color: orange;
+}
+
+.card-17:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 20rpx;
+  -webkit-mask: radial-gradient(circle at 20rpx center, transparent 20rpx, red 0) -20rpx;
+  /* 必须要有背景色 */
+  background: var(--bg);
+}
+
+/* 样式19 */
+.card-19 {
+  width: 700rpx;
+  height: 200rpx;
+  margin: 0 auto 20px;
+  position: relative;
+  border-radius: 20rpx;
+  -webkit-mask: radial-gradient(circle at 20rpx center, transparent 18rpx, #000 0) -20rpx;
+  border: 2rpx solid orange;
+}
+
+
+.card-19::before,
+.card-19::after {
+  content: '';
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: orange;
+  top: calc(50% - 21rpx);
+}
+
+.card-19::before {
+  left: -3%;
+}
+
+.card-19::after {
+  right: -3%;
+}
+
+/* 写文引导篇 */
+.card {
+  width: 700rpx;
+  height: 250rpx;
+  margin: 0 auto 20rpx;
+  border-radius: 20rpx;
+  position: relative;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
+  color: #fff;
+  text-align: center;
+  line-height: 250rpx;
+}
+
+.card-000 {
+  background: radial-gradient(circle at 20rpx center, transparent 20rpx, #ff6810 20rpx) -20rpx;
+}
+
+.card-001 {
+  background: #ff6810;
+}
+
+.card-001::before,
+.card-001::after {
+  content: '';
+  position: absolute;
+  width: 20rpx;
+  height: 40rpx;
+  background: var(--bg);
+  top: calc(50% - 20rpx);
+}
+
+.card-001::before {
+  border-radius: 0 20rpx 20rpx 0;
+  left: 0;
+}
+
+.card-001::after {
+  border-radius: 20rpx 0 0 20rpx;
+  right: 0;
+}
+
+.card-002::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(35deg, var(--c1), var(--c2));
+  border-radius: 20rpx;
+  -webkit-mask: radial-gradient(circle at 20rpx center, transparent 20rpx, red 0) -20rpx;
+
+}
+
+.card-border {
+  height: 200rpx;
+  filter: drop-shadow(0 0 2rpx) drop-shadow(0 0 0) drop-shadow(0 0 0) drop-shadow(0 0 0) drop-shadow(0 0 0);
+  color: #333;
+}
+
+.card-border::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 20rpx;
+  -webkit-mask: radial-gradient(circle at 20rpx center, transparent 20rpx, red 0) -20rpx;
+  /* 必须要有背景色 */
+  background: linear-gradient(35deg, var(--c1), var(--c2));
+}
+
+.card-003 {
+
+  background: radial-gradient(circle at left 0, transparent 20rpx, pink 0) left 0 /50% 50% no-repeat,
+    radial-gradient(circle at right 0, transparent 20rpx, skyblue 0) right 0 /50% 50% no-repeat,
+    radial-gradient(circle at left 100%, transparent 20rpx, orange 0) left 100% /50% 50% no-repeat,
+    radial-gradient(circle at right 100%, transparent 20rpx, #a6d1a9 0) right 100% /50% 50% no-repeat;
+}
+
+.card-004::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 20rpx;
+  -webkit-mask: radial-gradient(circle at 20rpx 20rpx, transparent 20rpx, red 0) -20rpx -20rpx;
+  background: linear-gradient(to right, var(--c1) 0%, var(--c2) 100%);
+}
+
+.card-005 {
+  filter: drop-shadow(0 0 2rpx) drop-shadow(0 0 0) drop-shadow(0 0 0) drop-shadow(0 0 0) drop-shadow(0 0 0);
+  color: #ff6810;
+}
+
+.card-005::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 20rpx;
+  -webkit-mask: radial-gradient(circle at 20rpx center, transparent 20rpx, red 0) -20rpx;
+  background: var(--bg);
+}
+
+.card-006 {
+  -webkit-mask: radial-gradient(circle at 20rpx center, transparent 18rpx, #000 0) -20rpx;
+  border: 3rpx solid #ff6810;
+  color: #ff6810;
+}
+
+.card-006::before,
+.card-006::after {
+  content: '';
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: #ff6810;
+  top: calc(50% - 21rpx);
+}
+
+.card-006::before {
+  left: -3%;
+}
+
+.card-006::after {
+  right: -3%;
 }
