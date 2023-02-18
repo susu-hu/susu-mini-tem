@@ -86,6 +86,10 @@ Page({
             url: "/pages/another/scroll-x/index",
           },
           {
+            name: "scroll-view中scroll-left的使用",
+            url: "/pages/another/scroll-x/index2",
+          },
+          {
             name: "swiper3D轮播图",
             url: "/pages/another/swiper-threeD/index",
           },
@@ -778,7 +782,7 @@ Page({
     });
   },
 
-  onLoad: function (options) {},
+  onLoad: function (options) { },
   onPullDownRefresh() {
     wx.stopPullDownRefresh(); //刷新完成后停止下拉刷新动效
   },
