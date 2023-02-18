@@ -1,66 +1,41 @@
 // pages/another/scroll-x/index2.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    // 定义测试菜单
+    list: [1, 2, 3, 4, 5, 6, 7, 22, 32],
+    // 定义当前选中菜单的索引
+    currentTab: 0,
+    // scroll-view距离左边的距离
+    sleft: 0,
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  // 处理菜单切换
+  handleTabChange(e) {
+    let { currnet } = e.currentTarget.dataset;
+    if (this.data.currentTab == currnet || currnet == undefined) return;
+    this.setData({
+      currentTab: currnet
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  //处理swiper 滑动事件
+  handleSwiperChange(e) {
+    this.setData({
+      currentTab: e.detail.current
+    });
+    // 在处理swiper的滑动事件中，处理sleft的值
+    this.getScrollLeft()
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  // 处理sleft的值
+  getScrollLeft() {
+    const query = wx.createSelectorQuery();
+    query.selectAll(".item").boundingClientRect();
+    query.exec(res => {
+      let num = 0;
+      for (let i = 0; i < this.data.currentTab; i++) {
+        num += res[0][i].width;
+      }
+      this.setData({
+        sleft: Math.ceil(num)
+      })
+    })
   }
 })
