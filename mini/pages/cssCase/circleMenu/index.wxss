@@ -1,0 +1,161 @@
+/* pages/cssCase/circleMenu/index.wxss */
+/* 引入阿里巴巴矢量图标 */
+@import "../utils/icon-font.wxss";
+
+page {
+  --bg: pink;
+  background: var(--bg);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 选中菜单背景色 */
+  --active: orange;
+  /* 圆盘背景色 */
+  --bgcolor: rgb(190, 127, 67);
+}
+
+.container {
+  width: 400rpx;
+  height: 400rpx;
+  position: relative;
+}
+
+.menu-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* 默认隐藏 */
+  opacity: 0;
+  transform: scale(0);
+  visibility: hidden;
+  transition: all .5s;
+}
+
+.menu-box::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--bgcolor);
+  border-radius: 50%;
+  /* 添加投影 */
+  filter: drop-shadow(0 0 8px var(--active));
+  -webkit-filter: drop-shadow(0 0 8px var(--active));
+  /* 解决ios圆角不生效 */
+  transform: translate3d(0, 0, 0);
+}
+
+/* 当激活按钮之后 显示 */
+.menu-box.active {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-box-item {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: calc(50% - 40rpx);
+  left: calc(50% - 40rpx);
+  /* 添加过渡效果 */
+  transition: all .5s;
+  /* 添加transform偏移 */
+  transform: rotate(calc(var(--deg) * var(--n))) translateX(-140rpx);
+}
+
+.icon {
+  font-size: 56rpx;
+  /* 添加过渡效果 */
+  transition: all .5s;
+}
+
+.menu-box-item .icon {
+  /* 添加反向transform偏移 */
+  transform: rotate(calc(var(--deg) * var(--n)));
+}
+
+.menu-box-item.active {
+  transform: rotate(calc(var(--deg) * var(--n))) translateX(-220rpx);
+}
+
+.menu-box-item.active .icon {
+  animation: scale 1s ease-in-out;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1.9);
+  }
+}
+
+.menu-box-active {
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  background: var(--active);
+  box-shadow: 0 0 0 10rpx var(--bg);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: all .5s;
+  transform-origin: center;
+  top: calc(50% - 50rpx);
+  left: calc(50% - 50rpx);
+  z-index: 1;
+  /* 默认隐藏 */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-box-item.active~.menu-box-active {
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(calc(var(--deg) * var(--n))) translateX(-220rpx);
+}
+
+.menu-add-box {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50% - 60rpx);
+  top: calc(50% - 60rpx);
+  background: var(--bg);
+  transition: all .5s;
+}
+
+.menu-add-box::after {
+  content: '^点我吧^';
+  position: absolute;
+  bottom: -20rpx;
+  font-size: 22rpx;
+  color: #222;
+  font-weight: bold;
+  font-style: italic;
+  transition: all .5s;
+  opacity: 1;
+}
+
+.menu-add-box .icon {
+  transform: scale(1.5);
+}
+
+/* 点击按钮之后，文字消失 */
+.menu-add-box.active::after {
+  font-size: 0;
+  opacity: 0;
+}
+
+.menu-add-box.active .icon {
+  transform: rotate(135deg);
+}

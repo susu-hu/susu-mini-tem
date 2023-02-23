@@ -1,0 +1,15 @@
+<!--pages/cssCase/circleMenu/index.wxml-->
+<view class="container">
+  <view class="menu-box {{show_menu &&'active'}}">
+    <block wx:for="{{menu}}" wx:key="menu">
+      <view class="menu-box-item {{currIndex===index && 'active'}}" style="--n:{{index}};--deg:{{360/menu.length}}deg" data-index="{{index}}" catchtap="clickActive">
+        <icon class="iconfont icon {{item.icon}}" style="--deg:{{-360/menu.length}}deg" />
+      </view>
+    </block>
+    <view class="menu-box-active" style="--n:{{currIndex}};--deg:{{360/menu.length}}deg"></view>
+  </view>
+  <!-- 点击弹出菜单按钮 -->
+  <view class="menu-add-box {{show_menu &&'active'}}" catchtap="showMenu">
+    <icon class="icon iconfont {{menu_add}}" />
+  </view>
+</view>
