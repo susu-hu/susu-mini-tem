@@ -349,6 +349,10 @@ Page({
             url: "/pages/cssCase/oTabbar/index",
           },
           {
+            name: "TABBAR-圆形菜单弹出选中动画",
+            url: "/pages/cssCase/circleMenu/index",
+          },
+          {
             name: "菜单按钮轮播",
             url: "/pages/cssCase/menuSwiper/index",
           },
@@ -401,10 +405,6 @@ Page({
           {
             name: "瀑布流2",
             url: "/pages/wxCase/pubuliu3/index",
-          },
-          {
-            name: "网易云音乐播放",
-            url: "/pages/wxCase/wclound/index",
           },
           {
             name: "导航栏自定义",

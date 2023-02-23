@@ -37,8 +37,7 @@
     "pages/charts/index6",
     "pages/charts/index7"
   ],
-  "subPackages": [
-    {
+  "subPackages": [{
       "root": "pages/another/",
       "pages": [
         "subIndex/index",
@@ -160,7 +159,6 @@
         "checkbox/index",
         "radioBox/index",
         "pubuliu/index",
-        "wclound/index",
         "costomNav/index",
         "shopIndex/index",
         "vantCircle/index",
@@ -303,8 +301,7 @@
     "selectedColor": "#6B1F72",
     "borderStyle": "white",
     "backgroundColor": "#ffffff",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "iconPath": "img/tabbar/icon_index.png",
         "selectedIconPath": "img/tabbar/icon_index_sel.png",

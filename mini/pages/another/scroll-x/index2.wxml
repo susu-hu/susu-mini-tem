@@ -15,7 +15,7 @@
     <swiper-item wx:for="{{list}}" wx:key="index" class="flex-column j_c">
       <scroll-view scroll-y class='container-swiper-sc'>
         <view class="items flex-wrap flex-row">
-          <block wx:for="{{item}}" wx:key="index-item">
+          <block wx:for="{{item}}" wx:key="item">
             <image src='https://i.postimg.cc/mgsKJGLw/susu1.jpg' mode="aspectFill" class="item-img" />
           </block>
         </view>
