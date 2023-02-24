@@ -344,7 +344,6 @@ step5：构建npm）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/image.png)
 ##### input密码的显示与隐藏
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E6%A3%89%E9%BA%BB.gif)
-![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E4%BD%8E%E5%88%86%E5%B1%80.gif)
 ##### 多选框按钮的显示与隐藏
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E7%88%B1%E4%BB%95%E8%BE%BE.gif)
 ##### 手动添加列表
