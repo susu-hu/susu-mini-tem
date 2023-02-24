@@ -5,7 +5,7 @@ page {
 
 .con {
   width: 702rpx;
-  background: #ffffff;
+  background: #fff;
   border-radius: 20rpx;
   margin: 40rpx auto;
   box-sizing: border-box;
@@ -23,47 +23,45 @@ page {
   flex-shrink: 0;
 }
 
-.time {
-  font-size: 24rpx;
-  color: #999999;
+.left .time {
+  color: #999;
 }
 
 .right {
+  /* 占据剩余宽度 */
   flex: 1;
   font-size: 26rpx;
   font-weight: 500;
   line-height: 37rpx;
-  color: #333333;
+  color: #333;
   position: relative;
 }
 
 .right::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 2rpx;
   background: pink;
   border-radius: 4rpx;
-  left: -40rpx;
   height: 100%;
+  left: -40rpx;
   top: 35rpx;
-  /* top: 13%; */
 }
 
-.circle {
+.right .circle {
   position: absolute;
   width: 29rpx;
   height: 29rpx;
-  border: 2rpx solid rgb(255, 192, 203, 0.4);
+  border: 2rpx solid rgb(255, 192, 203);
   border-radius: 50%;
-  /* top: 9%; */
   top: 20rpx;
   left: -54rpx;
-  z-index: 99;
+  z-index: 2;
   background: #fff;
 }
 
-.circle::after {
-  content: "";
+.right .circle::after {
+  content: '';
   position: absolute;
   width: 15rpx;
   height: 15rpx;
@@ -85,7 +83,7 @@ page {
 }
 
 .r_box::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -93,18 +91,13 @@ page {
   border-bottom: 13rpx solid transparent;
   border-right: 17rpx solid #e4c1c1;
   left: -15rpx;
-  /* top: 15%; */
   top: 20rpx;
 }
 
-.flex:last-child .right .r_box {
+.con-item:last-child .right .r_box {
   margin-bottom: 0;
 }
 
-.flex:last-child .right .r_box {
-  margin-bottom: 0;
-}
-
-.flex:last-child .right::after {
+.con-item:last-child .right::after {
   display: none;
 }

@@ -1,7 +1,7 @@
 <!--pages/cssCase/stepsAnt/index.wxml-->
 <view class="con">
   <block wx:for="{{list}}" wx:key="list">
-    <view class="flex">
+    <view class="flex con-item">
       <view class="left">
         <view>{{item.date}}</view>
         <view class="time">{{item.time}}</view>
