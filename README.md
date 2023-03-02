@@ -2,7 +2,6 @@
 ![输入图片说明](https://img.shields.io/badge/%E8%87%AA%E5%AE%9A%E4%B9%89tabbar----yellowgreen)
 ![输入图片说明](https://img.shields.io/badge/UI%E7%BB%84%E4%BB%B6----yellowgreen)
 ![输入图片说明](https://img.shields.io/badge/%20%20%E5%8E%9F%E7%94%9F----blue)
-![输入图片说明](https://img.shields.io/badge/vant----green)
 ![输入图片说明](https://img.shields.io/badge/%E7%BB%84%E4%BB%B6%E5%8C%96----red)
 ![输入图片说明](https://img.shields.io/badge/%E6%8A%BD%E5%A5%96%E7%BB%84%E4%BB%B6----orange)
 ![输入图片说明](https://img.shields.io/badge/%E6%97%A5%E5%8E%86%E7%BB%84%E4%BB%B6----orange)
@@ -13,7 +12,7 @@
 ![](https://camo.githubusercontent.com/927762d2b67f6d53db4b1146ca78273ccbb380f731ec285470d3b35acba76a53/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f737573752d68752f737573752d68752f696d672fe88b8fe88b8fe79a846275672e6a7067)
 ![](https://s3.bmp.ovh/imgs/2022/07/27/85dabf1d5821a98b.png)
 #### 介绍
-微信小程序封装组件，覆盖常用需求：包括轮播组件（堆叠式轮播等）、canvas（圆环、生海报、裁图片等）、map、echarts、css3动画，scroll-view、步骤条、日历组件、自定义tabbar+导航栏、loading加载动画、css渐变、雪碧图、瀑布流、关键词高亮、搜索历史、图片懒加载、节流防抖、索引选择（如城市）、微信拆红包、红包雨、菜单弹出动画、3d云、按钮拖拽、营销组件（九宫格等）等！（ **_无其他ui组件库----vant仅限于测试_** ）
+微信小程序封装组件，覆盖常用需求：包括轮播组件（堆叠式轮播等）、canvas（圆环、生海报、裁图片等）、map、echarts、css3动画，scroll-view、步骤条、日历组件、自定义tabbar+导航栏、loading加载动画、css渐变、雪碧图、瀑布流、关键词高亮、搜索历史、图片懒加载、节流防抖、索引选择（如城市）、微信拆红包、红包雨、菜单弹出动画、3d云、按钮拖拽、营销组件（九宫格等）等！（ **_无ui组件库** ）
 ##### 注意：所使用到的图片素材均为学习交流使用, 请勿将其用于商业用途, 由此产生的任何法律纠纷概不负责。
 
 ### 伙伴们，这是一个小程序组件合集，涵盖了常见的一些需求，该版本是开源版，后续我将重新对此版本改版，并加上一些新的需求，作为一个ui组件库出现，针对微信小程序和uniapp！
@@ -81,7 +80,7 @@ git clone https://gitee.com/susuhhhhhh/wxmini_demo.git
 - [x] 46. 一个带半圆的卡片
 - [x] 47. 自定义导航栏（精准定位）
 - [x] 48. 商城首页普通版（自定义导航栏）
-- [x] 49. vant日历多日期选择（安装vant step1：npm init step2：npm i @vant/weapp -S --production step3：将 app.json 中的 "style": "v2" 去除 step4：使用npm模块 
+- [x] 49.（该模块已删除，如需可自行前往vant官网） vant日历多日期选择（安装vant step1：npm init step2：npm i @vant/weapp -S --production step3：将 app.json 中的 "style": "v2" 去除 step4：使用npm模块 
 step5：构建npm）
 - [x] 50. 背景图片在一屏之内
 - [x] 51.自定义actionSheet+保存图片（开启授权-》引导用户打开设置页）,需在调式下运行。
@@ -129,7 +128,7 @@ step5：构建npm）
 - [x] 93. 多图片下载
 - [x] 94. 弹出的菜单
 - [x] 95. css实现一个弹出的菜单
-- [x] 96. vant上传图片
+- [x] 96. vant上传图片（该模块已删除，如需可自行前往vant官网）
 - [x] 97. swiper展示数量的不同，swiper高度随之变化
 - [x] 98. 横向消息滚动条
 - [x] 99. css实现一个笑脸
@@ -301,7 +300,7 @@ step5：构建npm）
 ##### 自定义导航栏（精准定位）
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1026/221355_86e61315_8576727.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1029/180110_5a53c09a_8576727.png "屏幕截图.png")
-##### vant日历多日期选择
+##### vant日历多日期选择（该模块已删除，如需可自行前往vant官网）
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1102/104516_6f6ed9ce_8576727.png "屏幕截图.png")
 ##### 背景一屏
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1102/175157_e2eedfa3_8576727.png "屏幕截图.png")
@@ -391,7 +390,7 @@ step5：构建npm）
 ##### 实现一个弹出的菜单
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BC%B9%E5%87%BAmenu.gif)
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E8%8F%9C%E5%8D%95pop.gif)
-##### vant文件上传
+##### vant文件上传（该模块已删除，如需可自行前往vant官网）
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/upload.gif)
 ##### swiper高度与数量同步 
 ![输入图片说明](https://gitee.com/susuhhhhhh/su-sus-picture/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F/swiperHeight.png)
