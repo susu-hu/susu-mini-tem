@@ -30,15 +30,13 @@
     "pages/demo/index2",
     "pages/cal/index2",
     "pages/cal2/index2",
-    "pages/vantCalen/index",
     "pages/charts/index3",
     "pages/charts/index4",
     "pages/charts/index5",
     "pages/charts/index6",
     "pages/charts/index7"
   ],
-  "subPackages": [
-    {
+  "subPackages": [{
       "root": "pages/another/",
       "pages": [
         "subIndex/index",
@@ -163,7 +161,6 @@
         "pubuliu/index",
         "costomNav/index",
         "shopIndex/index",
-        "vantCircle/index",
         "bgImg/index",
         "circleBar/index",
         "customSheet/index",
@@ -185,8 +182,6 @@
         "popCust/index",
         "statusList/index",
         "fileDown/index",
-        "vanUpload/index",
-        "vanUpload/index2",
         "textarea/index",
         "newsSwiper/index2",
         "iconFont/index",
@@ -303,8 +298,7 @@
     "selectedColor": "#6B1F72",
     "borderStyle": "white",
     "backgroundColor": "#ffffff",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "iconPath": "img/tabbar/icon_index.png",
         "selectedIconPath": "img/tabbar/icon_index_sel.png",

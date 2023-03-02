@@ -36,10 +36,6 @@ Page({
             url: "/pages/cal2/index2",
           },
           {
-            name: "vant日历多日期选择",
-            url: "/pages/vantCalen/index",
-          },
-          {
             name: "滑动删除",
             url: "/pages/touchMove2/index",
           },
@@ -489,10 +485,6 @@ Page({
           {
             name: "不同状态不同颜色",
             url: "/pages/wxCase/statusList/index",
-          },
-          {
-            name: "vant上传文件",
-            url: "/pages/wxCase/vanUpload/index",
           },
           {
             name: "自定义组件的slot用法",

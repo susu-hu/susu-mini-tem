@@ -1,7 +1,0 @@
-<!--pages/wxCase/vanUpload/index2.wxml-->
-<block wx:for="{{memu_list}}" wx:key="memu_list">
-  <view class="menu">
-    <view class="memu_title ">{{index+1}}.{{item.title}}</view>
-    <van-uploader data-index="{{index}}" file-list="{{ item.fileList }}" bind:delete="fileDel" bind:after-read="afterRead" use-before-read bind:before-read="beforeRead" deletable="{{ true }}" />
-  </view>
-</block>

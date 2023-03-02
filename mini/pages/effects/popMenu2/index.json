@@ -1,8 +1,8 @@
 {
   "usingComponents": {
-    "van-uploader": "@vant/weapp/uploader/index"
+
   },
   "navigationBarTitleText": "弹出的菜单2",
   "backgroundTextStyle": "dark",
-  "backgroundColor":"#fff"
+  "backgroundColor": "#fff"
 }

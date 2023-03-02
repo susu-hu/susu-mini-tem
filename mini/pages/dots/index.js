@@ -34,14 +34,14 @@ Page({
     * 图片预览
     * @param e
     */
-  //  previewImage(e) {
-  //   let currentUrl = e.currentTarget.dataset.src;
-  //   let urls = this.data.imgList
-  //   wx.previewImage({
-  //     current: currentUrl, // 当前显示图片的http链接
-  //     urls: urls// 需要预览的图片http链接列表
-  //   })
-  // },
+  previewImage(e) {
+    let currentUrl = e.currentTarget.dataset.src;
+    let urls = this.data.imgList.map(i => i.img)
+    wx.previewImage({
+      current: currentUrl, // 当前显示图片的http链接
+      urls: urls// 需要预览的图片http链接列表
+    })
+  },
 
 
 })
