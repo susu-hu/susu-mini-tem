@@ -1,5 +1,15 @@
 <!--pages/cssCase/circleHead/index.wxml-->
+<!-- 方式一：伪元素 配合overflow-->
 <view class="head mb20"></view>
+<!-- 方式二:一个整圆，配合overflow -->
+<view class="circle ">
+  <view class="inner1"></view>
+</view>
+<!-- 方式三：clip-path -->
 <view class="circle">
-  <view class="nox"></view>
+  <view class="inner2"></view>
+</view>
+<!-- 方式四：渐变:配合overflow-->
+<view class="circle">
+  <view class="inner3"></view>
 </view>

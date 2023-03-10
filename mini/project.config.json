@@ -41,20 +41,7 @@
   "compileType": "miniprogram",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": []
-    }
-  },
+  "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
@@ -64,5 +51,6 @@
     "ignore": [],
     "include": []
   },
-  "appid": "wx6bbc79b3530ad294"
+  "appid": "wx6bbc79b3530ad294",
+  "projectname": "demo_mini"
 }

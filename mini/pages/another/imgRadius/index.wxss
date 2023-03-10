@@ -29,6 +29,12 @@ page {
   border-radius: 100% 100% 100% 100% / 0% 0% 18% 18%;
 }
 
+.clip-path-img {
+  width: 750rpx;
+  height: 300px;
+  clip-path: ellipse(75% 50% at 50% 35%);
+}
+
 .a {
   border-radius: 50% 50% 50% 50% / 0% 0% 18% 18%;
   width: 750rpx;
@@ -37,7 +43,7 @@ page {
   background-color: #222;
 }
 
-.b{
+.b {
   width: 750rpx;
   height: 300px;
   margin: 30px auto;

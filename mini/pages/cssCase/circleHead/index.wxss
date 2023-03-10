@@ -1,4 +1,8 @@
 /* pages/cssCase/circleHead/index.wxss */
+page {
+  --bg: #FA871E;
+}
+
 .head {
   width: 100%;
   height: 231rpx;
@@ -15,7 +19,7 @@
   left: -20%;
   top: 0;
   border-radius: 0 0 50% 50%;
-  background: #FA871E;
+  background: var(--bg);
 }
 
 .mb20 {
@@ -23,21 +27,39 @@
 }
 
 .circle {
-  border: 1px solid #FA871E;
+  border: 1px solid var(--bg);
   width: 600rpx;
   overflow: hidden;
-  height: 700rpx;
-  margin: 0 auto;
+  height: 600rpx;
+  margin: 20rpx auto;
   border-radius: 20rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.nox {
+.inner1,
+.inner2,
+.inner3 {
+  background-color: var(--bg);
+}
+
+.inner1 {
   width: 680rpx;
   height: 680rpx;
-  background-color: #FA871E;
   border-radius: 50%;
   margin-top: -260rpx;
+}
+
+.inner2 {
+  width: 100%;
+  height: 300rpx;
+  clip-path: ellipse(75% 50% at 50% 35%);
+}
+
+.inner3 {
+  width: 200%;
+  /* 父元素宽度的2倍 */
+  height: 100%;
+  background: radial-gradient(circle at 50% -200rpx, var(--bg), var(--bg) 600rpx, transparent 603rpx, transparent);
 }

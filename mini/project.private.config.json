@@ -7,7 +7,14 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/wxCase/slot/index",
+          "pathName": "pages/cssCase/circleHead/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/another/imgRadius/index",
           "query": "",
           "launchMode": "default",
           "scene": null
