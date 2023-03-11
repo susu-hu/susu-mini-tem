@@ -1,0 +1,12 @@
+<!--pages/wxCase/customHead/index.wxml-->
+<view class="header">
+  <image src="https://i.postimg.cc/GhXrMDN0/card.jpg" mode="aspectFill" class="header-bg" />
+  <view style="height: {{navHeight}}px;">
+    <view style="height: {{navObj}}px;padding-top: {{navTop}}px;padding-right:{{navObjWidth+5}}px;">
+      <view class="head-back flex-row j_b">
+        <image src="../img/return.png" mode="aspectFill" catchtap="handleBackClick" />
+        <image src="../img/home.png" mode="aspectFill" catchtap="handleHomeClick" />
+      </view>
+    </view>
+  </view>
+</view>

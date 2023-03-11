@@ -14,7 +14,7 @@
         },
         {
           "name": "",
-          "pathName": "pages/scroll/index",
+          "pathName": "pages/wxCase/customHead/index",
           "query": "",
           "launchMode": "default",
           "scene": null

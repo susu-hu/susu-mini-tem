@@ -506,6 +506,10 @@ Page({
             name: "scrollIntoView的实现",
             url: "/pages/wxCase/scrollIntoView/index",
           },
+          {
+            name: "自定义导航栏",
+            url: "/pages/wxCase/customHead/index",
+          },
         ],
       },
       {
