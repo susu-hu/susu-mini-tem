@@ -7,14 +7,14 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/cssCase/circleHead/index",
+          "pathName": "pages/cssCase/cardVoucher/index",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/another/imgRadius/index",
+          "pathName": "pages/scroll/index",
           "query": "",
           "launchMode": "default",
           "scene": null

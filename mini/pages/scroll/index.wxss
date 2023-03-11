@@ -4,13 +4,15 @@ page {
 }
 
 .top {
-  margin: 24rpx 20rpx 30rpx;
   width: 710rpx;
   height: 300rpx;
-  background: #e0bbc3;
-  border-radius: 20rpx;
+  margin: 0 auto;
+  padding: 30rpx 0;
 }
+
 .top_con {
+  border-radius: 20rpx;
+  background: #e0bbc3;
   width: 710rpx;
   height: 300rpx;
   box-sizing: border-box;
@@ -22,23 +24,24 @@ page {
   justify-content: center;
   align-items: center;
 }
+
 /* con */
 .con {
-  margin: 0 auto ;
+  margin: 0 auto;
 }
 
 .left {
   width: 183rpx;
   margin-right: 25rpx;
   background: #F5F5F5;
-  padding-bottom: env(safe-area-inset-bottom) ;
+  padding-bottom: env(safe-area-inset-bottom);
   padding-bottom: constant(safe-area-inset-bottom)
 }
 
 .right {
   width: 542rpx;
   margin-right: 20rpx;
-  padding-bottom: env(safe-area-inset-bottom) ;
+  padding-bottom: env(safe-area-inset-bottom);
   padding-bottom: constant(safe-area-inset-bottom)
 }
 
@@ -53,21 +56,26 @@ page {
   justify-content: center;
   background: #f5f5f5;
 }
-.pre_c{
+
+.pre_c {
   border-radius: 0 0 20rpx;
 }
-.next_c{
+
+.next_c {
   border-radius: 0 20rpx 0 0;
 }
+
 .chosed {
   background-color: #fff;
   color: #e0bbc3;
 }
-.t_name{
+
+.t_name {
   font-size: 28rpx;
   font-weight: bold;
   margin-bottom: 20rpx;
 }
+
 /* goodslist */
 .item {
   /*padding-bottom: 30rpx;*/
@@ -75,7 +83,7 @@ page {
   margin-bottom: 30rpx;
 }
 
-.goods-item{
+.goods-item {
   padding-bottom: 30rpx;
 }
 
@@ -83,6 +91,7 @@ page {
   border-bottom: none;
   margin-bottom: 0;
 }
+
 .item_img {
   width: 132rpx;
   height: 132rpx;
@@ -108,10 +117,12 @@ page {
   font-weight: bold;
   color: #333333;
 }
-.s_price{
+
+.s_price {
   font-size: 20rpx;
   color: #c02e2e;
 }
+
 .item_input {
   margin-left: 23rpx;
   width: 180rpx;
@@ -135,19 +146,22 @@ page {
   font-weight: bold;
   color: #666666;
 }
+
 /* 隐藏scroll-view的滚动条 */
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
   color: transparent;
- }
- .no_tip{
-   display: block;
-   padding-top: 40rpx;
-   font-size: 28rpx;
-   color: #666666;
- }
- .goods_none{
+}
+
+.no_tip {
+  display: block;
+  padding-top: 40rpx;
+  font-size: 28rpx;
+  color: #666666;
+}
+
+.goods_none {
   width: 150rpx;
   height: 150rpx;
- }
+}

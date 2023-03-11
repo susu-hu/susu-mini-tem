@@ -12,12 +12,12 @@ Page({
             url: "/pages/demo/index",
           },
           {
-            name: "双向锚点定位",
-            url: "/pages/scroll/index",
-          },
-          {
             name: "物流的第二种写法(伪元素after)",
             url: "/pages/demo/index2",
+          },
+          {
+            name: "双向锚点定位",
+            url: "/pages/scroll/index",
           },
           {
             name: "日历样式一",

@@ -1,44 +1,44 @@
 <!--pages/scroll/index.wxml-->
 <view class="top" id="top">
   <view class="top_con">
-     <text>1.scroll-view根据剩余高度填充</text>
-     <text>2.滑动列表选中不同分类</text>
+    <text>1.scroll-view根据剩余高度填充</text>
+    <text>2.滑动列表选中不同分类</text>
   </view>
 </view>
-<view class="con flex" >
-  <view class="left" style="height:{{scrollheight}}rpx">
-      <scroll-view scroll-y style="height:{{scrollheight}}rpx" scroll-with-animation="true" scroll-top="{{scrollTop}}" class="s_left">
-        <view  style="background: #fff;">
-          <block wx:for="{{cateList}}" wx:key="cateList">
-              <view class="caname {{chosed_index==index ?'chosed':''}}  {{index+1==chosed_index && 'pre_c'}} {{index-1==chosed_index && 'next_c'}}" id="sidebar-item-{{item.id}}"data-id="{{item.id}}" data-index="{{index}}" catchtap="choseCate">{{item.name}}
-              </view>
-          </block>   
-        </view>
-      </scroll-view>
+<view class="con flex">
+  <view class="left" style="height:{{scrollheight}}px">
+    <scroll-view scroll-y style="height:{{scrollheight}}px" scroll-with-animation="true" class="s_left">
+      <view style="background: #fff;">
+        <block wx:for="{{cateList}}" wx:key="cateList">
+          <view class="caname {{chosed_index==index ?'chosed':''}}  {{index+1==chosed_index && 'pre_c'}} {{index-1==chosed_index && 'next_c'}}" id="sidebar-item-{{item.id}}" data-id="{{item.id}}" data-index="{{index}}" catchtap="choseCate">{{item.name}}
+          </view>
+        </block>
+      </view>
+    </scroll-view>
   </view>
-  <view class="right" style="height:{{scrollheight}}rpx">
-      <scroll-view scroll-y style="height:{{scrollheight}}rpx;" scroll-with-animation="true"  scroll-into-view="{{toTitle}}" class="s_right" bindscroll="onScroll">
-          <view class="item" id="title-{{item.type_id}}" wx:for="{{goods_list}}" wx:key="goods_list">
-            <view class="t_name">{{item.type_name}}</view>
-            <view wx:if="{{item.list.length>0}}">
-              <view class="goods-item"  wx:for="{{item.list}}"wx:key="goods_list" wx:for-item="item1"wx:for-index="index1">
-                <view class="flex j_b">
-                    <image src="{{item1.img}}" class="item_img"></image>
-                    <view class="item_name">
-                        <text class="name">{{item1.goods_name}}</text>
-                        <view class="flex-row">
-                            <text class="stock_text">价格:</text>
-                            <text class="s_price">￥{{item1.price}}</text>
-                        </view>
-                    </view>
+  <view class="right" style="height:{{scrollheight}}px">
+    <scroll-view scroll-y style="height:{{scrollheight}}px;" scroll-with-animation="true" scroll-into-view="{{toTitle}}" class="s_right" bindscroll="onScroll">
+      <view class="item" id="title-{{item.type_id}}" wx:for="{{goods_list}}" wx:key="goods_list">
+        <view class="t_name">{{item.type_name}}</view>
+        <view wx:if="{{item.list.length>0}}">
+          <view class="goods-item" wx:for="{{item.list}}" wx:key="goods_list" wx:for-item="item1" wx:for-index="index1">
+            <view class="flex j_b">
+              <image src="{{item1.img}}" class="item_img"></image>
+              <view class="item_name">
+                <text class="name">{{item1.goods_name}}</text>
+                <view class="flex-row">
+                  <text class="stock_text">价格:</text>
+                  <text class="s_price">￥{{item1.price}}</text>
                 </view>
               </view>
             </view>
-            <view wx:else class="flex-column">
-              <image src="/img/goods_none.png" class="goods_none"></image>
-              <text class="no_tip">暂无商品哦~</text>
-            </view>
           </view>
-      </scroll-view>
+        </view>
+        <view wx:else class="flex-column">
+          <image src="/img/goods_none.png" class="goods_none"></image>
+          <text class="no_tip">暂无商品哦~</text>
+        </view>
+      </view>
+    </scroll-view>
   </view>
 </view>
