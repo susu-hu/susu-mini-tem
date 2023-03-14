@@ -11,13 +11,6 @@
           "query": "",
           "launchMode": "default",
           "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/wxCase/customHead/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
         }
       ]
     }
