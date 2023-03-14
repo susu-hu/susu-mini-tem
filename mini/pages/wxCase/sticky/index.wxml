@@ -1,0 +1,17 @@
+<!--pages/wxCase/sticky/index.wxml-->
+<view class="head_title">
+  <view class="mb20">方法一：position: sticky，简单粗暴，存在部分机型不支持，<navigator url="/pages/wxCase/sticky/index">去查看</navigator>
+  </view>
+  <view>方法二：监听页面滚动onPageScroll，可能存在卡顿</view>
+</view>
+<view class="hd {{isFixed&&'fixed'}}" id="nav">
+  <block wx:for="{{navList}}" wx:key="navList">
+    <view class="hd_flex {{nav_type == index ? 'hd_flex_on' : ''}}" catchtap="changeType" data-index="{{index}}">{{item}}
+    </view>
+  </block>
+</view>
+<view class="content {{isFixed&&'pt'}}" id="content">
+  <block wx:for="{{nav_type==0?20:nav_type==1?0:40}}" wx:key="list">
+    <view>{{index+1}}</view>
+  </block>
+</view>

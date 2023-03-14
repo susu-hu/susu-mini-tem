@@ -510,6 +510,10 @@ Page({
             name: "自定义导航栏",
             url: "/pages/wxCase/customHead/index",
           },
+          {
+            name: "滚动吸顶",
+            url: "/pages/wxCase/sticky/index",
+          },
         ],
       },
       {

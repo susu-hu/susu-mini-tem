@@ -1,0 +1,87 @@
+/* pages/wxCase/sticky/index.wxss */
+/* pages/wxCase/sticky/index2.wxss */
+.head_title {
+  background: #EECDA3;
+  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
+  background: linear-gradient(to right, #EF629F, #EECDA3);
+  height: 300rpx;
+  color: #fff;
+  font-size: 25rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.hd {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  background: #fff;
+  margin-bottom: 10rpx;
+  box-shadow: 0rpx 5rpx 5rpx #ccc;
+  /* 方法一：滚动吸顶 */
+  /* position: sticky;
+  position: -webkit-sticky;
+  top: 0; */
+}
+
+.hd .hd_flex {
+  flex: 1;
+  text-align: center;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+
+.hd .hd_flex_on {
+  font-size: 30rpx;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* 规定背景的绘制区 */
+  color: transparent;
+  background-image: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
+  background-image: linear-gradient(to right, #EF629F, #EECDA3);
+  position: relative;
+  transition: 0.3s all linear;
+  transition-delay: 0.1s;
+}
+
+.hd .hd_flex::after {
+  content: "";
+  position: absolute;
+  bottom: 4rpx;
+  width: 0%;
+  height: 6rpx;
+  background-image: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
+  background-image: linear-gradient(to right, #EF629F, #EECDA3);
+  border-radius: 3rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hd .hd_flex_on::after {
+  width: 40%;
+  transition: 0.3s width linear;
+}
+
+.content view {
+  background: #fff;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-bottom: 1rpx solid #eaeef1;
+  padding: 20rpx;
+  color: #999;
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.content.pt {
+  padding-top: 88rpx;
+}
