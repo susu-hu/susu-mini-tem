@@ -1,14 +1,11 @@
-/* pages/wxCase/sticky/index.wxss */
-/* pages/wxCase/sticky/index2.wxss */
-.head_title {
-  background: #EECDA3;
-  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
-  background: linear-gradient(to right, #EF629F, #EECDA3);
+.head-title {
+  background: linear-gradient(to right, #ef629f, #eecda3);
   height: 300rpx;
-  color: #fff;
-  font-size: 25rpx;
-  padding: 20rpx;
+  width: 100%;
   box-sizing: border-box;
+  padding: 20rpx;
+  font-size: 25rpx;
+  color: #fff;
 }
 
 .hd {
@@ -17,52 +14,47 @@
   line-height: 88rpx;
   display: flex;
   background: #fff;
-  margin-bottom: 10rpx;
-  box-shadow: 0rpx 5rpx 5rpx #ccc;
-  /* 方法一：滚动吸顶 */
-  /* position: sticky;
-  position: -webkit-sticky;
-  top: 0; */
+  box-shadow: 0 5rpx 5rpx #ccc;
+  position: relative;
 }
 
-.hd .hd_flex {
+.hd-item {
   flex: 1;
   text-align: center;
-  font-size: 28rpx;
-  font-family: PingFang SC;
   font-weight: 500;
-  color: #333333;
+  color: #333;
+  font-size: 28rpx;
+  position: relative;
 }
 
-.hd .hd_flex_on {
+.hd-item::after {
+  content: '';
+  position: absolute;
+  /* 设置默认宽度为0 */
+  width: 0%;
+  height: 6rpx;
+  background: linear-gradient(to right, #ef629f, #eecda3);
+  border-radius: 3rpx;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 4rpx;
+  /* 添加过渡效果 */
+  transition: 0.3s width linear;
+}
+
+/* 激活选中样式 */
+.hd-item.active {
   font-size: 30rpx;
   background-clip: text;
   -webkit-background-clip: text;
-  /* 规定背景的绘制区 */
   color: transparent;
-  background-image: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
-  background-image: linear-gradient(to right, #EF629F, #EECDA3);
-  position: relative;
+  background-image: linear-gradient(to right, #ef629f, #eecda3);
   transition: 0.3s all linear;
   transition-delay: 0.1s;
 }
 
-.hd .hd_flex::after {
-  content: "";
-  position: absolute;
-  bottom: 4rpx;
-  width: 0%;
-  height: 6rpx;
-  background-image: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
-  background-image: linear-gradient(to right, #EF629F, #EECDA3);
-  border-radius: 3rpx;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.hd .hd_flex_on::after {
+.hd-item.active::after {
   width: 40%;
-  transition: 0.3s width linear;
 }
 
 .content view {
@@ -75,13 +67,14 @@
   text-align: center;
 }
 
+.content.pt {
+  padding-top: 88rpx;
+  /* nav的高度 */
+}
+
 .fixed {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 999;
-}
-
-.content.pt {
-  padding-top: 88rpx;
+  z-index: 1;
 }
