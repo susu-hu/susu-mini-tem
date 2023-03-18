@@ -7,6 +7,13 @@
       "list": [
         {
           "name": "",
+          "pathName": "pages/subPack/customIpt/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
           "pathName": "pages/wxCase/sticky/index",
           "query": "",
           "launchMode": "default",
