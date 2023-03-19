@@ -1,30 +1,31 @@
 <!--pages/wxCase/pubuliu/index.wxml-->
 <view class="content">
-  <view class="left">
-    <block wx:for="{{list}}" wx:key="index">
-      <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+  <view class="content-left">
+    <block wx:for="{{list}}" wx:key="list">
+      <template is='item-data' data='{{...item}}' wx:if="{{index % 2 ==0}}"></template>
     </block>
   </view>
-  <view class="right">
-    <block wx:for="{{list}}" wx:key="index">
-      <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+  <view class="content-right">
+    <block wx:for="{{list}}" wx:key="list">
+      <template is='item-data' data='{{...item}}' wx:if="{{index % 2 ==1}}"></template>
     </block>
   </view>
 </view>
-<template name="item">
-  <view class="item">
-    <image class="item-img" src="{{url}}" mode="widthFix"></image>
-    <view class="item-title-box">
-      <navigator url="url" class="item-title">{{title}}</navigator>
-    </view>
-    <view class="name">
-      <image class="item-ava" src="{{avatar}}"></image>
-      <text class="name-title">{{name}}</text>
-      <view class="heart">
-        <text>{{num}}</text>
+<!-- 定义模板 -->
+<template name="item-data">
+  <view class="content-item">
+    <!-- 重点是mode为widthFix -->
+    <image src="{{url}}" class="content-item-img" mode="widthFix" />
+    <view class="content-item-box">
+      <view class="content-item-title">{{title}}</view>
+      <view class="content-item-name">
+        <!-- flex-row为全局样式 写在app.wxss中 -->
+        <view class="flex-row">
+          <image src="{{avatar}}" mode="aspectFill" class="content-item-avatar" />
+          <view>{{name}}</view>
+        </view>
+        <view class="content-item-heart">{{num}}</view>
       </view>
     </view>
   </view>
 </template>
-
-<!-- 该种方法有弊端，假设偶数行数据都是短图，就会形成 左侧很长，右侧很短-->
