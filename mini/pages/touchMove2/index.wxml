@@ -1,25 +1,13 @@
 <!--pages/touchMove2/index.wxml-->
-<view class="con">
-  <block wx:for="{{cardList}}" wx:key="index">
-    <view class="top" >
+<view class="container">
+  <block wx:for="{{cardList}}" wx:key="cardList">
+    <view class="container-item">
       <movable-area>
-        <movable-view out-of-bounds="true" direction="horizontal" x="{{item.xmove}}" inertia="true" 
-        data-index="{{index}}" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd"bindchange="handleMovableChange">  
-            <view>{{item.name}}</view>
+        <movable-view out-of-bounds="true" direction="horizontal" x="{{item.xmove}}" inertia="true" data-index="{{index}}" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" bindchange="handleMovableChange">
+          <view>{{item.name}}</view>
         </movable-view>
       </movable-area>
-      <view class="movable_delete_btn" data-id="{{item.id}}" bindtap="handleDelete">删除</view>
+      <view class="movable_delete_btn" data-id="{{item.id}}" catchtap="handleDelete">删除</view>
     </view>
   </block>
 </view>
-<!-- <view class="f">
-  <view class="f1">1</view>
-  <view class="f1">1</view>
-  <view class="f1">1</view>
-  <view class="f1">1</view>
-  <view class="f1">1</view>
-  <view class="f1">1</view>
-  <view class="f1">1</view>
-  <view class="f1">1</view>
-   <view class="clear"></view>
-</view> -->

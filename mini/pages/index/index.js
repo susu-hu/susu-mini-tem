@@ -94,10 +94,6 @@ Page({
             url: "/pages/another/circleRing/index",
           },
           {
-            name: "圆环进度条2(接口已废弃)",
-            url: "/pages/another/circleRing/index2",
-          },
-          {
             name: "自定义滚动条样式",
             url: "/pages/another/customScroll/index",
           },
