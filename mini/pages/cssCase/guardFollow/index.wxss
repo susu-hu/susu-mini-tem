@@ -1,127 +1,88 @@
-.scorll_head {
-  background: linear-gradient(0deg, #f3dcae 0%, #ffffff 100%);
-  height    : 100vh;
+page {
+  background: #fff;
 }
 
 .show_box {
-  top       : 20%;
-  position  : fixed;
-  width     : 100%;
-  z-index   : 1111;
+  position: fixed;
+  top: 20%;
+  width: 100%;
   box-sizing: border-box;
-  padding   : 30px;
-  color     : #fff;
-  font-size : 25rpx;
+  padding: 60rpx;
+  color: #fff;
+  font-size: 25rpx;
+  /* 层级高于mask */
+  z-index: 1001;
 }
 
-.show_box .show_item {
+.show_item {
   margin-bottom: 50rpx;
+  /* 添加动画 */
+  animation: fadeIn-left calc(1s * var(--d)) forwards;
 }
 
-.show_box .show_item:nth-child(1) {
-  animation: fadeIn-left 1s;
+.show_item:last-child {
+  margin-bottom: 0;
 }
 
-.show_box .show_item:nth-child(2) {
-  animation: fadeIn-left 2s;
-}
-
-.show_box .show_item:nth-child(3) {
-  animation: fadeIn-left 3s;
-}
-
-.show_box .show_jiao {
-  border        : 1px dashed #fff;
-  width         : 95rpx;
-  height        : 40rpx;
-  margin-left   : 20px;
-  text-align    : center;
-  vertical-align: top;
-  border-radius : 20rpx;
-  font-size     : 30px;
-}
-
-.show_box .show_jiao view {
-  width        : 13rpx;
-  height       : 13rpx;
-  background   : #fff;
+.box_index {
+  font-size: 20rpx;
+  flex-shrink: 0;
+  width: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
   border-radius: 50%;
-  box-shadow   : 22rpx 0rpx #fff, -22rpx 0 #fff;
-  margin       : 0 auto;
+  background: #e4a451;
+  margin-right: 20rpx;
 }
 
-.show_box .box_index {
-  font-size    : 20rpx;
-  flex-shrink  : 0;
-  color        : #fff;
-  line-height  : 40rpx;
-  width        : 40rpx;
-  height       : 40rpx;
-  text-align   : center;
+.box_circle {
+  position: relative;
+  width: 95rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+  border-radius: 20rpx;
+  border: 1rpx dashed #fff;
+}
+
+.box_circle::after {
+  content: '';
+  width: 13rpx;
+  height: 13rpx;
+  background: #fff;
   border-radius: 50%;
-  background   : #e4a451;
-  margin-right : 20rpx;
+  box-shadow: 22rpx 0 #fff, -22rpx 0 #fff;
 }
 
-.show_box .show_btn {
-  border       : 1px dashed #fff;
-  width        : 70%;
-  animation    : fadeIn 7s;
-  font-size    : 30rpx;
-  line-height  : 72rpx;
-  text-align   : center;
+.show_btn {
+  border: 1px dashed #fff;
+  width: 70%;
+  font-size: 30rpx;
+  line-height: 72rpx;
+  text-align: center;
   border-radius: 44rpx;
-  margin       : 12% auto 0 auto;
-  color        : #fff;
-}
-
-/* 动画 */
-
-
-@-webkit-keyframes fadeIn-left {
-  from {
-    opacity          : 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform        : translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity          : 1;
-    -webkit-transform: none;
-    transform        : none;
-  }
+  margin: 12% auto 0;
+  /* 添加动画 */
+  animation: fadeIn 5s linear;
 }
 
 @keyframes fadeIn-left {
-  from {
-    opacity          : 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform        : translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity          : 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform        : translate3d(0, 0, 0);
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
+    transform: translate3d(-100%, 0, 0);
   }
 
-  to {
+  100% {
     opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
   }
 
-  to {
+  100% {
     opacity: 1;
   }
 }
