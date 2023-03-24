@@ -29,6 +29,3 @@
 <view class="btn" catchtap="proAdd">进度++</view>
 <view class="btn" catchtap="proAdd">进度++</view>
 <view class="btn" catchtap="proAdd">进度++</view>
-<view style="text-align: center;">已经到底了</view>
-<view style="text-align: center;">已经到底了</view>
-<view style="text-align: center;">已经到底了</view>

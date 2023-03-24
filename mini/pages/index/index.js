@@ -367,14 +367,6 @@ Page({
         name: "分包wxCase",
         list: [
           {
-            name: "裁剪图片",
-            url: "/pages/wxCase/cutImage/index",
-          },
-          {
-            name: "老虎机",
-            url: "/pages/wxCase/laohuji/index",
-          },
-          {
             name: "小程序的navigator标签",
             url: "/pages/wxCase/navigator/index",
           },
@@ -621,10 +613,6 @@ Page({
             url: "/pages/jsCase/pageDestory/index",
           },
           {
-            name: "图片懒加载（待更新.....",
-            url: "/pages/jsCase/lazyLoad/index",
-          },
-          {
             name: "索引选择（城市)",
             url: "/pages/jsCase/citySel/index",
           },
@@ -673,10 +661,6 @@ Page({
           {
             name: "弹出的菜单2",
             url: "/pages/effects/popMenu2/index",
-          },
-          {
-            name: "生成头像",
-            url: "/pages/effects/avatar/index",
           },
           {
             name: "3d云",
