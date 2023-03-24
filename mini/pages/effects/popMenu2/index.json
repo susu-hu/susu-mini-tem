@@ -1,8 +1,6 @@
 {
-  "usingComponents": {
-
-  },
-  "navigationBarTitleText": "弹出的菜单2",
-  "backgroundTextStyle": "dark",
-  "backgroundColor": "#fff"
+  "usingComponents": {},
+  "navigationBarTitleText": "CSS 实现弹出的菜单动画",
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "dark"
 }

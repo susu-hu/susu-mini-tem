@@ -1,15 +1,17 @@
 <!--pages/effects/popMenu2/index.wxml-->
-<view class="mask1 {{maskAnimation}}" catchtouchmove="preventdefault"></view>
-<view class='menu-container' catchtouchmove="preventdefault" hidden='{{isShow}}'>
-  <view class='menu'>
-    <view class='menu-list'>
-      <navigator url="{{item.url}}" class='menu-item' wx:for='{{menuList}}' wx:key="menuList" style="width:{{menuList.length>=4?'25':100/menuList.length}}%;animation-delay: {{(index+1)*0.1}}s">
-        <image mode='aspectFill' src='{{item.src}}' class="menu-icon"></image>
-        <text class='menu-name'>{{item.name}}</text>
-      </navigator>
-    </view>
+<view class="mask-bg {{className}}"></view>
+<!-- 添加按钮 -->
+<view class="btn" catchtap="handleClick">
+  <view class="show-btn flex-row j_c  {{className}}">
+    <image src="/img/add.png"></image>
   </view>
 </view>
-<view class="btn">
-  <view catchtap="click" class="btn-main {{btnAnimation}}">+</view>
+<!-- 菜单列表 -->
+<view class="menu" hidden="{{hidden}}">
+  <view class="menu-list flex-row flex-wrap">
+    <navigator url="{{item.url}}" class="menu-item" wx:for="{{menuList}}" wx:key="menuList" style="width:{{menuList.length>=4?'25':100/menuList.length}}%;--d:{{index+1}}">
+      <image src=" {{item.src}}" mode="aspectFill" class="menu-icon" />
+      <text class="menu-name">{{item.name}}</text>
+    </navigator>
+  </view>
 </view>
