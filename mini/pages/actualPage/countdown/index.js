@@ -47,10 +47,10 @@ Page({
       hour = parseInt((e % 86400) / 3600),
       min = parseInt(((e % 86400) % 3600) / 60),
       sec = parseInt(((e % 86400) % 3600) % 60);
-    time[0] = day > 0 ? this.addZero(day) : 0;
-    time[1] = hour > 0 ? this.addZero(hour) : 0;
-    time[2] = min > 0 ? this.addZero(min) : 0;
-    time[3] = sec > 0 ? this.addZero(sec) : 0;
+    time[0] = day > 0 ? this.addZero(day) : this.addZero(0);
+    time[1] = hour > 0 ? this.addZero(hour) : this.addZero(0);
+    time[2] = min > 0 ? this.addZero(min) : this.addZero(0);
+    time[3] = sec > 0 ? this.addZero(sec) : this.addZero(0);
     return time;
   },
   /**
