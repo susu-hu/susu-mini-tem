@@ -7,7 +7,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/actualPage/countdown/index",
+          "pathName": "pages/wxCase/voiceRead/index",
           "query": "",
           "launchMode": "default",
           "scene": null

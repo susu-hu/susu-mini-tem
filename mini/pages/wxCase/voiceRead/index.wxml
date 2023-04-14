@@ -1,0 +1,4 @@
+<!--pages/wxCase/voiceRead/index.wxml-->
+<!-- https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx069ba97219f66d99&token=312342402&lang=zh_CN#- -->
+<view class="box">{{content}}</view>
+<view catchtap="read" class="btn">文本朗读</view>

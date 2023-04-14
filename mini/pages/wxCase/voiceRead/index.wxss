@@ -1,0 +1,26 @@
+/* pages/wxCase/voiceRead/index.wxss */
+.box {
+  word-wrap: break-word;
+  position: relative;
+  width: 90%;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.03);
+  padding: 50rpx 60rpx;
+  box-sizing: border-box;
+  min-height: 260rpx;
+  margin: 20rpx auto;
+  line-height: 1.41;
+  color: #999;
+}
+
+.btn {
+  width: 710rpx;
+  height: 90rpx;
+  background: #D59F6A;
+  border-radius: 54rpx;
+  margin: 20rpx auto;
+  text-align: center;
+  line-height: 90rpx;
+  color: #fff;
+}
