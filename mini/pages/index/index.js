@@ -502,6 +502,10 @@ Page({
             name: "滚动吸顶",
             url: "/pages/wxCase/sticky/index",
           },
+          {
+            name: "微信同声传译插件-文字朗读",
+            url: "/pages/wxCase/voiceRead/index",
+          },
         ],
       },
       {
