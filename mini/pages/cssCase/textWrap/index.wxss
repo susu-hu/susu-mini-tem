@@ -8,7 +8,6 @@
   border-radius: 20rpx;
   box-shadow: 10rpx 10rpx 20rpx #a5a3a3;
   display: flex;
-
 }
 
 .content .content-box {
@@ -19,37 +18,38 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+  /* 设置行高与按钮高度一致 */
   line-height: 40rpx;
 }
 
 .content .content-box::before {
-  content: "";
+  content: '';
   float: right;
-  /* 按钮的负高度 */
-  height: 100%;
-  margin-bottom: -40rpx;
+  /* 设置高度 */
+  height: calc(100% - 40rpx);
   /* 或者 */
-  /* height: calc(100% - 40rpx); */
+  /* height: 100%;
+  margin-bottom: -40rpx; */
 }
 
 .content .content-box .content-btn {
-  border: 1rpx solid rgba(106, 164, 190, 0.774);
-  box-sizing: border-box;
-  border-radius: 50rpx;
-  color: rgb(102, 202, 219);
-  float: right;
-  clear: both;
   width: 130rpx;
+  /* 按钮高度 */
   height: 40rpx;
+  box-sizing: border-box;
   font-size: 23rpx;
   display: flex;
   align-items: center;
   justify-content: center;
+  float: right;
+  clear: both;
+  border-radius: 50rpx;
+  color: rgb(102, 202, 219);
+  border: 1rpx solid rgba(106, 164, 190, 0.774);
 }
 
 .content .content-box .content-btn.btn2 {
   border: none;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   color: #fff;
 }
