@@ -13,13 +13,15 @@
 .content .content-box {
   width: 100%;
   font-size: 26rpx;
-  /* 3行省略 */
-  display: -webkit-box;
+  /* 3行省略显示省略符号来代表被修剪的文本。浏览器差异，ios(Safari)无法正常显示该文本，所以该方法不能使用*/
+  /* display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden; */
   /* 设置行高与按钮高度一致 */
   line-height: 40rpx;
+  /* 那如果需要行省略，该如何实现呢？思考一下？ */
 }
 
 .content .content-box::before {
