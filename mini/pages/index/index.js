@@ -360,6 +360,10 @@ Page({
             name: "会员卡/卡券",
             url: "/pages/cssCase/cardVoucher/index",
           },
+          {
+            name: "css实现文字环绕",
+            url: "/pages/cssCase/textWrap/index",
+          },
         ],
       },
       {
@@ -619,6 +623,11 @@ Page({
           {
             name: "索引选择（城市)",
             url: "/pages/jsCase/citySel/index",
+          },
+          {
+            name: "一年日期选中",
+            url: "/pages/jsCase/yearCalenActive/index",
+            style: true,
           },
         ],
       },

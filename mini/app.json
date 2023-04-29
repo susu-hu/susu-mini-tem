@@ -140,7 +140,8 @@
         "guardFollow/index",
         "oTabbar/index",
         "cardVoucher/index",
-        "circleMenu/index"
+        "circleMenu/index",
+        "textWrap/index"
       ]
     },
     {
@@ -233,7 +234,8 @@
         "draw4/index2",
         "draw4/easy",
         "citySel/index",
-        "mapLocation/index"
+        "mapLocation/index",
+        "yearCalenActive/index"
       ]
     },
     {

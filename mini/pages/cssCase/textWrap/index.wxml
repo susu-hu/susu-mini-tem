@@ -1,0 +1,11 @@
+<!--pages/cssCase/textWrap/index.wxml-->
+<view class="content" wx:for="{{content}}" wx:key="list">
+  <view class="content-box">
+    <view class="content-btn">查看详情</view> {{item}}
+  </view>
+</view>
+<view class="content" wx:for="{{content}}" wx:key="list">
+  <view class="content-box">
+    <view class="content-btn btn2">查看详情</view> {{item}}
+  </view>
+</view>

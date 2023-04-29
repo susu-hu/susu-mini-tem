@@ -1,0 +1,55 @@
+/* pages/cssCase/textWrap/index.wxss */
+.content {
+  width: 700rpx;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  margin: 20rpx auto;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  box-shadow: 10rpx 10rpx 20rpx #a5a3a3;
+  display: flex;
+
+}
+
+.content .content-box {
+  width: 100%;
+  font-size: 26rpx;
+  /* 3行省略 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 40rpx;
+}
+
+.content .content-box::before {
+  content: "";
+  float: right;
+  /* 按钮的负高度 */
+  height: 100%;
+  margin-bottom: -40rpx;
+  /* 或者 */
+  /* height: calc(100% - 40rpx); */
+}
+
+.content .content-box .content-btn {
+  border: 1rpx solid rgba(106, 164, 190, 0.774);
+  box-sizing: border-box;
+  border-radius: 50rpx;
+  color: rgb(102, 202, 219);
+  float: right;
+  clear: both;
+  width: 130rpx;
+  height: 40rpx;
+  font-size: 23rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .content-box .content-btn.btn2 {
+  border: none;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  color: #fff;
+}
