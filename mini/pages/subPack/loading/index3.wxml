@@ -11,27 +11,27 @@
 </view>
 <view class="box">
   <view class="loader4">
-    <view class="l-item" ></view>
     <view class="l-item"></view>
-    <view class="l-item" ></view>
-    <view class="l-item" ></view>
+    <view class="l-item"></view>
+    <view class="l-item"></view>
+    <view class="l-item"></view>
   </view>
 </view>
 <view class="box">
   <view class="loader5">
-    <view class="l-item" ></view>
     <view class="l-item"></view>
-    <view class="l-item" ></view>
-    <view class="l-item" ></view>
+    <view class="l-item"></view>
+    <view class="l-item"></view>
+    <view class="l-item"></view>
   </view>
 </view>
 <view class="box">
   <view class="loader6">
-    <view class="dot" animation="{{alpha[0]}}"></view>
-    <view class="dot" animation="{{alpha[1]}}"></view>
-    <view class="dot" animation="{{alpha[2]}}"></view>
-    <view class="dot" animation="{{alpha[3]}}"></view>
-    <view class="dot" animation="{{alpha[4]}}"></view>
+    <view class="dot" style="--i:0"></view>
+    <view class="dot" style="--i:1"></view>
+    <view class="dot" style="--i:2"></view>
+    <view class="dot" style="--i:3"></view>
+    <view class="dot" style="--i:4"></view>
   </view>
 </view>
 <view class="box">
@@ -119,14 +119,14 @@
 
 <view class="box box2">
   <view class="loader20"></view>
-  <view class="earth-orbit" >
+  <view class="earth-orbit">
     <view class="moon"></view>
   </view>
 </view>
 
 <view class="box box2">
   <view class="loader21"></view>
-  <view class="earth-orbit br1" >
+  <view class="earth-orbit br1">
     <view class="moon br2"></view>
   </view>
 </view>
