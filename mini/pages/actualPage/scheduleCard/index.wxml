@@ -74,7 +74,7 @@
   </view>
   <view class="container-right right1 flex col j_c">
     <view class="flex-row">
-      <view class="con-item flex-column j_c " wx:for="{{schedule.four}}" wx:key="list" style="background: {{item.color}};" catchtap="{{item.type ? 'getDetail':''}}" data-item="{{item}}">
+      <view class="con-item flex-column j_c " wx:for="{{schedule.four}}" wx:key="list" style="background: {{item.color}};" catchtap="{{item.type && 'getDetail'}}" data-item="{{item}}">
         <text class="con-item-subj line_ellipsis">{{item.sub}}</text>
         <text class="line_ellipsis">{{item.tec}}</text>
         <text class="line_ellipsis">{{item.add}}</text>
