@@ -629,6 +629,11 @@ Page({
             url: "/pages/jsCase/yearCalenActive/index",
             style: true,
           },
+          {
+            name: "评论时间格式化",
+            url: "/pages/jsCase/remark/index",
+            style: true,
+          },
         ],
       },
       {

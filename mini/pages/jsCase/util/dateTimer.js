@@ -87,7 +87,53 @@ function dateTimePicker(startYear, endYear, date) {
     dateTime: dateTime
   }
 }
+function timeAgoFormat(timestamp) {
+  var mistiming = Math.round((Date.now() - timestamp) / 1000);
+  var arrr = ['年', '个月', '周', '天', '小时', '分钟', '秒'];
+  var arrn = [31536000, 2592000, 604800, 86400, 3600, 60, 1];
+  for (var i = 0; i < arrn.length; i++) {
+    var inm = Math.floor(mistiming / arrn[i]);
+    if (inm != 0) {
+      return inm + arrr[i] + '前';
+    }
+  }
+}
+function getDateDiff(dateTimeStamp) {
+  var result = '';
+  var minute = 1000 * 60;
+  var hour = minute * 60;
+  var day = hour * 24;
+  var halfamonth = day * 15;
+  var month = day * 30;
+
+  var now = new Date().getTime();
+  var diffValue = now - dateTimeStamp;
+  if (diffValue < 0) {
+    //若日期不符则弹出窗口告之
+    //alert("结束日期不能小于开始日期！");
+  }
+  var monthC = diffValue / month;
+  var weekC = diffValue / (7 * day);
+  var dayC = diffValue / day;
+  var hourC = diffValue / hour;
+  var minC = diffValue / minute;
+  if (monthC >= 1) {
+    result = parseInt(monthC) + "个月前";
+  } else if (weekC >= 1) {
+    result = parseInt(weekC) + "周前";
+  } else if (dayC >= 1) {
+    result = parseInt(dayC) + "天前";
+  } else if (hourC >= 1) {
+    result = parseInt(hourC) + "个小时前";
+  } else if (minC >= 1) {
+    result = parseInt(minC) + "分钟前";
+  } else
+    result = "刚刚";
+  return result;
+}
 module.exports = {
   dateTimePicker: dateTimePicker,
-  getMonthDay: getMonthDay
+  getMonthDay: getMonthDay,
+  timeAgoFormat,
+  getDateDiff
 }

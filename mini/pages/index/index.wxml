@@ -17,7 +17,7 @@
         </view>
         <view wx:if="{{item.showmore}}" class="showMore">
           <block wx:for="{{item.list}}" wx:key="*this">
-            <view class="i_item" catchtap="toDetail" data-url="{{item.url}}">{{index+1}}.{{item.name}}</view>
+            <view class="i_item" style="color:{{item.style?'red':''}}" catchtap="toDetail" data-url="{{item.url}}">{{index+1}}.{{item.name}}</view>
           </block>
         </view>
         <view class="total" data-text="共计页面：{{item.list.length}}">共计页面：{{item.list.length}}</view>

@@ -235,7 +235,8 @@
         "draw4/easy",
         "citySel/index",
         "mapLocation/index",
-        "yearCalenActive/index"
+        "yearCalenActive/index",
+        "remark/index"
       ]
     },
     {
