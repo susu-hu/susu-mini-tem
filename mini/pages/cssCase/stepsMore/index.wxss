@@ -1,0 +1,55 @@
+/* pages/cssCase/stepsMore/index.wxss */
+page {
+  padding-bottom: 20px;
+}
+
+.con {
+  padding: 24rpx 20rpx;
+  margin: 20rpx;
+  background: #FFFFFF;
+  border-radius: 8rpx;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.head_info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100rpx;
+  text-align: center;
+}
+
+.head_icon {
+  width: 32rpx;
+  height: 32rpx;
+  z-index: 1;
+}
+
+.head_title {
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  line-height: 28rpx;
+  color: #333333;
+}
+
+.head_line {
+  position: absolute;
+  top: 16rpx;
+  right: 35%;
+  height: 2rpx;
+  background: #ccc;
+}
+
+
+progress {
+  width:600rpx;
+  position: absolute;
+  top: 13%;
+  left: 5%;
+}

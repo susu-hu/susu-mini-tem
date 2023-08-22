@@ -1,0 +1,61 @@
+<!--pages/cssCase/stepsMore/index.wxml-->
+<!-- 写法一 -->
+<view
+  class="con"
+  wx:for="{{list}}"
+  wx:key="list"
+  wx:for-item="itemP"
+  wx:for-index="indexP"
+>
+  <view class="head">
+    <block
+      wx:for="{{itemP.stepInfo}}"
+      wx:key='list'
+      wx:for-item="item"
+      wx:for-index="index"
+    >
+      <view class="head_info">
+        <image
+          class="head_icon"
+          src="{{item.status==1?itemP.sel_icon:'../img/circle03.png'}}"
+        ></image>
+        <view class="head_title">{{item.pro_name}}</view>
+        <view
+          wx:if="{{index!=0}}"
+          class='head_line'
+          style="width:{{600/(itemP.stepInfo.length-1)}}rpx;background:{{item.status==1?itemP.pro_color:''}};"
+        ></view>
+      </view>
+    </block>
+  </view>
+</view>
+<!-- 写法二 -->
+<view
+  class="con"
+  wx:for="{{list}}"
+  wx:key="list"
+  wx:for-item="itemP"
+  wx:for-index="indexP"
+>
+  <view class="head">
+    <progress
+      percent="{{itemP.per}}"
+      stroke-width="2"
+      color="{{itemP.pro_color}}"
+    />
+    <block
+      wx:for="{{itemP.stepInfo}}"
+      wx:key='list'
+      wx:for-item="item"
+      wx:for-index="index"
+    >
+      <view class="head_info">
+        <image
+          class="head_icon"
+          src="{{item.status==1?itemP.sel_icon:'../img/circle03.png'}}"
+        ></image>
+        <view class="head_title">{{item.pro_name}}</view>
+      </view>
+    </block>
+  </view>
+</view>

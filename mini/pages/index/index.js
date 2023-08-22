@@ -2,12 +2,10 @@
 import util from "../../utils/util";
 Page({
   data: {
-    page_list: [
-      {
+    page_list: [{
         showmore: true,
         name: "主包",
-        list: [
-          {
+        list: [{
             name: "物流页面+skeleton条",
             url: "/pages/demo/index",
           },
@@ -76,8 +74,7 @@ Page({
       {
         showmore: true,
         name: "分包another",
-        list: [
-          {
+        list: [{
             name: "scroll-view左右滚动导航条",
             url: "/pages/another/scroll-x/index",
           },
@@ -132,8 +129,7 @@ Page({
       {
         showmore: true,
         name: "分包subPack",
-        list: [
-          {
+        list: [{
             name: "loading加载动画17个（1）",
             url: "/pages/subPack/loading/index",
           },
@@ -199,8 +195,7 @@ Page({
       {
         showmore: true,
         name: "分包cssCase",
-        list: [
-          {
+        list: [{
             name: "css3的圆锥渐变",
             url: "/pages/cssCase/conic-gradient/index",
           },
@@ -364,13 +359,16 @@ Page({
             name: "css实现文字环绕",
             url: "/pages/cssCase/textWrap/index",
           },
+          {
+            name: "横向步骤条",
+            url: "/pages/cssCase/stepsMore/index",
+          },
         ],
       },
       {
         showmore: true,
         name: "分包wxCase",
-        list: [
-          {
+        list: [{
             name: "小程序的navigator标签",
             url: "/pages/wxCase/navigator/index",
           },
@@ -515,8 +513,7 @@ Page({
       {
         showmore: true,
         name: "分包jsCase",
-        list: [
-          {
+        list: [{
             name: "搜索历史",
             url: "/pages/jsCase/historySearch/index",
           },
@@ -639,8 +636,7 @@ Page({
       {
         showmore: true,
         name: "分包effects",
-        list: [
-          {
+        list: [{
             name: "六角灯笼",
             url: "/pages/effects/denglong/index",
           },
@@ -727,8 +723,7 @@ Page({
       {
         showmore: true,
         name: "分包实用页面",
-        list: [
-          {
+        list: [{
             name: "列表页",
             url: "/pages/actualPage/list/index",
           },
@@ -774,13 +769,15 @@ Page({
   },
 
   toDetail(e) {
-    let { url } = e.currentTarget.dataset;
+    let {
+      url
+    } = e.currentTarget.dataset;
     wx.navigateTo({
       url: url,
     });
   },
 
-  onLoad: function (options) { },
+  onLoad: function (options) {},
   onPullDownRefresh() {
     wx.stopPullDownRefresh(); //刷新完成后停止下拉刷新动效
   },
@@ -807,8 +804,11 @@ Page({
     }
   },
   showMore(e) {
-    let { index } = e.currentTarget.dataset,
-      { page_list } = this.data;
+    let {
+      index
+    } = e.currentTarget.dataset, {
+      page_list
+    } = this.data;
     page_list[index].showmore = !page_list[index].showmore;
     this.setData({
       page_list: page_list,
