@@ -1,0 +1,32 @@
+<!-- 步骤条 支持步长2-6-->
+<view
+  class="steps"
+  wx:for="{{list}}"
+  wx:key="list"
+>
+  <view class="flex j_b steps-box">
+    <block
+      wx:for="{{item}}"
+      wx:for-item="i"
+      wx:for-index="sort"
+      wx:key="item"
+    >
+      <view
+        class="flex-column j_c steps-item {{i.status==1 && 'active'}}"
+        style="--len:{{item.length }}"
+      >
+        <view
+          class="steps-index {{i.status==0 && 'active'}}"
+          wx:if="{{i.status!=1}}"
+        >{{sort+1}}</view>
+        <view
+          class="steps-index"
+          wx:else
+        >
+          <view class="checked-icon"></view>
+        </view>
+        <text class="{{i.status==0 && 'text-active'}}">{{i.text}}</text>
+      </view>
+    </block>
+  </view>
+</view>

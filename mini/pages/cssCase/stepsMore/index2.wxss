@@ -1,0 +1,86 @@
+/* pages/cssCase/stepsMore/index2.wxss */
+page {
+  --bg: #1296db;
+}
+
+.steps {
+  padding-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.steps-box {
+  width: 710rpx;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  font-size: 25rpx;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  box-shadow: 0rpx 5rpx 18rpx 3rpx rgba(176, 176, 176, 0.26);
+}
+
+
+.steps-item {
+  width: 100rpx;
+  position: relative;
+}
+
+.steps-item::after {
+  content: '';
+  position: absolute;
+  --d: calc(var(--len) * 100rpx);
+  --l: calc(var(--len) - 1);
+  width: calc((650rpx - var(--d)) / var(--l));
+  height: 2rpx;
+  background: #f1e9e9;
+  left: 100rpx;
+  top: 20rpx;
+}
+
+.steps-item.active::after {
+  background: var(--bg);
+}
+
+.steps-item:last-child::after {
+  display: none;
+}
+
+.steps-index {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 23rpx;
+  line-height: 40rpx;
+  background: #f1e9e9;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.steps-index.active {
+  color: #fff;
+  background: var(--bg);
+}
+
+.text-active {
+  color: var(--bg);
+  font-weight: bold;
+}
+
+.steps-index .checked-icon {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+}
+
+.steps-index .checked-icon::before {
+  content: '';
+  position: absolute;
+  left: 10rpx;
+  top: 12rpx;
+  height: 8rpx;
+  width: 15rpx;
+  border: 4rpx solid var(--bg);
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
